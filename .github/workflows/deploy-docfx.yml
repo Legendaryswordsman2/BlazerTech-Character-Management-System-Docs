@@ -1,0 +1,33 @@
+name: Deploy DocFX Site
+
+on:
+  push:
+    branches:
+      - main  # or your default branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout your repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Install DocFX
+      - name: Install DocFX
+        run: |
+          wget https://github.com/dotnet/docfx/releases/download/v2.78/docfx.zip
+          unzip docfx.zip -d docfx
+          export PATH=$PATH:$PWD/docfx
+
+      # 3. Build your DocFX site
+      - name: Build DocFX site
+        run: docfx build
+
+      # 4. Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v7
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site  # adjust if your output folder is different
