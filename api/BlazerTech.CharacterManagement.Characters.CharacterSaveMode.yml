@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Characters.CharacterSaveMode
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterSaveMode
+  id: CharacterSaveMode
+  parent: BlazerTech.CharacterManagement.Characters
+  children:
+  - BlazerTech.CharacterManagement.Characters.CharacterSaveMode.Both
+  - BlazerTech.CharacterManagement.Characters.CharacterSaveMode.OnCharacterCollectionUpdated
+  - BlazerTech.CharacterManagement.Characters.CharacterSaveMode.OnExit
+  langs:
+  - csharp
+  - vb
+  name: CharacterSaveMode
+  nameWithType: CharacterSaveMode
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterSaveMode
+  type: Enum
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterSaveMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public enum CharacterSaveMode
+    content.vb: Public Enum CharacterSaveMode
+- uid: BlazerTech.CharacterManagement.Characters.CharacterSaveMode.OnCharacterCollectionUpdated
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterSaveMode.OnCharacterCollectionUpdated
+  id: OnCharacterCollectionUpdated
+  parent: BlazerTech.CharacterManagement.Characters.CharacterSaveMode
+  langs:
+  - csharp
+  - vb
+  name: OnCharacterCollectionUpdated
+  nameWithType: CharacterSaveMode.OnCharacterCollectionUpdated
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterSaveMode.OnCharacterCollectionUpdated
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: OnCharacterCollectionUpdated
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: OnCharacterCollectionUpdated = 0
+    return:
+      type: BlazerTech.CharacterManagement.Characters.CharacterSaveMode
+- uid: BlazerTech.CharacterManagement.Characters.CharacterSaveMode.OnExit
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterSaveMode.OnExit
+  id: OnExit
+  parent: BlazerTech.CharacterManagement.Characters.CharacterSaveMode
+  langs:
+  - csharp
+  - vb
+  name: OnExit
+  nameWithType: CharacterSaveMode.OnExit
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterSaveMode.OnExit
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: OnExit
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: OnExit = 1
+    return:
+      type: BlazerTech.CharacterManagement.Characters.CharacterSaveMode
+- uid: BlazerTech.CharacterManagement.Characters.CharacterSaveMode.Both
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterSaveMode.Both
+  id: Both
+  parent: BlazerTech.CharacterManagement.Characters.CharacterSaveMode
+  langs:
+  - csharp
+  - vb
+  name: Both
+  nameWithType: CharacterSaveMode.Both
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterSaveMode.Both
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Both
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: Both = 2
+    return:
+      type: BlazerTech.CharacterManagement.Characters.CharacterSaveMode
+references:
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: BlazerTech.CharacterManagement.Characters.CharacterSaveMode
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterSaveMode
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterSaveMode.html
+  name: CharacterSaveMode
+  nameWithType: CharacterSaveMode
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterSaveMode
