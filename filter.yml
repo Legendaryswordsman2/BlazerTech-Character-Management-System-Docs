@@ -1,3 +1,4 @@
+### YamlMime:ManagedReference
 apiRules:
 
   # Exclude most UnityEngine.Object + Component + MonoBehaviour inherited members
