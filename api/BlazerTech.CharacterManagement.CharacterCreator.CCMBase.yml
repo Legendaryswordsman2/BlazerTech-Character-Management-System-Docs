@@ -31,7 +31,7 @@ items:
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
-  summary: Base class for all classes a part of the Character Creator Window
+  summary: Base class for all classes a part of the Character Creator Menu
   example: []
   syntax:
     content: 'public abstract class CCMBase : MonoBehaviour'

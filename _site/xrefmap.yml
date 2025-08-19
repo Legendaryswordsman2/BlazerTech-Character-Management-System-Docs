@@ -573,7 +573,14 @@ references:
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.Instance
   name: Instance
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_Instance
-  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.Instance
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.Instance
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.Instance
+  nameWithType: CharacterCreationMenuManager.Instance
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.Instance*
+  name: Instance
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_Instance_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.Instance
+  isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.Instance
   nameWithType: CharacterCreationMenuManager.Instance
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.MenuContents

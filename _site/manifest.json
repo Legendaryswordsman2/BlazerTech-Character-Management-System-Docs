@@ -22,7 +22,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMBase",
-      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.CharacterCreator.CCMBase.yml\" sourcestartlinenumber=\"1\">Base class for all classes a part of the Character Creator Window</p>\n"
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.CharacterCreator.CCMBase.yml\" sourcestartlinenumber=\"1\">Base class for all classes a part of the Character Creator Menu</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1537,10 +1537,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/getting-started.md",
+      "source_relative_path": "docs/character-types.md",
       "output": {
         ".html": {
-          "relative_path": "docs/getting-started.html"
+          "relative_path": "docs/character-types.html"
         }
       },
       "version": ""
