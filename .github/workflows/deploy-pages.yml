@@ -3,7 +3,7 @@ name: Deploy DocFX _site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Replace with your default branch if different
+      - main
 
 jobs:
   deploy:
@@ -15,9 +15,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Check if _site or docfx.json changed
+        id: check_changes
+        run: |
+          if git diff --quiet HEAD^ HEAD -- _site docfx.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Deploy _site folder
+        if: steps.check_changes.outputs.changed == 'true'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          keep_files: true
