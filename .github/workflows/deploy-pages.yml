@@ -3,18 +3,21 @@ name: Deploy DocFX _site to GitHub Pages
 on:
   push:
     branches:
-      - main  # your source branch
+      - main  # Replace with your default branch if different
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required for write access to the repository
+
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Deploy _site to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v7
+      - name: Deploy _site folder
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # THIS IS REQUIRED
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           keep_files: true
