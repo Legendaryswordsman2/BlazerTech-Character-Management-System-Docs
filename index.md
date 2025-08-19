@@ -12,5 +12,3 @@ Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to wri
 
 > [!WARNING]
 > THIS WEBSITE IS UNDER CONSTRUCTION AND NOT YET FINISHED!
-
-This is extra test text
