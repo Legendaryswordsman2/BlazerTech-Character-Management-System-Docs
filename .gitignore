@@ -5,7 +5,6 @@ temp
 node_modules
 .vs
 .vscode
-_site
 _site_pdf
 docs/api
 samples/**/api
