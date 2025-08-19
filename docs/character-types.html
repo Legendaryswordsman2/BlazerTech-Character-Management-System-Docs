@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Getting Started | Doc-test </title>
+      <title>Character Types | Doc-test </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Getting Started | Doc-test ">
+      <meta name="title" content="Character Types | Doc-test ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/getting-started.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-types.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,13 +85,63 @@
         </div>
 
         <article data-uid="">
-<h1 id="getting-started">Getting Started</h1>
+<h1 id="character-types">Character Types</h1>
 
+<p>Character Types are <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Objects</a> that define core aspects of a character. They are the heart of the Character Management System.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All Characters <code>Require</code> a <code>Character Type</code>.</p>
+</div>
+<hr>
+<h3 id="character-type-base">Character Type Base</h3>
+<p>All Character Types inherit from <a href="character-type-base.md">CharacterTypeBaseSO</a>, which contains the core properties shared across all Character Types.</p>
+<hr>
+<h2 id="character-type-variants">Character Type Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>Modularity</th>
+<th>Runtime Customization</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Unified</strong></td>
+<td>Single spritesheet</td>
+<td>None</td>
+<td>Pre-rendered, fixed characters</td>
+</tr>
+<tr>
+<td><strong>Layered</strong></td>
+<td>Layered spritesheets</td>
+<td>High</td>
+<td>Modular, editable characters</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="1-unified-character-type">1. Unified Character Type</h3>
+<p>Each character uses a single spritesheet containing the fully assembled character. No runtime customization is possible.</p>
+<ul>
+<li><strong>Use Case:</strong> Characters with fixed, pre-rendered appearances.</li>
+<li><strong>Example:</strong> Simplistic characters where their appearance is pre-determined and won't need to be changed.</li>
+</ul>
+<p><a href="unified-character-type.md">Read More → Unified Character Type</a></p>
+<hr>
+<h3 id="2-layered-character-type">2. Layered Character Type</h3>
+<p>A set of separate spritesheets, each containing one visual layer of the character.</p>
+<ul>
+<li><strong>Use Case:</strong> Customizable player characters or dynamically generated NPCs.</li>
+<li><strong>Example:</strong> Body, Outfit, Hairstyle, Accessory</li>
+</ul>
+<p><a href="layered-character-type.md">Read More → Layered Character Type</a></p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/getting-started.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-types.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
