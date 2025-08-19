@@ -1537,30 +1537,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/Titty.md",
+      "source_relative_path": "docs/character-types.md",
       "output": {
         ".html": {
-          "relative_path": "docs/Titty.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/characters/character-types - Copy.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/characters/character-types - Copy.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/characters/character-types.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/characters/character-types.html"
+          "relative_path": "docs/character-types.html"
         }
       },
       "version": ""
