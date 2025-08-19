@@ -1,4 +1,10 @@
-- name: Character Types
-  href: character-types.md
+- name: Titty
+  href: Titty.md
+- name: Characters
+  items:
+  - name: Character Types Copy
+    href: characters/character-types - Copy.md
+  - name: Character Types
+    href: characters/character-types.md
 - name: Introduction
   href: introduction.md

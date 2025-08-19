@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class LoadingScreenRepeatingText | BlazerTech Character Management System </title>
+      <title>Character Types | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class LoadingScreenRepeatingText | BlazerTech Character Management System ">
+      <meta name="title" content="Character Types | BlazerTech Character Management System ">
       
       
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
       
-      <meta name="docfx:rel" content="../">
+      <meta name="docfx:rel" content="../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_CharacterCreator_LoadingScreenRepeatingText.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenRepeatingText%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/characters/character-types - Copy.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./../public/docfx.min.js"></script>
+      <script type="module" src="./../../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -39,12 +39,12 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="BlazerTech Character Management System">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="BlazerTech Character Management System">
             BlazerTech Character Management System
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,56 +84,67 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenRepeatingText">
+        <article data-uid="">
+<h1 id="character-types">Character Types</h1>
 
-
-
-  <h1 id="BlazerTech_CharacterManagement_CharacterCreator_LoadingScreenRepeatingText" data-uid="BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenRepeatingText" class="text-break">
-Class LoadingScreenRepeatingText  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Loading Screen/LoadingScreenRepeatingText.cs/#L6"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="BlazerTech.html">BlazerTech</a>.<a class="xref" href="BlazerTech.CharacterManagement.html">CharacterManagement</a>.<a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.html">CharacterCreator</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"></div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LoadingScreenRepeatingText : MonoBehaviour</code></pre>
-  </div>
-
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">Object</span></div>
-      <div><span class="xref">Component</span></div>
-      <div><span class="xref">Behaviour</span></div>
-      <div><span class="xref">MonoBehaviour</span></div>
-      <div><span class="xref">LoadingScreenRepeatingText</span></div>
-    </dd>
-  </dl>
-
-
-
-
-
-
-
-
-
+<p>Character Types are <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Objects</a> that define core aspects of a character. They are the heart of the Character Management System.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All Characters <code>Require</code> a <code>Character Type</code>.</p>
+</div>
+<hr>
+<h3 id="character-type-base">Character Type Base</h3>
+<p>All Character Types inherit from <a href="character-type-base.md">CharacterTypeBaseSO</a>, which contains the core properties shared across all Character Types.</p>
+<hr>
+<h2 id="character-type-variants">Character Type Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>Modularity</th>
+<th>Runtime Customization</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Unified</strong></td>
+<td>Single spritesheet</td>
+<td>None</td>
+<td>Pre-rendered, fixed characters</td>
+</tr>
+<tr>
+<td><strong>Layered</strong></td>
+<td>Layered spritesheets</td>
+<td>High</td>
+<td>Modular, editable characters</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="1-unified-character-type">1. Unified Character Type</h3>
+<p>Each character uses a single spritesheet containing the fully assembled character. No runtime customization is possible.</p>
+<ul>
+<li><strong>Use Case:</strong> Characters with fixed, pre-rendered appearances.</li>
+<li><strong>Example:</strong> Simplistic characters where their appearance is pre-determined and won't need to be changed.</li>
+</ul>
+<p><a href="unified-character-type.md">Read More → Unified Character Type</a></p>
+<hr>
+<h3 id="2-layered-character-type">2. Layered Character Type</h3>
+<p>A set of separate spritesheets, each containing one visual layer of the character.</p>
+<ul>
+<li><strong>Use Case:</strong> Customizable player characters or dynamically generated NPCs.</li>
+<li><strong>Example:</strong> Body, Outfit, Hairstyle, Accessory</li>
+</ul>
+<p><a href="layered-character-type.md">Read More → Layered Character Type</a></p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Loading Screen/LoadingScreenRepeatingText.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/characters/character-types - Copy.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 
