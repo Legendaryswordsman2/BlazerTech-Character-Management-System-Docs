@@ -16,7 +16,7 @@ All Character Types inherit from [CharacterTypeBaseSO](character-type-base.md), 
 
 | Variant   | Modularity | Runtime Customization | Best For |
 |-----------|--------------------|---------------|----------|
-| **Unified** | Single spritesheet | None | Pre-rendered, fixed characters |
+| **Unified** | Single spritesheet | None | Pre-created, fixed characters |
 | **Layered** | Layered spritesheets | High | Modular, editable characters |
 
 ---
