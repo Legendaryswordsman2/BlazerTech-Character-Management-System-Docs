@@ -1370,20 +1370,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.OwnedResourceTracker-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.OwnedResourceTracker-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.OwnedResourceTracker<TResource>",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Samples.ActiveMenuHandler.yml",
       "output": {
         ".html": {
@@ -1506,20 +1492,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Utilities",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement",
       "Summary": null
     },
     {
