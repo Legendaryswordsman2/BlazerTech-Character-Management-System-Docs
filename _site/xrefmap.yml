@@ -6183,5 +6183,14 @@ references:
   nameWithType: SerializableInterface<T>.Interface
   nameWithType.vb: SerializableInterface(Of T).Interface
 - uid: basic-concepts
-  name: Customization
+  name: Basic Concepts
   href: docs/getting-started/basic-concepts.html
+- uid: character-creator
+  name: Character Creator
+  href: docs/Essentials/character-creator.html
+- uid: character-types
+  name: Character Types
+  href: docs/character-types.html
+- uid: landing
+  name: BlazerTech Character Management System
+  href: index.html

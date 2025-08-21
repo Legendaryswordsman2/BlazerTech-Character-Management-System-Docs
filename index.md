@@ -1,5 +1,6 @@
 ---
 _layout: landing
+uid: landing
 ---
 
 # BlazerTech Character Management System

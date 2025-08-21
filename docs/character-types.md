@@ -1,3 +1,7 @@
+---
+uid: character-types
+---
+
 # Character Types
 
 Character Types are [Scriptable Objects](https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html) that define core aspects of a character. They are the heart of the Character Management System.

@@ -23,7 +23,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterTypeBaseSO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 5
+    startLine: 10
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -55,10 +55,12 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterTypeID
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 7
+    startLine: 15
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: A **unique identifier** used to reference this character type. **Must be unique** across all character types.
+  example: []
   syntax:
     content: public string CharacterTypeID { get; }
     parameters: []
@@ -84,10 +86,17 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: BaseSpritesheet
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 10
+    startLine: 23
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: >-
+    Defines the **required base sprite sheet** for the character type.  
+
+    Set this spritesheets **`Sprite Mode`** to **`Multiple`** and slice it. Whenever this character is used the sprites in the `BaseSpritesheet` will be used and a shader will then  override them with the finalized character.
+
+    Character spritesheets with mismatched dimensions will be rejected when validated.
+  example: []
   syntax:
     content: public Sprite BaseSpritesheet { get; }
     parameters: []
@@ -113,10 +122,15 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterController
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 13
+    startLine: 30
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: >-
+    The animator controller asset assigned to characters of this type.  
+
+    Animations inside this controller should use sprites in the <xref href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public RuntimeAnimatorController CharacterController { get; }
     parameters: []
@@ -142,7 +156,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsValidCharacterSpriteSheet
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 22
+    startLine: 38
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -258,6 +272,13 @@ references:
   name: Sprite
   nameWithType: Sprite
   fullName: UnityEngine.Sprite
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_BaseSpritesheet
+  name: BaseSpritesheet
+  nameWithType: CharacterTypeBaseSO.BaseSpritesheet
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet
 - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
   href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterController
@@ -271,6 +292,13 @@ references:
   name: RuntimeAnimatorController
   nameWithType: RuntimeAnimatorController
   fullName: UnityEngine.RuntimeAnimatorController
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
+  name: CharacterTypeBaseSO
+  nameWithType: CharacterTypeBaseSO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
 - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValidCharacterSpriteSheet*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValidCharacterSpriteSheet
   href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_IsValidCharacterSpriteSheet_UnityEngine_Sprite_
