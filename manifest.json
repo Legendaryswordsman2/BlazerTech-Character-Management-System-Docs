@@ -488,6 +488,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO",
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.yml\" sourcestartlinenumber=\"1\">Data Transfer Object (DTO) used to save and load a <xref href=\"BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO.yml",
       "output": {
         ".html": {
@@ -558,6 +600,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.yml",
       "output": {
         ".html": {
@@ -611,6 +667,20 @@
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece",
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.yml\" sourcestartlinenumber=\"1\">A wrapper for <xref href=\"BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition\" data-throw-if-not-resolved=\"false\"></xref>. used as a list in <xref href=\"BlazerTech.CharacterManagement.Characters.LayeredCharacter\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1503,6 +1573,16 @@
         },
         ".json": {
           "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Test.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Test.html"
         }
       },
       "version": ""
