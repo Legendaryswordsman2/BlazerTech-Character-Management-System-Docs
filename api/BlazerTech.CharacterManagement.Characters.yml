@@ -11,17 +11,17 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter
   - BlazerTech.CharacterManagement.Characters.CharacterGroupBase
   - BlazerTech.CharacterManagement.Characters.CharacterGroupType
-  - BlazerTech.CharacterManagement.Characters.CharacterPiece
   - BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-  - BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-  - BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO
-  - BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.LoadedSpriteDataContainer
+  - BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+  - BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO
+  - BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer
   - BlazerTech.CharacterManagement.Characters.CharacterPieceMapping
   - BlazerTech.CharacterManagement.Characters.CharacterSaveMode
-  - BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2
+  - BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
   - BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection
   - BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO
+  - BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece
   - BlazerTech.CharacterManagement.Characters.FixedCharacterGroup
   - BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO
   - BlazerTech.CharacterManagement.Characters.FixedCharacterGroupCollection
@@ -106,6 +106,13 @@ references:
   name: LoadedCharacterHandlerBase
   nameWithType: LoadedCharacterHandlerBase
   fullName: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase
+- uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece
+  commentId: T:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html
+  name: EquippedCharacterPiece
+  nameWithType: EquippedCharacterPiece
+  fullName: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
   parent: BlazerTech.CharacterManagement.Characters
@@ -119,19 +126,19 @@ references:
   name: CharacterPieceMapping
   nameWithType: CharacterPieceMapping
   fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2
-  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html
-  name: CharacterTemplateSO<TCharacterType, TCharacter>
-  nameWithType: CharacterTemplateSO<TCharacterType, TCharacter>
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO<TCharacterType, TCharacter>
-  nameWithType.vb: CharacterTemplateSO(Of TCharacterType, TCharacter)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO(Of TCharacterType, TCharacter)
-  name.vb: CharacterTemplateSO(Of TCharacterType, TCharacter)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
+  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html
+  name: CharacterTemplateBaseSO<TCharacterType, TCharacter>
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter)
+  name.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter)
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2
-    name: CharacterTemplateSO
-    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
+    name: CharacterTemplateBaseSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html
   - name: <
   - name: TCharacterType
   - name: ','
@@ -139,9 +146,9 @@ references:
   - name: TCharacter
   - name: '>'
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2
-    name: CharacterTemplateSO
-    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
+    name: CharacterTemplateBaseSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html
   - name: (
   - name: Of
   - name: " "
@@ -205,6 +212,58 @@ references:
   name: CharacterDraft_PreExistingCharacter
   nameWithType: CharacterDraft_PreExistingCharacter
   fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
+  name: CharacterPieceDefinition
+  nameWithType: CharacterPieceDefinition
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
+  name: CharacterPieceDefinition.LoadedSpriteDataContainer
+  nameWithType: CharacterPieceDefinition.LoadedSpriteDataContainer
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+    name: CharacterPieceDefinition
+    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer
+    name: LoadedSpriteDataContainer
+    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.html
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+    name: CharacterPieceDefinition
+    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer
+    name: LoadedSpriteDataContainer
+    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.html
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO
+  href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
+  name: CharacterPieceDefinition.CharacterPieceDefinition_DTO
+  nameWithType: CharacterPieceDefinition.CharacterPieceDefinition_DTO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+    name: CharacterPieceDefinition
+    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO
+    name: CharacterPieceDefinition_DTO
+    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.html
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+    name: CharacterPieceDefinition
+    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO
+    name: CharacterPieceDefinition_DTO
+    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.html
 - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
   commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
   parent: BlazerTech.CharacterManagement.Characters
@@ -328,13 +387,6 @@ references:
   name: UnifiedCharacterTypeSO
   nameWithType: UnifiedCharacterTypeSO
   fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
-- uid: BlazerTech.CharacterManagement.Characters.CharacterPiece
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPiece
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterPiece.html
-  name: CharacterPiece
-  nameWithType: CharacterPiece
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterPiece
 - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupType
   commentId: T:BlazerTech.CharacterManagement.Characters.CharacterGroupType
   parent: BlazerTech.CharacterManagement.Characters
@@ -497,58 +549,6 @@ references:
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings
     name: CharacterPreviewsSettings
     href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.html
-- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.html
-  name: CharacterPieceInfo
-  nameWithType: CharacterPieceInfo
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.LoadedSpriteDataContainer
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.LoadedSpriteDataContainer
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.html
-  name: CharacterPieceInfo.LoadedSpriteDataContainer
-  nameWithType: CharacterPieceInfo.LoadedSpriteDataContainer
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.LoadedSpriteDataContainer
-  spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-    name: CharacterPieceInfo
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.html
-  - name: .
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.LoadedSpriteDataContainer
-    name: LoadedSpriteDataContainer
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.LoadedSpriteDataContainer.html
-  spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-    name: CharacterPieceInfo
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.html
-  - name: .
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.LoadedSpriteDataContainer
-    name: LoadedSpriteDataContainer
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.LoadedSpriteDataContainer.html
-- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO
-  href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.html
-  name: CharacterPieceInfo.CharacterPieceInfo_DTO
-  nameWithType: CharacterPieceInfo.CharacterPieceInfo_DTO
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO
-  spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-    name: CharacterPieceInfo
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.html
-  - name: .
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO
-    name: CharacterPieceInfo_DTO
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO.html
-  spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-    name: CharacterPieceInfo
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.html
-  - name: .
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO
-    name: CharacterPieceInfo_DTO
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO.html
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
   href: BlazerTech.html

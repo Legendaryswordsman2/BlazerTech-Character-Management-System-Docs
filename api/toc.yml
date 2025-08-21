@@ -101,20 +101,17 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupType
     name: CharacterGroupType
     type: Enum
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPiece
-    name: CharacterPiece
-    type: Class
   - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
     name: CharacterPieceCollectionSO
     type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-    name: CharacterPieceInfo
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+    name: CharacterPieceDefinition
     type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO
-    name: CharacterPieceInfo.CharacterPieceInfo_DTO
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO
+    name: CharacterPieceDefinition.CharacterPieceDefinition_DTO
     type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.LoadedSpriteDataContainer
-    name: CharacterPieceInfo.LoadedSpriteDataContainer
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer
+    name: CharacterPieceDefinition.LoadedSpriteDataContainer
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping
     name: CharacterPieceMapping
@@ -122,8 +119,8 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.CharacterSaveMode
     name: CharacterSaveMode
     type: Enum
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2
-    name: CharacterTemplateSO<TCharacterType, TCharacter>
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
+    name: CharacterTemplateBaseSO<TCharacterType, TCharacter>
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
     name: CharacterTypeBaseSO
@@ -133,6 +130,9 @@ items:
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO
     name: CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece
+    name: EquippedCharacterPiece
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup
     name: FixedCharacterGroup

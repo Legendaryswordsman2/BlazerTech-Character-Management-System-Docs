@@ -38,7 +38,7 @@ items:
   inheritance:
   - System.Object
   derivedClasses:
-  - BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
+  - BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
   nameWithType.vb: OwnedResourceTracker(Of TResource)
   fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of TResource)
   name.vb: OwnedResourceTracker(Of TResource)

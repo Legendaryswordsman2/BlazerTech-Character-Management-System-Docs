@@ -172,11 +172,11 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public List<CharacterPieceInfo> CharacterPieces { get; }
+    content: public List<CharacterPieceDefinition> CharacterPieces { get; }
     parameters: []
     return:
-      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceInfo}
-    content.vb: Public Property CharacterPieces As List(Of CharacterPieceInfo)
+      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition}
+    content.vb: Public Property CharacterPieces As List(Of CharacterPieceDefinition)
   overload: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.CharacterPieces*
 - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.Initialize(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.Initialize(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
@@ -263,13 +263,13 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public CharacterPieceInfo GetCharacterPieceInfoFromKey(string key)
+    content: public CharacterPieceDefinition GetCharacterPieceInfoFromKey(string key)
     parameters:
     - id: key
       type: System.String
     return:
-      type: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-    content.vb: Public Function GetCharacterPieceInfoFromKey(key As String) As CharacterPieceInfo
+      type: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+    content.vb: Public Function GetCharacterPieceInfoFromKey(key As String) As CharacterPieceDefinition
   overload: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.GetCharacterPieceInfoFromKey*
   nameWithType.vb: CharacterPieceCollectionSO.GetCharacterPieceInfoFromKey(String)
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.GetCharacterPieceInfoFromKey(String)
@@ -297,13 +297,13 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public CharacterPieceInfo GetCharacterPieceInfoFromSpritesheetName(string spritesheetName)
+    content: public CharacterPieceDefinition GetCharacterPieceInfoFromSpritesheetName(string spritesheetName)
     parameters:
     - id: spritesheetName
       type: System.String
     return:
-      type: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-    content.vb: Public Function GetCharacterPieceInfoFromSpritesheetName(spritesheetName As String) As CharacterPieceInfo
+      type: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+    content.vb: Public Function GetCharacterPieceInfoFromSpritesheetName(spritesheetName As String) As CharacterPieceDefinition
   overload: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.GetCharacterPieceInfoFromSpritesheetName*
   nameWithType.vb: CharacterPieceCollectionSO.GetCharacterPieceInfoFromSpritesheetName(String)
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.GetCharacterPieceInfoFromSpritesheetName(String)
@@ -331,13 +331,13 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public CharacterPieceInfo GetCharacterPieceInfoFromIndex(int index)
+    content: public CharacterPieceDefinition GetCharacterPieceInfoFromIndex(int index)
     parameters:
     - id: index
       type: System.Int32
     return:
-      type: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-    content.vb: Public Function GetCharacterPieceInfoFromIndex(index As Integer) As CharacterPieceInfo
+      type: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+    content.vb: Public Function GetCharacterPieceInfoFromIndex(index As Integer) As CharacterPieceDefinition
   overload: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.GetCharacterPieceInfoFromIndex*
   nameWithType.vb: CharacterPieceCollectionSO.GetCharacterPieceInfoFromIndex(Integer)
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.GetCharacterPieceInfoFromIndex(Integer)
@@ -638,26 +638,26 @@ references:
   name: CharacterPieces
   nameWithType: CharacterPieceCollectionSO.CharacterPieces
   fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.CharacterPieces
-- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceInfo}
-  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceInfo}
+- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition}
+  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<CharacterPieceInfo>
-  nameWithType: List<CharacterPieceInfo>
-  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.CharacterPieceInfo>
-  nameWithType.vb: List(Of CharacterPieceInfo)
-  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.CharacterPieceInfo)
-  name.vb: List(Of CharacterPieceInfo)
+  name: List<CharacterPieceDefinition>
+  nameWithType: List<CharacterPieceDefinition>
+  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition>
+  nameWithType.vb: List(Of CharacterPieceDefinition)
+  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition)
+  name.vb: List(Of CharacterPieceDefinition)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-    name: CharacterPieceInfo
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+    name: CharacterPieceDefinition
+    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -667,9 +667,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-    name: CharacterPieceInfo
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+    name: CharacterPieceDefinition
+    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
   - name: )
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
@@ -773,13 +773,13 @@ references:
   name: GetCharacterPieceInfoFromKey
   nameWithType: CharacterPieceCollectionSO.GetCharacterPieceInfoFromKey
   fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.GetCharacterPieceInfoFromKey
-- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
   parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.html
-  name: CharacterPieceInfo
-  nameWithType: CharacterPieceInfo
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
+  href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
+  name: CharacterPieceDefinition
+  nameWithType: CharacterPieceDefinition
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
 - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.GetCharacterPieceInfoFromSpritesheetName*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.GetCharacterPieceInfoFromSpritesheetName
   href: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.html#BlazerTech_CharacterManagement_Characters_CharacterPieceCollectionSO_GetCharacterPieceInfoFromSpritesheetName_System_String_

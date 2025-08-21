@@ -30,21 +30,21 @@ items:
     content: >-
       [CreateAssetMenu(menuName = "BlazerTech Character Management System/Layered Character Template", fileName = "New Layered Character Template")]
 
-      public class LayeredCharacterTemplateSO : CharacterTemplateSO<LayeredCharacterTypeSO, LayeredCharacter>
+      public class LayeredCharacterTemplateSO : CharacterTemplateBaseSO<LayeredCharacterTypeSO, LayeredCharacter>
     content.vb: >-
       <CreateAssetMenu(menuName:="BlazerTech Character Management System/Layered Character Template", fileName:="New Layered Character Template")>
 
-      Public Class LayeredCharacterTemplateSO Inherits CharacterTemplateSO(Of LayeredCharacterTypeSO, LayeredCharacter)
+      Public Class LayeredCharacterTemplateSO Inherits CharacterTemplateBaseSO(Of LayeredCharacterTypeSO, LayeredCharacter)
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.ScriptableObject
-  - BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}
+  - BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}
   inheritedMembers:
-  - BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CharacterType
-  - BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CharacterName
-  - BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.GetOrCreateCharacter
-  - BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CreateNewCharacter
+  - BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CharacterType
+  - BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CharacterName
+  - BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.GetOrCreateCharacter
+  - BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CreateNewCharacter
   attributes:
   - type: UnityEngine.CreateAssetMenuAttribute
     ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
@@ -131,7 +131,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CreateNewCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
-    startLine: 33
+    startLine: 34
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -141,7 +141,7 @@ items:
     return:
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacter
     content.vb: Protected Overrides Function CreateNewCharacter() As LayeredCharacter
-  overridden: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CreateNewCharacter
+  overridden: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CreateNewCharacter
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.CreateNewCharacter*
 references:
 - uid: BlazerTech.CharacterManagement.Characters
@@ -199,21 +199,21 @@ references:
   name: ScriptableObject
   nameWithType: ScriptableObject
   fullName: UnityEngine.ScriptableObject
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}
   parent: BlazerTech.CharacterManagement.Characters
-  definition: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2
-  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html
-  name: CharacterTemplateSO<LayeredCharacterTypeSO, LayeredCharacter>
-  nameWithType: CharacterTemplateSO<LayeredCharacterTypeSO, LayeredCharacter>
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO<BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter>
-  nameWithType.vb: CharacterTemplateSO(Of LayeredCharacterTypeSO, LayeredCharacter)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO(Of BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter)
-  name.vb: CharacterTemplateSO(Of LayeredCharacterTypeSO, LayeredCharacter)
+  definition: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
+  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html
+  name: CharacterTemplateBaseSO<LayeredCharacterTypeSO, LayeredCharacter>
+  nameWithType: CharacterTemplateBaseSO<LayeredCharacterTypeSO, LayeredCharacter>
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter>
+  nameWithType.vb: CharacterTemplateBaseSO(Of LayeredCharacterTypeSO, LayeredCharacter)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  name.vb: CharacterTemplateBaseSO(Of LayeredCharacterTypeSO, LayeredCharacter)
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2
-    name: CharacterTemplateSO
-    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
+    name: CharacterTemplateBaseSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html
   - name: <
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
     name: LayeredCharacterTypeSO
@@ -225,9 +225,9 @@ references:
     href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
   - name: '>'
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2
-    name: CharacterTemplateSO
-    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
+    name: CharacterTemplateBaseSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html
   - name: (
   - name: Of
   - name: " "
@@ -240,68 +240,68 @@ references:
     name: LayeredCharacter
     href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
   - name: )
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CharacterType
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CharacterType
-  parent: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}
-  definition: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.CharacterType
-  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_CharacterType
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CharacterType
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CharacterType
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}
+  definition: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterType
+  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CharacterType
   name: CharacterType
-  nameWithType: CharacterTemplateSO<LayeredCharacterTypeSO, LayeredCharacter>.CharacterType
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO<BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter>.CharacterType
-  nameWithType.vb: CharacterTemplateSO(Of LayeredCharacterTypeSO, LayeredCharacter).CharacterType
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO(Of BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter).CharacterType
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CharacterName
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CharacterName
-  parent: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}
-  definition: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.CharacterName
-  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_CharacterName
+  nameWithType: CharacterTemplateBaseSO<LayeredCharacterTypeSO, LayeredCharacter>.CharacterType
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter>.CharacterType
+  nameWithType.vb: CharacterTemplateBaseSO(Of LayeredCharacterTypeSO, LayeredCharacter).CharacterType
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter).CharacterType
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CharacterName
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CharacterName
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}
+  definition: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterName
+  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CharacterName
   name: CharacterName
-  nameWithType: CharacterTemplateSO<LayeredCharacterTypeSO, LayeredCharacter>.CharacterName
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO<BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter>.CharacterName
-  nameWithType.vb: CharacterTemplateSO(Of LayeredCharacterTypeSO, LayeredCharacter).CharacterName
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO(Of BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter).CharacterName
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.GetOrCreateCharacter
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.GetOrCreateCharacter
-  parent: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}
-  definition: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.GetOrCreateCharacter
-  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_GetOrCreateCharacter
+  nameWithType: CharacterTemplateBaseSO<LayeredCharacterTypeSO, LayeredCharacter>.CharacterName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter>.CharacterName
+  nameWithType.vb: CharacterTemplateBaseSO(Of LayeredCharacterTypeSO, LayeredCharacter).CharacterName
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter).CharacterName
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.GetOrCreateCharacter
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.GetOrCreateCharacter
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}
+  definition: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.GetOrCreateCharacter
+  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_GetOrCreateCharacter
   name: GetOrCreateCharacter()
-  nameWithType: CharacterTemplateSO<LayeredCharacterTypeSO, LayeredCharacter>.GetOrCreateCharacter()
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO<BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter>.GetOrCreateCharacter()
-  nameWithType.vb: CharacterTemplateSO(Of LayeredCharacterTypeSO, LayeredCharacter).GetOrCreateCharacter()
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO(Of BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter).GetOrCreateCharacter()
+  nameWithType: CharacterTemplateBaseSO<LayeredCharacterTypeSO, LayeredCharacter>.GetOrCreateCharacter()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter>.GetOrCreateCharacter()
+  nameWithType.vb: CharacterTemplateBaseSO(Of LayeredCharacterTypeSO, LayeredCharacter).GetOrCreateCharacter()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter).GetOrCreateCharacter()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.GetOrCreateCharacter
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.GetOrCreateCharacter
     name: GetOrCreateCharacter
-    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_GetOrCreateCharacter
+    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_GetOrCreateCharacter
   - name: (
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.GetOrCreateCharacter
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.GetOrCreateCharacter
     name: GetOrCreateCharacter
-    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_GetOrCreateCharacter
+    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_GetOrCreateCharacter
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CreateNewCharacter
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CreateNewCharacter
-  parent: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}
-  definition: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.CreateNewCharacter
-  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_CreateNewCharacter
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CreateNewCharacter
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CreateNewCharacter
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}
+  definition: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CreateNewCharacter
+  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CreateNewCharacter
   name: CreateNewCharacter()
-  nameWithType: CharacterTemplateSO<LayeredCharacterTypeSO, LayeredCharacter>.CreateNewCharacter()
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO<BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter>.CreateNewCharacter()
-  nameWithType.vb: CharacterTemplateSO(Of LayeredCharacterTypeSO, LayeredCharacter).CreateNewCharacter()
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO(Of BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter).CreateNewCharacter()
+  nameWithType: CharacterTemplateBaseSO<LayeredCharacterTypeSO, LayeredCharacter>.CreateNewCharacter()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter>.CreateNewCharacter()
+  nameWithType.vb: CharacterTemplateBaseSO(Of LayeredCharacterTypeSO, LayeredCharacter).CreateNewCharacter()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.LayeredCharacter).CreateNewCharacter()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CreateNewCharacter
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CreateNewCharacter
     name: CreateNewCharacter
-    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_CreateNewCharacter
+    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CreateNewCharacter
   - name: (
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CreateNewCharacter
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter}.CreateNewCharacter
     name: CreateNewCharacter
-    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_CreateNewCharacter
+    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CreateNewCharacter
   - name: (
   - name: )
 - uid: System
@@ -317,19 +317,19 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2
-  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html
-  name: CharacterTemplateSO<TCharacterType, TCharacter>
-  nameWithType: CharacterTemplateSO<TCharacterType, TCharacter>
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO<TCharacterType, TCharacter>
-  nameWithType.vb: CharacterTemplateSO(Of TCharacterType, TCharacter)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO(Of TCharacterType, TCharacter)
-  name.vb: CharacterTemplateSO(Of TCharacterType, TCharacter)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
+  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html
+  name: CharacterTemplateBaseSO<TCharacterType, TCharacter>
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter)
+  name.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter)
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2
-    name: CharacterTemplateSO
-    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
+    name: CharacterTemplateBaseSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html
   - name: <
   - name: TCharacterType
   - name: ','
@@ -337,9 +337,9 @@ references:
   - name: TCharacter
   - name: '>'
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2
-    name: CharacterTemplateSO
-    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
+    name: CharacterTemplateBaseSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html
   - name: (
   - name: Of
   - name: " "
@@ -348,60 +348,60 @@ references:
   - name: " "
   - name: TCharacter
   - name: )
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.CharacterType
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.CharacterType
-  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_CharacterType
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterType
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterType
+  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CharacterType
   name: CharacterType
-  nameWithType: CharacterTemplateSO<TCharacterType, TCharacter>.CharacterType
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO<TCharacterType, TCharacter>.CharacterType
-  nameWithType.vb: CharacterTemplateSO(Of TCharacterType, TCharacter).CharacterType
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO(Of TCharacterType, TCharacter).CharacterType
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.CharacterName
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.CharacterName
-  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_CharacterName
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterType
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterType
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterType
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterType
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterName
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterName
+  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CharacterName
   name: CharacterName
-  nameWithType: CharacterTemplateSO<TCharacterType, TCharacter>.CharacterName
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO<TCharacterType, TCharacter>.CharacterName
-  nameWithType.vb: CharacterTemplateSO(Of TCharacterType, TCharacter).CharacterName
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO(Of TCharacterType, TCharacter).CharacterName
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.GetOrCreateCharacter
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.GetOrCreateCharacter
-  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_GetOrCreateCharacter
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterName
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterName
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterName
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.GetOrCreateCharacter
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.GetOrCreateCharacter
+  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_GetOrCreateCharacter
   name: GetOrCreateCharacter()
-  nameWithType: CharacterTemplateSO<TCharacterType, TCharacter>.GetOrCreateCharacter()
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO<TCharacterType, TCharacter>.GetOrCreateCharacter()
-  nameWithType.vb: CharacterTemplateSO(Of TCharacterType, TCharacter).GetOrCreateCharacter()
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO(Of TCharacterType, TCharacter).GetOrCreateCharacter()
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>.GetOrCreateCharacter()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>.GetOrCreateCharacter()
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter).GetOrCreateCharacter()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter).GetOrCreateCharacter()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.GetOrCreateCharacter
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.GetOrCreateCharacter
     name: GetOrCreateCharacter
-    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_GetOrCreateCharacter
+    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_GetOrCreateCharacter
   - name: (
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.GetOrCreateCharacter
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.GetOrCreateCharacter
     name: GetOrCreateCharacter
-    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_GetOrCreateCharacter
+    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_GetOrCreateCharacter
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.CreateNewCharacter
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.CreateNewCharacter
-  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_CreateNewCharacter
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CreateNewCharacter
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CreateNewCharacter
+  href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CreateNewCharacter
   name: CreateNewCharacter()
-  nameWithType: CharacterTemplateSO<TCharacterType, TCharacter>.CreateNewCharacter()
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO<TCharacterType, TCharacter>.CreateNewCharacter()
-  nameWithType.vb: CharacterTemplateSO(Of TCharacterType, TCharacter).CreateNewCharacter()
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO(Of TCharacterType, TCharacter).CreateNewCharacter()
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>.CreateNewCharacter()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>.CreateNewCharacter()
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CreateNewCharacter()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CreateNewCharacter()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.CreateNewCharacter
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CreateNewCharacter
     name: CreateNewCharacter
-    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_CreateNewCharacter
+    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CreateNewCharacter
   - name: (
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2.CreateNewCharacter
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CreateNewCharacter
     name: CreateNewCharacter
-    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateSO_2_CreateNewCharacter
+    href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CreateNewCharacter
   - name: (
   - name: )
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.CharacterPieceMappings*

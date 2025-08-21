@@ -117,10 +117,10 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public List<CharacterPiece> CharacterPieces
+    content: public List<EquippedCharacterPiece> CharacterPieces
     return:
-      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPiece}
-    content.vb: Public CharacterPieces As List(Of CharacterPiece)
+      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece}
+    content.vb: Public CharacterPieces As List(Of EquippedCharacterPiece)
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.OnCharacterPiecesOverriden
   commentId: E:BlazerTech.CharacterManagement.Characters.LayeredCharacter.OnCharacterPiecesOverriden
   id: OnCharacterPiecesOverriden
@@ -1100,26 +1100,26 @@ references:
   name: CharacterGroupBase
   nameWithType: CharacterGroupBase
   fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
-- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPiece}
-  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPiece}
+- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece}
+  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<CharacterPiece>
-  nameWithType: List<CharacterPiece>
-  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.CharacterPiece>
-  nameWithType.vb: List(Of CharacterPiece)
-  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.CharacterPiece)
-  name.vb: List(Of CharacterPiece)
+  name: List<EquippedCharacterPiece>
+  nameWithType: List<EquippedCharacterPiece>
+  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece>
+  nameWithType.vb: List(Of EquippedCharacterPiece)
+  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece)
+  name.vb: List(Of EquippedCharacterPiece)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPiece
-    name: CharacterPiece
-    href: BlazerTech.CharacterManagement.Characters.CharacterPiece.html
+  - uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece
+    name: EquippedCharacterPiece
+    href: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -1129,9 +1129,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPiece
-    name: CharacterPiece
-    href: BlazerTech.CharacterManagement.Characters.CharacterPiece.html
+  - uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece
+    name: EquippedCharacterPiece
+    href: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html
   - name: )
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1

@@ -777,12 +777,12 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterPieceSelector.ChangeAlpha
   nameWithType: CharacterPieceSelector.ChangeAlpha
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterPieceSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.CharacterPiece,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPieceSelectionManager)
-  name: CharacterCreationMenuOpened(CharacterPiece, CCMCharacterPieceSelectionManager)
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterPieceSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterPieceSelector_CharacterCreationMenuOpened_BlazerTech_CharacterManagement_Characters_CharacterPiece_BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterPieceSelectionManager_
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterPieceSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.CharacterPiece,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPieceSelectionManager)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterPieceSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.CharacterPiece, BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPieceSelectionManager)
-  nameWithType: CharacterPieceSelector.CharacterCreationMenuOpened(CharacterPiece, CCMCharacterPieceSelectionManager)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterPieceSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPieceSelectionManager)
+  name: CharacterCreationMenuOpened(EquippedCharacterPiece, CCMCharacterPieceSelectionManager)
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterPieceSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterPieceSelector_CharacterCreationMenuOpened_BlazerTech_CharacterManagement_Characters_EquippedCharacterPiece_BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterPieceSelectionManager_
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterPieceSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPieceSelectionManager)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterPieceSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece, BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPieceSelectionManager)
+  nameWithType: CharacterPieceSelector.CharacterCreationMenuOpened(EquippedCharacterPiece, CCMCharacterPieceSelectionManager)
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterPieceSelector.CharacterCreationMenuOpened*
   name: CharacterCreationMenuOpened
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterPieceSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterPieceSelector_CharacterCreationMenuOpened_
@@ -2089,6 +2089,234 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.ReleaseAllCharacterPieces
   nameWithType: CharacterPieceCollectionSO.ReleaseAllCharacterPieces
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+  name: CharacterPieceDefinition
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+  nameWithType: CharacterPieceDefinition
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.#ctor(System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO,System.Boolean)
+  name: CharacterPieceDefinition(string, string, int, CharacterPieceCollectionSO, bool)
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition__ctor_System_String_System_String_System_Int32_BlazerTech_CharacterManagement_Characters_CharacterPieceCollectionSO_System_Boolean_
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.#ctor(System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO,System.Boolean)
+  name.vb: New(String, String, Integer, CharacterPieceCollectionSO, Boolean)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition(string, string, int, BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO, bool)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.New(String, String, Integer, BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO, Boolean)
+  nameWithType: CharacterPieceDefinition.CharacterPieceDefinition(string, string, int, CharacterPieceCollectionSO, bool)
+  nameWithType.vb: CharacterPieceDefinition.New(String, String, Integer, CharacterPieceCollectionSO, Boolean)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.#ctor*
+  name: CharacterPieceDefinition
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition__ctor_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.New
+  nameWithType: CharacterPieceDefinition.CharacterPieceDefinition
+  nameWithType.vb: CharacterPieceDefinition.New
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResource(System.Object)
+  name: AcquireResource(object)
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_AcquireResource_System_Object_
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResource(System.Object)
+  name.vb: AcquireResource(Object)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResource(object)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResource(Object)
+  nameWithType: CharacterPieceDefinition.AcquireResource(object)
+  nameWithType.vb: CharacterPieceDefinition.AcquireResource(Object)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResource*
+  name: AcquireResource
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_AcquireResource_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResource
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResource
+  nameWithType: CharacterPieceDefinition.AcquireResource
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResourceAsync(System.Object)
+  name: AcquireResourceAsync(object)
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_AcquireResourceAsync_System_Object_
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResourceAsync(System.Object)
+  name.vb: AcquireResourceAsync(Object)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResourceAsync(object)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResourceAsync(Object)
+  nameWithType: CharacterPieceDefinition.AcquireResourceAsync(object)
+  nameWithType.vb: CharacterPieceDefinition.AcquireResourceAsync(Object)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResourceAsync*
+  name: AcquireResourceAsync
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_AcquireResourceAsync_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResourceAsync
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResourceAsync
+  nameWithType: CharacterPieceDefinition.AcquireResourceAsync
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceCollection
+  name: CharacterPieceCollection
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_CharacterPieceCollection
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceCollection
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceCollection
+  nameWithType: CharacterPieceDefinition.CharacterPieceCollection
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO
+  name: CharacterPieceDefinition.CharacterPieceDefinition_DTO
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.html
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO
+  nameWithType: CharacterPieceDefinition.CharacterPieceDefinition_DTO
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.#ctor(BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition)
+  name: CharacterPieceDefinition_DTO(CharacterPieceDefinition)
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_CharacterPieceDefinition_DTO__ctor_BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.#ctor(BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition)
+  name.vb: New(CharacterPieceDefinition)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.CharacterPieceDefinition_DTO(BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.New(BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition)
+  nameWithType: CharacterPieceDefinition.CharacterPieceDefinition_DTO.CharacterPieceDefinition_DTO(CharacterPieceDefinition)
+  nameWithType.vb: CharacterPieceDefinition.CharacterPieceDefinition_DTO.New(CharacterPieceDefinition)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.#ctor(System.String,System.String)
+  name: CharacterPieceDefinition_DTO(string, string)
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_CharacterPieceDefinition_DTO__ctor_System_String_System_String_
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.CharacterPieceDefinition_DTO(string, string)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.New(String, String)
+  nameWithType: CharacterPieceDefinition.CharacterPieceDefinition_DTO.CharacterPieceDefinition_DTO(string, string)
+  nameWithType.vb: CharacterPieceDefinition.CharacterPieceDefinition_DTO.New(String, String)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.#ctor*
+  name: CharacterPieceDefinition_DTO
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_CharacterPieceDefinition_DTO__ctor_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.CharacterPieceDefinition_DTO
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.New
+  nameWithType: CharacterPieceDefinition.CharacterPieceDefinition_DTO.CharacterPieceDefinition_DTO
+  nameWithType.vb: CharacterPieceDefinition.CharacterPieceDefinition_DTO.New
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.CharacterPieceCollectionName
+  name: CharacterPieceCollectionName
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_CharacterPieceDefinition_DTO_CharacterPieceCollectionName
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.CharacterPieceCollectionName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.CharacterPieceCollectionName
+  nameWithType: CharacterPieceDefinition.CharacterPieceDefinition_DTO.CharacterPieceCollectionName
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.CharacterPieceKey
+  name: CharacterPieceKey
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_CharacterPieceDefinition_DTO_CharacterPieceKey
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.CharacterPieceKey
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.CharacterPieceKey
+  nameWithType: CharacterPieceDefinition.CharacterPieceDefinition_DTO.CharacterPieceKey
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.DisplayNameOverride
+  name: DisplayNameOverride
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_DisplayNameOverride
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.DisplayNameOverride
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.DisplayNameOverride
+  nameWithType: CharacterPieceDefinition.DisplayNameOverride
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.GetAndLoadResource
+  name: GetAndLoadResource()
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_GetAndLoadResource
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.GetAndLoadResource
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.GetAndLoadResource()
+  nameWithType: CharacterPieceDefinition.GetAndLoadResource()
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.GetAndLoadResource*
+  name: GetAndLoadResource
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_GetAndLoadResource_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.GetAndLoadResource
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.GetAndLoadResource
+  nameWithType: CharacterPieceDefinition.GetAndLoadResource
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.GetAndLoadResourceAsync
+  name: GetAndLoadResourceAsync()
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_GetAndLoadResourceAsync
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.GetAndLoadResourceAsync
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.GetAndLoadResourceAsync()
+  nameWithType: CharacterPieceDefinition.GetAndLoadResourceAsync()
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.GetAndLoadResourceAsync*
+  name: GetAndLoadResourceAsync
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_GetAndLoadResourceAsync_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.GetAndLoadResourceAsync
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.GetAndLoadResourceAsync
+  nameWithType: CharacterPieceDefinition.GetAndLoadResourceAsync
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.Index
+  name: Index
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_Index
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.Index
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.Index
+  nameWithType: CharacterPieceDefinition.Index
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.Key
+  name: Key
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_Key
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.Key
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.Key
+  nameWithType: CharacterPieceDefinition.Key
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteData
+  name: LoadedSpriteData
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_LoadedSpriteData
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteData
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteData
+  nameWithType: CharacterPieceDefinition.LoadedSpriteData
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer
+  name: CharacterPieceDefinition.LoadedSpriteDataContainer
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.html
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer
+  nameWithType: CharacterPieceDefinition.LoadedSpriteDataContainer
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,UnityEngine.Sprite,System.String)
+  name: LoadedSpriteDataContainer(LayeredCharacterTypeSO, Sprite, string)
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_LoadedSpriteDataContainer__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_UnityEngine_Sprite_System_String_
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,UnityEngine.Sprite,System.String)
+  name.vb: New(LayeredCharacterTypeSO, Sprite, String)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.LoadedSpriteDataContainer(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, UnityEngine.Sprite, string)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.New(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, UnityEngine.Sprite, String)
+  nameWithType: CharacterPieceDefinition.LoadedSpriteDataContainer.LoadedSpriteDataContainer(LayeredCharacterTypeSO, Sprite, string)
+  nameWithType.vb: CharacterPieceDefinition.LoadedSpriteDataContainer.New(LayeredCharacterTypeSO, Sprite, String)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.#ctor*
+  name: LoadedSpriteDataContainer
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_LoadedSpriteDataContainer__ctor_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.LoadedSpriteDataContainer
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.New
+  nameWithType: CharacterPieceDefinition.LoadedSpriteDataContainer.LoadedSpriteDataContainer
+  nameWithType.vb: CharacterPieceDefinition.LoadedSpriteDataContainer.New
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.DisplayName
+  name: DisplayName
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_LoadedSpriteDataContainer_DisplayName
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.DisplayName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.DisplayName
+  nameWithType: CharacterPieceDefinition.LoadedSpriteDataContainer.DisplayName
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.GetAndCreateCharacterPreview
+  name: GetAndCreateCharacterPreview()
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_LoadedSpriteDataContainer_GetAndCreateCharacterPreview
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.GetAndCreateCharacterPreview
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.GetAndCreateCharacterPreview()
+  nameWithType: CharacterPieceDefinition.LoadedSpriteDataContainer.GetAndCreateCharacterPreview()
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.GetAndCreateCharacterPreview*
+  name: GetAndCreateCharacterPreview
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_LoadedSpriteDataContainer_GetAndCreateCharacterPreview_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.GetAndCreateCharacterPreview
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.GetAndCreateCharacterPreview
+  nameWithType: CharacterPieceDefinition.LoadedSpriteDataContainer.GetAndCreateCharacterPreview
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.Spritesheet
+  name: Spritesheet
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_LoadedSpriteDataContainer_Spritesheet
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.Spritesheet
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.Spritesheet
+  nameWithType: CharacterPieceDefinition.LoadedSpriteDataContainer.Spritesheet
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.SpritesheetName
+  name: SpritesheetName
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_SpritesheetName
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.SpritesheetName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.SpritesheetName
+  nameWithType: CharacterPieceDefinition.SpritesheetName
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.UnloadResource
+  name: UnloadResource()
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_UnloadResource
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.UnloadResource
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.UnloadResource()
+  nameWithType: CharacterPieceDefinition.UnloadResource()
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.UnloadResource*
+  name: UnloadResource
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_UnloadResource_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.UnloadResource
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.UnloadResource
+  nameWithType: CharacterPieceDefinition.UnloadResource
 - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
   name: CharacterPieceInfo
   href: api/BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.html
@@ -2378,6 +2606,83 @@ references:
   commentId: F:BlazerTech.CharacterManagement.Characters.CharacterSaveMode.OnExit
   fullName: BlazerTech.CharacterManagement.Characters.CharacterSaveMode.OnExit
   nameWithType: CharacterSaveMode.OnExit
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
+  name: CharacterTemplateBaseSO<TCharacterType, TCharacter>
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
+  name.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter)
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterName
+  name: CharacterName
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CharacterName
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterName
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterName
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterName
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterName
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterName*
+  name: CharacterName
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CharacterName_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterName
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterName
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterName
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterName
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterName
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterType
+  name: CharacterType
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CharacterType
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterType
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterType
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterType
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterType
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterType
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterType*
+  name: CharacterType
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CharacterType_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterType
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterType
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterType
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterType
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterType
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CreateNewCharacter
+  name: CreateNewCharacter()
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CreateNewCharacter
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CreateNewCharacter
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>.CreateNewCharacter()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CreateNewCharacter()
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>.CreateNewCharacter()
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CreateNewCharacter()
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CreateNewCharacter*
+  name: CreateNewCharacter
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CreateNewCharacter_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CreateNewCharacter
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>.CreateNewCharacter
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CreateNewCharacter
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>.CreateNewCharacter
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CreateNewCharacter
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.GetOrCreateCharacter
+  name: GetOrCreateCharacter()
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_GetOrCreateCharacter
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.GetOrCreateCharacter
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>.GetOrCreateCharacter()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter).GetOrCreateCharacter()
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>.GetOrCreateCharacter()
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter).GetOrCreateCharacter()
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.GetOrCreateCharacter*
+  name: GetOrCreateCharacter
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_GetOrCreateCharacter_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.GetOrCreateCharacter
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>.GetOrCreateCharacter
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter).GetOrCreateCharacter
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>.GetOrCreateCharacter
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter).GetOrCreateCharacter
 - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateSO`2
   name: CharacterTemplateSO<TCharacterType, TCharacter>
   href: api/BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html
@@ -2691,6 +2996,71 @@ references:
   commentId: F:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.SuccessfullyInitialized
   fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.SuccessfullyInitialized
   nameWithType: CharacterTypeGroupCollection.SuccessfullyInitialized
+- uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece
+  name: EquippedCharacterPiece
+  href: api/BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html
+  commentId: T:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece
+  fullName: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece
+  nameWithType: EquippedCharacterPiece
+- uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor(BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece)
+  name: EquippedCharacterPiece(EquippedCharacterPiece)
+  href: api/BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html#BlazerTech_CharacterManagement_Characters_EquippedCharacterPiece__ctor_BlazerTech_CharacterManagement_Characters_EquippedCharacterPiece_
+  commentId: M:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor(BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece)
+  name.vb: New(EquippedCharacterPiece)
+  fullName: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.EquippedCharacterPiece(BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.New(BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece)
+  nameWithType: EquippedCharacterPiece.EquippedCharacterPiece(EquippedCharacterPiece)
+  nameWithType.vb: EquippedCharacterPiece.New(EquippedCharacterPiece)
+- uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition,BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
+  name: EquippedCharacterPiece(LayeredCharacter, CharacterPieceDefinition, CharacterPieceCollectionSO)
+  href: api/BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html#BlazerTech_CharacterManagement_Characters_EquippedCharacterPiece__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_BlazerTech_CharacterManagement_Characters_CharacterPieceCollectionSO_
+  commentId: M:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition,BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
+  name.vb: New(LayeredCharacter, CharacterPieceDefinition, CharacterPieceCollectionSO)
+  fullName: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.EquippedCharacterPiece(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition, BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.New(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition, BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
+  nameWithType: EquippedCharacterPiece.EquippedCharacterPiece(LayeredCharacter, CharacterPieceDefinition, CharacterPieceCollectionSO)
+  nameWithType.vb: EquippedCharacterPiece.New(LayeredCharacter, CharacterPieceDefinition, CharacterPieceCollectionSO)
+- uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor*
+  name: EquippedCharacterPiece
+  href: api/BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html#BlazerTech_CharacterManagement_Characters_EquippedCharacterPiece__ctor_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.EquippedCharacterPiece
+  fullName.vb: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.New
+  nameWithType: EquippedCharacterPiece.EquippedCharacterPiece
+  nameWithType.vb: EquippedCharacterPiece.New
+- uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.AttachedCharacter
+  name: AttachedCharacter
+  href: api/BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html#BlazerTech_CharacterManagement_Characters_EquippedCharacterPiece_AttachedCharacter
+  commentId: F:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.AttachedCharacter
+  fullName: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.AttachedCharacter
+  nameWithType: EquippedCharacterPiece.AttachedCharacter
+- uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.CharacterPieceCollection
+  name: CharacterPieceCollection
+  href: api/BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html#BlazerTech_CharacterManagement_Characters_EquippedCharacterPiece_CharacterPieceCollection
+  commentId: F:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.CharacterPieceCollection
+  fullName: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.CharacterPieceCollection
+  nameWithType: EquippedCharacterPiece.CharacterPieceCollection
+- uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.CharacterPieceInfo
+  name: CharacterPieceInfo
+  href: api/BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html#BlazerTech_CharacterManagement_Characters_EquippedCharacterPiece_CharacterPieceInfo
+  commentId: P:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.CharacterPieceInfo
+  fullName: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.CharacterPieceInfo
+  nameWithType: EquippedCharacterPiece.CharacterPieceInfo
+- uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.CharacterPieceInfo*
+  name: CharacterPieceInfo
+  href: api/BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html#BlazerTech_CharacterManagement_Characters_EquippedCharacterPiece_CharacterPieceInfo_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.CharacterPieceInfo
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.CharacterPieceInfo
+  nameWithType: EquippedCharacterPiece.CharacterPieceInfo
+- uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.OnCharacterPieceUpdated
+  name: OnCharacterPieceUpdated
+  href: api/BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html#BlazerTech_CharacterManagement_Characters_EquippedCharacterPiece_OnCharacterPieceUpdated
+  commentId: E:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.OnCharacterPieceUpdated
+  fullName: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.OnCharacterPieceUpdated
+  nameWithType: EquippedCharacterPiece.OnCharacterPieceUpdated
 - uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup
   name: FixedCharacterGroup
   href: api/BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.html

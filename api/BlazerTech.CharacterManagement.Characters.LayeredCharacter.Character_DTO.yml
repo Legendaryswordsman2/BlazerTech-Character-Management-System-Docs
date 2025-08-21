@@ -147,10 +147,10 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public List<CharacterPieceInfo.CharacterPieceInfo_DTO> CharacterPieces
+    content: public List<CharacterPieceDefinition.CharacterPieceDefinition_DTO> CharacterPieces
     return:
-      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO}
-    content.vb: Public CharacterPieces As List(Of CharacterPieceInfo.CharacterPieceInfo_DTO)
+      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO}
+    content.vb: Public CharacterPieces As List(Of CharacterPieceDefinition.CharacterPieceDefinition_DTO)
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   id: '#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)'
@@ -243,30 +243,30 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO}
-  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO}
+- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO}
+  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<CharacterPieceInfo.CharacterPieceInfo_DTO>
-  nameWithType: List<CharacterPieceInfo.CharacterPieceInfo_DTO>
-  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO>
-  nameWithType.vb: List(Of CharacterPieceInfo.CharacterPieceInfo_DTO)
-  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO)
-  name.vb: List(Of CharacterPieceInfo.CharacterPieceInfo_DTO)
+  name: List<CharacterPieceDefinition.CharacterPieceDefinition_DTO>
+  nameWithType: List<CharacterPieceDefinition.CharacterPieceDefinition_DTO>
+  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO>
+  nameWithType.vb: List(Of CharacterPieceDefinition.CharacterPieceDefinition_DTO)
+  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO)
+  name.vb: List(Of CharacterPieceDefinition.CharacterPieceDefinition_DTO)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-    name: CharacterPieceInfo
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+    name: CharacterPieceDefinition
+    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
   - name: .
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO
-    name: CharacterPieceInfo_DTO
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO
+    name: CharacterPieceDefinition_DTO
+    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.html
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -276,13 +276,13 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo
-    name: CharacterPieceInfo
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+    name: CharacterPieceDefinition
+    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
   - name: .
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO
-    name: CharacterPieceInfo_DTO
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO
+    name: CharacterPieceDefinition_DTO
+    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO.html
   - name: )
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
