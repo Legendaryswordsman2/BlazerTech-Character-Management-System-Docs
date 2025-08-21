@@ -1579,20 +1579,20 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/Test.md",
+      "source_relative_path": "docs/character-types.md",
       "output": {
         ".html": {
-          "relative_path": "docs/Test.html"
+          "relative_path": "docs/character-types.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/character-types.md",
+      "source_relative_path": "docs/getting-started/basic-concepts.md",
       "output": {
         ".html": {
-          "relative_path": "docs/character-types.html"
+          "relative_path": "docs/getting-started/basic-concepts.html"
         }
       },
       "version": ""

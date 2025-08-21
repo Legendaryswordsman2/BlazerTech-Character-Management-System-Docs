@@ -1,2 +1,2 @@
 
-{"items":[{"name":"Test","href":"Test.html","topicHref":"Test.html"},{"name":"Character Types","href":"character-types.html","topicHref":"character-types.html"},{"name":"Introduction","href":"introduction.html","topicHref":"introduction.html"}],"pdf":true}
+{"items":[{"name":"Test"},{"name":"Getting Started","items":[{"name":"Basic Concepts","href":"getting-started/basic-concepts.html","topicHref":"getting-started/basic-concepts.html"}]},{"name":"Character Types","href":"character-types.html","topicHref":"character-types.html"},{"name":"Introduction","href":"introduction.html","topicHref":"introduction.html"}],"pdf":false}
