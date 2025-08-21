@@ -6182,3 +6182,6 @@ references:
   fullName.vb: BlazerTech.CharacterManagement.Utilities.SerializableInterface(Of T).Interface
   nameWithType: SerializableInterface<T>.Interface
   nameWithType.vb: SerializableInterface(Of T).Interface
+- uid: basic-concepts
+  name: Customization
+  href: docs/getting-started/basic-concepts.html

@@ -42,7 +42,7 @@
       "_appName": "BlazerTech Character Management System",
       "_appTitle": "BlazerTech Character Management System",
       "_enableSearch": true,
-      "pdf": true
+      "pdf": false
     }
   }
 }

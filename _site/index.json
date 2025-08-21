@@ -554,15 +554,15 @@
     "title": "Namespace BlazerTech.CharacterManagement.Utilities | BlazerTech Character Management System",
     "summary": "Namespace BlazerTech.CharacterManagement.Utilities Classes SerializableInterfaceDrawer SerializableInterface<T>"
   },
-  "docs/Test.html": {
-    "href": "docs/Test.html",
-    "title": "| BlazerTech Character Management System",
-    "summary": ""
-  },
   "docs/character-types.html": {
     "href": "docs/character-types.html",
     "title": "Character Types | BlazerTech Character Management System",
     "summary": "Character Types Character Types are Scriptable Objects that define core aspects of a character. They are the heart of the Character Management System. Note All Characters Require a Character Type. Character Type Base All Character Types inherit from CharacterTypeBaseSO, which contains the core properties shared across all Character Types. Character Type Variants Variant Modularity Runtime Customization Best For Unified Single spritesheet None Pre-created, fixed characters Layered Layered spritesheets High Modular, editable characters 1. Unified Character Type Each character uses a single spritesheet containing the fully assembled character. No runtime customization is possible. Use Case: Characters with fixed, pre-rendered appearances. Example: Simplistic characters where their appearance is pre-determined and won't need to be changed. Read More → Unified Character Type 2. Layered Character Type A set of separate spritesheets, each containing one visual layer of the character. Use Case: Customizable player characters or dynamically generated NPCs. Example: Body, Outfit, Hairstyle, Accessory Read More → Layered Character Type"
+  },
+  "docs/getting-started/basic-concepts.html": {
+    "href": "docs/getting-started/basic-concepts.html",
+    "title": "Customization | BlazerTech Character Management System",
+    "summary": "Basic Concepts"
   },
   "docs/introduction.html": {
     "href": "docs/introduction.html",
@@ -572,6 +572,6 @@
   "index.html": {
     "href": "index.html",
     "title": "BlazerTech Character Management System | BlazerTech Character Management System",
-    "summary": "BlazerTech Character Management System A complete framework for hanlding a variety of 2d characters within the Unity Game Engine. Warning THIS WEBSITE IS UNDER CONSTRUCTION AND NOT YET FINISHED!"
+    "summary": "BlazerTech Character Management System Easily create, manage, and customize 2D characters! A comprehensive framework designed to handle both modular layered characters and simple unified characters. Providing an easy solution to create, use, animate and save/load characters in your Unity projects. Top Features! ✅ Runtime Customization - Modify characters anytime, even at runtime. ✅ Ease of Use - Characters can be easily implemented with a single component. ✅ Included Character Sets - Customizable modular characters with 5 layers (Body, Eyes, Outfit, Hairstyle, Accessory). ✅ Character Creator Menu! - A customizable in-game Character Creation Menu System. ✅ Character Randomization - Layered characters can be randomly generated. Perfect for background NPCs. ✅ Modern Interiors - Full support for the modular characters contained within LimeZu's Modern Interiors Asset Pack. Get Started Check out our Getting Started Guide to begin! Warning THIS WEBSITE IS UNDER CONSTRUCTION AND NOT YET FINISHED!"
   }
 }
