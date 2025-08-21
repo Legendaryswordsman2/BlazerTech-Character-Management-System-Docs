@@ -3,7 +3,7 @@ _layout: landing
 uid: landing
 ---
 
-# BlazerTech Character Management System
+# **BlazerTech Character Management System**
 Easily create, manage, and customize 2D characters!
 
 A comprehensive framework designed to handle both modular layered characters and simple unified characters. Providing an easy solution to create, use, animate and save/load characters in your Unity projects.
