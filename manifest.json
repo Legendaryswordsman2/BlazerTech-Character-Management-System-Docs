@@ -680,7 +680,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece",
-      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.yml\" sourcestartlinenumber=\"1\">A wrapper for <xref href=\"BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition\" data-throw-if-not-resolved=\"false\"></xref>. used as a list in <xref href=\"BlazerTech.CharacterManagement.Characters.LayeredCharacter\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.yml\" sourcestartlinenumber=\"1\">A wrapper for <xref href=\"BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition\" data-throw-if-not-resolved=\"false\"></xref>. used as a list in <xref href=\"BlazerTech.CharacterManagement.Characters.LayeredCharacter\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1579,6 +1579,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/Essentials/character-creator.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Essentials/character-creator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/character-types.md",
       "output": {
         ".html": {
@@ -1599,10 +1609,20 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/introduction.md",
+      "source_relative_path": "docs/getting-started/installation-and-requirements.md",
       "output": {
         ".html": {
-          "relative_path": "docs/introduction.html"
+          "relative_path": "docs/getting-started/installation-and-requirements.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started/quick-start.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started/quick-start.html"
         }
       },
       "version": ""
