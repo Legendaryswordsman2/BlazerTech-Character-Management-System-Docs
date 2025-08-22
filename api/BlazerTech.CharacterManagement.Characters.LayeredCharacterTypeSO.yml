@@ -8,11 +8,11 @@ items:
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.AcquireAllCharacterPiecesAsync(System.Action{System.Single})
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorSettings
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterMaterial
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPieceCollections
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.Initialize(UnityEngine.Material)
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsInResourcesFolder_EditMode
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsInitialized
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsValid
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.Layers
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.ReleaseAllCharacterPieces
   langs:
   - csharp
@@ -34,10 +34,14 @@ items:
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
     content: >-
+      [HelpURL("https://legendaryswordsman2.github.io/BT-Character-Management-System-Docs/api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html")]
+
       [CreateAssetMenu(menuName = "BlazerTech Character Management System/Layered Character Type", fileName = "New Layered Character Type")]
 
       public class LayeredCharacterTypeSO : CharacterTypeBaseSO, IValidatable
     content.vb: >-
+      <HelpURL("https://legendaryswordsman2.github.io/BT-Character-Management-System-Docs/api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html")>
+
       <CreateAssetMenu(menuName:="BlazerTech Character Management System/Layered Character Type", fileName:="New Layered Character Type")>
 
       Public Class LayeredCharacterTypeSO Inherits CharacterTypeBaseSO Implements IValidatable
@@ -54,6 +58,11 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValidCharacterSpriteSheet(UnityEngine.Sprite)
   attributes:
+  - type: UnityEngine.HelpURLAttribute
+    ctor: UnityEngine.HelpURLAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: https://legendaryswordsman2.github.io/BT-Character-Management-System-Docs/api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html
   - type: UnityEngine.CreateAssetMenuAttribute
     ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
     arguments: []
@@ -82,7 +91,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterCreatorSettings
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -93,35 +102,35 @@ items:
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig
     content.vb: Public Property CharacterCreatorSettings As LayeredCharacterTypeSO.CharacterCreatorConfig
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorSettings*
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPieceCollections
-  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPieceCollections
-  id: CharacterPieceCollections
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.Layers
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.Layers
+  id: Layers
   parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
   langs:
   - csharp
   - vb
-  name: CharacterPieceCollections
-  nameWithType: LayeredCharacterTypeSO.CharacterPieceCollections
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPieceCollections
+  name: Layers
+  nameWithType: LayeredCharacterTypeSO.Layers
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.Layers
   type: Property
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterPieceCollections
+    id: Layers
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public List<CharacterPieceCollectionSO> CharacterPieceCollections { get; }
+    content: public List<CharacterLayerSO> Layers { get; }
     parameters: []
     return:
-      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO}
-    content.vb: Public Property CharacterPieceCollections As List(Of CharacterPieceCollectionSO)
-  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPieceCollections*
+      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerSO}
+    content.vb: Public Property Layers As List(Of CharacterLayerSO)
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.Layers*
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterMaterial
   commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterMaterial
   id: CharacterMaterial
@@ -140,7 +149,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterMaterial
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -169,7 +178,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Initialize
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -200,7 +209,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsValid
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 39
+    startLine: 40
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -231,7 +240,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: AcquireAllCharacterPiecesAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 59
+    startLine: 60
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -265,7 +274,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ReleaseAllCharacterPieces
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 84
+    startLine: 85
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -291,7 +300,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsInitialized
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 94
+    startLine: 95
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -319,7 +328,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsInResourcesFolder_EditMode
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 110
+    startLine: 111
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -518,32 +527,32 @@ references:
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig
     name: CharacterCreatorConfig
     href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.html
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPieceCollections*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPieceCollections
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterPieceCollections
-  name: CharacterPieceCollections
-  nameWithType: LayeredCharacterTypeSO.CharacterPieceCollections
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPieceCollections
-- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO}
-  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO}
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.Layers*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.Layers
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_Layers
+  name: Layers
+  nameWithType: LayeredCharacterTypeSO.Layers
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.Layers
+- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerSO}
+  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerSO}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<CharacterPieceCollectionSO>
-  nameWithType: List<CharacterPieceCollectionSO>
-  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO>
-  nameWithType.vb: List(Of CharacterPieceCollectionSO)
-  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
-  name.vb: List(Of CharacterPieceCollectionSO)
+  name: List<CharacterLayerSO>
+  nameWithType: List<CharacterLayerSO>
+  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.CharacterLayerSO>
+  nameWithType.vb: List(Of CharacterLayerSO)
+  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
+  name.vb: List(Of CharacterLayerSO)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-    name: CharacterPieceCollectionSO
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+    name: CharacterLayerSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -553,9 +562,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-    name: CharacterPieceCollectionSO
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+    name: CharacterLayerSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html
   - name: )
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1

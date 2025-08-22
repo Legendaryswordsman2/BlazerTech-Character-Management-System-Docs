@@ -1,0 +1,2 @@
+# Character Layers
+A Character Layer is a [Scriptable Object](https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html) that contains all available character spritesheets for that specific layer.

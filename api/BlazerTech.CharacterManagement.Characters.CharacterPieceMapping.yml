@@ -5,7 +5,7 @@ items:
   id: CharacterPieceMapping
   parent: BlazerTech.CharacterManagement.Characters
   children:
-  - BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
+  - BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
   - BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.SelectedCharacterPieceName
   - BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.characterPieceCollection
   langs:
@@ -26,7 +26,7 @@ items:
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
-  summary: References a <xref href="BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition" data-throw-if-not-resolved="false"></xref> within a <xref href="BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO" data-throw-if-not-resolved="false"></xref> by spritesheet name.
+  summary: References a <xref href="BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition" data-throw-if-not-resolved="false"></xref> within a <xref href="BlazerTech.CharacterManagement.Characters.CharacterLayerSO" data-throw-if-not-resolved="false"></xref> by spritesheet name.
   example: []
   syntax:
     content: >-
@@ -66,10 +66,10 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public CharacterPieceCollectionSO characterPieceCollection
+    content: public CharacterLayerSO characterPieceCollection
     return:
-      type: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-    content.vb: Public characterPieceCollection As CharacterPieceCollectionSO
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+    content.vb: Public characterPieceCollection As CharacterLayerSO
 - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.SelectedCharacterPieceName
   commentId: F:BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.SelectedCharacterPieceName
   id: SelectedCharacterPieceName
@@ -97,16 +97,16 @@ items:
     return:
       type: System.String
     content.vb: Public SelectedCharacterPieceName As String
-- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
-  id: '#ctor(BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)'
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
+  id: '#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerSO)'
   parent: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping
   langs:
   - csharp
   - vb
-  name: CharacterPieceMapping(CharacterPieceCollectionSO)
-  nameWithType: CharacterPieceMapping.CharacterPieceMapping(CharacterPieceCollectionSO)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.CharacterPieceMapping(BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
+  name: CharacterPieceMapping(CharacterLayerSO)
+  nameWithType: CharacterPieceMapping.CharacterPieceMapping(CharacterLayerSO)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.CharacterPieceMapping(BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
   type: Constructor
   source:
     remote:
@@ -120,15 +120,15 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public CharacterPieceMapping(CharacterPieceCollectionSO collectionSO)
+    content: public CharacterPieceMapping(CharacterLayerSO collectionSO)
     parameters:
     - id: collectionSO
-      type: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-    content.vb: Public Sub New(collectionSO As CharacterPieceCollectionSO)
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+    content.vb: Public Sub New(collectionSO As CharacterLayerSO)
   overload: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.#ctor*
-  nameWithType.vb: CharacterPieceMapping.New(CharacterPieceCollectionSO)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.New(BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
-  name.vb: New(CharacterPieceCollectionSO)
+  nameWithType.vb: CharacterPieceMapping.New(CharacterLayerSO)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.New(BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
+  name.vb: New(CharacterLayerSO)
 references:
 - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
   commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
@@ -137,13 +137,13 @@ references:
   name: CharacterPieceDefinition
   nameWithType: CharacterPieceDefinition
   fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
-- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerSO
   parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.html
-  name: CharacterPieceCollectionSO
-  nameWithType: CharacterPieceCollectionSO
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html
+  name: CharacterLayerSO
+  nameWithType: CharacterLayerSO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
   href: BlazerTech.html
@@ -205,7 +205,7 @@ references:
   name.vb: String
 - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.#ctor*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.#ctor
-  href: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.html#BlazerTech_CharacterManagement_Characters_CharacterPieceMapping__ctor_BlazerTech_CharacterManagement_Characters_CharacterPieceCollectionSO_
+  href: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.html#BlazerTech_CharacterManagement_Characters_CharacterPieceMapping__ctor_BlazerTech_CharacterManagement_Characters_CharacterLayerSO_
   name: CharacterPieceMapping
   nameWithType: CharacterPieceMapping.CharacterPieceMapping
   fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.CharacterPieceMapping

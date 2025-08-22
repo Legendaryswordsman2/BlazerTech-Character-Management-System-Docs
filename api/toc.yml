@@ -101,8 +101,8 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupType
     name: CharacterGroupType
     type: Enum
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-    name: CharacterPieceCollectionSO
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+    name: CharacterLayerSO
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
     name: CharacterPieceDefinition

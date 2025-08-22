@@ -101,7 +101,8 @@ Class LayeredCharacterTypeSO  <a class="header-action link-secondary" title="Vie
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CreateAssetMenu(menuName = &quot;BlazerTech Character Management System/Layered Character Type&quot;, fileName = &quot;New Layered Character Type&quot;)]
+    <pre><code class="lang-csharp hljs">[HelpURL(&quot;https://legendaryswordsman2.github.io/BT-Character-Management-System-Docs/api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html&quot;)]
+[CreateAssetMenu(menuName = &quot;BlazerTech Character Management System/Layered Character Type&quot;, fileName = &quot;New Layered Character Type&quot;)]
 public class LayeredCharacterTypeSO : CharacterTypeBaseSO, IValidatable</code></pre>
   </div>
 
@@ -157,7 +158,7 @@ public class LayeredCharacterTypeSO : CharacterTypeBaseSO, IValidatable</code></
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterCreatorSettings" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorSettings">
   CharacterCreatorSettings
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -188,7 +189,7 @@ public class LayeredCharacterTypeSO : CharacterTypeBaseSO, IValidatable</code></
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterMaterial" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterMaterial">
   CharacterMaterial
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -215,18 +216,18 @@ public class LayeredCharacterTypeSO : CharacterTypeBaseSO, IValidatable</code></
 
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterPieceCollections_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPieceCollections*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_Layers_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.Layers*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterPieceCollections" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPieceCollections">
-  CharacterPieceCollections
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_Layers" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.Layers">
+  Layers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;CharacterPieceCollectionSO&gt; CharacterPieceCollections { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;CharacterLayerSO&gt; Layers { get; }</code></pre>
   </div>
 
 
@@ -235,7 +236,7 @@ public class LayeredCharacterTypeSO : CharacterTypeBaseSO, IValidatable</code></
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.html">CharacterPieceCollectionSO</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html">CharacterLayerSO</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -254,7 +255,7 @@ public class LayeredCharacterTypeSO : CharacterTypeBaseSO, IValidatable</code></
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_AcquireAllCharacterPiecesAsync_System_Action_System_Single__" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.AcquireAllCharacterPiecesAsync(System.Action{System.Single})">
   AcquireAllCharacterPiecesAsync(Action&lt;float&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -290,7 +291,7 @@ public class LayeredCharacterTypeSO : CharacterTypeBaseSO, IValidatable</code></
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_Initialize_UnityEngine_Material_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.Initialize(UnityEngine.Material)">
   Initialize(Material)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -326,7 +327,7 @@ public class LayeredCharacterTypeSO : CharacterTypeBaseSO, IValidatable</code></
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_IsInResourcesFolder_EditMode" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsInResourcesFolder_EditMode">
   IsInResourcesFolder_EditMode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -357,7 +358,7 @@ public class LayeredCharacterTypeSO : CharacterTypeBaseSO, IValidatable</code></
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_IsInitialized" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsInitialized">
   IsInitialized()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -388,7 +389,7 @@ public class LayeredCharacterTypeSO : CharacterTypeBaseSO, IValidatable</code></
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_IsValid" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsValid">
   IsValid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -419,7 +420,7 @@ public class LayeredCharacterTypeSO : CharacterTypeBaseSO, IValidatable</code></
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_ReleaseAllCharacterPieces" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.ReleaseAllCharacterPieces">
   ReleaseAllCharacterPieces()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

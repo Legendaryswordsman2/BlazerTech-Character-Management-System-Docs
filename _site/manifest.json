@@ -460,6 +460,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterLayerSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Characters.CharacterLayerSO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPiece.yml",
       "output": {
         ".html": {
@@ -582,7 +596,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Characters.CharacterPieceMapping",
-      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.yml\" sourcestartlinenumber=\"1\">References a <xref href=\"BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition\" data-throw-if-not-resolved=\"false\"></xref> within a <xref href=\"BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO\" data-throw-if-not-resolved=\"false\"></xref> by spritesheet name.</p>\n"
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.yml\" sourcestartlinenumber=\"1\">References a <xref href=\"BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition\" data-throw-if-not-resolved=\"false\"></xref> within a <xref href=\"BlazerTech.CharacterManagement.Characters.CharacterLayerSO\" data-throw-if-not-resolved=\"false\"></xref> by spritesheet name.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1599,10 +1613,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/essentials/character-piece-collections.md",
+      "source_relative_path": "docs/essentials/character-layers.md",
       "output": {
         ".html": {
-          "relative_path": "docs/essentials/character-piece-collections.html"
+          "relative_path": "docs/essentials/character-layers.html"
         }
       },
       "version": ""

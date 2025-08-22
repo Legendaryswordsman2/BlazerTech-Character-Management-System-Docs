@@ -26,7 +26,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterPreviewsSettings
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 149
+    startLine: 150
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -63,7 +63,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterPreviewController
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 152
+    startLine: 153
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -90,7 +90,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterPlaceholderSprite
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 153
+    startLine: 154
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -117,16 +117,16 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: BaseCharacterPieceCollection
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 156
+    startLine: 157
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public CharacterPieceCollectionSO BaseCharacterPieceCollection { get; }
+    content: public CharacterLayerSO BaseCharacterPieceCollection { get; }
     parameters: []
     return:
-      type: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-    content.vb: Public Property BaseCharacterPieceCollection As CharacterPieceCollectionSO
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+    content.vb: Public Property BaseCharacterPieceCollection As CharacterLayerSO
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceCollection*
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceLoadedSpriteIndex
   commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceLoadedSpriteIndex
@@ -146,7 +146,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: BaseCharacterPieceLoadedSpriteIndex
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 160
+    startLine: 161
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -175,7 +175,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: PreviewFrameWidth
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 165
+    startLine: 166
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -214,7 +214,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: PreviewFrameHeight
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 166
+    startLine: 167
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -241,7 +241,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterPreviewFrameIndex
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 167
+    startLine: 168
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -325,13 +325,13 @@ references:
   name: BaseCharacterPieceCollection
   nameWithType: LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceCollection
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceCollection
-- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerSO
   parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.html
-  name: CharacterPieceCollectionSO
-  nameWithType: CharacterPieceCollectionSO
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html
+  name: CharacterLayerSO
+  nameWithType: CharacterLayerSO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceLoadedSpriteIndex*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceLoadedSpriteIndex
   href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterPreviewsSettings_BaseCharacterPieceLoadedSpriteIndex

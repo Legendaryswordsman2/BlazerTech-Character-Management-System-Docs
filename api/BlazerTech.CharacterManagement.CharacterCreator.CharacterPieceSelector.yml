@@ -71,11 +71,11 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
-    content: public CharacterPieceCollectionSO CharacterPieceCollectionOverride { get; }
+    content: public CharacterLayerSO CharacterPieceCollectionOverride { get; }
     parameters: []
     return:
-      type: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-    content.vb: Public Property CharacterPieceCollectionOverride As CharacterPieceCollectionSO
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+    content.vb: Public Property CharacterPieceCollectionOverride As CharacterLayerSO
   overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterPieceSelector.CharacterPieceCollectionOverride*
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterPieceSelector.characterCreationMenuManager
   commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterPieceSelector.characterCreationMenuManager
@@ -528,13 +528,13 @@ references:
   name: CharacterPieceCollectionOverride
   nameWithType: CharacterPieceSelector.CharacterPieceCollectionOverride
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterPieceSelector.CharacterPieceCollectionOverride
-- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerSO
   parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.html
-  name: CharacterPieceCollectionSO
-  nameWithType: CharacterPieceCollectionSO
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html
+  name: CharacterLayerSO
+  nameWithType: CharacterLayerSO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
   href: BlazerTech.html

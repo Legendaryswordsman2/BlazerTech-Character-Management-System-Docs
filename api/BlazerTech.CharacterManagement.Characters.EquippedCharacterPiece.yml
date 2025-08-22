@@ -6,7 +6,7 @@ items:
   parent: BlazerTech.CharacterManagement.Characters
   children:
   - BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor(BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece)
-  - BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition,BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
+  - BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition,BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
   - BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.AttachedCharacter
   - BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.CharacterPieceCollection
   - BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.CharacterPieceInfo
@@ -106,10 +106,10 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public CharacterPieceCollectionSO CharacterPieceCollection
+    content: public CharacterLayerSO CharacterPieceCollection
     return:
-      type: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-    content.vb: Public CharacterPieceCollection As CharacterPieceCollectionSO
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+    content.vb: Public CharacterPieceCollection As CharacterLayerSO
 - uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.CharacterPieceInfo
   commentId: P:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.CharacterPieceInfo
   id: CharacterPieceInfo
@@ -166,16 +166,16 @@ items:
     return:
       type: System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition}
     content.vb: Public Event OnCharacterPieceUpdated As EventHandler(Of CharacterPieceDefinition)
-- uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition,BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
-  commentId: M:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition,BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
-  id: '#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition,BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)'
+- uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition,BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
+  commentId: M:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition,BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
+  id: '#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition,BlazerTech.CharacterManagement.Characters.CharacterLayerSO)'
   parent: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece
   langs:
   - csharp
   - vb
-  name: EquippedCharacterPiece(LayeredCharacter, CharacterPieceDefinition, CharacterPieceCollectionSO)
-  nameWithType: EquippedCharacterPiece.EquippedCharacterPiece(LayeredCharacter, CharacterPieceDefinition, CharacterPieceCollectionSO)
-  fullName: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.EquippedCharacterPiece(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition, BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
+  name: EquippedCharacterPiece(LayeredCharacter, CharacterPieceDefinition, CharacterLayerSO)
+  nameWithType: EquippedCharacterPiece.EquippedCharacterPiece(LayeredCharacter, CharacterPieceDefinition, CharacterLayerSO)
+  fullName: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.EquippedCharacterPiece(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition, BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
   type: Constructor
   source:
     remote:
@@ -189,19 +189,19 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public EquippedCharacterPiece(LayeredCharacter attachedCharacter, CharacterPieceDefinition characterPieceInfo, CharacterPieceCollectionSO characterPieceCollection)
+    content: public EquippedCharacterPiece(LayeredCharacter attachedCharacter, CharacterPieceDefinition characterPieceInfo, CharacterLayerSO characterPieceCollection)
     parameters:
     - id: attachedCharacter
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacter
     - id: characterPieceInfo
       type: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
     - id: characterPieceCollection
-      type: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-    content.vb: Public Sub New(attachedCharacter As LayeredCharacter, characterPieceInfo As CharacterPieceDefinition, characterPieceCollection As CharacterPieceCollectionSO)
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+    content.vb: Public Sub New(attachedCharacter As LayeredCharacter, characterPieceInfo As CharacterPieceDefinition, characterPieceCollection As CharacterLayerSO)
   overload: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor*
-  nameWithType.vb: EquippedCharacterPiece.New(LayeredCharacter, CharacterPieceDefinition, CharacterPieceCollectionSO)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.New(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition, BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
-  name.vb: New(LayeredCharacter, CharacterPieceDefinition, CharacterPieceCollectionSO)
+  nameWithType.vb: EquippedCharacterPiece.New(LayeredCharacter, CharacterPieceDefinition, CharacterLayerSO)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.New(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition, BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
+  name.vb: New(LayeredCharacter, CharacterPieceDefinition, CharacterLayerSO)
 - uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor(BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece)
   commentId: M:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor(BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece)
   id: '#ctor(BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece)'
@@ -297,13 +297,13 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerSO
   parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.html
-  name: CharacterPieceCollectionSO
-  nameWithType: CharacterPieceCollectionSO
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html
+  name: CharacterLayerSO
+  nameWithType: CharacterLayerSO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
 - uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.CharacterPieceInfo*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.CharacterPieceInfo
   href: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html#BlazerTech_CharacterManagement_Characters_EquippedCharacterPiece_CharacterPieceInfo
@@ -373,7 +373,7 @@ references:
   - name: )
 - uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.#ctor
-  href: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html#BlazerTech_CharacterManagement_Characters_EquippedCharacterPiece__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_BlazerTech_CharacterManagement_Characters_CharacterPieceCollectionSO_
+  href: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.html#BlazerTech_CharacterManagement_Characters_EquippedCharacterPiece__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition_BlazerTech_CharacterManagement_Characters_CharacterLayerSO_
   name: EquippedCharacterPiece
   nameWithType: EquippedCharacterPiece.EquippedCharacterPiece
   fullName: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece.EquippedCharacterPiece

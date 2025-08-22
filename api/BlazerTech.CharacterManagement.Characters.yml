@@ -11,7 +11,7 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter
   - BlazerTech.CharacterManagement.Characters.CharacterGroupBase
   - BlazerTech.CharacterManagement.Characters.CharacterGroupType
-  - BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerSO
   - BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
   - BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO
   - BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer
@@ -61,13 +61,6 @@ references:
   name: UnifiedCharacterTemplateSO
   nameWithType: UnifiedCharacterTemplateSO
   fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO
-- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.html
-  name: CharacterPieceCollectionSO
-  nameWithType: CharacterPieceCollectionSO
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2
   commentId: T:BlazerTech.CharacterManagement.Characters.CharacterBase`2
   href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html
@@ -549,6 +542,13 @@ references:
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings
     name: CharacterPreviewsSettings
     href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.html
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html
+  name: CharacterLayerSO
+  nameWithType: CharacterLayerSO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
   href: BlazerTech.html

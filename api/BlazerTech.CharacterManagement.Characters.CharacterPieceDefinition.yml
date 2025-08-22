@@ -5,7 +5,7 @@ items:
   id: CharacterPieceDefinition
   parent: BlazerTech.CharacterManagement.Characters
   children:
-  - BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.#ctor(System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO,System.Boolean)
+  - BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.#ctor(System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterLayerSO,System.Boolean)
   - BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResource(System.Object)
   - BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResourceAsync(System.Object)
   - BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceCollection
@@ -225,27 +225,27 @@ items:
     content: >-
       [Space]
 
-      public CharacterPieceCollectionSO CharacterPieceCollection
+      public CharacterLayerSO CharacterPieceCollection
     return:
-      type: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
     content.vb: >-
       <Space>
 
-      Public CharacterPieceCollection As CharacterPieceCollectionSO
+      Public CharacterPieceCollection As CharacterLayerSO
   attributes:
   - type: UnityEngine.SpaceAttribute
     ctor: UnityEngine.SpaceAttribute.#ctor
     arguments: []
-- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.#ctor(System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO,System.Boolean)
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.#ctor(System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO,System.Boolean)
-  id: '#ctor(System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO,System.Boolean)'
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.#ctor(System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterLayerSO,System.Boolean)
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.#ctor(System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterLayerSO,System.Boolean)
+  id: '#ctor(System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterLayerSO,System.Boolean)'
   parent: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
   langs:
   - csharp
   - vb
-  name: CharacterPieceDefinition(string, string, int, CharacterPieceCollectionSO, bool)
-  nameWithType: CharacterPieceDefinition.CharacterPieceDefinition(string, string, int, CharacterPieceCollectionSO, bool)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition(string, string, int, BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO, bool)
+  name: CharacterPieceDefinition(string, string, int, CharacterLayerSO, bool)
+  nameWithType: CharacterPieceDefinition.CharacterPieceDefinition(string, string, int, CharacterLayerSO, bool)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition(string, string, int, BlazerTech.CharacterManagement.Characters.CharacterLayerSO, bool)
   type: Constructor
   source:
     remote:
@@ -259,7 +259,7 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public CharacterPieceDefinition(string spritesheetName, string key, int index, CharacterPieceCollectionSO collection, bool ignoreSpriteCheck = false)
+    content: public CharacterPieceDefinition(string spritesheetName, string key, int index, CharacterLayerSO collection, bool ignoreSpriteCheck = false)
     parameters:
     - id: spritesheetName
       type: System.String
@@ -268,14 +268,14 @@ items:
     - id: index
       type: System.Int32
     - id: collection
-      type: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
     - id: ignoreSpriteCheck
       type: System.Boolean
-    content.vb: Public Sub New(spritesheetName As String, key As String, index As Integer, collection As CharacterPieceCollectionSO, ignoreSpriteCheck As Boolean = False)
+    content.vb: Public Sub New(spritesheetName As String, key As String, index As Integer, collection As CharacterLayerSO, ignoreSpriteCheck As Boolean = False)
   overload: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.#ctor*
-  nameWithType.vb: CharacterPieceDefinition.New(String, String, Integer, CharacterPieceCollectionSO, Boolean)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.New(String, String, Integer, BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO, Boolean)
-  name.vb: New(String, String, Integer, CharacterPieceCollectionSO, Boolean)
+  nameWithType.vb: CharacterPieceDefinition.New(String, String, Integer, CharacterLayerSO, Boolean)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.New(String, String, Integer, BlazerTech.CharacterManagement.Characters.CharacterLayerSO, Boolean)
+  name.vb: New(String, String, Integer, CharacterLayerSO, Boolean)
 - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResourceAsync(System.Object)
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.AcquireResourceAsync(System.Object)
   id: AcquireResourceAsync(System.Object)
@@ -709,16 +709,16 @@ references:
   - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer
     name: LoadedSpriteDataContainer
     href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.html
-- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerSO
   parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.html
-  name: CharacterPieceCollectionSO
-  nameWithType: CharacterPieceCollectionSO
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html
+  name: CharacterLayerSO
+  nameWithType: CharacterLayerSO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
 - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.#ctor*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.#ctor
-  href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition__ctor_System_String_System_String_System_Int32_BlazerTech_CharacterManagement_Characters_CharacterPieceCollectionSO_System_Boolean_
+  href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html#BlazerTech_CharacterManagement_Characters_CharacterPieceDefinition__ctor_System_String_System_String_System_Int32_BlazerTech_CharacterManagement_Characters_CharacterLayerSO_System_Boolean_
   name: CharacterPieceDefinition
   nameWithType: CharacterPieceDefinition.CharacterPieceDefinition
   fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition
