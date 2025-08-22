@@ -638,7 +638,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.yml\" sourcestartlinenumber=\"1\">bass Scriptable Object for all Character Types.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1583,6 +1583,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/Essentials/character-creator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Essentials/character-type-properties.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Essentials/character-type-properties.html"
         }
       },
       "version": ""
