@@ -2,7 +2,7 @@
 
 ## Requirements
 > [!NOTE]
-> All required packages must be installed before installing the BlazerTech Character Management System (BT-CMS for short).
+> All required packages must be installed before installing the **BlazerTech Character Management System** (BT-CMS for short).
 
 ### 1. Addressables - Made by Unity
 Used to dynamically load/unload character spritesheets as needed.  

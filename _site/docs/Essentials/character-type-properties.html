@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Installation and Requirements | BlazerTech Character Management System </title>
+      <title>Character Type Properties | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Installation and Requirements | BlazerTech Character Management System ">
+      <meta name="title" content="Character Type Properties | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/getting-started/installation-and-requirements.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/Essentials/character-type-properties.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,33 +85,38 @@
         </div>
 
         <article data-uid="">
-<h1 id="installation-and-requirements">Installation and Requirements</h1>
+<h1 id="character-type-properties">Character Type Properties</h1>
 
-<h2 id="requirements">Requirements</h2>
-<div class="NOTE">
-<h5>Note</h5>
-<p>All required packages must be installed before installing the <strong>BlazerTech Character Management System</strong> (BT-CMS for short).</p>
-</div>
-<h3 id="1-addressables---made-by-unity">1. Addressables - Made by Unity</h3>
-<p>Used to dynamically load/unload character spritesheets as needed.<br>
-Found within the <code>Unity Registry</code> inside the <code>Package Manager</code>.</p>
-<div class="IMPORTANT">
-<h5>Important</h5>
-<p>Addressables Settings file must be created before importing <strong>BT-CMS</strong>. To create the settings file select <strong>Window/Asset Management/Addressables/Groups</strong> and click <strong>Create Addressables Settings</strong>.</p>
-</div>
+<p>The following are properties that are shared across all <strong>character types</strong>.</p>
+<h2 id="charactertypeid">CharacterTypeID</h2>
+<p>Type: <strong>String</strong>.</p>
+<blockquote>
+<p>A unique identifier used to reference this character type. Must be unique across all character types.</p>
+</blockquote>
+<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterTypeID">API</a></p>
 <hr>
-<h3 id="2-naughty-attributes">2. Naughty Attributes</h3>
-<p>Adds additonal attributes to the Unity Inspector.</p>
-<p><strong>Links</strong>:</p>
-<ul>
-<li><a href="https://dbrizov.github.io/na-docs/general/installation.html">Installation Guide</a></li>
-<li><a href="https://assetstore.unity.com/packages/tools/utilities/naughtyattributes-129996">Unity Asset Store Link</a></li>
-</ul>
+<h2 id="basespritesheet">BaseSpritesheet</h2>
+<p>Type: <strong>Spritesheet</strong>.</p>
+<blockquote>
+<p>Defines the <strong>required base sprite sheet</strong> for the character type.<br>
+Set this spritesheets <strong>Sprite Mode</strong> to <strong>Multiple</strong> and slice it.<br>
+Whenever this character is used the sprites in the <strong>BaseSpritesheet</strong> will be used and a shader will then  override them with the finalized character.<br>
+Character spritesheets with mismatched dimensions will be rejected when validated.</p>
+</blockquote>
+<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_BaseSpritesheet">API</a></p>
+<hr>
+<h2 id="charactercontroller">CharacterController</h2>
+<p>Type: <strong>RuntimeAnimatorController</strong>.</p>
+<blockquote>
+<p>The animator controller asset assigned to characters of this type.<br>
+Animations inside this controller should use sprites in the <a href="#basespritesheet">BaseSpritesheet</a>.</p>
+</blockquote>
+<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterController">API</a></p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/getting-started/installation-and-requirements.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/Essentials/character-type-properties.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

@@ -8,5 +8,7 @@
 - name: Essentials
 - name: Character Types
   href: character-types.md
+- name: Character Type Properties
+  href: Essentials/character-type-properties.md
 - name: Character Creator
   href: Essentials/character-creator.md
