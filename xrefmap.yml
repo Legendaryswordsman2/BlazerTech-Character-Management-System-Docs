@@ -461,19 +461,19 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterType
   nameWithType: CharacterCreationMenuManager.ActiveCharacterType
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefautCharacterType
-  name: DefautCharacterType
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_DefautCharacterType
-  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefautCharacterType
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefautCharacterType
-  nameWithType: CharacterCreationMenuManager.DefautCharacterType
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefautCharacterType*
-  name: DefautCharacterType
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_DefautCharacterType_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefautCharacterType
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType
+  name: DefaultCharacterType
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_DefaultCharacterType
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType
+  nameWithType: CharacterCreationMenuManager.DefaultCharacterType
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType*
+  name: DefaultCharacterType
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_DefaultCharacterType_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType
   isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefautCharacterType
-  nameWithType: CharacterCreationMenuManager.DefautCharacterType
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType
+  nameWithType: CharacterCreationMenuManager.DefaultCharacterType
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DisableMenu
   name: DisableMenu()
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_DisableMenu
@@ -6187,10 +6187,13 @@ references:
   href: docs/getting-started/basic-concepts.html
 - uid: character-creator
   name: Character Creator
-  href: docs/Essentials/character-creator.html
+  href: docs/essentials/character-creator.html
+- uid: character-type-properties
+  name: Character Type Properties
+  href: docs/essentials/character-type-properties.html
 - uid: character-types
   name: Character Types
-  href: docs/character-types.html
+  href: docs/essentials/character-types.html
 - uid: landing
   name: BlazerTech Character Management System
   href: index.html
