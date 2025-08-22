@@ -22,10 +22,12 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterPieceMapping
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
-    startLine: 37
+    startLine: 41
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: References a <xref href="BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition" data-throw-if-not-resolved="false"></xref> within a <xref href="BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO" data-throw-if-not-resolved="false"></xref> by spritesheet name.
+  example: []
   syntax:
     content: >-
       [Serializable]
@@ -59,7 +61,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: characterPieceCollection
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
-    startLine: 40
+    startLine: 44
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -86,7 +88,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SelectedCharacterPieceName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
-    startLine: 42
+    startLine: 46
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -113,7 +115,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
-    startLine: 49
+    startLine: 53
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -128,6 +130,20 @@ items:
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.New(BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO)
   name.vb: New(CharacterPieceCollectionSO)
 references:
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
+  name: CharacterPieceDefinition
+  nameWithType: CharacterPieceDefinition
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
+- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.html
+  name: CharacterPieceCollectionSO
+  nameWithType: CharacterPieceCollectionSO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
   href: BlazerTech.html
@@ -176,13 +192,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.html
-  name: CharacterPieceCollectionSO
-  nameWithType: CharacterPieceCollectionSO
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO
 - uid: System.String
   commentId: T:System.String
   parent: System

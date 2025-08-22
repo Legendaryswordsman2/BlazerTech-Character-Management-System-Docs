@@ -582,7 +582,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Characters.CharacterPieceMapping",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.yml\" sourcestartlinenumber=\"1\">References a <xref href=\"BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition\" data-throw-if-not-resolved=\"false\"></xref> within a <xref href=\"BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO\" data-throw-if-not-resolved=\"false\"></xref> by spritesheet name.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -610,7 +610,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.yml\" sourcestartlinenumber=\"1\">Base class for all Character Templates.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1579,30 +1579,90 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/Essentials/character-creator.md",
+      "source_relative_path": "docs/essentials/character-creator.md",
       "output": {
         ".html": {
-          "relative_path": "docs/Essentials/character-creator.html"
+          "relative_path": "docs/essentials/character-creator.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/Essentials/character-type-properties.md",
+      "source_relative_path": "docs/essentials/character-groups.md",
       "output": {
         ".html": {
-          "relative_path": "docs/Essentials/character-type-properties.html"
+          "relative_path": "docs/essentials/character-groups.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/character-types.md",
+      "source_relative_path": "docs/essentials/character-piece-collections.md",
       "output": {
         ".html": {
-          "relative_path": "docs/character-types.html"
+          "relative_path": "docs/essentials/character-piece-collections.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/essentials/character-templates.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/essentials/character-templates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/essentials/character-type-properties.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/essentials/character-type-properties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/essentials/character-types.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/essentials/character-types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/essentials/layered-character-type.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/essentials/layered-character-type.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/essentials/limezu-modern-interiors-support.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/essentials/limezu-modern-interiors-support.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/essentials/unified-character-type.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/essentials/unified-character-type.html"
         }
       },
       "version": ""

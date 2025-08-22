@@ -7,7 +7,7 @@ items:
   children:
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterDraft
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterType
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefautCharacterType
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DisableMenu
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewFlexibleCharacter(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
@@ -98,35 +98,37 @@ items:
       type: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
     content.vb: Public Shared Property Instance As CharacterCreationMenuManager
   overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.Instance*
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefautCharacterType
-  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefautCharacterType
-  id: DefautCharacterType
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType
+  id: DefaultCharacterType
   parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
   langs:
   - csharp
   - vb
-  name: DefautCharacterType
-  nameWithType: CharacterCreationMenuManager.DefautCharacterType
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefautCharacterType
+  name: DefaultCharacterType
+  nameWithType: CharacterCreationMenuManager.DefaultCharacterType
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType
   type: Property
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CharacterCreationMenuManager.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: DefautCharacterType
+    id: DefaultCharacterType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CharacterCreationMenuManager.cs
     startLine: 21
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
+  summary: The <xref href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO" data-throw-if-not-resolved="false"></xref> that is assigned if <xref href="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterType" data-throw-if-not-resolved="false"></xref> is null.
+  example: []
   syntax:
-    content: public LayeredCharacterTypeSO DefautCharacterType { get; }
+    content: public LayeredCharacterTypeSO DefaultCharacterType { get; }
     parameters: []
     return:
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
-    content.vb: Public Property DefautCharacterType As LayeredCharacterTypeSO
-  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefautCharacterType*
+    content.vb: Public Property DefaultCharacterType As LayeredCharacterTypeSO
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType*
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.MenuContents
   commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.MenuContents
   id: MenuContents
@@ -657,12 +659,6 @@ references:
   name: Instance
   nameWithType: CharacterCreationMenuManager.Instance
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.Instance
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefautCharacterType*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefautCharacterType
-  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_DefautCharacterType
-  name: DefautCharacterType
-  nameWithType: CharacterCreationMenuManager.DefautCharacterType
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefautCharacterType
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
   parent: BlazerTech.CharacterManagement.Characters
@@ -670,6 +666,18 @@ references:
   name: LayeredCharacterTypeSO
   nameWithType: LayeredCharacterTypeSO
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterType
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterType
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_ActiveCharacterType
+  name: ActiveCharacterType
+  nameWithType: CharacterCreationMenuManager.ActiveCharacterType
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterType
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_DefaultCharacterType
+  name: DefaultCharacterType
+  nameWithType: CharacterCreationMenuManager.DefaultCharacterType
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
   href: BlazerTech.html

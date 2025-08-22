@@ -1,5 +1,9 @@
+---
+uid: character-type-properties
+---
+
 # Character Type Properties
-The following are properties that are shared across all **character types**.    
+The following are properties that are shared across all **character type** [Scriptable Objects](https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html).    
 
 ## CharacterTypeID
 Type: **String**.

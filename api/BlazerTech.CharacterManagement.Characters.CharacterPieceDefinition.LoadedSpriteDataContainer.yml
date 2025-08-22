@@ -144,10 +144,13 @@ items:
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: Get the created character preview and create a new one if one does not already exist.
+  example: []
   syntax:
     content: public Sprite GetAndCreateCharacterPreview()
     return:
       type: UnityEngine.Sprite
+      description: The generated character preview sprite
     content.vb: Public Function GetAndCreateCharacterPreview() As Sprite
   overload: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer.GetAndCreateCharacterPreview*
 references:

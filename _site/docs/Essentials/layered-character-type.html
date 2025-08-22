@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Character Type Properties | BlazerTech Character Management System </title>
+      <title>Layered Character Type | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Character Type Properties | BlazerTech Character Management System ">
+      <meta name="title" content="Layered Character Type | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/essentials/character-type-properties.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/essentials/layered-character-type.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,39 +84,62 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="character-type-properties">
-<h1 id="character-type-properties">Character Type Properties</h1>
+        <article data-uid="">
+<h1 id="layered-character-type">Layered Character Type</h1>
 
-<p>The following are properties that are shared across all <strong>character type</strong> <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Objects</a>.</p>
-<h2 id="charactertypeid">CharacterTypeID</h2>
-<p>Type: <strong>String</strong>.</p>
-<blockquote>
-<p>A unique identifier used to reference this character type. Must be unique across all character types.</p>
-</blockquote>
-<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterTypeID">API</a></p>
+<p>A layered character is character made from multiple layers, these layers are stacked upon each other to form the final character.<br>
+Ex: <strong>Body &gt; Eyes &gt; Outfit &gt; Hairstyle &gt; Accessory</strong> - Each layer is added one by one in order.</p>
 <hr>
-<h2 id="basespritesheet">BaseSpritesheet</h2>
-<p>Type: <strong>Spritesheet</strong>.</p>
-<blockquote>
-<p>Defines the <strong>required base sprite sheet</strong> for the character type.<br>
-Set this spritesheets <strong>Sprite Mode</strong> to <strong>Multiple</strong> and slice it.<br>
-Whenever this character is used the sprites in the <strong>BaseSpritesheet</strong> will be used and a shader will then  override them with the finalized character.<br>
-Character spritesheets with mismatched dimensions will be rejected when validated.</p>
-</blockquote>
-<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_BaseSpritesheet">API</a></p>
+<h2 id="creating-a-layered-character-type">Creating a Layered Character Type</h2>
+<p>to create a new layered character type right click the <strong>Project</strong> window and navigate to <strong>Create &gt; BlazerTech Character Management System &gt; Layered Character Type</strong>.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The <strong>Layered Character Type Scriptable Object</strong> MUST be placed inside a folder named <strong>Resources</strong>! This is need for runtime initialization.</p>
+</div>
 <hr>
-<h2 id="charactercontroller">CharacterController</h2>
-<p>Type: <strong>RuntimeAnimatorController</strong>.</p>
-<blockquote>
-<p>The animator controller asset assigned to characters of this type.<br>
-Animations inside this controller should use sprites in the <a href="#basespritesheet">BaseSpritesheet</a>.</p>
-</blockquote>
-<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterController">API</a></p>
+<h3 id="setting-up-a-layered-character-type">Setting up a Layered Character Type</h3>
+<p>The following properties must be set:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="character-type-properties.html#charactertypeid">CharacterTypeID</a></strong></td>
+<td>String</td>
+<td>A <strong>unique</strong> identifer</td>
+</tr>
+<tr>
+<td><strong><a href="character-type-properties.html#basespritesheet">BaseSpritesheet</a></strong></td>
+<td>Sprite</td>
+<td>The default character spritesheet</td>
+</tr>
+<tr>
+<td><strong><a href="character-type-properties.html#charactercontroller">CharacterController</a></strong></td>
+<td>RuntimeAnimatorController</td>
+<td>The Animator Controller used</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="setting-up-character-layers">Setting up Character Layers</h3>
+<p>At the bottom of your layered character type is a list of <strong>Character Piece Collections</strong>. You can think of each collection as a layer of your character.</p>
+<p>To create a <strong>Character Piece Collection</strong> once again right click the Project window and navigate to <strong>Create &gt; BlazerTech Character Management System &gt; Character Piece Collection</strong>.</p>
+<p>After the <strong>Character Piece Collection</strong> has been created make sure to add it to the <strong>Character Piece Collections</strong> list inside your <strong>Layered Character Type</strong>.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Only the <strong>Layered Character Type</strong> must be placed in a <strong>Resources</strong> folder. Everything else including <strong>Character Piece Collections</strong> should be placed outside the <strong>Resources</strong> folder!</p>
+</div>
+<p>Refer to <a href="character-piece-collections.html">Character Piece Collections</a> for how to setup your newely created collections.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/essentials/character-type-properties.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/essentials/layered-character-type.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

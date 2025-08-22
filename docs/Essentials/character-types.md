@@ -7,15 +7,23 @@ uid: character-types
 Character types are [Scriptable Objects](https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html) that define core aspects of a character. They are the heart of the Character Management System.
 
 > [!NOTE]
-> All characters `Require` a `Character Type`.
+> All characters **Require** a **Character Type**.
 
 ---
 
-### Character Type Base
+## Character Type Base
 All Character Types inherit from [CharacterTypeBaseSO](xref:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO), which contains the core properties shared across all Character Types.
 
-## Core Character Type Properties
-The following properties are shared across all character types
+### Core Character Type Properties
+The following properties are shared across all character types.
+
+| Property                | Type                      | Description
+|-----------------------------------------------------------------------------|---------------------------|---------------------------
+| **[CharacterTypeID](character-type-properties.md#charactertypeid)**         | String                    | A **unique** identifer
+| **[BaseSpritesheet](character-type-properties.md#basespritesheet)**         | Sprite                    | The default character spritesheet
+| **[CharacterController](character-type-properties.md#charactercontroller)** | RuntimeAnimatorController | The Animator Controller used
+
+[Read More → Character Type Properties](xref:character-type-properties)
 
 ---
 

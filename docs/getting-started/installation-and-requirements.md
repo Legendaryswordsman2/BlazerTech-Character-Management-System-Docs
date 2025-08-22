@@ -19,3 +19,7 @@ Adds additonal attributes to the Unity Inspector.
 **Links**:
 - [Installation Guide](https://dbrizov.github.io/na-docs/general/installation.html)
 - [Unity Asset Store Link](https://assetstore.unity.com/packages/tools/utilities/naughtyattributes-129996)
+
+---
+
+## Installation

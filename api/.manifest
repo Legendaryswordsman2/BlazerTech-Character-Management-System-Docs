@@ -42,7 +42,7 @@
   "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager": "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.yml",
   "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterDraft": "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.yml",
   "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterType": "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.yml",
-  "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefautCharacterType": "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.yml",
+  "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType": "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.yml",
   "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DisableMenu": "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.yml",
   "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewFlexibleCharacter(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)": "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.yml",
   "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)": "BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.yml",
