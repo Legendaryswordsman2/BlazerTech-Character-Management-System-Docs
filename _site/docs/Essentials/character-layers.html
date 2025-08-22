@@ -88,6 +88,32 @@
 <h1 id="character-layers">Character Layers</h1>
 
 <p>A Character Layer is a <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Object</a> that contains all available character spritesheets for that specific layer.</p>
+<h2 id="whats-a-character-piece-definition">What's a Character Piece Definition?</h2>
+<p>A Character Piece Definition is a wrapper for a spritesheet which allows for easy loading/unloading of the sprite when needed.</p>
+<hr>
+<h2 id="properties">Properties</h2>
+<h3 id="attached-character-type">Attached Character Type</h3>
+<p>The <strong>Layered Character Type</strong> the layer is meant to be used for.</p>
+<h3 id="layer-name">Layer Name</h3>
+<p>The name of the layer. Used in the <a href="character-creator.html">Character Creator</a> when displaying character layers.</p>
+<h3 id="character-piece-asset-label">Character Piece Asset Label</h3>
+<p>The <strong>Addressables label</strong> used to load sprites into <strong>Character Piece Definitions</strong>. <strong>BT-CMS</strong> uses Unity's <strong>Addressables package</strong> to dynamically load/unload sprites when needed. Select the label you'd like to use and make sure all character spritesheets meant to be used for this layer are marked as Addressable and have the same label.</p>
+<h3 id="include-none-option">Include None Option</h3>
+<p>Decides if a blank option should be added to the list of available Character Pieces. This will essentially allow a character to be created without using that layer.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>The <strong>Character Pieces</strong> list must be refreshed whenever <strong>Include None Option</strong> is changed!</p>
+</div>
+<hr>
+<h2 id="buttons">Buttons</h2>
+<h3 id="get-character-pieces">Get Character Pieces</h3>
+<p>Finds all sprites matching the <strong>Character Piece Asset Label</strong> and are the same size as the <a href="character-type-properties.html#basespritesheet">Base Spritesheet</a> in the <strong>Layered Character Type</strong>, creates a <strong>CharacterPieceDefinition</strong> for each one and adds it to the <strong>Character Pieces</strong> list.</p>
+<h3 id="clear-character-pieces">Clear Character Pieces</h3>
+<p>Clears the Character Pieces list</p>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>This cannot be undone!</p>
+</div>
 
 </article>
 

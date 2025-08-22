@@ -48,6 +48,6 @@ Each character uses a single spritesheet containing the fully assembled characte
 ### 2. Layered Character Type
 A set of separate spritesheets, each containing one visual layer of the character.  
 - **Use Case:** Customizable player characters or dynamically generated NPCs.  
-- **Example:** Body, Outfit, Hairstyle, Accessory  
+- **Example:** Body, Outfit, Hairstyle, Accessory.  
 
 [Read More → Layered Character Type](layered-character-type.md)
