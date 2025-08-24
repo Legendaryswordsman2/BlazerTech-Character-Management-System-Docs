@@ -4,49 +4,40 @@ uid: basic-concepts
 
 # Basic Concepts
 
-## Character Types
-[Read More → Character Types](xref:character-types)
-
-A character type define how a character works. There are two types of character types:
-
-### 1. Unified Character Type
-Each character uses a single spritesheet containing the fully assembled character. No runtime customization is possible.  
-- **Use Case:** Characters with fixed, pre-set appearances.  
-- **Example:** Simplistic characters where their appearance is pre-determined and won't need to be changed.
-
-[Read More → Unified Character Type](unified-character-type.md)
+This page introduces the **core building blocks** of the Character Management System:  
+- **Character Types** – Define how characters are structured.  
+- **Character Creator** – A system for building and customizing characters in-game.  
 
 ---
 
-### 2. Layered Character Type
-A set of separate spritesheets, each containing one visual layer of the character.  
-- **Use Case:** Customizable player characters or dynamically generated NPCs.  
-- **Example:** Body, Outfit, Hairstyle, Accessory  
+## Character Types
+A **Character Type** defines how a character works. There are two kinds:
 
-[Read More → Layered Character Type](layered-character-type.md)
+| Type | Description | Best For |
+|------|-------------|----------|
+| **Unified Character Type** | A single spritesheet containing a fully assembled character. No runtime customization. | Characters with fixed, pre-set appearances. |
+| **Layered Character Type** | Multiple spritesheets, each containing one visual layer (body, outfit, hair, etc.). | Customizable player characters or dynamic/randomized NPCs. |
+
+- [🔗 Read More →  Character Types](xref:character-types)  
+- [🔗 Read More → Unified Character Type](xrefunified-character-type)  
+- [🔗 Read More → Layered Character Type](xreflayered-character-type)  
 
 ---
 
 ## Character Creator
 
-A fully modular Character Creation Menu System for layered characters. Easily implement your own Character Creation Menu by adding pre-made scripts and prefabs.
+The **Character Creator** is a fully modular menu system designed for **Layered Characters**.  
+Easily build a character creation menu into your game using the included scripts and prefabs.
 
-### Use-case Examples
+### Example Use Cases
+1. **Customizable Player Character** – Easily setup the menu for a single character such as the player character.  
+2. **Editing a List of Characters** – Let players edit a predefined roster, or manage a dynamic list (create, edit, delete).  
 
-#### 1. Customizable Player Character
-The Character Creation Menu can be easily setup for a single character such as the player character. Once made it can easily be used anywhere in-game.
+### Key Features
+- **Layer Selectors** – Dropdowns, carousels, tabs, etc.  
+- **Character Preview** – Static or animated, with options to rotate or swap animations.  
+- **History Tracking** – Every change is logged and can be shown as text or image snapshots.  
+- **Randomization** – Randomize the entire character or specific layers.  
+- **Character Naming** – Optional name field.  
 
-#### 2. Customizing a List of Characters
-Pre-created lists of charactes can be edited one by one.
-Or a dynamic list can be used and allow the player to create, edit and delete characters at any time.
-
----
-
-### Customizability:
-- **Layer Selectors** - Dropdowns, Carousel Selectors, Tabs, etc.
-- **Character Preview** - Static, Animated, Change Animations, Rotate Character.
-- **History** - all changes are recorded and can be shown as text or image snapshots. Clicking an entry will revert to that snapshot.
-- **Character Randomization** - Randomize the entire character or specific layers.
-- **Character Name Field** - Optional.
-
-[Read More → Character Creator](<xref:character-creator>)
+- [🔗 Read More → Character Creator](xref:character-creator)  

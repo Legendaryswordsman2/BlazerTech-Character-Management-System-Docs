@@ -23,7 +23,7 @@ The following properties are shared across all character types.
 | **[BaseSpritesheet](character-type-properties.md#basespritesheet)**         | Sprite                    | The default character spritesheet
 | **[CharacterController](character-type-properties.md#charactercontroller)** | RuntimeAnimatorController | The Animator Controller used
 
-[Read More → Character Type Properties](xref:character-type-properties)
+[🔗 Read More → Character Type Properties](xref:character-type-properties)
 
 ---
 
@@ -41,7 +41,7 @@ Each character uses a single spritesheet containing the fully assembled characte
 - **Use Case:** Characters with fixed, pre-rendered appearances.  
 - **Example:** Simplistic characters where their appearance is pre-determined and won't need to be changed.
 
-[Read More → Unified Character Type](unified-character-type.md)
+[🔗 Read More → Unified Character Type](unified-character-type.md)
 
 ---
 
@@ -50,4 +50,4 @@ A set of separate spritesheets, each containing one visual layer of the characte
 - **Use Case:** Customizable player characters or dynamically generated NPCs.  
 - **Example:** Body, Outfit, Hairstyle, Accessory.  
 
-[Read More → Layered Character Type](layered-character-type.md)
+[🔗 Read More → Layered Character Type](layered-character-type.md)

@@ -1,6 +1,6 @@
 # Layered Character Type
-A layered character is character made from multiple layers, these layers are stacked upon each other to form the final character.  
-Ex: **Body > Eyes > Outfit > Hairstyle > Accessory** - Each layer is added one by one in order.
+A layered character is made from multiple layers, these layers are stacked upon each other to form the final character.  
+Ex: **Body > Outfit > Hairstyle > Accessory** - Each layer is added one by one in order.
 
 ---
 
@@ -25,7 +25,7 @@ The following properties must be set:
 
 ### Setting up Character Layers
 
-At the bottom of your layered character type is a list of **Character Layers**. Each layer is a Scriptable Object that contains all available options for that layer of your character.
+At the bottom of your layered character type is a list of **Character Layers**. Each layer is a **Scriptable Object** that contains all available options for that layer of your character.
 
 To create a **Character Layer** once again right click the Project window and navigate to **Create > BlazerTech Character Management System > Character Layer**.
 
