@@ -1,3 +1,7 @@
+---
+uid: layered-character-type
+---
+
 # Layered Character Type
 A layered character is made from multiple layers, these layers are stacked upon each other to form the final character.  
 Ex: **Body > Outfit > Hairstyle > Accessory** - Each layer is added one by one in order.

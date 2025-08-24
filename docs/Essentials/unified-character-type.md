@@ -1,3 +1,7 @@
+---
+uid: unified-character-type
+---
+
 # Unified Character Type
 A Unified Character is made of one single spritesheet which contains every animation of the character.
 
