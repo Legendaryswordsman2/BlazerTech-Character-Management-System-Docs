@@ -1,3 +1,7 @@
+---
+uid: character-templates
+---
+
 # Character Templates
 
 A **Character Template** is a blueprint for creating characters from a defined **Character Type**.  

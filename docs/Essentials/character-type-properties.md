@@ -23,17 +23,12 @@ A unique identifier used to reference this character type. Must be unique across
 ## BaseSpritesheet
 Type: **Spritesheet**.
 All characters part of the same **Character Type** must have a character spritesheet the same exact size as the **Base Spritesheet**.
-> [!WARNINGS]
+> [!WARNING]
 > Spritesheets of a different size will be rejected and a warning will be logged.
 
 ### Properly Setting up the Base Spritesheet
 The **Sprite Mode** of the Base Spritesheet should be set to **Multiple**. This allows the sprite to be split into slices, with each slice being a frame of the character.  
-When you want to use a character from a **Character Type** make sure to use the sprites from the Base Spritesheet. When the character is loaded a shader will be applied that will display the correct character over the **Base Spritesheet**
-
-> Defines the **required base sprite sheet** for the character type.  
-Set this spritesheets **Sprite Mode** to **Multiple** and slice it.  
-Whenever this character is used the sprites in the **BaseSpritesheet** will be used and a shader will then  override them with the finalized character.  
-Character spritesheets with mismatched dimensions will be rejected when validated.
+When you want to use a character from a **Character Type** make sure to use the sprites from the **Base Spritesheet**. When the character is loaded a shader will be applied that will display the correct character over the **Base Spritesheet**.
 
 [API](xref:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet)
 

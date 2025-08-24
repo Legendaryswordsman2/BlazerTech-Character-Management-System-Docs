@@ -18,6 +18,8 @@
       - name: Character Layers
         href: essentials/character-layers.md
 
+      - name: Character Usage
+        href: essentials/character-usage.md
   - name: Character Templates
     href: essentials/character-templates.md
   - name: Character Creator

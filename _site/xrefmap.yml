@@ -6392,12 +6392,24 @@ references:
 - uid: character-creator
   name: Character Creator
   href: docs/essentials/character-creator.html
+- uid: character-templates
+  name: Character Templates
+  href: docs/essentials/character-templates.html
 - uid: character-type-properties
   name: Character Type Properties
   href: docs/essentials/character-type-properties.html
 - uid: character-types
   name: Character Types
   href: docs/essentials/character-types.html
+- uid: character-usage
+  name: Character Usage
+  href: docs/essentials/character-usage.html
 - uid: landing
   name: BlazerTech Character Management System
   href: index.html
+- uid: layered-character-type
+  name: Layered Character Type
+  href: docs/essentials/layered-character-type.html
+- uid: unified-character-type
+  name: Unified Character Type
+  href: docs/essentials/unified-character-type.html
