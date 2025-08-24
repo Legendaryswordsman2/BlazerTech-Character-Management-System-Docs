@@ -7,7 +7,7 @@ uid: basic-concepts
 ## Character Types
 [Read More → Character Types](xref:character-types)
 
-A character type define how the character works. There are two types of character types:
+A character type define how a character works. There are two types of character types:
 
 ### 1. Unified Character Type
 Each character uses a single spritesheet containing the fully assembled character. No runtime customization is possible.  
@@ -43,7 +43,7 @@ Or a dynamic list can be used and allow the player to create, edit and delete ch
 ---
 
 ### Customizability:
-- **Character Piece Selectors** - Dropdowns, Carousel Selectors, Tabs, etc.
+- **Layer Selectors** - Dropdowns, Carousel Selectors, Tabs, etc.
 - **Character Preview** - Static, Animated, Change Animations, Rotate Character.
 - **History** - all changes are recorded and can be shown as text or image snapshots. Clicking an entry will revert to that snapshot.
 - **Character Randomization** - Randomize the entire character or specific layers.

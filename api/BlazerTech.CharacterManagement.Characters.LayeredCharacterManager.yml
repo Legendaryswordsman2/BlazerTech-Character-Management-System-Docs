@@ -37,14 +37,10 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: 'public class LayeredCharacterManager : MonoBehaviour'
-    content.vb: Public Class LayeredCharacterManager Inherits MonoBehaviour
+    content: public static class LayeredCharacterManager
+    content.vb: Public Module LayeredCharacterManager
   inheritance:
   - System.Object
-  - UnityEngine.Object
-  - UnityEngine.Component
-  - UnityEngine.Behaviour
-  - UnityEngine.MonoBehaviour
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.SavedCharactersDirectory
   commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.SavedCharactersDirectory
   id: SavedCharactersDirectory
@@ -451,34 +447,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: UnityEngine.Object
-  commentId: T:UnityEngine.Object
-  parent: UnityEngine
-  isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: UnityEngine.Object
-- uid: UnityEngine.Component
-  commentId: T:UnityEngine.Component
-  parent: UnityEngine
-  isExternal: true
-  name: Component
-  nameWithType: Component
-  fullName: UnityEngine.Component
-- uid: UnityEngine.Behaviour
-  commentId: T:UnityEngine.Behaviour
-  parent: UnityEngine
-  isExternal: true
-  name: Behaviour
-  nameWithType: Behaviour
-  fullName: UnityEngine.Behaviour
-- uid: UnityEngine.MonoBehaviour
-  commentId: T:UnityEngine.MonoBehaviour
-  parent: UnityEngine
-  isExternal: true
-  name: MonoBehaviour
-  nameWithType: MonoBehaviour
-  fullName: UnityEngine.MonoBehaviour
 - uid: System
   commentId: N:System
   isExternal: true
@@ -486,12 +454,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: UnityEngine
-  commentId: N:UnityEngine
-  isExternal: true
-  name: UnityEngine
-  nameWithType: UnityEngine
-  fullName: UnityEngine
 - uid: System.String
   commentId: T:System.String
   parent: System

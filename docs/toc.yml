@@ -1,26 +1,32 @@
-- name: Getting Started
-- name: Basic Concepts
-  href: getting-started/basic-concepts.md
-- name: Installation And Requirements
-  href: getting-started/installation-and-requirements.md
-- name: Quick Start
-  href: getting-started/quick-start.md
-- name: Guides
-- name: Character Types
-  href: essentials/character-types.md
-- name: Character Type Properties
-  href: essentials/character-type-properties.md
-- name: Layered Character Type
-  href: essentials/layered-character-type.md
-- name: Character Layers
-  href: essentials/character-layers.md
-- name: Unified Character Type
-  href: essentials/unified-character-type.md
-- name: Character Templates
-  href: essentials/character-templates.md
-- name: Character Creator
-  href: essentials/character-creator.md
-- name: Character Groups
-  href: essentials/character-groups.md
-- name: LimeZu Modern Interiors Support
-  href: essentials/limezu-modern-interiors-support.md
+  - name: Getting Started
+  - name: Basic Concepts
+    href: getting-started/basic-concepts.md
+  - name: Installation And Requirements
+    href: getting-started/installation-and-requirements.md
+  - name: Quick Start
+    href: getting-started/quick-start.md
+
+  - name: Guides
+  - name: Character Types
+    items:
+      - name: Character Types
+        href: essentials/character-types.md
+      - name: Unified Character Type
+        href: essentials/unified-character-type.md
+      - name: Layered Character Type
+        href: essentials/layered-character-type.md
+      - name: Character Layers
+        href: essentials/character-layers.md
+
+  - name: Character Templates
+    href: essentials/character-templates.md
+  - name: Character Creator
+    href: essentials/character-creator.md
+  - name: Character Groups
+    href: essentials/character-groups.md
+  - name: LimeZu Modern Interiors Support
+    href: essentials/limezu-modern-interiors-support.md
+
+  - name: Misc
+  - name: Character Type Properties
+    href: essentials/character-type-properties.md
