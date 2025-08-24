@@ -87,7 +87,7 @@
         <article data-uid="character-type-properties">
 <h1 id="character-type-properties">Character Type Properties</h1>
 
-<p>The following are properties that are shared across all <strong>character type</strong> <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Objects</a>.</p>
+<p>The following are properties that are shared across all <strong>Character Type</strong> <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Objects</a>.</p>
 <p>Don't know what a Character Type is?<br>
 <a class="xref" href="character-types.html">🔗 Read More → Character Types</a>.</p>
 <hr>
@@ -101,13 +101,15 @@ A unique identifier used to reference this character type. Must be unique across
 <p><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterTypeID">API</a></p>
 <hr>
 <h2 id="basespritesheet">BaseSpritesheet</h2>
-<p>Type: <strong>Spritesheet</strong>.</p>
-<blockquote>
-<p>Defines the <strong>required base sprite sheet</strong> for the character type.<br>
-Set this spritesheets <strong>Sprite Mode</strong> to <strong>Multiple</strong> and slice it.<br>
-Whenever this character is used the sprites in the <strong>BaseSpritesheet</strong> will be used and a shader will then  override them with the finalized character.<br>
-Character spritesheets with mismatched dimensions will be rejected when validated.</p>
-</blockquote>
+<p>Type: <strong>Spritesheet</strong>.
+All characters part of the same <strong>Character Type</strong> must have a character spritesheet the same exact size as the <strong>Base Spritesheet</strong>.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Spritesheets of a different size will be rejected and a warning will be logged.</p>
+</div>
+<h3 id="properly-setting-up-the-base-spritesheet">Properly Setting up the Base Spritesheet</h3>
+<p>The <strong>Sprite Mode</strong> of the Base Spritesheet should be set to <strong>Multiple</strong>. This allows the sprite to be split into slices, with each slice being a frame of the character.<br>
+When you want to use a character from a <strong>Character Type</strong> make sure to use the sprites from the <strong>Base Spritesheet</strong>. When the character is loaded a shader will be applied that will display the correct character over the <strong>Base Spritesheet</strong>.</p>
 <p><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_BaseSpritesheet">API</a></p>
 <hr>
 <h2 id="charactercontroller">CharacterController</h2>

@@ -1653,6 +1653,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/essentials/character-usage.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/essentials/character-usage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/essentials/layered-character-type.md",
       "output": {
         ".html": {

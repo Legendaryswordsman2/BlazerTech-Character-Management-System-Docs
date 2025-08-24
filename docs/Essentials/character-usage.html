@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Character Templates | BlazerTech Character Management System </title>
+      <title>Character Usage | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Character Templates | BlazerTech Character Management System ">
+      <meta name="title" content="Character Usage | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/essentials/character-templates.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/essentials/character-usage.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,89 +84,84 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="character-templates">
-<h1 id="character-templates">Character Templates</h1>
+        <article data-uid="character-usage">
+<h1 id="character-usage">Character Usage</h1>
 
-<p>A <strong>Character Template</strong> is a blueprint for creating characters from a defined <strong>Character Type</strong>.<br>
-They provide an easy way to spawn characters anywhere in your project.</p>
-<hr>
-<h2 id="shared-fields">Shared Fields</h2>
-<p>Fields required by all <strong>Character Templates</strong>.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Character Type</strong></td>
-<td><code>UnifiedCharacterTypeSO</code> / <code>LayeredCharacterTypeSO</code></td>
-<td>Reference to the Character Type this template is based on.<br><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CharacterType">🔗 API</a></td>
-</tr>
-<tr>
-<td><strong>Character Name</strong></td>
-<td><code>String</code></td>
-<td>Name for characters created from this template (does <strong>not</strong> need to be unique).<br><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CharacterName">🔗 API</a></td>
-</tr>
-<tr>
-<td><strong>Character Display Name</strong></td>
-<td><code>String</code></td>
-<td>Optional display name shown for characters created from this template.<br><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CharacterDisplayName">🔗 API</a></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id="unified-character-templates">Unified Character Templates</h2>
-<h3 id="setup">Setup</h3>
-<div class="TIP">
-<h5>Tip</h5>
-<p>To create a <strong>Unified Character Template</strong>:<br>
-<code>Right-click</code> in the Project window → <strong>Create &gt; BlazerTech Character Management System &gt; Unified Character Type</strong></p>
-</div>
-<h3 id="fields">Fields</h3>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Character Spritesheet</strong></td>
-<td><code>AssetReferenceT&lt;Texture2D&gt;</code></td>
-<td>Reference to a spritesheet the same size as the <strong>Base Spritesheet</strong> in the Character Type. When referenced, the spritesheet is marked as <strong>Addressable</strong>, allowing it to be loaded/unloaded as needed.<br><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.html#BlazerTech_CharacterManagement_Characters_UnifiedCharacterTemplateSO_CharacterSpritesheet">🔗 API</a></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id="layered-character-templates">Layered Character Templates</h2>
-<h3 id="setup-1">Setup</h3>
-<div class="TIP">
-<h5>Tip</h5>
-<p>To create a <strong>Layered Character Template</strong>:<br>
-<code>Right-click</code> in the Project window → <strong>Create &gt; BlazerTech Character Management System &gt; Layered Character Type</strong></p>
-</div>
-<p>Once the <strong>Character Type</strong> reference is set, a list of all layers from the referenced type will appear.<br>
-Each layer includes:</p>
+<p>The following scripts can be used to load and use characters</p>
 <ul>
-<li><strong>Dropdown</strong> – Select which piece to use for the layer.</li>
-<li><strong>Search bar</strong> – Narrow results if the list is large.</li>
+<li><strong>Layered Character Loader</strong> - Load pre-existing Layered Characters.</li>
+<li><strong>Layered Character Template Loader</strong> - Create/load a layered character from a template.</li>
+<li><strong>Unified Character Loader</strong> - Load a Unified Character from a template.</li>
 </ul>
-<h3 id="buttons">Buttons</h3>
+<hr>
+<h2 id="character-loaders">Character Loaders</h2>
+<p>Character loading scripts can be used to load any character you've created regardless of the type. All Character Loaders have these fields:</p>
+<h3 id="references">References:</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Renderer</strong></td>
+<td><code>Renderer</code></td>
+<td>Reference to a <strong>Render</strong> component such as a <strong>Sprite Renderer</strong>. Used to apply shader.</td>
+</tr>
+<tr>
+<td><strong>Set Animator Controller</strong></td>
+<td><code>Bool</code></td>
+<td>Toggle if an <strong>animator controller</strong> should be applied to animate the character.</td>
+</tr>
+<tr>
+<td><strong>Animator</strong></td>
+<td><code>Animator</code></td>
+<td>Reference to an <strong>Animator</strong> component to apply the animator controller. Only shown if  <strong>Set Animator Controller</strong> is true.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="loading-settings">Loading Settings:</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Loading Mode</strong></td>
+<td><code>Enum</code></td>
+<td>Option to load character asynchronously or synchronously.</td>
+</tr>
+<tr>
+<td><strong>Load Character On Start</strong></td>
+<td><code>Bool</code></td>
+<td>Toggles if the character should be loaded when the <strong>Start</strong> method is called.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="loading-unified-characters">Loading Unified Characters</h2>
+<p>Requirements:
+Have a <strong>Unified Character Type</strong> and at least one <strong>Unified Character Template</strong> Setup.</p>
+<p>The <strong>Unified Character Loader</strong> component can be used to create and load a <strong>Unified Character Template</strong>.</p>
 <ul>
-<li><strong>Resync List</strong> – Rebuilds the layers list and resets all values.</li>
-<li><strong>Validate Character Template</strong> – Logs whether the template is valid (<code>true/false</code>).</li>
+<li>Add the script to a game object.</li>
+<li>Set <strong>Render</strong> and optionally <strong>Animator</strong> references.</li>
+<li>Set Loading Settings.</li>
+<li>Reference the <strong>Unified Character Template</strong> you want to load.</li>
+<li>Play your game and if <strong>Load Character On Start</strong> is toggled, your character will be displayed.</li>
 </ul>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/essentials/character-templates.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/essentials/character-usage.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
