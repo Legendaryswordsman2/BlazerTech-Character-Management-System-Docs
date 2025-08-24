@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | BlazerTech Character Management System </title>
+      <title>Unified Character Type | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | BlazerTech Character Management System ">
+      <meta name="title" content="Unified Character Type | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../../favicon.ico">
@@ -85,7 +85,46 @@
         </div>
 
         <article data-uid="">
+<h1 id="unified-character-type">Unified Character Type</h1>
 
+<p>A Unified Character is made of one single spritesheet which contains every animation of the character.</p>
+<h2 id="creating-a-layered-character-type">Creating a Layered Character Type</h2>
+<p>to create a new layered character type right click the <strong>Project</strong> window and navigate to <strong>Create &gt; BlazerTech Character Management System &gt; Unified Character Type</strong>.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The <strong>Unified Character Type Scriptable Object</strong> does <strong>NOT</strong> need to be placed inside a Resources folder unlike <strong>Layered Character Types</strong>.</p>
+</div>
+<hr>
+<h3 id="setting-up-a-unified-character-type">Setting up a Unified Character Type</h3>
+<p>The following properties must be set:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="character-type-properties.html#charactertypeid">CharacterTypeID</a></strong></td>
+<td>String</td>
+<td>A <strong>unique</strong> identifer</td>
+</tr>
+<tr>
+<td><strong><a href="character-type-properties.html#basespritesheet">BaseSpritesheet</a></strong></td>
+<td>Sprite</td>
+<td>The default character spritesheet</td>
+</tr>
+<tr>
+<td><strong><a href="character-type-properties.html#charactercontroller">CharacterController</a></strong></td>
+<td>RuntimeAnimatorController</td>
+<td>The Animator Controller used</td>
+</tr>
+</tbody>
+</table>
+<p>That's it! Once your <strong>Unified Character Type</strong> is all setup you can create a <strong>Unified Character Template</strong> to make characters from this <strong>Character Type</strong>.</p>
+<p><a href="character-templates.html#unified-character-templates">🔗 Read More → Unified Character Templates</a></p>
 
 </article>
 

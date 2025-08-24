@@ -87,28 +87,74 @@
         <article data-uid="">
 <h1 id="installation-and-requirements">Installation and Requirements</h1>
 
+<p>This guide covers the <strong>requirements</strong> and <strong>installation steps</strong> for the <strong>BlazerTech Character Management System</strong> (BT-CMS).</p>
+<hr>
 <h2 id="requirements">Requirements</h2>
 <div class="NOTE">
 <h5>Note</h5>
-<p>All required packages must be installed before installing the <strong>BlazerTech Character Management System</strong> (BT-CMS for short).</p>
+<p>All required packages must be installed and correctly configured <strong>before importing BT-CMS</strong>.</p>
 </div>
-<h3 id="1-addressables---made-by-unity">1. Addressables - Made by Unity</h3>
-<p>Used to dynamically load/unload character spritesheets as needed.<br>
-Found within the <code>Unity Registry</code> inside the <code>Package Manager</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Purpose</th>
+<th>Notes / Links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Addressables</strong></td>
+<td>Dynamically load/unload character spritesheets.</td>
+<td>Found in the <strong>Unity Registry</strong> via Package Manager.</td>
+</tr>
+<tr>
+<td><strong>Naughty Attributes</strong></td>
+<td>Adds additional attributes to the Unity Inspector.</td>
+<td><a href="https://dbrizov.github.io/na-docs/general/installation.html">Installation Guide</a> <br> <a href="https://assetstore.unity.com/packages/tools/utilities/naughtyattributes-129996">Unity Asset Store Link</a></td>
+</tr>
+</tbody>
+</table>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>Addressables Settings file must be created before importing <strong>BT-CMS</strong>. To create the settings file select <strong>Window/Asset Management/Addressables/Groups</strong> and click <strong>Create Addressables Settings</strong>.</p>
+<p><strong>Addressables Settings file</strong> must be created <strong>before</strong> importing BT-CMS.<br>
+To create it: <code>Window &gt; Asset Management &gt; Addressables &gt; Groups &gt; Create Addressables Settings</code>.</p>
 </div>
 <hr>
-<h3 id="2-naughty-attributes">2. Naughty Attributes</h3>
-<p>Adds additonal attributes to the Unity Inspector.</p>
-<p><strong>Links</strong>:</p>
-<ul>
-<li><a href="https://dbrizov.github.io/na-docs/general/installation.html">Installation Guide</a></li>
-<li><a href="https://assetstore.unity.com/packages/tools/utilities/naughtyattributes-129996">Unity Asset Store Link</a></li>
-</ul>
-<hr>
-<h2 id="installation">Installation</h2>
+<h2 id="installation-steps">Installation Steps</h2>
+<!-- Follow these steps to import and set up BT-CMS in your Unity project:
+
+### 1. Prepare Unity Project
+- Open your Unity project or create a new one.
+- Ensure **Addressables** and **Naughty Attributes** packages are installed and configured (see Requirements table above).
+
+### 2. Import BT-CMS Package
+1. Locate the BT-CMS `.unitypackage` file.  
+2. In Unity, go to: `Assets → Import Package → Custom Package…`.  
+3. Select the BT-CMS package and click **Import**.  
+4. Verify all files are imported (Unity will display a list of assets).
+
+> [!NOTE]  
+> During import, ensure **Addressables Settings** are already present in the project to avoid errors.
+
+### 3. Configure Addressables
+1. Open Addressables Groups: `Window → Asset Management → Addressables → Groups`.  
+2. Check that the **Character Spritesheets** are marked as **Addressable**.  
+3. Optional: Create custom groups for better organization (e.g., Characters, Props, UI).
+
+### 4. Verify Package
+- Open the `BlazerTech Character Management System` folder in the Project window.  
+- Ensure all **Prefabs**, **Scripts**, and **Templates** are present.  
+- Test by creating a simple **Unified Character Template** or **Layered Character Template** (see Character Templates page).
+
+### 5. Optional Setup
+- Configure any **custom Addressables groups** or **project-specific settings**.  
+- Integrate **Character Creator** prefabs into your scenes if needed.
+
+---
+
+> [!TIP]  
+> After installation, it’s a good idea to run the **Sample Scenes** included with BT-CMS to verify everything works correctly before starting your own character setup. -->
 
 </article>
 
