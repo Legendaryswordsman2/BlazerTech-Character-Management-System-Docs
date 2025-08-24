@@ -2802,6 +2802,23 @@ references:
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter)
   nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>
   nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterDisplayName
+  name: CharacterDisplayName
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CharacterDisplayName
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterDisplayName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterDisplayName
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterDisplayName
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterDisplayName
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterDisplayName
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterDisplayName*
+  name: CharacterDisplayName
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CharacterDisplayName_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterDisplayName
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterDisplayName
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterDisplayName
+  nameWithType: CharacterTemplateBaseSO<TCharacterType, TCharacter>.CharacterDisplayName
+  nameWithType.vb: CharacterTemplateBaseSO(Of TCharacterType, TCharacter).CharacterDisplayName
 - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterName
   name: CharacterName
   href: api/BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CharacterName
