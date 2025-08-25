@@ -6395,9 +6395,9 @@ references:
 - uid: character-templates
   name: Character Templates
   href: docs/essentials/character-templates.html
-- uid: character-type-properties
-  name: Character Type Properties
-  href: docs/essentials/character-type-properties.html
+- uid: character-type-fields
+  name: Character Type Fields
+  href: docs/essentials/character-type-fields.html
 - uid: character-types
   name: Character Types
   href: docs/essentials/character-types.html

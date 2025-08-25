@@ -28,7 +28,7 @@ Decides if a blank option should be added to the list of available Character Pie
 ## Buttons
 
 ### Get Character Pieces
-Finds all sprites matching the **Character Piece Asset Label** and are the same size as the [Base Spritesheet](character-type-properties.md#basespritesheet) in the **Layered Character Type**, creates a **CharacterPieceDefinition** for each one and adds it to the **Character Pieces** list.
+Finds all sprites matching the **Character Piece Asset Label** and are the same size as the [Base Spritesheet](character-type-fields.md#basespritesheet) in the **Layered Character Type**, creates a **CharacterPieceDefinition** for each one and adds it to the **Character Pieces** list.
 
 ### Clear Character Pieces
 Clears the Character Pieces list

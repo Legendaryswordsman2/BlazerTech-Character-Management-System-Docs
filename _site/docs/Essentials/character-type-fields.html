@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Character Type Properties | BlazerTech Character Management System </title>
+      <title>Character Type Fields | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Character Type Properties | BlazerTech Character Management System ">
+      <meta name="title" content="Character Type Fields | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/essentials/character-type-properties.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/essentials/character-type-fields.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,46 +84,97 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="character-type-properties">
-<h1 id="character-type-properties">Character Type Properties</h1>
+        <article data-uid="character-type-fields">
+<h1 id="character-type-fields">Character Type Fields</h1>
 
-<p>The following are properties that are shared across all <strong>Character Type</strong> <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Objects</a>.</p>
-<p>Don't know what a Character Type is?<br>
-<a class="xref" href="character-types.html">🔗 Read More → Character Types</a>.</p>
+<p>The following are fields that are shared across all <strong>Character Type</strong> <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Objects</a>.</p>
+<p>Don’t know what a Character Type is?<br>
+<a class="xref" href="character-types.html">🔗 Read More → Character Types</a></p>
 <hr>
 <h2 id="charactertypeid">CharacterTypeID</h2>
-<p>Type: <strong>String</strong>.<br>
-A unique identifier used to reference this character type. Must be unique across all character types.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CharacterTypeID</strong></td>
+<td><code>String</code></td>
+<td>A unique identifier for this Character Type. Must be unique across all types.</td>
+</tr>
+</tbody>
+</table>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>A <strong>Character Type ID</strong> with the same <strong>ID</strong> as another will fail to initialize and all characters of that type will also fail to load.</p>
+<p>A <strong>Character Type</strong> with the same <strong>ID</strong> as another will fail to initialize and all characters of that type will also fail to load.</p>
 </div>
-<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterTypeID">API</a></p>
+<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterTypeID">🔗 API</a></p>
 <hr>
 <h2 id="basespritesheet">BaseSpritesheet</h2>
-<p>Type: <strong>Spritesheet</strong>.
-All characters part of the same <strong>Character Type</strong> must have a character spritesheet the same exact size as the <strong>Base Spritesheet</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>BaseSpritesheet</strong></td>
+<td><code>Spritesheet</code></td>
+<td>The base reference spritesheet used for all characters of this type. Every character spritesheet must match its dimensions exactly.</td>
+</tr>
+</tbody>
+</table>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>Spritesheets of a different size will be rejected and a warning will be logged.</p>
+<p>Character Spritesheets of a different size will be rejected, and a warning will be logged.</p>
 </div>
-<h3 id="properly-setting-up-the-base-spritesheet">Properly Setting up the Base Spritesheet</h3>
-<p>The <strong>Sprite Mode</strong> of the Base Spritesheet should be set to <strong>Multiple</strong>. This allows the sprite to be split into slices, with each slice being a frame of the character.<br>
-When you want to use a character from a <strong>Character Type</strong> make sure to use the sprites from the <strong>Base Spritesheet</strong>. When the character is loaded a shader will be applied that will display the correct character over the <strong>Base Spritesheet</strong>.</p>
-<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_BaseSpritesheet">API</a></p>
+<h3 id="setup-requirements">Setup Requirements</h3>
+<ul>
+<li><strong>Sprite Mode</strong> must be set to <strong>Multiple</strong> so the sheet can be sliced into individual frames.</li>
+<li>All animations and shaders reference the <strong>Base Spritesheet</strong>. When the character is loaded a shader will display the correct character over the Base Spritesheet.</li>
+</ul>
+<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_BaseSpritesheet">🔗 API</a></p>
 <hr>
 <h2 id="charactercontroller">CharacterController</h2>
-<p>Type: <strong>RuntimeAnimatorController</strong>.</p>
-<blockquote>
-<p>The animator controller asset assigned to characters of this type.<br>
-Animations inside this controller should use sprites in the <a href="#basespritesheet">BaseSpritesheet</a>.</p>
-</blockquote>
-<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterController">API</a></p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CharacterController</strong></td>
+<td><code>RuntimeAnimatorController</code></td>
+<td>An Animator Controller that animates all characters of this Character Type.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This field is <strong>optional</strong>.</p>
+</div>
+<p>Because all characters of a type use the <strong>Base Spritesheet</strong> (see <a href="#basespritesheet">BaseSpritesheet</a>), a single Animator Controller can be reused as long as its animations reference frames from the <strong>Base Spritesheet</strong>.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>When using a Character Loader component, this Animator Controller will be applied automatically if <strong>Set Animator Controller</strong> is enabled.<br>
+See <a class="xref" href="character-usage.html">🔗 Character Usage</a> for more info.</p>
+</div>
+<p><a class="xref" href="../../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterController">🔗 API</a></p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/essentials/character-type-properties.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/essentials/character-type-fields.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

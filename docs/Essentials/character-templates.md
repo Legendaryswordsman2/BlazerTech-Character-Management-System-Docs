@@ -5,7 +5,7 @@ uid: character-templates
 # Character Templates
 
 A **Character Template** is a blueprint for creating characters from a defined **Character Type**.  
-They provide an easy way to spawn characters anywhere in your project.
+They provide an easy way to use characters anywhere in your project.
 
 ---
 

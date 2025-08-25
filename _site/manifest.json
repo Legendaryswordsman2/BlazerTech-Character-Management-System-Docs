@@ -1633,10 +1633,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/essentials/character-type-properties.md",
+      "source_relative_path": "docs/essentials/character-type-fields.md",
       "output": {
         ".html": {
-          "relative_path": "docs/essentials/character-type-properties.html"
+          "relative_path": "docs/essentials/character-type-fields.html"
         }
       },
       "version": ""

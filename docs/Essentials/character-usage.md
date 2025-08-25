@@ -31,6 +31,15 @@ Character loading scripts can be used to load any character you've created regar
 
 ---
 
+## The Character Shader
+
+A **shader** is used to display characters. Sprites from the **Base Spritesheet** are rendered in a component such as a **Sprite Renderer**
+
+If a **Unified Character** is used, the shader takes the single spritesheet of the character and shows that over the **Base Spritesheet**.  
+If a **Layered Character** is used, the shader combines all layers into the final rendered character.  
+
+---
+
 ## Loading Unified Characters
 Requirements:
 Have a **Unified Character Type** and at least one **Unified Character Template** Setup.
