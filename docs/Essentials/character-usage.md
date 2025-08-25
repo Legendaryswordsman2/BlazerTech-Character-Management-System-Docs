@@ -46,7 +46,7 @@ Have a **Unified Character Type** and at least one **Unified Character Template*
 
 The **Unified Character Loader** component can be used to create and load a **Unified Character Template**.  
 - Add the script to a game object.
-- Set **Render** and optionally **Animator** references.
+- Set **Renderer** and optionally **Animator** references.
 - Set Loading Settings.
 - Reference the **Unified Character Template** you want to load.
 - Play your game and if **Load Character On Start** is toggled, your character will be displayed.
