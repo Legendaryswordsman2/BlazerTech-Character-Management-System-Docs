@@ -32,7 +32,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LayeredCharacterManager
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -59,15 +59,15 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SavedCharactersDirectory
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public const string SavedCharactersDirectory = "BlazerTech Character Creator"
+    content: public const string SavedCharactersDirectory = "BlazerTech Character Management System"
     return:
       type: System.String
-    content.vb: Public Const SavedCharactersDirectory As String = "BlazerTech Character Creator"
+    content.vb: Public Const SavedCharactersDirectory As String = "BlazerTech Character Management System"
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.SavedCharactersFilename
   commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.SavedCharactersFilename
   id: SavedCharactersFilename
@@ -86,7 +86,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SavedCharactersFilename
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -113,7 +113,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterSaveMode
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -140,7 +140,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterTypeGroupCollections
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -169,7 +169,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnNewCharacterCreated
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -196,7 +196,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnCollectionUpdated
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -223,7 +223,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Initialize
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
-    startLine: 32
+    startLine: 33
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -249,7 +249,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: NotifyNewCharacterCreated
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
-    startLine: 43
+    startLine: 44
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -278,7 +278,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetOrCreateCollection
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
-    startLine: 60
+    startLine: 61
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -309,7 +309,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetCollectionUsingIndex
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
-    startLine: 89
+    startLine: 90
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -343,14 +343,17 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ScheduleSaveCharacterGroups
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
-    startLine: 105
+    startLine: 110
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: calls <xref href="BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.SaveCharacterGroupsImmediate" data-throw-if-not-resolved="false"></xref> on the next frame.
+  example: []
   syntax:
     content: public static Task ScheduleSaveCharacterGroups()
     return:
       type: System.Threading.Tasks.Task
+      description: ''
     content.vb: Public Shared Function ScheduleSaveCharacterGroups() As Task
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.ScheduleSaveCharacterGroups*
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.SaveCharacterGroupsImmediate
@@ -371,10 +374,12 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SaveCharacterGroupsImmediate
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
-    startLine: 121
+    startLine: 129
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: Saves all character groups to json files. Separated by Character Type.
+  example: []
   syntax:
     content: public static void SaveCharacterGroupsImmediate()
     content.vb: Public Shared Sub SaveCharacterGroupsImmediate()
@@ -397,10 +402,12 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadCharacterGroups
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterManager.cs
-    startLine: 152
+    startLine: 162
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: Load previously saved character groups.
+  example: []
   syntax:
     content: public static void LoadCharacterGroups()
     content.vb: Public Shared Sub LoadCharacterGroups()
@@ -693,6 +700,24 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.SaveCharacterGroupsImmediate
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.SaveCharacterGroupsImmediate
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterManager_SaveCharacterGroupsImmediate
+  name: SaveCharacterGroupsImmediate()
+  nameWithType: LayeredCharacterManager.SaveCharacterGroupsImmediate()
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.SaveCharacterGroupsImmediate()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.SaveCharacterGroupsImmediate
+    name: SaveCharacterGroupsImmediate
+    href: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterManager_SaveCharacterGroupsImmediate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.SaveCharacterGroupsImmediate
+    name: SaveCharacterGroupsImmediate
+    href: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterManager_SaveCharacterGroupsImmediate
+  - name: (
+  - name: )
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.ScheduleSaveCharacterGroups*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.ScheduleSaveCharacterGroups
   href: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterManager_ScheduleSaveCharacterGroups

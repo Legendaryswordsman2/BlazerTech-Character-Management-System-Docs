@@ -21,9 +21,12 @@ Fields required by all **Character Templates**.
 
 ---
 
-## Unified Character Templates
+## Unified Character Template
 
 ### Setup
+
+A blueprint used to create a **Unified Character** at runtime. Can be used in the [Unified Character Loader](xref:character-usage#unified-character-loader) component.
+
 > [!TIP]  
 > To create a **Unified Character Template**:  
 > `Right-click` in the Project window → **Create > BlazerTech Character Management System > Unified Character Type**
@@ -36,9 +39,12 @@ Fields required by all **Character Templates**.
 
 ---
 
-## Layered Character Templates
+## Layered Character Template
 
 ### Setup
+
+A blueprint used to create a **Layered Character** at runtime. Can be used in the [Layered Character Template Loader](xref:character-usage#layered-character-template-loader) component.
+
 > [!TIP]  
 > To create a **Layered Character Template**:  
 > `Right-click` in the Project window → **Create > BlazerTech Character Management System > Layered Character Type**

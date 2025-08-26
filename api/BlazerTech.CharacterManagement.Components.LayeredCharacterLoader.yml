@@ -5,9 +5,9 @@ items:
   id: LayeredCharacterLoader
   parent: BlazerTech.CharacterManagement.Components
   children:
-  - BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupLoadMethod
   - BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupName
   - BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterIndex
+  - BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterLoadMethod
   - BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterName
   - BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.GetAndShowCharacter
   - BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.OnDestroy
@@ -79,35 +79,35 @@ items:
       type: System.String
     content.vb: Public Property CharacterGroupName As String
   overload: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupName*
-- uid: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupLoadMethod
-  commentId: P:BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupLoadMethod
-  id: CharacterGroupLoadMethod
+- uid: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterLoadMethod
+  commentId: P:BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterLoadMethod
+  id: CharacterLoadMethod
   parent: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader
   langs:
   - csharp
   - vb
-  name: CharacterGroupLoadMethod
-  nameWithType: LayeredCharacterLoader.CharacterGroupLoadMethod
-  fullName: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupLoadMethod
+  name: CharacterLoadMethod
+  nameWithType: LayeredCharacterLoader.CharacterLoadMethod
+  fullName: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterLoadMethod
   type: Property
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/Layered Character Loaders/LayeredCharacterLoader.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterGroupLoadMethod
+    id: CharacterLoadMethod
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/Layered Character Loaders/LayeredCharacterLoader.cs
     startLine: 23
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
   syntax:
-    content: public CharacterMultiGroupLoadMethod CharacterGroupLoadMethod { get; }
+    content: public CharacterMultiGroupLoadMethod CharacterLoadMethod { get; }
     parameters: []
     return:
       type: BlazerTech.CharacterManagement.Components.CharacterMultiGroupLoadMethod
-    content.vb: Public Property CharacterGroupLoadMethod As CharacterMultiGroupLoadMethod
-  overload: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupLoadMethod*
+    content.vb: Public Property CharacterLoadMethod As CharacterMultiGroupLoadMethod
+  overload: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterLoadMethod*
 - uid: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterName
   commentId: P:BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterName
   id: CharacterName
@@ -503,12 +503,12 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupLoadMethod*
-  commentId: Overload:BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupLoadMethod
-  href: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.html#BlazerTech_CharacterManagement_Components_LayeredCharacterLoader_CharacterGroupLoadMethod
-  name: CharacterGroupLoadMethod
-  nameWithType: LayeredCharacterLoader.CharacterGroupLoadMethod
-  fullName: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupLoadMethod
+- uid: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterLoadMethod*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterLoadMethod
+  href: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.html#BlazerTech_CharacterManagement_Components_LayeredCharacterLoader_CharacterLoadMethod
+  name: CharacterLoadMethod
+  nameWithType: LayeredCharacterLoader.CharacterLoadMethod
+  fullName: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterLoadMethod
 - uid: BlazerTech.CharacterManagement.Components.CharacterMultiGroupLoadMethod
   commentId: T:BlazerTech.CharacterManagement.Components.CharacterMultiGroupLoadMethod
   parent: BlazerTech.CharacterManagement.Components

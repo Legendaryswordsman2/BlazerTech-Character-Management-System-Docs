@@ -57,7 +57,7 @@ items:
       type: System.String
       value: New Character Template
 - uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet
-  commentId: F:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet
+  commentId: P:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet
   id: CharacterSpritesheet
   parent: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO
   langs:
@@ -66,7 +66,7 @@ items:
   name: CharacterSpritesheet
   nameWithType: UnifiedCharacterTemplateSO.CharacterSpritesheet
   fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet
-  type: Field
+  type: Property
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/UnifiedCharacterTemplateSO.cs
@@ -74,45 +74,17 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterSpritesheet
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/UnifiedCharacterTemplateSO.cs
-    startLine: 15
+    startLine: 10
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: >-
-      [Header("IMPORTANT")]
-
-      [InfoBox("Make sure 'Character Spritesheet' is the same size as the 'Spritesheet Size' set in the referenced 'Character Type'! Otherwise the character template will be invalid!", EInfoBoxType.Normal)]
-
-      [Space]
-
-      public AssetReferenceT<Texture2D> CharacterSpritesheet
+    content: public AssetReferenceT<Texture2D> CharacterSpritesheet { get; }
+    parameters: []
     return:
       type: UnityEngine.AddressableAssets.AssetReferenceT{UnityEngine.Texture2D}
-    content.vb: >-
-      <Header("IMPORTANT")>
-
-      <InfoBox("Make sure 'Character Spritesheet' is the same size as the 'Spritesheet Size' set in the referenced 'Character Type'! Otherwise the character template will be invalid!", EInfoBoxType.Normal)>
-
-      <Space>
-
-      Public CharacterSpritesheet As AssetReferenceT(Of Texture2D)
-  attributes:
-  - type: UnityEngine.HeaderAttribute
-    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: IMPORTANT
-  - type: NaughtyAttributes.InfoBoxAttribute
-    ctor: NaughtyAttributes.InfoBoxAttribute.#ctor(System.String,NaughtyAttributes.EInfoBoxType)
-    arguments:
-    - type: System.String
-      value: Make sure 'Character Spritesheet' is the same size as the 'Spritesheet Size' set in the referenced 'Character Type'! Otherwise the character template will be invalid!
-    - type: NaughtyAttributes.EInfoBoxType
-      value: 0
-  - type: UnityEngine.SpaceAttribute
-    ctor: UnityEngine.SpaceAttribute.#ctor
-    arguments: []
+    content.vb: Public Property CharacterSpritesheet As AssetReferenceT(Of Texture2D)
+  overload: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet*
 - uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CreateNewCharacter
   commentId: M:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CreateNewCharacter
   id: CreateNewCharacter
@@ -422,6 +394,12 @@ references:
     href: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CreateNewCharacter
   - name: (
   - name: )
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet
+  href: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.html#BlazerTech_CharacterManagement_Characters_UnifiedCharacterTemplateSO_CharacterSpritesheet
+  name: CharacterSpritesheet
+  nameWithType: UnifiedCharacterTemplateSO.CharacterSpritesheet
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet
 - uid: UnityEngine.AddressableAssets.AssetReferenceT{UnityEngine.Texture2D}
   commentId: T:UnityEngine.AddressableAssets.AssetReferenceT{UnityEngine.Texture2D}
   parent: UnityEngine.AddressableAssets

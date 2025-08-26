@@ -4861,7 +4861,14 @@ references:
 - uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet
   name: CharacterSpritesheet
   href: api/BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.html#BlazerTech_CharacterManagement_Characters_UnifiedCharacterTemplateSO_CharacterSpritesheet
-  commentId: F:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet
+  commentId: P:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet
+  nameWithType: UnifiedCharacterTemplateSO.CharacterSpritesheet
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet*
+  name: CharacterSpritesheet
+  href: api/BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.html#BlazerTech_CharacterManagement_Characters_UnifiedCharacterTemplateSO_CharacterSpritesheet_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet
+  isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet
   nameWithType: UnifiedCharacterTemplateSO.CharacterSpritesheet
 - uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CreateNewCharacter
@@ -5163,19 +5170,6 @@ references:
   commentId: T:BlazerTech.CharacterManagement.Components.LayeredCharacterLoader
   fullName: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader
   nameWithType: LayeredCharacterLoader
-- uid: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupLoadMethod
-  name: CharacterGroupLoadMethod
-  href: api/BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.html#BlazerTech_CharacterManagement_Components_LayeredCharacterLoader_CharacterGroupLoadMethod
-  commentId: P:BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupLoadMethod
-  fullName: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupLoadMethod
-  nameWithType: LayeredCharacterLoader.CharacterGroupLoadMethod
-- uid: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupLoadMethod*
-  name: CharacterGroupLoadMethod
-  href: api/BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.html#BlazerTech_CharacterManagement_Components_LayeredCharacterLoader_CharacterGroupLoadMethod_
-  commentId: Overload:BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupLoadMethod
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupLoadMethod
-  nameWithType: LayeredCharacterLoader.CharacterGroupLoadMethod
 - uid: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterGroupName
   name: CharacterGroupName
   href: api/BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.html#BlazerTech_CharacterManagement_Components_LayeredCharacterLoader_CharacterGroupName
@@ -5202,6 +5196,19 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterIndex
   nameWithType: LayeredCharacterLoader.CharacterIndex
+- uid: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterLoadMethod
+  name: CharacterLoadMethod
+  href: api/BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.html#BlazerTech_CharacterManagement_Components_LayeredCharacterLoader_CharacterLoadMethod
+  commentId: P:BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterLoadMethod
+  fullName: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterLoadMethod
+  nameWithType: LayeredCharacterLoader.CharacterLoadMethod
+- uid: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterLoadMethod*
+  name: CharacterLoadMethod
+  href: api/BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.html#BlazerTech_CharacterManagement_Components_LayeredCharacterLoader_CharacterLoadMethod_
+  commentId: Overload:BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterLoadMethod
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterLoadMethod
+  nameWithType: LayeredCharacterLoader.CharacterLoadMethod
 - uid: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.CharacterName
   name: CharacterName
   href: api/BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.html#BlazerTech_CharacterManagement_Components_LayeredCharacterLoader_CharacterName
@@ -6392,6 +6399,9 @@ references:
 - uid: character-creator
   name: Character Creator
   href: docs/essentials/character-creator.html
+- uid: character-groups
+  name: Character Groups
+  href: docs/essentials/character-groups.html
 - uid: character-templates
   name: Character Templates
   href: docs/essentials/character-templates.html

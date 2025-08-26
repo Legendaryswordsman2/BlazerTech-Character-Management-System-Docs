@@ -14,11 +14,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Loading Screen/LoadingScreenRepeatingText.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Loading Screen/LoadingScreenRepeatingText.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadingScreenRepeatingText
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Loading Screen/LoadingScreenRepeatingText.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Loading Screen/LoadingScreenRepeatingText.cs
     startLine: 5
   assemblies:
   - Assembly-CSharp

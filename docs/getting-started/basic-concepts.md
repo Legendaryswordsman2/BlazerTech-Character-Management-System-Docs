@@ -42,7 +42,7 @@ Once a **Character Type** has been created it can be loaded using one the follow
 |--------|---------|
 | **Layered Character Loader** | Load pre-existing Layered Characters. |
 | **Layered Character Template Loader** | Create/load a Layered Character from a template. |
-| **Unified Character Loader** | Load a Unified Character from a template. |
+| ***[Unified Character Loader](xref:character-usage#unified-character-loader)*** | Load a Unified Character from a template. |
 
 ### Character Shader
 A **shader** is used to display characters. Sprites from a base spritesheet are rendered in a component such as a **Sprite Renderer**

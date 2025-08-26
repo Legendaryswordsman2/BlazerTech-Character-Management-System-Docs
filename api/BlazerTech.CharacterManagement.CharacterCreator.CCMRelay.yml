@@ -17,11 +17,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CCMRelay.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CCMRelay
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CCMRelay.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
     startLine: 5
   assemblies:
   - Assembly-CSharp
@@ -58,11 +58,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CCMRelay.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OpenCharacterCreationMenuWithSingleCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CCMRelay.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
     startLine: 15
   assemblies:
   - Assembly-CSharp
@@ -87,11 +87,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CCMRelay.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SaveCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CCMRelay.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
     startLine: 26
   assemblies:
   - Assembly-CSharp
@@ -113,11 +113,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CCMRelay.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CloseMenu
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CCMRelay.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
     startLine: 37
   assemblies:
   - Assembly-CSharp

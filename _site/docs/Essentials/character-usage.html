@@ -91,8 +91,17 @@
 <ul>
 <li><strong>Layered Character Loader</strong> - Load pre-existing Layered Characters.</li>
 <li><strong>Layered Character Template Loader</strong> - Create/load a layered character from a template.</li>
-<li><strong>Unified Character Loader</strong> - Load a Unified Character from a template.</li>
+<li><strong><a href="#unified-character-loader">Unified Character Loader</a></strong> - Load a Unified Character from a template.</li>
 </ul>
+<hr>
+<h2 id="the-character-shader">The Character Shader</h2>
+<p>A <strong>shader</strong> is used to display characters. Sprites from the <strong>Base Spritesheet</strong> are rendered in a component such as a <strong>Sprite Renderer</strong></p>
+<p>If a <strong>Unified Character</strong> is used, the shader takes the single spritesheet of the character and shows that over the <strong>Base Spritesheet</strong>.<br>
+If a <strong>Layered Character</strong> is used, the shader combines all layers into the final rendered character.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If a <strong>Character Loader</strong> is used the shader will be set automatically.</p>
+</div>
 <hr>
 <h2 id="character-loaders">Character Loaders</h2>
 <p>Character loading scripts can be used to load any character you've created regardless of the type. All Character Loaders have these fields:</p>
@@ -146,20 +155,87 @@
 </tbody>
 </table>
 <hr>
-<h2 id="the-character-shader">The Character Shader</h2>
-<p>A <strong>shader</strong> is used to display characters. Sprites from the <strong>Base Spritesheet</strong> are rendered in a component such as a <strong>Sprite Renderer</strong></p>
-<p>If a <strong>Unified Character</strong> is used, the shader takes the single spritesheet of the character and shows that over the <strong>Base Spritesheet</strong>.<br>
-If a <strong>Layered Character</strong> is used, the shader combines all layers into the final rendered character.</p>
-<hr>
-<h2 id="loading-unified-characters">Loading Unified Characters</h2>
-<p>Requirements:
-Have a <strong>Unified Character Type</strong> and at least one <strong>Unified Character Template</strong> Setup.</p>
-<p>The <strong>Unified Character Loader</strong> component can be used to create and load a <strong>Unified Character Template</strong>.</p>
+<h2 id="unified-character-loader">Unified Character Loader</h2>
+<p>Requirements:<br>
+Have a <a class="xref" href="unified-character-type.html">Unified Character Type</a> and at least one <a class="xref" href="character-templates.html#unified-character-template">Unified Character Template</a> Setup.</p>
+<p>The <strong>Unified Character Loader</strong> component can be used to create and load a character from a <strong>Unified Character Template</strong>.</p>
 <ul>
 <li>Add the script to a game object.</li>
 <li>Set <strong>Renderer</strong> and optionally <strong>Animator</strong> references.</li>
 <li>Set Loading Settings.</li>
 <li>Reference the <strong>Unified Character Template</strong> you want to load.</li>
+<li>Play your game and if <strong>Load Character On Start</strong> is toggled, your character will be displayed.</li>
+</ul>
+<hr>
+<h2 id="layered-character-loaders">Layered Character Loaders</h2>
+<h3 id="layered-character-loader">Layered Character Loader</h3>
+<p>Requirements:<br>
+Have a <a class="xref" href="layered-character-type.html">Layered Character Type</a> setup and at least one <strong>Layered Character</strong> saved in a group.</p>
+<p><a class="xref" href="character-groups.html">🔗 Read More → Character Groups</a></p>
+<p>The <strong>Layered Character Loader</strong> component can be used to load <strong>Layered Characters</strong> from a <strong>Character Group</strong>.</p>
+<ul>
+<li>Add the script to a game object.</li>
+<li>Set <strong>Renderer</strong> and optionally <strong>Animator</strong> references.</li>
+<li>Set Loading Settings.</li>
+<li>Reference the <strong>Character Type</strong> you want to load a character from.</li>
+<li>Set the <strong>Character Group</strong> you want to load your character from within the <strong>Character Type</strong>.</li>
+</ul>
+<h4 id="character-groups">Character Groups</h4>
+<p>After a <strong>Character Type</strong> has been referenced, you can choose which group you want to load a <strong>Layered Character</strong> from:</p>
+<table>
+<thead>
+<tr>
+<th>Group Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Single Group</strong></td>
+<td>Only one character can exist in the group. No additional parameters required.</td>
+</tr>
+<tr>
+<td><strong>Flexible Group</strong></td>
+<td>A group of characters that can be added, removed, or edited at any time.</td>
+</tr>
+<tr>
+<td><strong>Fixed Group</strong></td>
+<td>A group with a preset number of characters. New characters cannot be added or removed after creation.</td>
+</tr>
+</tbody>
+</table>
+<p>If <strong>Flexible Group</strong> or <strong>Fixed Group</strong> is selected, the following parameters are required:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Character Group Name</strong></td>
+<td><code>String</code></td>
+<td>A unique name used to find the fixed or flexible group.</td>
+</tr>
+<tr>
+<td><strong>Character Load Method</strong></td>
+<td><code>Enum</code></td>
+<td>Determines how a character is selected from the group: <br> - <strong>Character Name</strong> → Load a character by its saved name. <br> - <strong>Character Index</strong> → Load a character by its index position in the group. <br> - <strong>Randomized</strong> → Randomly load a character from the group.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="layered-character-template-loader">Layered Character Template Loader</h3>
+<p>Requirements:<br>
+Have a <a class="xref" href="layered-character-type.html">Layered Character Type</a> and at least one <a class="xref" href="character-templates.html#layered-character-template">Layered Character Template</a> Setup.</p>
+<p>The <strong>Layered Character Template Loader</strong> component can be used to create and load a character from a  <strong>Layered Character Template</strong>.</p>
+<ul>
+<li>Add the script to a game object.</li>
+<li>Set <strong>Renderer</strong> and optionally <strong>Animator</strong> references.</li>
+<li>Set Loading Settings.</li>
+<li>Reference the <strong>Layered Character Template</strong> you want to load.</li>
 <li>Play your game and if <strong>Load Character On Start</strong> is toggled, your character will be displayed.</li>
 </ul>
 

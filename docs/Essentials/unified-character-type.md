@@ -24,4 +24,4 @@ The following properties must be set:
 
 That's it! Once your **Unified Character Type** is all setup you can create a **Unified Character Template** to make characters from this **Character Type**.
 
-[🔗 Read More → Unified Character Templates](character-templates.md#unified-character-templates)
+[🔗 Read More → Unified Character Templates](character-templates.md#unified-character-template)

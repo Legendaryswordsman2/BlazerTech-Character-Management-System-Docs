@@ -106,6 +106,32 @@ references:
   name: EquippedCharacterPiece
   nameWithType: EquippedCharacterPiece
   fullName: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraftType
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterDraftType
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraftType.html
+  name: CharacterDraftType
+  nameWithType: CharacterDraftType
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraftType
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterDraft
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html
+  name: CharacterDraft
+  nameWithType: CharacterDraft
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter.html
+  name: CharacterDraft_NewCharacter
+  nameWithType: CharacterDraft_NewCharacter
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter.html
+  name: CharacterDraft_PreExistingCharacter
+  nameWithType: CharacterDraft_PreExistingCharacter
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
   parent: BlazerTech.CharacterManagement.Characters
@@ -179,32 +205,6 @@ references:
   - uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler
     name: LoadedUnifiedCharacterHandler
     href: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.html
-- uid: BlazerTech.CharacterManagement.Characters.CharacterDraftType
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterDraftType
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterDraftType.html
-  name: CharacterDraftType
-  nameWithType: CharacterDraftType
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraftType
-- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterDraft
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html
-  name: CharacterDraft
-  nameWithType: CharacterDraft
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft
-- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter
-  href: BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter.html
-  name: CharacterDraft_NewCharacter
-  nameWithType: CharacterDraft_NewCharacter
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter
-- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter
-  href: BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter.html
-  name: CharacterDraft_PreExistingCharacter
-  nameWithType: CharacterDraft_PreExistingCharacter
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter
 - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
   commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
   parent: BlazerTech.CharacterManagement.Characters

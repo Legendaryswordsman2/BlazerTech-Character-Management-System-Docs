@@ -75,10 +75,12 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: _renderer
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
+  summary: The Renderer to apply the character shader to.
+  example: []
   syntax:
     content: >-
       [SerializeField]
@@ -121,10 +123,12 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: setAnimatorController
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
-    startLine: 12
+    startLine: 19
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
+  summary: Toggles if the Animator Controller set in Character Type should be used.
+  example: []
   syntax:
     content: >-
       [Tooltip("Override the animator controller with the one assigned in the Character Type")]
@@ -176,10 +180,12 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: _animator
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
-    startLine: 13
+    startLine: 24
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
+  summary: The Animator to apply the Animator Controller to
+  example: []
   syntax:
     content: >-
       [SerializeField]
@@ -231,10 +237,12 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: loadingMode
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
-    startLine: 14
+    startLine: 29
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
+  summary: Option to load character asynchronously or synchronously.
+  example: []
   syntax:
     content: >-
       [SerializeField]
@@ -277,10 +285,12 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: loadCharacterOnStart
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
-    startLine: 15
+    startLine: 34
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
+  summary: Toggles if the character should be loaded when the Start method is called.
+  example: []
   syntax:
     content: >-
       [SerializeField]
@@ -323,7 +333,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ValidationCheck
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
-    startLine: 35
+    startLine: 54
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -351,7 +361,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetAndShowCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
-    startLine: 46
+    startLine: 65
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -379,7 +389,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ShowCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
-    startLine: 48
+    startLine: 67
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -405,7 +415,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ReleaseCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
-    startLine: 50
+    startLine: 69
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -431,7 +441,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: TrySetCharacterAnimator
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
-    startLine: 52
+    startLine: 71
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -460,7 +470,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnDestroy
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
-    startLine: 71
+    startLine: 90
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components

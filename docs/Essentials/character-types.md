@@ -38,7 +38,7 @@ The following properties are shared across all character types.
 
 ### 1. Unified Character Type
 Each character uses a single spritesheet containing the fully assembled character. No runtime customization is possible.  
-- **Use Case:** Characters with fixed, pre-rendered appearances.  
+- **Use Case:** Characters with fixed, pre-created appearances.  
 - **Example:** Simplistic characters where their appearance is pre-determined and won't need to be changed.
 
 [🔗 Read More → Unified Character Type](unified-character-type.md)

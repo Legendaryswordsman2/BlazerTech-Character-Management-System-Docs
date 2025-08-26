@@ -17,11 +17,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CharacterCreationMenuEnablerRelay.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuEnablerRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuEnablerRelay
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CharacterCreationMenuEnablerRelay.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuEnablerRelay.cs
     startLine: 6
   assemblies:
   - Assembly-CSharp
@@ -48,11 +48,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CharacterCreationMenuEnablerRelay.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuEnablerRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterGroupName
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CharacterCreationMenuEnablerRelay.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuEnablerRelay.cs
     startLine: 18
   assemblies:
   - Assembly-CSharp
@@ -77,11 +77,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CharacterCreationMenuEnablerRelay.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuEnablerRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterName
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CharacterCreationMenuEnablerRelay.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuEnablerRelay.cs
     startLine: 19
   assemblies:
   - Assembly-CSharp
@@ -106,11 +106,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CharacterCreationMenuEnablerRelay.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuEnablerRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EnableCharacterCreationMenu
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/CharacterCreationMenuEnablerRelay.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuEnablerRelay.cs
     startLine: 21
   assemblies:
   - Assembly-CSharp

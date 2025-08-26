@@ -27,11 +27,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LayeredCharacterSelectionList
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
     startLine: 11
   assemblies:
   - Assembly-CSharp
@@ -58,11 +58,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LayeredCharacterType
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
     startLine: 14
   assemblies:
   - Assembly-CSharp
@@ -87,11 +87,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ListType
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
     startLine: 16
   assemblies:
   - Assembly-CSharp
@@ -116,11 +116,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GroupName
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
     startLine: 18
   assemblies:
   - Assembly-CSharp
@@ -145,11 +145,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: FixedGroupSize
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
     startLine: 20
   assemblies:
   - Assembly-CSharp
@@ -174,11 +174,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CreateNewCharactersPrivilege
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
     startLine: 24
   assemblies:
   - Assembly-CSharp
@@ -203,11 +203,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EditCharactersPrivilege
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
     startLine: 25
   assemblies:
   - Assembly-CSharp
@@ -232,11 +232,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: RemoveCharactersPrivilege
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
     startLine: 26
   assemblies:
   - Assembly-CSharp
@@ -261,11 +261,11 @@ items:
   type: Event
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnMenuEnabledAndSetup
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
     startLine: 37
   assemblies:
   - Assembly-CSharp
@@ -288,11 +288,11 @@ items:
   type: Event
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnMenuLoadingProgressUpdated
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
     startLine: 38
   assemblies:
   - Assembly-CSharp
@@ -315,11 +315,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EnabledAndSetup
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
     startLine: 39
   assemblies:
   - Assembly-CSharp
@@ -344,11 +344,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EditCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
     startLine: 153
   assemblies:
   - Assembly-CSharp
@@ -375,11 +375,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CreatNewCharacterInList
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
     startLine: 167
   assemblies:
   - Assembly-CSharp
@@ -401,11 +401,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: RemoveCharacterFromList
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Character Selection/LayeredCharacterSelectionList.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
     startLine: 179
   assemblies:
   - Assembly-CSharp

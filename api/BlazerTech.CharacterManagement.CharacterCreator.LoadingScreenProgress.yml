@@ -16,11 +16,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Loading Screen/LoadingScreenProgress.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Loading Screen/LoadingScreenProgress.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadingScreenProgress
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Loading Screen/LoadingScreenProgress.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Loading Screen/LoadingScreenProgress.cs
     startLine: 5
   assemblies:
   - Assembly-CSharp
@@ -50,11 +50,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Loading Screen/LoadingScreenProgress.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Loading Screen/LoadingScreenProgress.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnLoadingStarting
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Loading Screen/LoadingScreenProgress.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Loading Screen/LoadingScreenProgress.cs
     startLine: 17
   assemblies:
   - Assembly-CSharp
@@ -76,11 +76,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Loading Screen/LoadingScreenProgress.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Loading Screen/LoadingScreenProgress.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnLoadingProgressUpdated
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator Menu/Loading Screen/LoadingScreenProgress.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Loading Screen/LoadingScreenProgress.cs
     startLine: 19
   assemblies:
   - Assembly-CSharp

@@ -25,6 +25,12 @@ items:
   assemblies:
   - Assembly-CSharp
 references:
+- uid: BlazerTech.CharacterManagement.Essentials.CCMAnimationPreviewButtonHandler
+  commentId: T:BlazerTech.CharacterManagement.Essentials.CCMAnimationPreviewButtonHandler
+  href: BlazerTech.CharacterManagement.Essentials.CCMAnimationPreviewButtonHandler.html
+  name: CCMAnimationPreviewButtonHandler
+  nameWithType: CCMAnimationPreviewButtonHandler
+  fullName: BlazerTech.CharacterManagement.Essentials.CCMAnimationPreviewButtonHandler
 - uid: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler
   commentId: T:BlazerTech.CharacterManagement.Essentials.CCReferenceHandler
   parent: BlazerTech.CharacterManagement.Essentials
@@ -151,12 +157,6 @@ references:
   name: SessionGUIDHandler
   nameWithType: SessionGUIDHandler
   fullName: BlazerTech.CharacterManagement.Essentials.SessionGUIDHandler
-- uid: BlazerTech.CharacterManagement.Essentials.CCMAnimationPreviewButtonHandler
-  commentId: T:BlazerTech.CharacterManagement.Essentials.CCMAnimationPreviewButtonHandler
-  href: BlazerTech.CharacterManagement.Essentials.CCMAnimationPreviewButtonHandler.html
-  name: CCMAnimationPreviewButtonHandler
-  nameWithType: CCMAnimationPreviewButtonHandler
-  fullName: BlazerTech.CharacterManagement.Essentials.CCMAnimationPreviewButtonHandler
 - uid: BlazerTech.CharacterManagement.Essentials.CMSInitializationHandler
   commentId: T:BlazerTech.CharacterManagement.Essentials.CMSInitializationHandler
   parent: BlazerTech.CharacterManagement.Essentials
