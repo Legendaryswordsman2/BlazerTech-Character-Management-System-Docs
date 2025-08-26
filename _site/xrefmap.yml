@@ -6398,28 +6398,28 @@ references:
   href: docs/getting-started/basic-concepts.html
 - uid: character-creator
   name: Character Creator
-  href: docs/essentials/character-creator.html
+  href: docs/character-creator.html
 - uid: character-groups
   name: Character Groups
-  href: docs/essentials/character-groups.html
+  href: docs/character-groups.html
 - uid: character-templates
   name: Character Templates
-  href: docs/essentials/character-templates.html
+  href: docs/character-templates.html
 - uid: character-type-fields
   name: Character Type Fields
-  href: docs/essentials/character-type-fields.html
+  href: docs/character-type-fields.html
 - uid: character-types
   name: Character Types
-  href: docs/essentials/character-types.html
+  href: docs/character-types.html
 - uid: character-usage
   name: Character Usage
-  href: docs/essentials/character-usage.html
+  href: docs/character-usage.html
 - uid: landing
   name: BlazerTech Character Management System
   href: index.html
 - uid: layered-character-type
   name: Layered Character Type
-  href: docs/essentials/layered-character-type.html
+  href: docs/layered-character-type.html
 - uid: unified-character-type
   name: Unified Character Type
-  href: docs/essentials/unified-character-type.html
+  href: docs/unified-character-type.html

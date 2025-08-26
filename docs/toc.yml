@@ -10,23 +10,23 @@
   - name: Character Types
     items:
       - name: Character Types
-        href: essentials/character-types.md
+        href: character-types.md
       - name: Unified Character Type
-        href: essentials/unified-character-type.md
+        href: unified-character-type.md
       - name: Layered Character Type
-        href: essentials/layered-character-type.md
+        href: layered-character-type.md
       - name: Character Layers
-        href: essentials/character-layers.md
+        href: character-layers.md
 
       - name: Character Usage
-        href: essentials/character-usage.md
+        href: character-usage.md
   - name: Character Templates
-    href: essentials/character-templates.md
+    href: character-templates.md
   - name: Character Creator
-    href: essentials/character-creator.md
+    href: character-creator.md
   - name: Character Groups
-    href: essentials/character-groups.md
+    href: character-groups.md
   - name: Character Type Fields
-    href: essentials/character-type-fields.md
+    href: character-type-fields.md
   - name: LimeZu Modern Interiors Support
-    href: essentials/limezu-modern-interiors-support.md
+    href: limezu-modern-interiors-support.md

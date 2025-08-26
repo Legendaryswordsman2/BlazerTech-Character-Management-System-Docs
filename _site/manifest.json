@@ -1593,100 +1593,70 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/essentials/character-creator.md",
+      "source_relative_path": "docs/character-creator.md",
       "output": {
         ".html": {
-          "relative_path": "docs/essentials/character-creator.html"
+          "relative_path": "docs/character-creator.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/essentials/character-groups.md",
+      "source_relative_path": "docs/character-groups.md",
       "output": {
         ".html": {
-          "relative_path": "docs/essentials/character-groups.html"
+          "relative_path": "docs/character-groups.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/essentials/character-layers.md",
+      "source_relative_path": "docs/character-layers.md",
       "output": {
         ".html": {
-          "relative_path": "docs/essentials/character-layers.html"
+          "relative_path": "docs/character-layers.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/essentials/character-templates.md",
+      "source_relative_path": "docs/character-templates.md",
       "output": {
         ".html": {
-          "relative_path": "docs/essentials/character-templates.html"
+          "relative_path": "docs/character-templates.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/essentials/character-type-fields.md",
+      "source_relative_path": "docs/character-type-fields.md",
       "output": {
         ".html": {
-          "relative_path": "docs/essentials/character-type-fields.html"
+          "relative_path": "docs/character-type-fields.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/essentials/character-types.md",
+      "source_relative_path": "docs/character-types.md",
       "output": {
         ".html": {
-          "relative_path": "docs/essentials/character-types.html"
+          "relative_path": "docs/character-types.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/essentials/character-usage.md",
+      "source_relative_path": "docs/character-usage.md",
       "output": {
         ".html": {
-          "relative_path": "docs/essentials/character-usage.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/essentials/layered-character-type.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/essentials/layered-character-type.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/essentials/limezu-modern-interiors-support.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/essentials/limezu-modern-interiors-support.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/essentials/unified-character-type.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/essentials/unified-character-type.html"
+          "relative_path": "docs/character-usage.html"
         }
       },
       "version": ""
@@ -1722,6 +1692,26 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "docs/layered-character-type.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/layered-character-type.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/limezu-modern-interiors-support.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/limezu-modern-interiors-support.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "docs/toc.yml",
       "output": {
@@ -1730,6 +1720,16 @@
         },
         ".json": {
           "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/unified-character-type.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/unified-character-type.html"
         }
       },
       "version": ""
