@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Layered Character Type | BlazerTech Character Management System </title>
+      <title>Character Types | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Layered Character Type | BlazerTech Character Management System ">
+      <meta name="title" content="Character Types | BlazerTech Character Management System ">
       
       
-      <link rel="icon" href="../../favicon.ico">
-      <link rel="stylesheet" href="../../public/docfx.min.css">
-      <link rel="stylesheet" href="../../public/main.css">
-      <meta name="docfx:navrel" content="../../toc.html">
-      <meta name="docfx:tocrel" content="../toc.html">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
       
-      <meta name="docfx:rel" content="../../">
+      <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/essentials/layered-character-type.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-types.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./../../public/docfx.min.js"></script>
+      <script type="module" src="./../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -43,8 +43,8 @@
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../../index.html">
-            <img id="logo" class="svg" src="../../logo.svg" alt="BlazerTech Character Management System">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BlazerTech Character Management System">
             BlazerTech Character Management System
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,21 +84,19 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="layered-character-type">
-<h1 id="layered-character-type">Layered Character Type</h1>
+        <article data-uid="character-types">
+<h1 id="character-types">Character Types</h1>
 
-<p>A layered character is made from multiple layers, these layers are stacked upon each other to form the final character.<br>
-Ex: <strong>Body &gt; Outfit &gt; Hairstyle &gt; Accessory</strong> - Each layer is added one by one in order.</p>
-<hr>
-<h2 id="creating-a-layered-character-type">Creating a Layered Character Type</h2>
-<p>to create a new layered character type right click the <strong>Project</strong> window and navigate to <strong>Create &gt; BlazerTech Character Management System &gt; Layered Character Type</strong>.</p>
-<div class="IMPORTANT">
-<h5>Important</h5>
-<p>The <strong>Layered Character Type Scriptable Object</strong> MUST be placed inside a folder named <strong>Resources</strong>! This is need for runtime initialization.</p>
+<p>Character types are <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Objects</a> that define core aspects of a character. They are the heart of the <strong>Character Management System</strong>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All characters <strong>Require</strong> a <strong>Character Type</strong>.</p>
 </div>
 <hr>
-<h3 id="setting-up-a-layered-character-type">Setting up a Layered Character Type</h3>
-<p>The following properties must be set:</p>
+<h2 id="character-type-base">Character Type Base</h2>
+<p>All Character Types inherit from <a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html">CharacterTypeBaseSO</a>, which contains the core properties shared across all Character Types.</p>
+<h3 id="core-character-type-properties">Core Character Type Properties</h3>
+<p>The following properties are shared across all character types.</p>
 <table>
 <thead>
 <tr>
@@ -125,21 +123,54 @@ Ex: <strong>Body &gt; Outfit &gt; Hairstyle &gt; Accessory</strong> - Each layer
 </tr>
 </tbody>
 </table>
+<p><a class="xref" href="character-type-fields.html">🔗 Read More → Character Type Properties</a></p>
 <hr>
-<h3 id="setting-up-character-layers">Setting up Character Layers</h3>
-<p>At the bottom of your layered character type is a list of <strong>Character Layers</strong>. Each layer is a <strong>Scriptable Object</strong> that contains all available options for that layer of your character.</p>
-<p>To create a <strong>Character Layer</strong> once again right click the Project window and navigate to <strong>Create &gt; BlazerTech Character Management System &gt; Character Layer</strong>.</p>
-<p>After the <strong>Character Layer</strong> has been created make sure to add it to the <strong>layers</strong> list inside your <strong>Layered Character Type</strong>.</p>
-<div class="IMPORTANT">
-<h5>Important</h5>
-<p>Only the <strong>Layered Character Type</strong> must be placed in a <strong>Resources</strong> folder. Everything else including <strong>Character Layers</strong> should be placed outside the <strong>Resources</strong> folder!</p>
-</div>
-<p>Refer to <a href="character-layers.html">Character Layers</a> for how to setup your newely created layers.</p>
+<h2 id="character-type-variants">Character Type Variants</h2>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>Modularity</th>
+<th>Runtime Customization</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Unified</strong></td>
+<td>Single spritesheet</td>
+<td>None</td>
+<td>Pre-created, fixed characters</td>
+</tr>
+<tr>
+<td><strong>Layered</strong></td>
+<td>Layered spritesheets</td>
+<td>High</td>
+<td>Modular, editable characters</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="1-unified-character-type">1. Unified Character Type</h3>
+<p>Each character uses a single spritesheet containing the fully assembled character. No runtime customization is possible.</p>
+<ul>
+<li><strong>Use Case:</strong> Characters with fixed, pre-created appearances.</li>
+<li><strong>Example:</strong> Simplistic characters where their appearance is pre-determined and won't need to be changed.</li>
+</ul>
+<p><a href="unified-character-type.html">🔗 Read More → Unified Character Type</a></p>
+<hr>
+<h3 id="2-layered-character-type">2. Layered Character Type</h3>
+<p>A set of separate spritesheets, each containing one visual layer of the character.</p>
+<ul>
+<li><strong>Use Case:</strong> Customizable player characters or dynamically generated NPCs.</li>
+<li><strong>Example:</strong> Body, Outfit, Hairstyle, Accessory.</li>
+</ul>
+<p><a href="layered-character-type.html">🔗 Read More → Layered Character Type</a></p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/essentials/layered-character-type.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-types.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
