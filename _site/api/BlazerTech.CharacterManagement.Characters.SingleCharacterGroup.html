@@ -89,7 +89,7 @@
 
 
   <h1 id="BlazerTech_CharacterManagement_Characters_SingleCharacterGroup" data-uid="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup" class="text-break">
-Class SingleCharacterGroup  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs/#L31"><i class="bi bi-code-slash"></i></a>
+Class SingleCharacterGroup  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class SingleCharacterGroup  <a class="header-action link-secondary" title="View 
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public class SingleCharacterGroup : CharacterGroupBase</code></pre>
+public sealed class SingleCharacterGroup : CharacterGroupBase</code></pre>
   </div>
 
 
@@ -126,13 +126,10 @@ public class SingleCharacterGroup : CharacterGroupBase</code></pre>
       <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterGroupBase.html#BlazerTech_CharacterManagement_Characters_CharacterGroupBase_GroupName">CharacterGroupBase.GroupName</a>
     </div>
     <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterGroupBase.html#BlazerTech_CharacterManagement_Characters_CharacterGroupBase_CharacterType">CharacterGroupBase.CharacterType</a>
+    </div>
+    <div>
       <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterGroupBase.html#BlazerTech_CharacterManagement_Characters_CharacterGroupBase_OnCharacterChanged">CharacterGroupBase.OnCharacterChanged</a>
-    </div>
-    <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterGroupBase.html#BlazerTech_CharacterManagement_Characters_CharacterGroupBase_AttachedGroupsCollection">CharacterGroupBase.AttachedGroupsCollection</a>
-    </div>
-    <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterGroupBase.html#BlazerTech_CharacterManagement_Characters_CharacterGroupBase_RaiseOnCharacterChanged_BlazerTech_CharacterManagement_Characters_LayeredCharacter_">CharacterGroupBase.RaiseOnCharacterChanged(LayeredCharacter)</a>
     </div>
   </dd></dl>
 
@@ -147,23 +144,23 @@ public class SingleCharacterGroup : CharacterGroupBase</code></pre>
 
   <a id="BlazerTech_CharacterManagement_Characters_SingleCharacterGroup__ctor_" data-uid="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.#ctor*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_SingleCharacterGroup__ctor_BlazerTech_CharacterManagement_Characters_SingleCharacterGroup_SingleCharacterGroup_DTO_BlazerTech_CharacterManagement_Characters_CharacterTypeGroupCollection_" data-uid="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.#ctor(BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.SingleCharacterGroup_DTO,BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection)">
-  SingleCharacterGroup(SingleCharacterGroup_DTO, CharacterTypeGroupCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_SingleCharacterGroup__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_String_" data-uid="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.String)">
+  SingleCharacterGroup(LayeredCharacterTypeSO, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SingleCharacterGroup(SingleCharacterGroup.SingleCharacterGroup_DTO DTO, CharacterTypeGroupCollection attachedGroupsCollection)</code></pre>
+    <pre><code class="lang-csharp hljs">public SingleCharacterGroup(LayeredCharacterTypeSO characterType, string groupName = &quot;Single&quot;)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>DTO</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.html">SingleCharacterGroup</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.SingleCharacterGroup_DTO.html">SingleCharacterGroup_DTO</a></dt>
+    <dt><code>characterType</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a></dt>
     <dd></dd>
-    <dt><code>attachedGroupsCollection</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.html">CharacterTypeGroupCollection</a></dt>
+    <dt><code>groupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -180,23 +177,23 @@ public class SingleCharacterGroup : CharacterGroupBase</code></pre>
 
   <a id="BlazerTech_CharacterManagement_Characters_SingleCharacterGroup__ctor_" data-uid="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.#ctor*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_SingleCharacterGroup__ctor_System_String_BlazerTech_CharacterManagement_Characters_CharacterTypeGroupCollection_" data-uid="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.#ctor(System.String,BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection)">
-  SingleCharacterGroup(string, CharacterTypeGroupCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_SingleCharacterGroup__ctor_BlazerTech_CharacterManagement_Characters_SingleCharacterGroup_SingleCharacterGroup_DTO_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_" data-uid="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.#ctor(BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.SingleCharacterGroup_DTO,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)">
+  SingleCharacterGroup(SingleCharacterGroup_DTO, LayeredCharacterTypeSO)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SingleCharacterGroup(string groupName, CharacterTypeGroupCollection attachedGroupsCollection)</code></pre>
+    <pre><code class="lang-csharp hljs">public SingleCharacterGroup(SingleCharacterGroup.SingleCharacterGroup_DTO DTO, LayeredCharacterTypeSO characterType)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>groupName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>DTO</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.html">SingleCharacterGroup</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.SingleCharacterGroup_DTO.html">SingleCharacterGroup_DTO</a></dt>
     <dd></dd>
-    <dt><code>attachedGroupsCollection</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.html">CharacterTypeGroupCollection</a></dt>
+    <dt><code>characterType</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a></dt>
     <dd></dd>
   </dl>
 
@@ -219,14 +216,14 @@ public class SingleCharacterGroup : CharacterGroupBase</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_SingleCharacterGroup_Character" data-uid="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.Character">
   Character
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LayeredCharacter Character { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public LayeredCharacter Character { get; }</code></pre>
   </div>
 
 
@@ -254,7 +251,7 @@ public class SingleCharacterGroup : CharacterGroupBase</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_SingleCharacterGroup_AddCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacter_" data-uid="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.AddCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter)">
   AddCharacter(LayeredCharacter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -290,7 +287,7 @@ public class SingleCharacterGroup : CharacterGroupBase</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_SingleCharacterGroup_ContainsCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacter_" data-uid="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.ContainsCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter)">
   ContainsCharacter(LayeredCharacter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -326,7 +323,7 @@ public class SingleCharacterGroup : CharacterGroupBase</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_SingleCharacterGroup_ContainsCharacterWithGUID_System_Guid_" data-uid="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.ContainsCharacterWithGUID(System.Guid)">
   ContainsCharacterWithGUID(Guid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -362,19 +359,19 @@ public class SingleCharacterGroup : CharacterGroupBase</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_SingleCharacterGroup_ContainsCharacterWithName_System_String_" data-uid="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.ContainsCharacterWithName(System.String)">
   ContainsCharacterWithName(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool ContainsCharacterWithName(string characterName)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool ContainsCharacterWithName(string name)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>characterName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -398,7 +395,7 @@ public class SingleCharacterGroup : CharacterGroupBase</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs/#L31" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs/#L36" class="edit-link">Edit this page</a>
         </div>
 
 

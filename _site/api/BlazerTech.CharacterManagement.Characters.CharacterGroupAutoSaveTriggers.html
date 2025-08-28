@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class CharacterPressenceController | BlazerTech Character Management System </title>
+      <title>Enum CharacterGroupAutoSaveTriggers | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class CharacterPressenceController | BlazerTech Character Management System ">
+      <meta name="title" content="Enum CharacterGroupAutoSaveTriggers | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_CharacterCreator_CharacterPressenceController.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.CharacterCreator.CharacterPressenceController%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_Characters_CharacterGroupAutoSaveTriggers.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,16 +84,17 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterPressenceController">
+        <article data-uid="BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers">
 
 
 
-  <h1 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterPressenceController" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterPressenceController" class="text-break">
-Class CharacterPressenceController  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Samples/Sample 3/Scripts/CharacterPressenceController.cs/#L15"><i class="bi bi-code-slash"></i></a>
+
+  <h1 id="BlazerTech_CharacterManagement_Characters_CharacterGroupAutoSaveTriggers" data-uid="BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers" class="text-break">
+Enum CharacterGroupAutoSaveTriggers  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterGroupManager.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="BlazerTech.html">BlazerTech</a>.<a class="xref" href="BlazerTech.CharacterManagement.html">CharacterManagement</a>.<a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.html">CharacterCreator</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BlazerTech.html">BlazerTech</a>.<a class="xref" href="BlazerTech.CharacterManagement.html">CharacterManagement</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.html">Characters</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
   </div>
 
@@ -101,37 +102,44 @@ Class CharacterPressenceController  <a class="header-action link-secondary" titl
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CharacterPressenceController : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">[Flags]
+public enum CharacterGroupAutoSaveTriggers</code></pre>
   </div>
 
 
 
 
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">Object</span></div>
-      <div><span class="xref">Component</span></div>
-      <div><span class="xref">Behaviour</span></div>
-      <div><span class="xref">MonoBehaviour</span></div>
-      <div><span class="xref">CharacterPressenceController</span></div>
-    </dd>
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="BlazerTech_CharacterManagement_Characters_CharacterGroupAutoSaveTriggers_All"><code>All = GameExit | CharacterCreatorSave | SceneChange</code></dt>
+  
+  <dd></dd>
+    <dt id="BlazerTech_CharacterManagement_Characters_CharacterGroupAutoSaveTriggers_CharacterCreatorSave"><code>CharacterCreatorSave = 2</code></dt>
+  
+  <dd></dd>
+    <dt id="BlazerTech_CharacterManagement_Characters_CharacterGroupAutoSaveTriggers_GameExit"><code>GameExit = 1</code></dt>
+  
+  <dd></dd>
+    <dt id="BlazerTech_CharacterManagement_Characters_CharacterGroupAutoSaveTriggers_None"><code>None = 0</code></dt>
+  
+  <dd></dd>
+    <dt id="BlazerTech_CharacterManagement_Characters_CharacterGroupAutoSaveTriggers_SceneChange"><code>SceneChange = 4</code></dt>
+  
+  <dd></dd>
   </dl>
-
-
-
-
-
-
-
 
 
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Samples/Sample 3/Scripts/CharacterPressenceController.cs/#L15" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterGroupManager.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 

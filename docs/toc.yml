@@ -17,7 +17,6 @@
         href: layered-character-type.md
       - name: Character Layers
         href: character-layers.md
-
       - name: Character Usage
         href: character-usage.md
   - name: Character Templates
@@ -30,3 +29,7 @@
     href: character-type-fields.md
   - name: LimeZu Modern Interiors Support
     href: limezu-modern-interiors-support.md
+
+  - name: Advanced
+  - name: Creating Characters
+    href: advanced/creating-characters.md

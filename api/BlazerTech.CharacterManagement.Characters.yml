@@ -9,6 +9,7 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterDraftType
   - BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter
   - BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter
+  - BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
   - BlazerTech.CharacterManagement.Characters.CharacterGroupBase
   - BlazerTech.CharacterManagement.Characters.CharacterGroupType
   - BlazerTech.CharacterManagement.Characters.CharacterLayerSO
@@ -16,22 +17,19 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.CharacterPieceDefinition_DTO
   - BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.LoadedSpriteDataContainer
   - BlazerTech.CharacterManagement.Characters.CharacterPieceMapping
-  - BlazerTech.CharacterManagement.Characters.CharacterSaveMode
   - BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
-  - BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection
-  - BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO
   - BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece
   - BlazerTech.CharacterManagement.Characters.FixedCharacterGroup
   - BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO
-  - BlazerTech.CharacterManagement.Characters.FixedCharacterGroupCollection
   - BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup
   - BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.FlexibleCharacterGroup_DTO
-  - BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroupCollection
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterManager
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig
@@ -54,6 +52,34 @@ items:
   assemblies:
   - Assembly-CSharp
 references:
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupType
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterGroupType
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterGroupType.html
+  name: CharacterGroupType
+  nameWithType: CharacterGroupType
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupType
+- uid: BlazerTech.CharacterManagement.Characters.MultiCharacterGroupType
+  commentId: T:BlazerTech.CharacterManagement.Characters.MultiCharacterGroupType
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.MultiCharacterGroupType.html
+  name: MultiCharacterGroupType
+  nameWithType: MultiCharacterGroupType
+  fullName: BlazerTech.CharacterManagement.Characters.MultiCharacterGroupType
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html
+  name: CharacterTypeGroupsRegistry
+  nameWithType: CharacterTypeGroupsRegistry
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.html
+  name: CharacterTypeGroups_DTO
+  nameWithType: CharacterTypeGroups_DTO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO
 - uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO
   commentId: T:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO
   parent: BlazerTech.CharacterManagement.Characters
@@ -132,6 +158,19 @@ references:
   name: CharacterDraft_PreExistingCharacter
   nameWithType: CharacterDraft_PreExistingCharacter
   fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.html
+  name: CharacterGroupAutoSaveTriggers
+  nameWithType: CharacterGroupAutoSaveTriggers
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html
+  name: LayeredCharacterGroupManager
+  nameWithType: LayeredCharacterGroupManager
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
   parent: BlazerTech.CharacterManagement.Characters
@@ -264,19 +303,12 @@ references:
   name: CharacterTypeBaseSO
   nameWithType: CharacterTypeBaseSO
   fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
-- uid: BlazerTech.CharacterManagement.Characters.CharacterSaveMode
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterSaveMode
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterSaveMode.html
-  name: CharacterSaveMode
-  nameWithType: CharacterSaveMode
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterSaveMode
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager
-  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterManager
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.html
-  name: LayeredCharacterManager
-  nameWithType: LayeredCharacterManager
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
+  href: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO.html
+  name: UnifiedCharacterTypeSO
+  nameWithType: UnifiedCharacterTypeSO
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
 - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
   commentId: T:BlazerTech.CharacterManagement.Characters.CharacterGroupBase
   parent: BlazerTech.CharacterManagement.Characters
@@ -374,70 +406,6 @@ references:
   - uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO
     name: FixedCharacterGroup_DTO
     href: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO.html
-- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
-  commentId: T:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
-  href: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO.html
-  name: UnifiedCharacterTypeSO
-  nameWithType: UnifiedCharacterTypeSO
-  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
-- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupType
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterGroupType
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterGroupType.html
-  name: CharacterGroupType
-  nameWithType: CharacterGroupType
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupType
-- uid: BlazerTech.CharacterManagement.Characters.MultiCharacterGroupType
-  commentId: T:BlazerTech.CharacterManagement.Characters.MultiCharacterGroupType
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.MultiCharacterGroupType.html
-  name: MultiCharacterGroupType
-  nameWithType: MultiCharacterGroupType
-  fullName: BlazerTech.CharacterManagement.Characters.MultiCharacterGroupType
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.html
-  name: CharacterTypeGroupCollection
-  nameWithType: CharacterTypeGroupCollection
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.html
-  name: CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO
-  nameWithType: CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO
-  spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection
-    name: CharacterTypeGroupCollection
-    href: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.html
-  - name: .
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO
-    name: CharacterTypeGroupCollection_DTO
-    href: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO.html
-  spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection
-    name: CharacterTypeGroupCollection
-    href: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.html
-  - name: .
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO
-    name: CharacterTypeGroupCollection_DTO
-    href: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO.html
-- uid: BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroupCollection
-  commentId: T:BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroupCollection
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroupCollection.html
-  name: FlexibleCharacterGroupCollection
-  nameWithType: FlexibleCharacterGroupCollection
-  fullName: BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroupCollection
-- uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroupCollection
-  commentId: T:BlazerTech.CharacterManagement.Characters.FixedCharacterGroupCollection
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.FixedCharacterGroupCollection.html
-  name: FixedCharacterGroupCollection
-  nameWithType: FixedCharacterGroupCollection
-  fullName: BlazerTech.CharacterManagement.Characters.FixedCharacterGroupCollection
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacter
   parent: BlazerTech.CharacterManagement.Characters

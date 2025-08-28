@@ -7,6 +7,7 @@ items:
   children:
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterDraft
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterType
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.CharacterSaved
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DisableMenu
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewFlexibleCharacter(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)
@@ -189,23 +190,23 @@ items:
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
     content.vb: Public Property ActiveCharacterType As LayeredCharacterTypeSO
   overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterType*
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
-  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
-  id: OnCharacterSaved
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.CharacterSaved
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.CharacterSaved
+  id: CharacterSaved
   parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
   langs:
   - csharp
   - vb
-  name: OnCharacterSaved
-  nameWithType: CharacterCreationMenuManager.OnCharacterSaved
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
+  name: CharacterSaved
+  nameWithType: CharacterCreationMenuManager.CharacterSaved
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.CharacterSaved
   type: Field
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: OnCharacterSaved
+    id: CharacterSaved
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs
     startLine: 37
   assemblies:
@@ -217,13 +218,13 @@ items:
     content: >-
       [Space]
 
-      public UnityEvent OnCharacterSaved
+      public UnityEvent CharacterSaved
     return:
       type: UnityEngine.Events.UnityEvent
     content.vb: >-
       <Space>
 
-      Public OnCharacterSaved As UnityEvent
+      Public CharacterSaved As UnityEvent
   attributes:
   - type: UnityEngine.SpaceAttribute
     ctor: UnityEngine.SpaceAttribute.#ctor
@@ -288,6 +289,33 @@ items:
       type: System.Boolean
     content.vb: Public Property EnabledAndSetup As Boolean
   overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnabledAndSetup*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
+  id: OnCharacterSaved
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+  langs:
+  - csharp
+  - vb
+  name: OnCharacterSaved
+  nameWithType: CharacterCreationMenuManager.OnCharacterSaved
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
+  type: Event
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: OnCharacterSaved
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public static event EventHandler<LayeredCharacter> OnCharacterSaved
+    return:
+      type: System.EventHandler{BlazerTech.CharacterManagement.Characters.LayeredCharacter}
+    content.vb: Public Shared Event OnCharacterSaved As EventHandler(Of LayeredCharacter)
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuEnabledAndSetup
   commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuEnabledAndSetup
   id: OnMenuEnabledAndSetup
@@ -792,6 +820,67 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: System.EventHandler{BlazerTech.CharacterManagement.Characters.LayeredCharacter}
+  commentId: T:System.EventHandler{BlazerTech.CharacterManagement.Characters.LayeredCharacter}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<LayeredCharacter>
+  nameWithType: EventHandler<LayeredCharacter>
+  fullName: System.EventHandler<BlazerTech.CharacterManagement.Characters.LayeredCharacter>
+  nameWithType.vb: EventHandler(Of LayeredCharacter)
+  fullName.vb: System.EventHandler(Of BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  name.vb: EventHandler(Of LayeredCharacter)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+    name: LayeredCharacter
+    href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+    name: LayeredCharacter
+    href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
 - uid: System.EventHandler
   commentId: T:System.EventHandler
   parent: System
@@ -834,34 +923,6 @@ references:
     name: Single
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.single
-  - name: )
-- uid: System.EventHandler`1
-  commentId: T:System.EventHandler`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
-  name: EventHandler<TEventArgs>
-  nameWithType: EventHandler<TEventArgs>
-  fullName: System.EventHandler<TEventArgs>
-  nameWithType.vb: EventHandler(Of TEventArgs)
-  fullName.vb: System.EventHandler(Of TEventArgs)
-  name.vb: EventHandler(Of TEventArgs)
-  spec.csharp:
-  - uid: System.EventHandler`1
-    name: EventHandler
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
-  - name: <
-  - name: TEventArgs
-  - name: '>'
-  spec.vb:
-  - uid: System.EventHandler`1
-    name: EventHandler
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TEventArgs
   - name: )
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuPreExistingCharacter*
   commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuPreExistingCharacter

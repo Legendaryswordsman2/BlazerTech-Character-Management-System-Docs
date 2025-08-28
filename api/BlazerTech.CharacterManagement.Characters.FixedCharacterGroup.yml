@@ -5,13 +5,15 @@ items:
   id: FixedCharacterGroup
   parent: BlazerTech.CharacterManagement.Characters
   children:
-  - BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor(BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO,BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection)
-  - BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor(System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection)
+  - BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor(BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  - BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor(System.String,System.Int32,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   - BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.AddCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   - BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.Characters
   - BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.ContainsCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   - BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.ContainsCharacterWithGUID(System.Guid)
   - BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.ContainsCharacterWithName(System.String)
+  - BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.ReplaceAt(System.Int32,BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  - BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.SwapCharacters(System.Int32,System.Int32)
   langs:
   - csharp
   - vb
@@ -21,12 +23,12 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: FixedCharacterGroup
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
-    startLine: 186
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
+    startLine: 176
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -34,19 +36,18 @@ items:
     content: >-
       [Serializable]
 
-      public class FixedCharacterGroup : CharacterGroupBase
+      public sealed class FixedCharacterGroup : CharacterGroupBase
     content.vb: >-
       <Serializable>
 
-      Public Class FixedCharacterGroup Inherits CharacterGroupBase
+      Public NotInheritable Class FixedCharacterGroup Inherits CharacterGroupBase
   inheritance:
   - System.Object
   - BlazerTech.CharacterManagement.Characters.CharacterGroupBase
   inheritedMembers:
   - BlazerTech.CharacterManagement.Characters.CharacterGroupBase.GroupName
+  - BlazerTech.CharacterManagement.Characters.CharacterGroupBase.CharacterType
   - BlazerTech.CharacterManagement.Characters.CharacterGroupBase.OnCharacterChanged
-  - BlazerTech.CharacterManagement.Characters.CharacterGroupBase.AttachedGroupsCollection
-  - BlazerTech.CharacterManagement.Characters.CharacterGroupBase.RaiseOnCharacterChanged(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   attributes:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
@@ -64,12 +65,12 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Characters
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
-    startLine: 189
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
+    startLine: 179
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -78,76 +79,159 @@ items:
     return:
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacter[]
     content.vb: Public ReadOnly Characters As LayeredCharacter()
-- uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor(System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection)
-  commentId: M:BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor(System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection)
-  id: '#ctor(System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection)'
+- uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor(System.String,System.Int32,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  commentId: M:BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor(System.String,System.Int32,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  id: '#ctor(System.String,System.Int32,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)'
   parent: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup
   langs:
   - csharp
   - vb
-  name: FixedCharacterGroup(string, int, CharacterTypeGroupCollection)
-  nameWithType: FixedCharacterGroup.FixedCharacterGroup(string, int, CharacterTypeGroupCollection)
-  fullName: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup(string, int, BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection)
+  name: FixedCharacterGroup(string, int, LayeredCharacterTypeSO)
+  nameWithType: FixedCharacterGroup.FixedCharacterGroup(string, int, LayeredCharacterTypeSO)
+  fullName: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup(string, int, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   type: Constructor
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
-    startLine: 193
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
+    startLine: 184
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public FixedCharacterGroup(string groupName, int size, CharacterTypeGroupCollection attachedGroupsCollection)
+    content: public FixedCharacterGroup(string groupName, int size, LayeredCharacterTypeSO characterType)
     parameters:
     - id: groupName
       type: System.String
     - id: size
       type: System.Int32
-    - id: attachedGroupsCollection
-      type: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection
-    content.vb: Public Sub New(groupName As String, size As Integer, attachedGroupsCollection As CharacterTypeGroupCollection)
+    - id: characterType
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
+    content.vb: Public Sub New(groupName As String, size As Integer, characterType As LayeredCharacterTypeSO)
   overload: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor*
-  nameWithType.vb: FixedCharacterGroup.New(String, Integer, CharacterTypeGroupCollection)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.New(String, Integer, BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection)
-  name.vb: New(String, Integer, CharacterTypeGroupCollection)
-- uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor(BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO,BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection)
-  commentId: M:BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor(BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO,BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection)
-  id: '#ctor(BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO,BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection)'
+  nameWithType.vb: FixedCharacterGroup.New(String, Integer, LayeredCharacterTypeSO)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.New(String, Integer, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  name.vb: New(String, Integer, LayeredCharacterTypeSO)
+- uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor(BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  commentId: M:BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor(BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  id: '#ctor(BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)'
   parent: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup
   langs:
   - csharp
   - vb
-  name: FixedCharacterGroup(FixedCharacterGroup_DTO, CharacterTypeGroupCollection)
-  nameWithType: FixedCharacterGroup.FixedCharacterGroup(FixedCharacterGroup.FixedCharacterGroup_DTO, CharacterTypeGroupCollection)
-  fullName: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup(BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO, BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection)
+  name: FixedCharacterGroup(FixedCharacterGroup_DTO, LayeredCharacterTypeSO)
+  nameWithType: FixedCharacterGroup.FixedCharacterGroup(FixedCharacterGroup.FixedCharacterGroup_DTO, LayeredCharacterTypeSO)
+  fullName: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup(BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   type: Constructor
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
-    startLine: 209
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
+    startLine: 193
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public FixedCharacterGroup(FixedCharacterGroup.FixedCharacterGroup_DTO DTO, CharacterTypeGroupCollection attachedGroupsCollection)
+    content: public FixedCharacterGroup(FixedCharacterGroup.FixedCharacterGroup_DTO DTO, LayeredCharacterTypeSO characterType)
     parameters:
     - id: DTO
       type: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO
-    - id: attachedGroupsCollection
-      type: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection
-    content.vb: Public Sub New(DTO As FixedCharacterGroup.FixedCharacterGroup_DTO, attachedGroupsCollection As CharacterTypeGroupCollection)
+    - id: characterType
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
+    content.vb: Public Sub New(DTO As FixedCharacterGroup.FixedCharacterGroup_DTO, characterType As LayeredCharacterTypeSO)
   overload: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor*
-  nameWithType.vb: FixedCharacterGroup.New(FixedCharacterGroup.FixedCharacterGroup_DTO, CharacterTypeGroupCollection)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.New(BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO, BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection)
-  name.vb: New(FixedCharacterGroup_DTO, CharacterTypeGroupCollection)
+  nameWithType.vb: FixedCharacterGroup.New(FixedCharacterGroup.FixedCharacterGroup_DTO, LayeredCharacterTypeSO)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.New(BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  name.vb: New(FixedCharacterGroup_DTO, LayeredCharacterTypeSO)
+- uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.SwapCharacters(System.Int32,System.Int32)
+  commentId: M:BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.SwapCharacters(System.Int32,System.Int32)
+  id: SwapCharacters(System.Int32,System.Int32)
+  parent: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup
+  langs:
+  - csharp
+  - vb
+  name: SwapCharacters(int, int)
+  nameWithType: FixedCharacterGroup.SwapCharacters(int, int)
+  fullName: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.SwapCharacters(int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: SwapCharacters
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
+    startLine: 216
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  summary: Swaps two characters at the specified indexes.
+  example: []
+  syntax:
+    content: public void SwapCharacters(int indexA, int indexB)
+    parameters:
+    - id: indexA
+      type: System.Int32
+      description: The index of the first character to swap.
+    - id: indexB
+      type: System.Int32
+      description: The index of the second character to swap.
+    content.vb: Public Sub SwapCharacters(indexA As Integer, indexB As Integer)
+  overload: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.SwapCharacters*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown if <code class="paramref">indexA</code> or <code class="paramref">indexB</code> is outside the bounds of the list.
+  nameWithType.vb: FixedCharacterGroup.SwapCharacters(Integer, Integer)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.SwapCharacters(Integer, Integer)
+  name.vb: SwapCharacters(Integer, Integer)
+- uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.ReplaceAt(System.Int32,BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  commentId: M:BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.ReplaceAt(System.Int32,BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  id: ReplaceAt(System.Int32,BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  parent: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup
+  langs:
+  - csharp
+  - vb
+  name: ReplaceAt(int, LayeredCharacter)
+  nameWithType: FixedCharacterGroup.ReplaceAt(int, LayeredCharacter)
+  fullName: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.ReplaceAt(int, BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: ReplaceAt
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
+    startLine: 236
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  summary: Replace a character at a specified index with another character.
+  example: []
+  syntax:
+    content: public bool ReplaceAt(int index, LayeredCharacter character)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: ''
+    - id: character
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function ReplaceAt(index As Integer, character As LayeredCharacter) As Boolean
+  overload: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.ReplaceAt*
+  nameWithType.vb: FixedCharacterGroup.ReplaceAt(Integer, LayeredCharacter)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.ReplaceAt(Integer, BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  name.vb: ReplaceAt(Integer, LayeredCharacter)
 - uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.AddCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   commentId: M:BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.AddCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   id: AddCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
@@ -161,12 +245,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: AddCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
-    startLine: 242
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
+    startLine: 245
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -194,12 +278,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ContainsCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
-    startLine: 262
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
+    startLine: 265
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -227,12 +311,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ContainsCharacterWithGUID
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
-    startLine: 264
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
+    startLine: 266
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -260,24 +344,24 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ContainsCharacterWithName
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupTypes.cs
-    startLine: 266
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
+    startLine: 267
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   example: []
   syntax:
-    content: public override bool ContainsCharacterWithName(string characterName)
+    content: public override bool ContainsCharacterWithName(string name)
     parameters:
-    - id: characterName
+    - id: name
       type: System.String
     return:
       type: System.Boolean
-    content.vb: Public Overrides Function ContainsCharacterWithName(characterName As String) As Boolean
+    content.vb: Public Overrides Function ContainsCharacterWithName(name As String) As Boolean
   overridden: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.ContainsCharacterWithName(System.String)
   overload: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.ContainsCharacterWithName*
   nameWithType.vb: FixedCharacterGroup.ContainsCharacterWithName(String)
@@ -333,12 +417,19 @@ references:
   nameWithType: CharacterGroupBase
   fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
 - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.GroupName
-  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterGroupBase.GroupName
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterGroupBase.GroupName
   parent: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
   href: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.html#BlazerTech_CharacterManagement_Characters_CharacterGroupBase_GroupName
   name: GroupName
   nameWithType: CharacterGroupBase.GroupName
   fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.GroupName
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.CharacterType
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterGroupBase.CharacterType
+  parent: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
+  href: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.html#BlazerTech_CharacterManagement_Characters_CharacterGroupBase_CharacterType
+  name: CharacterType
+  nameWithType: CharacterGroupBase.CharacterType
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.CharacterType
 - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.OnCharacterChanged
   commentId: E:BlazerTech.CharacterManagement.Characters.CharacterGroupBase.OnCharacterChanged
   parent: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
@@ -346,38 +437,6 @@ references:
   name: OnCharacterChanged
   nameWithType: CharacterGroupBase.OnCharacterChanged
   fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.OnCharacterChanged
-- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.AttachedGroupsCollection
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterGroupBase.AttachedGroupsCollection
-  parent: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
-  href: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.html#BlazerTech_CharacterManagement_Characters_CharacterGroupBase_AttachedGroupsCollection
-  name: AttachedGroupsCollection
-  nameWithType: CharacterGroupBase.AttachedGroupsCollection
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.AttachedGroupsCollection
-- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.RaiseOnCharacterChanged(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterGroupBase.RaiseOnCharacterChanged(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
-  parent: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
-  href: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.html#BlazerTech_CharacterManagement_Characters_CharacterGroupBase_RaiseOnCharacterChanged_BlazerTech_CharacterManagement_Characters_LayeredCharacter_
-  name: RaiseOnCharacterChanged(LayeredCharacter)
-  nameWithType: CharacterGroupBase.RaiseOnCharacterChanged(LayeredCharacter)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.RaiseOnCharacterChanged(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
-  spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.RaiseOnCharacterChanged(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
-    name: RaiseOnCharacterChanged
-    href: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.html#BlazerTech_CharacterManagement_Characters_CharacterGroupBase_RaiseOnCharacterChanged_BlazerTech_CharacterManagement_Characters_LayeredCharacter_
-  - name: (
-  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
-    name: LayeredCharacter
-    href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
-  - name: )
-  spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.RaiseOnCharacterChanged(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
-    name: RaiseOnCharacterChanged
-    href: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.html#BlazerTech_CharacterManagement_Characters_CharacterGroupBase_RaiseOnCharacterChanged_BlazerTech_CharacterManagement_Characters_LayeredCharacter_
-  - name: (
-  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
-    name: LayeredCharacter
-    href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
-  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -408,7 +467,7 @@ references:
   - name: )
 - uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.#ctor
-  href: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.html#BlazerTech_CharacterManagement_Characters_FixedCharacterGroup__ctor_System_String_System_Int32_BlazerTech_CharacterManagement_Characters_CharacterTypeGroupCollection_
+  href: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.html#BlazerTech_CharacterManagement_Characters_FixedCharacterGroup__ctor_System_String_System_Int32_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
   name: FixedCharacterGroup
   nameWithType: FixedCharacterGroup.FixedCharacterGroup
   fullName: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup
@@ -437,13 +496,13 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
   parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.html
-  name: CharacterTypeGroupCollection
-  nameWithType: CharacterTypeGroupCollection
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html
+  name: LayeredCharacterTypeSO
+  nameWithType: LayeredCharacterTypeSO
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
 - uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO
   commentId: T:BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO
   parent: BlazerTech.CharacterManagement.Characters
@@ -467,6 +526,43 @@ references:
   - uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO
     name: FixedCharacterGroup_DTO
     href: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO.html
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.SwapCharacters*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.SwapCharacters
+  href: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.html#BlazerTech_CharacterManagement_Characters_FixedCharacterGroup_SwapCharacters_System_Int32_System_Int32_
+  name: SwapCharacters
+  nameWithType: FixedCharacterGroup.SwapCharacters
+  fullName: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.SwapCharacters
+- uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.ReplaceAt*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.ReplaceAt
+  href: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.html#BlazerTech_CharacterManagement_Characters_FixedCharacterGroup_ReplaceAt_System_Int32_BlazerTech_CharacterManagement_Characters_LayeredCharacter_
+  name: ReplaceAt
+  nameWithType: FixedCharacterGroup.ReplaceAt
+  fullName: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.ReplaceAt
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacter
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
+  name: LayeredCharacter
+  nameWithType: LayeredCharacter
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.AddCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterGroupBase.AddCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   parent: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
@@ -498,24 +594,6 @@ references:
   name: AddCharacter
   nameWithType: FixedCharacterGroup.AddCharacter
   fullName: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.AddCharacter
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
-  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacter
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
-  name: LayeredCharacter
-  nameWithType: LayeredCharacter
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
 - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.ContainsCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterGroupBase.ContainsCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   parent: BlazerTech.CharacterManagement.Characters.CharacterGroupBase

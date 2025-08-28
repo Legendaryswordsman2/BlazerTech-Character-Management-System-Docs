@@ -432,6 +432,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterGroupBase.yml",
       "output": {
         ".html": {
@@ -470,34 +484,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Characters.CharacterLayerSO",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPiece.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPiece.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Characters.CharacterPiece",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Characters.CharacterPieceCollectionSO",
       "Summary": null
     },
     {
@@ -544,48 +530,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.CharacterPieceInfo_DTO",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.LoadedSpriteDataContainer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.LoadedSpriteDataContainer.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.LoadedSpriteDataContainer",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceInfo.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Characters.CharacterPieceInfo",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.yml",
       "output": {
         ".html": {
@@ -597,20 +541,6 @@
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Characters.CharacterPieceMapping",
       "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.CharacterPieceMapping.yml\" sourcestartlinenumber=\"1\">References a <xref href=\"BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition\" data-throw-if-not-resolved=\"false\"></xref> within a <xref href=\"BlazerTech.CharacterManagement.Characters.CharacterLayerSO\" data-throw-if-not-resolved=\"false\"></xref> by spritesheet name.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterSaveMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterSaveMode.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Characters.CharacterSaveMode",
-      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -628,20 +558,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTemplateSO-2.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Characters.CharacterTemplateSO<TCharacterType, TCharacter>",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.yml",
       "output": {
         ".html": {
@@ -656,30 +572,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO",
-      "Summary": null
+      "Title": "BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry",
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.yml\" sourcestartlinenumber=\"1\">Holds a collection of three different types of groups.\nAn instance of this class is used for each Layered Character Type.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection",
+      "Title": "BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO",
       "Summary": null
     },
     {
@@ -726,20 +642,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.FixedCharacterGroupCollection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Characters.FixedCharacterGroupCollection.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Characters.FixedCharacterGroupCollection",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.FlexibleCharacterGroup_DTO.yml",
       "output": {
         ".html": {
@@ -764,20 +666,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroupCollection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroupCollection.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroupCollection",
       "Summary": null
     },
     {
@@ -824,16 +712,16 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacterManager.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Characters.LayeredCharacterManager",
+      "Title": "BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager",
       "Summary": null
     },
     {
@@ -1587,6 +1475,16 @@
         },
         ".json": {
           "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/advanced/creating-characters.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/advanced/creating-characters.html"
         }
       },
       "version": ""

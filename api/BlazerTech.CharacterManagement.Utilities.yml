@@ -14,8 +14,14 @@ items:
   fullName: BlazerTech.CharacterManagement.Utilities
   type: Namespace
   assemblies:
-  - Assembly-CSharp
+  - Assembly-CSharp-Editor
 references:
+- uid: BlazerTech.CharacterManagement.Utilities.SerializableInterfaceDrawer
+  commentId: T:BlazerTech.CharacterManagement.Utilities.SerializableInterfaceDrawer
+  href: BlazerTech.CharacterManagement.Utilities.SerializableInterfaceDrawer.html
+  name: SerializableInterfaceDrawer
+  nameWithType: SerializableInterfaceDrawer
+  fullName: BlazerTech.CharacterManagement.Utilities.SerializableInterfaceDrawer
 - uid: BlazerTech.CharacterManagement.Utilities.SerializableInterface`1
   commentId: T:BlazerTech.CharacterManagement.Utilities.SerializableInterface`1
   href: BlazerTech.CharacterManagement.Utilities.SerializableInterface-1.html
@@ -41,9 +47,3 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: BlazerTech.CharacterManagement.Utilities.SerializableInterfaceDrawer
-  commentId: T:BlazerTech.CharacterManagement.Utilities.SerializableInterfaceDrawer
-  href: BlazerTech.CharacterManagement.Utilities.SerializableInterfaceDrawer.html
-  name: SerializableInterfaceDrawer
-  nameWithType: SerializableInterfaceDrawer
-  fullName: BlazerTech.CharacterManagement.Utilities.SerializableInterfaceDrawer

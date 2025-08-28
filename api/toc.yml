@@ -95,6 +95,9 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter
     name: CharacterDraft_PreExistingCharacter
     type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
+    name: CharacterGroupAutoSaveTriggers
+    type: Enum
   - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
     name: CharacterGroupBase
     type: Class
@@ -116,20 +119,17 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceMapping
     name: CharacterPieceMapping
     type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterSaveMode
-    name: CharacterSaveMode
-    type: Enum
   - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
     name: CharacterTemplateBaseSO<TCharacterType, TCharacter>
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
     name: CharacterTypeBaseSO
     type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection
-    name: CharacterTypeGroupCollection
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry
+    name: CharacterTypeGroupsRegistry
     type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO
-    name: CharacterTypeGroupCollection.CharacterTypeGroupCollection_DTO
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO
+    name: CharacterTypeGroups_DTO
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece
     name: EquippedCharacterPiece
@@ -140,17 +140,11 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO
     name: FixedCharacterGroup.FixedCharacterGroup_DTO
     type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroupCollection
-    name: FixedCharacterGroupCollection
-    type: Class
   - uid: BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup
     name: FlexibleCharacterGroup
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.FlexibleCharacterGroup_DTO
     name: FlexibleCharacterGroup.FlexibleCharacterGroup_DTO
-    type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroupCollection
-    name: FlexibleCharacterGroupCollection
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
     name: LayeredCharacter
@@ -161,8 +155,8 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler
     name: LayeredCharacter.LoadedLayeredCharacterHandler
     type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterManager
-    name: LayeredCharacterManager
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
+    name: LayeredCharacterGroupManager
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
     name: LayeredCharacterTemplateSO

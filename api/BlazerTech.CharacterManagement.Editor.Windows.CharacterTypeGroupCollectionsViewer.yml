@@ -89,7 +89,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetDisplayText
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Editor/CharacterTypeGroupCollectionsViewer.cs
-    startLine: 218
+    startLine: 220
   assemblies:
   - Assembly-CSharp-Editor
   namespace: BlazerTech.CharacterManagement.Editor.Windows
