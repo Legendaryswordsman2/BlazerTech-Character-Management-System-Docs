@@ -87,6 +87,53 @@
         <article data-uid="character-groups">
 <h1 id="character-groups">Character Groups</h1>
 
+<h2 id="character-group-definitions">Character Group Definitions</h2>
+<p>Character Groups make it easy to categorize and use characters in a variety of situations. They are optional in most cases but can be very handy.</p>
+<p>Every Layered Character Type contains three group types.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Single</strong></td>
+<td>Contains one character. Only <strong>one</strong> Single Group can exist per Character Type.</td>
+<td>simple situations where only one character is used such as a player character.</td>
+</tr>
+<tr>
+<td><strong>Flexible</strong></td>
+<td>A list of any amount of characters. Characters can be added, removed or edited at any time.</td>
+<td>Situations where a dynamic and editable list is needed. Such as a collection of playable characters the player can create and choose from.</td>
+</tr>
+<tr>
+<td><strong>Fixed</strong></td>
+<td>A list of a pre-determined amount of characters. The number is set when the list is created and all characters are created immedietely. Characters within the list can be edited at anytime but cannot be removed and new characters cannot be added.</td>
+<td>Situations where an immutable list is needewd. Such as a set list of playable characters the player can choose from.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="character-group-registry">Character Group Registry</h2>
+<p>The <a href="xref:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry">CharacterGroupRegistry</a> class contains all three groups types.
+It contains one Single Group and a list of Flexible and Fixed Groups.</p>
+<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html">LayeredCharacterGroupManager</a> class contains a dictionary of <code>CharacterTypeGroupsRegistry</code>. One entry for each Layered Character Type used.</p>
+<hr>
+<h2 id="single-group">Single Group</h2>
+<p>A group which contains only one character. This group is always present in every Character Group Registry.</p>
+<p>This group mainly exists to make creating simple scenarioes easily. For example if you have a Character Creation Menu setup you can call the <code>EnableMenuSingleGroup</code> to automically enable the menu and save the created character to the Single Group of the Character Type used.</p>
+<p>Then later that character can be used by using the <strong>Layered Character Loader</strong>, giving it the same character type and telling it to load the Single Group.</p>
+<hr>
+<h2 id="flexible-group">Flexible Group</h2>
+<p>A dynamic list where characters can be added to, removed from, or edited at anytime.</p>
+<hr>
+<h2 id="fixed-group">Fixed Group</h2>
+<p>An immutable list of characters. The size is defined when creating the list and all characters are created immedietely upon group creation. Characters within the group can be modified or even swapped out but the size of the list cannot change.</p>
+<hr>
+<h2 id="adding-a-layered-character-to-a-group">Adding a Layered Character to a Group</h2>
 
 </article>
 
