@@ -178,7 +178,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Initialize
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 23
+    startLine: 25
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -209,7 +209,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsValid
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 40
+    startLine: 42
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -240,7 +240,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: AcquireAllCharacterPiecesAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 60
+    startLine: 62
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -274,7 +274,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ReleaseAllCharacterPieces
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 85
+    startLine: 87
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -300,7 +300,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsInitialized
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 95
+    startLine: 97
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -328,7 +328,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsInResourcesFolder_EditMode
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 111
+    startLine: 113
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters

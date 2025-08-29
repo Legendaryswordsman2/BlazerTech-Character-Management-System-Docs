@@ -5,17 +5,15 @@ items:
   id: LayeredCharacter
   parent: BlazerTech.CharacterManagement.Characters
   children:
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.CharacterGroup
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO)
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO)
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.CharacterPieces
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadCharacterHandler
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadCharacterHandlerAsync
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.OnCharacterPiecesOverriden
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.OverrideCharacterPieces(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.TryRemoveFromGroup
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.UnloadCharacterHandler
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.ValidationCheck
   langs:
@@ -67,33 +65,6 @@ items:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
     arguments: []
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.CharacterGroup
-  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacter.CharacterGroup
-  id: CharacterGroup
-  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacter
-  langs:
-  - csharp
-  - vb
-  name: CharacterGroup
-  nameWithType: LayeredCharacter.CharacterGroup
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.CharacterGroup
-  type: Field
-  source:
-    remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterGroup
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 14
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  syntax:
-    content: public CharacterGroupBase CharacterGroup
-    return:
-      type: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
-    content.vb: Public CharacterGroup As CharacterGroupBase
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.CharacterPieces
   commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacter.CharacterPieces
   id: CharacterPieces
@@ -148,16 +119,16 @@ items:
     return:
       type: System.EventHandler
     content.vb: Public Event OnCharacterPiecesOverriden As EventHandler
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  id: '#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)'
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  id: '#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)'
   parent: BlazerTech.CharacterManagement.Characters.LayeredCharacter
   langs:
   - csharp
   - vb
-  name: LayeredCharacter(string, LayeredCharacterTypeSO, CharacterGroupBase)
-  nameWithType: LayeredCharacter.LayeredCharacter(string, LayeredCharacterTypeSO, CharacterGroupBase)
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(string, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
+  name: LayeredCharacter(string, LayeredCharacterTypeSO)
+  nameWithType: LayeredCharacter.LayeredCharacter(string, LayeredCharacterTypeSO)
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(string, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   type: Constructor
   source:
     remote:
@@ -166,34 +137,34 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 20
+    startLine: 22
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: Create new blank character.
+  example: []
   syntax:
-    content: public LayeredCharacter(string characterName, LayeredCharacterTypeSO characterType, CharacterGroupBase characterGroup = null)
+    content: public LayeredCharacter(string characterName, LayeredCharacterTypeSO characterType)
     parameters:
     - id: characterName
       type: System.String
     - id: characterType
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
-    - id: characterGroup
-      type: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
-    content.vb: Public Sub New(characterName As String, characterType As LayeredCharacterTypeSO, characterGroup As CharacterGroupBase = Nothing)
+    content.vb: Public Sub New(characterName As String, characterType As LayeredCharacterTypeSO)
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor*
-  nameWithType.vb: LayeredCharacter.New(String, LayeredCharacterTypeSO, CharacterGroupBase)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(String, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  name.vb: New(String, LayeredCharacterTypeSO, CharacterGroupBase)
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  id: '#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)'
+  nameWithType.vb: LayeredCharacter.New(String, LayeredCharacterTypeSO)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(String, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  name.vb: New(String, LayeredCharacterTypeSO)
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  id: '#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)'
   parent: BlazerTech.CharacterManagement.Characters.LayeredCharacter
   langs:
   - csharp
   - vb
-  name: LayeredCharacter(LayeredCharacter, CharacterGroupBase)
-  nameWithType: LayeredCharacter.LayeredCharacter(LayeredCharacter, CharacterGroupBase)
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
+  name: LayeredCharacter(LayeredCharacter)
+  nameWithType: LayeredCharacter.LayeredCharacter(LayeredCharacter)
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   type: Constructor
   source:
     remote:
@@ -202,36 +173,33 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 49
+    startLine: 48
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   summary: Duplicate Character.
   example: []
   syntax:
-    content: public LayeredCharacter(LayeredCharacter character, CharacterGroupBase characterGroup = null)
+    content: public LayeredCharacter(LayeredCharacter character)
     parameters:
     - id: character
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacter
       description: ''
-    - id: characterGroup
-      type: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
-      description: ''
-    content.vb: Public Sub New(character As LayeredCharacter, characterGroup As CharacterGroupBase = Nothing)
+    content.vb: Public Sub New(character As LayeredCharacter)
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor*
-  nameWithType.vb: LayeredCharacter.New(LayeredCharacter, CharacterGroupBase)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  name.vb: New(LayeredCharacter, CharacterGroupBase)
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  id: '#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)'
+  nameWithType.vb: LayeredCharacter.New(LayeredCharacter)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  name.vb: New(LayeredCharacter)
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO)
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO)
+  id: '#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO)'
   parent: BlazerTech.CharacterManagement.Characters.LayeredCharacter
   langs:
   - csharp
   - vb
-  name: LayeredCharacter(LayeredCharacterTemplateSO, CharacterGroupBase)
-  nameWithType: LayeredCharacter.LayeredCharacter(LayeredCharacterTemplateSO, CharacterGroupBase)
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
+  name: LayeredCharacter(LayeredCharacterTemplateSO)
+  nameWithType: LayeredCharacter.LayeredCharacter(LayeredCharacterTemplateSO)
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO)
   type: Constructor
   source:
     remote:
@@ -240,32 +208,32 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 61
+    startLine: 59
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: Create Character from Template.
+  example: []
   syntax:
-    content: public LayeredCharacter(LayeredCharacterTemplateSO template, CharacterGroupBase characterGroup = null)
+    content: public LayeredCharacter(LayeredCharacterTemplateSO template)
     parameters:
     - id: template
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
-    - id: characterGroup
-      type: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
-    content.vb: Public Sub New(template As LayeredCharacterTemplateSO, characterGroup As CharacterGroupBase = Nothing)
+    content.vb: Public Sub New(template As LayeredCharacterTemplateSO)
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor*
-  nameWithType.vb: LayeredCharacter.New(LayeredCharacterTemplateSO, CharacterGroupBase)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  name.vb: New(LayeredCharacterTemplateSO, CharacterGroupBase)
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  id: '#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)'
+  nameWithType.vb: LayeredCharacter.New(LayeredCharacterTemplateSO)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO)
+  name.vb: New(LayeredCharacterTemplateSO)
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO)
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO)
+  id: '#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO)'
   parent: BlazerTech.CharacterManagement.Characters.LayeredCharacter
   langs:
   - csharp
   - vb
-  name: LayeredCharacter(Character_DTO, CharacterGroupBase)
-  nameWithType: LayeredCharacter.LayeredCharacter(LayeredCharacter.Character_DTO, CharacterGroupBase)
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
+  name: LayeredCharacter(Character_DTO)
+  nameWithType: LayeredCharacter.LayeredCharacter(LayeredCharacter.Character_DTO)
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO)
   type: Constructor
   source:
     remote:
@@ -274,22 +242,20 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 71
+    startLine: 66
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public LayeredCharacter(LayeredCharacter.Character_DTO character_DTO, CharacterGroupBase characterGroup)
+    content: public LayeredCharacter(LayeredCharacter.Character_DTO character_DTO)
     parameters:
     - id: character_DTO
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO
-    - id: characterGroup
-      type: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
-    content.vb: Public Sub New(character_DTO As LayeredCharacter.Character_DTO, characterGroup As CharacterGroupBase)
+    content.vb: Public Sub New(character_DTO As LayeredCharacter.Character_DTO)
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor*
-  nameWithType.vb: LayeredCharacter.New(LayeredCharacter.Character_DTO, CharacterGroupBase)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  name.vb: New(Character_DTO, CharacterGroupBase)
+  nameWithType.vb: LayeredCharacter.New(LayeredCharacter.Character_DTO)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO)
+  name.vb: New(Character_DTO)
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.ValidationCheck
   commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.ValidationCheck
   id: ValidationCheck
@@ -308,7 +274,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ValidationCheck
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 91
+    startLine: 83
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -320,34 +286,6 @@ items:
     content.vb: Public Overrides Function ValidationCheck() As Boolean
   overridden: BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler}.ValidationCheck
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacter.ValidationCheck*
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.TryRemoveFromGroup
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.TryRemoveFromGroup
-  id: TryRemoveFromGroup
-  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacter
-  langs:
-  - csharp
-  - vb
-  name: TryRemoveFromGroup()
-  nameWithType: LayeredCharacter.TryRemoveFromGroup()
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.TryRemoveFromGroup()
-  type: Method
-  source:
-    remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: TryRemoveFromGroup
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 123
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  syntax:
-    content: public bool TryRemoveFromGroup()
-    return:
-      type: System.Boolean
-    content.vb: Public Function TryRemoveFromGroup() As Boolean
-  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacter.TryRemoveFromGroup*
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadCharacterHandler
   commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadCharacterHandler
   id: LoadCharacterHandler
@@ -366,7 +304,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadCharacterHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 219
+    startLine: 184
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -394,7 +332,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadCharacterHandlerAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 231
+    startLine: 196
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -424,7 +362,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: UnloadCharacterHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 237
+    startLine: 202
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -452,15 +390,18 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OverrideCharacterPieces
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 270
+    startLine: 239
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: Sets the characters pieces equal to the same character pieces of another Layered Character.
+  example: []
   syntax:
     content: public void OverrideCharacterPieces(LayeredCharacter character)
     parameters:
     - id: character
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+      description: ''
     content.vb: Public Sub OverrideCharacterPieces(character As LayeredCharacter)
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacter.OverrideCharacterPieces*
 references:
@@ -1093,13 +1034,6 @@ references:
     href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_UnloadCharacterHandler
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterGroupBase
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.html
-  name: CharacterGroupBase
-  nameWithType: CharacterGroupBase
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
 - uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece}
   commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.EquippedCharacterPiece}
   parent: System.Collections.Generic
@@ -1208,7 +1142,7 @@ references:
   fullName: System.EventHandler
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_System_String_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_BlazerTech_CharacterManagement_Characters_CharacterGroupBase_
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_System_String_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
   name: LayeredCharacter
   nameWithType: LayeredCharacter.LayeredCharacter
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter
@@ -1287,12 +1221,6 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.TryRemoveFromGroup*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacter.TryRemoveFromGroup
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter_TryRemoveFromGroup
-  name: TryRemoveFromGroup
-  nameWithType: LayeredCharacter.TryRemoveFromGroup
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.TryRemoveFromGroup
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadCharacterHandler*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadCharacterHandler
   href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadCharacterHandler

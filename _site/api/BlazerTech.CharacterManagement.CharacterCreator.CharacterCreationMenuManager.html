@@ -89,7 +89,7 @@
 
 
   <h1 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager" class="text-break">
-Class CharacterCreationMenuManager  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class CharacterCreationMenuManager  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -136,7 +136,7 @@ public class CharacterCreationMenuManager : MonoBehaviour</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_CharacterSaved" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.CharacterSaved">
   CharacterSaved
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Invoked when the <a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_ActiveCharacterDraft">ActiveCharacterDraft</a> is saved.</p>
@@ -173,7 +173,7 @@ public UnityEvent CharacterSaved</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_ActiveCharacterDraft" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterDraft">
   ActiveCharacterDraft
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -204,10 +204,10 @@ public UnityEvent CharacterSaved</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_ActiveCharacterType" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterType">
   ActiveCharacterType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The CharacterType currently being used.</p>
+  <div class="markdown level1 summary"><p>The CharacterType being used when the Character Creation Menu is active.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -232,11 +232,43 @@ public UnityEvent CharacterSaved</code></pre>
 
 
 
+  <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_AutoEnableOnStart_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableOnStart*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_AutoEnableOnStart" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableOnStart">
+  AutoEnableOnStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Automatically enables the character creation menu in the start method with the <a class="xref" href="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.html">SingleCharacterGroup</a> a part of the Character Type used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoEnableOnStart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_DefaultCharacterType_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType*"></a>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_DefaultCharacterType" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType">
   DefaultCharacterType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a> that is assigned if <a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_ActiveCharacterType">ActiveCharacterType</a> is null.</p>
@@ -268,7 +300,7 @@ public UnityEvent CharacterSaved</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnabledAndSetup" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnabledAndSetup">
   EnabledAndSetup
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>True if the Character Creation Menu is currently enabled and finished loading.</p>
@@ -300,7 +332,7 @@ public UnityEvent CharacterSaved</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_Instance" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.Instance">
   Instance
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Property for accessing the single instance of <a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html">CharacterCreationMenuManager</a>.</p>
@@ -332,10 +364,11 @@ public UnityEvent CharacterSaved</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_MenuContents" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.MenuContents">
   MenuContents
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The root game object of the Character Creation Menu. Must be separate from the game object this script is attached to</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -359,6 +392,38 @@ public UnityEvent CharacterSaved</code></pre>
 
 
 
+  <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_NewCharacterTemplate_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.NewCharacterTemplate*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_NewCharacterTemplate" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.NewCharacterTemplate">
+  NewCharacterTemplate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If assigned, the template will be used when creating a new character instead of creating a blank character.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayeredCharacterTemplateSO NewCharacterTemplate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.html">LayeredCharacterTemplateSO</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -367,7 +432,7 @@ public UnityEvent CharacterSaved</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_DisableMenu" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DisableMenu">
   DisableMenu()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L289"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -389,95 +454,29 @@ public UnityEvent CharacterSaved</code></pre>
 
 
 
-  <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuNewFlexibleCharacter_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewFlexibleCharacter*"></a>
+  <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_EditCharacter_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuNewFlexibleCharacter_System_String_BlazerTech_CharacterManagement_Characters_FlexibleCharacterGroup_System_Boolean_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewFlexibleCharacter(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)">
-  EnableMenuNewFlexibleCharacter(string, FlexibleCharacterGroup, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_EditCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacter_System_Boolean_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.Boolean)">
+  EnableMenu_EditCharacter(LayeredCharacter, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void EnableMenuNewFlexibleCharacter(string characterName, FlexibleCharacterGroup flexibleGroup, bool enableMenuContents = true)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>characterName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>flexibleGroup</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.html">FlexibleCharacterGroup</a></dt>
-    <dd></dd>
-    <dt><code>enableMenuContents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuNewSingleGroup_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewSingleGroup*"></a>
-
-  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuNewSingleGroup_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)">
-  EnableMenuNewSingleGroup(LayeredCharacterTypeSO, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L163"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void EnableMenuNewSingleGroup(LayeredCharacterTypeSO characterType = null, bool enableMenuContents = true)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>characterType</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a></dt>
-    <dd></dd>
-    <dt><code>enableMenuContents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuPreExistingCharacter_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuPreExistingCharacter*"></a>
-
-  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuPreExistingCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacter_System_Boolean_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuPreExistingCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.Boolean)">
-  EnableMenuPreExistingCharacter(LayeredCharacter, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L94"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>This is a test summary</p>
+  <div class="markdown level1 summary"><p>Enable the Character Creation Menu to edit a pre existing character.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void EnableMenuPreExistingCharacter(LayeredCharacter character, bool enableMenuContents = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public void EnableMenu_EditCharacter(LayeredCharacter character, bool enableMenuContents = true)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>character</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html">LayeredCharacter</a></dt>
-    <dd></dd>
+    <dd><p>The character to be edited in the Character Creation Menu.</p>
+</dd>
     <dt><code>enableMenuContents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Optional bool. When not toggled the Character Creation Menu will not automatically open but will still be active and enabled.</p>
+</dd>
   </dl>
 
 
@@ -487,30 +486,93 @@ public UnityEvent CharacterSaved</code></pre>
 
 
 
+  <h4 class="section" id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_EditCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacter_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A copy of the character will be created and editable. When saved any changes made to the copy will be applied to the original character.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when the <code class="paramref">character</code> is null.</p>
+</dd>
+  </dl>
 
 
 
+  <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewCharacterInFlexibleGroup_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup*"></a>
 
-  <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuSingleGroup_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuSingleGroup*"></a>
-
-  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuSingleGroup_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)">
-  EnableMenuSingleGroup(LayeredCharacterTypeSO, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewCharacterInFlexibleGroup_System_String_BlazerTech_CharacterManagement_Characters_FlexibleCharacterGroup_System_Boolean_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)">
+  EnableMenu_NewCharacterInFlexibleGroup(string, FlexibleCharacterGroup, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enable the Character Creation Menu to create a new character inside a <a class="xref" href="BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.html">FlexibleCharacterGroup</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void EnableMenuSingleGroup(LayeredCharacterTypeSO characterType = null, bool enableMenuContents = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public void EnableMenu_NewCharacterInFlexibleGroup(string characterName, FlexibleCharacterGroup flexibleGroup, bool enableMenuContents = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>characterName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the new character.</p>
+</dd>
+    <dt><code>flexibleGroup</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.html">FlexibleCharacterGroup</a></dt>
+    <dd><p>The <a class="xref" href="BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.html">FlexibleCharacterGroup</a> the new character will be added to when saved.</p>
+</dd>
+    <dt><code>enableMenuContents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Optional bool. When not toggled the Character Creation Menu will not automatically open but will still be active and enabled.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewCharacterInFlexibleGroup_System_String_BlazerTech_CharacterManagement_Characters_FlexibleCharacterGroup_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A new character will be created and editable. When saved any changes made to the copy will be applied to the original character.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when the <code class="paramref">flexibleGroup</code> is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when the <code class="paramref">characterName</code> is blank.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewSingleGroup_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewSingleGroup_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)">
+  EnableMenu_NewSingleGroup(LayeredCharacterTypeSO, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enable the Character Creation Menu for a <a class="xref" href="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.html">SingleCharacterGroup</a> in a Character Type. Creates a new character.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableMenu_NewSingleGroup(LayeredCharacterTypeSO characterType = null, bool enableMenuContents = true)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>characterType</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a></dt>
-    <dd></dd>
+    <dd><p>The Character Type used to find the <a class="xref" href="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.html">SingleCharacterGroup</a>.</p>
+</dd>
     <dt><code>enableMenuContents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Optional bool. When not toggled the Character Creation Menu will not automatically open but will still be active and enabled.</p>
+</dd>
   </dl>
 
 
@@ -520,7 +582,68 @@ public UnityEvent CharacterSaved</code></pre>
 
 
 
+  <h4 class="section" id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewSingleGroup_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If a character does not exist in the group, the new character will be put in the group when saved.
+If a character already exists it will overridden when the new character is saved.</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">characterType</code> is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when <code class="paramref">characterType</code> is invalid.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_SingleGroup_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_SingleGroup*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_SingleGroup_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_SingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)">
+  EnableMenu_SingleGroup(LayeredCharacterTypeSO, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enable the Character Creation Menu for a <a class="xref" href="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.html">SingleCharacterGroup</a> in a Character Type. If a character exists, use it; otherwise, create a new one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableMenu_SingleGroup(LayeredCharacterTypeSO characterType = null, bool enableMenuContents = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>characterType</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a></dt>
+    <dd><p>The Character Type used to find the <a class="xref" href="BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.html">SingleCharacterGroup</a>.</p>
+</dd>
+    <dt><code>enableMenuContents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Optional bool. When not toggled the Character Creation Menu will not automatically open but will still be active and enabled.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_SingleGroup_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If a character already exists it will be copied and editable inside the menu. When the character is saved, all changes will be applied to the original character.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">characterType</code> is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when <code class="paramref">characterType</code> is invalid.</p>
+</dd>
+  </dl>
 
 
 
@@ -528,10 +651,11 @@ public UnityEvent CharacterSaved</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_SaveCharacter" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SaveCharacter">
   SaveCharacter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L312"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Saves the active Character Draft and puts it in a group if relevent.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -557,7 +681,7 @@ public UnityEvent CharacterSaved</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_OnCharacterSaved" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved">
   OnCharacterSaved
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -587,7 +711,7 @@ public UnityEvent CharacterSaved</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_OnMenuDisabled" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuDisabled">
   OnMenuDisabled
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -617,7 +741,7 @@ public UnityEvent CharacterSaved</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_OnMenuEnabledAndSetup" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuEnabledAndSetup">
   OnMenuEnabledAndSetup
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -647,7 +771,7 @@ public UnityEvent CharacterSaved</code></pre>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_OnMenuLoadingProgressUpdated" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuLoadingProgressUpdated">
   OnMenuLoadingProgressUpdated
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -678,7 +802,7 @@ public UnityEvent CharacterSaved</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

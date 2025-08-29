@@ -23,7 +23,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: FlexibleCharacterGroup_DTO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
-    startLine: 152
+    startLine: 157
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -60,7 +60,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GroupName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
-    startLine: 155
+    startLine: 160
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -87,7 +87,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Characters
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
-    startLine: 156
+    startLine: 161
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -114,7 +114,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
-    startLine: 158
+    startLine: 163
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -148,7 +148,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
-    startLine: 166
+    startLine: 171
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters

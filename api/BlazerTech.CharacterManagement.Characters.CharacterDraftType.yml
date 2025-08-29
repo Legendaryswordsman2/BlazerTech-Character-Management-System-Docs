@@ -21,7 +21,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterDraftType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 2
+    startLine: 4
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -46,7 +46,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: NewCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 2
+    startLine: 4
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -72,7 +72,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: PreExistingCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 2
+    startLine: 4
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters

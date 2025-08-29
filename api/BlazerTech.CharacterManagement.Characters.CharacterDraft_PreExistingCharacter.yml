@@ -22,10 +22,12 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterDraft_PreExistingCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 26
+    startLine: 41
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: Wrapper for a pre created character when being edited in the Character Creation Menu. A copy of the character is provided and edited in the menu. Changes to the copy will be applied to the original when saved.
+  example: []
   syntax:
     content: 'public class CharacterDraft_PreExistingCharacter : CharacterDraft'
     content.vb: Public Class CharacterDraft_PreExistingCharacter Inherits CharacterDraft
@@ -52,7 +54,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OriginalCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 28
+    startLine: 43
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -79,7 +81,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 30
+    startLine: 45
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -113,7 +115,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SaveCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 36
+    startLine: 50
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters

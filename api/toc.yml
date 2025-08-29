@@ -101,6 +101,12 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupBase
     name: CharacterGroupBase
     type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType
+    name: CharacterGroupEntryType
+    type: Enum
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry
+    name: CharacterGroupRegistry
+    type: Class
   - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupType
     name: CharacterGroupType
     type: Enum
@@ -125,9 +131,6 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
     name: CharacterTypeBaseSO
     type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry
-    name: CharacterTypeGroupsRegistry
-    type: Class
   - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO
     name: CharacterTypeGroups_DTO
     type: Class
@@ -146,6 +149,9 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.FlexibleCharacterGroup_DTO
     name: FlexibleCharacterGroup.FlexibleCharacterGroup_DTO
     type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.GroupTemplateEntry
+    name: GroupTemplateEntry
+    type: Class
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
     name: LayeredCharacter
     type: Class
@@ -158,6 +164,9 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
     name: LayeredCharacterGroupManager
     type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO
+    name: LayeredCharacterGroupTemplateSO
+    type: Class
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
     name: LayeredCharacterTemplateSO
     type: Class
@@ -166,9 +175,6 @@ items:
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig
     name: LayeredCharacterTypeSO.CharacterCreatorConfig
-    type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings
-    name: LayeredCharacterTypeSO.CharacterPreviewsSettings
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase
     name: LoadedCharacterHandlerBase

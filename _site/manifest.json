@@ -386,7 +386,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Characters.CharacterDraft",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.CharacterDraft.yml\" sourcestartlinenumber=\"1\">Wrapper class used when editting characters in the Character Creation Menu</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -414,7 +414,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter.yml\" sourcestartlinenumber=\"1\">Wrapper for a newely created character within the Character Creation Menu. Added to a group when saved.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -428,7 +428,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter.yml\" sourcestartlinenumber=\"1\">Wrapper for a pre created character when being edited in the Character Creation Menu. A copy of the character is provided and edited in the menu. Changes to the copy will be applied to the original when saved.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -457,6 +457,34 @@
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Characters.CharacterGroupBase",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry",
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.yml\" sourcestartlinenumber=\"1\">Holds a collection of three different types of groups.\nAn instance of this class is used for each Layered Character Type.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -572,20 +600,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry",
-      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.yml\" sourcestartlinenumber=\"1\">Holds a collection of three different types of groups.\nAn instance of this class is used for each Layered Character Type.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.yml",
       "output": {
         ".html": {
@@ -670,6 +684,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Characters.GroupTemplateEntry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO.yml",
       "output": {
         ".html": {
@@ -726,6 +754,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO",
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.yml\" sourcestartlinenumber=\"1\">A blueprint for a Layered Character Group (Fixed or Flexible) that will automatically be created at runtime.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.yml",
       "output": {
         ".html": {
@@ -750,20 +792,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings",
       "Summary": null
     },
     {

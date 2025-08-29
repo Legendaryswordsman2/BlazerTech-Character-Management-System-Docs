@@ -22,10 +22,12 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterDraft_NewCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 10
+    startLine: 23
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: Wrapper for a newely created character within the Character Creation Menu. Added to a group when saved.
+  example: []
   syntax:
     content: 'public class CharacterDraft_NewCharacter : CharacterDraft'
     content.vb: Public Class CharacterDraft_NewCharacter Inherits CharacterDraft
@@ -52,7 +54,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Group
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 12
+    startLine: 25
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -79,7 +81,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 13
+    startLine: 26
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -113,7 +115,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SaveCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 19
+    startLine: 31
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters

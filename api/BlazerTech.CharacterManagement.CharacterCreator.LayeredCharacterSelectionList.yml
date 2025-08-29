@@ -379,7 +379,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EditCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
-    startLine: 154
+    startLine: 152
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -410,7 +410,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CreatNewCharacterInList
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
-    startLine: 168
+    startLine: 166
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -436,7 +436,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: RemoveCharacterFromList
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
-    startLine: 180
+    startLine: 178
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator

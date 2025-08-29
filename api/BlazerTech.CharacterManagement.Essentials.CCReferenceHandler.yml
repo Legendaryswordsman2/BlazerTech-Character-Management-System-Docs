@@ -9,6 +9,7 @@ items:
   - BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.CharacterTypes
   - BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetCharacterTypeFromIdentifier(System.String)
   - BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetCharacterTypesAsync
+  - BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterGroupTemplates
   - BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterTypes
   - BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.Instance
   - BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.SetCharacterTypes(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO[])
@@ -203,6 +204,34 @@ items:
       type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO}
     content.vb: Public Function GetLayeredCharacterTypes() As List(Of LayeredCharacterTypeSO)
   overload: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterTypes*
+- uid: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterGroupTemplates
+  commentId: M:BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterGroupTemplates
+  id: GetLayeredCharacterGroupTemplates
+  parent: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler
+  langs:
+  - csharp
+  - vb
+  name: GetLayeredCharacterGroupTemplates()
+  nameWithType: CCReferenceHandler.GetLayeredCharacterGroupTemplates()
+  fullName: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterGroupTemplates()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/CCReferenceHandler.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: GetLayeredCharacterGroupTemplates
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/CCReferenceHandler.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Essentials
+  syntax:
+    content: public List<LayeredCharacterGroupTemplateSO> GetLayeredCharacterGroupTemplates()
+    return:
+      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO}
+    content.vb: Public Function GetLayeredCharacterGroupTemplates() As List(Of LayeredCharacterGroupTemplateSO)
+  overload: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterGroupTemplates*
 - uid: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetCharacterTypesAsync
   commentId: M:BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetCharacterTypesAsync
   id: GetCharacterTypesAsync
@@ -221,7 +250,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetCharacterTypesAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/CCReferenceHandler.cs
-    startLine: 43
+    startLine: 48
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Essentials
@@ -249,7 +278,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SetCharacterTypes
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/CCReferenceHandler.cs
-    startLine: 61
+    startLine: 66
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Essentials
@@ -281,7 +310,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetCharacterTypeFromIdentifier
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/CCReferenceHandler.cs
-    startLine: 72
+    startLine: 77
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Essentials
@@ -617,6 +646,45 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterGroupTemplates*
+  commentId: Overload:BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterGroupTemplates
+  href: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.html#BlazerTech_CharacterManagement_Essentials_CCReferenceHandler_GetLayeredCharacterGroupTemplates
+  name: GetLayeredCharacterGroupTemplates
+  nameWithType: CCReferenceHandler.GetLayeredCharacterGroupTemplates
+  fullName: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterGroupTemplates
+- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO}
+  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LayeredCharacterGroupTemplateSO>
+  nameWithType: List<LayeredCharacterGroupTemplateSO>
+  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO>
+  nameWithType.vb: List(Of LayeredCharacterGroupTemplateSO)
+  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO)
+  name.vb: List(Of LayeredCharacterGroupTemplateSO)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO
+    name: LayeredCharacterGroupTemplateSO
+    href: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO
+    name: LayeredCharacterGroupTemplateSO
+    href: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html
+  - name: )
 - uid: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetCharacterTypesAsync*
   commentId: Overload:BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetCharacterTypesAsync
   href: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.html#BlazerTech_CharacterManagement_Essentials_CCReferenceHandler_GetCharacterTypesAsync
