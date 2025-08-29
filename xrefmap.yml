@@ -461,6 +461,19 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterType
   nameWithType: CharacterCreationMenuManager.ActiveCharacterType
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableOnStart
+  name: AutoEnableOnStart
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_AutoEnableOnStart
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableOnStart
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableOnStart
+  nameWithType: CharacterCreationMenuManager.AutoEnableOnStart
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableOnStart*
+  name: AutoEnableOnStart
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_AutoEnableOnStart_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableOnStart
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableOnStart
+  nameWithType: CharacterCreationMenuManager.AutoEnableOnStart
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.CharacterSaved
   name: CharacterSaved
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_CharacterSaved
@@ -493,70 +506,70 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DisableMenu
   nameWithType: CharacterCreationMenuManager.DisableMenu
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewFlexibleCharacter(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)
-  name: EnableMenuNewFlexibleCharacter(string, FlexibleCharacterGroup, bool)
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuNewFlexibleCharacter_System_String_BlazerTech_CharacterManagement_Characters_FlexibleCharacterGroup_System_Boolean_
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewFlexibleCharacter(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)
-  name.vb: EnableMenuNewFlexibleCharacter(String, FlexibleCharacterGroup, Boolean)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewFlexibleCharacter(string, BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup, bool)
-  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewFlexibleCharacter(String, BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup, Boolean)
-  nameWithType: CharacterCreationMenuManager.EnableMenuNewFlexibleCharacter(string, FlexibleCharacterGroup, bool)
-  nameWithType.vb: CharacterCreationMenuManager.EnableMenuNewFlexibleCharacter(String, FlexibleCharacterGroup, Boolean)
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewFlexibleCharacter*
-  name: EnableMenuNewFlexibleCharacter
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuNewFlexibleCharacter_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewFlexibleCharacter
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.Boolean)
+  name: EnableMenu_EditCharacter(LayeredCharacter, bool)
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_EditCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacter_System_Boolean_
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.Boolean)
+  name.vb: EnableMenu_EditCharacter(LayeredCharacter, Boolean)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter, bool)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter, Boolean)
+  nameWithType: CharacterCreationMenuManager.EnableMenu_EditCharacter(LayeredCharacter, bool)
+  nameWithType.vb: CharacterCreationMenuManager.EnableMenu_EditCharacter(LayeredCharacter, Boolean)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter*
+  name: EnableMenu_EditCharacter
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_EditCharacter_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter
   isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewFlexibleCharacter
-  nameWithType: CharacterCreationMenuManager.EnableMenuNewFlexibleCharacter
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
-  name: EnableMenuNewSingleGroup(LayeredCharacterTypeSO, bool)
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuNewSingleGroup_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
-  name.vb: EnableMenuNewSingleGroup(LayeredCharacterTypeSO, Boolean)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, bool)
-  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, Boolean)
-  nameWithType: CharacterCreationMenuManager.EnableMenuNewSingleGroup(LayeredCharacterTypeSO, bool)
-  nameWithType.vb: CharacterCreationMenuManager.EnableMenuNewSingleGroup(LayeredCharacterTypeSO, Boolean)
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewSingleGroup*
-  name: EnableMenuNewSingleGroup
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuNewSingleGroup_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewSingleGroup
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter
+  nameWithType: CharacterCreationMenuManager.EnableMenu_EditCharacter
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)
+  name: EnableMenu_NewCharacterInFlexibleGroup(string, FlexibleCharacterGroup, bool)
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewCharacterInFlexibleGroup_System_String_BlazerTech_CharacterManagement_Characters_FlexibleCharacterGroup_System_Boolean_
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)
+  name.vb: EnableMenu_NewCharacterInFlexibleGroup(String, FlexibleCharacterGroup, Boolean)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(string, BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup, bool)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(String, BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup, Boolean)
+  nameWithType: CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(string, FlexibleCharacterGroup, bool)
+  nameWithType.vb: CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(String, FlexibleCharacterGroup, Boolean)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup*
+  name: EnableMenu_NewCharacterInFlexibleGroup
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewCharacterInFlexibleGroup_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup
   isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuNewSingleGroup
-  nameWithType: CharacterCreationMenuManager.EnableMenuNewSingleGroup
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuPreExistingCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.Boolean)
-  name: EnableMenuPreExistingCharacter(LayeredCharacter, bool)
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuPreExistingCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacter_System_Boolean_
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuPreExistingCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.Boolean)
-  name.vb: EnableMenuPreExistingCharacter(LayeredCharacter, Boolean)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuPreExistingCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter, bool)
-  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuPreExistingCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter, Boolean)
-  nameWithType: CharacterCreationMenuManager.EnableMenuPreExistingCharacter(LayeredCharacter, bool)
-  nameWithType.vb: CharacterCreationMenuManager.EnableMenuPreExistingCharacter(LayeredCharacter, Boolean)
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuPreExistingCharacter*
-  name: EnableMenuPreExistingCharacter
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuPreExistingCharacter_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuPreExistingCharacter
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup
+  nameWithType: CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  name: EnableMenu_NewSingleGroup(LayeredCharacterTypeSO, bool)
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewSingleGroup_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  name.vb: EnableMenu_NewSingleGroup(LayeredCharacterTypeSO, Boolean)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, bool)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, Boolean)
+  nameWithType: CharacterCreationMenuManager.EnableMenu_NewSingleGroup(LayeredCharacterTypeSO, bool)
+  nameWithType.vb: CharacterCreationMenuManager.EnableMenu_NewSingleGroup(LayeredCharacterTypeSO, Boolean)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup*
+  name: EnableMenu_NewSingleGroup
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewSingleGroup_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup
   isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuPreExistingCharacter
-  nameWithType: CharacterCreationMenuManager.EnableMenuPreExistingCharacter
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
-  name: EnableMenuSingleGroup(LayeredCharacterTypeSO, bool)
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuSingleGroup_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
-  name.vb: EnableMenuSingleGroup(LayeredCharacterTypeSO, Boolean)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, bool)
-  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, Boolean)
-  nameWithType: CharacterCreationMenuManager.EnableMenuSingleGroup(LayeredCharacterTypeSO, bool)
-  nameWithType.vb: CharacterCreationMenuManager.EnableMenuSingleGroup(LayeredCharacterTypeSO, Boolean)
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuSingleGroup*
-  name: EnableMenuSingleGroup
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenuSingleGroup_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuSingleGroup
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup
+  nameWithType: CharacterCreationMenuManager.EnableMenu_NewSingleGroup
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_SingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  name: EnableMenu_SingleGroup(LayeredCharacterTypeSO, bool)
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_SingleGroup_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_SingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  name.vb: EnableMenu_SingleGroup(LayeredCharacterTypeSO, Boolean)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_SingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, bool)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_SingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, Boolean)
+  nameWithType: CharacterCreationMenuManager.EnableMenu_SingleGroup(LayeredCharacterTypeSO, bool)
+  nameWithType.vb: CharacterCreationMenuManager.EnableMenu_SingleGroup(LayeredCharacterTypeSO, Boolean)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_SingleGroup*
+  name: EnableMenu_SingleGroup
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_SingleGroup_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_SingleGroup
   isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenuSingleGroup
-  nameWithType: CharacterCreationMenuManager.EnableMenuSingleGroup
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_SingleGroup
+  nameWithType: CharacterCreationMenuManager.EnableMenu_SingleGroup
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnabledAndSetup
   name: EnabledAndSetup
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnabledAndSetup
@@ -596,6 +609,19 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.MenuContents
   nameWithType: CharacterCreationMenuManager.MenuContents
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.NewCharacterTemplate
+  name: NewCharacterTemplate
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_NewCharacterTemplate
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.NewCharacterTemplate
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.NewCharacterTemplate
+  nameWithType: CharacterCreationMenuManager.NewCharacterTemplate
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.NewCharacterTemplate*
+  name: NewCharacterTemplate
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_NewCharacterTemplate_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.NewCharacterTemplate
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.NewCharacterTemplate
+  nameWithType: CharacterCreationMenuManager.NewCharacterTemplate
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
   name: OnCharacterSaved
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_OnCharacterSaved
@@ -1608,6 +1634,25 @@ references:
   commentId: T:BlazerTech.CharacterManagement.Characters.CharacterDraft
   fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft
   nameWithType: CharacterDraft
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  name: CharacterDraft(LayeredCharacter)
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterDraft.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  name.vb: New(LayeredCharacter)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.CharacterDraft(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterDraft.New(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  nameWithType: CharacterDraft.CharacterDraft(LayeredCharacter)
+  nameWithType.vb: CharacterDraft.New(LayeredCharacter)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.#ctor*
+  name: CharacterDraft
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft__ctor_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterDraft.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.CharacterDraft
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterDraft.New
+  nameWithType: CharacterDraft.CharacterDraft
+  nameWithType.vb: CharacterDraft.New
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
   name: Character
   href: api/BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_Character
@@ -1887,6 +1932,193 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupBase.RaiseOnCharacterChanged
   nameWithType: CharacterGroupBase.RaiseOnCharacterChanged
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType
+  name: CharacterGroupEntryType
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType.html
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType
+  nameWithType: CharacterGroupEntryType
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType.CharacterTemplate
+  name: CharacterTemplate
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType.html#BlazerTech_CharacterManagement_Characters_CharacterGroupEntryType_CharacterTemplate
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType.CharacterTemplate
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType.CharacterTemplate
+  nameWithType: CharacterGroupEntryType.CharacterTemplate
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType.NewCharacter
+  name: NewCharacter
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType.html#BlazerTech_CharacterManagement_Characters_CharacterGroupEntryType_NewCharacter
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType.NewCharacter
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupEntryType.NewCharacter
+  nameWithType: CharacterGroupEntryType.NewCharacter
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry
+  name: CharacterGroupRegistry
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry
+  nameWithType: CharacterGroupRegistry
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.#ctor(BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  name: CharacterGroupRegistry(CharacterTypeGroups_DTO, LayeredCharacterTypeSO)
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry__ctor_BlazerTech_CharacterManagement_Characters_CharacterTypeGroups_DTO_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.#ctor(BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  name.vb: New(CharacterTypeGroups_DTO, LayeredCharacterTypeSO)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CharacterGroupRegistry(BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.New(BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  nameWithType: CharacterGroupRegistry.CharacterGroupRegistry(CharacterTypeGroups_DTO, LayeredCharacterTypeSO)
+  nameWithType.vb: CharacterGroupRegistry.New(CharacterTypeGroups_DTO, LayeredCharacterTypeSO)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  name: CharacterGroupRegistry(LayeredCharacterTypeSO)
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  name.vb: New(LayeredCharacterTypeSO)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CharacterGroupRegistry(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.New(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  nameWithType: CharacterGroupRegistry.CharacterGroupRegistry(LayeredCharacterTypeSO)
+  nameWithType.vb: CharacterGroupRegistry.New(LayeredCharacterTypeSO)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.#ctor*
+  name: CharacterGroupRegistry
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry__ctor_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CharacterGroupRegistry
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.New
+  nameWithType: CharacterGroupRegistry.CharacterGroupRegistry
+  nameWithType.vb: CharacterGroupRegistry.New
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CharacterType
+  name: CharacterType
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_CharacterType
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CharacterType
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CharacterType
+  nameWithType: CharacterGroupRegistry.CharacterType
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CharacterType*
+  name: CharacterType
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_CharacterType_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CharacterType
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CharacterType
+  nameWithType: CharacterGroupRegistry.CharacterType
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CreateFixedGroup(System.String,System.Int32)
+  name: CreateFixedGroup(string, int)
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_CreateFixedGroup_System_String_System_Int32_
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CreateFixedGroup(System.String,System.Int32)
+  name.vb: CreateFixedGroup(String, Integer)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CreateFixedGroup(string, int)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CreateFixedGroup(String, Integer)
+  nameWithType: CharacterGroupRegistry.CreateFixedGroup(string, int)
+  nameWithType.vb: CharacterGroupRegistry.CreateFixedGroup(String, Integer)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CreateFixedGroup*
+  name: CreateFixedGroup
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_CreateFixedGroup_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CreateFixedGroup
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CreateFixedGroup
+  nameWithType: CharacterGroupRegistry.CreateFixedGroup
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CreateFlexibleGroup(System.String)
+  name: CreateFlexibleGroup(string)
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_CreateFlexibleGroup_System_String_
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CreateFlexibleGroup(System.String)
+  name.vb: CreateFlexibleGroup(String)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CreateFlexibleGroup(string)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CreateFlexibleGroup(String)
+  nameWithType: CharacterGroupRegistry.CreateFlexibleGroup(string)
+  nameWithType.vb: CharacterGroupRegistry.CreateFlexibleGroup(String)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CreateFlexibleGroup*
+  name: CreateFlexibleGroup
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_CreateFlexibleGroup_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CreateFlexibleGroup
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.CreateFlexibleGroup
+  nameWithType: CharacterGroupRegistry.CreateFlexibleGroup
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.FixedGroups
+  name: FixedGroups
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_FixedGroups
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.FixedGroups
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.FixedGroups
+  nameWithType: CharacterGroupRegistry.FixedGroups
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.FixedGroups*
+  name: FixedGroups
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_FixedGroups_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.FixedGroups
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.FixedGroups
+  nameWithType: CharacterGroupRegistry.FixedGroups
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.FlexibleGroups
+  name: FlexibleGroups
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_FlexibleGroups
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.FlexibleGroups
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.FlexibleGroups
+  nameWithType: CharacterGroupRegistry.FlexibleGroups
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.FlexibleGroups*
+  name: FlexibleGroups
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_FlexibleGroups_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.FlexibleGroups
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.FlexibleGroups
+  nameWithType: CharacterGroupRegistry.FlexibleGroups
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetDataTransferObject
+  name: GetDataTransferObject()
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_GetDataTransferObject
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetDataTransferObject
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetDataTransferObject()
+  nameWithType: CharacterGroupRegistry.GetDataTransferObject()
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetDataTransferObject*
+  name: GetDataTransferObject
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_GetDataTransferObject_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetDataTransferObject
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetDataTransferObject
+  nameWithType: CharacterGroupRegistry.GetDataTransferObject
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetOrCreateFixedGroup(System.String,System.Int32)
+  name: GetOrCreateFixedGroup(string, int)
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_GetOrCreateFixedGroup_System_String_System_Int32_
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetOrCreateFixedGroup(System.String,System.Int32)
+  name.vb: GetOrCreateFixedGroup(String, Integer)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetOrCreateFixedGroup(string, int)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetOrCreateFixedGroup(String, Integer)
+  nameWithType: CharacterGroupRegistry.GetOrCreateFixedGroup(string, int)
+  nameWithType.vb: CharacterGroupRegistry.GetOrCreateFixedGroup(String, Integer)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetOrCreateFixedGroup*
+  name: GetOrCreateFixedGroup
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_GetOrCreateFixedGroup_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetOrCreateFixedGroup
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetOrCreateFixedGroup
+  nameWithType: CharacterGroupRegistry.GetOrCreateFixedGroup
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetOrCreateFlexibleGroup(System.String)
+  name: GetOrCreateFlexibleGroup(string)
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_GetOrCreateFlexibleGroup_System_String_
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetOrCreateFlexibleGroup(System.String)
+  name.vb: GetOrCreateFlexibleGroup(String)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetOrCreateFlexibleGroup(string)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetOrCreateFlexibleGroup(String)
+  nameWithType: CharacterGroupRegistry.GetOrCreateFlexibleGroup(string)
+  nameWithType.vb: CharacterGroupRegistry.GetOrCreateFlexibleGroup(String)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetOrCreateFlexibleGroup*
+  name: GetOrCreateFlexibleGroup
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_GetOrCreateFlexibleGroup_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetOrCreateFlexibleGroup
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.GetOrCreateFlexibleGroup
+  nameWithType: CharacterGroupRegistry.GetOrCreateFlexibleGroup
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.SingleGroup
+  name: SingleGroup
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_SingleGroup
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.SingleGroup
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.SingleGroup
+  nameWithType: CharacterGroupRegistry.SingleGroup
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.SingleGroup*
+  name: SingleGroup
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_SingleGroup_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.SingleGroup
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.SingleGroup
+  nameWithType: CharacterGroupRegistry.SingleGroup
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.SuccessfullyInitialized
+  name: SuccessfullyInitialized
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_SuccessfullyInitialized
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.SuccessfullyInitialized
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.SuccessfullyInitialized
+  nameWithType: CharacterGroupRegistry.SuccessfullyInitialized
 - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupType
   name: CharacterGroupType
   href: api/BlazerTech.CharacterManagement.Characters.CharacterGroupType.html
@@ -2515,158 +2747,21 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValidCharacterSpriteSheet
   nameWithType: CharacterTypeBaseSO.IsValidCharacterSpriteSheet
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry
-  name: CharacterTypeGroupsRegistry
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry
-  nameWithType: CharacterTypeGroupsRegistry
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.#ctor(BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  name: CharacterTypeGroupsRegistry(CharacterTypeGroups_DTO, LayeredCharacterTypeSO)
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry__ctor_BlazerTech_CharacterManagement_Characters_CharacterTypeGroups_DTO_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.#ctor(BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  name.vb: New(CharacterTypeGroups_DTO, LayeredCharacterTypeSO)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.CharacterTypeGroupsRegistry(BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.New(BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  nameWithType: CharacterTypeGroupsRegistry.CharacterTypeGroupsRegistry(CharacterTypeGroups_DTO, LayeredCharacterTypeSO)
-  nameWithType.vb: CharacterTypeGroupsRegistry.New(CharacterTypeGroups_DTO, LayeredCharacterTypeSO)
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  name: CharacterTypeGroupsRegistry(LayeredCharacterTypeSO)
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  name.vb: New(LayeredCharacterTypeSO)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.CharacterTypeGroupsRegistry(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.New(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  nameWithType: CharacterTypeGroupsRegistry.CharacterTypeGroupsRegistry(LayeredCharacterTypeSO)
-  nameWithType.vb: CharacterTypeGroupsRegistry.New(LayeredCharacterTypeSO)
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.#ctor*
-  name: CharacterTypeGroupsRegistry
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry__ctor_
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.CharacterTypeGroupsRegistry
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.New
-  nameWithType: CharacterTypeGroupsRegistry.CharacterTypeGroupsRegistry
-  nameWithType.vb: CharacterTypeGroupsRegistry.New
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.CharacterType
-  name: CharacterType
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_CharacterType
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.CharacterType
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.CharacterType
-  nameWithType: CharacterTypeGroupsRegistry.CharacterType
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.CharacterType*
-  name: CharacterType
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_CharacterType_
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.CharacterType
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.CharacterType
-  nameWithType: CharacterTypeGroupsRegistry.CharacterType
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.FixedGroups
-  name: FixedGroups
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_FixedGroups
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.FixedGroups
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.FixedGroups
-  nameWithType: CharacterTypeGroupsRegistry.FixedGroups
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.FixedGroups*
-  name: FixedGroups
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_FixedGroups_
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.FixedGroups
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.FixedGroups
-  nameWithType: CharacterTypeGroupsRegistry.FixedGroups
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.FlexibleGroups
-  name: FlexibleGroups
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_FlexibleGroups
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.FlexibleGroups
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.FlexibleGroups
-  nameWithType: CharacterTypeGroupsRegistry.FlexibleGroups
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.FlexibleGroups*
-  name: FlexibleGroups
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_FlexibleGroups_
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.FlexibleGroups
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.FlexibleGroups
-  nameWithType: CharacterTypeGroupsRegistry.FlexibleGroups
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetDataTransferObject
-  name: GetDataTransferObject()
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_GetDataTransferObject
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetDataTransferObject
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetDataTransferObject()
-  nameWithType: CharacterTypeGroupsRegistry.GetDataTransferObject()
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetDataTransferObject*
-  name: GetDataTransferObject
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_GetDataTransferObject_
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetDataTransferObject
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetDataTransferObject
-  nameWithType: CharacterTypeGroupsRegistry.GetDataTransferObject
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetOrCreateFixed(System.String,System.Int32)
-  name: GetOrCreateFixed(string, int)
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_GetOrCreateFixed_System_String_System_Int32_
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetOrCreateFixed(System.String,System.Int32)
-  name.vb: GetOrCreateFixed(String, Integer)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetOrCreateFixed(string, int)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetOrCreateFixed(String, Integer)
-  nameWithType: CharacterTypeGroupsRegistry.GetOrCreateFixed(string, int)
-  nameWithType.vb: CharacterTypeGroupsRegistry.GetOrCreateFixed(String, Integer)
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetOrCreateFixed*
-  name: GetOrCreateFixed
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_GetOrCreateFixed_
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetOrCreateFixed
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetOrCreateFixed
-  nameWithType: CharacterTypeGroupsRegistry.GetOrCreateFixed
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetOrCreateFlexible(System.String)
-  name: GetOrCreateFlexible(string)
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_GetOrCreateFlexible_System_String_
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetOrCreateFlexible(System.String)
-  name.vb: GetOrCreateFlexible(String)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetOrCreateFlexible(string)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetOrCreateFlexible(String)
-  nameWithType: CharacterTypeGroupsRegistry.GetOrCreateFlexible(string)
-  nameWithType.vb: CharacterTypeGroupsRegistry.GetOrCreateFlexible(String)
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetOrCreateFlexible*
-  name: GetOrCreateFlexible
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_GetOrCreateFlexible_
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetOrCreateFlexible
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.GetOrCreateFlexible
-  nameWithType: CharacterTypeGroupsRegistry.GetOrCreateFlexible
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.SingleGroup
-  name: SingleGroup
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_SingleGroup
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.SingleGroup
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.SingleGroup
-  nameWithType: CharacterTypeGroupsRegistry.SingleGroup
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.SingleGroup*
-  name: SingleGroup
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_SingleGroup_
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.SingleGroup
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.SingleGroup
-  nameWithType: CharacterTypeGroupsRegistry.SingleGroup
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.SuccessfullyInitialized
-  name: SuccessfullyInitialized
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_SuccessfullyInitialized
-  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.SuccessfullyInitialized
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry.SuccessfullyInitialized
-  nameWithType: CharacterTypeGroupsRegistry.SuccessfullyInitialized
 - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO
   name: CharacterTypeGroups_DTO
   href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.html
   commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO
   fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO
   nameWithType: CharacterTypeGroups_DTO
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.#ctor(BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry)
-  name: CharacterTypeGroups_DTO(CharacterTypeGroupsRegistry)
-  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroups_DTO__ctor_BlazerTech_CharacterManagement_Characters_CharacterTypeGroupsRegistry_
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.#ctor(BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry)
-  name.vb: New(CharacterTypeGroupsRegistry)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.CharacterTypeGroups_DTO(BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.New(BlazerTech.CharacterManagement.Characters.CharacterTypeGroupsRegistry)
-  nameWithType: CharacterTypeGroups_DTO.CharacterTypeGroups_DTO(CharacterTypeGroupsRegistry)
-  nameWithType.vb: CharacterTypeGroups_DTO.New(CharacterTypeGroupsRegistry)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.#ctor(BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry)
+  name: CharacterTypeGroups_DTO(CharacterGroupRegistry)
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroups_DTO__ctor_BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.#ctor(BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry)
+  name.vb: New(CharacterGroupRegistry)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.CharacterTypeGroups_DTO(BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.New(BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry)
+  nameWithType: CharacterTypeGroups_DTO.CharacterTypeGroups_DTO(CharacterGroupRegistry)
+  nameWithType.vb: CharacterTypeGroups_DTO.New(CharacterGroupRegistry)
 - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.#ctor*
   name: CharacterTypeGroups_DTO
   href: api/BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeGroups_DTO__ctor_
@@ -3129,48 +3224,80 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.SwapCharacters
   nameWithType: FlexibleCharacterGroup.SwapCharacters
+- uid: BlazerTech.CharacterManagement.Characters.GroupTemplateEntry
+  name: GroupTemplateEntry
+  href: api/BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.html
+  commentId: T:BlazerTech.CharacterManagement.Characters.GroupTemplateEntry
+  fullName: BlazerTech.CharacterManagement.Characters.GroupTemplateEntry
+  nameWithType: GroupTemplateEntry
+- uid: BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.EntryType
+  name: EntryType
+  href: api/BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.html#BlazerTech_CharacterManagement_Characters_GroupTemplateEntry_EntryType
+  commentId: P:BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.EntryType
+  fullName: BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.EntryType
+  nameWithType: GroupTemplateEntry.EntryType
+- uid: BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.EntryType*
+  name: EntryType
+  href: api/BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.html#BlazerTech_CharacterManagement_Characters_GroupTemplateEntry_EntryType_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.EntryType
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.EntryType
+  nameWithType: GroupTemplateEntry.EntryType
+- uid: BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.Template
+  name: Template
+  href: api/BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.html#BlazerTech_CharacterManagement_Characters_GroupTemplateEntry_Template
+  commentId: P:BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.Template
+  fullName: BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.Template
+  nameWithType: GroupTemplateEntry.Template
+- uid: BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.Template*
+  name: Template
+  href: api/BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.html#BlazerTech_CharacterManagement_Characters_GroupTemplateEntry_Template_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.Template
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.GroupTemplateEntry.Template
+  nameWithType: GroupTemplateEntry.Template
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
   name: LayeredCharacter
   href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacter
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter
   nameWithType: LayeredCharacter
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  name: LayeredCharacter(LayeredCharacter, CharacterGroupBase)
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_BlazerTech_CharacterManagement_Characters_CharacterGroupBase_
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  name.vb: New(LayeredCharacter, CharacterGroupBase)
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(BlazerTech.CharacterManagement.Characters.LayeredCharacter, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  nameWithType: LayeredCharacter.LayeredCharacter(LayeredCharacter, CharacterGroupBase)
-  nameWithType.vb: LayeredCharacter.New(LayeredCharacter, CharacterGroupBase)
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  name: LayeredCharacter(Character_DTO, CharacterGroupBase)
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_Character_DTO_BlazerTech_CharacterManagement_Characters_CharacterGroupBase_
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  name.vb: New(Character_DTO, CharacterGroupBase)
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  nameWithType: LayeredCharacter.LayeredCharacter(LayeredCharacter.Character_DTO, CharacterGroupBase)
-  nameWithType.vb: LayeredCharacter.New(LayeredCharacter.Character_DTO, CharacterGroupBase)
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  name: LayeredCharacter(LayeredCharacterTemplateSO, CharacterGroupBase)
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateSO_BlazerTech_CharacterManagement_Characters_CharacterGroupBase_
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  name.vb: New(LayeredCharacterTemplateSO, CharacterGroupBase)
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  nameWithType: LayeredCharacter.LayeredCharacter(LayeredCharacterTemplateSO, CharacterGroupBase)
-  nameWithType.vb: LayeredCharacter.New(LayeredCharacterTemplateSO, CharacterGroupBase)
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  name: LayeredCharacter(string, LayeredCharacterTypeSO, CharacterGroupBase)
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_System_String_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_BlazerTech_CharacterManagement_Characters_CharacterGroupBase_
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  name.vb: New(String, LayeredCharacterTypeSO, CharacterGroupBase)
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(string, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(String, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, BlazerTech.CharacterManagement.Characters.CharacterGroupBase)
-  nameWithType: LayeredCharacter.LayeredCharacter(string, LayeredCharacterTypeSO, CharacterGroupBase)
-  nameWithType.vb: LayeredCharacter.New(String, LayeredCharacterTypeSO, CharacterGroupBase)
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  name: LayeredCharacter(LayeredCharacter)
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  name.vb: New(LayeredCharacter)
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  nameWithType: LayeredCharacter.LayeredCharacter(LayeredCharacter)
+  nameWithType.vb: LayeredCharacter.New(LayeredCharacter)
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO)
+  name: LayeredCharacter(Character_DTO)
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_Character_DTO_
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO)
+  name.vb: New(Character_DTO)
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO)
+  nameWithType: LayeredCharacter.LayeredCharacter(LayeredCharacter.Character_DTO)
+  nameWithType.vb: LayeredCharacter.New(LayeredCharacter.Character_DTO)
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO)
+  name: LayeredCharacter(LayeredCharacterTemplateSO)
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateSO_
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO)
+  name.vb: New(LayeredCharacterTemplateSO)
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO)
+  nameWithType: LayeredCharacter.LayeredCharacter(LayeredCharacterTemplateSO)
+  nameWithType.vb: LayeredCharacter.New(LayeredCharacterTemplateSO)
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  name: LayeredCharacter(string, LayeredCharacterTypeSO)
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_System_String_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  name.vb: New(String, LayeredCharacterTypeSO)
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(string, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(String, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  nameWithType: LayeredCharacter.LayeredCharacter(string, LayeredCharacterTypeSO)
+  nameWithType.vb: LayeredCharacter.New(String, LayeredCharacterTypeSO)
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor*
   name: LayeredCharacter
   href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_
@@ -3181,12 +3308,6 @@ references:
   fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New
   nameWithType: LayeredCharacter.LayeredCharacter
   nameWithType.vb: LayeredCharacter.New
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.CharacterGroup
-  name: CharacterGroup
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter_CharacterGroup
-  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacter.CharacterGroup
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.CharacterGroup
-  nameWithType: LayeredCharacter.CharacterGroup
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.CharacterPieces
   name: CharacterPieces
   href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter_CharacterPieces
@@ -3383,19 +3504,6 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.OverrideCharacterPieces
   nameWithType: LayeredCharacter.OverrideCharacterPieces
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.TryRemoveFromGroup
-  name: TryRemoveFromGroup()
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter_TryRemoveFromGroup
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.TryRemoveFromGroup
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.TryRemoveFromGroup()
-  nameWithType: LayeredCharacter.TryRemoveFromGroup()
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.TryRemoveFromGroup*
-  name: TryRemoveFromGroup
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter_TryRemoveFromGroup_
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacter.TryRemoveFromGroup
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.TryRemoveFromGroup
-  nameWithType: LayeredCharacter.TryRemoveFromGroup
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.UnloadCharacterHandler
   name: UnloadCharacterHandler()
   href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter_UnloadCharacterHandler
@@ -3428,6 +3536,12 @@ references:
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
   nameWithType: LayeredCharacterGroupManager
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.CharacterTypeGroupsAutoSaveTriggers
+  name: CharacterTypeGroupsAutoSaveTriggers
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_CharacterTypeGroupsAutoSaveTriggers
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.CharacterTypeGroupsAutoSaveTriggers
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.CharacterTypeGroupsAutoSaveTriggers
+  nameWithType: LayeredCharacterGroupManager.CharacterTypeGroupsAutoSaveTriggers
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupsForType(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   name: GetGroupsForType(LayeredCharacterTypeSO)
   href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_GetGroupsForType_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
@@ -3505,12 +3619,96 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.ScheduleSaveCharacterGroups
   nameWithType: LayeredCharacterGroupManager.ScheduleSaveCharacterGroups
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.characterTypeGroupsAutoSaveTriggers
-  name: characterTypeGroupsAutoSaveTriggers
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_characterTypeGroupsAutoSaveTriggers
-  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.characterTypeGroupsAutoSaveTriggers
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.characterTypeGroupsAutoSaveTriggers
-  nameWithType: LayeredCharacterGroupManager.characterTypeGroupsAutoSaveTriggers
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.groupsByType
+  name: groupsByType
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_groupsByType
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.groupsByType
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.groupsByType
+  nameWithType: LayeredCharacterGroupManager.groupsByType
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO
+  name: LayeredCharacterGroupTemplateSO
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO
+  nameWithType: LayeredCharacterGroupTemplateSO
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterBaseName
+  name: CharacterBaseName
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_CharacterBaseName
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterBaseName
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterBaseName
+  nameWithType: LayeredCharacterGroupTemplateSO.CharacterBaseName
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterBaseName*
+  name: CharacterBaseName
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_CharacterBaseName_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterBaseName
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterBaseName
+  nameWithType: LayeredCharacterGroupTemplateSO.CharacterBaseName
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterType
+  name: CharacterType
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_CharacterType
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterType
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterType
+  nameWithType: LayeredCharacterGroupTemplateSO.CharacterType
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterType*
+  name: CharacterType
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_CharacterType_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterType
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterType
+  nameWithType: LayeredCharacterGroupTemplateSO.CharacterType
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharactersInGroup
+  name: CharactersInGroup
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_CharactersInGroup
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharactersInGroup
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharactersInGroup
+  nameWithType: LayeredCharacterGroupTemplateSO.CharactersInGroup
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharactersInGroup*
+  name: CharactersInGroup
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_CharactersInGroup_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharactersInGroup
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharactersInGroup
+  nameWithType: LayeredCharacterGroupTemplateSO.CharactersInGroup
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup
+  name: CreateGroup()
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_CreateGroup
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup()
+  nameWithType: LayeredCharacterGroupTemplateSO.CreateGroup()
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup*
+  name: CreateGroup
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_CreateGroup_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup
+  nameWithType: LayeredCharacterGroupTemplateSO.CreateGroup
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupName
+  name: GroupName
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_GroupName
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupName
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupName
+  nameWithType: LayeredCharacterGroupTemplateSO.GroupName
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupName*
+  name: GroupName
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_GroupName_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupName
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupName
+  nameWithType: LayeredCharacterGroupTemplateSO.GroupName
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupType
+  name: GroupType
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_GroupType
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupType
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupType
+  nameWithType: LayeredCharacterGroupTemplateSO.GroupType
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupType*
+  name: GroupType
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_GroupType_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupType
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupType
+  nameWithType: LayeredCharacterGroupTemplateSO.GroupType
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
   name: LayeredCharacterTemplateSO
   href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.html
@@ -3672,68 +3870,6 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterMaterial
   nameWithType: LayeredCharacterTypeSO.CharacterMaterial
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings
-  name: LayeredCharacterTypeSO.CharacterPreviewsSettings
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.html
-  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings
-  nameWithType: LayeredCharacterTypeSO.CharacterPreviewsSettings
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceCollection
-  name: BaseCharacterPieceCollection
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterPreviewsSettings_BaseCharacterPieceCollection
-  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceCollection
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceCollection
-  nameWithType: LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceCollection
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceCollection*
-  name: BaseCharacterPieceCollection
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterPreviewsSettings_BaseCharacterPieceCollection_
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceCollection
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceCollection
-  nameWithType: LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceCollection
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceLoadedSpriteIndex
-  name: BaseCharacterPieceLoadedSpriteIndex
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterPreviewsSettings_BaseCharacterPieceLoadedSpriteIndex
-  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceLoadedSpriteIndex
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceLoadedSpriteIndex
-  nameWithType: LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceLoadedSpriteIndex
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceLoadedSpriteIndex*
-  name: BaseCharacterPieceLoadedSpriteIndex
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterPreviewsSettings_BaseCharacterPieceLoadedSpriteIndex_
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceLoadedSpriteIndex
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceLoadedSpriteIndex
-  nameWithType: LayeredCharacterTypeSO.CharacterPreviewsSettings.BaseCharacterPieceLoadedSpriteIndex
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.CharacterPlaceholderSprite
-  name: CharacterPlaceholderSprite
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterPreviewsSettings_CharacterPlaceholderSprite
-  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.CharacterPlaceholderSprite
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.CharacterPlaceholderSprite
-  nameWithType: LayeredCharacterTypeSO.CharacterPreviewsSettings.CharacterPlaceholderSprite
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.CharacterPreviewController
-  name: CharacterPreviewController
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterPreviewsSettings_CharacterPreviewController
-  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.CharacterPreviewController
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.CharacterPreviewController
-  nameWithType: LayeredCharacterTypeSO.CharacterPreviewsSettings.CharacterPreviewController
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.CharacterPreviewFrameIndex
-  name: CharacterPreviewFrameIndex
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterPreviewsSettings_CharacterPreviewFrameIndex
-  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.CharacterPreviewFrameIndex
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.CharacterPreviewFrameIndex
-  nameWithType: LayeredCharacterTypeSO.CharacterPreviewsSettings.CharacterPreviewFrameIndex
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.PreviewFrameHeight
-  name: PreviewFrameHeight
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterPreviewsSettings_PreviewFrameHeight
-  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.PreviewFrameHeight
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.PreviewFrameHeight
-  nameWithType: LayeredCharacterTypeSO.CharacterPreviewsSettings.PreviewFrameHeight
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.PreviewFrameWidth
-  name: PreviewFrameWidth
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterPreviewsSettings_PreviewFrameWidth
-  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.PreviewFrameWidth
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterPreviewsSettings.PreviewFrameWidth
-  nameWithType: LayeredCharacterTypeSO.CharacterPreviewsSettings.PreviewFrameWidth
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.Initialize(UnityEngine.Material)
   name: Initialize(Material)
   href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_Initialize_UnityEngine_Material_
@@ -4937,6 +5073,19 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetCharacterTypesAsync
   nameWithType: CCReferenceHandler.GetCharacterTypesAsync
+- uid: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterGroupTemplates
+  name: GetLayeredCharacterGroupTemplates()
+  href: api/BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.html#BlazerTech_CharacterManagement_Essentials_CCReferenceHandler_GetLayeredCharacterGroupTemplates
+  commentId: M:BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterGroupTemplates
+  fullName: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterGroupTemplates()
+  nameWithType: CCReferenceHandler.GetLayeredCharacterGroupTemplates()
+- uid: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterGroupTemplates*
+  name: GetLayeredCharacterGroupTemplates
+  href: api/BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.html#BlazerTech_CharacterManagement_Essentials_CCReferenceHandler_GetLayeredCharacterGroupTemplates_
+  commentId: Overload:BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterGroupTemplates
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterGroupTemplates
+  nameWithType: CCReferenceHandler.GetLayeredCharacterGroupTemplates
 - uid: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.GetLayeredCharacterTypes
   name: GetLayeredCharacterTypes()
   href: api/BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.html#BlazerTech_CharacterManagement_Essentials_CCReferenceHandler_GetLayeredCharacterTypes
