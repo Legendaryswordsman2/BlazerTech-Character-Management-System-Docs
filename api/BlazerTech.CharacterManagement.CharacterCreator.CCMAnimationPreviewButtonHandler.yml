@@ -1,0 +1,427 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler
+  id: CCMAnimationPreviewButtonHandler
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  children:
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.AnimationName
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAlpha(System.Single)
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAnimation
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.DisableInteractivity
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.EnableInteractivity
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Hide
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Setup(System.String,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler)
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Unhide
+  langs:
+  - csharp
+  - vb
+  name: CCMAnimationPreviewButtonHandler
+  nameWithType: CCMAnimationPreviewButtonHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler
+  type: Class
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CCMAnimationPreviewButtonHandler
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: 'public class CCMAnimationPreviewButtonHandler : MonoBehaviour'
+    content.vb: Public Class CCMAnimationPreviewButtonHandler Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.AnimationName
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.AnimationName
+  id: AnimationName
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler
+  langs:
+  - csharp
+  - vb
+  name: AnimationName
+  nameWithType: CCMAnimationPreviewButtonHandler.AnimationName
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.AnimationName
+  type: Property
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: AnimationName
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public string AnimationName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AnimationName As String
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.AnimationName*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Setup(System.String,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Setup(System.String,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler)
+  id: Setup(System.String,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler)
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler
+  langs:
+  - csharp
+  - vb
+  name: Setup(string, CCMCharacterPreviewHandler)
+  nameWithType: CCMAnimationPreviewButtonHandler.Setup(string, CCMCharacterPreviewHandler)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Setup(string, BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler)
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Setup
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void Setup(string animationName, CCMCharacterPreviewHandler characterPreviewHandler)
+    parameters:
+    - id: animationName
+      type: System.String
+    - id: characterPreviewHandler
+      type: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler
+    content.vb: Public Sub Setup(animationName As String, characterPreviewHandler As CCMCharacterPreviewHandler)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Setup*
+  nameWithType.vb: CCMAnimationPreviewButtonHandler.Setup(String, CCMCharacterPreviewHandler)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Setup(String, BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler)
+  name.vb: Setup(String, CCMCharacterPreviewHandler)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAnimation
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAnimation
+  id: ChangeAnimation
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler
+  langs:
+  - csharp
+  - vb
+  name: ChangeAnimation()
+  nameWithType: CCMAnimationPreviewButtonHandler.ChangeAnimation()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAnimation()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: ChangeAnimation
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void ChangeAnimation()
+    content.vb: Public Sub ChangeAnimation()
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAnimation*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.EnableInteractivity
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.EnableInteractivity
+  id: EnableInteractivity
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler
+  langs:
+  - csharp
+  - vb
+  name: EnableInteractivity()
+  nameWithType: CCMAnimationPreviewButtonHandler.EnableInteractivity()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.EnableInteractivity()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: EnableInteractivity
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    startLine: 81
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void EnableInteractivity()
+    content.vb: Public Sub EnableInteractivity()
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.EnableInteractivity*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.DisableInteractivity
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.DisableInteractivity
+  id: DisableInteractivity
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler
+  langs:
+  - csharp
+  - vb
+  name: DisableInteractivity()
+  nameWithType: CCMAnimationPreviewButtonHandler.DisableInteractivity()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.DisableInteractivity()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: DisableInteractivity
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void DisableInteractivity()
+    content.vb: Public Sub DisableInteractivity()
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.DisableInteractivity*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Unhide
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Unhide
+  id: Unhide
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler
+  langs:
+  - csharp
+  - vb
+  name: Unhide()
+  nameWithType: CCMAnimationPreviewButtonHandler.Unhide()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Unhide()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Unhide
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    startLine: 85
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void Unhide()
+    content.vb: Public Sub Unhide()
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Unhide*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Hide
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Hide
+  id: Hide
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler
+  langs:
+  - csharp
+  - vb
+  name: Hide()
+  nameWithType: CCMAnimationPreviewButtonHandler.Hide()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Hide()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Hide
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    startLine: 87
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void Hide()
+    content.vb: Public Sub Hide()
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Hide*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAlpha(System.Single)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAlpha(System.Single)
+  id: ChangeAlpha(System.Single)
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler
+  langs:
+  - csharp
+  - vb
+  name: ChangeAlpha(float)
+  nameWithType: CCMAnimationPreviewButtonHandler.ChangeAlpha(float)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAlpha(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: ChangeAlpha
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    startLine: 89
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public virtual void ChangeAlpha(float alpha)
+    parameters:
+    - id: alpha
+      type: System.Single
+    content.vb: Public Overridable Sub ChangeAlpha(alpha As Single)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAlpha*
+  nameWithType.vb: CCMAnimationPreviewButtonHandler.ChangeAlpha(Single)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAlpha(Single)
+  name.vb: ChangeAlpha(Single)
+references:
+- uid: BlazerTech.CharacterManagement.CharacterCreator
+  commentId: N:BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.CharacterCreator
+  nameWithType: BlazerTech.CharacterManagement.CharacterCreator
+  fullName: BlazerTech.CharacterManagement.CharacterCreator
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.AnimationName*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.AnimationName
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMAnimationPreviewButtonHandler_AnimationName
+  name: AnimationName
+  nameWithType: CCMAnimationPreviewButtonHandler.AnimationName
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.AnimationName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Setup*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Setup
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMAnimationPreviewButtonHandler_Setup_System_String_BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterPreviewHandler_
+  name: Setup
+  nameWithType: CCMAnimationPreviewButtonHandler.Setup
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Setup
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.html
+  name: CCMCharacterPreviewHandler
+  nameWithType: CCMCharacterPreviewHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAnimation*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAnimation
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMAnimationPreviewButtonHandler_ChangeAnimation
+  name: ChangeAnimation
+  nameWithType: CCMAnimationPreviewButtonHandler.ChangeAnimation
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAnimation
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.EnableInteractivity*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.EnableInteractivity
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMAnimationPreviewButtonHandler_EnableInteractivity
+  name: EnableInteractivity
+  nameWithType: CCMAnimationPreviewButtonHandler.EnableInteractivity
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.EnableInteractivity
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.DisableInteractivity*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.DisableInteractivity
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMAnimationPreviewButtonHandler_DisableInteractivity
+  name: DisableInteractivity
+  nameWithType: CCMAnimationPreviewButtonHandler.DisableInteractivity
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.DisableInteractivity
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Unhide*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Unhide
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMAnimationPreviewButtonHandler_Unhide
+  name: Unhide
+  nameWithType: CCMAnimationPreviewButtonHandler.Unhide
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Unhide
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Hide*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Hide
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMAnimationPreviewButtonHandler_Hide
+  name: Hide
+  nameWithType: CCMAnimationPreviewButtonHandler.Hide
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.Hide
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAlpha*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAlpha
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMAnimationPreviewButtonHandler_ChangeAlpha_System_Single_
+  name: ChangeAlpha
+  nameWithType: CCMAnimationPreviewButtonHandler.ChangeAlpha
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler.ChangeAlpha
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

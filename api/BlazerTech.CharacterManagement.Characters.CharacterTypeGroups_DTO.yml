@@ -10,7 +10,7 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.FixedGroups
   - BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.FlexibleGroups
   - BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.IsValid
-  - BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.SingleGroup
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.PrimaryCharacterSlot
   langs:
   - csharp
   - vb
@@ -25,7 +25,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterTypeGroups_DTO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
-    startLine: 123
+    startLine: 147
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -52,7 +52,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterTypeIdentifier
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
-    startLine: 125
+    startLine: 149
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -61,33 +61,33 @@ items:
     return:
       type: System.String
     content.vb: Public CharacterTypeIdentifier As String
-- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.SingleGroup
-  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.SingleGroup
-  id: SingleGroup
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.PrimaryCharacterSlot
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.PrimaryCharacterSlot
+  id: PrimaryCharacterSlot
   parent: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO
   langs:
   - csharp
   - vb
-  name: SingleGroup
-  nameWithType: CharacterTypeGroups_DTO.SingleGroup
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.SingleGroup
+  name: PrimaryCharacterSlot
+  nameWithType: CharacterTypeGroups_DTO.PrimaryCharacterSlot
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.PrimaryCharacterSlot
   type: Field
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: SingleGroup
+    id: PrimaryCharacterSlot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
-    startLine: 127
+    startLine: 151
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public SingleCharacterGroup.SingleCharacterGroup_DTO SingleGroup
+    content: public SingleSlotCharacterGroup.SingleSlotCharacterGroup_DTO PrimaryCharacterSlot
     return:
-      type: BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.SingleCharacterGroup_DTO
-    content.vb: Public SingleGroup As SingleCharacterGroup.SingleCharacterGroup_DTO
+      type: BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup.SingleSlotCharacterGroup_DTO
+    content.vb: Public PrimaryCharacterSlot As SingleSlotCharacterGroup.SingleSlotCharacterGroup_DTO
 - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.FlexibleGroups
   commentId: F:BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.FlexibleGroups
   id: FlexibleGroups
@@ -106,7 +106,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: FlexibleGroups
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
-    startLine: 128
+    startLine: 152
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -133,7 +133,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: FixedGroups
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
-    startLine: 129
+    startLine: 153
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -160,7 +160,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
-    startLine: 131
+    startLine: 155
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -192,7 +192,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsValid
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupRegistry.cs
-    startLine: 143
+    startLine: 167
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -262,29 +262,29 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.SingleCharacterGroup_DTO
-  commentId: T:BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.SingleCharacterGroup_DTO
+- uid: BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup.SingleSlotCharacterGroup_DTO
+  commentId: T:BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup.SingleSlotCharacterGroup_DTO
   parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.html
-  name: SingleCharacterGroup.SingleCharacterGroup_DTO
-  nameWithType: SingleCharacterGroup.SingleCharacterGroup_DTO
-  fullName: BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.SingleCharacterGroup_DTO
+  href: BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup.html
+  name: SingleSlotCharacterGroup.SingleSlotCharacterGroup_DTO
+  nameWithType: SingleSlotCharacterGroup.SingleSlotCharacterGroup_DTO
+  fullName: BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup.SingleSlotCharacterGroup_DTO
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.SingleCharacterGroup
-    name: SingleCharacterGroup
-    href: BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.html
+  - uid: BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup
+    name: SingleSlotCharacterGroup
+    href: BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup.html
   - name: .
-  - uid: BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.SingleCharacterGroup_DTO
-    name: SingleCharacterGroup_DTO
-    href: BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.SingleCharacterGroup_DTO.html
+  - uid: BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup.SingleSlotCharacterGroup_DTO
+    name: SingleSlotCharacterGroup_DTO
+    href: BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup.SingleSlotCharacterGroup_DTO.html
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.SingleCharacterGroup
-    name: SingleCharacterGroup
-    href: BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.html
+  - uid: BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup
+    name: SingleSlotCharacterGroup
+    href: BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup.html
   - name: .
-  - uid: BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.SingleCharacterGroup_DTO
-    name: SingleCharacterGroup_DTO
-    href: BlazerTech.CharacterManagement.Characters.SingleCharacterGroup.SingleCharacterGroup_DTO.html
+  - uid: BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup.SingleSlotCharacterGroup_DTO
+    name: SingleSlotCharacterGroup_DTO
+    href: BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup.SingleSlotCharacterGroup_DTO.html
 - uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.FlexibleCharacterGroup_DTO}
   commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.FlexibleCharacterGroup_DTO}
   parent: System.Collections.Generic

@@ -41,6 +41,7 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterTypeID
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValidCharacterSpriteSheet(UnityEngine.Sprite)
   attributes:
   - type: UnityEngine.CreateAssetMenuAttribute
@@ -137,6 +138,25 @@ references:
   name: CharacterController
   nameWithType: CharacterTypeBaseSO.CharacterController
   fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_IsValid
+  name: IsValid()
+  nameWithType: CharacterTypeBaseSO.IsValid()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
+    name: IsValid
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_IsValid
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
+    name: IsValid
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_IsValid
+  - name: (
+  - name: )
 - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValidCharacterSpriteSheet(UnityEngine.Sprite)
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValidCharacterSpriteSheet(UnityEngine.Sprite)
   parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO

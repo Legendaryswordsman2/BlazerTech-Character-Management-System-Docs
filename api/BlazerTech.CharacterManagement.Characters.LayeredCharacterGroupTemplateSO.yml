@@ -5,11 +5,10 @@ items:
   id: LayeredCharacterGroupTemplateSO
   parent: BlazerTech.CharacterManagement.Characters
   children:
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterBaseName
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterType
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharactersInGroup
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupName
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup(System.String)
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.DefaultGroupName
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupType
   langs:
   - csharp
@@ -25,7 +24,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LayeredCharacterGroupTemplateSO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -55,64 +54,35 @@ items:
     - name: fileName
       type: System.String
       value: New Layered Character Group Template
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupName
-  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupName
-  id: GroupName
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.DefaultGroupName
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.DefaultGroupName
+  id: DefaultGroupName
   parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO
   langs:
   - csharp
   - vb
-  name: GroupName
-  nameWithType: LayeredCharacterGroupTemplateSO.GroupName
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupName
+  name: DefaultGroupName
+  nameWithType: LayeredCharacterGroupTemplateSO.DefaultGroupName
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.DefaultGroupName
   type: Property
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: GroupName
+    id: DefaultGroupName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 12
+    startLine: 15
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public string GroupName { get; }
+    content: public string DefaultGroupName { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property GroupName As String
-  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupName*
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterBaseName
-  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterBaseName
-  id: CharacterBaseName
-  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO
-  langs:
-  - csharp
-  - vb
-  name: CharacterBaseName
-  nameWithType: LayeredCharacterGroupTemplateSO.CharacterBaseName
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterBaseName
-  type: Property
-  source:
-    remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterBaseName
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 13
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  syntax:
-    content: public string CharacterBaseName { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property CharacterBaseName As String
-  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterBaseName*
+    content.vb: Public Property DefaultGroupName As String
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.DefaultGroupName*
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterType
   commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterType
   id: CharacterType
@@ -131,7 +101,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -160,7 +130,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GroupType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 16
+    startLine: 19
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -189,7 +159,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharactersInGroup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 18
+    startLine: 21
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -200,16 +170,16 @@ items:
       type: BlazerTech.CharacterManagement.Characters.GroupTemplateEntry[]
     content.vb: Public Property CharactersInGroup As GroupTemplateEntry()
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharactersInGroup*
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup
-  id: CreateGroup
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup(System.String)
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup(System.String)
+  id: CreateGroup(System.String)
   parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO
   langs:
   - csharp
   - vb
-  name: CreateGroup()
-  nameWithType: LayeredCharacterGroupTemplateSO.CreateGroup()
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup()
+  name: CreateGroup(string)
+  nameWithType: LayeredCharacterGroupTemplateSO.CreateGroup(string)
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup(string)
   type: Method
   source:
     remote:
@@ -218,16 +188,22 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CreateGroup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 20
+    startLine: 23
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public bool CreateGroup()
+    content: public bool CreateGroup(string GroupNameOverride = "")
+    parameters:
+    - id: GroupNameOverride
+      type: System.String
     return:
       type: System.Boolean
-    content.vb: Public Function CreateGroup() As Boolean
+    content.vb: Public Function CreateGroup(GroupNameOverride As String = "") As Boolean
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup*
+  nameWithType.vb: LayeredCharacterGroupTemplateSO.CreateGroup(String)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup(String)
+  name.vb: CreateGroup(String)
 references:
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
@@ -297,12 +273,12 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupName*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupName
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_GroupName
-  name: GroupName
-  nameWithType: LayeredCharacterGroupTemplateSO.GroupName
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.GroupName
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.DefaultGroupName*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.DefaultGroupName
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_DefaultGroupName
+  name: DefaultGroupName
+  nameWithType: LayeredCharacterGroupTemplateSO.DefaultGroupName
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.DefaultGroupName
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -314,12 +290,6 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterBaseName*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterBaseName
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_CharacterBaseName
-  name: CharacterBaseName
-  nameWithType: LayeredCharacterGroupTemplateSO.CharacterBaseName
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterBaseName
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterType*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CharacterType
   href: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_CharacterType
@@ -375,7 +345,7 @@ references:
   - name: )
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_CreateGroup
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupTemplateSO_CreateGroup_System_String_
   name: CreateGroup
   nameWithType: LayeredCharacterGroupTemplateSO.CreateGroup
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.CreateGroup

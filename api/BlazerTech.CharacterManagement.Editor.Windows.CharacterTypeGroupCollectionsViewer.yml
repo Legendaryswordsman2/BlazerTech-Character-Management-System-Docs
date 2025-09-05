@@ -16,11 +16,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Editor/CharacterTypeGroupCollectionsViewer.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Editor/Windows/CharacterTypeGroupCollectionsViewer.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterTypeGroupCollectionsViewer
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Editor/CharacterTypeGroupCollectionsViewer.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Editor/Windows/CharacterTypeGroupCollectionsViewer.cs
     startLine: 9
   assemblies:
   - Assembly-CSharp-Editor
@@ -46,31 +46,19 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Editor/CharacterTypeGroupCollectionsViewer.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Editor/Windows/CharacterTypeGroupCollectionsViewer.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ShowWindow
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Editor/CharacterTypeGroupCollectionsViewer.cs
-    startLine: 17
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Editor/Windows/CharacterTypeGroupCollectionsViewer.cs
+    startLine: 18
   assemblies:
   - Assembly-CSharp-Editor
   namespace: BlazerTech.CharacterManagement.Editor.Windows
   syntax:
-    content: >-
-      [MenuItem("Tools/Character Group Collections Viewer")]
-
-      public static void ShowWindow()
-    content.vb: >-
-      <MenuItem("Tools/Character Group Collections Viewer")>
-
-      Public Shared Sub ShowWindow()
+    content: public static void ShowWindow()
+    content.vb: Public Shared Sub ShowWindow()
   overload: BlazerTech.CharacterManagement.Editor.Windows.CharacterTypeGroupCollectionsViewer.ShowWindow*
-  attributes:
-  - type: UnityEditor.MenuItem
-    ctor: UnityEditor.MenuItem.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Tools/Character Group Collections Viewer
 - uid: BlazerTech.CharacterManagement.Editor.Windows.CharacterTypeGroupCollectionsViewer.GetDisplayText(System.String)
   commentId: M:BlazerTech.CharacterManagement.Editor.Windows.CharacterTypeGroupCollectionsViewer.GetDisplayText(System.String)
   id: GetDisplayText(System.String)
@@ -84,11 +72,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Editor/CharacterTypeGroupCollectionsViewer.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Editor/Windows/CharacterTypeGroupCollectionsViewer.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetDisplayText
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Editor/CharacterTypeGroupCollectionsViewer.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Editor/Windows/CharacterTypeGroupCollectionsViewer.cs
     startLine: 220
   assemblies:
   - Assembly-CSharp-Editor

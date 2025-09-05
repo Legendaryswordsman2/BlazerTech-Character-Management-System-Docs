@@ -4,6 +4,7 @@ items:
   commentId: N:BlazerTech.CharacterManagement.Editor.Windows
   id: BlazerTech.CharacterManagement.Editor.Windows
   children:
+  - BlazerTech.CharacterManagement.Editor.Windows.CharacterGroupPreviewWindow
   - BlazerTech.CharacterManagement.Editor.Windows.CharacterTypeGroupCollectionsViewer
   langs:
   - csharp
@@ -21,3 +22,9 @@ references:
   name: CharacterTypeGroupCollectionsViewer
   nameWithType: CharacterTypeGroupCollectionsViewer
   fullName: BlazerTech.CharacterManagement.Editor.Windows.CharacterTypeGroupCollectionsViewer
+- uid: BlazerTech.CharacterManagement.Editor.Windows.CharacterGroupPreviewWindow
+  commentId: T:BlazerTech.CharacterManagement.Editor.Windows.CharacterGroupPreviewWindow
+  href: BlazerTech.CharacterManagement.Editor.Windows.CharacterGroupPreviewWindow.html
+  name: CharacterGroupPreviewWindow
+  nameWithType: CharacterGroupPreviewWindow
+  fullName: BlazerTech.CharacterManagement.Editor.Windows.CharacterGroupPreviewWindow

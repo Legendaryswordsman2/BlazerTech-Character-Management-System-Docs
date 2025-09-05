@@ -22,7 +22,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: UnifiedCharacterLoader
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/Unified Character Loaders/UnifiedCharacterLoader.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -42,6 +42,7 @@ items:
   - BlazerTech.CharacterManagement.Components.CharacterLoaderBase._animator
   - BlazerTech.CharacterManagement.Components.CharacterLoaderBase.loadingMode
   - BlazerTech.CharacterManagement.Components.CharacterLoaderBase.loadCharacterOnStart
+  - BlazerTech.CharacterManagement.Components.CharacterLoaderBase.isValid
   - BlazerTech.CharacterManagement.Components.CharacterLoaderBase.ValidationCheck
   - BlazerTech.CharacterManagement.Components.CharacterLoaderBase.TrySetCharacterAnimator(BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO)
   - BlazerTech.CharacterManagement.Components.CharacterLoaderBase.OnDestroy
@@ -63,7 +64,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetAndShowCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/Unified Character Loaders/UnifiedCharacterLoader.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -93,7 +94,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ShowCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/Unified Character Loaders/UnifiedCharacterLoader.cs
-    startLine: 57
+    startLine: 61
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -121,7 +122,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ReleaseCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/Unified Character Loaders/UnifiedCharacterLoader.cs
-    startLine: 69
+    startLine: 73
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -243,6 +244,13 @@ references:
   name: loadCharacterOnStart
   nameWithType: CharacterLoaderBase.loadCharacterOnStart
   fullName: BlazerTech.CharacterManagement.Components.CharacterLoaderBase.loadCharacterOnStart
+- uid: BlazerTech.CharacterManagement.Components.CharacterLoaderBase.isValid
+  commentId: F:BlazerTech.CharacterManagement.Components.CharacterLoaderBase.isValid
+  parent: BlazerTech.CharacterManagement.Components.CharacterLoaderBase
+  href: BlazerTech.CharacterManagement.Components.CharacterLoaderBase.html#BlazerTech_CharacterManagement_Components_CharacterLoaderBase_isValid
+  name: isValid
+  nameWithType: CharacterLoaderBase.isValid
+  fullName: BlazerTech.CharacterManagement.Components.CharacterLoaderBase.isValid
 - uid: BlazerTech.CharacterManagement.Components.CharacterLoaderBase.ValidationCheck
   commentId: M:BlazerTech.CharacterManagement.Components.CharacterLoaderBase.ValidationCheck
   parent: BlazerTech.CharacterManagement.Components.CharacterLoaderBase

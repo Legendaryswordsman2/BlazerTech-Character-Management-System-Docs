@@ -43,8 +43,10 @@ items:
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
   derivedClasses:
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPieceSelectionManager
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewSwitcherManager
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
   - BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.referenceHandler
   commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.referenceHandler
@@ -69,10 +71,10 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
-    content: protected CCReferenceHandler referenceHandler
+    content: protected CMSReferenceHandler referenceHandler
     return:
-      type: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler
-    content.vb: Protected referenceHandler As CCReferenceHandler
+      type: BlazerTech.CharacterManagement.Essentials.CMSReferenceHandler
+    content.vb: Protected referenceHandler As CMSReferenceHandler
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.characterCreationMenuManager
   commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.characterCreationMenuManager
   id: characterCreationMenuManager
@@ -256,10 +258,10 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
-    content: protected CCReferenceHandler GetCCReferenceHandler()
+    content: protected CMSReferenceHandler GetCCReferenceHandler()
     return:
-      type: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler
-    content.vb: Protected Function GetCCReferenceHandler() As CCReferenceHandler
+      type: BlazerTech.CharacterManagement.Essentials.CMSReferenceHandler
+    content.vb: Protected Function GetCCReferenceHandler() As CMSReferenceHandler
   overload: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCCReferenceHandler*
 references:
 - uid: BlazerTech.CharacterManagement.CharacterCreator
@@ -344,13 +346,13 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler
-  commentId: T:BlazerTech.CharacterManagement.Essentials.CCReferenceHandler
+- uid: BlazerTech.CharacterManagement.Essentials.CMSReferenceHandler
+  commentId: T:BlazerTech.CharacterManagement.Essentials.CMSReferenceHandler
   parent: BlazerTech.CharacterManagement.Essentials
-  href: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.html
-  name: CCReferenceHandler
-  nameWithType: CCReferenceHandler
-  fullName: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler
+  href: BlazerTech.CharacterManagement.Essentials.CMSReferenceHandler.html
+  name: CMSReferenceHandler
+  nameWithType: CMSReferenceHandler
+  fullName: BlazerTech.CharacterManagement.Essentials.CMSReferenceHandler
 - uid: BlazerTech.CharacterManagement.Essentials
   commentId: N:BlazerTech.CharacterManagement.Essentials
   href: BlazerTech.html

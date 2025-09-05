@@ -1,32 +1,283 @@
-name: Deploy DocFX _site to GitHub Pages
+name: Deploy Docs (multi-version + header switcher)
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+    paths:
+      - 'Versions/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write  # Required for write access to the repository
-
+    env:
+      BASE_PATH: /BlazerTech-Character-Management-System-Docs
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Check if _site or docfx.json changed
-        id: check_changes
+      - name: Ensure Versions exists
         run: |
-          if git diff --quiet HEAD^ HEAD -- _site docfx.json; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
+          if [ ! -d "Versions" ]; then
+            echo "Versions folder not found. Nothing to deploy." >&2
+            exit 1
           fi
 
-      - name: Deploy _site folder
-        if: steps.check_changes.outputs.changed == 'true'
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Determine versions (sorted) and latest
+        id: versions
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          mapfile -t DIRS < <(find Versions -maxdepth 1 -mindepth 1 -type d -printf "%f\n" | sed 's/^V//' | sort -V)
+          if [ ${#DIRS[@]} -eq 0 ]; then
+            echo "No version folders found in Versions/" >&2
+            exit 1
+          fi
+
+          LATEST="V${DIRS[-1]}"
+          JSON_VERSIONS=$(printf '%s\n' "${DIRS[@]}" | sed 's/^/V/' | jq -R . | jq -sc .)
+
+          {
+            echo "latest=$LATEST"
+            echo "versions<<JSON"
+            printf '%s\n' "$JSON_VERSIONS"
+            echo "JSON"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Build publish tree (root = latest version)
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          # Keep all versions
+          rsync -a Versions/ _site/Versions/
+          # Copy latest to root so base URL shows latest (no redirect)
+          rsync -a "_site/Versions/${{ steps.versions.outputs.latest }}/" _site/
+          touch _site/.nojekyll
+
+          # 404 -> base root (no version in URL)
+          cat > _site/404.html <<'HTML'
+          <!doctype html><meta charset="utf-8">
+          <title>Not Found</title>
+          <meta http-equiv="refresh" content="0; url=__BASE__/">
+          <script>location.replace("__BASE__/");</script>
+          HTML
+          sed -i "s|__BASE__|${BASE_PATH}|g" _site/404.html
+
+      - name: Write versions.json
+        run: |
+          cat > _site/versions.json <<JSON
+          {
+            "basePath": "${BASE_PATH}",
+            "latest": "${{ steps.versions.outputs.latest }}",
+            "versions": ${{ steps.versions.outputs.versions }}
+          }
+          JSON
+
+      - name: Add version switcher JS (look/behavior unchanged)
+        run: |
+          mkdir -p _site/assets/version-switcher
+          cat > _site/assets/version-switcher/version-switcher.js <<'JS'
+          (async function(){
+            try {
+              // Detect /Versions/Vx.y.z/ in URL (versioned pages)
+              const m = location.pathname.match(/^(.*)\/Versions\/(V[^/]+)\//);
+              const basePathFromUrl = m ? m[1] : '';
+              const currentVersion = m ? m[2] : null;
+
+              // Infer BASE_PATH from our <script src="..."> so base URL pages work
+              const scriptEl = document.currentScript || document.querySelector('script[src*="assets/version-switcher/version-switcher.js"]');
+              let hintedBase = '';
+              if (scriptEl) {
+                try {
+                  const u = new URL(scriptEl.src, location.href);
+                  hintedBase = u.pathname.replace(/\/assets\/version-switcher\/version-switcher\.js.*$/, '');
+                } catch {}
+              }
+              const baseGuess = basePathFromUrl || hintedBase || '';
+
+              async function fetchMeta() {
+                const candidates = [];
+                if (baseGuess) candidates.push(`${baseGuess}/versions.json`);
+                const here = location.pathname.replace(/\/$/, '');
+                candidates.push(`${here}/versions.json`);
+                candidates.push(`/versions.json`);
+                for (const url of candidates) {
+                  try {
+                    const r = await fetch(url, { cache: 'no-store' });
+                    if (r.ok) return await r.json();
+                  } catch {}
+                }
+                return null;
+              }
+
+              const meta = await fetchMeta();
+              if (!meta) return;
+
+              const basePath = meta.basePath || baseGuess || '';
+              const versions = Array.isArray(meta.versions) ? meta.versions.slice() : [];
+              const latest = meta.latest || (versions[versions.length-1] || null);
+
+              // Sort desc semver
+              versions.sort((a,b)=>{
+                const av = a.replace(/^V/,'').split('.').map(Number);
+                const bv = b.replace(/^V/,'').split('.').map(Number);
+                for (let i=0;i<Math.max(av.length,bv.length);i++){
+                  const d = (bv[i]||0)-(av[i]||0);
+                  if (d) return d;
+                }
+                return 0;
+              });
+
+              // Build dropdown (same UI)
+              const select = document.createElement('select');
+              select.setAttribute('aria-label','Select documentation version');
+              select.className = 'version-switcher';
+              versions.forEach(v=>{
+                const opt = document.createElement('option');
+                opt.value = v;
+                opt.textContent = v + (v===latest ? ' •' : '');
+                select.appendChild(opt);
+              });
+              if (currentVersion && versions.includes(currentVersion)) select.value = currentVersion;
+              else if (latest) select.value = latest;
+
+              async function go(v){
+                const rest = m ? location.pathname.replace(/^(.*)\/Versions\/(V[^/]+)\//, '') : '';
+                const targetSame = `${basePath}/Versions/${v}/${rest}`;
+                if (!rest) { location.href = targetSame; return; }
+                try {
+                  const ok = await fetch(targetSame, { method: 'HEAD', cache: 'no-store' }).then(r => r.ok);
+                  location.href = ok ? targetSame : `${basePath}/Versions/${v}/`;
+                } catch {
+                  location.href = `${basePath}/Versions/${v}/`;
+                }
+              }
+              select.addEventListener('change', e => go(e.target.value));
+
+              // Try to mount into Modern theme header, but WAIT if header isn't ready yet
+              const trySelectors = [
+                '.navbar .navbar-collapse .nav.navbar-nav.navbar-right',
+                '.navbar .navbar-collapse .navbar-right',
+                '#navbar .nav.navbar-nav.navbar-right',
+                '.navbar .navbar-collapse',
+                '.navbar .container',
+                '.navbar'
+              ];
+
+              function mountInto(target){
+                if (!target) return false;
+                if (target.tagName === 'UL') {
+                  const li = document.createElement('li');
+                  li.appendChild(select);
+                  target.appendChild(li);
+                } else {
+                  target.appendChild(select);
+                }
+                return true;
+              }
+
+              function tryMount(){
+                for (const sel of trySelectors) {
+                  const el = document.querySelector(sel);
+                  if (el && mountInto(el)) return true;
+                }
+                return false;
+              }
+
+              function ensureMounted(){
+                if (tryMount()) return;
+                // Fallback to body so it's visible while we wait
+                if (!select.isConnected) document.body.appendChild(select);
+                // Watch for header arriving, then move into it
+                const obs = new MutationObserver(()=>{
+                  if (tryMount()) { obs.disconnect(); }
+                });
+                obs.observe(document.documentElement, { childList: true, subtree: true });
+                // Safety: stop observing after 10s
+                setTimeout(()=>obs.disconnect(), 10000);
+              }
+
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', ensureMounted);
+              } else {
+                ensureMounted();
+              }
+
+              // Theme-aware styles (unchanged)
+              const style = document.createElement('style');
+              style.textContent = `
+                .version-switcher {
+                  border: 1px solid var(--color-border);
+                  border-radius: 4px;
+                  padding: 4px 6px;
+                  margin-left: 12px;
+                }
+                [data-theme="light"] .version-switcher {
+                  background: #fff;
+                  color: #000;
+                }
+                [data-theme="dark"] .version-switcher {
+                  background: #222;
+                  color: #fff;
+                }
+              `;
+              document.head.appendChild(style);
+
+            } catch (e) {
+              console.warn('Version switcher failed:', e);
+            }
+          })();
+          JS
+
+      - name: Inject switcher into ALL pages (base + versioned, robust)
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Insert before </body> (case-insensitive). If missing, append at end.
+          find _site -type f -name '*.html' -print0 | while IFS= read -r -d '' file; do
+            # Skip if already present
+            if grep -qi 'assets/version-switcher/version-switcher.js' "$file"; then
+              continue
+            fi
+            if grep -qi '</body>' "$file"; then
+              perl -0777 -pe 's#</body>#<script src="'"${BASE_PATH}"'/assets/version-switcher/version-switcher.js" defer></script></body>#i' -i "$file"
+            else
+              printf '\n<script src="%s/assets/version-switcher/version-switcher.js" defer></script>\n' "${BASE_PATH}" >> "$file"
+            fi
+          done
+
+          # Belt & suspenders: explicitly ensure root index.html has the script
+          if [ -f "_site/index.html" ] && ! grep -qi 'assets/version-switcher/version-switcher.js' _site/index.html; then
+            if grep -qi '</body>' _site/index.html; then
+              perl -0777 -pe 's#</body>#<script src="'"${BASE_PATH}"'/assets/version-switcher/version-switcher.js" defer></script></body>#i' -i _site/index.html
+            else
+              printf '\n<script src="%s/assets/version-switcher/version-switcher.js" defer></script>\n' "${BASE_PATH}" >> _site/index.html
+            fi
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

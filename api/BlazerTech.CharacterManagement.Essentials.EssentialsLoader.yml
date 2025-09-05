@@ -20,7 +20,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EssentialsLoader
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Essentials
@@ -51,7 +51,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Execute
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Essentials

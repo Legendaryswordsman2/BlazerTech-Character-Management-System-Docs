@@ -22,13 +22,29 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: UnifiedCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
-    startLine: 10
+    startLine: 22
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: Represents a character built from a single, unified spritesheet containg all animations of the character.
+  remarks: >-
+    A <xref href="BlazerTech.CharacterManagement.Characters.UnifiedCharacter" data-throw-if-not-resolved="false"></xref> is tied to a <xref href="BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO" data-throw-if-not-resolved="false"></xref> 
+
+    that defines the base spritesheet and animator controller used.
+
+
+    Instances are typically created from a <xref href="BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO" data-throw-if-not-resolved="false"></xref>,
+
+    which provides the character’s name, type, and spritesheet reference.
+  example: []
   syntax:
     content: 'public class UnifiedCharacter : CharacterBase<UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler>'
     content.vb: Public Class UnifiedCharacter Inherits CharacterBase(Of UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler)
+  seealso:
+  - linkId: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
+    commentId: T:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
+  - linkId: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO
+    commentId: T:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO
   inheritance:
   - System.Object
   - BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}
@@ -39,7 +55,7 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.CharacterName
   - BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.CharacterDisplayName
   - BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.IsValidCharacter
-  - BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.ValidationCheck
+  - BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.IsValid
   - BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.SetCharacterInvalid
   - BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.AcquireCharacterHandler(System.Object)
   - BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.AcquireCharacterHandlerAsync(System.Object)
@@ -65,7 +81,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
-    startLine: 13
+    startLine: 25
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -97,7 +113,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadCharacterHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
-    startLine: 23
+    startLine: 35
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -125,7 +141,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadCharacterHandlerAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
-    startLine: 35
+    startLine: 47
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -138,6 +154,26 @@ items:
   overridden: BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.LoadCharacterHandlerAsync
   overload: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadCharacterHandlerAsync*
 references:
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
+  href: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO.html
+  name: UnifiedCharacterTypeSO
+  nameWithType: UnifiedCharacterTypeSO
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.html
+  name: UnifiedCharacterTemplateSO
+  nameWithType: UnifiedCharacterTemplateSO
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter
+  commentId: T:BlazerTech.CharacterManagement.Characters.UnifiedCharacter
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.html
+  name: UnifiedCharacter
+  nameWithType: UnifiedCharacter
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacter
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
   href: BlazerTech.html
@@ -288,26 +324,26 @@ references:
   fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO, BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler>.IsValidCharacter
   nameWithType.vb: CharacterBase(Of UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler).IsValidCharacter
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO, BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler).IsValidCharacter
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.ValidationCheck
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.ValidationCheck
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.IsValid
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.IsValid
   parent: BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}
-  definition: BlazerTech.CharacterManagement.Characters.CharacterBase`2.ValidationCheck
-  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_ValidationCheck
-  name: ValidationCheck()
-  nameWithType: CharacterBase<UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler>.ValidationCheck()
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO, BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler>.ValidationCheck()
-  nameWithType.vb: CharacterBase(Of UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler).ValidationCheck()
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO, BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler).ValidationCheck()
+  definition: BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid
+  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid
+  name: IsValid()
+  nameWithType: CharacterBase<UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler>.IsValid()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO, BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler>.IsValid()
+  nameWithType.vb: CharacterBase(Of UnifiedCharacterTypeSO, UnifiedCharacter.LoadedUnifiedCharacterHandler).IsValid()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO, BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler).IsValid()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.ValidationCheck
-    name: ValidationCheck
-    href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_ValidationCheck
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.IsValid
+    name: IsValid
+    href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid
   - name: (
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.ValidationCheck
-    name: ValidationCheck
-    href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_ValidationCheck
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.IsValid
+    name: IsValid
+    href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid
   - name: (
   - name: )
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase{BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO,BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler}.SetCharacterInvalid
@@ -577,24 +613,24 @@ references:
   fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.IsValidCharacter
   nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).IsValidCharacter
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).IsValidCharacter
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.ValidationCheck
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.ValidationCheck
-  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_ValidationCheck
-  name: ValidationCheck()
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.ValidationCheck()
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.ValidationCheck()
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).ValidationCheck()
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).ValidationCheck()
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid
+  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid
+  name: IsValid()
+  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.IsValid()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.IsValid()
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).IsValid()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).IsValid()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.ValidationCheck
-    name: ValidationCheck
-    href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_ValidationCheck
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid
+    name: IsValid
+    href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid
   - name: (
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.ValidationCheck
-    name: ValidationCheck
-    href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_ValidationCheck
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid
+    name: IsValid
+    href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid
   - name: (
   - name: )
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.SetCharacterInvalid
@@ -776,13 +812,6 @@ references:
   nameWithType.vb: UnifiedCharacter.New
   fullName.vb: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.New
   name.vb: New
-- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO
-  commentId: T:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.html
-  name: UnifiedCharacterTemplateSO
-  nameWithType: UnifiedCharacterTemplateSO
-  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO
 - uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadCharacterHandler*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadCharacterHandler
   href: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.html#BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadCharacterHandler

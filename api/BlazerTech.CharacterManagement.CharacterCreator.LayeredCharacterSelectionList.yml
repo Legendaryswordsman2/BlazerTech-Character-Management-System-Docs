@@ -18,7 +18,6 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.OnMenuLoadingProgressUpdated
   - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.RemoveCharacterFromList(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.RemoveCharactersPermission
-  - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.ReorderCharactersPermission
   langs:
   - csharp
   - vb
@@ -220,35 +219,6 @@ items:
       type: System.Boolean
     content.vb: Public Property EditCharactersPermission As Boolean
   overload: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.EditCharactersPermission*
-- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.ReorderCharactersPermission
-  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.ReorderCharactersPermission
-  id: ReorderCharactersPermission
-  parent: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList
-  langs:
-  - csharp
-  - vb
-  name: ReorderCharactersPermission
-  nameWithType: LayeredCharacterSelectionList.ReorderCharactersPermission
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.ReorderCharactersPermission
-  type: Property
-  source:
-    remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: ReorderCharactersPermission
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterSelectionList.cs
-    startLine: 26
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.CharacterCreator
-  syntax:
-    content: public bool ReorderCharactersPermission { get; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property ReorderCharactersPermission As Boolean
-  overload: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.ReorderCharactersPermission*
 - uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.RemoveCharactersPermission
   commentId: P:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.RemoveCharactersPermission
   id: RemoveCharactersPermission
@@ -645,12 +615,6 @@ references:
   name: EditCharactersPermission
   nameWithType: LayeredCharacterSelectionList.EditCharactersPermission
   fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.EditCharactersPermission
-- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.ReorderCharactersPermission*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.ReorderCharactersPermission
-  href: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.html#BlazerTech_CharacterManagement_CharacterCreator_LayeredCharacterSelectionList_ReorderCharactersPermission
-  name: ReorderCharactersPermission
-  nameWithType: LayeredCharacterSelectionList.ReorderCharactersPermission
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.ReorderCharactersPermission
 - uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.RemoveCharactersPermission*
   commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.RemoveCharactersPermission
   href: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList.html#BlazerTech_CharacterManagement_CharacterCreator_LayeredCharacterSelectionList_RemoveCharactersPermission

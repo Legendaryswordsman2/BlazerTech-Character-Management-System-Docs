@@ -6,7 +6,7 @@ items:
   parent: BlazerTech.CharacterManagement.CharacterCreator
   children:
   - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.CloseMenu
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenuWithSingleCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.SaveCharacter
   langs:
   - csharp
@@ -45,35 +45,35 @@ items:
   - type: UnityEngine.DisallowMultipleComponent
     ctor: UnityEngine.DisallowMultipleComponent.#ctor
     arguments: []
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenuWithSingleCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenuWithSingleCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  id: OpenCharacterCreationMenuWithSingleCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  id: OpenCharacterCreationMenu_SingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   parent: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay
   langs:
   - csharp
   - vb
-  name: OpenCharacterCreationMenuWithSingleCharacter(LayeredCharacterTypeSO)
-  nameWithType: CCMRelay.OpenCharacterCreationMenuWithSingleCharacter(LayeredCharacterTypeSO)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenuWithSingleCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  name: OpenCharacterCreationMenu_SingleGroup(LayeredCharacterTypeSO)
+  nameWithType: CCMRelay.OpenCharacterCreationMenu_SingleGroup(LayeredCharacterTypeSO)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   type: Method
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: OpenCharacterCreationMenuWithSingleCharacter
+    id: OpenCharacterCreationMenu_SingleGroup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
     startLine: 15
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
-    content: public void OpenCharacterCreationMenuWithSingleCharacter(LayeredCharacterTypeSO characterType)
+    content: public void OpenCharacterCreationMenu_SingleGroup(LayeredCharacterTypeSO characterType)
     parameters:
     - id: characterType
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
-    content.vb: Public Sub OpenCharacterCreationMenuWithSingleCharacter(characterType As LayeredCharacterTypeSO)
-  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenuWithSingleCharacter*
+    content.vb: Public Sub OpenCharacterCreationMenu_SingleGroup(characterType As LayeredCharacterTypeSO)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup*
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.SaveCharacter
   commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.SaveCharacter
   id: SaveCharacter
@@ -209,12 +209,12 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenuWithSingleCharacter*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenuWithSingleCharacter
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html#BlazerTech_CharacterManagement_CharacterCreator_CCMRelay_OpenCharacterCreationMenuWithSingleCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
-  name: OpenCharacterCreationMenuWithSingleCharacter
-  nameWithType: CCMRelay.OpenCharacterCreationMenuWithSingleCharacter
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenuWithSingleCharacter
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html#BlazerTech_CharacterManagement_CharacterCreator_CCMRelay_OpenCharacterCreationMenu_SingleGroup_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
+  name: OpenCharacterCreationMenu_SingleGroup
+  nameWithType: CCMRelay.OpenCharacterCreationMenu_SingleGroup
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
   parent: BlazerTech.CharacterManagement.Characters

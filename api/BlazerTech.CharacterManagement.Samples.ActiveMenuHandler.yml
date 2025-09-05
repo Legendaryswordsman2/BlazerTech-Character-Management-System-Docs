@@ -21,11 +21,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+      path: Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ActiveMenuHandler
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
     startLine: 7
   assemblies:
   - Assembly-CSharp
@@ -64,11 +64,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+      path: Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CloseMenuWithInput
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
     startLine: 15
   assemblies:
   - Assembly-CSharp
@@ -101,11 +101,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+      path: Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CloseMenuKey
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
     startLine: 16
   assemblies:
   - Assembly-CSharp
@@ -140,11 +140,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+      path: Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Instance
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
     startLine: 18
   assemblies:
   - Assembly-CSharp
@@ -167,11 +167,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+      path: Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: menuStack
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
     startLine: 20
   assemblies:
   - Assembly-CSharp
@@ -194,11 +194,11 @@ items:
   type: Event
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+      path: Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnAllMenusClosed
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
     startLine: 22
   assemblies:
   - Assembly-CSharp
@@ -221,11 +221,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+      path: Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OpenMenu
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
     startLine: 45
   assemblies:
   - Assembly-CSharp
@@ -250,11 +250,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+      path: Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Back
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/ActiveMenuHandler.cs
     startLine: 68
   assemblies:
   - Assembly-CSharp

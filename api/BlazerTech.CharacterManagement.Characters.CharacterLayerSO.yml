@@ -5,19 +5,19 @@ items:
   id: CharacterLayerSO
   parent: BlazerTech.CharacterManagement.Characters
   children:
-  - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllCharacterPiecesAsync(System.Action{System.Single})
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllLayerOptionsAsync(System.Action{System.Single})
   - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AttachedCharacterType
-  - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CharacterPieces
-  - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromIndex(System.Int32)
-  - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromKey(System.String)
-  - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromSpritesheetName(System.String)
-  - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieces_EditMode
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CollectLayerOptions_EditMode
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromIndex(System.Int32)
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromKey(System.String)
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromSpritesheetName(System.String)
   - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.IncludeNoneOption
   - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.Initialize(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.IsInitialized
   - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.IsValid
   - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.LayerName
-  - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllCharacterPieces
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.LayerOptions
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllLayerOptions
   langs:
   - csharp
   - vb
@@ -32,7 +32,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterLayerSO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -80,7 +80,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: AttachedCharacterType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
-    startLine: 26
+    startLine: 20
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -113,6 +113,9 @@ items:
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: The name used for the layer. Does NOT need to be unique.
+  remarks: Used when displaying layer names in the Character Creator.
+  example: []
   syntax:
     content: public string LayerName { get; }
     parameters: []
@@ -138,10 +141,12 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IncludeNoneOption
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
-    startLine: 36
+    startLine: 39
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: If toggled, adds a 'None' option as the first layer option. Applies immediately when toggled and when <xref href="BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CollectLayerOptions_EditMode" data-throw-if-not-resolved="false"></xref> is run.
+  example: []
   syntax:
     content: public bool IncludeNoneOption { get; }
     parameters: []
@@ -149,35 +154,37 @@ items:
       type: System.Boolean
     content.vb: Public Property IncludeNoneOption As Boolean
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.IncludeNoneOption*
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CharacterPieces
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CharacterPieces
-  id: CharacterPieces
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.LayerOptions
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.LayerOptions
+  id: LayerOptions
   parent: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
   langs:
   - csharp
   - vb
-  name: CharacterPieces
-  nameWithType: CharacterLayerSO.CharacterPieces
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CharacterPieces
+  name: LayerOptions
+  nameWithType: CharacterLayerSO.LayerOptions
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.LayerOptions
   type: Property
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterPieces
+    id: LayerOptions
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
-    startLine: 44
+    startLine: 52
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: List of <xref href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption" data-throw-if-not-resolved="false"></xref>'s used when creating <xref href="BlazerTech.CharacterManagement.Characters.LayeredCharacter" data-throw-if-not-resolved="false"></xref>'s.
+  example: []
   syntax:
-    content: public List<CharacterPieceDefinition> CharacterPieces { get; }
+    content: public List<CharacterLayerOption> LayerOptions { get; }
     parameters: []
     return:
-      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition}
-    content.vb: Public Property CharacterPieces As List(Of CharacterPieceDefinition)
-  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CharacterPieces*
+      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerOption}
+    content.vb: Public Property LayerOptions As List(Of CharacterLayerOption)
+  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.LayerOptions*
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.Initialize(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.Initialize(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   id: Initialize(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
@@ -196,19 +203,32 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Initialize
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
-    startLine: 50
+    startLine: 62
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  example: []
   syntax:
     content: public bool Initialize(LayeredCharacterTypeSO characterType)
     parameters:
     - id: characterType
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
+      description: The <xref href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO" data-throw-if-not-resolved="false"></xref> used to initialize the layer.
     return:
       type: System.Boolean
+      description: True if the layer was able to initialize properly. Otherwise, False.
     content.vb: Public Function Initialize(characterType As LayeredCharacterTypeSO) As Boolean
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.Initialize*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when <xref href="BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AttachedCharacterType" data-throw-if-not-resolved="false"></xref> is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">characterType</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the <code class="paramref">characterType</code> is different from the one used in the layer.
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.IsValid
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.IsValid
   id: IsValid
@@ -227,7 +247,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsValid
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
-    startLine: 60
+    startLine: 80
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -240,108 +260,108 @@ items:
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.IsValid*
   implements:
   - BlazerTech.CharacterManagement.Essentials.IValidatable.IsValid
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromKey(System.String)
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromKey(System.String)
-  id: GetCharacterPieceInfoFromKey(System.String)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromKey(System.String)
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromKey(System.String)
+  id: GetLayerOptionFromKey(System.String)
   parent: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
   langs:
   - csharp
   - vb
-  name: GetCharacterPieceInfoFromKey(string)
-  nameWithType: CharacterLayerSO.GetCharacterPieceInfoFromKey(string)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromKey(string)
+  name: GetLayerOptionFromKey(string)
+  nameWithType: CharacterLayerSO.GetLayerOptionFromKey(string)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromKey(string)
   type: Method
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: GetCharacterPieceInfoFromKey
+    id: GetLayerOptionFromKey
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
-    startLine: 70
+    startLine: 90
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public CharacterPieceDefinition GetCharacterPieceInfoFromKey(string key)
+    content: public CharacterLayerOption GetLayerOptionFromKey(string key)
     parameters:
     - id: key
       type: System.String
     return:
-      type: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
-    content.vb: Public Function GetCharacterPieceInfoFromKey(key As String) As CharacterPieceDefinition
-  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromKey*
-  nameWithType.vb: CharacterLayerSO.GetCharacterPieceInfoFromKey(String)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromKey(String)
-  name.vb: GetCharacterPieceInfoFromKey(String)
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromSpritesheetName(System.String)
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromSpritesheetName(System.String)
-  id: GetCharacterPieceInfoFromSpritesheetName(System.String)
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+    content.vb: Public Function GetLayerOptionFromKey(key As String) As CharacterLayerOption
+  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromKey*
+  nameWithType.vb: CharacterLayerSO.GetLayerOptionFromKey(String)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromKey(String)
+  name.vb: GetLayerOptionFromKey(String)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromSpritesheetName(System.String)
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromSpritesheetName(System.String)
+  id: GetLayerOptionFromSpritesheetName(System.String)
   parent: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
   langs:
   - csharp
   - vb
-  name: GetCharacterPieceInfoFromSpritesheetName(string)
-  nameWithType: CharacterLayerSO.GetCharacterPieceInfoFromSpritesheetName(string)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromSpritesheetName(string)
+  name: GetLayerOptionFromSpritesheetName(string)
+  nameWithType: CharacterLayerSO.GetLayerOptionFromSpritesheetName(string)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromSpritesheetName(string)
   type: Method
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: GetCharacterPieceInfoFromSpritesheetName
+    id: GetLayerOptionFromSpritesheetName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
-    startLine: 72
+    startLine: 92
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public CharacterPieceDefinition GetCharacterPieceInfoFromSpritesheetName(string spritesheetName)
+    content: public CharacterLayerOption GetLayerOptionFromSpritesheetName(string spritesheetName)
     parameters:
     - id: spritesheetName
       type: System.String
     return:
-      type: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
-    content.vb: Public Function GetCharacterPieceInfoFromSpritesheetName(spritesheetName As String) As CharacterPieceDefinition
-  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromSpritesheetName*
-  nameWithType.vb: CharacterLayerSO.GetCharacterPieceInfoFromSpritesheetName(String)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromSpritesheetName(String)
-  name.vb: GetCharacterPieceInfoFromSpritesheetName(String)
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromIndex(System.Int32)
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromIndex(System.Int32)
-  id: GetCharacterPieceInfoFromIndex(System.Int32)
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+    content.vb: Public Function GetLayerOptionFromSpritesheetName(spritesheetName As String) As CharacterLayerOption
+  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromSpritesheetName*
+  nameWithType.vb: CharacterLayerSO.GetLayerOptionFromSpritesheetName(String)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromSpritesheetName(String)
+  name.vb: GetLayerOptionFromSpritesheetName(String)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromIndex(System.Int32)
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromIndex(System.Int32)
+  id: GetLayerOptionFromIndex(System.Int32)
   parent: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
   langs:
   - csharp
   - vb
-  name: GetCharacterPieceInfoFromIndex(int)
-  nameWithType: CharacterLayerSO.GetCharacterPieceInfoFromIndex(int)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromIndex(int)
+  name: GetLayerOptionFromIndex(int)
+  nameWithType: CharacterLayerSO.GetLayerOptionFromIndex(int)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromIndex(int)
   type: Method
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: GetCharacterPieceInfoFromIndex
+    id: GetLayerOptionFromIndex
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
-    startLine: 74
+    startLine: 94
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public CharacterPieceDefinition GetCharacterPieceInfoFromIndex(int index)
+    content: public CharacterLayerOption GetLayerOptionFromIndex(int index)
     parameters:
     - id: index
       type: System.Int32
     return:
-      type: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
-    content.vb: Public Function GetCharacterPieceInfoFromIndex(index As Integer) As CharacterPieceDefinition
-  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromIndex*
-  nameWithType.vb: CharacterLayerSO.GetCharacterPieceInfoFromIndex(Integer)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromIndex(Integer)
-  name.vb: GetCharacterPieceInfoFromIndex(Integer)
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+    content.vb: Public Function GetLayerOptionFromIndex(index As Integer) As CharacterLayerOption
+  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromIndex*
+  nameWithType.vb: CharacterLayerSO.GetLayerOptionFromIndex(Integer)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromIndex(Integer)
+  name.vb: GetLayerOptionFromIndex(Integer)
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.IsInitialized
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.IsInitialized
   id: IsInitialized
@@ -360,7 +380,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsInitialized
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
-    startLine: 91
+    startLine: 111
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -370,115 +390,106 @@ items:
       type: System.Boolean
     content.vb: Public Function IsInitialized() As Boolean
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.IsInitialized*
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllCharacterPiecesAsync(System.Action{System.Single})
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllCharacterPiecesAsync(System.Action{System.Single})
-  id: AcquireAllCharacterPiecesAsync(System.Action{System.Single})
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllLayerOptionsAsync(System.Action{System.Single})
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllLayerOptionsAsync(System.Action{System.Single})
+  id: AcquireAllLayerOptionsAsync(System.Action{System.Single})
   parent: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
   langs:
   - csharp
   - vb
-  name: AcquireAllCharacterPiecesAsync(Action<float>)
-  nameWithType: CharacterLayerSO.AcquireAllCharacterPiecesAsync(Action<float>)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllCharacterPiecesAsync(System.Action<float>)
+  name: AcquireAllLayerOptionsAsync(Action<float>)
+  nameWithType: CharacterLayerSO.AcquireAllLayerOptionsAsync(Action<float>)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllLayerOptionsAsync(System.Action<float>)
   type: Method
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: AcquireAllCharacterPiecesAsync
+    id: AcquireAllLayerOptionsAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
-    startLine: 109
+    startLine: 113
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public Task AcquireAllCharacterPiecesAsync(Action<float> onProgress = null)
+    content: public Task AcquireAllLayerOptionsAsync(Action<float> onProgress = null)
     parameters:
     - id: onProgress
       type: System.Action{System.Single}
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Public Function AcquireAllCharacterPiecesAsync(onProgress As Action(Of Single) = Nothing) As Task
-  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllCharacterPiecesAsync*
-  nameWithType.vb: CharacterLayerSO.AcquireAllCharacterPiecesAsync(Action(Of Single))
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllCharacterPiecesAsync(System.Action(Of Single))
-  name.vb: AcquireAllCharacterPiecesAsync(Action(Of Single))
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllCharacterPieces
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllCharacterPieces
-  id: ReleaseAllCharacterPieces
+    content.vb: Public Function AcquireAllLayerOptionsAsync(onProgress As Action(Of Single) = Nothing) As Task
+  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllLayerOptionsAsync*
+  nameWithType.vb: CharacterLayerSO.AcquireAllLayerOptionsAsync(Action(Of Single))
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllLayerOptionsAsync(System.Action(Of Single))
+  name.vb: AcquireAllLayerOptionsAsync(Action(Of Single))
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllLayerOptions
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllLayerOptions
+  id: ReleaseAllLayerOptions
   parent: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
   langs:
   - csharp
   - vb
-  name: ReleaseAllCharacterPieces()
-  nameWithType: CharacterLayerSO.ReleaseAllCharacterPieces()
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllCharacterPieces()
+  name: ReleaseAllLayerOptions()
+  nameWithType: CharacterLayerSO.ReleaseAllLayerOptions()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllLayerOptions()
   type: Method
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: ReleaseAllCharacterPieces
+    id: ReleaseAllLayerOptions
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
-    startLine: 137
+    startLine: 141
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public void ReleaseAllCharacterPieces()
-    content.vb: Public Sub ReleaseAllCharacterPieces()
-  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllCharacterPieces*
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieces_EditMode
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieces_EditMode
-  id: GetCharacterPieces_EditMode
+    content: public void ReleaseAllLayerOptions()
+    content.vb: Public Sub ReleaseAllLayerOptions()
+  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllLayerOptions*
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CollectLayerOptions_EditMode
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CollectLayerOptions_EditMode
+  id: CollectLayerOptions_EditMode
   parent: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
   langs:
   - csharp
   - vb
-  name: GetCharacterPieces_EditMode()
-  nameWithType: CharacterLayerSO.GetCharacterPieces_EditMode()
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieces_EditMode()
+  name: CollectLayerOptions_EditMode()
+  nameWithType: CharacterLayerSO.CollectLayerOptions_EditMode()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CollectLayerOptions_EditMode()
   type: Method
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: GetCharacterPieces_EditMode
+    id: CollectLayerOptions_EditMode
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/CharacterLayerSO.cs
-    startLine: 145
+    startLine: 149
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
     content: >-
-      [Button("Get Character Pieces", EButtonEnableMode.Always)]
+      [Button("Collect Layer Options", EButtonEnableMode.Editor)]
 
-      [EnableIf("IsEditmode")]
-
-      public void GetCharacterPieces_EditMode()
+      public void CollectLayerOptions_EditMode()
     content.vb: >-
-      <Button("Get Character Pieces", EButtonEnableMode.Always)>
+      <Button("Collect Layer Options", EButtonEnableMode.Editor)>
 
-      <EnableIf("IsEditmode")>
-
-      Public Sub GetCharacterPieces_EditMode()
-  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieces_EditMode*
+      Public Sub CollectLayerOptions_EditMode()
+  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CollectLayerOptions_EditMode*
   attributes:
   - type: NaughtyAttributes.ButtonAttribute
     ctor: NaughtyAttributes.ButtonAttribute.#ctor(System.String,NaughtyAttributes.EButtonEnableMode)
     arguments:
     - type: System.String
-      value: Get Character Pieces
+      value: Collect Layer Options
     - type: NaughtyAttributes.EButtonEnableMode
-      value: 0
-  - type: NaughtyAttributes.EnableIfAttribute
-    ctor: NaughtyAttributes.EnableIfAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: IsEditmode
+      value: 1
 references:
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
@@ -615,6 +626,24 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CollectLayerOptions_EditMode
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CollectLayerOptions_EditMode
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_CollectLayerOptions_EditMode
+  name: CollectLayerOptions_EditMode()
+  nameWithType: CharacterLayerSO.CollectLayerOptions_EditMode()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CollectLayerOptions_EditMode()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CollectLayerOptions_EditMode
+    name: CollectLayerOptions_EditMode
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_CollectLayerOptions_EditMode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CollectLayerOptions_EditMode
+    name: CollectLayerOptions_EditMode
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_CollectLayerOptions_EditMode
+  - name: (
+  - name: )
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.IncludeNoneOption*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.IncludeNoneOption
   href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_IncludeNoneOption
@@ -632,32 +661,46 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CharacterPieces*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CharacterPieces
-  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_CharacterPieces
-  name: CharacterPieces
-  nameWithType: CharacterLayerSO.CharacterPieces
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CharacterPieces
-- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition}
-  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition}
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html
+  name: CharacterLayerOption
+  nameWithType: CharacterLayerOption
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacter
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
+  name: LayeredCharacter
+  nameWithType: LayeredCharacter
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.LayerOptions*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.LayerOptions
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_LayerOptions
+  name: LayerOptions
+  nameWithType: CharacterLayerSO.LayerOptions
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.LayerOptions
+- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerOption}
+  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterLayerOption}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<CharacterPieceDefinition>
-  nameWithType: List<CharacterPieceDefinition>
-  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition>
-  nameWithType.vb: List(Of CharacterPieceDefinition)
-  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition)
-  name.vb: List(Of CharacterPieceDefinition)
+  name: List<CharacterLayerOption>
+  nameWithType: List<CharacterLayerOption>
+  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.CharacterLayerOption>
+  nameWithType.vb: List(Of CharacterLayerOption)
+  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption)
+  name.vb: List(Of CharacterLayerOption)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
-    name: CharacterPieceDefinition
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+    name: CharacterLayerOption
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -667,9 +710,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
-    name: CharacterPieceDefinition
-    href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+    name: CharacterLayerOption
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html
   - name: )
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
@@ -736,6 +779,33 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AttachedCharacterType
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AttachedCharacterType
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_AttachedCharacterType
+  name: AttachedCharacterType
+  nameWithType: CharacterLayerSO.AttachedCharacterType
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AttachedCharacterType
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.Initialize*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.Initialize
   href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_Initialize_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
@@ -767,31 +837,24 @@ references:
     href: BlazerTech.CharacterManagement.Essentials.IValidatable.html#BlazerTech_CharacterManagement_Essentials_IValidatable_IsValid
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromKey*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromKey
-  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_GetCharacterPieceInfoFromKey_System_String_
-  name: GetCharacterPieceInfoFromKey
-  nameWithType: CharacterLayerSO.GetCharacterPieceInfoFromKey
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromKey
-- uid: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition.html
-  name: CharacterPieceDefinition
-  nameWithType: CharacterPieceDefinition
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterPieceDefinition
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromSpritesheetName*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromSpritesheetName
-  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_GetCharacterPieceInfoFromSpritesheetName_System_String_
-  name: GetCharacterPieceInfoFromSpritesheetName
-  nameWithType: CharacterLayerSO.GetCharacterPieceInfoFromSpritesheetName
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromSpritesheetName
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromIndex*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromIndex
-  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_GetCharacterPieceInfoFromIndex_System_Int32_
-  name: GetCharacterPieceInfoFromIndex
-  nameWithType: CharacterLayerSO.GetCharacterPieceInfoFromIndex
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieceInfoFromIndex
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromKey*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromKey
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_GetLayerOptionFromKey_System_String_
+  name: GetLayerOptionFromKey
+  nameWithType: CharacterLayerSO.GetLayerOptionFromKey
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromKey
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromSpritesheetName*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromSpritesheetName
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_GetLayerOptionFromSpritesheetName_System_String_
+  name: GetLayerOptionFromSpritesheetName
+  nameWithType: CharacterLayerSO.GetLayerOptionFromSpritesheetName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromSpritesheetName
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromIndex*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromIndex
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_GetLayerOptionFromIndex_System_Int32_
+  name: GetLayerOptionFromIndex
+  nameWithType: CharacterLayerSO.GetLayerOptionFromIndex
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetLayerOptionFromIndex
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -809,12 +872,12 @@ references:
   name: IsInitialized
   nameWithType: CharacterLayerSO.IsInitialized
   fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.IsInitialized
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllCharacterPiecesAsync*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllCharacterPiecesAsync
-  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_AcquireAllCharacterPiecesAsync_System_Action_System_Single__
-  name: AcquireAllCharacterPiecesAsync
-  nameWithType: CharacterLayerSO.AcquireAllCharacterPiecesAsync
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllCharacterPiecesAsync
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllLayerOptionsAsync*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllLayerOptionsAsync
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_AcquireAllLayerOptionsAsync_System_Action_System_Single__
+  name: AcquireAllLayerOptionsAsync
+  nameWithType: CharacterLayerSO.AcquireAllLayerOptionsAsync
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.AcquireAllLayerOptionsAsync
 - uid: System.Action{System.Single}
   commentId: T:System.Action{System.Single}
   parent: System
@@ -923,15 +986,15 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllCharacterPieces*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllCharacterPieces
-  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_ReleaseAllCharacterPieces
-  name: ReleaseAllCharacterPieces
-  nameWithType: CharacterLayerSO.ReleaseAllCharacterPieces
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllCharacterPieces
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieces_EditMode*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieces_EditMode
-  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_GetCharacterPieces_EditMode
-  name: GetCharacterPieces_EditMode
-  nameWithType: CharacterLayerSO.GetCharacterPieces_EditMode
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.GetCharacterPieces_EditMode
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllLayerOptions*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllLayerOptions
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_ReleaseAllLayerOptions
+  name: ReleaseAllLayerOptions
+  nameWithType: CharacterLayerSO.ReleaseAllLayerOptions
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.ReleaseAllLayerOptions
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CollectLayerOptions_EditMode*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CollectLayerOptions_EditMode
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerSO_CollectLayerOptions_EditMode
+  name: CollectLayerOptions_EditMode
+  nameWithType: CharacterLayerSO.CollectLayerOptions_EditMode
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.CollectLayerOptions_EditMode

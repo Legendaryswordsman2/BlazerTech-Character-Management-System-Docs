@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
+  id: CharacterSnapshotModificationType
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  children:
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType.AllCharacterChange
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType.MultiLayerChange
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType.SingleLayerChange
+  langs:
+  - csharp
+  - vb
+  name: CharacterSnapshotModificationType
+  nameWithType: CharacterSnapshotModificationType
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
+  type: Enum
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryTracker.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterSnapshotModificationType
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryTracker.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public enum CharacterSnapshotModificationType
+    content.vb: Public Enum CharacterSnapshotModificationType
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType.SingleLayerChange
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType.SingleLayerChange
+  id: SingleLayerChange
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
+  langs:
+  - csharp
+  - vb
+  name: SingleLayerChange
+  nameWithType: CharacterSnapshotModificationType.SingleLayerChange
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType.SingleLayerChange
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryTracker.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: SingleLayerChange
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryTracker.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: SingleLayerChange = 0
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType.MultiLayerChange
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType.MultiLayerChange
+  id: MultiLayerChange
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
+  langs:
+  - csharp
+  - vb
+  name: MultiLayerChange
+  nameWithType: CharacterSnapshotModificationType.MultiLayerChange
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType.MultiLayerChange
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryTracker.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: MultiLayerChange
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryTracker.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: MultiLayerChange = 1
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType.AllCharacterChange
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType.AllCharacterChange
+  id: AllCharacterChange
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
+  langs:
+  - csharp
+  - vb
+  name: AllCharacterChange
+  nameWithType: CharacterSnapshotModificationType.AllCharacterChange
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType.AllCharacterChange
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryTracker.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: AllCharacterChange
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryTracker.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: AllCharacterChange = 2
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
+references:
+- uid: BlazerTech.CharacterManagement.CharacterCreator
+  commentId: N:BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.CharacterCreator
+  nameWithType: BlazerTech.CharacterManagement.CharacterCreator
+  fullName: BlazerTech.CharacterManagement.CharacterCreator
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType.html
+  name: CharacterSnapshotModificationType
+  nameWithType: CharacterSnapshotModificationType
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType

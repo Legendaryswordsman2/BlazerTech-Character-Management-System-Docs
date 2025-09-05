@@ -4,17 +4,17 @@ items:
   commentId: N:BlazerTech.CharacterManagement.Essentials
   id: BlazerTech.CharacterManagement.Essentials
   children:
-  - BlazerTech.CharacterManagement.Essentials.CCMAnimationPreviewButtonHandler
-  - BlazerTech.CharacterManagement.Essentials.CCReferenceHandler
-  - BlazerTech.CharacterManagement.Essentials.CCSaveSystem
   - BlazerTech.CharacterManagement.Essentials.CMSInitializationHandler
-  - BlazerTech.CharacterManagement.Essentials.Direction
+  - BlazerTech.CharacterManagement.Essentials.CMSReferenceHandler
+  - BlazerTech.CharacterManagement.Essentials.CMSSaveSystem
   - BlazerTech.CharacterManagement.Essentials.EssentialsLoader
+  - BlazerTech.CharacterManagement.Essentials.FourDirectional
   - BlazerTech.CharacterManagement.Essentials.IValidatable
   - BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1
   - BlazerTech.CharacterManagement.Essentials.SerializableDictionary`2
   - BlazerTech.CharacterManagement.Essentials.SerializableKeyValuePair`2
   - BlazerTech.CharacterManagement.Essentials.SessionGUIDHandler
+  - BlazerTech.CharacterManagement.Essentials.TwoDirectional
   langs:
   - csharp
   - vb
@@ -25,25 +25,6 @@ items:
   assemblies:
   - Assembly-CSharp
 references:
-- uid: BlazerTech.CharacterManagement.Essentials.CCMAnimationPreviewButtonHandler
-  commentId: T:BlazerTech.CharacterManagement.Essentials.CCMAnimationPreviewButtonHandler
-  href: BlazerTech.CharacterManagement.Essentials.CCMAnimationPreviewButtonHandler.html
-  name: CCMAnimationPreviewButtonHandler
-  nameWithType: CCMAnimationPreviewButtonHandler
-  fullName: BlazerTech.CharacterManagement.Essentials.CCMAnimationPreviewButtonHandler
-- uid: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler
-  commentId: T:BlazerTech.CharacterManagement.Essentials.CCReferenceHandler
-  parent: BlazerTech.CharacterManagement.Essentials
-  href: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler.html
-  name: CCReferenceHandler
-  nameWithType: CCReferenceHandler
-  fullName: BlazerTech.CharacterManagement.Essentials.CCReferenceHandler
-- uid: BlazerTech.CharacterManagement.Essentials.CCSaveSystem
-  commentId: T:BlazerTech.CharacterManagement.Essentials.CCSaveSystem
-  href: BlazerTech.CharacterManagement.Essentials.CCSaveSystem.html
-  name: CCSaveSystem
-  nameWithType: CCSaveSystem
-  fullName: BlazerTech.CharacterManagement.Essentials.CCSaveSystem
 - uid: BlazerTech.CharacterManagement.Essentials.IValidatable
   commentId: T:BlazerTech.CharacterManagement.Essentials.IValidatable
   parent: BlazerTech.CharacterManagement.Essentials
@@ -138,13 +119,20 @@ references:
   - name: " "
   - name: TValue
   - name: )
-- uid: BlazerTech.CharacterManagement.Essentials.Direction
-  commentId: T:BlazerTech.CharacterManagement.Essentials.Direction
+- uid: BlazerTech.CharacterManagement.Essentials.FourDirectional
+  commentId: T:BlazerTech.CharacterManagement.Essentials.FourDirectional
   parent: BlazerTech.CharacterManagement.Essentials
-  href: BlazerTech.CharacterManagement.Essentials.Direction.html
-  name: Direction
-  nameWithType: Direction
-  fullName: BlazerTech.CharacterManagement.Essentials.Direction
+  href: BlazerTech.CharacterManagement.Essentials.FourDirectional.html
+  name: FourDirectional
+  nameWithType: FourDirectional
+  fullName: BlazerTech.CharacterManagement.Essentials.FourDirectional
+- uid: BlazerTech.CharacterManagement.Essentials.TwoDirectional
+  commentId: T:BlazerTech.CharacterManagement.Essentials.TwoDirectional
+  parent: BlazerTech.CharacterManagement.Essentials
+  href: BlazerTech.CharacterManagement.Essentials.TwoDirectional.html
+  name: TwoDirectional
+  nameWithType: TwoDirectional
+  fullName: BlazerTech.CharacterManagement.Essentials.TwoDirectional
 - uid: BlazerTech.CharacterManagement.Essentials.EssentialsLoader
   commentId: T:BlazerTech.CharacterManagement.Essentials.EssentialsLoader
   href: BlazerTech.CharacterManagement.Essentials.EssentialsLoader.html
@@ -157,6 +145,12 @@ references:
   name: SessionGUIDHandler
   nameWithType: SessionGUIDHandler
   fullName: BlazerTech.CharacterManagement.Essentials.SessionGUIDHandler
+- uid: BlazerTech.CharacterManagement.Essentials.CMSSaveSystem
+  commentId: T:BlazerTech.CharacterManagement.Essentials.CMSSaveSystem
+  href: BlazerTech.CharacterManagement.Essentials.CMSSaveSystem.html
+  name: CMSSaveSystem
+  nameWithType: CMSSaveSystem
+  fullName: BlazerTech.CharacterManagement.Essentials.CMSSaveSystem
 - uid: BlazerTech.CharacterManagement.Essentials.CMSInitializationHandler
   commentId: T:BlazerTech.CharacterManagement.Essentials.CMSInitializationHandler
   parent: BlazerTech.CharacterManagement.Essentials
@@ -164,6 +158,13 @@ references:
   name: CMSInitializationHandler
   nameWithType: CMSInitializationHandler
   fullName: BlazerTech.CharacterManagement.Essentials.CMSInitializationHandler
+- uid: BlazerTech.CharacterManagement.Essentials.CMSReferenceHandler
+  commentId: T:BlazerTech.CharacterManagement.Essentials.CMSReferenceHandler
+  parent: BlazerTech.CharacterManagement.Essentials
+  href: BlazerTech.CharacterManagement.Essentials.CMSReferenceHandler.html
+  name: CMSReferenceHandler
+  nameWithType: CMSReferenceHandler
+  fullName: BlazerTech.CharacterManagement.Essentials.CMSReferenceHandler
 - uid: BlazerTech.CharacterManagement.Essentials
   commentId: N:BlazerTech.CharacterManagement.Essentials
   href: BlazerTech.html

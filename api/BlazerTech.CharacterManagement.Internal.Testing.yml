@@ -37,15 +37,15 @@ references:
   name: CCDebugCreateFlexibleCharacter
   nameWithType: CCDebugCreateFlexibleCharacter
   fullName: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter
-- uid: BlazerTech.CharacterManagement.Internal.Testing.LoadingScreenObjectRotation
-  commentId: T:BlazerTech.CharacterManagement.Internal.Testing.LoadingScreenObjectRotation
-  href: BlazerTech.CharacterManagement.Internal.Testing.LoadingScreenObjectRotation.html
-  name: LoadingScreenObjectRotation
-  nameWithType: LoadingScreenObjectRotation
-  fullName: BlazerTech.CharacterManagement.Internal.Testing.LoadingScreenObjectRotation
 - uid: BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape
   commentId: T:BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape
   href: BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape.html
   name: CCDebugChangeSceneOnEscape
   nameWithType: CCDebugChangeSceneOnEscape
   fullName: BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape
+- uid: BlazerTech.CharacterManagement.Internal.Testing.LoadingScreenObjectRotation
+  commentId: T:BlazerTech.CharacterManagement.Internal.Testing.LoadingScreenObjectRotation
+  href: BlazerTech.CharacterManagement.Internal.Testing.LoadingScreenObjectRotation.html
+  name: LoadingScreenObjectRotation
+  nameWithType: LoadingScreenObjectRotation
+  fullName: BlazerTech.CharacterManagement.Internal.Testing.LoadingScreenObjectRotation

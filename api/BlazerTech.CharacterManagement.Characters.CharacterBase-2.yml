@@ -12,6 +12,7 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterGUID
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterName
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType
+  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValidCharacter
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandler
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandlerAsync
@@ -19,7 +20,6 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterHandler(System.Object)
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.SetCharacterInvalid
   - BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterHandler
-  - BlazerTech.CharacterManagement.Characters.CharacterBase`2.ValidationCheck
   langs:
   - csharp
   - vb
@@ -128,10 +128,13 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterGUID
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 14
+    startLine: 18
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: A unique identifier used to reference the character.
+  remarks: Automatically generated in constructor.
+  example: []
   syntax:
     content: public readonly Guid CharacterGUID
     return:
@@ -157,10 +160,12 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 16
+    startLine: 23
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: Name used to reference the character.
+  example: []
   syntax:
     content: public readonly string CharacterName
     return:
@@ -186,10 +191,12 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterDisplayName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 17
+    startLine: 27
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: A display name which can be used to show a characters name in-game.
+  example: []
   syntax:
     content: public string CharacterDisplayName
     return:
@@ -215,10 +222,12 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsValidCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 21
+    startLine: 34
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: True if the character was initiialized correctly; otherwise, false.
+  example: []
   syntax:
     content: public bool IsValidCharacter { get; protected set; }
     parameters: []
@@ -246,7 +255,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 23
+    startLine: 36
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -262,36 +271,47 @@ items:
   nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).New(String, TCharacterType)
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).New(String, TCharacterType)
   name.vb: New(String, TCharacterType)
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.ValidationCheck
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.ValidationCheck
-  id: ValidationCheck
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid
+  id: IsValid
   parent: BlazerTech.CharacterManagement.Characters.CharacterBase`2
   langs:
   - csharp
   - vb
-  name: ValidationCheck()
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.ValidationCheck()
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.ValidationCheck()
+  name: IsValid()
+  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.IsValid()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.IsValid()
   type: Method
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: ValidationCheck
+    id: IsValid
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 32
+    startLine: 54
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  summary: >-
+    Determines whether the current character instance is valid by verifying
+
+    that the <xref href="BlazerTech.CharacterManagement.Characters.CharacterBase%602.CharacterName" data-throw-if-not-resolved="false"></xref> is not blank and the <xref href="BlazerTech.CharacterManagement.Characters.CharacterBase%602.CharacterType" data-throw-if-not-resolved="false"></xref>
+
+    is assigned and valid.
+  example: []
   syntax:
-    content: public virtual bool ValidationCheck()
+    content: public virtual bool IsValid()
     return:
       type: System.Boolean
-    content.vb: Public Overridable Function ValidationCheck() As Boolean
-  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.ValidationCheck*
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).ValidationCheck()
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).ValidationCheck()
+      description: <code>true</code> if the character passes all validation checks; otherwise, <code>false</code>.
+    content.vb: Public Overridable Function IsValid() As Boolean
+  overload: BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid*
+  seealso:
+  - linkId: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType
+    commentId: F:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).IsValid()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).IsValid()
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.SetCharacterInvalid
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterBase`2.SetCharacterInvalid
   id: SetCharacterInvalid
@@ -310,7 +330,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SetCharacterInvalid
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 49
+    startLine: 71
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -338,7 +358,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: AcquireCharacterHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 55
+    startLine: 77
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -372,7 +392,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: AcquireCharacterHandlerAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 70
+    startLine: 92
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -406,7 +426,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ReleaseCharacterHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 81
+    startLine: 103
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -438,7 +458,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadCharacterHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 93
+    startLine: 115
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -466,7 +486,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadCharacterHandlerAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 95
+    startLine: 117
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -496,7 +516,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: UnloadCharacterHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs
-    startLine: 97
+    startLine: 119
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -622,14 +642,30 @@ references:
   nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).New
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).New
   name.vb: New
-- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.ValidationCheck*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.ValidationCheck
-  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_ValidationCheck
-  name: ValidationCheck
-  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.ValidationCheck
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.ValidationCheck
-  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).ValidationCheck
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).ValidationCheck
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType
+  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterType
+  name: CharacterType
+  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.CharacterType
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.CharacterType
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).CharacterType
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).CharacterType
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterName
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterName
+  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterName
+  name: CharacterName
+  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.CharacterName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.CharacterName
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).CharacterName
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).CharacterName
+- uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid
+  href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid
+  name: IsValid
+  nameWithType: CharacterBase<TCharacterType, TCharacterHandler>.IsValid
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterBase<TCharacterType, TCharacterHandler>.IsValid
+  nameWithType.vb: CharacterBase(Of TCharacterType, TCharacterHandler).IsValid
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterBase(Of TCharacterType, TCharacterHandler).IsValid
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.SetCharacterInvalid*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterBase`2.SetCharacterInvalid
   href: BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_SetCharacterInvalid

@@ -23,7 +23,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: FixedCharacterGroup_DTO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
-    startLine: 273
+    startLine: 284
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -60,7 +60,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GroupName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
-    startLine: 276
+    startLine: 287
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -87,15 +87,15 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Characters
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
-    startLine: 277
+    startLine: 288
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public LayeredCharacter.Character_DTO[] Characters
+    content: public LayeredCharacter.LayeredCharacter_DTO[] Characters
     return:
-      type: BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO[]
-    content.vb: Public Characters As LayeredCharacter.Character_DTO()
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO[]
+    content.vb: Public Characters As LayeredCharacter.LayeredCharacter_DTO()
 - uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacter[])
   commentId: M:BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacter[])
   id: '#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacter[])'
@@ -114,7 +114,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
-    startLine: 279
+    startLine: 290
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -148,7 +148,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Character Groups/CharacterGroupDefinitions.cs
-    startLine: 288
+    startLine: 299
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -222,25 +222,25 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO[]
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO[]
   isExternal: true
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO.html
-  name: Character_DTO[]
-  nameWithType: LayeredCharacter.Character_DTO[]
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO[]
-  nameWithType.vb: LayeredCharacter.Character_DTO()
-  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO()
-  name.vb: Character_DTO()
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.html
+  name: LayeredCharacter_DTO[]
+  nameWithType: LayeredCharacter.LayeredCharacter_DTO[]
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO[]
+  nameWithType.vb: LayeredCharacter.LayeredCharacter_DTO()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO()
+  name.vb: LayeredCharacter_DTO()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO
-    name: Character_DTO
-    href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO.html
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO
+    name: LayeredCharacter_DTO
+    href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.html
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO
-    name: Character_DTO
-    href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.Character_DTO.html
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO
+    name: LayeredCharacter_DTO
+    href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO.html
   - name: (
   - name: )
 - uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.FixedCharacterGroup_DTO.#ctor*

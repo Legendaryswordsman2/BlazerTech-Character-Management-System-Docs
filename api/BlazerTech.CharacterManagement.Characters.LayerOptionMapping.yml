@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+  id: LayerOptionMapping
+  parent: BlazerTech.CharacterManagement.Characters
+  children:
+  - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
+  - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerOptionID
+  - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.characterLayer
+  langs:
+  - csharp
+  - vb
+  name: LayerOptionMapping
+  nameWithType: LayerOptionMapping
+  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+  type: Class
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LayerOptionMapping
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+    startLine: 84
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  summary: References a <xref href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption" data-throw-if-not-resolved="false"></xref> within a <xref href="BlazerTech.CharacterManagement.Characters.CharacterLayerSO" data-throw-if-not-resolved="false"></xref> by <xref href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerOptionID" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class LayerOptionMapping
+    content.vb: >-
+      <Serializable>
+
+      Public Class LayerOptionMapping
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.characterLayer
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.characterLayer
+  id: characterLayer
+  parent: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: characterLayer
+  nameWithType: LayerOptionMapping.characterLayer
+  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.characterLayer
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: characterLayer
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+    startLine: 87
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public CharacterLayerSO characterLayer
+    return:
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+    content.vb: Public characterLayer As CharacterLayerSO
+- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerOptionID
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerOptionID
+  id: LayerOptionID
+  parent: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: LayerOptionID
+  nameWithType: LayerOptionMapping.LayerOptionID
+  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerOptionID
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LayerOptionID
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+    startLine: 89
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public string LayerOptionID
+    return:
+      type: System.String
+    content.vb: Public LayerOptionID As String
+- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
+  id: '#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerSO)'
+  parent: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: LayerOptionMapping(CharacterLayerSO)
+  nameWithType: LayerOptionMapping.LayerOptionMapping(CharacterLayerSO)
+  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerOptionMapping(BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: .ctor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+    startLine: 96
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public LayerOptionMapping(CharacterLayerSO collectionSO)
+    parameters:
+    - id: collectionSO
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+    content.vb: Public Sub New(collectionSO As CharacterLayerSO)
+  overload: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.#ctor*
+  nameWithType.vb: LayerOptionMapping.New(CharacterLayerSO)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.New(BlazerTech.CharacterManagement.Characters.CharacterLayerSO)
+  name.vb: New(CharacterLayerSO)
+references:
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html
+  name: CharacterLayerOption
+  nameWithType: CharacterLayerOption
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html
+  name: CharacterLayerSO
+  nameWithType: CharacterLayerSO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerOptionID
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerOptionID
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html#BlazerTech_CharacterManagement_Characters_CharacterLayerOption_LayerOptionID
+  name: LayerOptionID
+  nameWithType: CharacterLayerOption.LayerOptionID
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerOptionID
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.#ctor*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.#ctor
+  href: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.html#BlazerTech_CharacterManagement_Characters_LayerOptionMapping__ctor_BlazerTech_CharacterManagement_Characters_CharacterLayerSO_
+  name: LayerOptionMapping
+  nameWithType: LayerOptionMapping.LayerOptionMapping
+  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerOptionMapping
+  nameWithType.vb: LayerOptionMapping.New
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.New
+  name.vb: New
