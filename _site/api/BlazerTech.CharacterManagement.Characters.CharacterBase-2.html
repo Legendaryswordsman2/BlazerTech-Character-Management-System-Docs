@@ -89,7 +89,7 @@
 
 
   <h1 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2" class="text-break">
-Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class CharacterBase&lt;TCharacterType, TCharacterHandler&gt; where TCharacterType : CharacterTypeBaseSO where TCharacterHandler : LoadedCharacterHandlerBase</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class CharacterBase&lt;TCharacterType, TCharacterHandler&gt; : IValidatable where TCharacterType : CharacterTypeBaseSO where TCharacterHandler : LoadedCharacterHandlerBase</code></pre>
   </div>
 
 
@@ -122,6 +122,12 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.Core.IValidatable.html">IValidatable</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist derived">
     <dt>Derived</dt>
@@ -143,16 +149,16 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
   <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2__ctor_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.#ctor*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2__ctor_System_String__0_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.#ctor(System.String,`0)">
-  CharacterBase(string, TCharacterType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2__ctor_System_String__0_System_String_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.#ctor(System.String,`0,System.String)">
+  CharacterBase(string, TCharacterType, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CharacterBase(string characterName, TCharacterType characterType)</code></pre>
+    <pre><code class="lang-csharp hljs">public CharacterBase(string characterName, TCharacterType characterType, string displayName = &quot;&quot;)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -160,6 +166,8 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
     <dt><code>characterName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>characterType</code> <span class="xref">TCharacterType</span></dt>
+    <dd></dd>
+    <dt><code>displayName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -179,40 +187,9 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
 
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterDisplayName" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterDisplayName">
-  CharacterDisplayName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L28"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>A display name which can be used to show a characters name in-game.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string CharacterDisplayName</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterGUID" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterGUID">
   CharacterGUID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A unique identifier used to reference the character.</p>
@@ -246,7 +223,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterName" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterName">
   CharacterName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Name used to reference the character.</p>
@@ -277,7 +254,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterType" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterType">
   CharacterType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -307,7 +284,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadedCharacterHandler" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadedCharacterHandler">
   LoadedCharacterHandler
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -338,11 +315,43 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 </h2>
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValidCharacter_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValidCharacter*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterDisplayName_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterDisplayName*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValidCharacter" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValidCharacter">
-  IsValidCharacter
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterDisplayName" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.CharacterDisplayName">
+  CharacterDisplayName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A display name which can be used to show a characters name in-game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CharacterDisplayName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid">
+  IsValid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>True if the character was initiialized correctly; otherwise, false.</p>
@@ -350,7 +359,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsValidCharacter { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsValid { get; protected set; }</code></pre>
   </div>
 
 
@@ -378,7 +387,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterHandler_System_Object_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandler(System.Object)">
   AcquireCharacterHandler(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -414,7 +423,7 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterHandlerAsync_System_Object_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.AcquireCharacterHandlerAsync(System.Object)">
   AcquireCharacterHandlerAsync(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -446,52 +455,11 @@ Class CharacterBase&lt;TCharacterType, TCharacterHandler&gt;  <a class="header-a
 
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid*"></a>
-
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValid">
-  IsValid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L55"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Determines whether the current character instance is valid by verifying
-that the <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterName">CharacterName</a> is not blank and the <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterType">CharacterType</a>
-is assigned and valid.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool IsValid()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><code>true</code> if the character passes all validation checks; otherwise, <code>false</code>.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <dl class="typelist seealso">
-    <dt>See Also</dt>
-    <dd>
-    <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterType">CharacterType</a></div>
-    </dd>
-  </dl>
-
-
   <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterHandler_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandler*"></a>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterHandler" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandler">
   LoadCharacterHandler()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -517,7 +485,7 @@ is assigned and valid.</p>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterHandlerAsync" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.LoadCharacterHandlerAsync">
   LoadCharacterHandlerAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -544,11 +512,52 @@ is assigned and valid.</p>
 
 
 
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_PerformValidationCheck_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.PerformValidationCheck*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_PerformValidationCheck" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.PerformValidationCheck">
+  PerformValidationCheck()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the current character instance is valid by verifying
+that the <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterName">CharacterName</a> is not blank and the <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterType">CharacterType</a>
+is assigned and valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool PerformValidationCheck()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the character passes all validation checks; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterType">CharacterType</a></div>
+    </dd>
+  </dl>
+
+
   <a id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_ReleaseCharacterHandler_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterHandler*"></a>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_ReleaseCharacterHandler_System_Object_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.ReleaseCharacterHandler(System.Object)">
   ReleaseCharacterHandler(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -579,7 +588,7 @@ is assigned and valid.</p>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_SetCharacterInvalid" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.SetCharacterInvalid">
   SetCharacterInvalid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -605,7 +614,7 @@ is assigned and valid.</p>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterBase_2_UnloadCharacterHandler" data-uid="BlazerTech.CharacterManagement.Characters.CharacterBase`2.UnloadCharacterHandler">
   UnloadCharacterHandler()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -631,7 +640,7 @@ is assigned and valid.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/CharacterBase.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
 

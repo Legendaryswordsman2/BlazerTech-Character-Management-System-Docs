@@ -1,0 +1,174 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Core.FourDirectional
+  commentId: T:BlazerTech.CharacterManagement.Core.FourDirectional
+  id: FourDirectional
+  parent: BlazerTech.CharacterManagement.Core
+  children:
+  - BlazerTech.CharacterManagement.Core.FourDirectional.Down
+  - BlazerTech.CharacterManagement.Core.FourDirectional.Left
+  - BlazerTech.CharacterManagement.Core.FourDirectional.Right
+  - BlazerTech.CharacterManagement.Core.FourDirectional.Up
+  langs:
+  - csharp
+  - vb
+  name: FourDirectional
+  nameWithType: FourDirectional
+  fullName: BlazerTech.CharacterManagement.Core.FourDirectional
+  type: Enum
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: FourDirectional
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public enum FourDirectional
+    content.vb: Public Enum FourDirectional
+- uid: BlazerTech.CharacterManagement.Core.FourDirectional.Down
+  commentId: F:BlazerTech.CharacterManagement.Core.FourDirectional.Down
+  id: Down
+  parent: BlazerTech.CharacterManagement.Core.FourDirectional
+  langs:
+  - csharp
+  - vb
+  name: Down
+  nameWithType: FourDirectional.Down
+  fullName: BlazerTech.CharacterManagement.Core.FourDirectional.Down
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Down
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: Down = 0
+    return:
+      type: BlazerTech.CharacterManagement.Core.FourDirectional
+- uid: BlazerTech.CharacterManagement.Core.FourDirectional.Up
+  commentId: F:BlazerTech.CharacterManagement.Core.FourDirectional.Up
+  id: Up
+  parent: BlazerTech.CharacterManagement.Core.FourDirectional
+  langs:
+  - csharp
+  - vb
+  name: Up
+  nameWithType: FourDirectional.Up
+  fullName: BlazerTech.CharacterManagement.Core.FourDirectional.Up
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Up
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: Up = 1
+    return:
+      type: BlazerTech.CharacterManagement.Core.FourDirectional
+- uid: BlazerTech.CharacterManagement.Core.FourDirectional.Left
+  commentId: F:BlazerTech.CharacterManagement.Core.FourDirectional.Left
+  id: Left
+  parent: BlazerTech.CharacterManagement.Core.FourDirectional
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: FourDirectional.Left
+  fullName: BlazerTech.CharacterManagement.Core.FourDirectional.Left
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Left
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: Left = 2
+    return:
+      type: BlazerTech.CharacterManagement.Core.FourDirectional
+- uid: BlazerTech.CharacterManagement.Core.FourDirectional.Right
+  commentId: F:BlazerTech.CharacterManagement.Core.FourDirectional.Right
+  id: Right
+  parent: BlazerTech.CharacterManagement.Core.FourDirectional
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: FourDirectional.Right
+  fullName: BlazerTech.CharacterManagement.Core.FourDirectional.Right
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Right
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: Right = 3
+    return:
+      type: BlazerTech.CharacterManagement.Core.FourDirectional
+references:
+- uid: BlazerTech.CharacterManagement.Core
+  commentId: N:BlazerTech.CharacterManagement.Core
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Core
+  nameWithType: BlazerTech.CharacterManagement.Core
+  fullName: BlazerTech.CharacterManagement.Core
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+- uid: BlazerTech.CharacterManagement.Core.FourDirectional
+  commentId: T:BlazerTech.CharacterManagement.Core.FourDirectional
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.FourDirectional.html
+  name: FourDirectional
+  nameWithType: FourDirectional
+  fullName: BlazerTech.CharacterManagement.Core.FourDirectional

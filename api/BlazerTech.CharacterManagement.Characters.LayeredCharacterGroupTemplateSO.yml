@@ -24,7 +24,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LayeredCharacterGroupTemplateSO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -32,11 +32,11 @@ items:
   example: []
   syntax:
     content: >-
-      [CreateAssetMenu(menuName = "BlazerTech Character Management System/Layered Character Group Template", fileName = "New Layered Character Group Template")]
+      [CreateAssetMenu(menuName = "BlazerTech/Character Management System/Character Templates/Layered Character Group Template", fileName = "New Layered Character Group Template")]
 
       public class LayeredCharacterGroupTemplateSO : ScriptableObject
     content.vb: >-
-      <CreateAssetMenu(menuName:="BlazerTech Character Management System/Layered Character Group Template", fileName:="New Layered Character Group Template")>
+      <CreateAssetMenu(menuName:="BlazerTech/Character Management System/Character Templates/Layered Character Group Template", fileName:="New Layered Character Group Template")>
 
       Public Class LayeredCharacterGroupTemplateSO Inherits ScriptableObject
   inheritance:
@@ -50,7 +50,7 @@ items:
     namedArguments:
     - name: menuName
       type: System.String
-      value: BlazerTech Character Management System/Layered Character Group Template
+      value: BlazerTech/Character Management System/Character Templates/Layered Character Group Template
     - name: fileName
       type: System.String
       value: New Layered Character Group Template
@@ -72,7 +72,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: DefaultGroupName
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -101,7 +101,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -130,7 +130,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GroupType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -159,7 +159,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharactersInGroup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -188,7 +188,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CreateGroup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters

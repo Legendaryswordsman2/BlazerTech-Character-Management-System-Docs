@@ -44,9 +44,10 @@ items:
   inheritedMembers:
   - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.referenceHandler
   - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.characterCreationMenuManager
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSuccessfullySet
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSet
   - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuDisabled
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationManagerReference
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
   - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCCReferenceHandler
   attributes:
   - type: UnityEngine.DisallowMultipleComponent
@@ -102,6 +103,7 @@ items:
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
+  summary: Called after the Character Creation Menu is enabled.
   example: []
   syntax:
     content: protected override void CharacterCreationMenuEnabled()
@@ -199,13 +201,13 @@ references:
   name: characterCreationMenuManager
   nameWithType: CCMBase.characterCreationMenuManager
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.characterCreationMenuManager
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSuccessfullySet
-  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSuccessfullySet
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSet
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSet
   parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_coreReferencesSuccessfullySet
-  name: coreReferencesSuccessfullySet
-  nameWithType: CCMBase.coreReferencesSuccessfullySet
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSuccessfullySet
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_coreReferencesSet
+  name: coreReferencesSet
+  nameWithType: CCMBase.coreReferencesSet
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSet
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuDisabled
   commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuDisabled
   parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
@@ -225,23 +227,42 @@ references:
     href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuDisabled
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationManagerReference
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationManagerReference
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
   parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationManagerReference
-  name: GetCharacterCreationManagerReference()
-  nameWithType: CCMBase.GetCharacterCreationManagerReference()
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationManagerReference()
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuBeforeDisabled
+  name: CharacterCreationMenuBeforeDisabled()
+  nameWithType: CCMBase.CharacterCreationMenuBeforeDisabled()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationManagerReference
-    name: GetCharacterCreationManagerReference
-    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationManagerReference
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
+    name: CharacterCreationMenuBeforeDisabled
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuBeforeDisabled
   - name: (
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationManagerReference
-    name: GetCharacterCreationManagerReference
-    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationManagerReference
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
+    name: CharacterCreationMenuBeforeDisabled
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuBeforeDisabled
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationMenuManagerReference
+  name: GetCharacterCreationMenuManagerReference()
+  nameWithType: CCMBase.GetCharacterCreationMenuManagerReference()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
+    name: GetCharacterCreationMenuManagerReference
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationMenuManagerReference
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
+    name: GetCharacterCreationMenuManagerReference
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationMenuManagerReference
   - name: (
   - name: )
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCCReferenceHandler

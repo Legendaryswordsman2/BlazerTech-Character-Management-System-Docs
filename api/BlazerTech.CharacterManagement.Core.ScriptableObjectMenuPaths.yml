@@ -1,0 +1,342 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+  commentId: T:BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+  id: ScriptableObjectMenuPaths
+  parent: BlazerTech.CharacterManagement.Core
+  children:
+  - BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.CharacterLayerDefinitionSO_Path
+  - BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.CharacterTemplates
+  - BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterGroupTemplateSO_Path
+  - BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterTemplateSO_Path
+  - BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterType
+  - BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterTypeSO_Path
+  - BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.Root
+  - BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.UnifiedCharacterTemplateSO_Path
+  - BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.UnifiedCharacterTypeSO_Path
+  langs:
+  - csharp
+  - vb
+  name: ScriptableObjectMenuPaths
+  nameWithType: ScriptableObjectMenuPaths
+  fullName: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+  type: Class
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: ScriptableObjectMenuPaths
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    startLine: 2
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public static class ScriptableObjectMenuPaths
+    content.vb: Public Module ScriptableObjectMenuPaths
+  inheritance:
+  - System.Object
+- uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.Root
+  commentId: F:BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.Root
+  id: Root
+  parent: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+  langs:
+  - csharp
+  - vb
+  name: Root
+  nameWithType: ScriptableObjectMenuPaths.Root
+  fullName: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.Root
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Root
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public const string Root = "BlazerTech/Character Management System/"
+    return:
+      type: System.String
+    content.vb: Public Const Root As String = "BlazerTech/Character Management System/"
+- uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterType
+  commentId: F:BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterType
+  id: LayeredCharacterType
+  parent: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+  langs:
+  - csharp
+  - vb
+  name: LayeredCharacterType
+  nameWithType: ScriptableObjectMenuPaths.LayeredCharacterType
+  fullName: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterType
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LayeredCharacterType
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public const string LayeredCharacterType = "Layered Character Type/"
+    return:
+      type: System.String
+    content.vb: Public Const LayeredCharacterType As String = "Layered Character Type/"
+- uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.CharacterTemplates
+  commentId: F:BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.CharacterTemplates
+  id: CharacterTemplates
+  parent: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+  langs:
+  - csharp
+  - vb
+  name: CharacterTemplates
+  nameWithType: ScriptableObjectMenuPaths.CharacterTemplates
+  fullName: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.CharacterTemplates
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterTemplates
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public const string CharacterTemplates = "Character Templates/"
+    return:
+      type: System.String
+    content.vb: Public Const CharacterTemplates As String = "Character Templates/"
+- uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.CharacterLayerDefinitionSO_Path
+  commentId: F:BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.CharacterLayerDefinitionSO_Path
+  id: CharacterLayerDefinitionSO_Path
+  parent: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+  langs:
+  - csharp
+  - vb
+  name: CharacterLayerDefinitionSO_Path
+  nameWithType: ScriptableObjectMenuPaths.CharacterLayerDefinitionSO_Path
+  fullName: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.CharacterLayerDefinitionSO_Path
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterLayerDefinitionSO_Path
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public const string CharacterLayerDefinitionSO_Path = "BlazerTech/Character Management System/Layered Character Type/Layered Character Type"
+    return:
+      type: System.String
+    content.vb: Public Const CharacterLayerDefinitionSO_Path As String = "BlazerTech/Character Management System/Layered Character Type/Layered Character Type"
+- uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterTypeSO_Path
+  commentId: F:BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterTypeSO_Path
+  id: LayeredCharacterTypeSO_Path
+  parent: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+  langs:
+  - csharp
+  - vb
+  name: LayeredCharacterTypeSO_Path
+  nameWithType: ScriptableObjectMenuPaths.LayeredCharacterTypeSO_Path
+  fullName: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterTypeSO_Path
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LayeredCharacterTypeSO_Path
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public const string LayeredCharacterTypeSO_Path = "BlazerTech/Character Management System/Layered Character Type/Character Layer"
+    return:
+      type: System.String
+    content.vb: Public Const LayeredCharacterTypeSO_Path As String = "BlazerTech/Character Management System/Layered Character Type/Character Layer"
+- uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterGroupTemplateSO_Path
+  commentId: F:BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterGroupTemplateSO_Path
+  id: LayeredCharacterGroupTemplateSO_Path
+  parent: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+  langs:
+  - csharp
+  - vb
+  name: LayeredCharacterGroupTemplateSO_Path
+  nameWithType: ScriptableObjectMenuPaths.LayeredCharacterGroupTemplateSO_Path
+  fullName: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterGroupTemplateSO_Path
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LayeredCharacterGroupTemplateSO_Path
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public const string LayeredCharacterGroupTemplateSO_Path = "BlazerTech/Character Management System/Character Templates/Layered Character Group Template"
+    return:
+      type: System.String
+    content.vb: Public Const LayeredCharacterGroupTemplateSO_Path As String = "BlazerTech/Character Management System/Character Templates/Layered Character Group Template"
+- uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterTemplateSO_Path
+  commentId: F:BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterTemplateSO_Path
+  id: LayeredCharacterTemplateSO_Path
+  parent: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+  langs:
+  - csharp
+  - vb
+  name: LayeredCharacterTemplateSO_Path
+  nameWithType: ScriptableObjectMenuPaths.LayeredCharacterTemplateSO_Path
+  fullName: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterTemplateSO_Path
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LayeredCharacterTemplateSO_Path
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public const string LayeredCharacterTemplateSO_Path = "BlazerTech/Character Management System/Character Templates/Layered Character Template"
+    return:
+      type: System.String
+    content.vb: Public Const LayeredCharacterTemplateSO_Path As String = "BlazerTech/Character Management System/Character Templates/Layered Character Template"
+- uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.UnifiedCharacterTemplateSO_Path
+  commentId: F:BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.UnifiedCharacterTemplateSO_Path
+  id: UnifiedCharacterTemplateSO_Path
+  parent: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+  langs:
+  - csharp
+  - vb
+  name: UnifiedCharacterTemplateSO_Path
+  nameWithType: ScriptableObjectMenuPaths.UnifiedCharacterTemplateSO_Path
+  fullName: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.UnifiedCharacterTemplateSO_Path
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: UnifiedCharacterTemplateSO_Path
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public const string UnifiedCharacterTemplateSO_Path = "BlazerTech/Character Management System/Character Templates/Unified Character Template"
+    return:
+      type: System.String
+    content.vb: Public Const UnifiedCharacterTemplateSO_Path As String = "BlazerTech/Character Management System/Character Templates/Unified Character Template"
+- uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.UnifiedCharacterTypeSO_Path
+  commentId: F:BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.UnifiedCharacterTypeSO_Path
+  id: UnifiedCharacterTypeSO_Path
+  parent: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+  langs:
+  - csharp
+  - vb
+  name: UnifiedCharacterTypeSO_Path
+  nameWithType: ScriptableObjectMenuPaths.UnifiedCharacterTypeSO_Path
+  fullName: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.UnifiedCharacterTypeSO_Path
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: UnifiedCharacterTypeSO_Path
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public const string UnifiedCharacterTypeSO_Path = "BlazerTech/Character Management System/Unified Character Type"
+    return:
+      type: System.String
+    content.vb: Public Const UnifiedCharacterTypeSO_Path As String = "BlazerTech/Character Management System/Unified Character Type"
+references:
+- uid: BlazerTech.CharacterManagement.Core
+  commentId: N:BlazerTech.CharacterManagement.Core
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Core
+  nameWithType: BlazerTech.CharacterManagement.Core
+  fullName: BlazerTech.CharacterManagement.Core
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

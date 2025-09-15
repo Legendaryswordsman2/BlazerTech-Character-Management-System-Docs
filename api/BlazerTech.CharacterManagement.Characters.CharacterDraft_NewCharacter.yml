@@ -22,20 +22,25 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterDraft_NewCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 23
+    startLine: 62
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   summary: Wrapper for a newely created character within the Character Creation Menu. Added to a group when saved.
   example: []
   syntax:
-    content: 'public class CharacterDraft_NewCharacter : CharacterDraft'
-    content.vb: Public Class CharacterDraft_NewCharacter Inherits CharacterDraft
+    content: 'public class CharacterDraft_NewCharacter : CharacterDraft, IDisposable'
+    content.vb: Public Class CharacterDraft_NewCharacter Inherits CharacterDraft Implements IDisposable
   inheritance:
   - System.Object
   - BlazerTech.CharacterManagement.Characters.CharacterDraft
+  implements:
+  - System.IDisposable
   inheritedMembers:
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
+  - BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterLayerOptionUpdated
+  - BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
+  - BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter.Group
   commentId: F:BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter.Group
   id: Group
@@ -54,7 +59,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Group
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 25
+    startLine: 64
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -81,7 +86,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 26
+    startLine: 65
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -115,7 +120,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SaveCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 31
+    startLine: 70
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -174,6 +179,14 @@ references:
   name: CharacterDraft
   nameWithType: CharacterDraft
   fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
   commentId: F:BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
   parent: BlazerTech.CharacterManagement.Characters.CharacterDraft
@@ -181,6 +194,51 @@ references:
   name: Character
   nameWithType: CharacterDraft.Character
   fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterLayerOptionUpdated
+  commentId: E:BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterLayerOptionUpdated
+  parent: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_OnCharacterLayerOptionUpdated
+  name: OnCharacterLayerOptionUpdated
+  nameWithType: CharacterDraft.OnCharacterLayerOptionUpdated
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterLayerOptionUpdated
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
+  parent: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_ResetCharacter
+  name: ResetCharacter()
+  nameWithType: CharacterDraft.ResetCharacter()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
+    name: ResetCharacter
+    href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_ResetCharacter
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
+    name: ResetCharacter
+    href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_ResetCharacter
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose
+  parent: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_Dispose
+  name: Dispose()
+  nameWithType: CharacterDraft.Dispose()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose
+    name: Dispose
+    href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose
+    name: Dispose
+    href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_Dispose
+  - name: (
+  - name: )
 - uid: System
   commentId: N:System
   isExternal: true

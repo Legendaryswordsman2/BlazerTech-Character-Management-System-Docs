@@ -102,7 +102,7 @@ Class CharacterDraft  <a class="header-action link-secondary" title="View source
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class CharacterDraft</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class CharacterDraft : IDisposable</code></pre>
   </div>
 
 
@@ -116,6 +116,12 @@ Class CharacterDraft  <a class="header-action link-secondary" title="View source
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist derived">
     <dt>Derived</dt>
@@ -139,7 +145,7 @@ Class CharacterDraft  <a class="header-action link-secondary" title="View source
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterDraft__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterDraft.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)">
   CharacterDraft(LayeredCharacter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -204,11 +210,64 @@ Class CharacterDraft  <a class="header-action link-secondary" title="View source
 </h2>
 
 
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterDraft_Dispose_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterDraft_Dispose" data-uid="BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterDraft_ResetCharacter_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterDraft_ResetCharacter" data-uid="BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter">
+  ResetCharacter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets the <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_Character">Character</a> to the state it was in when <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterDraft.html">CharacterDraft</a> was first created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetCharacter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="BlazerTech_CharacterManagement_Characters_CharacterDraft_SaveCharacter_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter*"></a>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterDraft_SaveCharacter" data-uid="BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter">
   SaveCharacter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -223,6 +282,40 @@ Class CharacterDraft  <a class="header-action link-secondary" title="View source
 
 
 
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterDraft_OnCharacterLayerOptionUpdated" data-uid="BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterLayerOptionUpdated">
+  OnCharacterLayerOptionUpdated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;CharacterLayer.LayerOptionUpdatedEventArgs&gt; OnCharacterLayerOptionUpdated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayer.html">CharacterLayer</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs.html">LayerOptionUpdatedEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
 
 
 

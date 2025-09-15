@@ -89,7 +89,7 @@
 
 
   <h1 id="BlazerTech_CharacterManagement_Characters_UnifiedCharacterTypeSO" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO" class="text-break">
-Class UnifiedCharacterTypeSO  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/UnifiedCharacterTypeSO.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Class UnifiedCharacterTypeSO  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/UnifiedCharacterTypeSO.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,8 +101,8 @@ Class UnifiedCharacterTypeSO  <a class="header-action link-secondary" title="Vie
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CreateAssetMenu(menuName = &quot;BlazerTech Character Management System/Unified Character Type&quot;, fileName = &quot;New Unified Character Type&quot;)]
-public class UnifiedCharacterTypeSO : CharacterTypeBaseSO</code></pre>
+    <pre><code class="lang-csharp hljs">[CreateAssetMenu(menuName = &quot;BlazerTech/Character Management System/Unified Character Type&quot;, fileName = &quot;New Unified Character Type&quot;)]
+public class UnifiedCharacterTypeSO : CharacterTypeBaseSO, IValidatable</code></pre>
   </div>
 
 
@@ -119,6 +119,12 @@ public class UnifiedCharacterTypeSO : CharacterTypeBaseSO</code></pre>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.Core.IValidatable.html">IValidatable</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -134,7 +140,10 @@ public class UnifiedCharacterTypeSO : CharacterTypeBaseSO</code></pre>
       <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterController">CharacterTypeBaseSO.CharacterController</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_IsValid">CharacterTypeBaseSO.IsValid()</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_IsValid">CharacterTypeBaseSO.IsValid</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_PerformValidationCheck">CharacterTypeBaseSO.PerformValidationCheck()</a>
     </div>
     <div>
       <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_IsValidCharacterSpriteSheet_UnityEngine_Sprite_">CharacterTypeBaseSO.IsValidCharacterSpriteSheet(Sprite)</a>
@@ -150,7 +159,7 @@ public class UnifiedCharacterTypeSO : CharacterTypeBaseSO</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/UnifiedCharacterTypeSO.cs/#L5" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/UnifiedCharacterTypeSO.cs/#L6" class="edit-link">Edit this page</a>
         </div>
 
 

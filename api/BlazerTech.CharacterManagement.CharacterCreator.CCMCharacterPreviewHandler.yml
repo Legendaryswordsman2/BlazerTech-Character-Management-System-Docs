@@ -15,9 +15,9 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.GetActiveBlendTreeHash
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.OnPreviewAnimationChanged
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.PreviewMode
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.RotateCharacterPreview(BlazerTech.CharacterManagement.Essentials.TwoDirectional)
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.RotateCharacterPreview(BlazerTech.CharacterManagement.Core.TwoDirectional)
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.RotateCharacterPreview(System.Boolean)
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.SetCharacterPreviewDirection(BlazerTech.CharacterManagement.Essentials.FourDirectional)
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.SetCharacterPreviewDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
   langs:
   - csharp
   - vb
@@ -32,7 +32,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CCMCharacterPreviewHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 14
+    startLine: 13
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -49,8 +49,9 @@ items:
   inheritedMembers:
   - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.referenceHandler
   - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.characterCreationMenuManager
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSuccessfullySet
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationManagerReference
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSet
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
   - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCCReferenceHandler
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.PreviewMode
   commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.PreviewMode
@@ -70,7 +71,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: PreviewMode
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 16
+    startLine: 15
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -99,7 +100,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterSprite
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 17
+    startLine: 16
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -128,7 +129,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: DefaultDirection
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 19
+    startLine: 18
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -136,7 +137,7 @@ items:
     content: public FourDirectional DefaultDirection { get; }
     parameters: []
     return:
-      type: BlazerTech.CharacterManagement.Essentials.FourDirectional
+      type: BlazerTech.CharacterManagement.Core.FourDirectional
     content.vb: Public Property DefaultDirection As FourDirectional
   overload: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.DefaultDirection*
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterAnimator
@@ -157,7 +158,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterAnimator
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 21
+    startLine: 20
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -213,7 +214,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Awake
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 37
+    startLine: 35
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -241,10 +242,11 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuEnabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 44
+    startLine: 42
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
+  summary: Called after the Character Creation Menu is enabled.
   example: []
   syntax:
     content: protected override void CharacterCreationMenuEnabled()
@@ -269,10 +271,11 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 75
+    startLine: 74
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
+  summary: Called after the Character Creation Menu is disabled.
   example: []
   syntax:
     content: protected override void CharacterCreationMenuDisabled()
@@ -297,7 +300,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ChangePreviewAnimation
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 132
+    startLine: 130
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -313,16 +316,16 @@ items:
   nameWithType.vb: CCMCharacterPreviewHandler.ChangePreviewAnimation(String)
   fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.ChangePreviewAnimation(String)
   name.vb: ChangePreviewAnimation(String)
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.SetCharacterPreviewDirection(BlazerTech.CharacterManagement.Essentials.FourDirectional)
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.SetCharacterPreviewDirection(BlazerTech.CharacterManagement.Essentials.FourDirectional)
-  id: SetCharacterPreviewDirection(BlazerTech.CharacterManagement.Essentials.FourDirectional)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.SetCharacterPreviewDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.SetCharacterPreviewDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
+  id: SetCharacterPreviewDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
   parent: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler
   langs:
   - csharp
   - vb
   name: SetCharacterPreviewDirection(FourDirectional)
   nameWithType: CCMCharacterPreviewHandler.SetCharacterPreviewDirection(FourDirectional)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.SetCharacterPreviewDirection(BlazerTech.CharacterManagement.Essentials.FourDirectional)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.SetCharacterPreviewDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
   type: Method
   source:
     remote:
@@ -331,7 +334,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SetCharacterPreviewDirection
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 143
+    startLine: 141
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -339,19 +342,19 @@ items:
     content: public void SetCharacterPreviewDirection(FourDirectional direction)
     parameters:
     - id: direction
-      type: BlazerTech.CharacterManagement.Essentials.FourDirectional
+      type: BlazerTech.CharacterManagement.Core.FourDirectional
     content.vb: Public Sub SetCharacterPreviewDirection(direction As FourDirectional)
   overload: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.SetCharacterPreviewDirection*
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.RotateCharacterPreview(BlazerTech.CharacterManagement.Essentials.TwoDirectional)
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.RotateCharacterPreview(BlazerTech.CharacterManagement.Essentials.TwoDirectional)
-  id: RotateCharacterPreview(BlazerTech.CharacterManagement.Essentials.TwoDirectional)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.RotateCharacterPreview(BlazerTech.CharacterManagement.Core.TwoDirectional)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.RotateCharacterPreview(BlazerTech.CharacterManagement.Core.TwoDirectional)
+  id: RotateCharacterPreview(BlazerTech.CharacterManagement.Core.TwoDirectional)
   parent: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler
   langs:
   - csharp
   - vb
   name: RotateCharacterPreview(TwoDirectional)
   nameWithType: CCMCharacterPreviewHandler.RotateCharacterPreview(TwoDirectional)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.RotateCharacterPreview(BlazerTech.CharacterManagement.Essentials.TwoDirectional)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.RotateCharacterPreview(BlazerTech.CharacterManagement.Core.TwoDirectional)
   type: Method
   source:
     remote:
@@ -360,7 +363,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: RotateCharacterPreview
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 168
+    startLine: 166
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -368,7 +371,7 @@ items:
     content: public void RotateCharacterPreview(TwoDirectional direction)
     parameters:
     - id: direction
-      type: BlazerTech.CharacterManagement.Essentials.TwoDirectional
+      type: BlazerTech.CharacterManagement.Core.TwoDirectional
     content.vb: Public Sub RotateCharacterPreview(direction As TwoDirectional)
   overload: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.RotateCharacterPreview*
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.RotateCharacterPreview(System.Boolean)
@@ -389,7 +392,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: RotateCharacterPreview
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 221
+    startLine: 219
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -421,7 +424,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetActiveBlendTreeHash
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMCharacterPreviewHandler.cs
-    startLine: 231
+    startLine: 229
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -522,30 +525,49 @@ references:
   name: characterCreationMenuManager
   nameWithType: CCMBase.characterCreationMenuManager
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.characterCreationMenuManager
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSuccessfullySet
-  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSuccessfullySet
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSet
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSet
   parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_coreReferencesSuccessfullySet
-  name: coreReferencesSuccessfullySet
-  nameWithType: CCMBase.coreReferencesSuccessfullySet
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSuccessfullySet
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationManagerReference
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationManagerReference
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_coreReferencesSet
+  name: coreReferencesSet
+  nameWithType: CCMBase.coreReferencesSet
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSet
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
   parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationManagerReference
-  name: GetCharacterCreationManagerReference()
-  nameWithType: CCMBase.GetCharacterCreationManagerReference()
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationManagerReference()
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuBeforeDisabled
+  name: CharacterCreationMenuBeforeDisabled()
+  nameWithType: CCMBase.CharacterCreationMenuBeforeDisabled()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationManagerReference
-    name: GetCharacterCreationManagerReference
-    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationManagerReference
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
+    name: CharacterCreationMenuBeforeDisabled
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuBeforeDisabled
   - name: (
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationManagerReference
-    name: GetCharacterCreationManagerReference
-    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationManagerReference
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
+    name: CharacterCreationMenuBeforeDisabled
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuBeforeDisabled
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationMenuManagerReference
+  name: GetCharacterCreationMenuManagerReference()
+  nameWithType: CCMBase.GetCharacterCreationMenuManagerReference()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
+    name: GetCharacterCreationMenuManagerReference
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationMenuManagerReference
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
+    name: GetCharacterCreationMenuManagerReference
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationMenuManagerReference
   - name: (
   - name: )
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCCReferenceHandler
@@ -634,19 +656,19 @@ references:
   name: DefaultDirection
   nameWithType: CCMCharacterPreviewHandler.DefaultDirection
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.DefaultDirection
-- uid: BlazerTech.CharacterManagement.Essentials.FourDirectional
-  commentId: T:BlazerTech.CharacterManagement.Essentials.FourDirectional
-  parent: BlazerTech.CharacterManagement.Essentials
-  href: BlazerTech.CharacterManagement.Essentials.FourDirectional.html
+- uid: BlazerTech.CharacterManagement.Core.FourDirectional
+  commentId: T:BlazerTech.CharacterManagement.Core.FourDirectional
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.FourDirectional.html
   name: FourDirectional
   nameWithType: FourDirectional
-  fullName: BlazerTech.CharacterManagement.Essentials.FourDirectional
-- uid: BlazerTech.CharacterManagement.Essentials
-  commentId: N:BlazerTech.CharacterManagement.Essentials
+  fullName: BlazerTech.CharacterManagement.Core.FourDirectional
+- uid: BlazerTech.CharacterManagement.Core
+  commentId: N:BlazerTech.CharacterManagement.Core
   href: BlazerTech.html
-  name: BlazerTech.CharacterManagement.Essentials
-  nameWithType: BlazerTech.CharacterManagement.Essentials
-  fullName: BlazerTech.CharacterManagement.Essentials
+  name: BlazerTech.CharacterManagement.Core
+  nameWithType: BlazerTech.CharacterManagement.Core
+  fullName: BlazerTech.CharacterManagement.Core
   spec.csharp:
   - uid: BlazerTech
     name: BlazerTech
@@ -656,9 +678,9 @@ references:
     name: CharacterManagement
     href: BlazerTech.CharacterManagement.html
   - name: .
-  - uid: BlazerTech.CharacterManagement.Essentials
-    name: Essentials
-    href: BlazerTech.CharacterManagement.Essentials.html
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
   spec.vb:
   - uid: BlazerTech
     name: BlazerTech
@@ -668,9 +690,9 @@ references:
     name: CharacterManagement
     href: BlazerTech.CharacterManagement.html
   - name: .
-  - uid: BlazerTech.CharacterManagement.Essentials
-    name: Essentials
-    href: BlazerTech.CharacterManagement.Essentials.html
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterAnimator*
   commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.CharacterAnimator
   href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterPreviewHandler_CharacterAnimator
@@ -852,23 +874,23 @@ references:
   name.vb: Boolean
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.SetCharacterPreviewDirection*
   commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.SetCharacterPreviewDirection
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterPreviewHandler_SetCharacterPreviewDirection_BlazerTech_CharacterManagement_Essentials_FourDirectional_
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterPreviewHandler_SetCharacterPreviewDirection_BlazerTech_CharacterManagement_Core_FourDirectional_
   name: SetCharacterPreviewDirection
   nameWithType: CCMCharacterPreviewHandler.SetCharacterPreviewDirection
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.SetCharacterPreviewDirection
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.RotateCharacterPreview*
   commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.RotateCharacterPreview
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterPreviewHandler_RotateCharacterPreview_BlazerTech_CharacterManagement_Essentials_TwoDirectional_
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterPreviewHandler_RotateCharacterPreview_BlazerTech_CharacterManagement_Core_TwoDirectional_
   name: RotateCharacterPreview
   nameWithType: CCMCharacterPreviewHandler.RotateCharacterPreview
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.RotateCharacterPreview
-- uid: BlazerTech.CharacterManagement.Essentials.TwoDirectional
-  commentId: T:BlazerTech.CharacterManagement.Essentials.TwoDirectional
-  parent: BlazerTech.CharacterManagement.Essentials
-  href: BlazerTech.CharacterManagement.Essentials.TwoDirectional.html
+- uid: BlazerTech.CharacterManagement.Core.TwoDirectional
+  commentId: T:BlazerTech.CharacterManagement.Core.TwoDirectional
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.TwoDirectional.html
   name: TwoDirectional
   nameWithType: TwoDirectional
-  fullName: BlazerTech.CharacterManagement.Essentials.TwoDirectional
+  fullName: BlazerTech.CharacterManagement.Core.TwoDirectional
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.GetActiveBlendTreeHash*
   commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.GetActiveBlendTreeHash
   href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterPreviewHandler_GetActiveBlendTreeHash

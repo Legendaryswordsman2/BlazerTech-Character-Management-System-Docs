@@ -89,7 +89,7 @@
 
 
   <h1 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption" class="text-break">
-Class CharacterLayerOption  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Class CharacterLayerOption  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -112,7 +112,7 @@ public class CharacterLayerOption : OwnedResourceTracker&lt;CharacterLayerOption
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html">OwnedResourceTracker</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html">CharacterLayerOption</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer.html">LoadedSpriteDataContainer</a>&gt;</div>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html">OwnedResourceTracker</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html">CharacterLayerOption</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer.html">LoadedSpriteDataContainer</a>&gt;</div>
       <div><span class="xref">CharacterLayerOption</span></div>
     </dd>
   </dl>
@@ -123,10 +123,10 @@ public class CharacterLayerOption : OwnedResourceTracker&lt;CharacterLayerOption
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_Owners">OwnedResourceTracker&lt;CharacterLayerOption.LoadedSpriteDataContainer&gt;.Owners</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_Owners">OwnedResourceTracker&lt;CharacterLayerOption.LoadedSpriteDataContainer&gt;.Owners</a>
     </div>
     <div>
-      <a class="xref" href="BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_ReleaseResource_System_Object_">OwnedResourceTracker&lt;CharacterLayerOption.LoadedSpriteDataContainer&gt;.ReleaseResource(object)</a>
+      <a class="xref" href="BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_ReleaseResource_System_Object_">OwnedResourceTracker&lt;CharacterLayerOption.LoadedSpriteDataContainer&gt;.ReleaseResource(object)</a>
     </div>
   </dd></dl>
 
@@ -141,31 +141,31 @@ public class CharacterLayerOption : OwnedResourceTracker&lt;CharacterLayerOption
 
   <a id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption__ctor_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.#ctor*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption__ctor_System_String_System_String_System_Int32_BlazerTech_CharacterManagement_Characters_CharacterLayerSO_System_Boolean_System_String_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.#ctor(System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterLayerSO,System.Boolean,System.String)">
-  CharacterLayerOption(string, string, int, CharacterLayerSO, bool, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption__ctor_System_String_System_String_System_String_System_Int32_BlazerTech_CharacterManagement_Characters_CharacterLayerDefinitionSO_System_Boolean_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.#ctor(System.String,System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO,System.Boolean)">
+  CharacterLayerOption(string, string, string, int, CharacterLayerDefinitionSO, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CharacterLayerOption(string layerOptionID, string key, int index, CharacterLayerSO layer, bool ignoreSpriteCheck = false, string displayNameOverride = &quot;&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public CharacterLayerOption(string layerOptionID, string displayName, string key, int index, CharacterLayerDefinitionSO layer, bool ignoreSpriteCheck = false)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>layerOptionID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
+    <dt><code>displayName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
     <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
-    <dt><code>layer</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html">CharacterLayerSO</a></dt>
+    <dt><code>layer</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html">CharacterLayerDefinitionSO</a></dt>
     <dd></dd>
     <dt><code>ignoreSpriteCheck</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-    <dt><code>displayNameOverride</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -184,49 +184,18 @@ public class CharacterLayerOption : OwnedResourceTracker&lt;CharacterLayerOption
 </h2>
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_CharacterLayer_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayer*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_DisplayName_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayName*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_CharacterLayer" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayer">
-  CharacterLayer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_DisplayName" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayName">
+  DisplayName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CharacterLayerSO CharacterLayer { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html">CharacterLayerSO</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_DisplayNameOverride_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayNameOverride*"></a>
-
-  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_DisplayNameOverride" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayNameOverride">
-  DisplayNameOverride
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs/#L29"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string DisplayNameOverride { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string DisplayName { get; }</code></pre>
   </div>
 
 
@@ -250,7 +219,7 @@ public class CharacterLayerOption : OwnedResourceTracker&lt;CharacterLayerOption
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_Index" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.Index">
   Index
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -281,7 +250,7 @@ public class CharacterLayerOption : OwnedResourceTracker&lt;CharacterLayerOption
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_Key" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.Key">
   Key
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The Addressables Key used to load the spritesheet attached to this layer option.</p>
@@ -309,11 +278,42 @@ public class CharacterLayerOption : OwnedResourceTracker&lt;CharacterLayerOption
 
 
 
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_LayerDefinition_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerDefinition*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_LayerDefinition" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerDefinition">
+  LayerDefinition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharacterLayerDefinitionSO LayerDefinition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html">CharacterLayerDefinitionSO</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_LayerOptionID_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerOptionID*"></a>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_LayerOptionID" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerOptionID">
   LayerOptionID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A unique identifier used to reference a character layer option.</p>
@@ -345,7 +345,7 @@ public class CharacterLayerOption : OwnedResourceTracker&lt;CharacterLayerOption
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_LoadedSpriteData" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteData">
   LoadedSpriteData
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -380,7 +380,7 @@ public class CharacterLayerOption : OwnedResourceTracker&lt;CharacterLayerOption
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_AcquireResource_System_Object_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.AcquireResource(System.Object)">
   AcquireResource(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs/#L132"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Acquires the resource for an owner</p>
@@ -419,7 +419,7 @@ public class CharacterLayerOption : OwnedResourceTracker&lt;CharacterLayerOption
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_AcquireResourceAsync_System_Object_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.AcquireResourceAsync(System.Object)">
   AcquireResourceAsync(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Acquires the resource for an owner asynchronously</p>
@@ -458,7 +458,7 @@ public class CharacterLayerOption : OwnedResourceTracker&lt;CharacterLayerOption
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_GetAndLoadResource" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.GetAndLoadResource">
   GetAndLoadResource()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs/#L190"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -489,7 +489,7 @@ public class CharacterLayerOption : OwnedResourceTracker&lt;CharacterLayerOption
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_GetAndLoadResourceAsync" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.GetAndLoadResourceAsync">
   GetAndLoadResourceAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs/#L184"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -520,7 +520,7 @@ public class CharacterLayerOption : OwnedResourceTracker&lt;CharacterLayerOption
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterLayerOption_UnloadResource" data-uid="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.UnloadResource">
   UnloadResource()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs/#L196"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -546,7 +546,7 @@ public class CharacterLayerOption : OwnedResourceTracker&lt;CharacterLayerOption
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

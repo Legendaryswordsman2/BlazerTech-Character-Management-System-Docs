@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Core.TwoDirectional
+  commentId: T:BlazerTech.CharacterManagement.Core.TwoDirectional
+  id: TwoDirectional
+  parent: BlazerTech.CharacterManagement.Core
+  children:
+  - BlazerTech.CharacterManagement.Core.TwoDirectional.Left
+  - BlazerTech.CharacterManagement.Core.TwoDirectional.Right
+  langs:
+  - csharp
+  - vb
+  name: TwoDirectional
+  nameWithType: TwoDirectional
+  fullName: BlazerTech.CharacterManagement.Core.TwoDirectional
+  type: Enum
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: TwoDirectional
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public enum TwoDirectional
+    content.vb: Public Enum TwoDirectional
+- uid: BlazerTech.CharacterManagement.Core.TwoDirectional.Left
+  commentId: F:BlazerTech.CharacterManagement.Core.TwoDirectional.Left
+  id: Left
+  parent: BlazerTech.CharacterManagement.Core.TwoDirectional
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: TwoDirectional.Left
+  fullName: BlazerTech.CharacterManagement.Core.TwoDirectional.Left
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Left
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: Left = 0
+    return:
+      type: BlazerTech.CharacterManagement.Core.TwoDirectional
+- uid: BlazerTech.CharacterManagement.Core.TwoDirectional.Right
+  commentId: F:BlazerTech.CharacterManagement.Core.TwoDirectional.Right
+  id: Right
+  parent: BlazerTech.CharacterManagement.Core.TwoDirectional
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: TwoDirectional.Right
+  fullName: BlazerTech.CharacterManagement.Core.TwoDirectional.Right
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Right
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/EssentialsLoader.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: Right = 1
+    return:
+      type: BlazerTech.CharacterManagement.Core.TwoDirectional
+references:
+- uid: BlazerTech.CharacterManagement.Core
+  commentId: N:BlazerTech.CharacterManagement.Core
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Core
+  nameWithType: BlazerTech.CharacterManagement.Core
+  fullName: BlazerTech.CharacterManagement.Core
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+- uid: BlazerTech.CharacterManagement.Core.TwoDirectional
+  commentId: T:BlazerTech.CharacterManagement.Core.TwoDirectional
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.TwoDirectional.html
+  name: TwoDirectional
+  nameWithType: TwoDirectional
+  fullName: BlazerTech.CharacterManagement.Core.TwoDirectional

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class CCMBase | BlazerTech Character Management System ">
       
-      <meta name="description" content="Base class for all classes a part of the Character Creator Menu">
+      <meta name="description" content="Base class for all classes part of the Character Creator Menu">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -97,7 +97,7 @@ Class CCMBase  <a class="header-action link-secondary" title="View source" href=
   <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Base class for all classes a part of the Character Creator Menu</p>
+  <div class="markdown summary"><p>Base class for all classes part of the Character Creator Menu</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -127,8 +127,11 @@ Class CCMBase  <a class="header-action link-secondary" title="View source" href=
       <div><a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewSwitcherManager.html">CCMAnimationPreviewSwitcherManager</a></div>
       <div><a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.html">CCMCharacterLayerOptionSelectionManager</a></div>
       <div><a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.html">CCMCharacterPreviewHandler</a></div>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler.html">CCMDisplayNameInputFieldHandler</a></div>
       <div><a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html">CCMHistoryTracker</a></div>
       <div><a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.html">CCMLoadingScreen</a></div>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.html">CCMSnapshotHistoryList</a></div>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.html">CCMUndoRedoButtonHandler</a></div>
     </dd>
   </dl>
 
@@ -173,8 +176,8 @@ Class CCMBase  <a class="header-action link-secondary" title="View source" href=
 
 
 
-  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CCMBase_coreReferencesSuccessfullySet" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSuccessfullySet">
-  coreReferencesSuccessfullySet
+  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CCMBase_coreReferencesSet" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSet">
+  coreReferencesSet
   <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMBase.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -182,7 +185,7 @@ Class CCMBase  <a class="header-action link-secondary" title="View source" href=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool coreReferencesSuccessfullySet</code></pre>
+    <pre><code class="lang-csharp hljs">protected bool coreReferencesSet</code></pre>
   </div>
 
 
@@ -220,7 +223,7 @@ Class CCMBase  <a class="header-action link-secondary" title="View source" href=
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BlazerTech.CharacterManagement.Essentials.CMSReferenceHandler.html">CMSReferenceHandler</a></dt>
+    <dt><a class="xref" href="BlazerTech.CharacterManagement.Core.CMSReferenceHandler.html">CMSReferenceHandler</a></dt>
     <dd></dd>
   </dl>
 
@@ -262,14 +265,42 @@ Class CCMBase  <a class="header-action link-secondary" title="View source" href=
 
 
 
+  <a id="BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuBeforeDisabled_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuBeforeDisabled" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled">
+  CharacterCreationMenuBeforeDisabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMBase.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called right before the Character Creation menu is disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CharacterCreationMenuBeforeDisabled()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuDisabled_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuDisabled*"></a>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuDisabled" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuDisabled">
   CharacterCreationMenuDisabled()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMBase.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMBase.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called after the Character Creation Menu is disabled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -292,10 +323,11 @@ Class CCMBase  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuEnabled" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuEnabled">
   CharacterCreationMenuEnabled()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMBase.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMBase.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called after the Character Creation Menu is enabled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -318,7 +350,7 @@ Class CCMBase  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCCReferenceHandler" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCCReferenceHandler">
   GetCCReferenceHandler()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMBase.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMBase.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -331,7 +363,7 @@ Class CCMBase  <a class="header-action link-secondary" title="View source" href=
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BlazerTech.CharacterManagement.Essentials.CMSReferenceHandler.html">CMSReferenceHandler</a></dt>
+    <dt><a class="xref" href="BlazerTech.CharacterManagement.Core.CMSReferenceHandler.html">CMSReferenceHandler</a></dt>
     <dd></dd>
   </dl>
 
@@ -345,18 +377,18 @@ Class CCMBase  <a class="header-action link-secondary" title="View source" href=
 
 
 
-  <a id="BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationManagerReference_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationManagerReference*"></a>
+  <a id="BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationMenuManagerReference_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationManagerReference" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationManagerReference">
-  GetCharacterCreationManagerReference()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMBase.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationMenuManagerReference" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference">
+  GetCharacterCreationMenuManagerReference()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMBase.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected CharacterCreationMenuManager GetCharacterCreationManagerReference()</code></pre>
+    <pre><code class="lang-csharp hljs">protected CharacterCreationMenuManager GetCharacterCreationMenuManagerReference()</code></pre>
   </div>
 
 

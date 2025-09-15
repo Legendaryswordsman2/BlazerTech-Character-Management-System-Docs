@@ -101,8 +101,8 @@ Class UnifiedCharacterTemplateSO  <a class="header-action link-secondary" title=
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CreateAssetMenu(menuName = &quot;BlazerTech Character Management System/Unified Character Template&quot;, fileName = &quot;New Character Template&quot;)]
-public class UnifiedCharacterTemplateSO : CharacterTemplateBaseSO&lt;UnifiedCharacterTypeSO, UnifiedCharacter&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">[CreateAssetMenu(menuName = &quot;BlazerTech/Character Management System/Character Templates/Unified Character Template&quot;, fileName = &quot;New Character Template&quot;)]
+public class UnifiedCharacterTemplateSO : CharacterTemplateBaseSO&lt;UnifiedCharacterTypeSO, UnifiedCharacter&gt;, IValidatable</code></pre>
   </div>
 
 
@@ -119,6 +119,12 @@ public class UnifiedCharacterTemplateSO : CharacterTemplateBaseSO&lt;UnifiedChar
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.Core.IValidatable.html">IValidatable</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -134,10 +140,19 @@ public class UnifiedCharacterTemplateSO : CharacterTemplateBaseSO&lt;UnifiedChar
       <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CharacterDisplayName">CharacterTemplateBaseSO&lt;UnifiedCharacterTypeSO, UnifiedCharacter&gt;.CharacterDisplayName</a>
     </div>
     <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_isValid">CharacterTemplateBaseSO&lt;UnifiedCharacterTypeSO, UnifiedCharacter&gt;.isValid</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_IsValid">CharacterTemplateBaseSO&lt;UnifiedCharacterTypeSO, UnifiedCharacter&gt;.IsValid</a>
+    </div>
+    <div>
       <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_GetOrCreateCharacter">CharacterTemplateBaseSO&lt;UnifiedCharacterTypeSO, UnifiedCharacter&gt;.GetOrCreateCharacter()</a>
     </div>
     <div>
       <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CreateNewCharacter">CharacterTemplateBaseSO&lt;UnifiedCharacterTypeSO, UnifiedCharacter&gt;.CreateNewCharacter()</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO-2.html#BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_PerformValidationCheck">CharacterTemplateBaseSO&lt;UnifiedCharacterTypeSO, UnifiedCharacter&gt;.PerformValidationCheck()</a>
     </div>
   </dd></dl>
 

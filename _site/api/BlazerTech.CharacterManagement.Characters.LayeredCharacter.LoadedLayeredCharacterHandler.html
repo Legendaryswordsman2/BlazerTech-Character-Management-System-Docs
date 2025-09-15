@@ -89,7 +89,7 @@
 
 
   <h1 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler" class="text-break">
-Class LayeredCharacter.LoadedLayeredCharacterHandler  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L342"><i class="bi bi-code-slash"></i></a>
+Class LayeredCharacter.LoadedLayeredCharacterHandler  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L378"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,7 @@ Class LayeredCharacter.LoadedLayeredCharacterHandler  <a class="header-action li
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LayeredCharacter.LoadedLayeredCharacterHandler : LoadedCharacterHandlerBase</code></pre>
+    <pre><code class="lang-csharp hljs">public class LayeredCharacter.LoadedLayeredCharacterHandler : LoadedCharacterHandlerBase, IDisposable</code></pre>
   </div>
 
 
@@ -116,6 +116,12 @@ Class LayeredCharacter.LoadedLayeredCharacterHandler  <a class="header-action li
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -139,7 +145,7 @@ Class LayeredCharacter.LoadedLayeredCharacterHandler  <a class="header-action li
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)">
   LoadedLayeredCharacterHandler(LayeredCharacter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L387"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -174,7 +180,7 @@ Class LayeredCharacter.LoadedLayeredCharacterHandler  <a class="header-action li
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler_CreateNewCharacterMaterial" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.CreateNewCharacterMaterial">
   CreateNewCharacterMaterial()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L428"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L459"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -205,7 +211,7 @@ Class LayeredCharacter.LoadedLayeredCharacterHandler  <a class="header-action li
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler_CreateNewCharacterMaterialAsync" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.CreateNewCharacterMaterialAsync">
   CreateNewCharacterMaterialAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L478"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -232,18 +238,44 @@ Class LayeredCharacter.LoadedLayeredCharacterHandler  <a class="header-action li
 
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler_LoadUnloadedEquippedLayersAsync_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.LoadUnloadedEquippedLayersAsync*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler_Dispose_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.Dispose*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler_LoadUnloadedEquippedLayersAsync" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.LoadUnloadedEquippedLayersAsync">
-  LoadUnloadedEquippedLayersAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler_Dispose" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L453"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task LoadUnloadedEquippedLayersAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler_LoadUnloadedLayersAsync_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.LoadUnloadedLayersAsync*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler_LoadUnloadedLayersAsync" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.LoadUnloadedLayersAsync">
+  LoadUnloadedLayersAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task LoadUnloadedLayersAsync()</code></pre>
   </div>
 
 
@@ -263,37 +295,11 @@ Class LayeredCharacter.LoadedLayeredCharacterHandler  <a class="header-action li
 
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler_Release_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.Release*"></a>
-
-  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler_Release" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.Release">
-  Release()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L420"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Release()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler_UpdateCharacterMaterialAsync_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.UpdateCharacterMaterialAsync*"></a>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler_UpdateCharacterMaterialAsync" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.UpdateCharacterMaterialAsync">
   UpdateCharacterMaterialAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L420"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -320,16 +326,16 @@ Class LayeredCharacter.LoadedLayeredCharacterHandler  <a class="header-action li
 
 
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler_OnCharacterUpdated" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.OnCharacterUpdated">
-  OnCharacterUpdated
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_LoadedLayeredCharacterHandler_OnCharacterLayerOptionUpdated" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.OnCharacterLayerOptionUpdated">
+  OnCharacterLayerOptionUpdated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L382"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event EventHandler OnCharacterUpdated</code></pre>
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;CharacterLayer.LayerOptionUpdatedEventArgs&gt; OnCharacterLayerOptionUpdated</code></pre>
   </div>
 
 
@@ -339,7 +345,7 @@ Class LayeredCharacter.LoadedLayeredCharacterHandler  <a class="header-action li
 
   <h4 class="section">Event Type</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayer.html">CharacterLayer</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs.html">LayerOptionUpdatedEventArgs</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -353,7 +359,7 @@ Class LayeredCharacter.LoadedLayeredCharacterHandler  <a class="header-action li
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L342" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L378" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -19,6 +19,9 @@ items:
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler
     name: CCMCharacterPreviewHandler
     type: Class
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler
+    name: CCMDisplayNameInputFieldHandler
+    type: Class
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
     name: CCMHistoryTracker
     type: Class
@@ -30,6 +33,12 @@ items:
     type: Class
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay
     name: CCMRelay
+    type: Class
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList
+    name: CCMSnapshotHistoryList
+    type: Class
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler
+    name: CCMUndoRedoButtonHandler
     type: Class
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuEnablerRelay
     name: CharacterCreationMenuEnablerRelay
@@ -55,9 +64,6 @@ items:
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
     name: CharacterSelectionLoadingScreen
     type: Class
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
-    name: CharacterSnapshotModificationType
-    type: Enum
   - uid: BlazerTech.CharacterManagement.CharacterCreator.GameObjectStateNotifier
     name: GameObjectStateNotifier
     type: Class
@@ -79,9 +85,6 @@ items:
   - uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList
     name: LayeredCharacterSelectionList
     type: Class
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSnapshot
-    name: LayeredCharacterSnapshot
-    type: Class
   - uid: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgress
     name: LoadingScreenProgress
     type: Class
@@ -90,6 +93,12 @@ items:
     type: Class
   - uid: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenRepeatingText
     name: LoadingScreenRepeatingText
+    type: Class
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode
+    name: SnapshotDisplayMode
+    type: Enum
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry
+    name: SnapshotHistoryEntry
     type: Class
 - uid: BlazerTech.CharacterManagement.Characters
   name: BlazerTech.CharacterManagement.Characters
@@ -125,6 +134,15 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupType
     name: CharacterGroupType
     type: Enum
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer
+    name: CharacterLayer
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs
+    name: CharacterLayer.LayerOptionUpdatedEventArgs
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
+    name: CharacterLayerDefinitionSO
+    type: Class
   - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
     name: CharacterLayerOption
     type: Class
@@ -134,9 +152,6 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer
     name: CharacterLayerOption.LoadedSpriteDataContainer
     type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
-    name: CharacterLayerSO
-    type: Class
   - uid: BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2
     name: CharacterTemplateBaseSO<TCharacterType, TCharacter>
     type: Class
@@ -145,9 +160,6 @@ items:
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO
     name: CharacterTypeGroups_DTO
-    type: Class
-  - uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterLayerOption
-    name: EquippedCharacterLayerOption
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.FixedCharacterGroup
     name: FixedCharacterGroup
@@ -181,6 +193,9 @@ items:
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO
     name: LayeredCharacterGroupTemplateSO
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+    name: LayeredCharacterSnapshot
     type: Class
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
     name: LayeredCharacterTemplateSO
@@ -243,6 +258,49 @@ items:
   - uid: BlazerTech.CharacterManagement.Components.UnifiedCharacterLoader
     name: UnifiedCharacterLoader
     type: Class
+- uid: BlazerTech.CharacterManagement.Core
+  name: BlazerTech.CharacterManagement.Core
+  type: Namespace
+  items:
+  - uid: BlazerTech.CharacterManagement.Core.CMSInitializationHandler
+    name: CMSInitializationHandler
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler
+    name: CMSReferenceHandler
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Core.CMSSaveSystem
+    name: CMSSaveSystem
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Core.EssentialsLoader
+    name: EssentialsLoader
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Core.ExtensionMethods
+    name: ExtensionMethods
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Core.FourDirectional
+    name: FourDirectional
+    type: Enum
+  - uid: BlazerTech.CharacterManagement.Core.IValidatable
+    name: IValidatable
+    type: Interface
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1
+    name: OwnedResourceTracker<TResource>
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+    name: ScriptableObjectMenuPaths
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Core.SerializableDictionary`2
+    name: SerializableDictionary<TKey, TValue>
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Core.SerializableKeyValuePair`2
+    name: SerializableKeyValuePair<TKey, TValue>
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Core.SessionGUIDHandler
+    name: SessionGUIDHandler
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Core.TwoDirectional
+    name: TwoDirectional
+    type: Enum
 - uid: BlazerTech.CharacterManagement.Editor.Inspectors
   name: BlazerTech.CharacterManagement.Editor.Inspectors
   type: Namespace
@@ -260,43 +318,6 @@ items:
   - uid: BlazerTech.CharacterManagement.Editor.Windows.CharacterTypeGroupCollectionsViewer
     name: CharacterTypeGroupCollectionsViewer
     type: Class
-- uid: BlazerTech.CharacterManagement.Essentials
-  name: BlazerTech.CharacterManagement.Essentials
-  type: Namespace
-  items:
-  - uid: BlazerTech.CharacterManagement.Essentials.CMSInitializationHandler
-    name: CMSInitializationHandler
-    type: Class
-  - uid: BlazerTech.CharacterManagement.Essentials.CMSReferenceHandler
-    name: CMSReferenceHandler
-    type: Class
-  - uid: BlazerTech.CharacterManagement.Essentials.CMSSaveSystem
-    name: CMSSaveSystem
-    type: Class
-  - uid: BlazerTech.CharacterManagement.Essentials.EssentialsLoader
-    name: EssentialsLoader
-    type: Class
-  - uid: BlazerTech.CharacterManagement.Essentials.FourDirectional
-    name: FourDirectional
-    type: Enum
-  - uid: BlazerTech.CharacterManagement.Essentials.IValidatable
-    name: IValidatable
-    type: Interface
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1
-    name: OwnedResourceTracker<TResource>
-    type: Class
-  - uid: BlazerTech.CharacterManagement.Essentials.SerializableDictionary`2
-    name: SerializableDictionary<TKey, TValue>
-    type: Class
-  - uid: BlazerTech.CharacterManagement.Essentials.SerializableKeyValuePair`2
-    name: SerializableKeyValuePair<TKey, TValue>
-    type: Class
-  - uid: BlazerTech.CharacterManagement.Essentials.SessionGUIDHandler
-    name: SessionGUIDHandler
-    type: Class
-  - uid: BlazerTech.CharacterManagement.Essentials.TwoDirectional
-    name: TwoDirectional
-    type: Enum
 - uid: BlazerTech.CharacterManagement.Internal.Testing
   name: BlazerTech.CharacterManagement.Internal.Testing
   type: Namespace

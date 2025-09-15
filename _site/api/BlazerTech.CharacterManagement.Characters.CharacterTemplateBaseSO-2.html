@@ -102,7 +102,7 @@ Class CharacterTemplateBaseSO&lt;TCharacterType, TCharacter&gt;  <a class="heade
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class CharacterTemplateBaseSO&lt;TCharacterType, TCharacter&gt; : ScriptableObject where TCharacterType : CharacterTypeBaseSO</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class CharacterTemplateBaseSO&lt;TCharacterType, TCharacter&gt; : ScriptableObject, IValidatable where TCharacterType : CharacterTypeBaseSO</code></pre>
   </div>
 
 
@@ -125,6 +125,12 @@ Class CharacterTemplateBaseSO&lt;TCharacterType, TCharacter&gt;  <a class="heade
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.Core.IValidatable.html">IValidatable</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist derived">
     <dt>Derived</dt>
@@ -133,6 +139,40 @@ Class CharacterTemplateBaseSO&lt;TCharacterType, TCharacter&gt;  <a class="heade
       <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.html">UnifiedCharacterTemplateSO</a></div>
     </dd>
   </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_isValid" data-uid="BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.isValid">
+  isValid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool isValid</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
 
 
 
@@ -237,6 +277,39 @@ Class CharacterTemplateBaseSO&lt;TCharacterType, TCharacter&gt;  <a class="heade
 
 
 
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_IsValid_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.IsValid*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_IsValid" data-uid="BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.IsValid">
+  IsValid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the object is currently valid.<br>
+This value should be updated when <a class="xref" href="BlazerTech.CharacterManagement.Core.IValidatable.html#BlazerTech_CharacterManagement_Core_IValidatable_PerformValidationCheck">PerformValidationCheck()</a> is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -245,7 +318,7 @@ Class CharacterTemplateBaseSO&lt;TCharacterType, TCharacter&gt;  <a class="heade
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_CreateNewCharacter" data-uid="BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CreateNewCharacter">
   CreateNewCharacter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -276,10 +349,11 @@ Class CharacterTemplateBaseSO&lt;TCharacterType, TCharacter&gt;  <a class="heade
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_GetOrCreateCharacter" data-uid="BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.GetOrCreateCharacter">
   GetOrCreateCharacter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create a new character or return the already creted one if it exists.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -291,6 +365,39 @@ Class CharacterTemplateBaseSO&lt;TCharacterType, TCharacter&gt;  <a class="heade
   <dl class="parameters">
     <dt><span class="xref">TCharacter</span></dt>
     <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_PerformValidationCheck_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.PerformValidationCheck*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Characters_CharacterTemplateBaseSO_2_PerformValidationCheck" data-uid="BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.PerformValidationCheck">
+  PerformValidationCheck()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Templates/CharacterTemplateBaseSO.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks/Rechecks if the object is valid and updates <a class="xref" href="BlazerTech.CharacterManagement.Core.IValidatable.html#BlazerTech_CharacterManagement_Core_IValidatable_IsValid">IsValid</a> accordingly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool PerformValidationCheck()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the object is valid after the check; otherwise, false.</p>
+</dd>
   </dl>
 
 

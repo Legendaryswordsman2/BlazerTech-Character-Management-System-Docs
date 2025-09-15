@@ -21,14 +21,42 @@
         href: character-usage.md
   - name: Character Templates
     href: character-templates.md
-  - name: Character Creator
-    href: character-creator.md
   - name: Character Groups
     href: character-groups.md
   - name: Character Type Fields
     href: character-type-fields.md
   - name: LimeZu Modern Interiors Support
     href: limezu-modern-interiors-support.md
+
+  - name: Character Creator
+  - name: Character Creator Overview
+    href: character-creator/character-creator-overview.md
+  - name: Character Creator Setup
+    href: character-creator/character-creator-setup.md
+  - name: Character Preview
+    href: character-creator/character-preview.md
+  - name: Character Randomization
+    href: character-creator/character-randomization.md
+  - name: Layer Selectors
+    items:
+      - name: Dropdown Layer Selector
+        href: character-creator/layer-selectors/dropdown-layer-selector.md
+      - name: Carousel Layer Selector
+        href: character-creator/layer-selectors/carousel-layer-selector.md
+      - name: Grid Layer Selector
+        href: character-creator/layer-selectors/Grid-layer-selector.md
+      - name: List Layer Selector
+        href: character-creator/layer-selectors/list-layer-selector.md
+      - name: Tab Layer Selector
+        href: character-creator/layer-selectors/tab-layer-selector.md
+  - name: History
+    items:
+      - name: History Tracking
+        href: character-creator/history/history-tracking.md
+      - name: History Panels
+        href: character-creator/history/history-panels.md
+      - name: History Undo Redo
+        href: character-creator/history/history-undo-redo.md
 
   - name: Advanced
   - name: Creating Characters

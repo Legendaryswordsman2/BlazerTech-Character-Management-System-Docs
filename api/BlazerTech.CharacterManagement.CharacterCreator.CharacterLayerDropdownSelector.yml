@@ -11,6 +11,7 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Dropdown
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.EnableInteractivity
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.OnDestroy
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Reset
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Setup
   langs:
   - csharp
@@ -41,14 +42,16 @@ items:
   - UnityEngine.MonoBehaviour
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
   inheritedMembers:
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.SelectorBase
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterLayerOverride
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.characterCreationMenuManager
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.characterLayerOptionSelectionManager
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignedLayerOption
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.EquippedCharacterLayerOption,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignedLayer
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Hide
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Unhide
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.ChangeAlpha(System.Single)
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.RandomizeLayer
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Dropdown
   commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Dropdown
   id: Dropdown
@@ -249,6 +252,34 @@ items:
     content.vb: Protected Overrides Sub OnDestroy()
   overridden: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.OnDestroy
   overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.OnDestroy*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Reset
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Reset
+  id: Reset
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: CharacterLayerDropdownSelector.Reset()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Reset()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Dropdown Selector/CharacterLayerDropdownSelector.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Reset
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Dropdown Selector/CharacterLayerDropdownSelector.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  example: []
+  syntax:
+    content: protected override void Reset()
+    content.vb: Protected Overrides Sub Reset()
+  overridden: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Reset
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Reset*
 references:
 - uid: BlazerTech.CharacterManagement.CharacterCreator
   commentId: N:BlazerTech.CharacterManagement.CharacterCreator
@@ -326,6 +357,13 @@ references:
   name: CharacterLayerSelector
   nameWithType: CharacterLayerSelector
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.SelectorBase
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.SelectorBase
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_SelectorBase
+  name: SelectorBase
+  nameWithType: CharacterLayerSelector.SelectorBase
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.SelectorBase
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterLayerOverride
   commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterLayerOverride
   parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
@@ -347,28 +385,28 @@ references:
   name: characterLayerOptionSelectionManager
   nameWithType: CharacterLayerSelector.characterLayerOptionSelectionManager
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.characterLayerOptionSelectionManager
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignedLayerOption
-  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignedLayerOption
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignedLayer
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignedLayer
   parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
-  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_AssignedLayerOption
-  name: AssignedLayerOption
-  nameWithType: CharacterLayerSelector.AssignedLayerOption
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignedLayerOption
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.EquippedCharacterLayerOption,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.EquippedCharacterLayerOption,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_AssignedLayer
+  name: AssignedLayer
+  nameWithType: CharacterLayerSelector.AssignedLayer
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignedLayer
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)
   parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
-  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_CharacterCreationMenuOpened_BlazerTech_CharacterManagement_Characters_EquippedCharacterLayerOption_BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerOptionSelectionManager_
-  name: CharacterCreationMenuOpened(EquippedCharacterLayerOption, CCMCharacterLayerOptionSelectionManager)
-  nameWithType: CharacterLayerSelector.CharacterCreationMenuOpened(EquippedCharacterLayerOption, CCMCharacterLayerOptionSelectionManager)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.EquippedCharacterLayerOption, BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_CharacterCreationMenuOpened_BlazerTech_CharacterManagement_Characters_CharacterLayer_BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerOptionSelectionManager_
+  name: CharacterCreationMenuOpened(CharacterLayer, CCMCharacterLayerOptionSelectionManager)
+  nameWithType: CharacterLayerSelector.CharacterCreationMenuOpened(CharacterLayer, CCMCharacterLayerOptionSelectionManager)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.CharacterLayer, BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.EquippedCharacterLayerOption,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)
     name: CharacterCreationMenuOpened
-    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_CharacterCreationMenuOpened_BlazerTech_CharacterManagement_Characters_EquippedCharacterLayerOption_BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerOptionSelectionManager_
+    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_CharacterCreationMenuOpened_BlazerTech_CharacterManagement_Characters_CharacterLayer_BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerOptionSelectionManager_
   - name: (
-  - uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterLayerOption
-    name: EquippedCharacterLayerOption
-    href: BlazerTech.CharacterManagement.Characters.EquippedCharacterLayerOption.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer
+    name: CharacterLayer
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.html
   - name: ','
   - name: " "
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager
@@ -376,13 +414,13 @@ references:
     href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.html
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.EquippedCharacterLayerOption,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)
     name: CharacterCreationMenuOpened
-    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_CharacterCreationMenuOpened_BlazerTech_CharacterManagement_Characters_EquippedCharacterLayerOption_BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerOptionSelectionManager_
+    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_CharacterCreationMenuOpened_BlazerTech_CharacterManagement_Characters_CharacterLayer_BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerOptionSelectionManager_
   - name: (
-  - uid: BlazerTech.CharacterManagement.Characters.EquippedCharacterLayerOption
-    name: EquippedCharacterLayerOption
-    href: BlazerTech.CharacterManagement.Characters.EquippedCharacterLayerOption.html
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer
+    name: CharacterLayer
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.html
   - name: ','
   - name: " "
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager
@@ -457,6 +495,25 @@ references:
     name: Single
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.RandomizeLayer
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.RandomizeLayer
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_RandomizeLayer
+  name: RandomizeLayer()
+  nameWithType: CharacterLayerSelector.RandomizeLayer()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.RandomizeLayer()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.RandomizeLayer
+    name: RandomizeLayer
+    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_RandomizeLayer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.RandomizeLayer
+    name: RandomizeLayer
+    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_RandomizeLayer
+  - name: (
   - name: )
 - uid: System
   commentId: N:System
@@ -640,3 +697,28 @@ references:
   name: OnDestroy
   nameWithType: CharacterLayerDropdownSelector.OnDestroy
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.OnDestroy
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Reset
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Reset
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_Reset
+  name: Reset()
+  nameWithType: CharacterLayerSelector.Reset()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Reset()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Reset
+    name: Reset
+    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Reset
+    name: Reset
+    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_Reset
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Reset*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Reset
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerDropdownSelector_Reset
+  name: Reset
+  nameWithType: CharacterLayerDropdownSelector.Reset
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Reset

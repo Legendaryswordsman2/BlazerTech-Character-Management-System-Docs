@@ -89,7 +89,7 @@
 
 
   <h1 id="BlazerTech_CharacterManagement_Characters_CharacterDraft_NewCharacter" data-uid="BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter" class="text-break">
-Class CharacterDraft_NewCharacter  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L24"><i class="bi bi-code-slash"></i></a>
+Class CharacterDraft_NewCharacter  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class CharacterDraft_NewCharacter  <a class="header-action link-secondary" title
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CharacterDraft_NewCharacter : CharacterDraft</code></pre>
+    <pre><code class="lang-csharp hljs">public class CharacterDraft_NewCharacter : CharacterDraft, IDisposable</code></pre>
   </div>
 
 
@@ -117,6 +117,12 @@ Class CharacterDraft_NewCharacter  <a class="header-action link-secondary" title
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -124,6 +130,15 @@ Class CharacterDraft_NewCharacter  <a class="header-action link-secondary" title
     <dd>
     <div>
       <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_Character">CharacterDraft.Character</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_OnCharacterLayerOptionUpdated">CharacterDraft.OnCharacterLayerOptionUpdated</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_ResetCharacter">CharacterDraft.ResetCharacter()</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_Dispose">CharacterDraft.Dispose()</a>
     </div>
   </dd></dl>
 
@@ -140,7 +155,7 @@ Class CharacterDraft_NewCharacter  <a class="header-action link-secondary" title
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterDraft_NewCharacter__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_BlazerTech_CharacterManagement_Characters_CharacterGroupBase_" data-uid="BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,BlazerTech.CharacterManagement.Characters.CharacterGroupBase)">
   CharacterDraft_NewCharacter(LayeredCharacter, CharacterGroupBase)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -176,7 +191,7 @@ Class CharacterDraft_NewCharacter  <a class="header-action link-secondary" title
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterDraft_NewCharacter_Group" data-uid="BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter.Group">
   Group
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -211,7 +226,7 @@ Class CharacterDraft_NewCharacter  <a class="header-action link-secondary" title
 
   <h3 id="BlazerTech_CharacterManagement_Characters_CharacterDraft_NewCharacter_SaveCharacter" data-uid="BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter.SaveCharacter">
   SaveCharacter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -237,7 +252,7 @@ Class CharacterDraft_NewCharacter  <a class="header-action link-secondary" title
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L24" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs/#L63" class="edit-link">Edit this page</a>
         </div>
 
 

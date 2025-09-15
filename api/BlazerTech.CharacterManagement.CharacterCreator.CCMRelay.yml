@@ -6,7 +6,9 @@ items:
   parent: BlazerTech.CharacterManagement.CharacterCreator
   children:
   - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.CloseMenu
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_PrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.RandomizeEntireCharacter
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.ResetCharacter
   - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.SaveCharacter
   langs:
   - csharp
@@ -45,35 +47,38 @@ items:
   - type: UnityEngine.DisallowMultipleComponent
     ctor: UnityEngine.DisallowMultipleComponent.#ctor
     arguments: []
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  id: OpenCharacterCreationMenu_SingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_PrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_PrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  id: OpenCharacterCreationMenu_PrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   parent: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay
   langs:
   - csharp
   - vb
-  name: OpenCharacterCreationMenu_SingleGroup(LayeredCharacterTypeSO)
-  nameWithType: CCMRelay.OpenCharacterCreationMenu_SingleGroup(LayeredCharacterTypeSO)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  name: OpenCharacterCreationMenu_PrimaryCharacter(LayeredCharacterTypeSO)
+  nameWithType: CCMRelay.OpenCharacterCreationMenu_PrimaryCharacter(LayeredCharacterTypeSO)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_PrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   type: Method
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: OpenCharacterCreationMenu_SingleGroup
+    id: OpenCharacterCreationMenu_PrimaryCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
-    startLine: 15
+    startLine: 19
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
+  summary: Open the Character Creation Menu and use the <xref href="BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.PrimaryCharacterSlot" data-throw-if-not-resolved="false"></xref> for the <xref href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
-    content: public void OpenCharacterCreationMenu_SingleGroup(LayeredCharacterTypeSO characterType)
+    content: public void OpenCharacterCreationMenu_PrimaryCharacter(LayeredCharacterTypeSO characterType)
     parameters:
     - id: characterType
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
-    content.vb: Public Sub OpenCharacterCreationMenu_SingleGroup(characterType As LayeredCharacterTypeSO)
-  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup*
+      description: ''
+    content.vb: Public Sub OpenCharacterCreationMenu_PrimaryCharacter(characterType As LayeredCharacterTypeSO)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_PrimaryCharacter*
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.SaveCharacter
   commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.SaveCharacter
   id: SaveCharacter
@@ -92,14 +97,72 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SaveCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
-    startLine: 26
+    startLine: 33
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
+  summary: Call the <xref href="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SaveCharacter" data-throw-if-not-resolved="false"></xref> method in the <xref href="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager" data-throw-if-not-resolved="false"></xref> to save any changes made in the Character Creation Menu.
+  example: []
   syntax:
     content: public void SaveCharacter()
     content.vb: Public Sub SaveCharacter()
   overload: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.SaveCharacter*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.RandomizeEntireCharacter
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.RandomizeEntireCharacter
+  id: RandomizeEntireCharacter
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay
+  langs:
+  - csharp
+  - vb
+  name: RandomizeEntireCharacter()
+  nameWithType: CCMRelay.RandomizeEntireCharacter()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.RandomizeEntireCharacter()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: RandomizeEntireCharacter
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  summary: Randomize all layers of the <xref href="BlazerTech.CharacterManagement.Characters.LayeredCharacter" data-throw-if-not-resolved="false"></xref> inside the <xref href="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterDraft" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void RandomizeEntireCharacter()
+    content.vb: Public Sub RandomizeEntireCharacter()
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.RandomizeEntireCharacter*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.ResetCharacter
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.ResetCharacter
+  id: ResetCharacter
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay
+  langs:
+  - csharp
+  - vb
+  name: ResetCharacter()
+  nameWithType: CCMRelay.ResetCharacter()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.ResetCharacter()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: ResetCharacter
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
+    startLine: 61
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  summary: Call <xref href="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter" data-throw-if-not-resolved="false"></xref> to reset the character to it's original state.
+  example: []
+  syntax:
+    content: public void ResetCharacter()
+    content.vb: Public Sub ResetCharacter()
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.ResetCharacter*
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.CloseMenu
   commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.CloseMenu
   id: CloseMenu
@@ -118,7 +181,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CloseMenu
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CCMRelay.cs
-    startLine: 37
+    startLine: 72
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -209,12 +272,12 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html#BlazerTech_CharacterManagement_CharacterCreator_CCMRelay_OpenCharacterCreationMenu_SingleGroup_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
-  name: OpenCharacterCreationMenu_SingleGroup
-  nameWithType: CCMRelay.OpenCharacterCreationMenu_SingleGroup
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_SingleGroup
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.PrimaryCharacterSlot
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.PrimaryCharacterSlot
+  href: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html#BlazerTech_CharacterManagement_Characters_CharacterGroupRegistry_PrimaryCharacterSlot
+  name: PrimaryCharacterSlot
+  nameWithType: CharacterGroupRegistry.PrimaryCharacterSlot
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.PrimaryCharacterSlot
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
   parent: BlazerTech.CharacterManagement.Characters
@@ -222,6 +285,12 @@ references:
   name: LayeredCharacterTypeSO
   nameWithType: LayeredCharacterTypeSO
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_PrimaryCharacter*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_PrimaryCharacter
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html#BlazerTech_CharacterManagement_CharacterCreator_CCMRelay_OpenCharacterCreationMenu_PrimaryCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
+  name: OpenCharacterCreationMenu_PrimaryCharacter
+  nameWithType: CCMRelay.OpenCharacterCreationMenu_PrimaryCharacter
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_PrimaryCharacter
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
   href: BlazerTech.html
@@ -252,12 +321,80 @@ references:
   - uid: BlazerTech.CharacterManagement.Characters
     name: Characters
     href: BlazerTech.CharacterManagement.Characters.html
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SaveCharacter
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SaveCharacter
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_SaveCharacter
+  name: SaveCharacter()
+  nameWithType: CharacterCreationMenuManager.SaveCharacter()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SaveCharacter()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SaveCharacter
+    name: SaveCharacter
+    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_SaveCharacter
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SaveCharacter
+    name: SaveCharacter
+    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_SaveCharacter
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html
+  name: CharacterCreationMenuManager
+  nameWithType: CharacterCreationMenuManager
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.SaveCharacter*
   commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.SaveCharacter
   href: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html#BlazerTech_CharacterManagement_CharacterCreator_CCMRelay_SaveCharacter
   name: SaveCharacter
   nameWithType: CCMRelay.SaveCharacter
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.SaveCharacter
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacter
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
+  name: LayeredCharacter
+  nameWithType: LayeredCharacter
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterDraft
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterDraft
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_ActiveCharacterDraft
+  name: ActiveCharacterDraft
+  nameWithType: CharacterCreationMenuManager.ActiveCharacterDraft
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterDraft
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.RandomizeEntireCharacter*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.RandomizeEntireCharacter
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html#BlazerTech_CharacterManagement_CharacterCreator_CCMRelay_RandomizeEntireCharacter
+  name: RandomizeEntireCharacter
+  nameWithType: CCMRelay.RandomizeEntireCharacter
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.RandomizeEntireCharacter
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_ResetCharacter
+  name: ResetCharacter()
+  nameWithType: CharacterCreationMenuManager.ResetCharacter()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter
+    name: ResetCharacter
+    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_ResetCharacter
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter
+    name: ResetCharacter
+    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_ResetCharacter
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.ResetCharacter*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.ResetCharacter
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html#BlazerTech_CharacterManagement_CharacterCreator_CCMRelay_ResetCharacter
+  name: ResetCharacter
+  nameWithType: CCMRelay.ResetCharacter
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.ResetCharacter
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.CloseMenu*
   commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.CloseMenu
   href: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html#BlazerTech_CharacterManagement_CharacterCreator_CCMRelay_CloseMenu

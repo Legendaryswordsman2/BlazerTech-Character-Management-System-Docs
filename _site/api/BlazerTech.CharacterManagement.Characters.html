@@ -124,6 +124,19 @@ An instance of this class is used for each Layered Character Type.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayer.html">CharacterLayer</a></dt>
+      <dd><p>Represents a single layer of a character within a <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html">LayeredCharacter</a>. Wraps a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html">CharacterLayerOption</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs.html">CharacterLayer.LayerOptionUpdatedEventArgs</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html">CharacterLayerDefinitionSO</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html">CharacterLayerOption</a></dt>
       <dd></dd>
     </dl>
@@ -134,10 +147,6 @@ An instance of this class is used for each Layered Character Type.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer.html">CharacterLayerOption.LoadedSpriteDataContainer</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html">CharacterLayerSO</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -153,11 +162,6 @@ An instance of this class is used for each Layered Character Type.</p>
     <dl class="jumplist">
       <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterTypeGroups_DTO.html">CharacterTypeGroups_DTO</a></dt>
       <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.EquippedCharacterLayerOption.html">EquippedCharacterLayerOption</a></dt>
-      <dd><p>A wrapper for <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html">CharacterLayerOption</a>. used as a list in <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html">LayeredCharacter</a>.</p>
-</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.html">FixedCharacterGroup</a></dt>
@@ -181,13 +185,14 @@ An instance of this class is used for each Layered Character Type.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.LayerOptionMapping.html">LayerOptionMapping</a></dt>
-      <dd><p>References a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html">CharacterLayerOption</a> within a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html">CharacterLayerSO</a> by <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html#BlazerTech_CharacterManagement_Characters_CharacterLayerOption_LayerOptionID">LayerOptionID</a>.</p>
+      <dd><p>References a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html">CharacterLayerOption</a> within a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html">CharacterLayerDefinitionSO</a> by <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html#BlazerTech_CharacterManagement_Characters_CharacterLayerOption_LayerOptionID">LayerOptionID</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html">LayeredCharacter</a></dt>
       <dd><p>Represents a character made of multiple modular layers,
-such as body, outfit, hairstyle, etc.</p>
+such as body, outfit, hairstyle, etc.
+Each layer can be placed on top of each other in order to create the final character.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -205,6 +210,11 @@ such as body, outfit, hairstyle, etc.</p>
     <dl class="jumplist">
       <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO.html">LayeredCharacterGroupTemplateSO</a></dt>
       <dd><p>A blueprint for a Layered Character Group (Fixed or Flexible) that will automatically be created at runtime.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.html">LayeredCharacterSnapshot</a></dt>
+      <dd><p>A snapshot of a character that can later be applied to the same character or another of the same <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">

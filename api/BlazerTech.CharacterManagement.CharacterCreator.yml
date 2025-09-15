@@ -9,10 +9,13 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CCMBase
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler
   - BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
   - BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress
   - BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
   - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuEnablerRelay
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector
@@ -21,7 +24,6 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterPressenceController
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
   - BlazerTech.CharacterManagement.CharacterCreator.GameObjectStateNotifier
   - BlazerTech.CharacterManagement.CharacterCreator.ILoadingScreen
   - BlazerTech.CharacterManagement.CharacterCreator.InitializationMode
@@ -29,10 +31,11 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListNewCharacterEntry
   - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListType
   - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList
-  - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSnapshot
   - BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgress
   - BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText
   - BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenRepeatingText
+  - BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode
+  - BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry
   langs:
   - csharp
   - vb
@@ -49,18 +52,31 @@ references:
   name: CCMAnimationPreviewButtonHandler
   nameWithType: CCMAnimationPreviewButtonHandler
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewButtonHandler
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.html
-  name: CCMLoadingScreen
-  nameWithType: CCMLoadingScreen
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
+- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.html
+  name: SnapshotDisplayMode
+  nameWithType: SnapshotDisplayMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry
+  href: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.html
+  name: SnapshotHistoryEntry
+  nameWithType: SnapshotHistoryEntry
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterPressenceController
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterPressenceController
   href: BlazerTech.CharacterManagement.CharacterCreator.CharacterPressenceController.html
   name: CharacterPressenceController
   nameWithType: CharacterPressenceController
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterPressenceController
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.html
+  name: CCMLoadingScreen
+  nameWithType: CCMLoadingScreen
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
 - uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListNewCharacterEntry
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListNewCharacterEntry
   href: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListNewCharacterEntry.html
@@ -94,25 +110,19 @@ references:
   name: CharacterSelectionLoadingScreen
   nameWithType: CharacterSelectionLoadingScreen
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.html
+  name: CCMSnapshotHistoryList
+  nameWithType: CCMSnapshotHistoryList
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
+  parent: BlazerTech.CharacterManagement.CharacterCreator
   href: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html
   name: CCMHistoryTracker
   nameWithType: CCMHistoryTracker
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
-  parent: BlazerTech.CharacterManagement.CharacterCreator
-  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType.html
-  name: CharacterSnapshotModificationType
-  nameWithType: CharacterSnapshotModificationType
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSnapshotModificationType
-- uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSnapshot
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSnapshot
-  href: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSnapshot.html
-  name: LayeredCharacterSnapshot
-  nameWithType: LayeredCharacterSnapshot
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSnapshot
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
   parent: BlazerTech.CharacterManagement.CharacterCreator
@@ -133,6 +143,18 @@ references:
   name: CCMAnimationPreviewSwitcherManager
   nameWithType: CCMAnimationPreviewSwitcherManager
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewSwitcherManager
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.html
+  name: CCMUndoRedoButtonHandler
+  nameWithType: CCMUndoRedoButtonHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler.html
+  name: CCMDisplayNameInputFieldHandler
+  nameWithType: CCMDisplayNameInputFieldHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay
   href: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html

@@ -89,7 +89,7 @@
 
 
   <h1 id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadedUnifiedCharacterHandler" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler" class="text-break">
-Class UnifiedCharacter.LoadedUnifiedCharacterHandler  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L60"><i class="bi bi-code-slash"></i></a>
+Class UnifiedCharacter.LoadedUnifiedCharacterHandler  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,7 @@ Class UnifiedCharacter.LoadedUnifiedCharacterHandler  <a class="header-action li
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UnifiedCharacter.LoadedUnifiedCharacterHandler : LoadedCharacterHandlerBase</code></pre>
+    <pre><code class="lang-csharp hljs">public class UnifiedCharacter.LoadedUnifiedCharacterHandler : LoadedCharacterHandlerBase, IDisposable</code></pre>
   </div>
 
 
@@ -116,6 +116,12 @@ Class UnifiedCharacter.LoadedUnifiedCharacterHandler  <a class="header-action li
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -139,7 +145,7 @@ Class UnifiedCharacter.LoadedUnifiedCharacterHandler  <a class="header-action li
 
   <h3 id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadedUnifiedCharacterHandler__ctor_BlazerTech_CharacterManagement_Characters_UnifiedCharacter_" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.#ctor(BlazerTech.CharacterManagement.Characters.UnifiedCharacter)">
   LoadedUnifiedCharacterHandler(UnifiedCharacter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -170,11 +176,37 @@ Class UnifiedCharacter.LoadedUnifiedCharacterHandler  <a class="header-action li
 </h2>
 
 
+  <a id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadedUnifiedCharacterHandler_Dispose_" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Dispose*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadedUnifiedCharacterHandler_Dispose" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadedUnifiedCharacterHandler_LoadCharacter_" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.LoadCharacter*"></a>
 
   <h3 id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadedUnifiedCharacterHandler_LoadCharacter" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.LoadCharacter">
   LoadCharacter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -200,7 +232,7 @@ Class UnifiedCharacter.LoadedUnifiedCharacterHandler  <a class="header-action li
 
   <h3 id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadedUnifiedCharacterHandler_LoadCharacterAsync" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.LoadCharacterAsync">
   LoadCharacterAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -227,37 +259,11 @@ Class UnifiedCharacter.LoadedUnifiedCharacterHandler  <a class="header-action li
 
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadedUnifiedCharacterHandler_Release_" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Release*"></a>
-
-  <h3 id="BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadedUnifiedCharacterHandler_Release" data-uid="BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Release">
-  Release()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L126"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Release()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L60" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs/#L58" class="edit-link">Edit this page</a>
         </div>
 
 

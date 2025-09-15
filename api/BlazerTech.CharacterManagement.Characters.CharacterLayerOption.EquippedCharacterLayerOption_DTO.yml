@@ -18,12 +18,12 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EquippedCharacterLayerOption_DTO
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 277
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 253
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -57,12 +57,12 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterLayerName
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 280
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 256
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -84,12 +84,12 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LayerOptionKey
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 281
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 257
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -111,12 +111,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 283
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 259
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -143,12 +143,12 @@ items:
   type: Constructor
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 289
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 265
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters

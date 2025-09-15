@@ -21,7 +21,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterGroupEntryType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 145
+    startLine: 146
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -46,7 +46,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: NewCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 145
+    startLine: 146
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -72,7 +72,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterTemplate
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/LayeredCharacterGroupTemplateSO.cs
-    startLine: 145
+    startLine: 146
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters

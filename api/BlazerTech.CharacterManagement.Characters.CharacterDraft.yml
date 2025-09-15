@@ -7,6 +7,9 @@ items:
   children:
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
+  - BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose
+  - BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterLayerOptionUpdated
+  - BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
   - BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter
   langs:
   - csharp
@@ -29,13 +32,15 @@ items:
   summary: Wrapper class used when editting characters in the Character Creation Menu
   example: []
   syntax:
-    content: public abstract class CharacterDraft
-    content.vb: Public MustInherit Class CharacterDraft
+    content: 'public abstract class CharacterDraft : IDisposable'
+    content.vb: Public MustInherit Class CharacterDraft Implements IDisposable
   inheritance:
   - System.Object
   derivedClasses:
   - BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter
   - BlazerTech.CharacterManagement.Characters.CharacterDraft_PreExistingCharacter
+  implements:
+  - System.IDisposable
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
   commentId: F:BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
   id: Character
@@ -63,6 +68,33 @@ items:
     return:
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacter
     content.vb: Public ReadOnly Character As LayeredCharacter
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterLayerOptionUpdated
+  commentId: E:BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterLayerOptionUpdated
+  id: OnCharacterLayerOptionUpdated
+  parent: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  langs:
+  - csharp
+  - vb
+  name: OnCharacterLayerOptionUpdated
+  nameWithType: CharacterDraft.OnCharacterLayerOptionUpdated
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.OnCharacterLayerOptionUpdated
+  type: Event
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: OnCharacterLayerOptionUpdated
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public event EventHandler<CharacterLayer.LayerOptionUpdatedEventArgs> OnCharacterLayerOptionUpdated
+    return:
+      type: System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs}
+    content.vb: Public Event OnCharacterLayerOptionUpdated As EventHandler(Of CharacterLayer.LayerOptionUpdatedEventArgs)
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterDraft.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   id: '#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)'
@@ -81,7 +113,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 12
+    startLine: 18
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -95,6 +127,34 @@ items:
   nameWithType.vb: CharacterDraft.New(LayeredCharacter)
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterDraft.New(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   name.vb: New(LayeredCharacter)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
+  id: ResetCharacter
+  parent: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  langs:
+  - csharp
+  - vb
+  name: ResetCharacter()
+  nameWithType: CharacterDraft.ResetCharacter()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: ResetCharacter
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  summary: Resets the <xref href="BlazerTech.CharacterManagement.Characters.CharacterDraft.Character" data-throw-if-not-resolved="false"></xref> to the state it was in when <xref href="BlazerTech.CharacterManagement.Characters.CharacterDraft" data-throw-if-not-resolved="false"></xref> was first created.
+  example: []
+  syntax:
+    content: public void ResetCharacter()
+    content.vb: Public Sub ResetCharacter()
+  overload: BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter*
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter
   id: SaveCharacter
@@ -113,7 +173,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SaveCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
-    startLine: 17
+    startLine: 48
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -121,6 +181,33 @@ items:
     content: public abstract void SaveCharacter()
     content.vb: Public MustOverride Sub SaveCharacter()
   overload: BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter*
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose
+  id: Dispose
+  parent: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: CharacterDraft.Dispose()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Dispose
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterDraft.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose*
 references:
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
@@ -163,6 +250,14 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
 - uid: System
   commentId: N:System
   isExternal: true
@@ -177,6 +272,75 @@ references:
   name: LayeredCharacter
   nameWithType: LayeredCharacter
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+- uid: System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs}
+  commentId: T:System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<CharacterLayer.LayerOptionUpdatedEventArgs>
+  nameWithType: EventHandler<CharacterLayer.LayerOptionUpdatedEventArgs>
+  fullName: System.EventHandler<BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs>
+  nameWithType.vb: EventHandler(Of CharacterLayer.LayerOptionUpdatedEventArgs)
+  fullName.vb: System.EventHandler(Of BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs)
+  name.vb: EventHandler(Of CharacterLayer.LayerOptionUpdatedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer
+    name: CharacterLayer
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs
+    name: LayerOptionUpdatedEventArgs
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer
+    name: CharacterLayer
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs
+    name: LayerOptionUpdatedEventArgs
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.LayerOptionUpdatedEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.#ctor*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterDraft.#ctor
   href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_
@@ -186,9 +350,35 @@ references:
   nameWithType.vb: CharacterDraft.New
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterDraft.New
   name.vb: New
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
+  parent: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_Character
+  name: Character
+  nameWithType: CharacterDraft.Character
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.Character
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterDraft
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html
+  name: CharacterDraft
+  nameWithType: CharacterDraft
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_ResetCharacter
+  name: ResetCharacter
+  nameWithType: CharacterDraft.ResetCharacter
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.ResetCharacter
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter
   href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_SaveCharacter
   name: SaveCharacter
   nameWithType: CharacterDraft.SaveCharacter
   fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter
+- uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose
+  href: BlazerTech.CharacterManagement.Characters.CharacterDraft.html#BlazerTech_CharacterManagement_Characters_CharacterDraft_Dispose
+  name: Dispose
+  nameWithType: CharacterDraft.Dispose
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose

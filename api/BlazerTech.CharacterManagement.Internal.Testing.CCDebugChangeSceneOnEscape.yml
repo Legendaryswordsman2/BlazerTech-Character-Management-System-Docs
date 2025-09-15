@@ -15,11 +15,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/CCDebugChangeSceneOnEscape.cs
+      path: Assets/BlazerTech Character Management System/Tests/Sample Assets/Sample Scripts/CCDebugChangeSceneOnEscape.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CCDebugChangeSceneOnEscape
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/CCDebugChangeSceneOnEscape.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Tests/Sample Assets/Sample Scripts/CCDebugChangeSceneOnEscape.cs
     startLine: 5
   assemblies:
   - Assembly-CSharp
@@ -46,11 +46,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/CCDebugChangeSceneOnEscape.cs
+      path: Assets/BlazerTech Character Management System/Tests/Sample Assets/Sample Scripts/CCDebugChangeSceneOnEscape.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SceneName
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Non Finalized Samples/Sample Assets/Sample Scripts/CCDebugChangeSceneOnEscape.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Tests/Sample Assets/Sample Scripts/CCDebugChangeSceneOnEscape.cs
     startLine: 7
   assemblies:
   - Assembly-CSharp

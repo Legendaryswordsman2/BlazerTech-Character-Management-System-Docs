@@ -5,15 +5,15 @@ items:
   id: CharacterLayerOption
   parent: BlazerTech.CharacterManagement.Characters
   children:
-  - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.#ctor(System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterLayerSO,System.Boolean,System.String)
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.#ctor(System.String,System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO,System.Boolean)
   - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.AcquireResource(System.Object)
   - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.AcquireResourceAsync(System.Object)
-  - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayer
-  - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayNameOverride
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayName
   - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.GetAndLoadResource
   - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.GetAndLoadResourceAsync
   - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.Index
   - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.Key
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerDefinition
   - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerOptionID
   - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteData
   - BlazerTech.CharacterManagement.Characters.CharacterLayerOption.UnloadResource
@@ -26,11 +26,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterLayerOption
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
     startLine: 13
   assemblies:
   - Assembly-CSharp
@@ -46,10 +46,10 @@ items:
       Public Class CharacterLayerOption Inherits OwnedResourceTracker(Of CharacterLayerOption.LoadedSpriteDataContainer)
   inheritance:
   - System.Object
-  - BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
+  - BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
   inheritedMembers:
-  - BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.Owners
-  - BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.ReleaseResource(System.Object)
+  - BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.Owners
+  - BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.ReleaseResource(System.Object)
   attributes:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
@@ -67,11 +67,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LayerOptionID
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
     startLine: 19
   assemblies:
   - Assembly-CSharp
@@ -85,6 +85,35 @@ items:
       type: System.String
     content.vb: Public Property LayerOptionID As String
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerOptionID*
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayName
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayName
+  id: DisplayName
+  parent: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: CharacterLayerOption.DisplayName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayName
+  type: Property
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: DisplayName
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public string DisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DisplayName As String
+  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayName*
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.Key
   commentId: P:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.Key
   id: Key
@@ -98,12 +127,12 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Key
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 24
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 26
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -129,12 +158,12 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Index
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 26
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 28
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -145,35 +174,6 @@ items:
       type: System.Int32
     content.vb: Public Property Index As Integer
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.Index*
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayNameOverride
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayNameOverride
-  id: DisplayNameOverride
-  parent: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
-  langs:
-  - csharp
-  - vb
-  name: DisplayNameOverride
-  nameWithType: CharacterLayerOption.DisplayNameOverride
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayNameOverride
-  type: Property
-  source:
-    remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: DisplayNameOverride
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 28
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  syntax:
-    content: public string DisplayNameOverride { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property DisplayNameOverride As String
-  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayNameOverride*
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteData
   commentId: P:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteData
   id: LoadedSpriteData
@@ -187,12 +187,12 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadedSpriteData
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 33
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 31
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -203,77 +203,77 @@ items:
       type: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer
     content.vb: Public ReadOnly Property LoadedSpriteData As CharacterLayerOption.LoadedSpriteDataContainer
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteData*
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayer
-  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayer
-  id: CharacterLayer
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerDefinition
+  commentId: P:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerDefinition
+  id: LayerDefinition
   parent: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
   langs:
   - csharp
   - vb
-  name: CharacterLayer
-  nameWithType: CharacterLayerOption.CharacterLayer
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayer
+  name: LayerDefinition
+  nameWithType: CharacterLayerOption.LayerDefinition
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerDefinition
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterLayer
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 35
+    id: LayerDefinition
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 33
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public CharacterLayerSO CharacterLayer { get; }
+    content: public CharacterLayerDefinitionSO LayerDefinition { get; }
     parameters: []
     return:
-      type: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
-    content.vb: Public Property CharacterLayer As CharacterLayerSO
-  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayer*
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.#ctor(System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterLayerSO,System.Boolean,System.String)
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.#ctor(System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterLayerSO,System.Boolean,System.String)
-  id: '#ctor(System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterLayerSO,System.Boolean,System.String)'
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
+    content.vb: Public Property LayerDefinition As CharacterLayerDefinitionSO
+  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerDefinition*
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.#ctor(System.String,System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO,System.Boolean)
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.#ctor(System.String,System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO,System.Boolean)
+  id: '#ctor(System.String,System.String,System.String,System.Int32,BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO,System.Boolean)'
   parent: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
   langs:
   - csharp
   - vb
-  name: CharacterLayerOption(string, string, int, CharacterLayerSO, bool, string)
-  nameWithType: CharacterLayerOption.CharacterLayerOption(string, string, int, CharacterLayerSO, bool, string)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption(string, string, int, BlazerTech.CharacterManagement.Characters.CharacterLayerSO, bool, string)
+  name: CharacterLayerOption(string, string, string, int, CharacterLayerDefinitionSO, bool)
+  nameWithType: CharacterLayerOption.CharacterLayerOption(string, string, string, int, CharacterLayerDefinitionSO, bool)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption(string, string, string, int, BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO, bool)
   type: Constructor
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 44
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 42
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public CharacterLayerOption(string layerOptionID, string key, int index, CharacterLayerSO layer, bool ignoreSpriteCheck = false, string displayNameOverride = "")
+    content: public CharacterLayerOption(string layerOptionID, string displayName, string key, int index, CharacterLayerDefinitionSO layer, bool ignoreSpriteCheck = false)
     parameters:
     - id: layerOptionID
+      type: System.String
+    - id: displayName
       type: System.String
     - id: key
       type: System.String
     - id: index
       type: System.Int32
     - id: layer
-      type: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
     - id: ignoreSpriteCheck
       type: System.Boolean
-    - id: displayNameOverride
-      type: System.String
-    content.vb: Public Sub New(layerOptionID As String, key As String, index As Integer, layer As CharacterLayerSO, ignoreSpriteCheck As Boolean = False, displayNameOverride As String = "")
+    content.vb: Public Sub New(layerOptionID As String, displayName As String, key As String, index As Integer, layer As CharacterLayerDefinitionSO, ignoreSpriteCheck As Boolean = False)
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.#ctor*
-  nameWithType.vb: CharacterLayerOption.New(String, String, Integer, CharacterLayerSO, Boolean, String)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.New(String, String, Integer, BlazerTech.CharacterManagement.Characters.CharacterLayerSO, Boolean, String)
-  name.vb: New(String, String, Integer, CharacterLayerSO, Boolean, String)
+  nameWithType.vb: CharacterLayerOption.New(String, String, String, Integer, CharacterLayerDefinitionSO, Boolean)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.New(String, String, String, Integer, BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO, Boolean)
+  name.vb: New(String, String, String, Integer, CharacterLayerDefinitionSO, Boolean)
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.AcquireResourceAsync(System.Object)
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.AcquireResourceAsync(System.Object)
   id: AcquireResourceAsync(System.Object)
@@ -287,12 +287,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: AcquireResourceAsync
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 135
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 125
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -308,7 +308,7 @@ items:
       type: System.Threading.Tasks.Task{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
       description: Managed resource
     content.vb: Public Overrides Function AcquireResourceAsync(owner As Object) As Task(Of CharacterLayerOption.LoadedSpriteDataContainer)
-  overridden: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResourceAsync(System.Object)
+  overridden: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResourceAsync(System.Object)
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.AcquireResourceAsync*
   nameWithType.vb: CharacterLayerOption.AcquireResourceAsync(Object)
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.AcquireResourceAsync(Object)
@@ -326,12 +326,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: AcquireResource
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 141
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 131
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -347,7 +347,7 @@ items:
       type: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer
       description: Managed resource
     content.vb: Public Overrides Function AcquireResource(owner As Object) As CharacterLayerOption.LoadedSpriteDataContainer
-  overridden: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResource(System.Object)
+  overridden: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResource(System.Object)
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.AcquireResource*
   nameWithType.vb: CharacterLayerOption.AcquireResource(Object)
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.AcquireResource(Object)
@@ -365,12 +365,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetAndLoadResourceAsync
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 205
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 183
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -380,7 +380,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
     content.vb: Protected Overrides Function GetAndLoadResourceAsync() As Task(Of CharacterLayerOption.LoadedSpriteDataContainer)
-  overridden: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResourceAsync
+  overridden: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResourceAsync
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.GetAndLoadResourceAsync*
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.GetAndLoadResource
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.GetAndLoadResource
@@ -395,12 +395,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetAndLoadResource
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 211
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 189
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -410,7 +410,7 @@ items:
     return:
       type: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer
     content.vb: Protected Overrides Function GetAndLoadResource() As CharacterLayerOption.LoadedSpriteDataContainer
-  overridden: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResource
+  overridden: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResource
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.GetAndLoadResource*
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.UnloadResource
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.UnloadResource
@@ -425,12 +425,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: UnloadResource
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layer Options/CharacterLayerOption.cs
-    startLine: 217
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/Layers/CharacterLayerOption.cs
+    startLine: 195
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -438,7 +438,7 @@ items:
   syntax:
     content: protected override void UnloadResource()
     content.vb: Protected Overrides Sub UnloadResource()
-  overridden: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.UnloadResource
+  overridden: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.UnloadResource
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.UnloadResource*
 references:
 - uid: BlazerTech.CharacterManagement.Characters
@@ -482,21 +482,21 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
-  commentId: T:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
-  parent: BlazerTech.CharacterManagement.Essentials
-  definition: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
+  commentId: T:BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
+  parent: BlazerTech.CharacterManagement.Core
+  definition: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html
   name: OwnedResourceTracker<CharacterLayerOption.LoadedSpriteDataContainer>
   nameWithType: OwnedResourceTracker<CharacterLayerOption.LoadedSpriteDataContainer>
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>
   nameWithType.vb: OwnedResourceTracker(Of CharacterLayerOption.LoadedSpriteDataContainer)
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer)
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer)
   name.vb: OwnedResourceTracker(Of CharacterLayerOption.LoadedSpriteDataContainer)
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1
     name: OwnedResourceTracker
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html
   - name: <
   - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
     name: CharacterLayerOption
@@ -507,9 +507,9 @@ references:
     href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer.html
   - name: '>'
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1
     name: OwnedResourceTracker
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html
   - name: (
   - name: Of
   - name: " "
@@ -521,31 +521,31 @@ references:
     name: LoadedSpriteDataContainer
     href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer.html
   - name: )
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.Owners
-  commentId: P:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.Owners
-  parent: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
-  definition: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.Owners
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_Owners
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.Owners
+  commentId: P:BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.Owners
+  parent: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
+  definition: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.Owners
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_Owners
   name: Owners
   nameWithType: OwnedResourceTracker<CharacterLayerOption.LoadedSpriteDataContainer>.Owners
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>.Owners
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>.Owners
   nameWithType.vb: OwnedResourceTracker(Of CharacterLayerOption.LoadedSpriteDataContainer).Owners
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer).Owners
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.ReleaseResource(System.Object)
-  commentId: M:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.ReleaseResource(System.Object)
-  parent: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
-  definition: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.ReleaseResource(System.Object)
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_ReleaseResource_System_Object_
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer).Owners
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.ReleaseResource(System.Object)
+  commentId: M:BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.ReleaseResource(System.Object)
+  parent: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
+  definition: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.ReleaseResource(System.Object)
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_ReleaseResource_System_Object_
   name: ReleaseResource(object)
   nameWithType: OwnedResourceTracker<CharacterLayerOption.LoadedSpriteDataContainer>.ReleaseResource(object)
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>.ReleaseResource(object)
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>.ReleaseResource(object)
   nameWithType.vb: OwnedResourceTracker(Of CharacterLayerOption.LoadedSpriteDataContainer).ReleaseResource(Object)
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer).ReleaseResource(Object)
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer).ReleaseResource(Object)
   name.vb: ReleaseResource(Object)
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.ReleaseResource(System.Object)
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.ReleaseResource(System.Object)
     name: ReleaseResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_ReleaseResource_System_Object_
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_ReleaseResource_System_Object_
   - name: (
   - uid: System.Object
     name: object
@@ -553,9 +553,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.ReleaseResource(System.Object)
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.ReleaseResource(System.Object)
     name: ReleaseResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_ReleaseResource_System_Object_
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_ReleaseResource_System_Object_
   - name: (
   - uid: System.Object
     name: Object
@@ -569,37 +569,37 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1
-  commentId: T:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1
+  commentId: T:BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html
   name: OwnedResourceTracker<TResource>
   nameWithType: OwnedResourceTracker<TResource>
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<TResource>
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<TResource>
   nameWithType.vb: OwnedResourceTracker(Of TResource)
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of TResource)
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of TResource)
   name.vb: OwnedResourceTracker(Of TResource)
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1
     name: OwnedResourceTracker
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html
   - name: <
   - name: TResource
   - name: '>'
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1
     name: OwnedResourceTracker
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html
   - name: (
   - name: Of
   - name: " "
   - name: TResource
   - name: )
-- uid: BlazerTech.CharacterManagement.Essentials
-  commentId: N:BlazerTech.CharacterManagement.Essentials
+- uid: BlazerTech.CharacterManagement.Core
+  commentId: N:BlazerTech.CharacterManagement.Core
   href: BlazerTech.html
-  name: BlazerTech.CharacterManagement.Essentials
-  nameWithType: BlazerTech.CharacterManagement.Essentials
-  fullName: BlazerTech.CharacterManagement.Essentials
+  name: BlazerTech.CharacterManagement.Core
+  nameWithType: BlazerTech.CharacterManagement.Core
+  fullName: BlazerTech.CharacterManagement.Core
   spec.csharp:
   - uid: BlazerTech
     name: BlazerTech
@@ -609,9 +609,9 @@ references:
     name: CharacterManagement
     href: BlazerTech.CharacterManagement.html
   - name: .
-  - uid: BlazerTech.CharacterManagement.Essentials
-    name: Essentials
-    href: BlazerTech.CharacterManagement.Essentials.html
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
   spec.vb:
   - uid: BlazerTech
     name: BlazerTech
@@ -621,31 +621,31 @@ references:
     name: CharacterManagement
     href: BlazerTech.CharacterManagement.html
   - name: .
-  - uid: BlazerTech.CharacterManagement.Essentials
-    name: Essentials
-    href: BlazerTech.CharacterManagement.Essentials.html
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.Owners
-  commentId: P:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.Owners
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_Owners
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.Owners
+  commentId: P:BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.Owners
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_Owners
   name: Owners
   nameWithType: OwnedResourceTracker<TResource>.Owners
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<TResource>.Owners
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<TResource>.Owners
   nameWithType.vb: OwnedResourceTracker(Of TResource).Owners
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of TResource).Owners
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.ReleaseResource(System.Object)
-  commentId: M:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.ReleaseResource(System.Object)
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of TResource).Owners
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.ReleaseResource(System.Object)
+  commentId: M:BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.ReleaseResource(System.Object)
   isExternal: true
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_ReleaseResource_System_Object_
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_ReleaseResource_System_Object_
   name: ReleaseResource(object)
   nameWithType: OwnedResourceTracker<TResource>.ReleaseResource(object)
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<TResource>.ReleaseResource(object)
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<TResource>.ReleaseResource(object)
   nameWithType.vb: OwnedResourceTracker(Of TResource).ReleaseResource(Object)
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of TResource).ReleaseResource(Object)
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of TResource).ReleaseResource(Object)
   name.vb: ReleaseResource(Object)
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.ReleaseResource(System.Object)
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.ReleaseResource(System.Object)
     name: ReleaseResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_ReleaseResource_System_Object_
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_ReleaseResource_System_Object_
   - name: (
   - uid: System.Object
     name: object
@@ -653,9 +653,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.ReleaseResource(System.Object)
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.ReleaseResource(System.Object)
     name: ReleaseResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_ReleaseResource_System_Object_
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_ReleaseResource_System_Object_
   - name: (
   - uid: System.Object
     name: Object
@@ -679,6 +679,12 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayName*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayName
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html#BlazerTech_CharacterManagement_Characters_CharacterLayerOption_DisplayName
+  name: DisplayName
+  nameWithType: CharacterLayerOption.DisplayName
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayName
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.Key*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.Key
   href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html#BlazerTech_CharacterManagement_Characters_CharacterLayerOption_Key
@@ -702,12 +708,6 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayNameOverride*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayNameOverride
-  href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html#BlazerTech_CharacterManagement_Characters_CharacterLayerOption_DisplayNameOverride
-  name: DisplayNameOverride
-  nameWithType: CharacterLayerOption.DisplayNameOverride
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.DisplayNameOverride
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteData*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteData
   href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html#BlazerTech_CharacterManagement_Characters_CharacterLayerOption_LoadedSpriteData
@@ -737,22 +737,22 @@ references:
   - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer
     name: LoadedSpriteDataContainer
     href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer.html
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayer*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayer
-  href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html#BlazerTech_CharacterManagement_Characters_CharacterLayerOption_CharacterLayer
-  name: CharacterLayer
-  nameWithType: CharacterLayerOption.CharacterLayer
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayer
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerDefinition*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerDefinition
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html#BlazerTech_CharacterManagement_Characters_CharacterLayerOption_LayerDefinition
+  name: LayerDefinition
+  nameWithType: CharacterLayerOption.LayerDefinition
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LayerDefinition
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
   parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterLayerSO.html
-  name: CharacterLayerSO
-  nameWithType: CharacterLayerSO
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html
+  name: CharacterLayerDefinitionSO
+  nameWithType: CharacterLayerDefinitionSO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.#ctor*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerOption.#ctor
-  href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html#BlazerTech_CharacterManagement_Characters_CharacterLayerOption__ctor_System_String_System_String_System_Int32_BlazerTech_CharacterManagement_Characters_CharacterLayerSO_System_Boolean_System_String_
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html#BlazerTech_CharacterManagement_Characters_CharacterLayerOption__ctor_System_String_System_String_System_String_System_Int32_BlazerTech_CharacterManagement_Characters_CharacterLayerDefinitionSO_System_Boolean_
   name: CharacterLayerOption
   nameWithType: CharacterLayerOption.CharacterLayerOption
   fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.CharacterLayerOption
@@ -770,21 +770,21 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResourceAsync(System.Object)
-  commentId: M:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResourceAsync(System.Object)
-  parent: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
-  definition: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.AcquireResourceAsync(System.Object)
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_AcquireResourceAsync_System_Object_
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResourceAsync(System.Object)
+  commentId: M:BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResourceAsync(System.Object)
+  parent: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
+  definition: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.AcquireResourceAsync(System.Object)
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_AcquireResourceAsync_System_Object_
   name: AcquireResourceAsync(object)
   nameWithType: OwnedResourceTracker<CharacterLayerOption.LoadedSpriteDataContainer>.AcquireResourceAsync(object)
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>.AcquireResourceAsync(object)
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>.AcquireResourceAsync(object)
   nameWithType.vb: OwnedResourceTracker(Of CharacterLayerOption.LoadedSpriteDataContainer).AcquireResourceAsync(Object)
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer).AcquireResourceAsync(Object)
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer).AcquireResourceAsync(Object)
   name.vb: AcquireResourceAsync(Object)
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResourceAsync(System.Object)
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResourceAsync(System.Object)
     name: AcquireResourceAsync
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_AcquireResourceAsync_System_Object_
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_AcquireResourceAsync_System_Object_
   - name: (
   - uid: System.Object
     name: object
@@ -792,9 +792,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResourceAsync(System.Object)
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResourceAsync(System.Object)
     name: AcquireResourceAsync
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_AcquireResourceAsync_System_Object_
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_AcquireResourceAsync_System_Object_
   - name: (
   - uid: System.Object
     name: Object
@@ -848,20 +848,20 @@ references:
     name: LoadedSpriteDataContainer
     href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer.html
   - name: )
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.AcquireResourceAsync(System.Object)
-  commentId: M:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.AcquireResourceAsync(System.Object)
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.AcquireResourceAsync(System.Object)
+  commentId: M:BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.AcquireResourceAsync(System.Object)
   isExternal: true
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_AcquireResourceAsync_System_Object_
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_AcquireResourceAsync_System_Object_
   name: AcquireResourceAsync(object)
   nameWithType: OwnedResourceTracker<TResource>.AcquireResourceAsync(object)
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<TResource>.AcquireResourceAsync(object)
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<TResource>.AcquireResourceAsync(object)
   nameWithType.vb: OwnedResourceTracker(Of TResource).AcquireResourceAsync(Object)
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of TResource).AcquireResourceAsync(Object)
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of TResource).AcquireResourceAsync(Object)
   name.vb: AcquireResourceAsync(Object)
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.AcquireResourceAsync(System.Object)
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.AcquireResourceAsync(System.Object)
     name: AcquireResourceAsync
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_AcquireResourceAsync_System_Object_
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_AcquireResourceAsync_System_Object_
   - name: (
   - uid: System.Object
     name: object
@@ -869,9 +869,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.AcquireResourceAsync(System.Object)
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.AcquireResourceAsync(System.Object)
     name: AcquireResourceAsync
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_AcquireResourceAsync_System_Object_
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_AcquireResourceAsync_System_Object_
   - name: (
   - uid: System.Object
     name: Object
@@ -943,21 +943,21 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResource(System.Object)
-  commentId: M:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResource(System.Object)
-  parent: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
-  definition: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.AcquireResource(System.Object)
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_AcquireResource_System_Object_
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResource(System.Object)
+  commentId: M:BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResource(System.Object)
+  parent: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
+  definition: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.AcquireResource(System.Object)
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_AcquireResource_System_Object_
   name: AcquireResource(object)
   nameWithType: OwnedResourceTracker<CharacterLayerOption.LoadedSpriteDataContainer>.AcquireResource(object)
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>.AcquireResource(object)
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>.AcquireResource(object)
   nameWithType.vb: OwnedResourceTracker(Of CharacterLayerOption.LoadedSpriteDataContainer).AcquireResource(Object)
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer).AcquireResource(Object)
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer).AcquireResource(Object)
   name.vb: AcquireResource(Object)
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResource(System.Object)
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResource(System.Object)
     name: AcquireResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_AcquireResource_System_Object_
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_AcquireResource_System_Object_
   - name: (
   - uid: System.Object
     name: object
@@ -965,9 +965,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResource(System.Object)
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.AcquireResource(System.Object)
     name: AcquireResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_AcquireResource_System_Object_
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_AcquireResource_System_Object_
   - name: (
   - uid: System.Object
     name: Object
@@ -980,20 +980,20 @@ references:
   name: AcquireResource
   nameWithType: CharacterLayerOption.AcquireResource
   fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.AcquireResource
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.AcquireResource(System.Object)
-  commentId: M:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.AcquireResource(System.Object)
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.AcquireResource(System.Object)
+  commentId: M:BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.AcquireResource(System.Object)
   isExternal: true
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_AcquireResource_System_Object_
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_AcquireResource_System_Object_
   name: AcquireResource(object)
   nameWithType: OwnedResourceTracker<TResource>.AcquireResource(object)
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<TResource>.AcquireResource(object)
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<TResource>.AcquireResource(object)
   nameWithType.vb: OwnedResourceTracker(Of TResource).AcquireResource(Object)
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of TResource).AcquireResource(Object)
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of TResource).AcquireResource(Object)
   name.vb: AcquireResource(Object)
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.AcquireResource(System.Object)
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.AcquireResource(System.Object)
     name: AcquireResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_AcquireResource_System_Object_
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_AcquireResource_System_Object_
   - name: (
   - uid: System.Object
     name: object
@@ -1001,35 +1001,35 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.AcquireResource(System.Object)
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.AcquireResource(System.Object)
     name: AcquireResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_AcquireResource_System_Object_
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_AcquireResource_System_Object_
   - name: (
   - uid: System.Object
     name: Object
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResourceAsync
-  commentId: M:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResourceAsync
-  parent: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
-  definition: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.GetAndLoadResourceAsync
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_GetAndLoadResourceAsync
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResourceAsync
+  commentId: M:BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResourceAsync
+  parent: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
+  definition: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.GetAndLoadResourceAsync
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_GetAndLoadResourceAsync
   name: GetAndLoadResourceAsync()
   nameWithType: OwnedResourceTracker<CharacterLayerOption.LoadedSpriteDataContainer>.GetAndLoadResourceAsync()
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>.GetAndLoadResourceAsync()
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>.GetAndLoadResourceAsync()
   nameWithType.vb: OwnedResourceTracker(Of CharacterLayerOption.LoadedSpriteDataContainer).GetAndLoadResourceAsync()
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer).GetAndLoadResourceAsync()
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer).GetAndLoadResourceAsync()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResourceAsync
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResourceAsync
     name: GetAndLoadResourceAsync
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_GetAndLoadResourceAsync
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_GetAndLoadResourceAsync
   - name: (
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResourceAsync
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResourceAsync
     name: GetAndLoadResourceAsync
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_GetAndLoadResourceAsync
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_GetAndLoadResourceAsync
   - name: (
   - name: )
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.GetAndLoadResourceAsync*
@@ -1038,46 +1038,46 @@ references:
   name: GetAndLoadResourceAsync
   nameWithType: CharacterLayerOption.GetAndLoadResourceAsync
   fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.GetAndLoadResourceAsync
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.GetAndLoadResourceAsync
-  commentId: M:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.GetAndLoadResourceAsync
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_GetAndLoadResourceAsync
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.GetAndLoadResourceAsync
+  commentId: M:BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.GetAndLoadResourceAsync
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_GetAndLoadResourceAsync
   name: GetAndLoadResourceAsync()
   nameWithType: OwnedResourceTracker<TResource>.GetAndLoadResourceAsync()
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<TResource>.GetAndLoadResourceAsync()
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<TResource>.GetAndLoadResourceAsync()
   nameWithType.vb: OwnedResourceTracker(Of TResource).GetAndLoadResourceAsync()
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of TResource).GetAndLoadResourceAsync()
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of TResource).GetAndLoadResourceAsync()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.GetAndLoadResourceAsync
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.GetAndLoadResourceAsync
     name: GetAndLoadResourceAsync
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_GetAndLoadResourceAsync
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_GetAndLoadResourceAsync
   - name: (
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.GetAndLoadResourceAsync
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.GetAndLoadResourceAsync
     name: GetAndLoadResourceAsync
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_GetAndLoadResourceAsync
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_GetAndLoadResourceAsync
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResource
-  commentId: M:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResource
-  parent: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
-  definition: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.GetAndLoadResource
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_GetAndLoadResource
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResource
+  commentId: M:BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResource
+  parent: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
+  definition: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.GetAndLoadResource
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_GetAndLoadResource
   name: GetAndLoadResource()
   nameWithType: OwnedResourceTracker<CharacterLayerOption.LoadedSpriteDataContainer>.GetAndLoadResource()
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>.GetAndLoadResource()
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>.GetAndLoadResource()
   nameWithType.vb: OwnedResourceTracker(Of CharacterLayerOption.LoadedSpriteDataContainer).GetAndLoadResource()
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer).GetAndLoadResource()
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer).GetAndLoadResource()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResource
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResource
     name: GetAndLoadResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_GetAndLoadResource
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_GetAndLoadResource
   - name: (
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResource
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.GetAndLoadResource
     name: GetAndLoadResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_GetAndLoadResource
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_GetAndLoadResource
   - name: (
   - name: )
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.GetAndLoadResource*
@@ -1086,46 +1086,46 @@ references:
   name: GetAndLoadResource
   nameWithType: CharacterLayerOption.GetAndLoadResource
   fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.GetAndLoadResource
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.GetAndLoadResource
-  commentId: M:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.GetAndLoadResource
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_GetAndLoadResource
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.GetAndLoadResource
+  commentId: M:BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.GetAndLoadResource
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_GetAndLoadResource
   name: GetAndLoadResource()
   nameWithType: OwnedResourceTracker<TResource>.GetAndLoadResource()
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<TResource>.GetAndLoadResource()
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<TResource>.GetAndLoadResource()
   nameWithType.vb: OwnedResourceTracker(Of TResource).GetAndLoadResource()
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of TResource).GetAndLoadResource()
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of TResource).GetAndLoadResource()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.GetAndLoadResource
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.GetAndLoadResource
     name: GetAndLoadResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_GetAndLoadResource
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_GetAndLoadResource
   - name: (
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.GetAndLoadResource
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.GetAndLoadResource
     name: GetAndLoadResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_GetAndLoadResource
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_GetAndLoadResource
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.UnloadResource
-  commentId: M:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.UnloadResource
-  parent: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
-  definition: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.UnloadResource
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_UnloadResource
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.UnloadResource
+  commentId: M:BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.UnloadResource
+  parent: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}
+  definition: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.UnloadResource
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_UnloadResource
   name: UnloadResource()
   nameWithType: OwnedResourceTracker<CharacterLayerOption.LoadedSpriteDataContainer>.UnloadResource()
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>.UnloadResource()
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer>.UnloadResource()
   nameWithType.vb: OwnedResourceTracker(Of CharacterLayerOption.LoadedSpriteDataContainer).UnloadResource()
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer).UnloadResource()
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer).UnloadResource()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.UnloadResource
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.UnloadResource
     name: UnloadResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_UnloadResource
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_UnloadResource
   - name: (
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.UnloadResource
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker{BlazerTech.CharacterManagement.Characters.CharacterLayerOption.LoadedSpriteDataContainer}.UnloadResource
     name: UnloadResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_UnloadResource
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_UnloadResource
   - name: (
   - name: )
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.UnloadResource*
@@ -1134,23 +1134,23 @@ references:
   name: UnloadResource
   nameWithType: CharacterLayerOption.UnloadResource
   fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.UnloadResource
-- uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.UnloadResource
-  commentId: M:BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.UnloadResource
-  href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_UnloadResource
+- uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.UnloadResource
+  commentId: M:BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.UnloadResource
+  href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_UnloadResource
   name: UnloadResource()
   nameWithType: OwnedResourceTracker<TResource>.UnloadResource()
-  fullName: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker<TResource>.UnloadResource()
+  fullName: BlazerTech.CharacterManagement.Core.OwnedResourceTracker<TResource>.UnloadResource()
   nameWithType.vb: OwnedResourceTracker(Of TResource).UnloadResource()
-  fullName.vb: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker(Of TResource).UnloadResource()
+  fullName.vb: BlazerTech.CharacterManagement.Core.OwnedResourceTracker(Of TResource).UnloadResource()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.UnloadResource
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.UnloadResource
     name: UnloadResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_UnloadResource
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_UnloadResource
   - name: (
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker`1.UnloadResource
+  - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1.UnloadResource
     name: UnloadResource
-    href: BlazerTech.CharacterManagement.Essentials.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Essentials_OwnedResourceTracker_1_UnloadResource
+    href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html#BlazerTech_CharacterManagement_Core_OwnedResourceTracker_1_UnloadResource
   - name: (
   - name: )

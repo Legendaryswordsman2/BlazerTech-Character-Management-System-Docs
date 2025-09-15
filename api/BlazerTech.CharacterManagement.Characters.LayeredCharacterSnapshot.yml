@@ -1,0 +1,371 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+  id: LayeredCharacterSnapshot
+  parent: BlazerTech.CharacterManagement.Characters
+  children:
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.String)
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterType
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.LayerOptions
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note
+  langs:
+  - csharp
+  - vb
+  name: LayeredCharacterSnapshot
+  nameWithType: LayeredCharacterSnapshot
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+  type: Class
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LayeredCharacterSnapshot
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  summary: A snapshot of a character that can later be applied to the same character or another of the same <xref href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class LayeredCharacterSnapshot
+    content.vb: >-
+      <Serializable>
+
+      Public Class LayeredCharacterSnapshot
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterType
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterType
+  id: CharacterType
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+  langs:
+  - csharp
+  - vb
+  name: CharacterType
+  nameWithType: LayeredCharacterSnapshot.CharacterType
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterType
+  type: Property
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterType
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public LayeredCharacterTypeSO CharacterType { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
+    content.vb: Public Property CharacterType As LayeredCharacterTypeSO
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterType*
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.LayerOptions
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.LayerOptions
+  id: LayerOptions
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+  langs:
+  - csharp
+  - vb
+  name: LayerOptions
+  nameWithType: LayeredCharacterSnapshot.LayerOptions
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.LayerOptions
+  type: Property
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LayerOptions
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public IReadOnlyList<CharacterLayerOption> LayerOptions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.Characters.CharacterLayerOption}
+    content.vb: Public ReadOnly Property LayerOptions As IReadOnlyList(Of CharacterLayerOption)
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.LayerOptions*
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note
+  id: Note
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Note
+  nameWithType: LayeredCharacterSnapshot.Note
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note
+  type: Property
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Note
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  summary: A note often containing what was changed. Used when displaying snapshot history in the Character Creator.
+  example: []
+  syntax:
+    content: public string Note { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Note As String
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note*
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.String)
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.String)
+  id: '#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.String)'
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+  langs:
+  - csharp
+  - vb
+  name: LayeredCharacterSnapshot(LayeredCharacter, string)
+  nameWithType: LayeredCharacterSnapshot.LayeredCharacterSnapshot(LayeredCharacter, string)
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.LayeredCharacterSnapshot(BlazerTech.CharacterManagement.Characters.LayeredCharacter, string)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: .ctor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Layered Characters/LayeredCharacterSnapshot.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  summary: Create a new snapshot from A <xref href="BlazerTech.CharacterManagement.Characters.LayeredCharacter" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public LayeredCharacterSnapshot(LayeredCharacter character, string note = "")
+    parameters:
+    - id: character
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+      description: The <xref href="BlazerTech.CharacterManagement.Characters.LayeredCharacter" data-throw-if-not-resolved="false"></xref> to create a snapshot of.
+    - id: note
+      type: System.String
+    content.vb: Public Sub New(character As LayeredCharacter, note As String = "")
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.#ctor*
+  nameWithType.vb: LayeredCharacterSnapshot.New(LayeredCharacter, String)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.New(BlazerTech.CharacterManagement.Characters.LayeredCharacter, String)
+  name.vb: New(LayeredCharacter, String)
+references:
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html
+  name: LayeredCharacterTypeSO
+  nameWithType: LayeredCharacterTypeSO
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterType*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterType
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterSnapshot_CharacterType
+  name: CharacterType
+  nameWithType: LayeredCharacterSnapshot.CharacterType
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.CharacterType
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.LayerOptions*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.LayerOptions
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterSnapshot_LayerOptions
+  name: LayerOptions
+  nameWithType: LayeredCharacterSnapshot.LayerOptions
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.LayerOptions
+- uid: System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.Characters.CharacterLayerOption}
+  commentId: T:System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.Characters.CharacterLayerOption}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CharacterLayerOption>
+  nameWithType: IReadOnlyList<CharacterLayerOption>
+  fullName: System.Collections.Generic.IReadOnlyList<BlazerTech.CharacterManagement.Characters.CharacterLayerOption>
+  nameWithType.vb: IReadOnlyList(Of CharacterLayerOption)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of BlazerTech.CharacterManagement.Characters.CharacterLayerOption)
+  name.vb: IReadOnlyList(Of CharacterLayerOption)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+    name: CharacterLayerOption
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+    name: CharacterLayerOption
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterSnapshot_Note
+  name: Note
+  nameWithType: LayeredCharacterSnapshot.Note
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.Note
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacter
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
+  name: LayeredCharacter
+  nameWithType: LayeredCharacter
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.#ctor*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.#ctor
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterSnapshot__ctor_BlazerTech_CharacterManagement_Characters_LayeredCharacter_System_String_
+  name: LayeredCharacterSnapshot
+  nameWithType: LayeredCharacterSnapshot.LayeredCharacterSnapshot
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.LayeredCharacterSnapshot
+  nameWithType.vb: LayeredCharacterSnapshot.New
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.New
+  name.vb: New

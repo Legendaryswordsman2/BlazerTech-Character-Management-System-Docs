@@ -6,7 +6,7 @@ items:
   parent: BlazerTech.CharacterManagement.Components
   children:
   - BlazerTech.CharacterManagement.Components.CharacterAnimator.Animator
-  - BlazerTech.CharacterManagement.Components.CharacterAnimator.ForceDirection(BlazerTech.CharacterManagement.Essentials.FourDirectional)
+  - BlazerTech.CharacterManagement.Components.CharacterAnimator.ForceDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
   - BlazerTech.CharacterManagement.Components.CharacterAnimator.GetCurrentAnimationNormalizedTime
   - BlazerTech.CharacterManagement.Components.CharacterAnimator.GetParamaterInfo(System.String)
   - BlazerTech.CharacterManagement.Components.CharacterAnimator.Instance
@@ -96,16 +96,16 @@ items:
       type: UnityEngine.Animator
     content.vb: Public ReadOnly Property Animator As Animator
   overload: BlazerTech.CharacterManagement.Components.CharacterAnimator.Animator*
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimator.ForceDirection(BlazerTech.CharacterManagement.Essentials.FourDirectional)
-  commentId: M:BlazerTech.CharacterManagement.Components.CharacterAnimator.ForceDirection(BlazerTech.CharacterManagement.Essentials.FourDirectional)
-  id: ForceDirection(BlazerTech.CharacterManagement.Essentials.FourDirectional)
+- uid: BlazerTech.CharacterManagement.Components.CharacterAnimator.ForceDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
+  commentId: M:BlazerTech.CharacterManagement.Components.CharacterAnimator.ForceDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
+  id: ForceDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
   parent: BlazerTech.CharacterManagement.Components.CharacterAnimator
   langs:
   - csharp
   - vb
   name: ForceDirection(FourDirectional)
   nameWithType: CharacterAnimator.ForceDirection(FourDirectional)
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimator.ForceDirection(BlazerTech.CharacterManagement.Essentials.FourDirectional)
+  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimator.ForceDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
   type: Method
   source:
     remote:
@@ -122,7 +122,7 @@ items:
     content: public void ForceDirection(FourDirectional newDirection)
     parameters:
     - id: newDirection
-      type: BlazerTech.CharacterManagement.Essentials.FourDirectional
+      type: BlazerTech.CharacterManagement.Core.FourDirectional
     content.vb: Public Sub ForceDirection(newDirection As FourDirectional)
   overload: BlazerTech.CharacterManagement.Components.CharacterAnimator.ForceDirection*
 - uid: BlazerTech.CharacterManagement.Components.CharacterAnimator.PlayAnimation(System.String)
@@ -382,23 +382,23 @@ references:
   fullName: UnityEngine.Animator
 - uid: BlazerTech.CharacterManagement.Components.CharacterAnimator.ForceDirection*
   commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimator.ForceDirection
-  href: BlazerTech.CharacterManagement.Components.CharacterAnimator.html#BlazerTech_CharacterManagement_Components_CharacterAnimator_ForceDirection_BlazerTech_CharacterManagement_Essentials_FourDirectional_
+  href: BlazerTech.CharacterManagement.Components.CharacterAnimator.html#BlazerTech_CharacterManagement_Components_CharacterAnimator_ForceDirection_BlazerTech_CharacterManagement_Core_FourDirectional_
   name: ForceDirection
   nameWithType: CharacterAnimator.ForceDirection
   fullName: BlazerTech.CharacterManagement.Components.CharacterAnimator.ForceDirection
-- uid: BlazerTech.CharacterManagement.Essentials.FourDirectional
-  commentId: T:BlazerTech.CharacterManagement.Essentials.FourDirectional
-  parent: BlazerTech.CharacterManagement.Essentials
-  href: BlazerTech.CharacterManagement.Essentials.FourDirectional.html
+- uid: BlazerTech.CharacterManagement.Core.FourDirectional
+  commentId: T:BlazerTech.CharacterManagement.Core.FourDirectional
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.FourDirectional.html
   name: FourDirectional
   nameWithType: FourDirectional
-  fullName: BlazerTech.CharacterManagement.Essentials.FourDirectional
-- uid: BlazerTech.CharacterManagement.Essentials
-  commentId: N:BlazerTech.CharacterManagement.Essentials
+  fullName: BlazerTech.CharacterManagement.Core.FourDirectional
+- uid: BlazerTech.CharacterManagement.Core
+  commentId: N:BlazerTech.CharacterManagement.Core
   href: BlazerTech.html
-  name: BlazerTech.CharacterManagement.Essentials
-  nameWithType: BlazerTech.CharacterManagement.Essentials
-  fullName: BlazerTech.CharacterManagement.Essentials
+  name: BlazerTech.CharacterManagement.Core
+  nameWithType: BlazerTech.CharacterManagement.Core
+  fullName: BlazerTech.CharacterManagement.Core
   spec.csharp:
   - uid: BlazerTech
     name: BlazerTech
@@ -408,9 +408,9 @@ references:
     name: CharacterManagement
     href: BlazerTech.CharacterManagement.html
   - name: .
-  - uid: BlazerTech.CharacterManagement.Essentials
-    name: Essentials
-    href: BlazerTech.CharacterManagement.Essentials.html
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
   spec.vb:
   - uid: BlazerTech
     name: BlazerTech
@@ -420,9 +420,9 @@ references:
     name: CharacterManagement
     href: BlazerTech.CharacterManagement.html
   - name: .
-  - uid: BlazerTech.CharacterManagement.Essentials
-    name: Essentials
-    href: BlazerTech.CharacterManagement.Essentials.html
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
 - uid: BlazerTech.CharacterManagement.Components.CharacterAnimator.PlayAnimation*
   commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimator.PlayAnimation
   href: BlazerTech.CharacterManagement.Components.CharacterAnimator.html#BlazerTech_CharacterManagement_Components_CharacterAnimator_PlayAnimation_System_String_

@@ -6,9 +6,9 @@ items:
   parent: BlazerTech.CharacterManagement.Characters
   children:
   - BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.#ctor(BlazerTech.CharacterManagement.Characters.UnifiedCharacter)
+  - BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Dispose
   - BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.LoadCharacter
   - BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.LoadCharacterAsync
-  - BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Release
   langs:
   - csharp
   - vb
@@ -23,16 +23,18 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadedUnifiedCharacterHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
-    startLine: 59
+    startLine: 57
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: 'public class UnifiedCharacter.LoadedUnifiedCharacterHandler : LoadedCharacterHandlerBase'
-    content.vb: Public Class UnifiedCharacter.LoadedUnifiedCharacterHandler Inherits LoadedCharacterHandlerBase
+    content: 'public class UnifiedCharacter.LoadedUnifiedCharacterHandler : LoadedCharacterHandlerBase, IDisposable'
+    content.vb: Public Class UnifiedCharacter.LoadedUnifiedCharacterHandler Inherits LoadedCharacterHandlerBase Implements IDisposable
   inheritance:
   - System.Object
   - BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase
+  implements:
+  - System.IDisposable
   inheritedMembers:
   - BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.CharacterMPB
 - uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.#ctor(BlazerTech.CharacterManagement.Characters.UnifiedCharacter)
@@ -53,7 +55,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
-    startLine: 66
+    startLine: 64
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -85,7 +87,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
-    startLine: 73
+    startLine: 71
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -111,7 +113,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadCharacterAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
-    startLine: 84
+    startLine: 82
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -121,34 +123,34 @@ items:
       type: System.Threading.Tasks.Task
     content.vb: Public Function LoadCharacterAsync() As Task
   overload: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.LoadCharacterAsync*
-- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Release
-  commentId: M:BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Release
-  id: Release
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Dispose
+  commentId: M:BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Dispose
+  id: Dispose
   parent: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler
   langs:
   - csharp
   - vb
-  name: Release()
-  nameWithType: UnifiedCharacter.LoadedUnifiedCharacterHandler.Release()
-  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Release()
+  name: Dispose()
+  nameWithType: UnifiedCharacter.LoadedUnifiedCharacterHandler.Dispose()
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Dispose()
   type: Method
   source:
     remote:
       path: Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: Release
+    id: Dispose
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/Characters/Unified Character/UnifiedCharacter.cs
-    startLine: 125
+    startLine: 123
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   example: []
   syntax:
-    content: public override void Release()
-    content.vb: Public Overrides Sub Release()
-  overridden: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.Release
-  overload: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Release*
+    content: public override void Dispose()
+    content.vb: Public Overrides Sub Dispose()
+  overridden: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.Dispose
+  overload: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Dispose*
 references:
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
@@ -198,6 +200,14 @@ references:
   name: LoadedCharacterHandlerBase
   nameWithType: LoadedCharacterHandlerBase
   fullName: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
 - uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.CharacterMPB
   commentId: P:BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.CharacterMPB
   parent: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase
@@ -285,28 +295,28 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-- uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.Release
-  commentId: M:BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.Release
+- uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.Dispose
+  commentId: M:BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.Dispose
   parent: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase
-  href: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html#BlazerTech_CharacterManagement_Characters_LoadedCharacterHandlerBase_Release
-  name: Release()
-  nameWithType: LoadedCharacterHandlerBase.Release()
-  fullName: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.Release()
+  href: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html#BlazerTech_CharacterManagement_Characters_LoadedCharacterHandlerBase_Dispose
+  name: Dispose()
+  nameWithType: LoadedCharacterHandlerBase.Dispose()
+  fullName: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.Dispose()
   spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.Release
-    name: Release
-    href: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html#BlazerTech_CharacterManagement_Characters_LoadedCharacterHandlerBase_Release
+  - uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.Dispose
+    name: Dispose
+    href: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html#BlazerTech_CharacterManagement_Characters_LoadedCharacterHandlerBase_Dispose
   - name: (
   - name: )
   spec.vb:
-  - uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.Release
-    name: Release
-    href: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html#BlazerTech_CharacterManagement_Characters_LoadedCharacterHandlerBase_Release
+  - uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.Dispose
+    name: Dispose
+    href: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html#BlazerTech_CharacterManagement_Characters_LoadedCharacterHandlerBase_Dispose
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Release*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Release
-  href: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.html#BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadedUnifiedCharacterHandler_Release
-  name: Release
-  nameWithType: UnifiedCharacter.LoadedUnifiedCharacterHandler.Release
-  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Release
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Dispose*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Dispose
+  href: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.html#BlazerTech_CharacterManagement_Characters_UnifiedCharacter_LoadedUnifiedCharacterHandler_Dispose
+  name: Dispose
+  nameWithType: UnifiedCharacter.LoadedUnifiedCharacterHandler.Dispose
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacter.LoadedUnifiedCharacterHandler.Dispose
