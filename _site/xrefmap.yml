@@ -7115,7 +7115,7 @@ references:
 - uid: basic-concepts
   name: Basic Concepts
   href: docs/getting-started/basic-concepts.html
-- uid: character-creator
+- uid: character-creator-overview
   name: Character Creator
   href: docs/character-creator/character-creator-overview.html
 - uid: character-groups

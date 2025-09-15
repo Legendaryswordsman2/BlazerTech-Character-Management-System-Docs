@@ -63,7 +63,7 @@ Easily build a character creation menu into your game using the included scripts
 
 ### Example Use Cases
 1. **Customizable Player Character** – Easily setup the menu for a single character such as the player character. 
-2. **Editing a List of Characters** – Allow players to edit a predefined roster, or manage a dynamic list (create, edit, delete).  
+2. **Editing Character Lists** – Allow players to edit a predefined roster, or manage a dynamic list (create, edit, delete).  
 
 ### Key Features
 | Feature | Description |
@@ -74,4 +74,4 @@ Easily build a character creation menu into your game using the included scripts
 | **Randomization** | Randomize the entire character or specific layers. |
 | **Character Naming** | Optional name field. |
 
-[🔗 Read More → Character Creator](xref:character-creator)  
+[🔗 Read More → Character Creator](xref:character-creator-overview)

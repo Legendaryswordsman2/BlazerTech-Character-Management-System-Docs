@@ -12,7 +12,7 @@ A Character Piece Definition is a wrapper for a spritesheet which allows for eas
 The **Layered Character Type** the layer is meant to be used for.
 
 ### Layer Name
-The name of the layer. Used in the [Character Creator](character-creator.md) when displaying character layers.
+The name of the layer. Used in the [Character Creator](xref:character-creator-overview) when displaying character layers.
 
 ### Character Piece Asset Label
 The **Addressables label** used to load sprites into **Character Piece Definitions**. **BT-CMS** uses Unity's **Addressables package** to dynamically load/unload sprites when needed. Select the label you'd like to use and make sure all character spritesheets meant to be used for this layer are marked as Addressable and have the same label.
