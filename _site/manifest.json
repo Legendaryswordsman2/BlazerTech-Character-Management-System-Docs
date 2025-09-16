@@ -54,16 +54,16 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager",
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager",
       "Summary": null
     },
     {
@@ -82,6 +82,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler.yml",
       "output": {
         ".html": {
@@ -92,6 +106,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel",
       "Summary": null
     },
     {
@@ -107,6 +135,20 @@
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker",
       "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.yml\" sourcestartlinenumber=\"1\">Tracks all modifications made to the <xref href=\"BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterDraft\" data-throw-if-not-resolved=\"false\"></xref> in the Character Creator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -152,30 +194,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList",
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler",
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler",
       "Summary": null
     },
     {
@@ -208,6 +250,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.yml",
       "output": {
         ".html": {
@@ -222,6 +278,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.yml",
       "output": {
         ".html": {
@@ -232,6 +302,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector",
       "Summary": null
     },
     {
@@ -292,6 +376,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.GameObjectStateNotifier.yml",
       "output": {
         ".html": {
@@ -302,6 +400,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.CharacterCreator.GameObjectStateNotifier",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry",
       "Summary": null
     },
     {
@@ -320,16 +432,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.InitializationMode.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.InitializationMode.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.CharacterCreator.InitializationMode",
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode",
       "Summary": null
     },
     {
@@ -428,34 +554,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenRepeatingText",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry",
       "Summary": null
     },
     {
@@ -1795,6 +1893,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/character-creator/layer-selectors/dropdown-layer-selector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-creator/layer-selectors/layer-selector-setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-creator/layer-selectors/layer-selector-setup.html"
         }
       },
       "version": ""

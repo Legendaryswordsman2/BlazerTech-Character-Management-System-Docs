@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+  id: ElementDisplayMode
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  children:
+  - BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.Sprite
+  - BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.Text
+  - BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.TextAndSprite
+  langs:
+  - csharp
+  - vb
+  name: ElementDisplayMode
+  nameWithType: ElementDisplayMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+  type: Enum
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: ElementDisplayMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public enum ElementDisplayMode
+    content.vb: Public Enum ElementDisplayMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.Text
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.Text
+  id: Text
+  parent: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: ElementDisplayMode.Text
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.Text
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Text
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: Text = 0
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.Sprite
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.Sprite
+  id: Sprite
+  parent: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+  langs:
+  - csharp
+  - vb
+  name: Sprite
+  nameWithType: ElementDisplayMode.Sprite
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.Sprite
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Sprite
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: Sprite = 1
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.TextAndSprite
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.TextAndSprite
+  id: TextAndSprite
+  parent: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+  langs:
+  - csharp
+  - vb
+  name: TextAndSprite
+  nameWithType: ElementDisplayMode.TextAndSprite
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.TextAndSprite
+  type: Field
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: TextAndSprite
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/CharacterCreationMenuManager.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: TextAndSprite = 2
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+references:
+- uid: BlazerTech.CharacterManagement.CharacterCreator
+  commentId: N:BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.CharacterCreator
+  nameWithType: BlazerTech.CharacterManagement.CharacterCreator
+  fullName: BlazerTech.CharacterManagement.CharacterCreator
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+- uid: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.html
+  name: ElementDisplayMode
+  nameWithType: ElementDisplayMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode

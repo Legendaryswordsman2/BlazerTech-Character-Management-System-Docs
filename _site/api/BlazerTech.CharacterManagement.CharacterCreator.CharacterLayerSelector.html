@@ -89,7 +89,7 @@
 
 
   <h1 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector" class="text-break">
-Class CharacterLayerSelector  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L7"><i class="bi bi-code-slash"></i></a>
+Class CharacterLayerSelector  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,8 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class CharacterLayerSelector : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">[DisallowMultipleComponent]
+public abstract class CharacterLayerSelector : MonoBehaviour</code></pre>
   </div>
 
 
@@ -123,7 +124,10 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
   <dl class="typelist derived">
     <dt>Derived</dt>
     <dd>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html">CharacterLayerCarouselSelector</a></div>
       <div><a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.html">CharacterLayerDropdownSelector</a></div>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html">CharacterLayerElementSelector</a></div>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html">CharacterLayerTabSelector</a></div>
     </dd>
   </dl>
 
@@ -140,7 +144,7 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_characterCreationMenuManager" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.characterCreationMenuManager">
   characterCreationMenuManager
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -167,36 +171,6 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 
 
 
-
-  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_characterLayerOptionSelectionManager" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.characterLayerOptionSelectionManager">
-  characterLayerOptionSelectionManager
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L19"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected CCMCharacterLayerOptionSelectionManager characterLayerOptionSelectionManager</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.html">CCMCharacterLayerOptionSelectionManager</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -205,7 +179,7 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_AssignedLayer" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignedLayer">
   AssignedLayer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -236,7 +210,7 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_CharacterLayerOverride" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterLayerOverride">
   CharacterLayerOverride
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -263,11 +237,43 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 
 
 
+  <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_LayerNameText_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.LayerNameText*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_LayerNameText" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.LayerNameText">
+  LayerNameText
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;If assinged; set the text to the name of the assigned layer.&quot;)]
+public TMP_Text LayerNameText { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TMP_Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_SelectorBase_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.SelectorBase*"></a>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_SelectorBase" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.SelectorBase">
   SelectorBase
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -298,11 +304,47 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 </h2>
 
 
+  <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_AssignLayer_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignLayer*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_AssignLayer_BlazerTech_CharacterManagement_Characters_CharacterLayer_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignLayer(BlazerTech.CharacterManagement.Characters.CharacterLayer)">
+  AssignLayer(CharacterLayer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AssignLayer(CharacterLayer layer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layer</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayer.html">CharacterLayer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_ChangeAlpha_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.ChangeAlpha*"></a>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_ChangeAlpha_System_Single_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.ChangeAlpha(System.Single)">
   ChangeAlpha(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -329,52 +371,14 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 
 
 
-  <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_CharacterCreationMenuOpened_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened*"></a>
-
-  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_CharacterCreationMenuOpened_BlazerTech_CharacterManagement_Characters_CharacterLayer_BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerOptionSelectionManager_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)">
-  CharacterCreationMenuOpened(CharacterLayer, CCMCharacterLayerOptionSelectionManager)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L23"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CharacterCreationMenuOpened(CharacterLayer layer, CCMCharacterLayerOptionSelectionManager characterLayerOptionSelectionManager)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>layer</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayer.html">CharacterLayer</a></dt>
-    <dd></dd>
-    <dt><code>characterLayerOptionSelectionManager</code> <a class="xref" href="BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.html">CCMCharacterLayerOptionSelectionManager</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_CharacterLayerUpdated_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterLayerUpdated*"></a>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_CharacterLayerUpdated" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterLayerUpdated">
   CharacterLayerUpdated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Called whenever the Character Piece assigned to this selector is updated</p>
+  <div class="markdown level1 summary"><p>Called whenever the Character Layer assigned to this selector is updated</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -398,7 +402,7 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_DisableInteractivity" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.DisableInteractivity">
   DisableInteractivity()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -420,38 +424,11 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 
 
 
-  <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_Disabled_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Disabled*"></a>
-
-  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_Disabled" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Disabled">
-  Disabled()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L63"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Called whenever the Character Creation Menu is disabled</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void Disabled()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_EnableInteractivity_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.EnableInteractivity*"></a>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_EnableInteractivity" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.EnableInteractivity">
   EnableInteractivity()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -477,7 +454,7 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_Hide" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Hide">
   Hide()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -499,11 +476,38 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 
 
 
+  <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_MenuDisabled_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.MenuDisabled*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_MenuDisabled" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.MenuDisabled">
+  MenuDisabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called whenever the Character Creation Menu is disabled</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void MenuDisabled()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_OnDestroy_" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.OnDestroy*"></a>
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_OnDestroy" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.OnDestroy">
   OnDestroy()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -529,7 +533,7 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_RandomizeLayer" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.RandomizeLayer">
   RandomizeLayer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -555,7 +559,7 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_Reset" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Reset">
   Reset()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -581,7 +585,7 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_Setup" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Setup">
   Setup()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Setup is called every time the Character Creation Menu is opened</p>
@@ -608,7 +612,7 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 
   <h3 id="BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_Unhide" data-uid="BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Unhide">
   Unhide()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -634,7 +638,7 @@ Class CharacterLayerSelector  <a class="header-action link-secondary" title="Vie
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L7" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
 

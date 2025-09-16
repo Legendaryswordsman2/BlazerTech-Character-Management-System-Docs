@@ -257,38 +257,57 @@ references:
   commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.referenceHandler
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.referenceHandler
   nameWithType: CCMBase.referenceHandler
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager
-  name: CCMCharacterLayerOptionSelectionManager
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.html
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager
-  nameWithType: CCMCharacterLayerOptionSelectionManager
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.Awake
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
+  name: CCMCharacterLayerSelectionManager
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
+  nameWithType: CCMCharacterLayerSelectionManager
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.Awake
   name: Awake()
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerOptionSelectionManager_Awake
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.Awake
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.Awake()
-  nameWithType: CCMCharacterLayerOptionSelectionManager.Awake()
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.Awake*
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerSelectionManager_Awake
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.Awake
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.Awake()
+  nameWithType: CCMCharacterLayerSelectionManager.Awake()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.Awake*
   name: Awake
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerOptionSelectionManager_Awake_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.Awake
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerSelectionManager_Awake_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.Awake
   isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.Awake
-  nameWithType: CCMCharacterLayerOptionSelectionManager.Awake
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.CharacterCreationMenuEnabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.Awake
+  nameWithType: CCMCharacterLayerSelectionManager.Awake
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled
   name: CharacterCreationMenuEnabled()
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerOptionSelectionManager_CharacterCreationMenuEnabled
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.CharacterCreationMenuEnabled
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.CharacterCreationMenuEnabled()
-  nameWithType: CCMCharacterLayerOptionSelectionManager.CharacterCreationMenuEnabled()
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.CharacterCreationMenuEnabled*
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerSelectionManager_CharacterCreationMenuEnabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled()
+  nameWithType: CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled*
   name: CharacterCreationMenuEnabled
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerOptionSelectionManager_CharacterCreationMenuEnabled_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.CharacterCreationMenuEnabled
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerSelectionManager_CharacterCreationMenuEnabled_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled
   isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager.CharacterCreationMenuEnabled
-  nameWithType: CCMCharacterLayerOptionSelectionManager.CharacterCreationMenuEnabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled
+  nameWithType: CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.OnSelectedCharacterLayerChanged
+  name: OnSelectedCharacterLayerChanged
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerSelectionManager_OnSelectedCharacterLayerChanged
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.OnSelectedCharacterLayerChanged
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.OnSelectedCharacterLayerChanged
+  nameWithType: CCMCharacterLayerSelectionManager.OnSelectedCharacterLayerChanged
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer
+  name: SelectedLayer
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerSelectionManager_SelectedLayer
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer
+  nameWithType: CCMCharacterLayerSelectionManager.SelectedLayer
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer*
+  name: SelectedLayer
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerSelectionManager_SelectedLayer_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer
+  nameWithType: CCMCharacterLayerSelectionManager.SelectedLayer
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler
   name: CCMCharacterPreviewHandler
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.html
@@ -456,6 +475,80 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler.SetCharacterPreviewDirection
   nameWithType: CCMCharacterPreviewHandler.SetCharacterPreviewDirection
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler
+  name: CCMControlledRandomizationHandler
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler
+  nameWithType: CCMControlledRandomizationHandler
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.Awake
+  name: Awake()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMControlledRandomizationHandler_Awake
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.Awake
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.Awake()
+  nameWithType: CCMControlledRandomizationHandler.Awake()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.Awake*
+  name: Awake
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMControlledRandomizationHandler_Awake_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.Awake
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.Awake
+  nameWithType: CCMControlledRandomizationHandler.Awake
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.CharacterCreationMenuEnabled
+  name: CharacterCreationMenuEnabled()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMControlledRandomizationHandler_CharacterCreationMenuEnabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.CharacterCreationMenuEnabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.CharacterCreationMenuEnabled()
+  nameWithType: CCMControlledRandomizationHandler.CharacterCreationMenuEnabled()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.CharacterCreationMenuEnabled*
+  name: CharacterCreationMenuEnabled
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMControlledRandomizationHandler_CharacterCreationMenuEnabled_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.CharacterCreationMenuEnabled
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.CharacterCreationMenuEnabled
+  nameWithType: CCMControlledRandomizationHandler.CharacterCreationMenuEnabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.RandomizeCharacter
+  name: RandomizeCharacter()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMControlledRandomizationHandler_RandomizeCharacter
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.RandomizeCharacter
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.RandomizeCharacter()
+  nameWithType: CCMControlledRandomizationHandler.RandomizeCharacter()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.RandomizeCharacter*
+  name: RandomizeCharacter
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMControlledRandomizationHandler_RandomizeCharacter_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.RandomizeCharacter
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.RandomizeCharacter
+  nameWithType: CCMControlledRandomizationHandler.RandomizeCharacter
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI
+  name: ToggleRandomizationOptionsUI()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMControlledRandomizationHandler_ToggleRandomizationOptionsUI
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI()
+  nameWithType: CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI*
+  name: ToggleRandomizationOptionsUI
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMControlledRandomizationHandler_ToggleRandomizationOptionsUI_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI
+  nameWithType: CCMControlledRandomizationHandler.ToggleRandomizationOptionsUI
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.UpdateRandomizationToggle(BlazerTech.CharacterManagement.Characters.CharacterLayer,System.Boolean)
+  name: UpdateRandomizationToggle(CharacterLayer, bool)
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMControlledRandomizationHandler_UpdateRandomizationToggle_BlazerTech_CharacterManagement_Characters_CharacterLayer_System_Boolean_
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.UpdateRandomizationToggle(BlazerTech.CharacterManagement.Characters.CharacterLayer,System.Boolean)
+  name.vb: UpdateRandomizationToggle(CharacterLayer, Boolean)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.UpdateRandomizationToggle(BlazerTech.CharacterManagement.Characters.CharacterLayer, bool)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.UpdateRandomizationToggle(BlazerTech.CharacterManagement.Characters.CharacterLayer, Boolean)
+  nameWithType: CCMControlledRandomizationHandler.UpdateRandomizationToggle(CharacterLayer, bool)
+  nameWithType.vb: CCMControlledRandomizationHandler.UpdateRandomizationToggle(CharacterLayer, Boolean)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.UpdateRandomizationToggle*
+  name: UpdateRandomizationToggle
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMControlledRandomizationHandler_UpdateRandomizationToggle_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.UpdateRandomizationToggle
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler.UpdateRandomizationToggle
+  nameWithType: CCMControlledRandomizationHandler.UpdateRandomizationToggle
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler
   name: CCMDisplayNameInputFieldHandler
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler.html
@@ -504,6 +597,51 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler.SetCharacterDisplayName
   nameWithType: CCMDisplayNameInputFieldHandler.SetCharacterDisplayName
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel
+  name: CCMHistoryPanel
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel
+  nameWithType: CCMHistoryPanel
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.CharacterCreationMenuBeforeDisabled
+  name: CharacterCreationMenuBeforeDisabled()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.html#BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryPanel_CharacterCreationMenuBeforeDisabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.CharacterCreationMenuBeforeDisabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.CharacterCreationMenuBeforeDisabled()
+  nameWithType: CCMHistoryPanel.CharacterCreationMenuBeforeDisabled()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.CharacterCreationMenuBeforeDisabled*
+  name: CharacterCreationMenuBeforeDisabled
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.html#BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryPanel_CharacterCreationMenuBeforeDisabled_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.CharacterCreationMenuBeforeDisabled
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.CharacterCreationMenuBeforeDisabled
+  nameWithType: CCMHistoryPanel.CharacterCreationMenuBeforeDisabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.CharacterCreationMenuEnabled
+  name: CharacterCreationMenuEnabled()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.html#BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryPanel_CharacterCreationMenuEnabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.CharacterCreationMenuEnabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.CharacterCreationMenuEnabled()
+  nameWithType: CCMHistoryPanel.CharacterCreationMenuEnabled()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.CharacterCreationMenuEnabled*
+  name: CharacterCreationMenuEnabled
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.html#BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryPanel_CharacterCreationMenuEnabled_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.CharacterCreationMenuEnabled
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.CharacterCreationMenuEnabled
+  nameWithType: CCMHistoryPanel.CharacterCreationMenuEnabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.RebuildAll
+  name: RebuildAll()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.html#BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryPanel_RebuildAll
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.RebuildAll
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.RebuildAll()
+  nameWithType: CCMHistoryPanel.RebuildAll()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.RebuildAll*
+  name: RebuildAll
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.html#BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryPanel_RebuildAll_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.RebuildAll
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.RebuildAll
+  nameWithType: CCMHistoryPanel.RebuildAll
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
   name: CCMHistoryTracker
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html
@@ -617,19 +755,6 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.CurrentIndex
   nameWithType: CCMHistoryTracker.CurrentIndex
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.KeepFirstSnapshot
-  name: KeepFirstSnapshot
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html#BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryTracker_KeepFirstSnapshot
-  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.KeepFirstSnapshot
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.KeepFirstSnapshot
-  nameWithType: CCMHistoryTracker.KeepFirstSnapshot
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.KeepFirstSnapshot*
-  name: KeepFirstSnapshot
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html#BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryTracker_KeepFirstSnapshot_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.KeepFirstSnapshot
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.KeepFirstSnapshot
-  nameWithType: CCMHistoryTracker.KeepFirstSnapshot
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.MaxSnapshots
   name: MaxSnapshots
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html#BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryTracker_MaxSnapshots
@@ -673,6 +798,19 @@ references:
   commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.OnSnapshotRemoved
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.OnSnapshotRemoved
   nameWithType: CCMHistoryTracker.OnSnapshotRemoved
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.PreserveFirstSnapshot
+  name: PreserveFirstSnapshot
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html#BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryTracker_PreserveFirstSnapshot
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.PreserveFirstSnapshot
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.PreserveFirstSnapshot
+  nameWithType: CCMHistoryTracker.PreserveFirstSnapshot
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.PreserveFirstSnapshot*
+  name: PreserveFirstSnapshot
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html#BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryTracker_PreserveFirstSnapshot_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.PreserveFirstSnapshot
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.PreserveFirstSnapshot
+  nameWithType: CCMHistoryTracker.PreserveFirstSnapshot
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.Redo
   name: Redo()
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html#BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryTracker_Redo
@@ -725,6 +863,41 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.Undo
   nameWithType: CCMHistoryTracker.Undo
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle
+  name: CCMLayerRandomizeToggle
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle
+  nameWithType: CCMLayerRandomizeToggle
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.Setup(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler)
+  name: Setup(CharacterLayer, CCMControlledRandomizationHandler)
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.html#BlazerTech_CharacterManagement_CharacterCreator_CCMLayerRandomizeToggle_Setup_BlazerTech_CharacterManagement_Characters_CharacterLayer_BlazerTech_CharacterManagement_CharacterCreator_CCMControlledRandomizationHandler_
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.Setup(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.Setup(BlazerTech.CharacterManagement.Characters.CharacterLayer, BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler)
+  nameWithType: CCMLayerRandomizeToggle.Setup(CharacterLayer, CCMControlledRandomizationHandler)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.Setup*
+  name: Setup
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.html#BlazerTech_CharacterManagement_CharacterCreator_CCMLayerRandomizeToggle_Setup_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.Setup
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.Setup
+  nameWithType: CCMLayerRandomizeToggle.Setup
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.UpdateRandomizationToggle(System.Boolean)
+  name: UpdateRandomizationToggle(bool)
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.html#BlazerTech_CharacterManagement_CharacterCreator_CCMLayerRandomizeToggle_UpdateRandomizationToggle_System_Boolean_
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.UpdateRandomizationToggle(System.Boolean)
+  name.vb: UpdateRandomizationToggle(Boolean)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.UpdateRandomizationToggle(bool)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.UpdateRandomizationToggle(Boolean)
+  nameWithType: CCMLayerRandomizeToggle.UpdateRandomizationToggle(bool)
+  nameWithType.vb: CCMLayerRandomizeToggle.UpdateRandomizationToggle(Boolean)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.UpdateRandomizationToggle*
+  name: UpdateRandomizationToggle
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.html#BlazerTech_CharacterManagement_CharacterCreator_CCMLayerRandomizeToggle_UpdateRandomizationToggle_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.UpdateRandomizationToggle
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.UpdateRandomizationToggle
+  nameWithType: CCMLayerRandomizeToggle.UpdateRandomizationToggle
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress
   name: CCMLoadingBufferSpriteFillProgress
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.html
@@ -849,96 +1022,96 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.SaveCharacter
   nameWithType: CCMRelay.SaveCharacter
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList
-  name: CCMSnapshotHistoryList
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.html
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList
-  nameWithType: CCMSnapshotHistoryList
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler
+  name: CCMSelectedLayerTabHandler
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler
+  nameWithType: CCMSelectedLayerTabHandler
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled
   name: CharacterCreationMenuBeforeDisabled()
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.html#BlazerTech_CharacterManagement_CharacterCreator_CCMSnapshotHistoryList_CharacterCreationMenuBeforeDisabled
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled()
-  nameWithType: CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled()
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled*
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMSelectedLayerTabHandler_CharacterCreationMenuBeforeDisabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled()
+  nameWithType: CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled*
   name: CharacterCreationMenuBeforeDisabled
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.html#BlazerTech_CharacterManagement_CharacterCreator_CCMSnapshotHistoryList_CharacterCreationMenuBeforeDisabled_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMSelectedLayerTabHandler_CharacterCreationMenuBeforeDisabled_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled
   isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled
-  nameWithType: CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuEnabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled
+  nameWithType: CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled
   name: CharacterCreationMenuEnabled()
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.html#BlazerTech_CharacterManagement_CharacterCreator_CCMSnapshotHistoryList_CharacterCreationMenuEnabled
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuEnabled
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuEnabled()
-  nameWithType: CCMSnapshotHistoryList.CharacterCreationMenuEnabled()
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuEnabled*
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMSelectedLayerTabHandler_CharacterCreationMenuEnabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled()
+  nameWithType: CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled*
   name: CharacterCreationMenuEnabled
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.html#BlazerTech_CharacterManagement_CharacterCreator_CCMSnapshotHistoryList_CharacterCreationMenuEnabled_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuEnabled
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMSelectedLayerTabHandler_CharacterCreationMenuEnabled_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled
   isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuEnabled
-  nameWithType: CCMSnapshotHistoryList.CharacterCreationMenuEnabled
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler
-  name: CCMUndoRedoButtonHandler
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.html
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler
-  nameWithType: CCMUndoRedoButtonHandler
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.CharacterCreationMenuBeforeDisabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled
+  nameWithType: CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.RefreshLayerSelector
+  name: RefreshLayerSelector()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMSelectedLayerTabHandler_RefreshLayerSelector
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.RefreshLayerSelector
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.RefreshLayerSelector()
+  nameWithType: CCMSelectedLayerTabHandler.RefreshLayerSelector()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.RefreshLayerSelector*
+  name: RefreshLayerSelector
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMSelectedLayerTabHandler_RefreshLayerSelector_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.RefreshLayerSelector
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.RefreshLayerSelector
+  nameWithType: CCMSelectedLayerTabHandler.RefreshLayerSelector
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler
+  name: CCMTimelineButtonHandler
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler
+  nameWithType: CCMTimelineButtonHandler
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CharacterCreationMenuBeforeDisabled
   name: CharacterCreationMenuBeforeDisabled()
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMUndoRedoButtonHandler_CharacterCreationMenuBeforeDisabled
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.CharacterCreationMenuBeforeDisabled
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.CharacterCreationMenuBeforeDisabled()
-  nameWithType: CCMUndoRedoButtonHandler.CharacterCreationMenuBeforeDisabled()
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.CharacterCreationMenuBeforeDisabled*
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMTimelineButtonHandler_CharacterCreationMenuBeforeDisabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CharacterCreationMenuBeforeDisabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CharacterCreationMenuBeforeDisabled()
+  nameWithType: CCMTimelineButtonHandler.CharacterCreationMenuBeforeDisabled()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CharacterCreationMenuBeforeDisabled*
   name: CharacterCreationMenuBeforeDisabled
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMUndoRedoButtonHandler_CharacterCreationMenuBeforeDisabled_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.CharacterCreationMenuBeforeDisabled
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMTimelineButtonHandler_CharacterCreationMenuBeforeDisabled_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CharacterCreationMenuBeforeDisabled
   isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.CharacterCreationMenuBeforeDisabled
-  nameWithType: CCMUndoRedoButtonHandler.CharacterCreationMenuBeforeDisabled
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.CharacterCreationMenuEnabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CharacterCreationMenuBeforeDisabled
+  nameWithType: CCMTimelineButtonHandler.CharacterCreationMenuBeforeDisabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CharacterCreationMenuEnabled
   name: CharacterCreationMenuEnabled()
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMUndoRedoButtonHandler_CharacterCreationMenuEnabled
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.CharacterCreationMenuEnabled
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.CharacterCreationMenuEnabled()
-  nameWithType: CCMUndoRedoButtonHandler.CharacterCreationMenuEnabled()
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.CharacterCreationMenuEnabled*
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMTimelineButtonHandler_CharacterCreationMenuEnabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CharacterCreationMenuEnabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CharacterCreationMenuEnabled()
+  nameWithType: CCMTimelineButtonHandler.CharacterCreationMenuEnabled()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CharacterCreationMenuEnabled*
   name: CharacterCreationMenuEnabled
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMUndoRedoButtonHandler_CharacterCreationMenuEnabled_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.CharacterCreationMenuEnabled
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMTimelineButtonHandler_CharacterCreationMenuEnabled_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CharacterCreationMenuEnabled
   isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.CharacterCreationMenuEnabled
-  nameWithType: CCMUndoRedoButtonHandler.CharacterCreationMenuEnabled
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.Redo
-  name: Redo()
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMUndoRedoButtonHandler_Redo
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.Redo
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.Redo()
-  nameWithType: CCMUndoRedoButtonHandler.Redo()
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.Redo*
-  name: Redo
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMUndoRedoButtonHandler_Redo_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.Redo
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.CharacterCreationMenuEnabled
+  nameWithType: CCMTimelineButtonHandler.CharacterCreationMenuEnabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.UndoOrRedo
+  name: UndoOrRedo()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMTimelineButtonHandler_UndoOrRedo
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.UndoOrRedo
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.UndoOrRedo()
+  nameWithType: CCMTimelineButtonHandler.UndoOrRedo()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.UndoOrRedo*
+  name: UndoOrRedo
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMTimelineButtonHandler_UndoOrRedo_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.UndoOrRedo
   isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.Redo
-  nameWithType: CCMUndoRedoButtonHandler.Redo
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.Undo
-  name: Undo()
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMUndoRedoButtonHandler_Undo
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.Undo
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.Undo()
-  nameWithType: CCMUndoRedoButtonHandler.Undo()
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.Undo*
-  name: Undo
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMUndoRedoButtonHandler_Undo_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.Undo
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler.Undo
-  nameWithType: CCMUndoRedoButtonHandler.Undo
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.UndoOrRedo
+  nameWithType: CCMTimelineButtonHandler.UndoOrRedo
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuEnablerRelay
   name: CharacterCreationMenuEnablerRelay
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuEnablerRelay.html
@@ -1016,19 +1189,19 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterType
   nameWithType: CharacterCreationMenuManager.ActiveCharacterType
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableOnStart
-  name: AutoEnableOnStart
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_AutoEnableOnStart
-  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableOnStart
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableOnStart
-  nameWithType: CharacterCreationMenuManager.AutoEnableOnStart
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableOnStart*
-  name: AutoEnableOnStart
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_AutoEnableOnStart_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableOnStart
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableWithPrimaryCharacter
+  name: AutoEnableWithPrimaryCharacter
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_AutoEnableWithPrimaryCharacter
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableWithPrimaryCharacter
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableWithPrimaryCharacter
+  nameWithType: CharacterCreationMenuManager.AutoEnableWithPrimaryCharacter
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableWithPrimaryCharacter*
+  name: AutoEnableWithPrimaryCharacter
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_AutoEnableWithPrimaryCharacter_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableWithPrimaryCharacter
   isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableOnStart
-  nameWithType: CharacterCreationMenuManager.AutoEnableOnStart
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableWithPrimaryCharacter
+  nameWithType: CharacterCreationMenuManager.AutoEnableWithPrimaryCharacter
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.CharacterSaved
   name: CharacterSaved
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_CharacterSaved
@@ -1233,6 +1406,103 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SaveCharacter
   nameWithType: CharacterCreationMenuManager.SaveCharacter
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector
+  name: CharacterLayerCarouselSelector
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector
+  nameWithType: CharacterLayerCarouselSelector
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.CharacterLayerUpdated
+  name: CharacterLayerUpdated()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerCarouselSelector_CharacterLayerUpdated
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.CharacterLayerUpdated
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.CharacterLayerUpdated()
+  nameWithType: CharacterLayerCarouselSelector.CharacterLayerUpdated()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.CharacterLayerUpdated*
+  name: CharacterLayerUpdated
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerCarouselSelector_CharacterLayerUpdated_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.CharacterLayerUpdated
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.CharacterLayerUpdated
+  nameWithType: CharacterLayerCarouselSelector.CharacterLayerUpdated
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.DisableInteractivity
+  name: DisableInteractivity()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerCarouselSelector_DisableInteractivity
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.DisableInteractivity
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.DisableInteractivity()
+  nameWithType: CharacterLayerCarouselSelector.DisableInteractivity()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.DisableInteractivity*
+  name: DisableInteractivity
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerCarouselSelector_DisableInteractivity_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.DisableInteractivity
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.DisableInteractivity
+  nameWithType: CharacterLayerCarouselSelector.DisableInteractivity
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.EnableInteractivity
+  name: EnableInteractivity()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerCarouselSelector_EnableInteractivity
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.EnableInteractivity
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.EnableInteractivity()
+  nameWithType: CharacterLayerCarouselSelector.EnableInteractivity()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.EnableInteractivity*
+  name: EnableInteractivity
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerCarouselSelector_EnableInteractivity_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.EnableInteractivity
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.EnableInteractivity
+  nameWithType: CharacterLayerCarouselSelector.EnableInteractivity
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.MenuDisabled
+  name: MenuDisabled()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerCarouselSelector_MenuDisabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.MenuDisabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.MenuDisabled()
+  nameWithType: CharacterLayerCarouselSelector.MenuDisabled()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.MenuDisabled*
+  name: MenuDisabled
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerCarouselSelector_MenuDisabled_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.MenuDisabled
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.MenuDisabled
+  nameWithType: CharacterLayerCarouselSelector.MenuDisabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.NextOption
+  name: NextOption()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerCarouselSelector_NextOption
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.NextOption
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.NextOption()
+  nameWithType: CharacterLayerCarouselSelector.NextOption()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.NextOption*
+  name: NextOption
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerCarouselSelector_NextOption_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.NextOption
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.NextOption
+  nameWithType: CharacterLayerCarouselSelector.NextOption
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.PreviousOption
+  name: PreviousOption()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerCarouselSelector_PreviousOption
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.PreviousOption
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.PreviousOption()
+  nameWithType: CharacterLayerCarouselSelector.PreviousOption()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.PreviousOption*
+  name: PreviousOption
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerCarouselSelector_PreviousOption_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.PreviousOption
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.PreviousOption
+  nameWithType: CharacterLayerCarouselSelector.PreviousOption
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.Setup
+  name: Setup()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerCarouselSelector_Setup
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.Setup
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.Setup()
+  nameWithType: CharacterLayerCarouselSelector.Setup()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.Setup*
+  name: Setup
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerCarouselSelector_Setup_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.Setup
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.Setup
+  nameWithType: CharacterLayerCarouselSelector.Setup
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector
   name: CharacterLayerDropdownSelector
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.html
@@ -1265,19 +1535,6 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.DisableInteractivity
   nameWithType: CharacterLayerDropdownSelector.DisableInteractivity
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Disabled
-  name: Disabled()
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerDropdownSelector_Disabled
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Disabled
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Disabled()
-  nameWithType: CharacterLayerDropdownSelector.Disabled()
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Disabled*
-  name: Disabled
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerDropdownSelector_Disabled_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Disabled
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Disabled
-  nameWithType: CharacterLayerDropdownSelector.Disabled
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Dropdown
   name: Dropdown
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerDropdownSelector_Dropdown
@@ -1304,6 +1561,19 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.EnableInteractivity
   nameWithType: CharacterLayerDropdownSelector.EnableInteractivity
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.MenuDisabled
+  name: MenuDisabled()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerDropdownSelector_MenuDisabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.MenuDisabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.MenuDisabled()
+  nameWithType: CharacterLayerDropdownSelector.MenuDisabled()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.MenuDisabled*
+  name: MenuDisabled
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerDropdownSelector_MenuDisabled_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.MenuDisabled
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.MenuDisabled
+  nameWithType: CharacterLayerDropdownSelector.MenuDisabled
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.OnDestroy
   name: OnDestroy()
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerDropdownSelector_OnDestroy
@@ -1343,12 +1613,109 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerDropdownSelector.Setup
   nameWithType: CharacterLayerDropdownSelector.Setup
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector
+  name: CharacterLayerElementSelector
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector
+  nameWithType: CharacterLayerElementSelector
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.ApplyLayerOption(BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement)
+  name: ApplyLayerOption(LayerOptionUIElement)
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerElementSelector_ApplyLayerOption_BlazerTech_CharacterManagement_CharacterCreator_LayerOptionUIElement_
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.ApplyLayerOption(BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.ApplyLayerOption(BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement)
+  nameWithType: CharacterLayerElementSelector.ApplyLayerOption(LayerOptionUIElement)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.ApplyLayerOption*
+  name: ApplyLayerOption
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerElementSelector_ApplyLayerOption_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.ApplyLayerOption
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.ApplyLayerOption
+  nameWithType: CharacterLayerElementSelector.ApplyLayerOption
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.CharacterLayerUpdated
+  name: CharacterLayerUpdated()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerElementSelector_CharacterLayerUpdated
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.CharacterLayerUpdated
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.CharacterLayerUpdated()
+  nameWithType: CharacterLayerElementSelector.CharacterLayerUpdated()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.CharacterLayerUpdated*
+  name: CharacterLayerUpdated
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerElementSelector_CharacterLayerUpdated_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.CharacterLayerUpdated
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.CharacterLayerUpdated
+  nameWithType: CharacterLayerElementSelector.CharacterLayerUpdated
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.DisableInteractivity
+  name: DisableInteractivity()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerElementSelector_DisableInteractivity
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.DisableInteractivity
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.DisableInteractivity()
+  nameWithType: CharacterLayerElementSelector.DisableInteractivity()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.DisableInteractivity*
+  name: DisableInteractivity
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerElementSelector_DisableInteractivity_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.DisableInteractivity
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.DisableInteractivity
+  nameWithType: CharacterLayerElementSelector.DisableInteractivity
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.EnableInteractivity
+  name: EnableInteractivity()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerElementSelector_EnableInteractivity
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.EnableInteractivity
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.EnableInteractivity()
+  nameWithType: CharacterLayerElementSelector.EnableInteractivity()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.EnableInteractivity*
+  name: EnableInteractivity
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerElementSelector_EnableInteractivity_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.EnableInteractivity
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.EnableInteractivity
+  nameWithType: CharacterLayerElementSelector.EnableInteractivity
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.MenuDisabled
+  name: MenuDisabled()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerElementSelector_MenuDisabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.MenuDisabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.MenuDisabled()
+  nameWithType: CharacterLayerElementSelector.MenuDisabled()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.MenuDisabled*
+  name: MenuDisabled
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerElementSelector_MenuDisabled_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.MenuDisabled
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.MenuDisabled
+  nameWithType: CharacterLayerElementSelector.MenuDisabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.Setup
+  name: Setup()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerElementSelector_Setup
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.Setup
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.Setup()
+  nameWithType: CharacterLayerElementSelector.Setup()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.Setup*
+  name: Setup
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerElementSelector_Setup_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.Setup
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector.Setup
+  nameWithType: CharacterLayerElementSelector.Setup
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
   name: CharacterLayerSelector
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
   nameWithType: CharacterLayerSelector
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignLayer(BlazerTech.CharacterManagement.Characters.CharacterLayer)
+  name: AssignLayer(CharacterLayer)
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_AssignLayer_BlazerTech_CharacterManagement_Characters_CharacterLayer_
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignLayer(BlazerTech.CharacterManagement.Characters.CharacterLayer)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignLayer(BlazerTech.CharacterManagement.Characters.CharacterLayer)
+  nameWithType: CharacterLayerSelector.AssignLayer(CharacterLayer)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignLayer*
+  name: AssignLayer
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_AssignLayer_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignLayer
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignLayer
+  nameWithType: CharacterLayerSelector.AssignLayer
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.AssignedLayer
   name: AssignedLayer
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_AssignedLayer
@@ -1378,19 +1745,6 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.ChangeAlpha
   nameWithType: CharacterLayerSelector.ChangeAlpha
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)
-  name: CharacterCreationMenuOpened(CharacterLayer, CCMCharacterLayerOptionSelectionManager)
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_CharacterCreationMenuOpened_BlazerTech_CharacterManagement_Characters_CharacterLayer_BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerOptionSelectionManager_
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened(BlazerTech.CharacterManagement.Characters.CharacterLayer, BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager)
-  nameWithType: CharacterLayerSelector.CharacterCreationMenuOpened(CharacterLayer, CCMCharacterLayerOptionSelectionManager)
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened*
-  name: CharacterCreationMenuOpened
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_CharacterCreationMenuOpened_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterCreationMenuOpened
-  nameWithType: CharacterLayerSelector.CharacterCreationMenuOpened
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterLayerOverride
   name: CharacterLayerOverride
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_CharacterLayerOverride
@@ -1430,19 +1784,6 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.DisableInteractivity
   nameWithType: CharacterLayerSelector.DisableInteractivity
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Disabled
-  name: Disabled()
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_Disabled
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Disabled
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Disabled()
-  nameWithType: CharacterLayerSelector.Disabled()
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Disabled*
-  name: Disabled
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_Disabled_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Disabled
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Disabled
-  nameWithType: CharacterLayerSelector.Disabled
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.EnableInteractivity
   name: EnableInteractivity()
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_EnableInteractivity
@@ -1469,6 +1810,32 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.Hide
   nameWithType: CharacterLayerSelector.Hide
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.LayerNameText
+  name: LayerNameText
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_LayerNameText
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.LayerNameText
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.LayerNameText
+  nameWithType: CharacterLayerSelector.LayerNameText
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.LayerNameText*
+  name: LayerNameText
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_LayerNameText_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.LayerNameText
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.LayerNameText
+  nameWithType: CharacterLayerSelector.LayerNameText
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.MenuDisabled
+  name: MenuDisabled()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_MenuDisabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.MenuDisabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.MenuDisabled()
+  nameWithType: CharacterLayerSelector.MenuDisabled()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.MenuDisabled*
+  name: MenuDisabled
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_MenuDisabled_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.MenuDisabled
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.MenuDisabled
+  nameWithType: CharacterLayerSelector.MenuDisabled
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.OnDestroy
   name: OnDestroy()
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_OnDestroy
@@ -1553,12 +1920,103 @@ references:
   commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.characterCreationMenuManager
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.characterCreationMenuManager
   nameWithType: CharacterLayerSelector.characterCreationMenuManager
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.characterLayerOptionSelectionManager
-  name: characterLayerOptionSelectionManager
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_characterLayerOptionSelectionManager
-  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.characterLayerOptionSelectionManager
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.characterLayerOptionSelectionManager
-  nameWithType: CharacterLayerSelector.characterLayerOptionSelectionManager
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector
+  name: CharacterLayerTabSelector
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector
+  nameWithType: CharacterLayerTabSelector
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.CharacterLayerUpdated
+  name: CharacterLayerUpdated()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerTabSelector_CharacterLayerUpdated
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.CharacterLayerUpdated
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.CharacterLayerUpdated()
+  nameWithType: CharacterLayerTabSelector.CharacterLayerUpdated()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.CharacterLayerUpdated*
+  name: CharacterLayerUpdated
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerTabSelector_CharacterLayerUpdated_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.CharacterLayerUpdated
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.CharacterLayerUpdated
+  nameWithType: CharacterLayerTabSelector.CharacterLayerUpdated
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.DisableInteractivity
+  name: DisableInteractivity()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerTabSelector_DisableInteractivity
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.DisableInteractivity
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.DisableInteractivity()
+  nameWithType: CharacterLayerTabSelector.DisableInteractivity()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.DisableInteractivity*
+  name: DisableInteractivity
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerTabSelector_DisableInteractivity_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.DisableInteractivity
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.DisableInteractivity
+  nameWithType: CharacterLayerTabSelector.DisableInteractivity
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.EnableInteractivity
+  name: EnableInteractivity()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerTabSelector_EnableInteractivity
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.EnableInteractivity
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.EnableInteractivity()
+  nameWithType: CharacterLayerTabSelector.EnableInteractivity()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.EnableInteractivity*
+  name: EnableInteractivity
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerTabSelector_EnableInteractivity_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.EnableInteractivity
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.EnableInteractivity
+  nameWithType: CharacterLayerTabSelector.EnableInteractivity
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.MenuDisabled
+  name: MenuDisabled()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerTabSelector_MenuDisabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.MenuDisabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.MenuDisabled()
+  nameWithType: CharacterLayerTabSelector.MenuDisabled()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.MenuDisabled*
+  name: MenuDisabled
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerTabSelector_MenuDisabled_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.MenuDisabled
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.MenuDisabled
+  nameWithType: CharacterLayerTabSelector.MenuDisabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.Reset
+  name: Reset()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerTabSelector_Reset
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.Reset
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.Reset()
+  nameWithType: CharacterLayerTabSelector.Reset()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.Reset*
+  name: Reset
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerTabSelector_Reset_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.Reset
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.Reset
+  nameWithType: CharacterLayerTabSelector.Reset
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.SetSelectedLayer
+  name: SetSelectedLayer()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerTabSelector_SetSelectedLayer
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.SetSelectedLayer
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.SetSelectedLayer()
+  nameWithType: CharacterLayerTabSelector.SetSelectedLayer()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.SetSelectedLayer*
+  name: SetSelectedLayer
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerTabSelector_SetSelectedLayer_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.SetSelectedLayer
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.SetSelectedLayer
+  nameWithType: CharacterLayerTabSelector.SetSelectedLayer
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.Setup
+  name: Setup()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerTabSelector_Setup
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.Setup
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.Setup()
+  nameWithType: CharacterLayerTabSelector.Setup()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.Setup*
+  name: Setup
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerTabSelector_Setup_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.Setup
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector.Setup
+  nameWithType: CharacterLayerTabSelector.Setup
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterListEntryDisplayType
   name: CharacterListEntryDisplayType
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterListEntryDisplayType.html
@@ -1619,6 +2077,30 @@ references:
   commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingProgressUpdated
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingProgressUpdated
   nameWithType: CharacterSelectionLoadingScreen.OnLoadingProgressUpdated
+- uid: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+  name: ElementDisplayMode
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+  nameWithType: ElementDisplayMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.Sprite
+  name: Sprite
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.html#BlazerTech_CharacterManagement_CharacterCreator_ElementDisplayMode_Sprite
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.Sprite
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.Sprite
+  nameWithType: ElementDisplayMode.Sprite
+- uid: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.Text
+  name: Text
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.html#BlazerTech_CharacterManagement_CharacterCreator_ElementDisplayMode_Text
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.Text
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.Text
+  nameWithType: ElementDisplayMode.Text
+- uid: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.TextAndSprite
+  name: TextAndSprite
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.html#BlazerTech_CharacterManagement_CharacterCreator_ElementDisplayMode_TextAndSprite
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.TextAndSprite
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.TextAndSprite
+  nameWithType: ElementDisplayMode.TextAndSprite
 - uid: BlazerTech.CharacterManagement.CharacterCreator.GameObjectStateNotifier
   name: GameObjectStateNotifier
   href: api/BlazerTech.CharacterManagement.CharacterCreator.GameObjectStateNotifier.html
@@ -1643,6 +2125,77 @@ references:
   commentId: E:BlazerTech.CharacterManagement.CharacterCreator.GameObjectStateNotifier.OnGameObjectStateChanged
   fullName: BlazerTech.CharacterManagement.CharacterCreator.GameObjectStateNotifier.OnGameObjectStateChanged
   nameWithType: GameObjectStateNotifier.OnGameObjectStateChanged
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry
+  name: HistoryPanelEntry
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry
+  nameWithType: HistoryPanelEntry
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.ApplyCharacterSnapshot
+  name: ApplyCharacterSnapshot()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html#BlazerTech_CharacterManagement_CharacterCreator_HistoryPanelEntry_ApplyCharacterSnapshot
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.ApplyCharacterSnapshot
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.ApplyCharacterSnapshot()
+  nameWithType: HistoryPanelEntry.ApplyCharacterSnapshot()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.ApplyCharacterSnapshot*
+  name: ApplyCharacterSnapshot
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html#BlazerTech_CharacterManagement_CharacterCreator_HistoryPanelEntry_ApplyCharacterSnapshot_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.ApplyCharacterSnapshot
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.ApplyCharacterSnapshot
+  nameWithType: HistoryPanelEntry.ApplyCharacterSnapshot
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Deactivate
+  name: Deactivate()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html#BlazerTech_CharacterManagement_CharacterCreator_HistoryPanelEntry_Deactivate
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Deactivate
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Deactivate()
+  nameWithType: HistoryPanelEntry.Deactivate()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Deactivate*
+  name: Deactivate
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html#BlazerTech_CharacterManagement_CharacterCreator_HistoryPanelEntry_Deactivate_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Deactivate
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Deactivate
+  nameWithType: HistoryPanelEntry.Deactivate
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.DisplayMode
+  name: DisplayMode
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html#BlazerTech_CharacterManagement_CharacterCreator_HistoryPanelEntry_DisplayMode
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.DisplayMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.DisplayMode
+  nameWithType: HistoryPanelEntry.DisplayMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.DisplayMode*
+  name: DisplayMode
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html#BlazerTech_CharacterManagement_CharacterCreator_HistoryPanelEntry_DisplayMode_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.DisplayMode
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.DisplayMode
+  nameWithType: HistoryPanelEntry.DisplayMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Setup(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker,BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot)
+  name: Setup(CCMHistoryTracker, LayeredCharacterSnapshot)
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html#BlazerTech_CharacterManagement_CharacterCreator_HistoryPanelEntry_Setup_BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryTracker_BlazerTech_CharacterManagement_Characters_LayeredCharacterSnapshot_
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Setup(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker,BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Setup(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker, BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot)
+  nameWithType: HistoryPanelEntry.Setup(CCMHistoryTracker, LayeredCharacterSnapshot)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Setup*
+  name: Setup
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html#BlazerTech_CharacterManagement_CharacterCreator_HistoryPanelEntry_Setup_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Setup
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Setup
+  nameWithType: HistoryPanelEntry.Setup
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Snapshot
+  name: Snapshot
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html#BlazerTech_CharacterManagement_CharacterCreator_HistoryPanelEntry_Snapshot
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Snapshot
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Snapshot
+  nameWithType: HistoryPanelEntry.Snapshot
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Snapshot*
+  name: Snapshot
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html#BlazerTech_CharacterManagement_CharacterCreator_HistoryPanelEntry_Snapshot_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Snapshot
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Snapshot
+  nameWithType: HistoryPanelEntry.Snapshot
 - uid: BlazerTech.CharacterManagement.CharacterCreator.ILoadingScreen
   name: ILoadingScreen
   href: api/BlazerTech.CharacterManagement.CharacterCreator.ILoadingScreen.html
@@ -1661,24 +2214,114 @@ references:
   commentId: E:BlazerTech.CharacterManagement.CharacterCreator.ILoadingScreen.OnLoadingProgressUpdated
   fullName: BlazerTech.CharacterManagement.CharacterCreator.ILoadingScreen.OnLoadingProgressUpdated
   nameWithType: ILoadingScreen.OnLoadingProgressUpdated
-- uid: BlazerTech.CharacterManagement.CharacterCreator.InitializationMode
-  name: InitializationMode
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.InitializationMode.html
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.InitializationMode
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.InitializationMode
-  nameWithType: InitializationMode
-- uid: BlazerTech.CharacterManagement.CharacterCreator.InitializationMode.Create
-  name: Create
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.InitializationMode.html#BlazerTech_CharacterManagement_CharacterCreator_InitializationMode_Create
-  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.InitializationMode.Create
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.InitializationMode.Create
-  nameWithType: InitializationMode.Create
-- uid: BlazerTech.CharacterManagement.CharacterCreator.InitializationMode.InitializeExisting
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement
+  name: LayerOptionUIElement
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement
+  nameWithType: LayerOptionUIElement
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.ApplyLayerOption
+  name: ApplyLayerOption()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerOptionUIElement_ApplyLayerOption
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.ApplyLayerOption
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.ApplyLayerOption()
+  nameWithType: LayerOptionUIElement.ApplyLayerOption()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.ApplyLayerOption*
+  name: ApplyLayerOption
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerOptionUIElement_ApplyLayerOption_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.ApplyLayerOption
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.ApplyLayerOption
+  nameWithType: LayerOptionUIElement.ApplyLayerOption
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.DisplayMode
+  name: DisplayMode
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerOptionUIElement_DisplayMode
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.DisplayMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.DisplayMode
+  nameWithType: LayerOptionUIElement.DisplayMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.DisplayMode*
+  name: DisplayMode
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerOptionUIElement_DisplayMode_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.DisplayMode
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.DisplayMode
+  nameWithType: LayerOptionUIElement.DisplayMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.Layer
+  name: Layer
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerOptionUIElement_Layer
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.Layer
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.Layer
+  nameWithType: LayerOptionUIElement.Layer
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.Layer*
+  name: Layer
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerOptionUIElement_Layer_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.Layer
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.Layer
+  nameWithType: LayerOptionUIElement.Layer
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.LayerOption
+  name: LayerOption
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerOptionUIElement_LayerOption
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.LayerOption
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.LayerOption
+  nameWithType: LayerOptionUIElement.LayerOption
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.LayerOption*
+  name: LayerOption
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerOptionUIElement_LayerOption_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.LayerOption
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.LayerOption
+  nameWithType: LayerOptionUIElement.LayerOption
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.SetSelectedState(System.Boolean)
+  name: SetSelectedState(bool)
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerOptionUIElement_SetSelectedState_System_Boolean_
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.SetSelectedState(System.Boolean)
+  name.vb: SetSelectedState(Boolean)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.SetSelectedState(bool)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.SetSelectedState(Boolean)
+  nameWithType: LayerOptionUIElement.SetSelectedState(bool)
+  nameWithType.vb: LayerOptionUIElement.SetSelectedState(Boolean)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.SetSelectedState*
+  name: SetSelectedState
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerOptionUIElement_SetSelectedState_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.SetSelectedState
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.SetSelectedState
+  nameWithType: LayerOptionUIElement.SetSelectedState
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.Setup(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.Characters.CharacterLayerOption,System.Boolean,BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector)
+  name: Setup(CharacterLayer, CharacterLayerOption, bool, CharacterLayerElementSelector)
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerOptionUIElement_Setup_BlazerTech_CharacterManagement_Characters_CharacterLayer_BlazerTech_CharacterManagement_Characters_CharacterLayerOption_System_Boolean_BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerElementSelector_
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.Setup(BlazerTech.CharacterManagement.Characters.CharacterLayer,BlazerTech.CharacterManagement.Characters.CharacterLayerOption,System.Boolean,BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector)
+  name.vb: Setup(CharacterLayer, CharacterLayerOption, Boolean, CharacterLayerElementSelector)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.Setup(BlazerTech.CharacterManagement.Characters.CharacterLayer, BlazerTech.CharacterManagement.Characters.CharacterLayerOption, bool, BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.Setup(BlazerTech.CharacterManagement.Characters.CharacterLayer, BlazerTech.CharacterManagement.Characters.CharacterLayerOption, Boolean, BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerElementSelector)
+  nameWithType: LayerOptionUIElement.Setup(CharacterLayer, CharacterLayerOption, bool, CharacterLayerElementSelector)
+  nameWithType.vb: LayerOptionUIElement.Setup(CharacterLayer, CharacterLayerOption, Boolean, CharacterLayerElementSelector)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.Setup*
+  name: Setup
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.html#BlazerTech_CharacterManagement_CharacterCreator_LayerOptionUIElement_Setup_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.Setup
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerOptionUIElement.Setup
+  nameWithType: LayerOptionUIElement.Setup
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode
+  name: LayerSelectorInitializationMode
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode
+  nameWithType: LayerSelectorInitializationMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode.CreateNew
+  name: CreateNew
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode.html#BlazerTech_CharacterManagement_CharacterCreator_LayerSelectorInitializationMode_CreateNew
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode.CreateNew
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode.CreateNew
+  nameWithType: LayerSelectorInitializationMode.CreateNew
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode.InitializeExisting
   name: InitializeExisting
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.InitializationMode.html#BlazerTech_CharacterManagement_CharacterCreator_InitializationMode_InitializeExisting
-  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.InitializationMode.InitializeExisting
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.InitializationMode.InitializeExisting
-  nameWithType: InitializationMode.InitializeExisting
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode.html#BlazerTech_CharacterManagement_CharacterCreator_LayerSelectorInitializationMode_InitializeExisting
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode.InitializeExisting
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode.InitializeExisting
+  nameWithType: LayerSelectorInitializationMode.InitializeExisting
 - uid: BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry
   name: LayeredCharacterListEntry
   href: api/BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListEntry.html
@@ -2011,107 +2654,6 @@ references:
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenRepeatingText
   fullName: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenRepeatingText
   nameWithType: LoadingScreenRepeatingText
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode
-  name: SnapshotDisplayMode
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.html
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode
-  nameWithType: SnapshotDisplayMode
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.PreviewSprite
-  name: PreviewSprite
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.html#BlazerTech_CharacterManagement_CharacterCreator_SnapshotDisplayMode_PreviewSprite
-  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.PreviewSprite
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.PreviewSprite
-  nameWithType: SnapshotDisplayMode.PreviewSprite
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.Text
-  name: Text
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.html#BlazerTech_CharacterManagement_CharacterCreator_SnapshotDisplayMode_Text
-  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.Text
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.Text
-  nameWithType: SnapshotDisplayMode.Text
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.TextAndPreviewSprite
-  name: TextAndPreviewSprite
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.html#BlazerTech_CharacterManagement_CharacterCreator_SnapshotDisplayMode_TextAndPreviewSprite
-  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.TextAndPreviewSprite
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotDisplayMode.TextAndPreviewSprite
-  nameWithType: SnapshotDisplayMode.TextAndPreviewSprite
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry
-  name: SnapshotHistoryEntry
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.html
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry
-  nameWithType: SnapshotHistoryEntry
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.ApplyCharacterSnapshot
-  name: ApplyCharacterSnapshot()
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.html#BlazerTech_CharacterManagement_CharacterCreator_SnapshotHistoryEntry_ApplyCharacterSnapshot
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.ApplyCharacterSnapshot
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.ApplyCharacterSnapshot()
-  nameWithType: SnapshotHistoryEntry.ApplyCharacterSnapshot()
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.ApplyCharacterSnapshot*
-  name: ApplyCharacterSnapshot
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.html#BlazerTech_CharacterManagement_CharacterCreator_SnapshotHistoryEntry_ApplyCharacterSnapshot_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.ApplyCharacterSnapshot
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.ApplyCharacterSnapshot
-  nameWithType: SnapshotHistoryEntry.ApplyCharacterSnapshot
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Deactivate
-  name: Deactivate()
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.html#BlazerTech_CharacterManagement_CharacterCreator_SnapshotHistoryEntry_Deactivate
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Deactivate
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Deactivate()
-  nameWithType: SnapshotHistoryEntry.Deactivate()
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Deactivate*
-  name: Deactivate
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.html#BlazerTech_CharacterManagement_CharacterCreator_SnapshotHistoryEntry_Deactivate_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Deactivate
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Deactivate
-  nameWithType: SnapshotHistoryEntry.Deactivate
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.DisplayModeIsText
-  name: DisplayModeIsText()
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.html#BlazerTech_CharacterManagement_CharacterCreator_SnapshotHistoryEntry_DisplayModeIsText
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.DisplayModeIsText
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.DisplayModeIsText()
-  nameWithType: SnapshotHistoryEntry.DisplayModeIsText()
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.DisplayModeIsText*
-  name: DisplayModeIsText
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.html#BlazerTech_CharacterManagement_CharacterCreator_SnapshotHistoryEntry_DisplayModeIsText_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.DisplayModeIsText
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.DisplayModeIsText
-  nameWithType: SnapshotHistoryEntry.DisplayModeIsText
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Setup(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker,BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot)
-  name: Setup(CCMHistoryTracker, LayeredCharacterSnapshot)
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.html#BlazerTech_CharacterManagement_CharacterCreator_SnapshotHistoryEntry_Setup_BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryTracker_BlazerTech_CharacterManagement_Characters_LayeredCharacterSnapshot_
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Setup(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker,BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Setup(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker, BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot)
-  nameWithType: SnapshotHistoryEntry.Setup(CCMHistoryTracker, LayeredCharacterSnapshot)
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Setup*
-  name: Setup
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.html#BlazerTech_CharacterManagement_CharacterCreator_SnapshotHistoryEntry_Setup_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Setup
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Setup
-  nameWithType: SnapshotHistoryEntry.Setup
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Snapshot
-  name: Snapshot
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.html#BlazerTech_CharacterManagement_CharacterCreator_SnapshotHistoryEntry_Snapshot
-  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Snapshot
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Snapshot
-  nameWithType: SnapshotHistoryEntry.Snapshot
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Snapshot*
-  name: Snapshot
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.html#BlazerTech_CharacterManagement_CharacterCreator_SnapshotHistoryEntry_Snapshot_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Snapshot
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.Snapshot
-  nameWithType: SnapshotHistoryEntry.Snapshot
-- uid: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.displayMode
-  name: displayMode
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.html#BlazerTech_CharacterManagement_CharacterCreator_SnapshotHistoryEntry_displayMode
-  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.displayMode
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.SnapshotHistoryEntry.displayMode
-  nameWithType: SnapshotHistoryEntry.displayMode
 - uid: BlazerTech.CharacterManagement.Characters
   name: BlazerTech.CharacterManagement.Characters
   href: api/BlazerTech.CharacterManagement.Characters.html
@@ -4894,6 +5436,19 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayer
   nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayer
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
+  name: BaseLayerDefaultOptionIndex
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterCreatorConfig_BaseLayerDefaultOptionIndex
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
+  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex*
+  name: BaseLayerDefaultOptionIndex
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterCreatorConfig_BaseLayerDefaultOptionIndex_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
+  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOptions
   name: CharacterPreviewAnimationOptions
   href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterCreatorConfig_CharacterPreviewAnimationOptions
@@ -7136,6 +7691,9 @@ references:
 - uid: landing
   name: BlazerTech Character Management System
   href: index.html
+- uid: layer-selector-setup
+  name: Layer Selector Setup
+  href: docs/character-creator/layer-selectors/layer-selector-setup.html
 - uid: layered-character-type
   name: Layered Character Type
   href: docs/layered-character-type.html

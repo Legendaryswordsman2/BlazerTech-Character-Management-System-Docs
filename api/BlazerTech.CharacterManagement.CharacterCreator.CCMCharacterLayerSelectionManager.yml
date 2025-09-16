@@ -1,0 +1,511 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
+  id: CCMCharacterLayerSelectionManager
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  children:
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.Awake
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.OnSelectedCharacterLayerChanged
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer
+  langs:
+  - csharp
+  - vb
+  name: CCMCharacterLayerSelectionManager
+  nameWithType: CCMCharacterLayerSelectionManager
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
+  type: Class
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CCMCharacterLayerSelectionManager
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: >-
+      [DisallowMultipleComponent]
+
+      public class CCMCharacterLayerSelectionManager : CCMBase
+    content.vb: >-
+      <DisallowMultipleComponent>
+
+      Public Class CCMCharacterLayerSelectionManager Inherits CCMBase
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase
+  inheritedMembers:
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.referenceHandler
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.characterCreationMenuManager
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSet
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuDisabled
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCCReferenceHandler
+  attributes:
+  - type: UnityEngine.DisallowMultipleComponent
+    ctor: UnityEngine.DisallowMultipleComponent.#ctor
+    arguments: []
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer
+  id: SelectedLayer
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
+  langs:
+  - csharp
+  - vb
+  name: SelectedLayer
+  nameWithType: CCMCharacterLayerSelectionManager.SelectedLayer
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer
+  type: Property
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: SelectedLayer
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public CharacterLayer SelectedLayer { get; set; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayer
+    content.vb: Public Property SelectedLayer As CharacterLayer
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.OnSelectedCharacterLayerChanged
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.OnSelectedCharacterLayerChanged
+  id: OnSelectedCharacterLayerChanged
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
+  langs:
+  - csharp
+  - vb
+  name: OnSelectedCharacterLayerChanged
+  nameWithType: CCMCharacterLayerSelectionManager.OnSelectedCharacterLayerChanged
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.OnSelectedCharacterLayerChanged
+  type: Event
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: OnSelectedCharacterLayerChanged
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public event EventHandler<CharacterLayer> OnSelectedCharacterLayerChanged
+    return:
+      type: System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer}
+    content.vb: Public Event OnSelectedCharacterLayerChanged As EventHandler(Of CharacterLayer)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.Awake
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.Awake
+  id: Awake
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
+  langs:
+  - csharp
+  - vb
+  name: Awake()
+  nameWithType: CCMCharacterLayerSelectionManager.Awake()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.Awake()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Awake
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  example: []
+  syntax:
+    content: protected override void Awake()
+    content.vb: Protected Overrides Sub Awake()
+  overridden: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.Awake
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.Awake*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled
+  id: CharacterCreationMenuEnabled
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
+  langs:
+  - csharp
+  - vb
+  name: CharacterCreationMenuEnabled()
+  nameWithType: CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterCreationMenuEnabled
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  summary: Called after the Character Creation Menu is enabled.
+  example: []
+  syntax:
+    content: protected override void CharacterCreationMenuEnabled()
+    content.vb: Protected Overrides Sub CharacterCreationMenuEnabled()
+  overridden: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuEnabled
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled*
+references:
+- uid: BlazerTech.CharacterManagement.CharacterCreator
+  commentId: N:BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.CharacterCreator
+  nameWithType: BlazerTech.CharacterManagement.CharacterCreator
+  fullName: BlazerTech.CharacterManagement.CharacterCreator
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMBase
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html
+  name: CCMBase
+  nameWithType: CCMBase
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.referenceHandler
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.referenceHandler
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_referenceHandler
+  name: referenceHandler
+  nameWithType: CCMBase.referenceHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.referenceHandler
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.characterCreationMenuManager
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.characterCreationMenuManager
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_characterCreationMenuManager
+  name: characterCreationMenuManager
+  nameWithType: CCMBase.characterCreationMenuManager
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.characterCreationMenuManager
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSet
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSet
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_coreReferencesSet
+  name: coreReferencesSet
+  nameWithType: CCMBase.coreReferencesSet
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.coreReferencesSet
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuDisabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuDisabled
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuDisabled
+  name: CharacterCreationMenuDisabled()
+  nameWithType: CCMBase.CharacterCreationMenuDisabled()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuDisabled()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuDisabled
+    name: CharacterCreationMenuDisabled
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuDisabled
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuDisabled
+    name: CharacterCreationMenuDisabled
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuDisabled
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuBeforeDisabled
+  name: CharacterCreationMenuBeforeDisabled()
+  nameWithType: CCMBase.CharacterCreationMenuBeforeDisabled()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
+    name: CharacterCreationMenuBeforeDisabled
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuBeforeDisabled
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
+    name: CharacterCreationMenuBeforeDisabled
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuBeforeDisabled
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationMenuManagerReference
+  name: GetCharacterCreationMenuManagerReference()
+  nameWithType: CCMBase.GetCharacterCreationMenuManagerReference()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
+    name: GetCharacterCreationMenuManagerReference
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationMenuManagerReference
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
+    name: GetCharacterCreationMenuManagerReference
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCharacterCreationMenuManagerReference
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCCReferenceHandler
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCCReferenceHandler
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCCReferenceHandler
+  name: GetCCReferenceHandler()
+  nameWithType: CCMBase.GetCCReferenceHandler()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCCReferenceHandler()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCCReferenceHandler
+    name: GetCCReferenceHandler
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCCReferenceHandler
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCCReferenceHandler
+    name: GetCCReferenceHandler
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_GetCCReferenceHandler
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerSelectionManager_SelectedLayer
+  name: SelectedLayer
+  nameWithType: CCMCharacterLayerSelectionManager.SelectedLayer
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayer
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayer
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayer.html
+  name: CharacterLayer
+  nameWithType: CharacterLayer
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayer
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer}
+  commentId: T:System.EventHandler{BlazerTech.CharacterManagement.Characters.CharacterLayer}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<CharacterLayer>
+  nameWithType: EventHandler<CharacterLayer>
+  fullName: System.EventHandler<BlazerTech.CharacterManagement.Characters.CharacterLayer>
+  nameWithType.vb: EventHandler(Of CharacterLayer)
+  fullName.vb: System.EventHandler(Of BlazerTech.CharacterManagement.Characters.CharacterLayer)
+  name.vb: EventHandler(Of CharacterLayer)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer
+    name: CharacterLayer
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer
+    name: CharacterLayer
+    href: BlazerTech.CharacterManagement.Characters.CharacterLayer.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.Awake
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.Awake
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_Awake
+  name: Awake()
+  nameWithType: CCMBase.Awake()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.Awake()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.Awake
+    name: Awake
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.Awake
+    name: Awake
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_Awake
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.Awake*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.Awake
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerSelectionManager_Awake
+  name: Awake
+  nameWithType: CCMCharacterLayerSelectionManager.Awake
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.Awake
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuEnabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuEnabled
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuEnabled
+  name: CharacterCreationMenuEnabled()
+  nameWithType: CCMBase.CharacterCreationMenuEnabled()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuEnabled()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuEnabled
+    name: CharacterCreationMenuEnabled
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuEnabled
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuEnabled
+    name: CharacterCreationMenuEnabled
+    href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuEnabled
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerSelectionManager_CharacterCreationMenuEnabled
+  name: CharacterCreationMenuEnabled
+  nameWithType: CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled

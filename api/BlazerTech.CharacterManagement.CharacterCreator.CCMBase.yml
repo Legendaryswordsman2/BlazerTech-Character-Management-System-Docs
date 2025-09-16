@@ -45,13 +45,15 @@ items:
   - UnityEngine.MonoBehaviour
   derivedClasses:
   - BlazerTech.CharacterManagement.CharacterCreator.CCMAnimationPreviewSwitcherManager
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerOptionSelectionManager
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterPreviewHandler
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMControlledRandomizationHandler
   - BlazerTech.CharacterManagement.CharacterCreator.CCMDisplayNameInputFieldHandler
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel
   - BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
   - BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMUndoRedoButtonHandler
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.referenceHandler
   commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.referenceHandler
   id: referenceHandler

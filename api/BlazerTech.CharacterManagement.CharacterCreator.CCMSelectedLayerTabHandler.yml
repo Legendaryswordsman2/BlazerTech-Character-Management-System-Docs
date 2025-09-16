@@ -1,33 +1,34 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList
-  id: CCMSnapshotHistoryList
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler
+  id: CCMSelectedLayerTabHandler
   parent: BlazerTech.CharacterManagement.CharacterCreator
   children:
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuEnabled
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.RefreshLayerSelector
   langs:
   - csharp
   - vb
-  name: CCMSnapshotHistoryList
-  nameWithType: CCMSnapshotHistoryList
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList
+  name: CCMSelectedLayerTabHandler
+  nameWithType: CCMSelectedLayerTabHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMSnapshotHistoryList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CCMSnapshotHistoryList
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMSnapshotHistoryList.cs
-    startLine: 10
+    id: CCMSelectedLayerTabHandler
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
+    startLine: 4
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
-    content: 'public class CCMSnapshotHistoryList : CCMBase'
-    content.vb: Public Class CCMSnapshotHistoryList Inherits CCMBase
+    content: 'public class CCMSelectedLayerTabHandler : CCMBase'
+    content.vb: Public Class CCMSelectedLayerTabHandler Inherits CCMBase
   inheritance:
   - System.Object
   - UnityEngine.Object
@@ -43,25 +44,25 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuDisabled
   - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
   - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCCReferenceHandler
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuEnabled
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuEnabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled
   id: CharacterCreationMenuEnabled
-  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler
   langs:
   - csharp
   - vb
   name: CharacterCreationMenuEnabled()
-  nameWithType: CCMSnapshotHistoryList.CharacterCreationMenuEnabled()
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuEnabled()
+  nameWithType: CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled()
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMSnapshotHistoryList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuEnabled
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMSnapshotHistoryList.cs
-    startLine: 36
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
+    startLine: 10
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -71,26 +72,52 @@ items:
     content: protected override void CharacterCreationMenuEnabled()
     content.vb: Protected Overrides Sub CharacterCreationMenuEnabled()
   overridden: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuEnabled
-  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuEnabled*
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.RefreshLayerSelector
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.RefreshLayerSelector
+  id: RefreshLayerSelector
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler
+  langs:
+  - csharp
+  - vb
+  name: RefreshLayerSelector()
+  nameWithType: CCMSelectedLayerTabHandler.RefreshLayerSelector()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.RefreshLayerSelector()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: RefreshLayerSelector
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void RefreshLayerSelector()
+    content.vb: Public Sub RefreshLayerSelector()
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.RefreshLayerSelector*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled
   id: CharacterCreationMenuBeforeDisabled
-  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler
   langs:
   - csharp
   - vb
   name: CharacterCreationMenuBeforeDisabled()
-  nameWithType: CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled()
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled()
+  nameWithType: CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled()
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMSnapshotHistoryList.cs
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuBeforeDisabled
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMSnapshotHistoryList.cs
-    startLine: 156
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
+    startLine: 24
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -100,7 +127,7 @@ items:
     content: protected override void CharacterCreationMenuBeforeDisabled()
     content.vb: Protected Overrides Sub CharacterCreationMenuBeforeDisabled()
   overridden: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
-  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled*
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled*
 references:
 - uid: BlazerTech.CharacterManagement.CharacterCreator
   commentId: N:BlazerTech.CharacterManagement.CharacterCreator
@@ -307,12 +334,18 @@ references:
     href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuEnabled
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuEnabled*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuEnabled
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.html#BlazerTech_CharacterManagement_CharacterCreator_CCMSnapshotHistoryList_CharacterCreationMenuEnabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMSelectedLayerTabHandler_CharacterCreationMenuEnabled
   name: CharacterCreationMenuEnabled
-  nameWithType: CCMSnapshotHistoryList.CharacterCreationMenuEnabled
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuEnabled
+  nameWithType: CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuEnabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.RefreshLayerSelector*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.RefreshLayerSelector
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMSelectedLayerTabHandler_RefreshLayerSelector
+  name: RefreshLayerSelector
+  nameWithType: CCMSelectedLayerTabHandler.RefreshLayerSelector
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.RefreshLayerSelector
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
   commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
   parent: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
@@ -332,9 +365,9 @@ references:
     href: BlazerTech.CharacterManagement.CharacterCreator.CCMBase.html#BlazerTech_CharacterManagement_CharacterCreator_CCMBase_CharacterCreationMenuBeforeDisabled
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.html#BlazerTech_CharacterManagement_CharacterCreator_CCMSnapshotHistoryList_CharacterCreationMenuBeforeDisabled
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMSelectedLayerTabHandler_CharacterCreationMenuBeforeDisabled
   name: CharacterCreationMenuBeforeDisabled
-  nameWithType: CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSnapshotHistoryList.CharacterCreationMenuBeforeDisabled
+  nameWithType: CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler.CharacterCreationMenuBeforeDisabled

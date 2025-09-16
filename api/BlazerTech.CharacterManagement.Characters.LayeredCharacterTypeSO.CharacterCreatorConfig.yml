@@ -6,6 +6,7 @@ items:
   parent: BlazerTech.CharacterManagement.Characters
   children:
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayer
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewAnimationOptions
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewController
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.CharacterPreviewFrameIndex
@@ -162,6 +163,35 @@ items:
       type: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
     content.vb: Public Property BaseLayer As CharacterLayerDefinitionSO
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayer*
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
+  commentId: P:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
+  id: BaseLayerDefaultOptionIndex
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig
+  langs:
+  - csharp
+  - vb
+  name: BaseLayerDefaultOptionIndex
+  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
+  type: Property
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: BaseLayerDefaultOptionIndex
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
+    startLine: 161
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public int BaseLayerDefaultOptionIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property BaseLayerDefaultOptionIndex As Integer
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex*
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewFrameWidth
   commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.PreviewFrameWidth
   id: PreviewFrameWidth
@@ -407,6 +437,12 @@ references:
   name: CharacterLayerDefinitionSO
   nameWithType: CharacterLayerDefinitionSO
   fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_CharacterCreatorConfig_BaseLayerDefaultOptionIndex
+  name: BaseLayerDefaultOptionIndex
+  nameWithType: LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig.BaseLayerDefaultOptionIndex
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

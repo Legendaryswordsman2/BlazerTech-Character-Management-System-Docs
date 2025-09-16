@@ -1,0 +1,344 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry
+  id: HistoryPanelEntry
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  children:
+  - BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.ApplyCharacterSnapshot
+  - BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Deactivate
+  - BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.DisplayMode
+  - BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Setup(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker,BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot)
+  - BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Snapshot
+  langs:
+  - csharp
+  - vb
+  name: HistoryPanelEntry
+  nameWithType: HistoryPanelEntry
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry
+  type: Class
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/HistoryPanelEntry.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: HistoryPanelEntry
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/HistoryPanelEntry.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: 'public class HistoryPanelEntry : MonoBehaviour'
+    content.vb: Public Class HistoryPanelEntry Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.DisplayMode
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.DisplayMode
+  id: DisplayMode
+  parent: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry
+  langs:
+  - csharp
+  - vb
+  name: DisplayMode
+  nameWithType: HistoryPanelEntry.DisplayMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.DisplayMode
+  type: Property
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/HistoryPanelEntry.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: DisplayMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/HistoryPanelEntry.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public ElementDisplayMode DisplayMode { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+    content.vb: Public Property DisplayMode As ElementDisplayMode
+  overload: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.DisplayMode*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Snapshot
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Snapshot
+  id: Snapshot
+  parent: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry
+  langs:
+  - csharp
+  - vb
+  name: Snapshot
+  nameWithType: HistoryPanelEntry.Snapshot
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Snapshot
+  type: Property
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/HistoryPanelEntry.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Snapshot
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/HistoryPanelEntry.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public LayeredCharacterSnapshot Snapshot { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+    content.vb: Public ReadOnly Property Snapshot As LayeredCharacterSnapshot
+  overload: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Snapshot*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Setup(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker,BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Setup(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker,BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot)
+  id: Setup(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker,BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot)
+  parent: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry
+  langs:
+  - csharp
+  - vb
+  name: Setup(CCMHistoryTracker, LayeredCharacterSnapshot)
+  nameWithType: HistoryPanelEntry.Setup(CCMHistoryTracker, LayeredCharacterSnapshot)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Setup(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker, BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot)
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/HistoryPanelEntry.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Setup
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/HistoryPanelEntry.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void Setup(CCMHistoryTracker historyTracker, LayeredCharacterSnapshot snapshot)
+    parameters:
+    - id: historyTracker
+      type: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
+    - id: snapshot
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+    content.vb: Public Sub Setup(historyTracker As CCMHistoryTracker, snapshot As LayeredCharacterSnapshot)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Setup*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Deactivate
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Deactivate
+  id: Deactivate
+  parent: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry
+  langs:
+  - csharp
+  - vb
+  name: Deactivate()
+  nameWithType: HistoryPanelEntry.Deactivate()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Deactivate()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/HistoryPanelEntry.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Deactivate
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/HistoryPanelEntry.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void Deactivate()
+    content.vb: Public Sub Deactivate()
+  overload: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Deactivate*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.ApplyCharacterSnapshot
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.ApplyCharacterSnapshot
+  id: ApplyCharacterSnapshot
+  parent: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry
+  langs:
+  - csharp
+  - vb
+  name: ApplyCharacterSnapshot()
+  nameWithType: HistoryPanelEntry.ApplyCharacterSnapshot()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.ApplyCharacterSnapshot()
+  type: Method
+  source:
+    remote:
+      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/HistoryPanelEntry.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: ApplyCharacterSnapshot
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/HistoryPanelEntry.cs
+    startLine: 134
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void ApplyCharacterSnapshot()
+    content.vb: Public Sub ApplyCharacterSnapshot()
+  overload: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.ApplyCharacterSnapshot*
+references:
+- uid: BlazerTech.CharacterManagement.CharacterCreator
+  commentId: N:BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.CharacterCreator
+  nameWithType: BlazerTech.CharacterManagement.CharacterCreator
+  fullName: BlazerTech.CharacterManagement.CharacterCreator
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.CharacterCreator
+    name: CharacterCreator
+    href: BlazerTech.CharacterManagement.CharacterCreator.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.DisplayMode*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.DisplayMode
+  href: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html#BlazerTech_CharacterManagement_CharacterCreator_HistoryPanelEntry_DisplayMode
+  name: DisplayMode
+  nameWithType: HistoryPanelEntry.DisplayMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.DisplayMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.html
+  name: ElementDisplayMode
+  nameWithType: ElementDisplayMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Snapshot*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Snapshot
+  href: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html#BlazerTech_CharacterManagement_CharacterCreator_HistoryPanelEntry_Snapshot
+  name: Snapshot
+  nameWithType: HistoryPanelEntry.Snapshot
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Snapshot
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot.html
+  name: LayeredCharacterSnapshot
+  nameWithType: LayeredCharacterSnapshot
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Setup*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Setup
+  href: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html#BlazerTech_CharacterManagement_CharacterCreator_HistoryPanelEntry_Setup_BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryTracker_BlazerTech_CharacterManagement_Characters_LayeredCharacterSnapshot_
+  name: Setup
+  nameWithType: HistoryPanelEntry.Setup
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Setup
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html
+  name: CCMHistoryTracker
+  nameWithType: CCMHistoryTracker
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Deactivate*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Deactivate
+  href: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html#BlazerTech_CharacterManagement_CharacterCreator_HistoryPanelEntry_Deactivate
+  name: Deactivate
+  nameWithType: HistoryPanelEntry.Deactivate
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.Deactivate
+- uid: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.ApplyCharacterSnapshot*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.ApplyCharacterSnapshot
+  href: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html#BlazerTech_CharacterManagement_CharacterCreator_HistoryPanelEntry_ApplyCharacterSnapshot
+  name: ApplyCharacterSnapshot
+  nameWithType: HistoryPanelEntry.ApplyCharacterSnapshot
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.ApplyCharacterSnapshot

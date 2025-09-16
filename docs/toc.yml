@@ -39,6 +39,8 @@
     href: character-creator/character-randomization.md
   - name: Layer Selectors
     items:
+      - name: Layer Selector Setup
+        href: character-creator/layer-selectors/layer-selector-setup.md
       - name: Dropdown Layer Selector
         href: character-creator/layer-selectors/dropdown-layer-selector.md
       - name: Carousel Layer Selector
