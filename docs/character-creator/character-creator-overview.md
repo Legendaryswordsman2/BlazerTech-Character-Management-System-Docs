@@ -4,56 +4,65 @@ uid: character-creator-overview
 
 # Character Creator
 
-The Character Creator is a modular system for creating a Character Creation Menu inside your game. Combine different parts together to create a menu you want.
+The **Character Creator** is a modular framework that makes the process of building a **Character Creation Menu** inside your game easy.  
+It's fully customizable--combine different UI element to create the exact design you want.
 
 ---
 
 ## Layer Selectors
 
-A layer selector is any UI that lets the user change a layer of the character. These selectors come in many shapes and size.
+A **Layer Selector** is any UI element that lets the player change a specific **layer** of a [Layered Character](xref:layered-character-type).  
+The following selector types are included.
 
-1. Dropdown Layer Selector - A dropdown containg all options for a single layer of the character.
-2. Carousel Layer Selector - Text showing the currently selected layer option and two arrows that let you scroll between the different options.
-3. Grid Layer Selector - A grid with each element containing a preview of the layer option. Clicking an element applies it.
-4. List Layer Selector - A list containg all options for a layer. Can optional also include a preview image. Clicking an element in the list applies it.
-5. Tab Layer Selector - This is meant to be used with another layer selector. When clicked it changes another pre-setup layer selector to the layer assigned to the tab layer selector.
+| Selector | Description |
+|----------|-------------|
+| **Dropdown** | Standard dropdown listing all options for a layer. |
+| **Carousel** | Displays the current option with arrows to cycle left/right through other layer options. |
+| **Grid** | A grid of preview thumbnails for each layer option. |
+| **List** | A vertical or horizontal list of options (optionally with preview images). |
+| **Tab** | Works alongside another selector. Clicking a tab switches which layer the other selector controls. |
 
 ---
 
 ## Character Preview
 
-A preview of the character you're editing in the character creation menu can be shown. The character preview contains the following options:
+The **Character Preview** shows the character currently being customized. Options include:
 
-- Static Sprite Preview - The simplest option. Displays a sprite defined in the Character Type which is automatically updated with the applied layers.
-- Animated Preview - An animator controller can be setup to show animations for the character preview.
-- Animation Swapping - If an animated preview is used; Additional animations can be defined in the Character Type and a set of buttons can be automatically generated allowing the user to switch between animations.
-- Rotate Character - Buttons can be added which when pressed will show different sizes of the character.
+- **Static Sprite Preview** – Displays the `preview sprite` defined the Character Type.
+- **Animated Preview** – Uses an Animator Controller to play character animations.
+- **Animation Swapping** – With animated previews, extra animations can be defined in the Character Type. buttons can be auto created for swapping between them.
+- **Rotate Character** – Add rotation buttons to view the character from different sides.
 
 ---
 
 ## Character History
 
-The CCM History Tracker component can be used to keep track of every change made to the character. each time a character layer is made a snapshot is made. The History Tracker can hold anywhere between 1-100 snapshots (Configurable) with the default being 30.
+The **CCM History Tracker** component records every change made in the Character Creator.  
+Each time a layer is modified, a **snapshot** is stored.
 
-Addiotnally the first snapshot created can be preserved so it won't be overitten when the snapshots cap is met.
+- **Snapshot Limit** – Configurable between **1–100** (default: 30).  
+- **Preserve First Snapshot** – Optionally prevent the first snapshot from being overwritten when the limit is reached.
 
-### Undo/Redo Support
+### Undo & Redo
 
-Buttons can be setup and use the CCM Undo Redo Button Handler component to communicate with the History Track and undo/redo changes.
+Use the **CCM Timeline Button Handler** component on a button to undo or redo changes on the **History Tracker** component.
 
 ### History Panels
 
-A history panel displays a list of all created snapshots and lets the user click on them to revert back to that version.
+A **History Panel** displays the list of snapshots recorded in the **History Tracker**. Players can click an entry to revert back to that version of the character.  
 
-Two versions of the the panel exists.
-1. Text Based - Each element contains text describing what was changed (Usually a vertical list)
-2. Sprite Based - A preview of the snapshot is shown in each entry making it easy to see what changed visually (Usually a horizontal list)
-3. Text and Sprite Based panels can be combined to display both text and sprites.
+| Panel Type | Description |
+|------------|-------------|
+| **Text Based**   | Each entry contains text describing what was changed (often in a vertical list). |
+| **Sprite Based** | Each entry shows a snapshot preview image (often in a horizontal list). |
+| **Hybrid** | Show both text and preview images in each entry. |
 
 ---
 
 ## Other Features
 
-- Mid Play character editing - the Character Creation Menu can be used while a character is already and it will automatically be updated when editing the same character in the Character Creation Menu.
-- Optioanl Display Name - A field can be added to the menu to allow the user to input a display name which can be shown for each character.
-- Reset Button - A reset button can be added to the menu which resets the character to the state it was in when the Character Creation Menu was first opened.
+- **Mid-Play Editing** – Characters already in use can be edited in the Character Creator. Changes apply immediately after saving.  
+- **Optional Display Name** – Add a name field so players can assign a display name to their character.  
+- **Reset Button** – Restore the character to the state it was in when the menu was first opened.  
+
+---
