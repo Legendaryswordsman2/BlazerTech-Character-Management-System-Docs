@@ -7670,6 +7670,9 @@ references:
 - uid: basic-concepts
   name: Basic Concepts
   href: docs/getting-started/basic-concepts.html
+- uid: carousel-layer-selector
+  name: Carousel Layer Selector
+  href: docs/character-creator/layer-selectors/carousel-layer-selector.html
 - uid: character-creator-overview
   name: Character Creator
   href: docs/character-creator/character-creator-overview.html
@@ -7688,6 +7691,12 @@ references:
 - uid: character-usage
   name: Character Usage
   href: docs/character-usage.html
+- uid: dropdown-layer-selector
+  name: Dropdown Layer Selector
+  href: docs/character-creator/layer-selectors/dropdown-layer-selector.html
+- uid: grid-layer-selector
+  name: Grid Layer Selector
+  href: docs/character-creator/layer-selectors/Grid-layer-selector.html
 - uid: landing
   name: BlazerTech Character Management System
   href: index.html
@@ -7697,6 +7706,12 @@ references:
 - uid: layered-character-type
   name: Layered Character Type
   href: docs/layered-character-type.html
+- uid: list-layer-selector
+  name: List Layer Selector
+  href: docs/character-creator/layer-selectors/list-layer-selector.html
+- uid: tab-layer-selector
+  name: Tab Layer Selector
+  href: docs/character-creator/layer-selectors/tab-layer-selector.html
 - uid: unified-character-type
   name: Unified Character Type
   href: docs/unified-character-type.html

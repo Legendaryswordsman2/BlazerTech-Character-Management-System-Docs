@@ -87,8 +87,8 @@
         <article data-uid="character-creator-overview">
 <h1 id="character-creator">Character Creator</h1>
 
-<p>The <strong>Character Creator</strong> is a modular framework that makes the process of building a <strong>Character Creation Menu</strong> inside your game easy.<br>
-It's fully customizable--combine different UI element to create the exact design you want.</p>
+<p>The <strong>Character Creator</strong> is a modular prefab based framework for building a <strong>Character Creation Menu</strong> inside your game.<br>
+It's fully customizable; combine and edit different prefabs to create the exact design you want.</p>
 <hr>
 <h2 id="layer-selectors">Layer Selectors</h2>
 <p>A <strong>Layer Selector</strong> is any UI element that lets the player change a specific <strong>layer</strong> of a <a class="xref" href="../layered-character-type.html">Layered Character</a>.<br>
@@ -96,29 +96,29 @@ The following selector types are included.</p>
 <table>
 <thead>
 <tr>
-<th>Selector</th>
+<th>Selector Type</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Dropdown</strong></td>
+<td><strong>Dropdown Selector</strong></td>
 <td>Standard dropdown listing all options for a layer.</td>
 </tr>
 <tr>
-<td><strong>Carousel</strong></td>
+<td><strong>Carousel Selector</strong></td>
 <td>Displays the current option with arrows to cycle left/right through other layer options.</td>
 </tr>
 <tr>
-<td><strong>Grid</strong></td>
+<td><strong>Grid Selector</strong></td>
 <td>A grid of preview thumbnails for each layer option.</td>
 </tr>
 <tr>
-<td><strong>List</strong></td>
+<td><strong>List Selector</strong></td>
 <td>A vertical or horizontal list of options (optionally with preview images).</td>
 </tr>
 <tr>
-<td><strong>Tab</strong></td>
+<td><strong>Tab Selector</strong></td>
 <td>Works alongside another selector. Clicking a tab switches which layer the other selector controls.</td>
 </tr>
 </tbody>
@@ -127,7 +127,7 @@ The following selector types are included.</p>
 <h2 id="character-preview">Character Preview</h2>
 <p>The <strong>Character Preview</strong> shows the character currently being customized. Options include:</p>
 <ul>
-<li><strong>Static Sprite Preview</strong> – Displays the <code>preview sprite</code> defined the Character Type.</li>
+<li><strong>Static Sprite Preview</strong> – Displays the <code>preview sprite</code> defined in the Character Type.</li>
 <li><strong>Animated Preview</strong> – Uses an Animator Controller to play character animations.</li>
 <li><strong>Animation Swapping</strong> – With animated previews, extra animations can be defined in the Character Type. buttons can be auto created for swapping between them.</li>
 <li><strong>Rotate Character</strong> – Add rotation buttons to view the character from different sides.</li>

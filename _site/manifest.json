@@ -2061,6 +2061,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/dropdown-layer-selector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/dropdown-layer-selector.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {

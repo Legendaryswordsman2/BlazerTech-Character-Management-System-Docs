@@ -57,7 +57,7 @@
         href: character-creator/history/history-tracking.md
       - name: History Panels
         href: character-creator/history/history-panels.md
-      - name: History Undo Redo
+      - name: History Undo/Redo
         href: character-creator/history/history-undo-redo.md
 
   - name: Advanced

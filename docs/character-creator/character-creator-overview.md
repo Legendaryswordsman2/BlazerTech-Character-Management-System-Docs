@@ -4,8 +4,8 @@ uid: character-creator-overview
 
 # Character Creator
 
-The **Character Creator** is a modular framework that makes the process of building a **Character Creation Menu** inside your game easy.  
-It's fully customizable--combine different UI element to create the exact design you want.
+The **Character Creator** is a modular prefab based framework for building a **Character Creation Menu** inside your game.  
+It's fully customizable; combine and edit different prefabs to create the exact design you want.
 
 ---
 
@@ -14,13 +14,13 @@ It's fully customizable--combine different UI element to create the exact design
 A **Layer Selector** is any UI element that lets the player change a specific **layer** of a [Layered Character](xref:layered-character-type).  
 The following selector types are included.
 
-| Selector | Description |
+| Selector Type | Description |
 |----------|-------------|
-| **Dropdown** | Standard dropdown listing all options for a layer. |
-| **Carousel** | Displays the current option with arrows to cycle left/right through other layer options. |
-| **Grid** | A grid of preview thumbnails for each layer option. |
-| **List** | A vertical or horizontal list of options (optionally with preview images). |
-| **Tab** | Works alongside another selector. Clicking a tab switches which layer the other selector controls. |
+| **Dropdown Selector** | Standard dropdown listing all options for a layer. |
+| **Carousel Selector** | Displays the current option with arrows to cycle left/right through other layer options. |
+| **Grid Selector** | A grid of preview thumbnails for each layer option. |
+| **List Selector** | A vertical or horizontal list of options (optionally with preview images). |
+| **Tab Selector** | Works alongside another selector. Clicking a tab switches which layer the other selector controls. |
 
 ---
 
@@ -28,7 +28,7 @@ The following selector types are included.
 
 The **Character Preview** shows the character currently being customized. Options include:
 
-- **Static Sprite Preview** – Displays the `preview sprite` defined the Character Type.
+- **Static Sprite Preview** – Displays the `preview sprite` defined in the Character Type.
 - **Animated Preview** – Uses an Animator Controller to play character animations.
 - **Animation Swapping** – With animated previews, extra animations can be defined in the Character Type. buttons can be auto created for swapping between them.
 - **Rotate Character** – Add rotation buttons to view the character from different sides.
