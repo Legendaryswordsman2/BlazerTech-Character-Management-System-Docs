@@ -27,7 +27,7 @@ Pre-setup prefabs that already include a
 [`CCMCharacterLayerSelectionManager`](xref:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager).  
 These will work out of the box without any extra setup required.
 
-- **Dropdown Selectors [Auto Create]** – Instantiates dropdown selectors at runtime.  
+- **Dropdown Selectors [Auto Create]** – Instantiates dropdown selectors at runtime. Uses a Grid Layout Group component to sort them.  
 - **Dropdown Selectors [Initialize Existing]** – Uses dropdown selectors already present in the prefab hierarchy.  
 
 ---

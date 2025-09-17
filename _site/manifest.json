@@ -2062,10 +2062,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/carousel-layer-selector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/carousel-layer-selector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/dropdown-layer-selector.png",
       "output": {
         "resource": {
           "relative_path": "images/dropdown-layer-selector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/grid-layer-selector-variant-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/grid-layer-selector-variant-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/grid-layer-selector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/grid-layer-selector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/list-layer-selector-variant-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/list-layer-selector-variant-2.png"
         }
       },
       "version": ""

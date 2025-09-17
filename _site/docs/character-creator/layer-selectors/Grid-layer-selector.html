@@ -87,6 +87,43 @@
         <article data-uid="grid-layer-selector">
 <h1 id="grid-layer-selector">Grid Layer Selector</h1>
 
+<h2 id="overview">Overview</h2>
+<p>A <strong>Grid Layer Selector</strong> contains a grid where each element in the grid represents an option of the assigned character layer. When an element is selected it will be applied to the character immediately.</p>
+<p><img src="/images/grid-layer-selector.png" alt="Grid Layer Selector">
+<img src="/images/grid-layer-selector-variant-2.png" alt="Grid Layer Selector"></p>
+<hr>
+<h2 id="prefabs">Prefabs</h2>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Location: <strong>Prefabs &gt; Character Creator &gt; Layer Selectors &gt; Grid Selector</strong></p>
+</div>
+<h3 id="layer-selector-prefabs">Layer Selector Prefabs</h3>
+<ul>
+<li><strong>Layer Grid Selector [Sprite]</strong> – Most common grid selector. Each element in the grid is displayed as a sprite.</li>
+<li><strong>Layer Grid Selector [Text]</strong> – Each element in the grid is displayed as text.</li>
+<li><strong>Layer Grid Selector [Sprite + Text]</strong> - Hybrid. Each element in the grid is displayed as both sprite and text.</li>
+<li><strong>Layer Grid Selector [Vertical + Title]</strong> – Grid is vertical &amp; includes a title with the name of the assigned layer at the top.</li>
+</ul>
+<h3 id="pre-setup-prefabs">Pre-Setup Prefabs</h3>
+<p>Pre-setup prefabs that already include a<br>
+<a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html"><code>CCMCharacterLayerSelectionManager</code></a>.<br>
+These will work out of the box without any extra setup required.</p>
+<ul>
+<li><strong>Grid Selectors [Auto Create]</strong> – Instantiates grid selectors [sprite] at runtime. Uses a Horizontal Layout Group component to sort them.</li>
+<li><strong>Grid Selectors [Initialize Existing]</strong> – Uses grid selectors already present in the prefab hierarchy.</li>
+</ul>
+<hr>
+<h2 id="customization">Customization</h2>
+<ul>
+<li><strong>Names</strong> – If grid elements have a display mode of text they can use either raw spritesheet names or cleaned up names. Toggleable in the Character Creator Settings for each Character Type.</li>
+<li><strong>Styling</strong> everything can be freely modified (Change sprites, fonts, colors, etc) including the grid and individual element backgrounds.</li>
+</ul>
+<hr>
+<h2 id="limitations">Limitations</h2>
+<ul>
+<li>The grid can be quite big and clunky at times. Works best when used with a
+<a class="xref" href="tab-layer-selector.html">Tab Layer Selector</a>.</li>
+</ul>
 
 </article>
 
