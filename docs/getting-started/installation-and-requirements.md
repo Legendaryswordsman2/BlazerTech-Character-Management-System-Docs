@@ -41,5 +41,5 @@ Here's some things to do after installing the **BlazerTech Character Management 
 1. **Play sample scenes** - Go into the **Samples** folder and run some of the sample scenes to make sure everything is functioning properly.
 2. **Create your own character type** - make a new character type to use your own spritesheets or third party ones.  
 [🔗 Read More → Character Types](xref:character-types)
-3. **Implement your own in-game character creation menu**.  
+3. **Implement a character creation menu** - Use the modular Character Creator System to create your own in-game character creation menu..  
 [🔗 Read More → Character Creator Overview](xref:character-creator-overview)
