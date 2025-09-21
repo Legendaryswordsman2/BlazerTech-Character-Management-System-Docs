@@ -2112,10 +2112,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/list-layer-selector-variant-2.png",
+      "source_relative_path": "images/list-layer-selector.png",
       "output": {
         "resource": {
-          "relative_path": "images/list-layer-selector-variant-2.png"
+          "relative_path": "images/list-layer-selector.png"
         }
       },
       "version": ""

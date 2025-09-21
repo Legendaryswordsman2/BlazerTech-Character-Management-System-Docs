@@ -32,6 +32,14 @@ These will work out of the box without any extra setup required.
 - **Grid Selectors [Auto Create]** – Instantiates grid selectors [sprite] at runtime. Uses a Horizontal Layout Group component to sort them.  
 - **Grid Selectors [Initialize Existing]** – Uses grid selectors already present in the prefab hierarchy.  
 
+### Grid Entries
+A grid entry is referenced in a Layer Grid Selector and defines how each entry in the grid looks and functions.
+They live in the **/Grid Entries subfolder**.  
+The following are pre-created entries that can be used in any **Layer Grid Selector**:
+1. **Layer Option Grid Element [Sprite]** - Displays only a sprite preview of what the layer option looks like.
+2. **Layer Option Grid Element [Text]** - Displays only text containing the name of the assigned layer option.
+3. **Layer Option Grid Element [Text + Sprite]** Displays text containing the name of the assigned layer option & a preview of what the layer option looks like.
+
 ---
 
 ## Customization
@@ -43,5 +51,5 @@ These will work out of the box without any extra setup required.
 
 ## Limitations
 
-- The grid can be quite big and clunky at times. Works best when used with a
-  [Tab Layer Selector](xref:tab-layer-selector).
+- The grid can be quite big and clunky at times. Works best when used with a  
+[Tab Layer Selector](xref:tab-layer-selector).
