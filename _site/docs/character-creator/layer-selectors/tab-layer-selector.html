@@ -87,6 +87,46 @@
         <article data-uid="tab-layer-selector">
 <h1 id="tab-layer-selector">Tab Layer Selector</h1>
 
+<p>A <strong>Tab Layer Selector</strong> won't do much on it's own. It must be paired with another <strong>Layer Selector</strong>. When a Tab Layer Selector is pressed it will change the selected layer in the <code>CCMCharacterLayerSelectionManager</code> which can then be used to change the assigned layer of another selector.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Tab Layer Selector</strong> was designed to work with <strong>Grid &amp; List Layer Selectors</strong> originally but can work with any <strong>Layer Selector</strong>.</p>
+</div>
+<p><img src="/images/tab-layer-selector.png" alt="Tab Layer Selector"></p>
+<hr>
+<h2 id="prefabs">Prefabs</h2>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Location: <strong>Prefabs &gt; Character Creator &gt; Layer Selectors &gt; Tab Selector</strong></p>
+</div>
+<h3 id="layer-selector-prefabs">Layer Selector Prefabs</h3>
+<ul>
+<li><strong>Layer Tab Selector</strong> – Basic tab selector (Just a button).</li>
+</ul>
+<h3 id="pre-setup-prefabs">Pre-Setup Prefabs</h3>
+<p>Pre-setup prefabs that already include a<br>
+<a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html"><code>CCMCharacterLayerSelectionManager</code></a>.<br>
+These will work out of the box without any extra setup required.</p>
+<ul>
+<li><strong>Dropdown Selectors [Initialize Existing]</strong> – Uses tab selectors already present in the prefab hierarchy.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>No [Auto Create] variant is available for tab layer selectors because they require a reference to the <code>CCMCharacterLayerSelectionManager</code> which must be set manually. This means they cannot be created automatically at runtime.</p>
+</div>
+<hr>
+<h2 id="setting-up-the-second-layer-selector">Setting up the second Layer Selector</h2>
+<p>The <code>CCMSelectedlayerTabHandler</code> component can be used to change the assigned layer of another selector to the one selected in the <code>CCMCharacterLayerSelectionManager</code>.<br>
+It takes two references:</p>
+<ol>
+<li><strong>Character Layer Selection Manager</strong> - Used to detect when the selected layer has been changed.</li>
+<li><strong>Layer Selector</strong> - Any type of layer selector can be used. It will automatically be updated to use the layer selected in the <code>CCMCharacterLayerSelectionManager</code>.</li>
+</ol>
+<h2 id="customization">Customization</h2>
+<ul>
+<li><strong>Styling</strong> The tab layer selector can be freely modified (Change background sprite, font, colors, etc).</li>
+</ul>
+<hr>
 
 </article>
 
