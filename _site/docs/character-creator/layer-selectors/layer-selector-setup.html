@@ -90,29 +90,27 @@
 <p>Not sure what a <strong>Layer Selector</strong> is?<br>
 <a class="xref" href="../character-creator-overview.html#layer-selectors">Read More → Layer Selectors</a></p>
 <hr>
-<h2 id="overview">Overview</h2>
+<h2 id="character-layer-selection-manager">Character Layer Selection Manager</h2>
 <p>A <strong>Layer Selector</strong> cannot function on its own.<br>
 The most common way to use Layer Selectors is through the<br>
 <a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html"><code>CCMCharacterLayerSelectionManager</code></a> component.</p>
 <p>This manager is responsible for connecting UI Layer Selectors to the<br>
 <a class="xref" href="../character-creator-overview.html">Character Creation Menu</a>.</p>
-<hr>
-<h2 id="initialization-modes">Initialization Modes</h2>
-<p>The <code>CCMCharacterLayerSelectionManager</code> supports two initialization modes:</p>
-<h3 id="1-create-new">1. Create New</h3>
+<h3 id="initialization-modes">Initialization Modes</h3>
+<p>The <strong>Character Layer Selection Manager</strong> supports two initialization modes:</p>
+<h4 id="1-auto-create">1. Auto Create</h4>
 <ul>
 <li>At runtime, the manager will <strong>instantiate new layer selectors</strong> for each character layer.</li>
 <li>Requires assigning a <strong>Character Layer Selector Prefab</strong>.</li>
-<li>Each layer selector instance is linked automatically to the correct layer.</li>
+<li>Each layer selector instance is linked automatically to a layer.</li>
 </ul>
-<h3 id="2-initialize-existing">2. Initialize Existing</h3>
+<h4 id="2-initialize-existing">2. Initialize Existing</h4>
 <ul>
 <li>Use <strong>pre-existing layer selectors</strong> already placed in the scene.</li>
 <li>Each selector is initialized with a character layer at runtime.</li>
 <li>Extra selectors (more than the number of layers) can optionally be <strong>hidden</strong> or <strong>disabled</strong>.</li>
 </ul>
-<hr>
-<h2 id="layer-selector-parent">Layer Selector Parent</h2>
+<h3 id="layer-selector-parent">Layer Selector Parent</h3>
 <p>Regardless of the initialization mode, a <strong>Layer Selector Parent</strong> is required:</p>
 <ul>
 <li>This should be the <strong>parent GameObject</strong> that contains all layer selectors.</li>
@@ -134,17 +132,18 @@ Contains the core Layer Selector prefab and any variant prefabs.</p>
 </li>
 <li><p><strong>Pre-Setup Folder</strong><br>
 Contains prefabs that already include a configured
-<a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html"><code>CCMCharacterLayerSelectionManager</code></a>.<br>
+<a href="#character-layer-selection-manager">Character Layer Selection Manager</a>.<br>
 Two versions are provided:</p>
 <ol>
-<li><strong>Create New</strong> – Instantiates Layer Selectors at runtime.</li>
+<li><strong>Auto Create</strong> – Instantiates Layer Selectors at runtime.</li>
 <li><strong>Initialize Existing</strong> – Uses Layer Selectors already present in the prefab hierarchy.</li>
 </ol>
 </li>
 </ul>
 <p>This makes it easy to either drop in a ready-to-use prefab or build a custom setup.</p>
 <hr>
-<h2 id="example-setup">Example Setup</h2>
+<h2 id="character-layer-selection-manager-setup">Character Layer Selection Manager Setup</h2>
+<p>If you want to setup a <strong>Character Layer Selection Manager</strong> yourself without using a prefab follow these steps:</p>
 <ol>
 <li>Add the <code>CCMCharacterLayerSelectionManager</code> component to your UI object.</li>
 <li>Assign the <strong>Layer Selector Parent</strong>.</li>

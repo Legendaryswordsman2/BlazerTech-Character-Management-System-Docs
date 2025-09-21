@@ -23,8 +23,7 @@ When opened, it displays a list of all available options for the assigned charac
 - **Layer Dropdown Selector [+Randomize]** – Includes a randomize button next to the dropdown.  
 
 ### Pre-Setup Prefabs
-Pre-setup prefabs that already include a  
-[`CCMCharacterLayerSelectionManager`](xref:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager).  
+Pre-setup prefabs already include a [Character Layer Selection Manager](xref:layer-selector-setup#character-layer-selection-manager).  
 These will work out of the box without any extra setup required.
 
 - **Dropdown Selectors [Auto Create]** – Instantiates dropdown selectors at runtime. Uses a Grid Layout Group component to sort them.  

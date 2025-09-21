@@ -9,7 +9,7 @@ Not sure what a **Layer Selector** is?
 
 ---
 
-## Overview
+## Character Layer Selection Manager
 
 A **Layer Selector** cannot function on its own.  
 The most common way to use Layer Selectors is through the  
@@ -18,25 +18,21 @@ The most common way to use Layer Selectors is through the
 This manager is responsible for connecting UI Layer Selectors to the  
 [Character Creation Menu](xref:character-creator-overview).
 
----
+### Initialization Modes
 
-## Initialization Modes
+The **Character Layer Selection Manager** supports two initialization modes:
 
-The `CCMCharacterLayerSelectionManager` supports two initialization modes:
-
-### 1. Create New
+#### 1. Auto Create
 - At runtime, the manager will **instantiate new layer selectors** for each character layer.  
 - Requires assigning a **Character Layer Selector Prefab**.  
-- Each layer selector instance is linked automatically to the correct layer.  
+- Each layer selector instance is linked automatically to a layer.  
 
-### 2. Initialize Existing
+#### 2. Initialize Existing
 - Use **pre-existing layer selectors** already placed in the scene.  
 - Each selector is initialized with a character layer at runtime.  
 - Extra selectors (more than the number of layers) can optionally be **hidden** or **disabled**.  
 
----
-
-## Layer Selector Parent
+### Layer Selector Parent
 
 Regardless of the initialization mode, a **Layer Selector Parent** is required:
 
@@ -60,17 +56,17 @@ Each Layer Selector exists as a prefab and is organized into its own folder with
 
 - **Pre-Setup Folder**  
   Contains prefabs that already include a configured
-[`CCMCharacterLayerSelectionManager`](xref:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager).  
+[Character Layer Selection Manager](#character-layer-selection-manager).  
   Two versions are provided:  
-  1. **Create New** – Instantiates Layer Selectors at runtime.  
+  1. **Auto Create** – Instantiates Layer Selectors at runtime.  
   2. **Initialize Existing** – Uses Layer Selectors already present in the prefab hierarchy.  
 
 This makes it easy to either drop in a ready-to-use prefab or build a custom setup.
 
 ---
 
-## Example Setup
-
+## Character Layer Selection Manager Setup
+If you want to setup a **Character Layer Selection Manager** yourself without using a prefab follow these steps:
 1. Add the `CCMCharacterLayerSelectionManager` component to your UI object.  
 2. Assign the **Layer Selector Parent**.  
 3. Choose an **Initialization Mode**:  

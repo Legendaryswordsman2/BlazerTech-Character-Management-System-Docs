@@ -23,8 +23,7 @@ A **Carousel Layer Selector** displays the currently selected layer option and c
 - **Layer Carousel Selector [-Background]** - Basic carousel selector without a background.  
 
 ### Pre-Setup Prefabs
-Pre-setup prefabs that already include a  
-[`CCMCharacterLayerSelectionManager`](xref:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager).  
+Pre-setup prefabs already include a [Character Layer Selection Manager](xref:layer-selector-setup#character-layer-selection-manager).  
 These will work out of the box without any extra setup required.
 
 - **Carousel Selectors [Auto Create]** – Instantiates carousel selectors at runtime. Uses a Grid Layout Group component to sort them.  

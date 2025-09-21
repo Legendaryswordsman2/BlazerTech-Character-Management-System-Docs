@@ -22,8 +22,7 @@ A **List Layer Selector** contains a vertical list where each element in the gri
 - **Layer List Selector [+Title]** – Same as #1 but includes a title with the name of the assigned layer at the top.  
 
 ### Pre-Setup Prefabs
-Pre-setup prefabs that already include a  
-[`CCMCharacterLayerSelectionManager`](xref:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager).  
+Pre-setup prefabs already include a [Character Layer Selection Manager](xref:layer-selector-setup#character-layer-selection-manager).  
 These will work out of the box without any extra setup required.
 
 - **List Selectors [Auto Create]** – Instantiates list selectors [+Title] at runtime. Uses a Horizontal Layout Group component to sort them.  
