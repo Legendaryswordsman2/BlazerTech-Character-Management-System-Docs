@@ -2072,6 +2072,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/controlled-randomization-example.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/controlled-randomization-example.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/dropdown-layer-selector.png",
       "output": {
         "resource": {

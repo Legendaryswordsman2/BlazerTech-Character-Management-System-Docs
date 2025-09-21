@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | BlazerTech Character Management System </title>
+      <title>Character Randomization | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | BlazerTech Character Management System ">
+      <meta name="title" content="Character Randomization | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../../favicon.ico">
@@ -84,8 +84,29 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
+        <article data-uid="character-randomization">
+<h1 id="character-randomization">Character Randomization</h1>
 
+<p>The character in the Character Creation Menu can be completely randomized by randomizing every layer or randomize only specific layers.</p>
+<h2 id="complete-character-randomization">Complete Character Randomization</h2>
+<p>This is the simplest option. A button can be setup with the <code>CCM Relay</code> component. The button should call the <code>RandomizeEntireCharacter</code> method on the <code>CCM Relay</code> which will then randomize all layers of the character.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>A complete randomization button prefab can be located in <strong>Prefabs &gt; Character Creator &gt; Randomization &gt; Randomize Character Button</strong></p>
+</div>
+<hr>
+<h2 id="single-layer-randomization">Single Layer Randomization</h2>
+<p>Some Layer Selectors include a variant that contains a randomize button that when pressed will randomize that layer of the character.</p>
+<p>If a Layer Selector does <strong>not</strong> include a variant with a randomize button; one can be added easily.<br>
+Add a button component that <strong>On Click</strong> calls <strong><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterLayerSelector_RandomizeLayer">CharacterLayerSelector.RandomizeLayer()</a></strong></p>
+<hr>
+<h2 id="controlled-randomization">Controlled Randomization</h2>
+<p>A controlled randomization button contains extra options to only randomize the selected layers.</p>
+<p><img src="/images/controlled-randomization-example.png" alt="Controlled Randomization"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>A prefab is locatated in <strong>Prefabs &gt; Character Creator &gt; Randomization &gt; Controlled Randomization Button</strong></p>
+</div>
 
 </article>
 

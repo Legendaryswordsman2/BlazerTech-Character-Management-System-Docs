@@ -7679,6 +7679,9 @@ references:
 - uid: character-groups
   name: Character Groups
   href: docs/character-groups.html
+- uid: character-randomization
+  name: Character Randomization
+  href: docs/character-creator/character-randomization.html
 - uid: character-templates
   name: Character Templates
   href: docs/character-templates.html
