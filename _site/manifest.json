@@ -2102,6 +2102,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/import-popup.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/import-popup.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/list-layer-selector-variant-2.png",
       "output": {
         "resource": {

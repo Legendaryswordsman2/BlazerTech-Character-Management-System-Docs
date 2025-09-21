@@ -117,44 +117,36 @@
 </table>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p><strong>Addressables Settings file</strong> must be created <strong>before</strong> importing BT-CMS.<br>
-To create it: <code>Window &gt; Asset Management &gt; Addressables &gt; Groups &gt; Create Addressables Settings</code>.</p>
+<p><strong>Addressables Settings file</strong> must be created <strong>before</strong> importing BT-CMS. If not created beforehand the included characters will not be functional.
+To create the settings file navigate to: <code>Window &gt; Asset Management &gt; Addressables &gt; Groups &gt; Create Addressables Settings</code>.</p>
 </div>
 <hr>
 <h2 id="installation-steps">Installation Steps</h2>
-<!-- Follow these steps to import and set up BT-CMS in your Unity project:
-
-### 1. Prepare Unity Project
-- Open your Unity project or create a new one.
-- Ensure **Addressables** and **Naughty Attributes** packages are installed and configured (see Requirements table above).
-
-### 2. Import BT-CMS Package
-1. Locate the BT-CMS `.unitypackage` file.  
-2. In Unity, go to: `Assets → Import Package → Custom Package…`.  
-3. Select the BT-CMS package and click **Import**.  
-4. Verify all files are imported (Unity will display a list of assets).
-
-> [!NOTE]  
-> During import, ensure **Addressables Settings** are already present in the project to avoid errors.
-
-### 3. Configure Addressables
-1. Open Addressables Groups: `Window → Asset Management → Addressables → Groups`.  
-2. Check that the **Character Spritesheets** are marked as **Addressable**.  
-3. Optional: Create custom groups for better organization (e.g., Characters, Props, UI).
-
-### 4. Verify Package
-- Open the `BlazerTech Character Management System` folder in the Project window.  
-- Ensure all **Prefabs**, **Scripts**, and **Templates** are present.  
-- Test by creating a simple **Unified Character Template** or **Layered Character Template** (see Character Templates page).
-
-### 5. Optional Setup
-- Configure any **custom Addressables groups** or **project-specific settings**.  
-- Integrate **Character Creator** prefabs into your scenes if needed.
-
----
-
-> [!TIP]  
-> After installation, it’s a good idea to run the **Sample Scenes** included with BT-CMS to verify everything works correctly before starting your own character setup. -->
+<h3 id="prerequisites">prerequisites</h3>
+<p>Make sure <strong>Naughty Attributes</strong> and <strong>Addressables</strong> are both installed and the <strong>Addressables Settings file</strong> has been creeated (<a href="#requirements">See above^^</a>).</p>
+<h3 id="importing">Importing</h3>
+<p><strong>Itch.io:</strong></p>
+<ul>
+<li>If bought from Itch.io, download <code>BlazerTech Character Management System.unitypackage</code> and drag and drop it into your project.</li>
+</ul>
+<p><strong>Unity Asset Store:</strong></p>
+<ul>
+<li>If bought from the Unity Asset Store, navigate to <code>Window &gt; Package Manager &gt; My Assets</code> and find <code>BlazerTech Character Management System</code> from within the list. Click <code>Download</code> if not already downloaded and then <code>Import</code>.</li>
+</ul>
+<p><strong>Import Popup:</strong></p>
+<ul>
+<li>Regardless of the installation method a popup will appear prompting you to import the <code>BlazerTech Character Management System</code> into your project. Make sure all assets are selected and click the <code>Import</code> button.<br>
+<img src="/images/import-popup.png" alt="Import Popup"></li>
+</ul>
+<h3 id="after-installtion">After Installtion</h3>
+<p>Here's some things to do after installing the <strong>BlazerTech Character Management System</strong>:</p>
+<ol>
+<li><strong>Play sample scenes</strong> - Go into the <strong>Samples</strong> folder and run some of the sample scenes to make sure everything is functioning properly.</li>
+<li><strong>Create your own character type</strong> - make a new character type to use your own spritesheets or third party ones.<br>
+<a class="xref" href="../character-types.html">🔗 Read More → Character Types</a></li>
+<li><strong>Implement your own in-game character creation menu</strong>.<br>
+<a class="xref" href="../character-creator/character-creator-overview.html">🔗 Read More → Character Creator Overview</a></li>
+</ol>
 
 </article>
 

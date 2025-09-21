@@ -15,43 +15,31 @@ This guide covers the **requirements** and **installation steps** for the **Blaz
 | **Naughty Attributes** | Adds additional attributes to the Unity Inspector. | [Installation Guide](https://dbrizov.github.io/na-docs/general/installation.html) <br> [Unity Asset Store Link](https://assetstore.unity.com/packages/tools/utilities/naughtyattributes-129996) |
 
 > [!IMPORTANT]  
-> **Addressables Settings file** must be created **before** importing BT-CMS.  
-> To create it: `Window > Asset Management > Addressables > Groups > Create Addressables Settings`.
+> **Addressables Settings file** must be created **before** importing BT-CMS. If not created beforehand the included characters will not be functional.
+> To create the settings file navigate to: `Window > Asset Management > Addressables > Groups > Create Addressables Settings`.
 
 ---
 
 ## Installation Steps
 
-<!-- Follow these steps to import and set up BT-CMS in your Unity project:
+### prerequisites
+Make sure **Naughty Attributes** and **Addressables** are both installed and the **Addressables Settings file** has been creeated ([See above^^](#requirements)).
 
-### 1. Prepare Unity Project
-- Open your Unity project or create a new one.
-- Ensure **Addressables** and **Naughty Attributes** packages are installed and configured (see Requirements table above).
+### Importing
+**Itch.io:**
+- If bought from Itch.io, download `BlazerTech Character Management System.unitypackage` and drag and drop it into your project.
 
-### 2. Import BT-CMS Package
-1. Locate the BT-CMS `.unitypackage` file.  
-2. In Unity, go to: `Assets → Import Package → Custom Package…`.  
-3. Select the BT-CMS package and click **Import**.  
-4. Verify all files are imported (Unity will display a list of assets).
+**Unity Asset Store:**
+- If bought from the Unity Asset Store, navigate to `Window > Package Manager > My Assets` and find `BlazerTech Character Management System` from within the list. Click `Download` if not already downloaded and then `Import`.
 
-> [!NOTE]  
-> During import, ensure **Addressables Settings** are already present in the project to avoid errors.
+**Import Popup:**
+- Regardless of the installation method a popup will appear prompting you to import the `BlazerTech Character Management System` into your project. Make sure all assets are selected and click the `Import` button.  
+![Import Popup](/images/import-popup.png)
 
-### 3. Configure Addressables
-1. Open Addressables Groups: `Window → Asset Management → Addressables → Groups`.  
-2. Check that the **Character Spritesheets** are marked as **Addressable**.  
-3. Optional: Create custom groups for better organization (e.g., Characters, Props, UI).
-
-### 4. Verify Package
-- Open the `BlazerTech Character Management System` folder in the Project window.  
-- Ensure all **Prefabs**, **Scripts**, and **Templates** are present.  
-- Test by creating a simple **Unified Character Template** or **Layered Character Template** (see Character Templates page).
-
-### 5. Optional Setup
-- Configure any **custom Addressables groups** or **project-specific settings**.  
-- Integrate **Character Creator** prefabs into your scenes if needed.
-
----
-
-> [!TIP]  
-> After installation, it’s a good idea to run the **Sample Scenes** included with BT-CMS to verify everything works correctly before starting your own character setup. -->
+### After Installtion
+Here's some things to do after installing the **BlazerTech Character Management System**:
+1. **Play sample scenes** - Go into the **Samples** folder and run some of the sample scenes to make sure everything is functioning properly.
+2. **Create your own character type** - make a new character type to use your own spritesheets or third party ones.  
+[🔗 Read More → Character Types](xref:character-types)
+3. **Implement your own in-game character creation menu**.  
+[🔗 Read More → Character Creator Overview](xref:character-creator-overview)
