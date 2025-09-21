@@ -76,4 +76,4 @@ This makes it easy to either drop in a ready-to-use prefab or build a custom set
 3. Choose an **Initialization Mode**:  
    - *Create New* → Provide a `Character Layer Selector Prefab`.  
    - *Initialize Existing* → Place selectors as children under the parent.  
-4. Run the scene — selectors will now control the layers of the active character.  
+4. Run the scene, selectors will now control the layers of the active character.  
