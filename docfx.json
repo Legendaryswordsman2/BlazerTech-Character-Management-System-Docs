@@ -41,6 +41,8 @@
     "globalMetadata": {
       "_appName": "BlazerTech Character Management System",
       "_appTitle": "BlazerTech Character Management System",
+      "_appFaviconPath": "images/favicon.png",
+      "_appLogoPath": "images/logo.png",
       "_enableSearch": true,
       "pdf": false
     }
