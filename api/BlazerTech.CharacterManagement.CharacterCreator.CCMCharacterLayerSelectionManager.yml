@@ -7,6 +7,9 @@ items:
   children:
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.Awake
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.CharacterCreationMenuEnabled
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.InitializationMode
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerOptionSelectors
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerSelectorPrefab
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.OnSelectedCharacterLayerChanged
   - BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer
   langs:
@@ -18,11 +21,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CCMCharacterLayerSelectionManager
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
     startLine: 11
   assemblies:
   - Assembly-CSharp
@@ -55,6 +58,93 @@ items:
   - type: UnityEngine.DisallowMultipleComponent
     ctor: UnityEngine.DisallowMultipleComponent.#ctor
     arguments: []
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.InitializationMode
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.InitializationMode
+  id: InitializationMode
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
+  langs:
+  - csharp
+  - vb
+  name: InitializationMode
+  nameWithType: CCMCharacterLayerSelectionManager.InitializationMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.InitializationMode
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: InitializationMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public LayerSelectorInitializationMode InitializationMode { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode
+    content.vb: Public Property InitializationMode As LayerSelectorInitializationMode
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.InitializationMode*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerSelectorPrefab
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerSelectorPrefab
+  id: LayerSelectorPrefab
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
+  langs:
+  - csharp
+  - vb
+  name: LayerSelectorPrefab
+  nameWithType: CCMCharacterLayerSelectionManager.LayerSelectorPrefab
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerSelectorPrefab
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LayerSelectorPrefab
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public CharacterLayerSelector LayerSelectorPrefab { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
+    content.vb: Public Property LayerSelectorPrefab As CharacterLayerSelector
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerSelectorPrefab*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerOptionSelectors
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerOptionSelectors
+  id: LayerOptionSelectors
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager
+  langs:
+  - csharp
+  - vb
+  name: LayerOptionSelectors
+  nameWithType: CCMCharacterLayerSelectionManager.LayerOptionSelectors
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerOptionSelectors
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LayerOptionSelectors
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public List<CharacterLayerSelector> LayerOptionSelectors { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector}
+    content.vb: Public Property LayerOptionSelectors As List(Of CharacterLayerSelector)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerOptionSelectors*
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer
   commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer
   id: SelectedLayer
@@ -68,11 +158,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SelectedLayer
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
     startLine: 33
   assemblies:
   - Assembly-CSharp
@@ -97,11 +187,11 @@ items:
   type: Event
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnSelectedCharacterLayerChanged
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
     startLine: 43
   assemblies:
   - Assembly-CSharp
@@ -124,11 +214,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Awake
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
     startLine: 45
   assemblies:
   - Assembly-CSharp
@@ -152,11 +242,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuEnabled
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CCMCharacterLayerSelectionManager.cs
     startLine: 74
   assemblies:
   - Assembly-CSharp
@@ -355,6 +445,136 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.InitializationMode*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.InitializationMode
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerSelectionManager_InitializationMode
+  name: InitializationMode
+  nameWithType: CCMCharacterLayerSelectionManager.InitializationMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.InitializationMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode.html
+  name: LayerSelectorInitializationMode
+  nameWithType: LayerSelectorInitializationMode
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LayerSelectorInitializationMode
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerSelectorPrefab*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerSelectorPrefab
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerSelectionManager_LayerSelectorPrefab
+  name: LayerSelectorPrefab
+  nameWithType: CCMCharacterLayerSelectionManager.LayerSelectorPrefab
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerSelectorPrefab
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html
+  name: CharacterLayerSelector
+  nameWithType: CharacterLayerSelector
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerOptionSelectors*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerOptionSelectors
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerSelectionManager_LayerOptionSelectors
+  name: LayerOptionSelectors
+  nameWithType: CCMCharacterLayerSelectionManager.LayerOptionSelectors
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.LayerOptionSelectors
+- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector}
+  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<CharacterLayerSelector>
+  nameWithType: List<CharacterLayerSelector>
+  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector>
+  nameWithType.vb: List(Of CharacterLayerSelector)
+  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector)
+  name.vb: List(Of CharacterLayerSelector)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
+    name: CharacterLayerSelector
+    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector
+    name: CharacterLayerSelector
+    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer*
   commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.SelectedLayer
   href: BlazerTech.CharacterManagement.CharacterCreator.CCMCharacterLayerSelectionManager.html#BlazerTech_CharacterManagement_CharacterCreator_CCMCharacterLayerSelectionManager_SelectedLayer

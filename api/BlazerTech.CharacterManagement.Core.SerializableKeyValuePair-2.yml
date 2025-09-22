@@ -17,11 +17,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/SerializableDictionary.cs
+      path: Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SerializableKeyValuePair
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/SerializableDictionary.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
     startLine: 37
   assemblies:
   - Assembly-CSharp
@@ -60,11 +60,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/SerializableDictionary.cs
+      path: Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/SerializableDictionary.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
     startLine: 45
   assemblies:
   - Assembly-CSharp
@@ -94,11 +94,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/SerializableDictionary.cs
+      path: Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: key
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/SerializableDictionary.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
     startLine: 51
   assemblies:
   - Assembly-CSharp
@@ -125,11 +125,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/SerializableDictionary.cs
+      path: Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: value
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/SerializableDictionary.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs
     startLine: 52
   assemblies:
   - Assembly-CSharp

@@ -17,11 +17,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CCMSelectedLayerTabHandler
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
     startLine: 4
   assemblies:
   - Assembly-CSharp
@@ -57,11 +57,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuEnabled
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
     startLine: 10
   assemblies:
   - Assembly-CSharp
@@ -86,11 +86,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: RefreshLayerSelector
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
     startLine: 18
   assemblies:
   - Assembly-CSharp
@@ -112,11 +112,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuBeforeDisabled
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Tab Selector/CCMSelectedLayerTabHandler.cs
     startLine: 24
   assemblies:
   - Assembly-CSharp

@@ -26,11 +26,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterLoaderBase
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
     startLine: 7
   assemblies:
   - Assembly-CSharp
@@ -71,11 +71,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: _renderer
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
     startLine: 13
   assemblies:
   - Assembly-CSharp
@@ -119,11 +119,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: setAnimatorController
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
     startLine: 19
   assemblies:
   - Assembly-CSharp
@@ -176,11 +176,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: _animator
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
     startLine: 24
   assemblies:
   - Assembly-CSharp
@@ -233,11 +233,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: loadingMode
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
     startLine: 29
   assemblies:
   - Assembly-CSharp
@@ -281,11 +281,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: loadCharacterOnStart
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
     startLine: 34
   assemblies:
   - Assembly-CSharp
@@ -329,11 +329,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: isValid
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
     startLine: 36
   assemblies:
   - Assembly-CSharp
@@ -356,11 +356,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ValidationCheck
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
     startLine: 58
   assemblies:
   - Assembly-CSharp
@@ -384,11 +384,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetAndShowCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
     startLine: 69
   assemblies:
   - Assembly-CSharp
@@ -412,11 +412,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ShowCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
     startLine: 71
   assemblies:
   - Assembly-CSharp
@@ -438,11 +438,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ReleaseCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
     startLine: 73
   assemblies:
   - Assembly-CSharp
@@ -464,11 +464,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: TrySetCharacterAnimator
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
     startLine: 75
   assemblies:
   - Assembly-CSharp
@@ -493,11 +493,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnDestroy
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Loaders/CharacterLoaderBase.cs
     startLine: 94
   assemblies:
   - Assembly-CSharp

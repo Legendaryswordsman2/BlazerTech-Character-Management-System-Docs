@@ -16,11 +16,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Randomization/CCMLayerRandomizeToggle.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMLayerRandomizeToggle.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CCMLayerRandomizeToggle
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Randomization/CCMLayerRandomizeToggle.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMLayerRandomizeToggle.cs
     startLine: 7
   assemblies:
   - Assembly-CSharp
@@ -47,11 +47,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Randomization/CCMLayerRandomizeToggle.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMLayerRandomizeToggle.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Setup
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Randomization/CCMLayerRandomizeToggle.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMLayerRandomizeToggle.cs
     startLine: 15
   assemblies:
   - Assembly-CSharp
@@ -78,11 +78,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Randomization/CCMLayerRandomizeToggle.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMLayerRandomizeToggle.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: UpdateRandomizationToggle
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Randomization/CCMLayerRandomizeToggle.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Randomization/CCMLayerRandomizeToggle.cs
     startLine: 25
   assemblies:
   - Assembly-CSharp

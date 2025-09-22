@@ -53,8 +53,8 @@
         href: character-creator/layer-selectors/tab-layer-selector.md
   - name: History
     items:
-      - name: History Tracking
-        href: character-creator/history/history-tracking.md
+      - name: History Tracking System
+        href: character-creator/history/history-tracking-system.md
       - name: History Panels
         href: character-creator/history/history-panels.md
       - name: History Undo/Redo

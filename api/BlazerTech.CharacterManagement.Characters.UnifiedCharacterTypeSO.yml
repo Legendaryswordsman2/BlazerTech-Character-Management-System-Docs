@@ -14,11 +14,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/UnifiedCharacterTypeSO.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/UnifiedCharacterTypeSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: UnifiedCharacterTypeSO
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/UnifiedCharacterTypeSO.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/UnifiedCharacterTypeSO.cs
     startLine: 5
   assemblies:
   - Assembly-CSharp

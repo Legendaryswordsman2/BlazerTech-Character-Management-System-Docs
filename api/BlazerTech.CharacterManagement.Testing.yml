@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Testing
+  commentId: N:BlazerTech.CharacterManagement.Testing
+  id: BlazerTech.CharacterManagement.Testing
+  children:
+  - BlazerTech.CharacterManagement.Testing.CharacterTesting
+  langs:
+  - csharp
+  - vb
+  name: BlazerTech.CharacterManagement.Testing
+  nameWithType: BlazerTech.CharacterManagement.Testing
+  fullName: BlazerTech.CharacterManagement.Testing
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: BlazerTech.CharacterManagement.Testing.CharacterTesting
+  commentId: T:BlazerTech.CharacterManagement.Testing.CharacterTesting
+  href: BlazerTech.CharacterManagement.Testing.CharacterTesting.html
+  name: CharacterTesting
+  nameWithType: CharacterTesting
+  fullName: BlazerTech.CharacterManagement.Testing.CharacterTesting

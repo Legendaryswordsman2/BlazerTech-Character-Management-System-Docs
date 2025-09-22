@@ -18,11 +18,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/CMSSaveSystem.cs
+      path: Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CMSSaveSystem
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/CMSSaveSystem.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
     startLine: 7
   assemblies:
   - Assembly-CSharp
@@ -45,11 +45,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/CMSSaveSystem.cs
+      path: Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SaveFile
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/CMSSaveSystem.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
     startLine: 10
   assemblies:
   - Assembly-CSharp
@@ -83,11 +83,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/CMSSaveSystem.cs
+      path: Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadFile
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/CMSSaveSystem.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
     startLine: 23
   assemblies:
   - Assembly-CSharp
@@ -119,11 +119,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/CMSSaveSystem.cs
+      path: Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadFileWholePath
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/CMSSaveSystem.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
     startLine: 43
   assemblies:
   - Assembly-CSharp
@@ -155,11 +155,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Core/CMSSaveSystem.cs
+      path: Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadFilesInFolder
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Core/CMSSaveSystem.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
     startLine: 58
   assemblies:
   - Assembly-CSharp

@@ -87,6 +87,23 @@
         <article data-uid="history-undo-redo">
 <h1 id="history-undoredo">History Undo/Redo</h1>
 
+<p>With the <a class="xref" href="history-tracking-system.html#history-tracker-component">History Tracker component</a> setup you can include buttons in your Character Creation Menu that undo or redo changes you've previously setup.</p>
+<h2 id="setup">Setup</h2>
+<p>Setup is extremely simple:</p>
+<ol>
+<li>Add the <code>button</code> and <a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler.html">CCMTimelineButtonHandler</a> component to any game object.</li>
+<li>Assign the <code>Button</code> reference to the <code>CCMTimelineButtonHandler</code> component.</li>
+<li>Assign the <code>History Tracker</code> reference.</li>
+<li>Set the mode to either Undo or Redo.</li>
+<li>Set the buttons <strong>On Click</strong> event to call <code>CCMTimelineButtonHandler.UndoOrRedo</code>.</li>
+</ol>
+<p>If the undo or redo action is invalid the button will be disabled until valid again.</p>
+<p>A prefab already exists where almost everything is already setup. You'll still need to assign the <strong>History Tracker</strong> on both button game objects though.</p>
+<p><img src="/images/history-panels/history-undo-redo-buttons.png" alt="History Undo/Redo Buttons"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Prefabs Location: <strong>Prefabs &gt; Character Creator &gt; History &gt; Undo-Redo</strong></p>
+</div>
 
 </article>
 

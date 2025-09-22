@@ -307,6 +307,9 @@ items:
   - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1
     name: OwnedResourceTracker<TResource>
     type: Class
+  - uid: BlazerTech.CharacterManagement.Core.RotateGO
+    name: RotateGO
+    type: Class
   - uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
     name: ScriptableObjectMenuPaths
     type: Class
@@ -343,17 +346,17 @@ items:
   name: BlazerTech.CharacterManagement.Internal.Testing
   type: Namespace
   items:
-  - uid: BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape
-    name: CCDebugChangeSceneOnEscape
+  - uid: BlazerTech.CharacterManagement.Internal.Testing.CMSDebugChangeSceneOnEscape
+    name: CMSDebugChangeSceneOnEscape
     type: Class
-  - uid: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup
-    name: CCDebugCreateFixedCharacterGroup
+  - uid: BlazerTech.CharacterManagement.Internal.Testing.CMSDebugCreateFixedCharacterGroup
+    name: CMSDebugCreateFixedCharacterGroup
     type: Class
-  - uid: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter
-    name: CCDebugCreateFlexibleCharacter
+  - uid: BlazerTech.CharacterManagement.Internal.Testing.CMSDebugCreateFlexibleCharacter
+    name: CMSDebugCreateFlexibleCharacter
     type: Class
-  - uid: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateSingleCharacter
-    name: CCDebugCreateSingleCharacter
+  - uid: BlazerTech.CharacterManagement.Internal.Testing.CMSDebugCreateSingleCharacter
+    name: CMSDebugCreateSingleCharacter
     type: Class
   - uid: BlazerTech.CharacterManagement.Internal.Testing.LoadingScreenObjectRotation
     name: LoadingScreenObjectRotation
@@ -364,6 +367,9 @@ items:
   items:
   - uid: BlazerTech.CharacterManagement.Samples.ActiveMenuHandler
     name: ActiveMenuHandler
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Samples.AssetReferenceScene
+    name: AssetReferenceScene
     type: Class
   - uid: BlazerTech.CharacterManagement.Samples.Menu
     name: Menu
@@ -376,6 +382,13 @@ items:
     type: Class
   - uid: BlazerTech.CharacterManagement.Samples.ToggleMenuOnInput
     name: ToggleMenuOnInput
+    type: Class
+- uid: BlazerTech.CharacterManagement.Testing
+  name: BlazerTech.CharacterManagement.Testing
+  type: Namespace
+  items:
+  - uid: BlazerTech.CharacterManagement.Testing.CharacterTesting
+    name: CharacterTesting
     type: Class
 - uid: BlazerTech.CharacterManagement.Utilities
   name: BlazerTech.CharacterManagement.Utilities

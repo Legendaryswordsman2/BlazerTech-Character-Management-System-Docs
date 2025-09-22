@@ -190,7 +190,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMRelay",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.yml\" sourcestartlinenumber=\"1\">Used to relay method calls to the <xref href=\"BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -302,7 +302,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.yml\" sourcestartlinenumber=\"1\">Abstract base class used by all Layer Selectors</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1412,6 +1412,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Core.RotateGO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Core.RotateGO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Core.RotateGO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.yml",
       "output": {
         ".html": {
@@ -1622,6 +1636,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CMSDebugChangeSceneOnEscape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CMSDebugChangeSceneOnEscape.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Internal.Testing.CMSDebugChangeSceneOnEscape",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CMSDebugCreateFixedCharacterGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CMSDebugCreateFixedCharacterGroup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Internal.Testing.CMSDebugCreateFixedCharacterGroup",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CMSDebugCreateFlexibleCharacter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CMSDebugCreateFlexibleCharacter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Internal.Testing.CMSDebugCreateFlexibleCharacter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CMSDebugCreateSingleCharacter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CMSDebugCreateSingleCharacter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Internal.Testing.CMSDebugCreateSingleCharacter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.LoadingScreenObjectRotation.yml",
       "output": {
         ".html": {
@@ -1660,6 +1730,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Samples.ActiveMenuHandler",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Samples.AssetReferenceScene.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Samples.AssetReferenceScene.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Samples.AssetReferenceScene",
       "Summary": null
     },
     {
@@ -1730,6 +1814,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Samples",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Testing.CharacterTesting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Testing.CharacterTesting.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Testing.CharacterTesting",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Testing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Testing.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Testing",
       "Summary": null
     },
     {
@@ -1849,10 +1961,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/character-creator/history/history-tracking.md",
+      "source_relative_path": "docs/character-creator/history/history-tracking-system.md",
       "output": {
         ".html": {
-          "relative_path": "docs/character-creator/history/history-tracking.html"
+          "relative_path": "docs/character-creator/history/history-tracking-system.html"
         }
       },
       "version": ""
@@ -2166,6 +2278,16 @@
       "output": {
         "resource": {
           "relative_path": "images/history-panels/history-panel-text.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/history-panels/history-undo-redo-buttons.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/history-panels/history-undo-redo-buttons.png"
         }
       },
       "version": ""

@@ -31,15 +31,17 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterLayerSelector
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 7
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 10
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
+  summary: Abstract base class used by all Layer Selectors
+  example: []
   syntax:
     content: >-
       [DisallowMultipleComponent]
@@ -77,12 +79,12 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SelectorBase
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 15
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 18
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -106,25 +108,25 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LayerNameText
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 16
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 19
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
     content: >-
-      [Tooltip("If assinged; set the text to the name of the assigned layer.")]
+      [Tooltip("If assinged; sets the text to the name of the assigned layer.")]
 
       public TMP_Text LayerNameText { get; }
     parameters: []
     return:
       type: TMPro.TMP_Text
     content.vb: >-
-      <Tooltip("If assinged; set the text to the name of the assigned layer.")>
+      <Tooltip("If assinged; sets the text to the name of the assigned layer.")>
 
       Public Property LayerNameText As TMP_Text
   overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.LayerNameText*
@@ -133,7 +135,7 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: If assinged; set the text to the name of the assigned layer.
+      value: If assinged; sets the text to the name of the assigned layer.
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterLayerOverride
   commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerSelector.CharacterLayerOverride
   id: CharacterLayerOverride
@@ -147,12 +149,12 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterLayerOverride
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 19
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 22
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -176,12 +178,12 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: characterCreationMenuManager
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 22
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 25
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -203,12 +205,12 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: AssignedLayer
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 24
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 27
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -232,12 +234,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: AssignLayer
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 26
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 29
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -263,12 +265,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Setup
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 56
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 59
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -291,12 +293,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterLayerUpdated
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 61
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 64
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -319,12 +321,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: MenuDisabled
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 66
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 69
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -347,12 +349,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: DisableInteractivity
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 68
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 71
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -373,12 +375,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EnableInteractivity
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 70
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 73
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -399,12 +401,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Hide
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 72
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 75
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -425,12 +427,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Unhide
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 74
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 77
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -451,12 +453,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ChangeAlpha
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 76
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 79
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -483,12 +485,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: RandomizeLayer
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 87
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 90
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -509,12 +511,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnDestroy
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 89
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 92
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -535,12 +537,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Reset
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
-    startLine: 98
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/CharacterLayerSelector.cs
+    startLine: 101
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator

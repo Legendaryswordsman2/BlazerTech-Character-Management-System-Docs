@@ -5,7 +5,7 @@ items:
   id: CCMRelay
   parent: BlazerTech.CharacterManagement.CharacterCreator
   children:
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.CloseMenu
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.DisableMenu
   - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.OpenCharacterCreationMenu_PrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.RandomizeEntireCharacter
   - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.ResetCharacter
@@ -19,15 +19,18 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Relays/CCMRelay.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CCMRelay
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Relays/CCMRelay.cs
-    startLine: 5
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
+    startLine: 11
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
+  summary: Used to relay method calls to the <xref href="BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager" data-throw-if-not-resolved="false"></xref>.
+  remarks: Mostly used to hookup buttons.
+  example: []
   syntax:
     content: >-
       [DisallowMultipleComponent]
@@ -60,12 +63,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Relays/CCMRelay.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OpenCharacterCreationMenu_PrimaryCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Relays/CCMRelay.cs
-    startLine: 19
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
+    startLine: 25
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -92,12 +95,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Relays/CCMRelay.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SaveCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Relays/CCMRelay.cs
-    startLine: 33
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
+    startLine: 39
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -120,12 +123,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Relays/CCMRelay.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: RandomizeEntireCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Relays/CCMRelay.cs
-    startLine: 47
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
+    startLine: 53
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -148,12 +151,12 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Relays/CCMRelay.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ResetCharacter
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Relays/CCMRelay.cs
-    startLine: 61
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
+    startLine: 67
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -163,33 +166,42 @@ items:
     content: public void ResetCharacter()
     content.vb: Public Sub ResetCharacter()
   overload: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.ResetCharacter*
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.CloseMenu
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.CloseMenu
-  id: CloseMenu
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.DisableMenu
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.DisableMenu
+  id: DisableMenu
   parent: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay
   langs:
   - csharp
   - vb
-  name: CloseMenu()
-  nameWithType: CCMRelay.CloseMenu()
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.CloseMenu()
+  name: DisableMenu()
+  nameWithType: CCMRelay.DisableMenu()
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.DisableMenu()
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Relays/CCMRelay.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CloseMenu
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Relays/CCMRelay.cs
-    startLine: 72
+    id: DisableMenu
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Relays/CCMRelay.cs
+    startLine: 81
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
+  summary: Disable the Character Creation Menu.
+  example: []
   syntax:
-    content: public void CloseMenu()
-    content.vb: Public Sub CloseMenu()
-  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.CloseMenu*
+    content: public void DisableMenu()
+    content.vb: Public Sub DisableMenu()
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.DisableMenu*
 references:
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html
+  name: CharacterCreationMenuManager
+  nameWithType: CharacterCreationMenuManager
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
 - uid: BlazerTech.CharacterManagement.CharacterCreator
   commentId: N:BlazerTech.CharacterManagement.CharacterCreator
   href: BlazerTech.html
@@ -339,13 +351,6 @@ references:
     href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_SaveCharacter
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
-  parent: BlazerTech.CharacterManagement.CharacterCreator
-  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html
-  name: CharacterCreationMenuManager
-  nameWithType: CharacterCreationMenuManager
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.SaveCharacter*
   commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.SaveCharacter
   href: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html#BlazerTech_CharacterManagement_CharacterCreator_CCMRelay_SaveCharacter
@@ -395,9 +400,9 @@ references:
   name: ResetCharacter
   nameWithType: CCMRelay.ResetCharacter
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.ResetCharacter
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.CloseMenu*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.CloseMenu
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html#BlazerTech_CharacterManagement_CharacterCreator_CCMRelay_CloseMenu
-  name: CloseMenu
-  nameWithType: CCMRelay.CloseMenu
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.CloseMenu
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.DisableMenu*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.DisableMenu
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html#BlazerTech_CharacterManagement_CharacterCreator_CCMRelay_DisableMenu
+  name: DisableMenu
+  nameWithType: CCMRelay.DisableMenu
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.DisableMenu

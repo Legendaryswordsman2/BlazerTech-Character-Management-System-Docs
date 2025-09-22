@@ -1,0 +1,175 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Samples.AssetReferenceScene
+  commentId: T:BlazerTech.CharacterManagement.Samples.AssetReferenceScene
+  id: AssetReferenceScene
+  parent: BlazerTech.CharacterManagement.Samples
+  children:
+  - BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SceneName
+  langs:
+  - csharp
+  - vb
+  name: AssetReferenceScene
+  nameWithType: AssetReferenceScene
+  fullName: BlazerTech.CharacterManagement.Samples.AssetReferenceScene
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: AssetReferenceScene
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Samples
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class AssetReferenceScene : AssetReference, IKeyEvaluator
+    content.vb: >-
+      <Serializable>
+
+      Public Class AssetReferenceScene Inherits AssetReference Implements IKeyEvaluator
+  inheritance:
+  - System.Object
+  - UnityEngine.AddressableAssets.AssetReference
+  implements:
+  - UnityEngine.AddressableAssets.IKeyEvaluator
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SceneName
+  commentId: P:BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SceneName
+  id: SceneName
+  parent: BlazerTech.CharacterManagement.Samples.AssetReferenceScene
+  langs:
+  - csharp
+  - vb
+  name: SceneName
+  nameWithType: AssetReferenceScene.SceneName
+  fullName: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SceneName
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: SceneName
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Samples
+  syntax:
+    content: public string SceneName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property SceneName As String
+  overload: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SceneName*
+references:
+- uid: BlazerTech.CharacterManagement.Samples
+  commentId: N:BlazerTech.CharacterManagement.Samples
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Samples
+  nameWithType: BlazerTech.CharacterManagement.Samples
+  fullName: BlazerTech.CharacterManagement.Samples
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Samples
+    name: Samples
+    href: BlazerTech.CharacterManagement.Samples.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Samples
+    name: Samples
+    href: BlazerTech.CharacterManagement.Samples.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.AddressableAssets.AssetReference
+  commentId: T:UnityEngine.AddressableAssets.AssetReference
+  parent: UnityEngine.AddressableAssets
+  isExternal: true
+  name: AssetReference
+  nameWithType: AssetReference
+  fullName: UnityEngine.AddressableAssets.AssetReference
+- uid: UnityEngine.AddressableAssets.IKeyEvaluator
+  commentId: T:UnityEngine.AddressableAssets.IKeyEvaluator
+  parent: UnityEngine.AddressableAssets
+  isExternal: true
+  name: IKeyEvaluator
+  nameWithType: IKeyEvaluator
+  fullName: UnityEngine.AddressableAssets.IKeyEvaluator
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.AddressableAssets
+  commentId: N:UnityEngine.AddressableAssets
+  isExternal: true
+  name: UnityEngine.AddressableAssets
+  nameWithType: UnityEngine.AddressableAssets
+  fullName: UnityEngine.AddressableAssets
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.AddressableAssets
+    name: AddressableAssets
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.AddressableAssets
+    name: AddressableAssets
+    isExternal: true
+- uid: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SceneName*
+  commentId: Overload:BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SceneName
+  href: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.html#BlazerTech_CharacterManagement_Samples_AssetReferenceScene_SceneName
+  name: SceneName
+  nameWithType: AssetReferenceScene.SceneName
+  fullName: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SceneName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

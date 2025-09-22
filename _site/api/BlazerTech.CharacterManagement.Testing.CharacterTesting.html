@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>History Tracking System | BlazerTech Character Management System </title>
+      <title>Class CharacterTesting | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="History Tracking System | BlazerTech Character Management System ">
+      <meta name="title" content="Class CharacterTesting | BlazerTech Character Management System ">
       
       
-      <link rel="icon" href="../../../favicon.ico">
-      <link rel="stylesheet" href="../../../public/docfx.min.css">
-      <link rel="stylesheet" href="../../../public/main.css">
-      <meta name="docfx:navrel" content="../../../toc.html">
-      <meta name="docfx:tocrel" content="../../toc.html">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
       
-      <meta name="docfx:rel" content="../../../">
+      <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/history/history-tracking.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_Testing_CharacterTesting.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.Testing.CharacterTesting%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./../../../public/docfx.min.js"></script>
+      <script type="module" src="./../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -39,12 +39,12 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../../../index.html">
-            <img id="logo" class="svg" src="../../../logo.svg" alt="BlazerTech Character Management System">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BlazerTech Character Management System">
             BlazerTech Character Management System
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,73 +84,56 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="history-tracking-system">
-<h1 id="history-tracking-system">History Tracking System</h1>
+        <article data-uid="BlazerTech.CharacterManagement.Testing.CharacterTesting">
 
-<p>The <strong>History Tracking System</strong> tracks every change made to the character in the Character Creation Menu whlie the menu is open. Changes can then be undone at anytime.</p>
-<hr>
-<h2 id="features">Features</h2>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Automatic Tracking</strong></td>
-<td>Every change to the character is recorded as a snapshot.</td>
-</tr>
-<tr>
-<td><strong>Undo/Redo</strong></td>
-<td>Step backward or forward through the snapshot list.</td>
-</tr>
-<tr>
-<td><strong>Direct Selection</strong></td>
-<td>Select any snapshot to instantly restore the character.</td>
-</tr>
-<tr>
-<td><strong>Snapshot Limit</strong></td>
-<td>Configurable maximum number of snapshots (1-100, default = 30).</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id="history-tracker-component">History Tracker Component</h2>
-<p>The <a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html">CCMHistoryTracker</a> component can be added to any game object inside the contents of the Character Creation Menu.</p>
-<ul>
-<li>Tracks all layer changes made to the character and saves them as a snapshot.</li>
-<li>A snapshot contains all information required to restore the character to that exact state.</li>
-<li>Snapshots are saved in a list.</li>
-<li>Max Snapshots can be set anywhere between 1-100 (Default is 30).</li>
-<li>When the max amount of snapshots is met, oldest snapshots will start being replaced.</li>
-<li>The <strong>Preserve First Snapshot</strong> bool can be toggled which will stop the first snapshot created from being deleted or replaced.</li>
-</ul>
-<hr>
-<h2 id="ui-integration">UI Integration</h2>
-<ol>
-<li><strong>Undo/Redo Buttons:</strong>
-<ul>
-<li>Buttons can be added which can undo or redo changes you've made.</li>
-<li><a class="xref" href="history-undo-redo.html">Read More → History Undo/Redo</a></li>
-</ul>
-</li>
-<li><strong>History Panels:</strong>
-<ul>
-<li>Multiple types of panels can be added which display every change made in a clean list.</li>
-<li><a class="xref" href="history-panels.html">Read More → History Panels</a></li>
-</ul>
-</li>
-</ol>
+
+
+  <h1 id="BlazerTech_CharacterManagement_Testing_CharacterTesting" data-uid="BlazerTech.CharacterManagement.Testing.CharacterTesting" class="text-break">
+Class CharacterTesting  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/Testing/CharacterTesting.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BlazerTech.html">BlazerTech</a>.<a class="xref" href="BlazerTech.CharacterManagement.html">CharacterManagement</a>.<a class="xref" href="BlazerTech.CharacterManagement.Testing.html">Testing</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CharacterTesting : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">CharacterTesting</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/history/history-tracking.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/Testing/CharacterTesting.cs/#L7" class="edit-link">Edit this page</a>
         </div>
 
-        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 

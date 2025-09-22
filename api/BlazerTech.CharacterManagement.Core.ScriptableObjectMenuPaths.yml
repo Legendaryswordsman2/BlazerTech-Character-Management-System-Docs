@@ -23,11 +23,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ScriptableObjectMenuPaths
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
     startLine: 2
   assemblies:
   - Assembly-CSharp
@@ -50,11 +50,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Root
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
     startLine: 4
   assemblies:
   - Assembly-CSharp
@@ -77,11 +77,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LayeredCharacterType
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
     startLine: 5
   assemblies:
   - Assembly-CSharp
@@ -104,11 +104,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterTemplates
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
     startLine: 6
   assemblies:
   - Assembly-CSharp
@@ -131,11 +131,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterLayerDefinitionSO_Path
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
     startLine: 8
   assemblies:
   - Assembly-CSharp
@@ -158,11 +158,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LayeredCharacterTypeSO_Path
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
     startLine: 9
   assemblies:
   - Assembly-CSharp
@@ -185,11 +185,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LayeredCharacterGroupTemplateSO_Path
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
     startLine: 11
   assemblies:
   - Assembly-CSharp
@@ -212,11 +212,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LayeredCharacterTemplateSO_Path
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
     startLine: 12
   assemblies:
   - Assembly-CSharp
@@ -239,11 +239,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: UnifiedCharacterTemplateSO_Path
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
     startLine: 13
   assemblies:
   - Assembly-CSharp
@@ -266,11 +266,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: UnifiedCharacterTypeSO_Path
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/ScriptableObjectMenuPaths.cs
     startLine: 15
   assemblies:
   - Assembly-CSharp

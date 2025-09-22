@@ -17,11 +17,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryPanel.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CCMHistoryPanel
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryPanel.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
     startLine: 10
   assemblies:
   - Assembly-CSharp
@@ -57,11 +57,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryPanel.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuEnabled
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryPanel.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
     startLine: 32
   assemblies:
   - Assembly-CSharp
@@ -86,11 +86,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryPanel.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: RebuildAll
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryPanel.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
     startLine: 57
   assemblies:
   - Assembly-CSharp
@@ -114,11 +114,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryPanel.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuBeforeDisabled
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/History/CCMHistoryPanel.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryPanel.cs
     startLine: 132
   assemblies:
   - Assembly-CSharp

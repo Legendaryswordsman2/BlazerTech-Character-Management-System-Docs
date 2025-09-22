@@ -15,11 +15,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Editor/Custom Inspectors/CharacterTypeSOEditor.cs
+      path: Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterTypeSOEditor.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterTypeSOEditor
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Editor/Custom Inspectors/CharacterTypeSOEditor.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterTypeSOEditor.cs
     startLine: 6
   assemblies:
   - Assembly-CSharp-Editor
@@ -68,11 +68,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Editor/Custom Inspectors/CharacterTypeSOEditor.cs
+      path: Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterTypeSOEditor.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnInspectorGUI
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Editor/Custom Inspectors/CharacterTypeSOEditor.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterTypeSOEditor.cs
     startLine: 9
   assemblies:
   - Assembly-CSharp-Editor

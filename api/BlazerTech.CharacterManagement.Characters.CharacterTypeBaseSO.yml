@@ -20,11 +20,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterTypeBaseSO
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
     startLine: 10
   assemblies:
   - Assembly-CSharp
@@ -56,11 +56,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterTypeID
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
     startLine: 16
   assemblies:
   - Assembly-CSharp
@@ -87,11 +87,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: BaseSpritesheet
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
     startLine: 24
   assemblies:
   - Assembly-CSharp
@@ -123,11 +123,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterController
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
     startLine: 31
   assemblies:
   - Assembly-CSharp
@@ -157,11 +157,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsValid
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
     startLine: 35
   assemblies:
   - Assembly-CSharp
@@ -193,11 +193,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: PerformValidationCheck
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
     startLine: 39
   assemblies:
   - Assembly-CSharp
@@ -226,11 +226,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsValidCharacterSpriteSheet
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
     startLine: 64
   assemblies:
   - Assembly-CSharp

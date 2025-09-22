@@ -12,6 +12,7 @@ items:
   - BlazerTech.CharacterManagement.Core.FourDirectional
   - BlazerTech.CharacterManagement.Core.IValidatable
   - BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1
+  - BlazerTech.CharacterManagement.Core.RotateGO
   - BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
   - BlazerTech.CharacterManagement.Core.SerializableDictionary`2
   - BlazerTech.CharacterManagement.Core.SerializableKeyValuePair`2
@@ -27,19 +28,6 @@ items:
   assemblies:
   - Assembly-CSharp
 references:
-- uid: BlazerTech.CharacterManagement.Core.ExtensionMethods
-  commentId: T:BlazerTech.CharacterManagement.Core.ExtensionMethods
-  href: BlazerTech.CharacterManagement.Core.ExtensionMethods.html
-  name: ExtensionMethods
-  nameWithType: ExtensionMethods
-  fullName: BlazerTech.CharacterManagement.Core.ExtensionMethods
-- uid: BlazerTech.CharacterManagement.Core.IValidatable
-  commentId: T:BlazerTech.CharacterManagement.Core.IValidatable
-  parent: BlazerTech.CharacterManagement.Core
-  href: BlazerTech.CharacterManagement.Core.IValidatable.html
-  name: IValidatable
-  nameWithType: IValidatable
-  fullName: BlazerTech.CharacterManagement.Core.IValidatable
 - uid: BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1
   commentId: T:BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1
   href: BlazerTech.CharacterManagement.Core.OwnedResourceTracker-1.html
@@ -65,6 +53,25 @@ references:
   - name: " "
   - name: TResource
   - name: )
+- uid: BlazerTech.CharacterManagement.Core.SessionGUIDHandler
+  commentId: T:BlazerTech.CharacterManagement.Core.SessionGUIDHandler
+  href: BlazerTech.CharacterManagement.Core.SessionGUIDHandler.html
+  name: SessionGUIDHandler
+  nameWithType: SessionGUIDHandler
+  fullName: BlazerTech.CharacterManagement.Core.SessionGUIDHandler
+- uid: BlazerTech.CharacterManagement.Core.CMSSaveSystem
+  commentId: T:BlazerTech.CharacterManagement.Core.CMSSaveSystem
+  href: BlazerTech.CharacterManagement.Core.CMSSaveSystem.html
+  name: CMSSaveSystem
+  nameWithType: CMSSaveSystem
+  fullName: BlazerTech.CharacterManagement.Core.CMSSaveSystem
+- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler
+  commentId: T:BlazerTech.CharacterManagement.Core.CMSReferenceHandler
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.html
+  name: CMSReferenceHandler
+  nameWithType: CMSReferenceHandler
+  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler
 - uid: BlazerTech.CharacterManagement.Core.SerializableDictionary`2
   commentId: T:BlazerTech.CharacterManagement.Core.SerializableDictionary`2
   href: BlazerTech.CharacterManagement.Core.SerializableDictionary-2.html
@@ -127,6 +134,31 @@ references:
   - name: " "
   - name: TValue
   - name: )
+- uid: BlazerTech.CharacterManagement.Core.ExtensionMethods
+  commentId: T:BlazerTech.CharacterManagement.Core.ExtensionMethods
+  href: BlazerTech.CharacterManagement.Core.ExtensionMethods.html
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: BlazerTech.CharacterManagement.Core.ExtensionMethods
+- uid: BlazerTech.CharacterManagement.Core.RotateGO
+  commentId: T:BlazerTech.CharacterManagement.Core.RotateGO
+  href: BlazerTech.CharacterManagement.Core.RotateGO.html
+  name: RotateGO
+  nameWithType: RotateGO
+  fullName: BlazerTech.CharacterManagement.Core.RotateGO
+- uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+  commentId: T:BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+  href: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.html
+  name: ScriptableObjectMenuPaths
+  nameWithType: ScriptableObjectMenuPaths
+  fullName: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
+- uid: BlazerTech.CharacterManagement.Core.IValidatable
+  commentId: T:BlazerTech.CharacterManagement.Core.IValidatable
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.IValidatable.html
+  name: IValidatable
+  nameWithType: IValidatable
+  fullName: BlazerTech.CharacterManagement.Core.IValidatable
 - uid: BlazerTech.CharacterManagement.Core.FourDirectional
   commentId: T:BlazerTech.CharacterManagement.Core.FourDirectional
   parent: BlazerTech.CharacterManagement.Core
@@ -147,24 +179,6 @@ references:
   name: EssentialsLoader
   nameWithType: EssentialsLoader
   fullName: BlazerTech.CharacterManagement.Core.EssentialsLoader
-- uid: BlazerTech.CharacterManagement.Core.SessionGUIDHandler
-  commentId: T:BlazerTech.CharacterManagement.Core.SessionGUIDHandler
-  href: BlazerTech.CharacterManagement.Core.SessionGUIDHandler.html
-  name: SessionGUIDHandler
-  nameWithType: SessionGUIDHandler
-  fullName: BlazerTech.CharacterManagement.Core.SessionGUIDHandler
-- uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
-  commentId: T:BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
-  href: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.html
-  name: ScriptableObjectMenuPaths
-  nameWithType: ScriptableObjectMenuPaths
-  fullName: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
-- uid: BlazerTech.CharacterManagement.Core.CMSSaveSystem
-  commentId: T:BlazerTech.CharacterManagement.Core.CMSSaveSystem
-  href: BlazerTech.CharacterManagement.Core.CMSSaveSystem.html
-  name: CMSSaveSystem
-  nameWithType: CMSSaveSystem
-  fullName: BlazerTech.CharacterManagement.Core.CMSSaveSystem
 - uid: BlazerTech.CharacterManagement.Core.CMSInitializationHandler
   commentId: T:BlazerTech.CharacterManagement.Core.CMSInitializationHandler
   parent: BlazerTech.CharacterManagement.Core
@@ -172,13 +186,6 @@ references:
   name: CMSInitializationHandler
   nameWithType: CMSInitializationHandler
   fullName: BlazerTech.CharacterManagement.Core.CMSInitializationHandler
-- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler
-  commentId: T:BlazerTech.CharacterManagement.Core.CMSReferenceHandler
-  parent: BlazerTech.CharacterManagement.Core
-  href: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.html
-  name: CMSReferenceHandler
-  nameWithType: CMSReferenceHandler
-  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler
 - uid: BlazerTech.CharacterManagement.Core
   commentId: N:BlazerTech.CharacterManagement.Core
   href: BlazerTech.html

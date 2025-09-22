@@ -22,11 +22,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CCMAnimationPreviewButtonHandler
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
     startLine: 8
   assemblies:
   - Assembly-CSharp
@@ -53,11 +53,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: AnimationName
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
     startLine: 15
   assemblies:
   - Assembly-CSharp
@@ -82,11 +82,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Setup
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
     startLine: 22
   assemblies:
   - Assembly-CSharp
@@ -116,11 +116,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ChangeAnimation
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
     startLine: 57
   assemblies:
   - Assembly-CSharp
@@ -142,11 +142,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EnableInteractivity
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
     startLine: 74
   assemblies:
   - Assembly-CSharp
@@ -168,11 +168,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: DisableInteractivity
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
     startLine: 76
   assemblies:
   - Assembly-CSharp
@@ -194,11 +194,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Unhide
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
     startLine: 78
   assemblies:
   - Assembly-CSharp
@@ -220,11 +220,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Hide
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
     startLine: 80
   assemblies:
   - Assembly-CSharp
@@ -246,11 +246,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ChangeAlpha
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Preview/CCMAnimationPreviewButtonHandler.cs
     startLine: 82
   assemblies:
   - Assembly-CSharp

@@ -22,12 +22,6 @@ items:
   assemblies:
   - Assembly-CSharp
 references:
-- uid: BlazerTech.CharacterManagement.Components.UnifiedCharacterLoader
-  commentId: T:BlazerTech.CharacterManagement.Components.UnifiedCharacterLoader
-  href: BlazerTech.CharacterManagement.Components.UnifiedCharacterLoader.html
-  name: UnifiedCharacterLoader
-  nameWithType: UnifiedCharacterLoader
-  fullName: BlazerTech.CharacterManagement.Components.UnifiedCharacterLoader
 - uid: BlazerTech.CharacterManagement.Components.CharacterAnimator
   commentId: T:BlazerTech.CharacterManagement.Components.CharacterAnimator
   parent: BlazerTech.CharacterManagement.Components
@@ -35,13 +29,6 @@ references:
   name: CharacterAnimator
   nameWithType: CharacterAnimator
   fullName: BlazerTech.CharacterManagement.Components.CharacterAnimator
-- uid: BlazerTech.CharacterManagement.Components.CharacterLoaderBase
-  commentId: T:BlazerTech.CharacterManagement.Components.CharacterLoaderBase
-  parent: BlazerTech.CharacterManagement.Components
-  href: BlazerTech.CharacterManagement.Components.CharacterLoaderBase.html
-  name: CharacterLoaderBase
-  nameWithType: CharacterLoaderBase
-  fullName: BlazerTech.CharacterManagement.Components.CharacterLoaderBase
 - uid: BlazerTech.CharacterManagement.Components.PlayerMovementController
   commentId: T:BlazerTech.CharacterManagement.Components.PlayerMovementController
   parent: BlazerTech.CharacterManagement.Components
@@ -49,6 +36,19 @@ references:
   name: PlayerMovementController
   nameWithType: PlayerMovementController
   fullName: BlazerTech.CharacterManagement.Components.PlayerMovementController
+- uid: BlazerTech.CharacterManagement.Components.CharacterLoaderBase
+  commentId: T:BlazerTech.CharacterManagement.Components.CharacterLoaderBase
+  parent: BlazerTech.CharacterManagement.Components
+  href: BlazerTech.CharacterManagement.Components.CharacterLoaderBase.html
+  name: CharacterLoaderBase
+  nameWithType: CharacterLoaderBase
+  fullName: BlazerTech.CharacterManagement.Components.CharacterLoaderBase
+- uid: BlazerTech.CharacterManagement.Components.UnifiedCharacterLoader
+  commentId: T:BlazerTech.CharacterManagement.Components.UnifiedCharacterLoader
+  href: BlazerTech.CharacterManagement.Components.UnifiedCharacterLoader.html
+  name: UnifiedCharacterLoader
+  nameWithType: UnifiedCharacterLoader
+  fullName: BlazerTech.CharacterManagement.Components.UnifiedCharacterLoader
 - uid: BlazerTech.CharacterManagement.Components.CharacterLoaderLoadingMode
   commentId: T:BlazerTech.CharacterManagement.Components.CharacterLoaderLoadingMode
   parent: BlazerTech.CharacterManagement.Components

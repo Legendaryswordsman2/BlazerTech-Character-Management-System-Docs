@@ -16,11 +16,11 @@ items:
   type: Enum
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterListEntryDisplayType
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
     startLine: 11
   assemblies:
   - Assembly-CSharp
@@ -41,11 +41,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Text
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
     startLine: 11
   assemblies:
   - Assembly-CSharp
@@ -67,11 +67,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Sprite
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/LayeredCharacterListEntry.cs
     startLine: 11
   assemblies:
   - Assembly-CSharp

@@ -21,11 +21,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterLayerCarouselSelector
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
     startLine: 6
   assemblies:
   - Assembly-CSharp
@@ -66,11 +66,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Setup
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
     startLine: 11
   assemblies:
   - Assembly-CSharp
@@ -95,11 +95,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: DisableInteractivity
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
     startLine: 16
   assemblies:
   - Assembly-CSharp
@@ -123,11 +123,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EnableInteractivity
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
     startLine: 22
   assemblies:
   - Assembly-CSharp
@@ -151,11 +151,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: NextOption
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
     startLine: 28
   assemblies:
   - Assembly-CSharp
@@ -177,11 +177,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: PreviousOption
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
     startLine: 38
   assemblies:
   - Assembly-CSharp
@@ -203,11 +203,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterLayerUpdated
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
     startLine: 49
   assemblies:
   - Assembly-CSharp
@@ -232,11 +232,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: MenuDisabled
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Layer Option Selectors/Carousel Selector/CharacterLayerCarouselSelector.cs
     startLine: 54
   assemblies:
   - Assembly-CSharp

@@ -23,11 +23,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: PlayerMovementController
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
     startLine: 5
   assemblies:
   - Assembly-CSharp
@@ -54,11 +54,11 @@ items:
   type: Field
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Instance
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
     startLine: 7
   assemblies:
   - Assembly-CSharp
@@ -81,11 +81,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: MoveSpeed
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
     startLine: 9
   assemblies:
   - Assembly-CSharp
@@ -110,11 +110,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CanMove
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
     startLine: 12
   assemblies:
   - Assembly-CSharp
@@ -139,11 +139,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EnableSprint
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
     startLine: 14
   assemblies:
   - Assembly-CSharp
@@ -168,11 +168,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EnableCrouch
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
     startLine: 19
   assemblies:
   - Assembly-CSharp
@@ -197,11 +197,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsMoving
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
     startLine: 24
   assemblies:
   - Assembly-CSharp
@@ -226,11 +226,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsSprinting
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
     startLine: 25
   assemblies:
   - Assembly-CSharp
@@ -255,11 +255,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsCrouching
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
     startLine: 26
   assemblies:
   - Assembly-CSharp
@@ -284,11 +284,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Movement
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BlazerTech Character Management System/Scripts/Usage Scripts/PlayerMovementController.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/PlayerMovementController.cs
     startLine: 30
   assemblies:
   - Assembly-CSharp
