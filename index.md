@@ -6,7 +6,7 @@ uid: landing
 # **BlazerTech Character Management System**
 
 ## **Version 0.0.2**
-Easily create, manage, and customize pixel art characters!
+Easily create, manage, and customize sprite based characters!
 
 A comprehensive framework designed to handle both modular layered characters and simple unified characters. Providing an easy solution to create, use, animate and save/load characters in your Unity projects.
 
