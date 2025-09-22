@@ -3,7 +3,7 @@ uid: history-tracking-system
 ---
 
 # History Tracking System
-The **History Tracking System** tracks every change made to the character in the Character Creation Menu whlie the menu is open. Changes can then be undone at anytime.
+The **History Tracking System** tracks every change made to the character in the Character Creation Menu whlie the menu is open. Changes can then be looked through or undone at anytime.
 
 ---
 
