@@ -4,11 +4,11 @@ uid: basic-concepts
 
 # Basic Concepts
 
-This page introduces the **core building blocks** of the Character Management System:  
+This page introduces the **core principles** of the Character Management System:  
 - [**Character Types**](#character-types) – Define how characters are structured.  
 - [**Character Templates**](#character-templates) – Blueprints for creating characters later.  
 - [**Character Usage**](#character-usage) – Scripts to load and manage characters.  
-- [**Character Creator**](#character-creator) – Modular system for building customizable characters in-game.  
+- [**Character Creator**](#character-creator) – Modular UI framework for building customizable characters in-game.  
 
 ---
 

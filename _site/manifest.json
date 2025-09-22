@@ -2072,6 +2072,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-preview/character-preview-animation-buttons.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-preview/character-preview-animation-buttons.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-preview/character-preview-complete.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-preview/character-preview-complete.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-preview/character-preview-rotation-buttons.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-preview/character-preview-rotation-buttons.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-preview/core-character-preview.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-preview/core-character-preview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/controlled-randomization-example.png",
       "output": {
         "resource": {
