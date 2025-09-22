@@ -7703,6 +7703,15 @@ references:
 - uid: grid-layer-selector
   name: Grid Layer Selector
   href: docs/character-creator/layer-selectors/Grid-layer-selector.html
+- uid: history-panels
+  name: History Panels
+  href: docs/character-creator/history/history-panels.html
+- uid: history-tracking-System
+  name: History Tracking System
+  href: docs/character-creator/history/history-tracking.html
+- uid: history-undo-redo
+  name: History Undo/Redo
+  href: docs/character-creator/history/history-undo-redo.html
 - uid: landing
   name: BlazerTech Character Management System
   href: index.html
