@@ -2152,6 +2152,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/history-panels/history-panel-sprite-preview.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/history-panels/history-panel-sprite-preview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/history-panels/history-panel-text.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/history-panels/history-panel-text.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/import-popup.png",
       "output": {
         "resource": {

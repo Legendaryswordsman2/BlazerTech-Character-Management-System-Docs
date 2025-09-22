@@ -7706,7 +7706,7 @@ references:
 - uid: history-panels
   name: History Panels
   href: docs/character-creator/history/history-panels.html
-- uid: history-tracking-System
+- uid: history-tracking-system
   name: History Tracking System
   href: docs/character-creator/history/history-tracking.html
 - uid: history-undo-redo

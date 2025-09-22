@@ -87,6 +87,67 @@
         <article data-uid="history-panels">
 <h1 id="history-panels">History Panels</h1>
 
+<p>A History Panel displays a list of snaphots saved in the <a class="xref" href="history-tracking.html#history-tracker-component">History Tracker component</a> for the player to view and restore any changes they've made.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Prefabs Location: <strong>Prefabs &gt; Character Creator &gt; History &gt; History Panels</strong></p>
+</div>
+<h2 id="panel-type-prefabs">Panel Type Prefabs</h2>
+<ol>
+<li><strong>History Panel [Text, Vertical List]</strong>
+<ul>
+<li>A vertical, text based list. Each entry displays text containing what changed in the assigned character snapshot.</li>
+<li><img src="/images/history-panels/history-panel-text.png" alt="History Panel Text"></li>
+</ul>
+</li>
+<li><strong>History Panel [Sprite, Horizontal List]</strong>
+<ul>
+<li>A horizontal, sprite based list. Each entry contains a list of sprites, each sprite displays a layer in the assigned character snapshot.</li>
+<li><img src="/images/history-panels/history-panel-sprite-preview.png" alt="History Panel Sprite Preview"></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="entry-prefabs">Entry Prefabs</h2>
+<p>The following are entries used in the above mentioned panels.</p>
+<ol>
+<li><strong>History Panel Entry [Text]</strong>
+<ul>
+<li>Entry displaying text which describes what changed in the assigned snapshot.</li>
+</ul>
+</li>
+<li><strong>History Panel Entry [Sprite]</strong>
+<ul>
+<li>Entry containing a dynmaic list of sprites. Each sprite displays a layer in the assigned character snapshot.</li>
+</ul>
+</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Entry prefabs live in the <strong>/History List Entries</strong> subfolder.</p>
+</div>
+<h3 id="custom-prefabs">Custom Prefabs</h3>
+<p>You can create your own history panel entry easily. Here are the steps</p>
+<ol>
+<li>Create a new game object and add the <a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html">HistoryPanelEntry</a> component.</li>
+<li>Set the display mode:
+<ul>
+<li>Text - Requires reference to a text objcet.</li>
+<li>Sprite - Requires reference to layer preview sprites parent. (The parent game object sprites will be instantiated to)</li>
+<li>Text And Sprite - Requires both aforementioned references.</li>
+</ul>
+</li>
+<li>Add the <code>Toggle</code> component and reference it in the <code>HistoryPanelEntry</code> component.</li>
+<li>Add an <code>Image</code> component - This will be the background image.</li>
+<li>Set the <code>Target Graphic</code> on the <code>toggle</code> to the image component.</li>
+<li>Add a new child game object and add another <code>Image</code> component to it.</li>
+<li>Name the new child game object something like <strong>Highlight</strong>. - This game object will only be active when the entry is selected.</li>
+<li>Set the <code>Graphic</code> on the <code>toggle</code> to the image component on the <strong>Highlight</strong> game object.</li>
+<li>Turn your game object into a prefab by dragging it into a folder in the project window.</li>
+<li>Finally, on the <a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.html">CCMHistoryPanel</a> component which lives on all <strong>History Panels</strong>, set the <code>Entry Prefab</code> to reference your new prefab.</li>
+</ol>
+<p><strong>Confused?</strong><br>
+Checkout one of the pre-existing entry prefabs to see how they're setup.</p>
 
 </article>
 
