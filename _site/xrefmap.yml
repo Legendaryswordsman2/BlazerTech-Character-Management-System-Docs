@@ -7790,6 +7790,9 @@ references:
 - uid: character-creator-overview
   name: Character Creator
   href: docs/character-creator/character-creator-overview.html
+- uid: character-creator-setup
+  name: Character Creator Setup
+  href: docs/character-creator/character-creator-setup.html
 - uid: character-groups
   name: Character Groups
   href: docs/character-groups.html

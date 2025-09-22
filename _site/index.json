@@ -681,8 +681,8 @@
   },
   "docs/character-creator/character-creator-setup.html": {
     "href": "docs/character-creator/character-creator-setup.html",
-    "title": "| BlazerTech Character Management System",
-    "summary": ""
+    "title": "Character Creator Setup | BlazerTech Character Management System",
+    "summary": "Character Creator Setup Premade Character Creation Menus The easiest solution is to use a premade character creation menu. These prefabs contain everything needed for a functional Character Creation Menu. At bare minimum they contain the following: Layer Selectors - Used to change layers of the character. Character preview - Used to preview the character while editing. Save & Back Buttons. Tip Premade Character Creation Menu prefabs location: Prefabs > Character Creator > Premade Menus Premade Menus: Simplistic: Dropdown Selectors [Initialize Existing]. - Includes 6 dropdown selectors. Character Preview - Includes Rotation Controls. Save & Back Buttons. Creating Your Own Character Creation Menu"
   },
   "docs/character-creator/character-preview.html": {
     "href": "docs/character-creator/character-preview.html",
