@@ -20,7 +20,7 @@ At bare minimum they contain the following:
    - **Dropdown Selectors [Initialize Existing]**. - Includes 6 dropdown selectors.
    - **Character Preview** - Includes Rotation Controls.
    - **Save & Back Buttons**.
-   - ![Premade Character Creation Menu 1](/images/premade-character-creation-menus/premade-character-creation-menu-1.png)
+   - ![Premade Character Creation Menu 1](~/images/premade-character-creation-menus/premade-character-creation-menu-1.png)
 
 
 ## Creating Your Own Character Creation Menu

@@ -25,7 +25,7 @@ Add a button component that **On Click** calls **[CharacterLayerSelector.Randomi
 ## Controlled Randomization
 A controlled randomization button contains extra options to only randomize the selected layers.
 
-![Controlled Randomization](/images/controlled-randomization-example.png)
+![Controlled Randomization](~/images/controlled-randomization-example.png)
 
 > [!TIP]
 > A prefab is locatated in **Prefabs > Character Creator > Randomization > Controlled Randomization Button**

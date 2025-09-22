@@ -8,7 +8,7 @@ uid: list-layer-selector
 
 A **List Layer Selector** contains a vertical list where each element in the grid represents an option of the assigned character layer. When an element is selected it will be applied to the character immediately.
 
-![List Layer Selector](/images/list-layer-selector.png)
+![List Layer Selector](~/images/list-layer-selector.png)
 
 ---
 

@@ -8,8 +8,8 @@ uid: grid-layer-selector
 
 A **Grid Layer Selector** contains a grid where each element in the grid represents an option of the assigned character layer. When an element is selected it will be applied to the character immediately.
 
-![Grid Layer Selector](/images/grid-layer-selector.png)
-![Grid Layer Selector](/images/grid-layer-selector-variant-2.png)
+![Grid Layer Selector](~/images/grid-layer-selector.png)
+![Grid Layer Selector](~/images/grid-layer-selector-variant-2.png)
 
 ---
 

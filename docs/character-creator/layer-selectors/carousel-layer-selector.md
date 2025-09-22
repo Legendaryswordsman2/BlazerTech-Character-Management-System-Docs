@@ -8,7 +8,7 @@ uid: carousel-layer-selector
 
 A **Carousel Layer Selector** displays the currently selected layer option and contains left/right buttons to cycle through other options available for the assigned layer.
 
-![Carousel Layer Selector](/images/carousel-layer-selector.png)
+![Carousel Layer Selector](~/images/carousel-layer-selector.png)
 
 ---
 

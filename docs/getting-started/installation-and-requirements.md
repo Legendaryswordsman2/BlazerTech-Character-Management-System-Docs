@@ -34,7 +34,7 @@ Make sure **Naughty Attributes** and **Addressables** are both installed and the
 
 **Import Popup:**
 - Regardless of the installation method a popup will appear prompting you to import the `BlazerTech Character Management System` into your project. Make sure all assets are selected and click the `Import` button.  
-![Import Popup](/images/import-popup.png)
+![Import Popup](~/images/import-popup.png)
 
 ### After Installtion
 Here's some things to do after installing the **BlazerTech Character Management System**:

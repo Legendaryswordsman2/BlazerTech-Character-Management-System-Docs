@@ -9,7 +9,7 @@ A **Tab Layer Selector** won't do much on it's own. It must be paired with anoth
 > [!NOTE]
 > The **Tab Layer Selector** was designed to work with [Grid Layer Selectors](xref:grid-layer-selector) & [List Layer Selectors](xref:grid-layer-selector) originally but can work with any **Layer Selector**.
 
-![Tab Layer Selector](/images/tab-layer-selector.png)
+![Tab Layer Selector](~/images/tab-layer-selector.png)
 
 
 ---

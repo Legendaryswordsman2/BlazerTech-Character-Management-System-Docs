@@ -19,7 +19,7 @@ If the undo or redo action is invalid the button will be disabled until valid ag
 
 A prefab already exists where almost everything is already setup. You'll still need to assign the **History Tracker** on both button game objects though.
 
-![History Undo/Redo Buttons](/images/history-panels/history-undo-redo-buttons.png)
+![History Undo/Redo Buttons](~/images/history-panels/history-undo-redo-buttons.png)
 
 > [!TIP]
 > Prefabs Location: **Prefabs > Character Creator > History > Undo-Redo**
