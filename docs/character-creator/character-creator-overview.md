@@ -4,7 +4,7 @@ uid: character-creator-overview
 
 # Character Creator
 
-The **Character Creator** is a modular prefab based framework for building a **Character Creation Menu** inside your game.  
+The **Character Creator** is a modular prefab based framework for building **Character Creation Menus** inside your game.  
 It's fully customizable; combine and edit different prefabs to create the exact design you want.
 
 ---
