@@ -2174,6 +2174,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/blazertech-character-management-system-cover-iamge.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/blazertech-character-management-system-cover-iamge.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/carousel-layer-selector.png",
       "output": {
         "resource": {
