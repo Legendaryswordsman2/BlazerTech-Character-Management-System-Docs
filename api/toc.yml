@@ -34,11 +34,8 @@ items:
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle
     name: CCMLayerRandomizeToggle
     type: Class
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress
-    name: CCMLoadingBufferSpriteFillProgress
-    type: Class
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
-    name: CCMLoadingScreen
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler
+    name: CCMLoadingScreenHandler
     type: Class
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay
     name: CCMRelay
@@ -79,8 +76,8 @@ items:
   - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode
     name: CharacterPreviewMode
     type: Enum
-  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
-    name: CharacterSelectionLoadingScreen
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
+    name: CharacterSelectionLoadingScreenHandler
     type: Class
   - uid: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
     name: ElementDisplayMode
@@ -114,6 +111,9 @@ items:
     type: Class
   - uid: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgress
     name: LoadingScreenProgress
+    type: Class
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar
+    name: LoadingScreenProgressBar
     type: Class
   - uid: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText
     name: LoadingScreenProgressText

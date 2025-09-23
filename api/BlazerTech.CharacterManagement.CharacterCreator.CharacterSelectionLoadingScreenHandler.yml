@@ -1,33 +1,33 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
-  id: CharacterSelectionLoadingScreen
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
+  id: CharacterSelectionLoadingScreenHandler
   parent: BlazerTech.CharacterManagement.CharacterCreator
   children:
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingFinished
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingProgressUpdated
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingFinished
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingProgressUpdated
   langs:
   - csharp
   - vb
-  name: CharacterSelectionLoadingScreen
-  nameWithType: CharacterSelectionLoadingScreen
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
+  name: CharacterSelectionLoadingScreenHandler
+  nameWithType: CharacterSelectionLoadingScreenHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/CharacterSelectionLoadingScreen.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/CharacterSelectionLoadingScreenHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterSelectionLoadingScreen
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/CharacterSelectionLoadingScreen.cs
+    id: CharacterSelectionLoadingScreenHandler
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/CharacterSelectionLoadingScreenHandler.cs
     startLine: 6
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
-    content: 'public class CharacterSelectionLoadingScreen : MonoBehaviour, ILoadingScreen'
-    content.vb: Public Class CharacterSelectionLoadingScreen Inherits MonoBehaviour Implements ILoadingScreen
+    content: 'public class CharacterSelectionLoadingScreenHandler : MonoBehaviour, ILoadingScreen'
+    content.vb: Public Class CharacterSelectionLoadingScreenHandler Inherits MonoBehaviour Implements ILoadingScreen
   inheritance:
   - System.Object
   - UnityEngine.Object
@@ -36,24 +36,24 @@ items:
   - UnityEngine.MonoBehaviour
   implements:
   - BlazerTech.CharacterManagement.CharacterCreator.ILoadingScreen
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingProgressUpdated
-  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingProgressUpdated
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingProgressUpdated
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingProgressUpdated
   id: OnLoadingProgressUpdated
-  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
   langs:
   - csharp
   - vb
   name: OnLoadingProgressUpdated
-  nameWithType: CharacterSelectionLoadingScreen.OnLoadingProgressUpdated
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingProgressUpdated
+  nameWithType: CharacterSelectionLoadingScreenHandler.OnLoadingProgressUpdated
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingProgressUpdated
   type: Event
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/CharacterSelectionLoadingScreen.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/CharacterSelectionLoadingScreenHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnLoadingProgressUpdated
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/CharacterSelectionLoadingScreen.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/CharacterSelectionLoadingScreenHandler.cs
     startLine: 13
   assemblies:
   - Assembly-CSharp
@@ -66,24 +66,24 @@ items:
     content.vb: Public Event OnLoadingProgressUpdated As EventHandler(Of Single)
   implements:
   - BlazerTech.CharacterManagement.CharacterCreator.ILoadingScreen.OnLoadingProgressUpdated
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingFinished
-  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingFinished
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingFinished
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingFinished
   id: OnLoadingFinished
-  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
   langs:
   - csharp
   - vb
   name: OnLoadingFinished
-  nameWithType: CharacterSelectionLoadingScreen.OnLoadingFinished
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingFinished
+  nameWithType: CharacterSelectionLoadingScreenHandler.OnLoadingFinished
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingFinished
   type: Event
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/CharacterSelectionLoadingScreen.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Character Selection/CharacterSelectionLoadingScreenHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnLoadingFinished
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/CharacterSelectionLoadingScreen.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Character Selection/CharacterSelectionLoadingScreenHandler.cs
     startLine: 14
   assemblies:
   - Assembly-CSharp

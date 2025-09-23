@@ -35,7 +35,7 @@ items:
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
   derivedClasses:
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress
+  - BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar
   - BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText
 - uid: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgress.OnLoadingStarting
   commentId: M:BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgress.OnLoadingStarting

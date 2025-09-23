@@ -87,7 +87,69 @@
         <article data-uid="ccm-loading-screens">
 <h1 id="loading-screens">Loading Screens</h1>
 
-<p>The <strong>Character Creation Menu</strong> takes time to open as it needs to load all layer options. A loading screen can be added to hide the Character Creation Menu and give the player something to look at until the menu is ready.</p>
+<p>The <strong>Character Creation Menu</strong> takes time to open since it needs to load all layer options. A loading screen can be added to hide the Character Creation Menu and give the player something to look at until the menu is ready.</p>
+<p><img src="/images/ccm-loading-screen/loading-screen.png" alt="Loading Screen"></p>
+<h2 id="how-it-works">How It Works</h2>
+<p>Just like the Character Creation Menu itself; loading screens are also modular.</p>
+<p>The <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html">CCMLoadingScreenHandler</a> component is the core of the loading screen. It should live outside of the loading screen contents but still within the Character Creation Menu contents since it will be in charge of enabling/disabling the loading screen.</p>
+<ul>
+<li>The <code>Loading Screen Handler</code> requires a reference to the parent of the loading screen (Named <strong>Contents</strong> in all prefabs).</li>
+<li>Optionally a loading finished delay can be added to wait a fixed amount of time after loading is finished before disabling the loading screen. This can be helpful to allow loading bars/text to catch up.</li>
+</ul>
+<h2 id="prefabs">Prefabs</h2>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Prefabs Location: <strong>Prefabs &gt; Character Creator &gt; Loading Screen</strong></p>
+</div>
+<p>Within the base <strong>Loading Screen</strong> folder is the <strong>Loading Screen Core</strong> prefab. This is the bare minimum required for a loading screen. It contains the Loading Screen Handler component and loading screen contents which only contains an image. No additional functionality is included.</p>
+<h3 id="loading-screen-component-prefabs">Loading Screen Component Prefabs</h3>
+<p>Located in the <strong>/Loading Screen Components</strong> subfolder are prefabs which add additional functionality to the loading screen. These can be added to the <strong>Loading Screen Core</strong> prefab.</p>
+<ul>
+<li><strong>Loading Progress Text</strong> - Adds progress text indicating how far loading has progressed.</li>
+<li><strong>Loading Bar</strong> - Adds a progress bar which fills up as the loading progresses.</li>
+<li><strong>Loading Repeating Text</strong> - Adds text which cylces through a list of pre-set strings.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Make sure to set the reference to the <strong>Loading Screen Handler</strong> after instantiating any loading screen component prefabs.</p>
+</div>
+<h3 id="complete-loading-screen-prefabs">Complete Loading Screen Prefabs</h3>
+<p>Located in the <strong>/Complete Loading Screens</strong> subfolder are prefabs which contain the <strong>Core Loading Screen</strong> plus other functionality.</p>
+<ol>
+<li>Loading Screen [+Text, Bar]</li>
+</ol>
+<h2 id="loading-screen-components">Loading Screen Components</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All loading screen components require a reference to the <strong>Loading Screen handler</strong>.</p>
+</div>
+<p>Additional components can be added to a loading screen to add functionality (Note:):</p>
+<ul>
+<li><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText.html">CCMLoadingScreenProgressText</a>
+<ul>
+<li>Adds progress text indicating how far loading has progressed.</li>
+<li>Requires a <code>TMP Text</code> component reference.</li>
+<li><code>Loading String</code> can be modified to change the loading bar text. <strong>{0}</strong> will be replaced with the loading percentage.</li>
+<li><code>Smoothing Speed</code> value can be changed to modify lerp speed through loading progress.</li>
+</ul>
+</li>
+<li><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.html">CCMLoadingScreenProgressBar</a>
+<ul>
+<li>Adds a progress bar which fills up as the loading progresses.</li>
+<li>Requires an <code>image</code> component reference</li>
+<li>The <code>image</code> components <code>Image Type</code> should be set to filled. The <code>Fill Amount</code> can then be modifed automatically to fill up the progress bar.</li>
+<li><code>Smoothing Speed</code> value can be changed to modify loading bar lerp speed through loading progress.</li>
+</ul>
+</li>
+<li><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenRepeatingText.html">LoadingScreenRepeatingText</a>
+<ul>
+<li>Adds text which cylces through a list of pre-set strings.</li>
+<li>Requires a <code>TMP Text</code> component reference.</li>
+<li>A list of strings containing the repeating text must be set.</li>
+<li>Repeating text cycle duration can be modified (Default = 0.5 seconds).</li>
+</ul>
+</li>
+</ul>
 
 </article>
 

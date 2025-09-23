@@ -152,30 +152,16 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen",
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler",
       "Summary": null
     },
     {
@@ -362,16 +348,16 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen",
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler",
       "Summary": null
     },
     {
@@ -526,6 +512,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgress",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar",
       "Summary": null
     },
     {

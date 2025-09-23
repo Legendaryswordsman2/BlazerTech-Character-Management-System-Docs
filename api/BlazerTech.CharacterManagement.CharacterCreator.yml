@@ -14,8 +14,7 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel
   - BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
   - BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler
   - BlazerTech.CharacterManagement.CharacterCreator.CCMRelay
   - BlazerTech.CharacterManagement.CharacterCreator.CCMSelectedLayerTabHandler
   - BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler
@@ -29,7 +28,7 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterListEntryDisplayType
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterPressenceController
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
   - BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
   - BlazerTech.CharacterManagement.CharacterCreator.GameObjectStateNotifier
   - BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry
@@ -41,6 +40,7 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterListType
   - BlazerTech.CharacterManagement.CharacterCreator.LayeredCharacterSelectionList
   - BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgress
+  - BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar
   - BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText
   - BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenRepeatingText
   langs:
@@ -72,12 +72,6 @@ references:
   name: LoadingScreenProgressText
   nameWithType: LoadingScreenProgressText
   fullName: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
-  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.html
-  name: CharacterSelectionLoadingScreen
-  nameWithType: CharacterSelectionLoadingScreen
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMBase
   parent: BlazerTech.CharacterManagement.CharacterCreator
@@ -85,18 +79,18 @@ references:
   name: CCMBase
   nameWithType: CCMBase
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMBase
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.html
-  name: CCMLoadingBufferSpriteFillProgress
-  nameWithType: CCMLoadingBufferSpriteFillProgress
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel
   href: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.html
   name: CCMHistoryPanel
   nameWithType: CCMHistoryPanel
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html
+  name: CCMLoadingScreenHandler
+  nameWithType: CCMLoadingScreenHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode
   parent: BlazerTech.CharacterManagement.CharacterCreator
@@ -162,6 +156,18 @@ references:
   name: CharacterLayerTabSelector
   nameWithType: CharacterLayerTabSelector
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerTabSelector
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.html
+  name: CharacterSelectionLoadingScreenHandler
+  nameWithType: CharacterSelectionLoadingScreenHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar
+  href: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.html
+  name: LoadingScreenProgressBar
+  nameWithType: LoadingScreenProgressBar
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMRelay
   href: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html
@@ -272,12 +278,6 @@ references:
   name: CharacterPressenceController
   nameWithType: CharacterPressenceController
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterPressenceController
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
-  href: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.html
-  name: CCMLoadingScreen
-  nameWithType: CCMLoadingScreen
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector
   commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector
   href: BlazerTech.CharacterManagement.CharacterCreator.CharacterLayerCarouselSelector.html

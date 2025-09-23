@@ -937,59 +937,24 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLayerRandomizeToggle.UpdateRandomizationToggle
   nameWithType: CCMLayerRandomizeToggle.UpdateRandomizationToggle
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress
-  name: CCMLoadingBufferSpriteFillProgress
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.html
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress
-  nameWithType: CCMLoadingBufferSpriteFillProgress
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.OnLoadingProgressUpdated(System.Object,System.Single)
-  name: OnLoadingProgressUpdated(object, float)
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.html#BlazerTech_CharacterManagement_CharacterCreator_CCMLoadingBufferSpriteFillProgress_OnLoadingProgressUpdated_System_Object_System_Single_
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.OnLoadingProgressUpdated(System.Object,System.Single)
-  name.vb: OnLoadingProgressUpdated(Object, Single)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.OnLoadingProgressUpdated(object, float)
-  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.OnLoadingProgressUpdated(Object, Single)
-  nameWithType: CCMLoadingBufferSpriteFillProgress.OnLoadingProgressUpdated(object, float)
-  nameWithType.vb: CCMLoadingBufferSpriteFillProgress.OnLoadingProgressUpdated(Object, Single)
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.OnLoadingProgressUpdated*
-  name: OnLoadingProgressUpdated
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.html#BlazerTech_CharacterManagement_CharacterCreator_CCMLoadingBufferSpriteFillProgress_OnLoadingProgressUpdated_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.OnLoadingProgressUpdated
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.OnLoadingProgressUpdated
-  nameWithType: CCMLoadingBufferSpriteFillProgress.OnLoadingProgressUpdated
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.OnLoadingStarting
-  name: OnLoadingStarting()
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.html#BlazerTech_CharacterManagement_CharacterCreator_CCMLoadingBufferSpriteFillProgress_OnLoadingStarting
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.OnLoadingStarting
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.OnLoadingStarting()
-  nameWithType: CCMLoadingBufferSpriteFillProgress.OnLoadingStarting()
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.OnLoadingStarting*
-  name: OnLoadingStarting
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.html#BlazerTech_CharacterManagement_CharacterCreator_CCMLoadingBufferSpriteFillProgress_OnLoadingStarting_
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.OnLoadingStarting
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingBufferSpriteFillProgress.OnLoadingStarting
-  nameWithType: CCMLoadingBufferSpriteFillProgress.OnLoadingStarting
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
-  name: CCMLoadingScreen
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.html
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
-  nameWithType: CCMLoadingScreen
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.OnLoadingFinished
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler
+  name: CCMLoadingScreenHandler
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler
+  nameWithType: CCMLoadingScreenHandler
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.OnLoadingFinished
   name: OnLoadingFinished
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.html#BlazerTech_CharacterManagement_CharacterCreator_CCMLoadingScreen_OnLoadingFinished
-  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.OnLoadingFinished
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.OnLoadingFinished
-  nameWithType: CCMLoadingScreen.OnLoadingFinished
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.OnLoadingProgressUpdated
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMLoadingScreenHandler_OnLoadingFinished
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.OnLoadingFinished
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.OnLoadingFinished
+  nameWithType: CCMLoadingScreenHandler.OnLoadingFinished
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.OnLoadingProgressUpdated
   name: OnLoadingProgressUpdated
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.html#BlazerTech_CharacterManagement_CharacterCreator_CCMLoadingScreen_OnLoadingProgressUpdated
-  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.OnLoadingProgressUpdated
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.OnLoadingProgressUpdated
-  nameWithType: CCMLoadingScreen.OnLoadingProgressUpdated
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CCMLoadingScreenHandler_OnLoadingProgressUpdated
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.OnLoadingProgressUpdated
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.OnLoadingProgressUpdated
+  nameWithType: CCMLoadingScreenHandler.OnLoadingProgressUpdated
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CCMRelay
   name: CCMRelay
   href: api/BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html
@@ -2098,24 +2063,24 @@ references:
   commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode.Static
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterPreviewMode.Static
   nameWithType: CharacterPreviewMode.Static
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
-  name: CharacterSelectionLoadingScreen
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.html
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen
-  nameWithType: CharacterSelectionLoadingScreen
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingFinished
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
+  name: CharacterSelectionLoadingScreenHandler
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler
+  nameWithType: CharacterSelectionLoadingScreenHandler
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingFinished
   name: OnLoadingFinished
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterSelectionLoadingScreen_OnLoadingFinished
-  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingFinished
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingFinished
-  nameWithType: CharacterSelectionLoadingScreen.OnLoadingFinished
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingProgressUpdated
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterSelectionLoadingScreenHandler_OnLoadingFinished
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingFinished
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingFinished
+  nameWithType: CharacterSelectionLoadingScreenHandler.OnLoadingFinished
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingProgressUpdated
   name: OnLoadingProgressUpdated
-  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterSelectionLoadingScreen_OnLoadingProgressUpdated
-  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingProgressUpdated
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreen.OnLoadingProgressUpdated
-  nameWithType: CharacterSelectionLoadingScreen.OnLoadingProgressUpdated
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterSelectionLoadingScreenHandler_OnLoadingProgressUpdated
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingProgressUpdated
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterSelectionLoadingScreenHandler.OnLoadingProgressUpdated
+  nameWithType: CharacterSelectionLoadingScreenHandler.OnLoadingProgressUpdated
 - uid: BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode
   name: ElementDisplayMode
   href: api/BlazerTech.CharacterManagement.CharacterCreator.ElementDisplayMode.html
@@ -2652,6 +2617,41 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgress.OnLoadingStarting
   nameWithType: LoadingScreenProgress.OnLoadingStarting
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar
+  name: LoadingScreenProgressBar
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.html
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar
+  nameWithType: LoadingScreenProgressBar
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.OnLoadingProgressUpdated(System.Object,System.Single)
+  name: OnLoadingProgressUpdated(object, float)
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.html#BlazerTech_CharacterManagement_CharacterCreator_LoadingScreenProgressBar_OnLoadingProgressUpdated_System_Object_System_Single_
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.OnLoadingProgressUpdated(System.Object,System.Single)
+  name.vb: OnLoadingProgressUpdated(Object, Single)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.OnLoadingProgressUpdated(object, float)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.OnLoadingProgressUpdated(Object, Single)
+  nameWithType: LoadingScreenProgressBar.OnLoadingProgressUpdated(object, float)
+  nameWithType.vb: LoadingScreenProgressBar.OnLoadingProgressUpdated(Object, Single)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.OnLoadingProgressUpdated*
+  name: OnLoadingProgressUpdated
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.html#BlazerTech_CharacterManagement_CharacterCreator_LoadingScreenProgressBar_OnLoadingProgressUpdated_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.OnLoadingProgressUpdated
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.OnLoadingProgressUpdated
+  nameWithType: LoadingScreenProgressBar.OnLoadingProgressUpdated
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.OnLoadingStarting
+  name: OnLoadingStarting()
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.html#BlazerTech_CharacterManagement_CharacterCreator_LoadingScreenProgressBar_OnLoadingStarting
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.OnLoadingStarting
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.OnLoadingStarting()
+  nameWithType: LoadingScreenProgressBar.OnLoadingStarting()
+- uid: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.OnLoadingStarting*
+  name: OnLoadingStarting
+  href: api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.html#BlazerTech_CharacterManagement_CharacterCreator_LoadingScreenProgressBar_OnLoadingStarting_
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.OnLoadingStarting
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressBar.OnLoadingStarting
+  nameWithType: LoadingScreenProgressBar.OnLoadingStarting
 - uid: BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText
   name: LoadingScreenProgressText
   href: api/BlazerTech.CharacterManagement.CharacterCreator.LoadingScreenProgressText.html

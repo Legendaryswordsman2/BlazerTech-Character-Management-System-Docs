@@ -1,33 +1,33 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
-  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
-  id: CCMLoadingScreen
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler
+  id: CCMLoadingScreenHandler
   parent: BlazerTech.CharacterManagement.CharacterCreator
   children:
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.OnLoadingFinished
-  - BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.OnLoadingProgressUpdated
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.OnLoadingFinished
+  - BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.OnLoadingProgressUpdated
   langs:
   - csharp
   - vb
-  name: CCMLoadingScreen
-  nameWithType: CCMLoadingScreen
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
+  name: CCMLoadingScreenHandler
+  nameWithType: CCMLoadingScreenHandler
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Character Creator/Loading Screen/CCMLoadingScreen.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Loading Screen/CCMLoadingScreenHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CCMLoadingScreen
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Loading Screen/CCMLoadingScreen.cs
+    id: CCMLoadingScreenHandler
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Loading Screen/CCMLoadingScreenHandler.cs
     startLine: 6
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
   syntax:
-    content: 'public class CCMLoadingScreen : CCMBase, ILoadingScreen'
-    content.vb: Public Class CCMLoadingScreen Inherits CCMBase Implements ILoadingScreen
+    content: 'public class CCMLoadingScreenHandler : CCMBase, ILoadingScreen'
+    content.vb: Public Class CCMLoadingScreenHandler Inherits CCMBase Implements ILoadingScreen
   inheritance:
   - System.Object
   - UnityEngine.Object
@@ -47,24 +47,24 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.CharacterCreationMenuBeforeDisabled
   - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCharacterCreationMenuManagerReference
   - BlazerTech.CharacterManagement.CharacterCreator.CCMBase.GetCCReferenceHandler
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.OnLoadingProgressUpdated
-  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.OnLoadingProgressUpdated
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.OnLoadingProgressUpdated
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.OnLoadingProgressUpdated
   id: OnLoadingProgressUpdated
-  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler
   langs:
   - csharp
   - vb
   name: OnLoadingProgressUpdated
-  nameWithType: CCMLoadingScreen.OnLoadingProgressUpdated
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.OnLoadingProgressUpdated
+  nameWithType: CCMLoadingScreenHandler.OnLoadingProgressUpdated
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.OnLoadingProgressUpdated
   type: Event
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Character Creator/Loading Screen/CCMLoadingScreen.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Loading Screen/CCMLoadingScreenHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnLoadingProgressUpdated
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Loading Screen/CCMLoadingScreen.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Loading Screen/CCMLoadingScreenHandler.cs
     startLine: 11
   assemblies:
   - Assembly-CSharp
@@ -77,24 +77,24 @@ items:
     content.vb: Public Event OnLoadingProgressUpdated As EventHandler(Of Single)
   implements:
   - BlazerTech.CharacterManagement.CharacterCreator.ILoadingScreen.OnLoadingProgressUpdated
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.OnLoadingFinished
-  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.OnLoadingFinished
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.OnLoadingFinished
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.OnLoadingFinished
   id: OnLoadingFinished
-  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler
   langs:
   - csharp
   - vb
   name: OnLoadingFinished
-  nameWithType: CCMLoadingScreen.OnLoadingFinished
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreen.OnLoadingFinished
+  nameWithType: CCMLoadingScreenHandler.OnLoadingFinished
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMLoadingScreenHandler.OnLoadingFinished
   type: Event
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Character Creator/Loading Screen/CCMLoadingScreen.cs
+      path: Assets/BT-CMS/Scripts/Character Creator/Loading Screen/CCMLoadingScreenHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnLoadingFinished
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Loading Screen/CCMLoadingScreen.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/Loading Screen/CCMLoadingScreenHandler.cs
     startLine: 12
   assemblies:
   - Assembly-CSharp
