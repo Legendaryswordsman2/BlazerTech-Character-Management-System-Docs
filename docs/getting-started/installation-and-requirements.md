@@ -4,7 +4,7 @@ This guide covers the **requirements** and **installation steps** for the **Blaz
 
 ---
 
-## Requirements
+## Required Packages
 
 > [!NOTE]  
 > All required packages must be installed and correctly configured **before importing BT-CMS**.
@@ -23,7 +23,7 @@ This guide covers the **requirements** and **installation steps** for the **Blaz
 ## Installation Steps
 
 ### prerequisites
-Make sure **Naughty Attributes** and **Addressables** are both installed and the **Addressables Settings file** has been creeated ([See above^^](#requirements)).
+Make sure **Naughty Attributes** and **Addressables** are both installed and the **Addressables Settings file** has been creeated ([See above^^](#required-packages)).
 
 ### Importing
 **Itch.io:**
