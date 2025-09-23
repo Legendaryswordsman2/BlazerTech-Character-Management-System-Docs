@@ -1,5 +1,5 @@
 {
-  "source_base_path": "C:/Users/Legen/OneDrive/Desktop/All My Files/Programming/Docs/BT-Character-Management-System-Docs",
+  "source_base_path": "C:/Users/Legen/OneDrive/Desktop/All My Files/Projects/BlazerTech Character Management System/BlazerTech-Character-Management-System-Docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -1580,62 +1580,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateSingleCharacter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateSingleCharacter.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateSingleCharacter",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Internal.Testing.CMSDebugChangeSceneOnEscape.yml",
       "output": {
         ".html": {
@@ -2178,6 +2122,16 @@
       "output": {
         "resource": {
           "relative_path": "images/blazertech-character-management-system-cover-iamge.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/blazertech-character-management-system-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/blazertech-character-management-system-logo.png"
         }
       },
       "version": ""

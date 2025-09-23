@@ -559,26 +559,6 @@
     "title": "Namespace BlazerTech.CharacterManagement.Editor.Windows | BlazerTech Character Management System",
     "summary": "Namespace BlazerTech.CharacterManagement.Editor.Windows Classes CharacterGroupPreviewWindow CharacterTypeGroupCollectionsViewer"
   },
-  "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape.html": {
-    "href": "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape.html",
-    "title": "Class CCDebugChangeSceneOnEscape | BlazerTech Character Management System",
-    "summary": "Class CCDebugChangeSceneOnEscape Namespace BlazerTech.CharacterManagement.Internal.Testing Assembly Assembly-CSharp.dll public class CCDebugChangeSceneOnEscape : MonoBehaviour Inheritance object Object Component Behaviour MonoBehaviour CCDebugChangeSceneOnEscape Fields SceneName public string SceneName Field Value string"
-  },
-  "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup.html": {
-    "href": "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup.html",
-    "title": "Class CCDebugCreateFixedCharacterGroup | BlazerTech Character Management System",
-    "summary": "Class CCDebugCreateFixedCharacterGroup Namespace BlazerTech.CharacterManagement.Internal.Testing Assembly Assembly-CSharp.dll public class CCDebugCreateFixedCharacterGroup : MonoBehaviour Inheritance object Object Component Behaviour MonoBehaviour CCDebugCreateFixedCharacterGroup Methods CreateFixedCharacterGroup() [Button(null, EButtonEnableMode.Always)] public void CreateFixedCharacterGroup()"
-  },
-  "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter.html": {
-    "href": "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter.html",
-    "title": "Class CCDebugCreateFlexibleCharacter | BlazerTech Character Management System",
-    "summary": "Class CCDebugCreateFlexibleCharacter Namespace BlazerTech.CharacterManagement.Internal.Testing Assembly Assembly-CSharp.dll public class CCDebugCreateFlexibleCharacter : MonoBehaviour Inheritance object Object Component Behaviour MonoBehaviour CCDebugCreateFlexibleCharacter Methods CreateFlexibleCharacter() [Button(null, EButtonEnableMode.Always)] public void CreateFlexibleCharacter()"
-  },
-  "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateSingleCharacter.html": {
-    "href": "api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateSingleCharacter.html",
-    "title": "Class CCDebugCreateSingleCharacter | BlazerTech Character Management System",
-    "summary": "Class CCDebugCreateSingleCharacter Namespace BlazerTech.CharacterManagement.Internal.Testing Assembly Assembly-CSharp.dll public class CCDebugCreateSingleCharacter : MonoBehaviour Inheritance object Object Component Behaviour MonoBehaviour CCDebugCreateSingleCharacter"
-  },
   "api/BlazerTech.CharacterManagement.Internal.Testing.CMSDebugChangeSceneOnEscape.html": {
     "href": "api/BlazerTech.CharacterManagement.Internal.Testing.CMSDebugChangeSceneOnEscape.html",
     "title": "Class CMSDebugChangeSceneOnEscape | BlazerTech Character Management System",
@@ -801,7 +781,7 @@
   },
   "index.html": {
     "href": "index.html",
-    "title": "BlazerTech Character Management System | BlazerTech Character Management System",
-    "summary": "BlazerTech Character Management System Version 0.0.2 Easily create, manage, and customize sprite based characters! A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use, animate and save/load characters in your Unity projects. Top Features! ✅ Runtime Customization - Modify characters anytime, even at runtime. ✅ Works with Any Sprite Based Characters - Seamlessly implement any pixel art characters. ✅ Ease of Use - Characters can be setup and used within minutes. ✅ Included Character Sets - Customizable modular characters with 4 layers (Body, Outfit, Hairstyle, Accessory). ✅ Prefab Based Character Creator UI Framework! - A customizable in-game Character Creation Menu System. ✅ Character Randomization - Layered characters can be randomly generated. Perfect for background NPCs. ✅ Modern Interiors - Full support for the modular layered characters contained within LimeZu's Modern Interiors Asset Pack. Get Started Check out the Getting Started Guide to begin! Warning THIS WEBSITE IS UNDER CONSTRUCTION AND NOT YET FINISHED!"
+    "title": "| BlazerTech Character Management System",
+    "summary": "Easily create, manage, and customize sprite based characters! A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use, animate and save/load characters in your Unity projects. Top Features! ✅ Runtime Customization - Modify characters anytime, even at runtime. ✅ Works with Any Sprite Based Characters - Seamlessly implement any pixel art characters. ✅ Ease of Use - Characters can be setup and used within minutes. ✅ Includes BlazerTech Modular Characters - Customizable characters with 4 layers (Body, Outfit, Hairstyle, Accessory). ✅ Prefab Based Character Creator UI Framework! - A customizable in-game Character Creation Menu System. ✅ Character Randomization - Layered characters can be randomly generated. Perfect for background NPCs. ✅ Modern Interiors - Full support for the modular layered characters contained within LimeZu's Modern Interiors Asset Pack. Get Started Check out the Getting Started Guide to begin! Version 0.0.2 (Alpha) Warning THIS WEBSITE IS UNDER CONSTRUCTION AND NOT YET FINISHED!"
   }
 }

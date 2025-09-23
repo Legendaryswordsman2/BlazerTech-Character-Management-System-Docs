@@ -7456,62 +7456,6 @@ references:
   commentId: N:BlazerTech.CharacterManagement.Internal.Testing
   fullName: BlazerTech.CharacterManagement.Internal.Testing
   nameWithType: BlazerTech.CharacterManagement.Internal.Testing
-- uid: BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape
-  name: CCDebugChangeSceneOnEscape
-  href: api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape.html
-  commentId: T:BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape
-  fullName: BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape
-  nameWithType: CCDebugChangeSceneOnEscape
-- uid: BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape.SceneName
-  name: SceneName
-  href: api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape.html#BlazerTech_CharacterManagement_Internal_Testing_CCDebugChangeSceneOnEscape_SceneName
-  commentId: F:BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape.SceneName
-  fullName: BlazerTech.CharacterManagement.Internal.Testing.CCDebugChangeSceneOnEscape.SceneName
-  nameWithType: CCDebugChangeSceneOnEscape.SceneName
-- uid: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup
-  name: CCDebugCreateFixedCharacterGroup
-  href: api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup.html
-  commentId: T:BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup
-  fullName: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup
-  nameWithType: CCDebugCreateFixedCharacterGroup
-- uid: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup.CreateFixedCharacterGroup
-  name: CreateFixedCharacterGroup()
-  href: api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup.html#BlazerTech_CharacterManagement_Internal_Testing_CCDebugCreateFixedCharacterGroup_CreateFixedCharacterGroup
-  commentId: M:BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup.CreateFixedCharacterGroup
-  fullName: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup.CreateFixedCharacterGroup()
-  nameWithType: CCDebugCreateFixedCharacterGroup.CreateFixedCharacterGroup()
-- uid: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup.CreateFixedCharacterGroup*
-  name: CreateFixedCharacterGroup
-  href: api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup.html#BlazerTech_CharacterManagement_Internal_Testing_CCDebugCreateFixedCharacterGroup_CreateFixedCharacterGroup_
-  commentId: Overload:BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup.CreateFixedCharacterGroup
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFixedCharacterGroup.CreateFixedCharacterGroup
-  nameWithType: CCDebugCreateFixedCharacterGroup.CreateFixedCharacterGroup
-- uid: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter
-  name: CCDebugCreateFlexibleCharacter
-  href: api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter.html
-  commentId: T:BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter
-  fullName: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter
-  nameWithType: CCDebugCreateFlexibleCharacter
-- uid: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter.CreateFlexibleCharacter
-  name: CreateFlexibleCharacter()
-  href: api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter.html#BlazerTech_CharacterManagement_Internal_Testing_CCDebugCreateFlexibleCharacter_CreateFlexibleCharacter
-  commentId: M:BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter.CreateFlexibleCharacter
-  fullName: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter.CreateFlexibleCharacter()
-  nameWithType: CCDebugCreateFlexibleCharacter.CreateFlexibleCharacter()
-- uid: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter.CreateFlexibleCharacter*
-  name: CreateFlexibleCharacter
-  href: api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter.html#BlazerTech_CharacterManagement_Internal_Testing_CCDebugCreateFlexibleCharacter_CreateFlexibleCharacter_
-  commentId: Overload:BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter.CreateFlexibleCharacter
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateFlexibleCharacter.CreateFlexibleCharacter
-  nameWithType: CCDebugCreateFlexibleCharacter.CreateFlexibleCharacter
-- uid: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateSingleCharacter
-  name: CCDebugCreateSingleCharacter
-  href: api/BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateSingleCharacter.html
-  commentId: T:BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateSingleCharacter
-  fullName: BlazerTech.CharacterManagement.Internal.Testing.CCDebugCreateSingleCharacter
-  nameWithType: CCDebugCreateSingleCharacter
 - uid: BlazerTech.CharacterManagement.Internal.Testing.CMSDebugChangeSceneOnEscape
   name: CMSDebugChangeSceneOnEscape
   href: api/BlazerTech.CharacterManagement.Internal.Testing.CMSDebugChangeSceneOnEscape.html
@@ -7830,7 +7774,7 @@ references:
   name: History Undo/Redo
   href: docs/character-creator/history/history-undo-redo.html
 - uid: landing
-  name: BlazerTech Character Management System
+  name: landing
   href: index.html
 - uid: layer-selector-setup
   name: Layer Selector Setup
