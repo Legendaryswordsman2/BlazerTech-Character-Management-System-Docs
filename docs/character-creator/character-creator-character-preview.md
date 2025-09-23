@@ -11,7 +11,7 @@ The **character preview** shows a live view of the character the player is custo
 
 ## Core Character Preview
 
-![Core Character Preview](~/images/character-preview/core-character-preview.png)
+![Core Character Preview](~/images/ccm-character-preview/core-character-preview.png)
 
 Inside the base **Character Preview** folder is the core prefab as well variations. the core prefab can be used on it's own, or combined with add-on prefabs which add extra functioanlity such as rotation or animation switching button.
 
@@ -29,7 +29,7 @@ The preview mode determines how the character preview is displayed.
 
 ## Character Preview Rotation
 
-![Character Preview Rotation Buttons](~/images/character-preview/character-preview-rotation-buttons.png)
+![Character Preview Rotation Buttons](~/images/ccm-character-preview/character-preview-rotation-buttons.png)
 
 located in the **/Character Rotation** subfolder are prefabs which add rotation controls to the preview.  
 **Setup Instructions:**
@@ -46,7 +46,7 @@ located in the **/Character Rotation** subfolder are prefabs which add rotation 
 
 ## Character Preview Animation Buttons
 
-![Character Preview Animation Buttons](~/images/character-preview/character-preview-animation-buttons.png)
+![Character Preview Animation Buttons](~/images/ccm-character-preview/character-preview-animation-buttons.png)
 
 Located in the **/Animation Control** subfolder are prefabs for switching between character animations.  
 Three prefabs exist:
@@ -63,7 +63,7 @@ Three prefabs exist:
 
 ## Complete Character Previews
 
-![Character Preview Complete](~/images/character-preview/character-preview-complete.png)
+![Character Preview Complete](~/images/ccm-character-preview/character-preview-complete.png)
 
 Located in the **/Complete Previews** subfolder are prefabs which combine all elements of the character preview.
 - The core preview.

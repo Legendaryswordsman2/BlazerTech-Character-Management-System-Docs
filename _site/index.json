@@ -667,7 +667,7 @@
   "docs/character-creator/character-creator-loading-screens.html": {
     "href": "docs/character-creator/character-creator-loading-screens.html",
     "title": "Loading Screens | BlazerTech Character Management System",
-    "summary": "Loading Screens"
+    "summary": "Loading Screens The Character Creation Menu takes time to open as it needs to load all layer options. A loading screen can be added to hide the Character Creation Menu and give the player something to look at until the menu is ready."
   },
   "docs/character-creator/character-creator-overview.html": {
     "href": "docs/character-creator/character-creator-overview.html",

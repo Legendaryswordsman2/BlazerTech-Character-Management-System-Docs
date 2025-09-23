@@ -13,10 +13,10 @@ A History Panel displays a list of snaphots saved in the [History Tracker compon
 
 1. **History Panel [Text, Vertical List]**
    - A vertical, text based list. Each entry displays text containing what changed in the assigned character snapshot.
-   - ![History Panel Text](~/images/history-panels/history-panel-text.png)
+   - ![History Panel Text](~/images/ccm-history/history-panel-text.png)
 2. **History Panel [Sprite, Horizontal List]** 
    - A horizontal, sprite based list. Each entry contains a list of sprites, each sprite displays a layer in the assigned character snapshot.
-   - ![History Panel Sprite Preview](~/images/history-panels/history-panel-sprite-preview.png)
+   - ![History Panel Sprite Preview](~/images/ccm-history/history-panel-sprite-preview.png)
 
 ---
 

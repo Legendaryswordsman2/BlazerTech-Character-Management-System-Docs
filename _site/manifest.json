@@ -2148,70 +2148,150 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/carousel-layer-selector.png",
+      "source_relative_path": "images/ccm-character-preview/character-preview-animation-buttons.png",
       "output": {
         "resource": {
-          "relative_path": "images/carousel-layer-selector.png"
+          "relative_path": "images/ccm-character-preview/character-preview-animation-buttons.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-preview/character-preview-animation-buttons.png",
+      "source_relative_path": "images/ccm-character-preview/character-preview-complete.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-preview/character-preview-animation-buttons.png"
+          "relative_path": "images/ccm-character-preview/character-preview-complete.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-preview/character-preview-complete.png",
+      "source_relative_path": "images/ccm-character-preview/character-preview-rotation-buttons.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-preview/character-preview-complete.png"
+          "relative_path": "images/ccm-character-preview/character-preview-rotation-buttons.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-preview/character-preview-rotation-buttons.png",
+      "source_relative_path": "images/ccm-character-preview/core-character-preview.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-preview/character-preview-rotation-buttons.png"
+          "relative_path": "images/ccm-character-preview/core-character-preview.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/character-preview/core-character-preview.png",
+      "source_relative_path": "images/ccm-character-randomization/controlled-randomization-example.png",
       "output": {
         "resource": {
-          "relative_path": "images/character-preview/core-character-preview.png"
+          "relative_path": "images/ccm-character-randomization/controlled-randomization-example.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/controlled-randomization-example.png",
+      "source_relative_path": "images/ccm-history/history-panel-sprite-preview.png",
       "output": {
         "resource": {
-          "relative_path": "images/controlled-randomization-example.png"
+          "relative_path": "images/ccm-history/history-panel-sprite-preview.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/dropdown-layer-selector.png",
+      "source_relative_path": "images/ccm-history/history-panel-text.png",
       "output": {
         "resource": {
-          "relative_path": "images/dropdown-layer-selector.png"
+          "relative_path": "images/ccm-history/history-panel-text.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ccm-history/history-undo-redo-buttons.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ccm-history/history-undo-redo-buttons.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ccm-layer-selectors/carousel-layer-selector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ccm-layer-selectors/carousel-layer-selector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ccm-layer-selectors/dropdown-layer-selector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ccm-layer-selectors/dropdown-layer-selector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ccm-layer-selectors/grid-layer-selector-variant-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ccm-layer-selectors/grid-layer-selector-variant-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ccm-layer-selectors/grid-layer-selector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ccm-layer-selectors/grid-layer-selector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ccm-layer-selectors/list-layer-selector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ccm-layer-selectors/list-layer-selector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ccm-layer-selectors/tab-layer-selector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ccm-layer-selectors/tab-layer-selector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ccm-loading-screen/loading-screen.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ccm-loading-screen/loading-screen.png"
         }
       },
       "version": ""
@@ -2222,76 +2302,6 @@
       "output": {
         "resource": {
           "relative_path": "images/favicon.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/grid-layer-selector-variant-2.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/grid-layer-selector-variant-2.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/grid-layer-selector.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/grid-layer-selector.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/history-panels/history-panel-sprite-preview.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/history-panels/history-panel-sprite-preview.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/history-panels/history-panel-text.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/history-panels/history-panel-text.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/history-panels/history-undo-redo-buttons.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/history-panels/history-undo-redo-buttons.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/import-popup.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/import-popup.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/list-layer-selector.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/list-layer-selector.png"
         }
       },
       "version": ""
@@ -2318,10 +2328,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/tab-layer-selector.png",
+      "source_relative_path": "images/setup/import-popup.png",
       "output": {
         "resource": {
-          "relative_path": "images/tab-layer-selector.png"
+          "relative_path": "images/setup/import-popup.png"
         }
       },
       "version": ""
