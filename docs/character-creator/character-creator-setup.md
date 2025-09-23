@@ -8,7 +8,7 @@ uid: character-creator-setup
 
 The easiest solution is to use a premade character creation menu. These prefabs contain everything needed for a functional Character Creation Menu.
 At bare minimum they contain the following:
-- Layer Selectors - Used to change layers of the character.
+- **Layer Selectors** - Used to change layers of the character.
 - **Character preview** - Used to preview the character while editing.
 - **Save & Back Buttons**.
 
