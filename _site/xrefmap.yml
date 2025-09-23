@@ -7728,9 +7728,42 @@ references:
 - uid: basic-concepts
   name: Basic Concepts
   href: docs/getting-started/basic-concepts.html
-- uid: carousel-layer-selector
+- uid: ccm-carousel-layer-selector
   name: Carousel Layer Selector
   href: docs/character-creator/layer-selectors/carousel-layer-selector.html
+- uid: ccm-character-preview
+  name: Character Preview
+  href: docs/character-creator/character-creator-character-preview.html
+- uid: ccm-character-randomization
+  name: Character Randomization
+  href: docs/character-creator/character-creator-character-randomization.html
+- uid: ccm-dropdown-layer-selector
+  name: Dropdown Layer Selector
+  href: docs/character-creator/layer-selectors/dropdown-layer-selector.html
+- uid: ccm-grid-layer-selector
+  name: Grid Layer Selector
+  href: docs/character-creator/layer-selectors/Grid-layer-selector.html
+- uid: ccm-history-panels
+  name: History Panels
+  href: docs/character-creator/history/character-creator-history-panels.html
+- uid: ccm-history-tracking-system
+  name: History Tracking System
+  href: docs/character-creator/history/character-creator-history-tracking-system.html
+- uid: ccm-history-undo-redo
+  name: History Undo/Redo
+  href: docs/character-creator/history/character-creator-history-undo-redo.html
+- uid: ccm-layer-selector-setup
+  name: Layer Selector Setup
+  href: docs/character-creator/layer-selectors/layer-selector-setup.html
+- uid: ccm-list-layer-selector
+  name: List Layer Selector
+  href: docs/character-creator/layer-selectors/list-layer-selector.html
+- uid: ccm-loading-screens
+  name: Loading Screens
+  href: docs/character-creator/character-creator-loading-screens.html
+- uid: ccm-tab-layer-selector
+  name: Tab Layer Selector
+  href: docs/character-creator/layer-selectors/tab-layer-selector.html
 - uid: character-creator-overview
   name: Character Creator
   href: docs/character-creator/character-creator-overview.html
@@ -7740,12 +7773,6 @@ references:
 - uid: character-groups
   name: Character Groups
   href: docs/character-groups.html
-- uid: character-preview
-  name: Character Preview
-  href: docs/character-creator/character-preview.html
-- uid: character-randomization
-  name: Character Randomization
-  href: docs/character-creator/character-randomization.html
 - uid: character-templates
   name: Character Templates
   href: docs/character-templates.html
@@ -7758,36 +7785,12 @@ references:
 - uid: character-usage
   name: Character Usage
   href: docs/character-usage.html
-- uid: dropdown-layer-selector
-  name: Dropdown Layer Selector
-  href: docs/character-creator/layer-selectors/dropdown-layer-selector.html
-- uid: grid-layer-selector
-  name: Grid Layer Selector
-  href: docs/character-creator/layer-selectors/Grid-layer-selector.html
-- uid: history-panels
-  name: History Panels
-  href: docs/character-creator/history/history-panels.html
-- uid: history-tracking-system
-  name: History Tracking System
-  href: docs/character-creator/history/history-tracking-system.html
-- uid: history-undo-redo
-  name: History Undo/Redo
-  href: docs/character-creator/history/history-undo-redo.html
 - uid: landing
   name: landing
   href: index.html
-- uid: layer-selector-setup
-  name: Layer Selector Setup
-  href: docs/character-creator/layer-selectors/layer-selector-setup.html
 - uid: layered-character-type
   name: Layered Character Type
   href: docs/layered-character-type.html
-- uid: list-layer-selector
-  name: List Layer Selector
-  href: docs/character-creator/layer-selectors/list-layer-selector.html
-- uid: tab-layer-selector
-  name: Tab Layer Selector
-  href: docs/character-creator/layer-selectors/tab-layer-selector.html
 - uid: unified-character-type
   name: Unified Character Type
   href: docs/unified-character-type.html

@@ -1,5 +1,5 @@
 ---
-uid: history-tracking-system
+uid: ccm-history-tracking-system
 ---
 
 # History Tracking System
@@ -34,7 +34,7 @@ The [CCMHistoryTracker](xref:BlazerTech.CharacterManagement.CharacterCreator.CCM
 
 1. **Undo/Redo Buttons:**
    - Buttons can be added which can undo or redo changes you've made.  
-   - [Read More → History Undo/Redo](xref:history-undo-redo)
+   - [Read More → History Undo/Redo](xref:ccm-history-undo-redo)
 2. **History Panels:**
    - Multiple types of panels can be added which display every change made in a clean list.
-   - [Read More → History Panels](xref:history-panels)
+   - [Read More → History Panels](xref:ccm-history-panels)

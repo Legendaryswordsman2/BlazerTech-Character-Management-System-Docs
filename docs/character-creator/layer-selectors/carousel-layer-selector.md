@@ -1,5 +1,5 @@
 ---
-uid: carousel-layer-selector
+uid: ccm-carousel-layer-selector
 ---
 
 # Carousel Layer Selector
@@ -23,7 +23,7 @@ A **Carousel Layer Selector** displays the currently selected layer option and c
 - **Layer Carousel Selector [-Background]** - Basic carousel selector without a background.  
 
 ### Pre-Setup Prefabs
-Pre-setup prefabs already include a [Character Layer Selection Manager](xref:layer-selector-setup#character-layer-selection-manager).  
+Pre-setup prefabs already include a [Character Layer Selection Manager](xref:ccm-layer-selector-setup#character-layer-selection-manager).  
 These will work out of the box without any extra setup required.
 
 - **Carousel Selectors [Auto Create]** – Instantiates carousel selectors at runtime. Uses a Grid Layout Group component to sort them.  
@@ -42,4 +42,4 @@ These will work out of the box without any extra setup required.
 ## Limitations
 
 - The **Carousel Layer Selector** only shows **text**. If you need visual previews, consider the  
-  [Grid Layer Selector](xref:grid-layer-selector) or [List Layer Selector](xref:list-layer-selector).
+  [Grid Layer Selector](xref:ccm-grid-layer-selector) or [List Layer Selector](xref:ccm-list-layer-selector).

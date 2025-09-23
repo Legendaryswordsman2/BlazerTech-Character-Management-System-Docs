@@ -1,10 +1,10 @@
 ---
-uid: history-panels
+uid: ccm-history-panels
 ---
 
 # History Panels
 
-A History Panel displays a list of snaphots saved in the [History Tracker component](xref:history-tracking-system#history-tracker-component) for the player to view and restore any changes they've made.
+A History Panel displays a list of snaphots saved in the [History Tracker component](xref:ccm-history-tracking-system#history-tracker-component) for the player to view and restore any changes they've made.
 
 > [!TIP]
 > Prefabs Location: **Prefabs > Character Creator > History > History Panels**

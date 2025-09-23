@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>History Panels | BlazerTech Character Management System </title>
+      <title>History Tracking System | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="History Panels | BlazerTech Character Management System ">
+      <meta name="title" content="History Tracking System | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../../../images/favicon.png">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/history/history-panels.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/history/character-creator-history-tracking-system.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,75 +84,70 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="history-panels">
-<h1 id="history-panels">History Panels</h1>
+        <article data-uid="ccm-history-tracking-system">
+<h1 id="history-tracking-system">History Tracking System</h1>
 
-<p>A History Panel displays a list of snaphots saved in the <a class="xref" href="history-tracking-system.html#history-tracker-component">History Tracker component</a> for the player to view and restore any changes they've made.</p>
-<div class="TIP">
-<h5>Tip</h5>
-<p>Prefabs Location: <strong>Prefabs &gt; Character Creator &gt; History &gt; History Panels</strong></p>
-</div>
-<h2 id="panel-type-prefabs">Panel Type Prefabs</h2>
-<ol>
-<li><strong>History Panel [Text, Vertical List]</strong>
-<ul>
-<li>A vertical, text based list. Each entry displays text containing what changed in the assigned character snapshot.</li>
-<li><img src="../../../images/history-panels/history-panel-text.png" alt="History Panel Text"></li>
-</ul>
-</li>
-<li><strong>History Panel [Sprite, Horizontal List]</strong>
-<ul>
-<li>A horizontal, sprite based list. Each entry contains a list of sprites, each sprite displays a layer in the assigned character snapshot.</li>
-<li><img src="../../../images/history-panels/history-panel-sprite-preview.png" alt="History Panel Sprite Preview"></li>
-</ul>
-</li>
-</ol>
+<p>The <strong>History Tracking System</strong> tracks every change made to the character in the Character Creation Menu whlie the menu is open. Changes can then be looked through or undone at anytime.</p>
 <hr>
-<h2 id="entry-prefabs">Entry Prefabs</h2>
-<p>The following are entries used in the above mentioned panels.</p>
-<ol>
-<li><strong>History Panel Entry [Text]</strong>
+<h2 id="features">Features</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Automatic Tracking</strong></td>
+<td>Every change to the character is recorded as a snapshot.</td>
+</tr>
+<tr>
+<td><strong>Undo/Redo</strong></td>
+<td>Step backward or forward through the snapshot list.</td>
+</tr>
+<tr>
+<td><strong>Direct Selection</strong></td>
+<td>Select any snapshot to instantly restore the character.</td>
+</tr>
+<tr>
+<td><strong>Snapshot Limit</strong></td>
+<td>Configurable maximum number of snapshots (1-100, default = 30).</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="history-tracker-component">History Tracker Component</h2>
+<p>The <a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html">CCMHistoryTracker</a> component can be added to any game object inside the contents of the Character Creation Menu.</p>
 <ul>
-<li>Entry displaying text which describes what changed in the assigned snapshot.</li>
+<li>Tracks all layer changes made to the character and saves them as a snapshot.</li>
+<li>A snapshot contains all information required to restore the character to that exact state.</li>
+<li>Snapshots are saved in a list.</li>
+<li>Max Snapshots can be set anywhere between 1-100 (Default is 30).</li>
+<li>When the max amount of snapshots is met, oldest snapshots will start being replaced.</li>
+<li>The <strong>Preserve First Snapshot</strong> bool can be toggled which will stop the first snapshot created from being deleted or replaced.</li>
+</ul>
+<hr>
+<h2 id="ui-integration">UI Integration</h2>
+<ol>
+<li><strong>Undo/Redo Buttons:</strong>
+<ul>
+<li>Buttons can be added which can undo or redo changes you've made.</li>
+<li><a class="xref" href="character-creator-history-undo-redo.html">Read More → History Undo/Redo</a></li>
 </ul>
 </li>
-<li><strong>History Panel Entry [Sprite]</strong>
+<li><strong>History Panels:</strong>
 <ul>
-<li>Entry containing a dynmaic list of sprites. Each sprite displays a layer in the assigned character snapshot.</li>
+<li>Multiple types of panels can be added which display every change made in a clean list.</li>
+<li><a class="xref" href="character-creator-history-panels.html">Read More → History Panels</a></li>
 </ul>
 </li>
 </ol>
-<div class="TIP">
-<h5>Tip</h5>
-<p>Entry prefabs live in the <strong>/History List Entries</strong> subfolder.</p>
-</div>
-<h3 id="custom-prefabs">Custom Prefabs</h3>
-<p>You can create your own history panel entry easily. Here are the steps</p>
-<ol>
-<li>Create a new game object and add the <a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.HistoryPanelEntry.html">HistoryPanelEntry</a> component.</li>
-<li>Set the display mode:
-<ul>
-<li>Text - Requires reference to a text objcet.</li>
-<li>Sprite - Requires reference to layer preview sprites parent. (The parent game object sprites will be instantiated to)</li>
-<li>Text And Sprite - Requires both aforementioned references.</li>
-</ul>
-</li>
-<li>Add the <code>Toggle</code> component and reference it in the <code>HistoryPanelEntry</code> component.</li>
-<li>Add an <code>Image</code> component - This will be the background image.</li>
-<li>Set the <code>Target Graphic</code> on the <code>toggle</code> to the image component.</li>
-<li>Add a new child game object and add another <code>Image</code> component to it.</li>
-<li>Name the new child game object something like <strong>Highlight</strong>. - This game object will only be active when the entry is selected.</li>
-<li>Set the <code>Graphic</code> on the <code>toggle</code> to the image component on the <strong>Highlight</strong> game object.</li>
-<li>Turn your game object into a prefab by dragging it into a folder in the project window.</li>
-<li>Finally, on the <a class="xref" href="../../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryPanel.html">CCMHistoryPanel</a> component which lives on all <strong>History Panels</strong>, set the <code>Entry Prefab</code> to reference your new prefab.</li>
-</ol>
-<p><strong>Confused?</strong><br>
-Checkout one of the pre-existing entry prefabs to see how they're setup.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/history/history-panels.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-creator/history/character-creator-history-tracking-system.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

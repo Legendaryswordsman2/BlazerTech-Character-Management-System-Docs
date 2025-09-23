@@ -1,5 +1,5 @@
 ---
-uid: list-layer-selector
+uid: ccm-list-layer-selector
 ---
 
 # List Layer Selector
@@ -22,7 +22,7 @@ A **List Layer Selector** contains a vertical list where each element in the gri
 - **Layer List Selector [+Title]** – Same as #1 but includes a title with the name of the assigned layer at the top.  
 
 ### Pre-Setup Prefabs
-Pre-setup prefabs already include a [Character Layer Selection Manager](xref:layer-selector-setup#character-layer-selection-manager).  
+Pre-setup prefabs already include a [Character Layer Selection Manager](xref:ccm-layer-selector-setup#character-layer-selection-manager).  
 These will work out of the box without any extra setup required.
 
 - **List Selectors [Auto Create]** – Instantiates list selectors [+Title] at runtime. Uses a Horizontal Layout Group component to sort them.  
@@ -47,4 +47,4 @@ The following are pre-created entries that can be used in any **Layer List Selec
 ## Limitations
 
 - The list can take up a lot of space whem multiple are used at a time. Works best when used with a  
-[Tab Layer Selector](xref:tab-layer-selector).
+[Tab Layer Selector](xref:ccm-tab-layer-selector).

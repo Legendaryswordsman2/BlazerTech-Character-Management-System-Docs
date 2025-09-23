@@ -1,10 +1,10 @@
 ---
-uid: history-undo-redo
+uid: ccm-history-undo-redo
 ---
 
 # History Undo/Redo
 
-With the [History Tracker component](xref:history-tracking-system#history-tracker-component) setup you can include buttons in your Character Creation Menu that undo or redo changes you've previously setup.
+With the [History Tracker component](xref:ccm-history-tracking-system#history-tracker-component) setup you can include buttons in your Character Creation Menu that undo or redo changes you've previously setup.
 
 ## Setup
 

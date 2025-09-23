@@ -1,5 +1,5 @@
 ---
-uid: character-randomization
+uid: ccm-character-randomization
 ---
 
 # Character Randomization

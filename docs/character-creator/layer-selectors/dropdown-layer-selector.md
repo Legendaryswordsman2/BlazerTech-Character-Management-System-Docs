@@ -1,5 +1,5 @@
 ---
-uid: dropdown-layer-selector
+uid: ccm-dropdown-layer-selector
 ---
 
 # Dropdown Layer Selector
@@ -23,7 +23,7 @@ When opened, it displays a list of all available options for the assigned charac
 - **Layer Dropdown Selector [+Randomize]** – Includes a randomize button next to the dropdown.  
 
 ### Pre-Setup Prefabs
-Pre-setup prefabs already include a [Character Layer Selection Manager](xref:layer-selector-setup#character-layer-selection-manager).  
+Pre-setup prefabs already include a [Character Layer Selection Manager](xref:ccm-layer-selector-setup#character-layer-selection-manager).  
 These will work out of the box without any extra setup required.
 
 - **Dropdown Selectors [Auto Create]** – Instantiates dropdown selectors at runtime. Uses a Grid Layout Group component to sort them.  
@@ -42,4 +42,4 @@ These will work out of the box without any extra setup required.
 ## Limitations
 
 - The **Dropdown Layer Selector** only shows **text**. If you need visual previews, consider the  
-  [Grid Layer Selector](xref:grid-layer-selector) or [List Layer Selector](xref:list-layer-selector).
+  [Grid Layer Selector](xref:ccm-grid-layer-selector) or [List Layer Selector](xref:ccm-list-layer-selector).

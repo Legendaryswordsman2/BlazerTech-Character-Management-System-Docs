@@ -34,9 +34,11 @@
   - name: Character Creator Setup
     href: character-creator/character-creator-setup.md
   - name: Character Preview
-    href: character-creator/character-preview.md
+    href: character-creator/character-creator-character-preview.md
   - name: Character Randomization
-    href: character-creator/character-randomization.md
+    href: character-creator/character-creator-character-randomization.md
+  - name: Loading Screens
+    href: character-creator/character-creator-loading-screens.md
   - name: Layer Selectors
     items:
       - name: Layer Selector Setup
@@ -54,11 +56,12 @@
   - name: History
     items:
       - name: History Tracking System
-        href: character-creator/history/history-tracking-system.md
+        href: 
+          character-creator/history/character-creator-history-tracking-system.md
       - name: History Panels
-        href: character-creator/history/history-panels.md
+        href: character-creator/history/character-creator-history-panels.md
       - name: History Undo/Redo
-        href: character-creator/history/history-undo-redo.md
+        href: character-creator/history/character-creator-history-undo-redo.md
 
   - name: Advanced
   - name: Creating Characters

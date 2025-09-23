@@ -1,5 +1,5 @@
 ---
-uid: layer-selector-setup
+uid: ccm-layer-selector-setup
 ---
 
 # Layer Selector Setup

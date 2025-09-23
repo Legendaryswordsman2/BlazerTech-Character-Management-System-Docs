@@ -1855,6 +1855,36 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/character-creator/character-creator-character-preview.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-creator/character-creator-character-preview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-creator/character-creator-character-randomization.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-creator/character-creator-character-randomization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-creator/character-creator-loading-screens.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-creator/character-creator-loading-screens.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/character-creator/character-creator-overview.md",
       "output": {
         ".html": {
@@ -1875,50 +1905,30 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/character-creator/character-preview.md",
+      "source_relative_path": "docs/character-creator/history/character-creator-history-panels.md",
       "output": {
         ".html": {
-          "relative_path": "docs/character-creator/character-preview.html"
+          "relative_path": "docs/character-creator/history/character-creator-history-panels.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/character-creator/character-randomization.md",
+      "source_relative_path": "docs/character-creator/history/character-creator-history-tracking-system.md",
       "output": {
         ".html": {
-          "relative_path": "docs/character-creator/character-randomization.html"
+          "relative_path": "docs/character-creator/history/character-creator-history-tracking-system.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/character-creator/history/history-panels.md",
+      "source_relative_path": "docs/character-creator/history/character-creator-history-undo-redo.md",
       "output": {
         ".html": {
-          "relative_path": "docs/character-creator/history/history-panels.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/character-creator/history/history-tracking-system.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/character-creator/history/history-tracking-system.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/character-creator/history/history-undo-redo.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/character-creator/history/history-undo-redo.html"
+          "relative_path": "docs/character-creator/history/character-creator-history-undo-redo.html"
         }
       },
       "version": ""

@@ -1,5 +1,5 @@
 ---
-uid: character-preview
+uid: ccm-character-preview
 ---
 
 # Character Preview
