@@ -69,6 +69,23 @@ A **History Panel** displays the list of snapshots recorded in the **History Tra
 
 ---
 
+## Character Randomization
+Character randomization functionality can be added in multiple differents ways
+- **Randomize Button** - A simple Randomize button which randomizes all layers of the character.
+- **Controlled Randomization** - A randomize button with additional options to select which layers to randomize.
+- **Layer Specific Randomization** - Randomization buttons included in [Layer Selectors](#layer-selectors).
+
+[Read More → Character Randomization](xref:ccm-character-randomization)  
+
+---
+
+## Loading Screens
+Loading screens hide the **Character Creation Menu** while it is being setup. They're modular just like the rest of the menu. Elements such as a loading bar or progress text can be easily added or removed at any time.
+
+[Read More → Loading Screen](xref:ccm-loading-screens)  
+
+---
+
 ## Other Features
 
 - **Mid-Play Editing** – Characters already in use can be edited in the Character Creator. Changes apply immediately after saving.  
