@@ -19,11 +19,11 @@ to create a new layered character type right click the **Project** window and na
 ### Setting up a Layered Character Type
 The following properties must be set:
 
-| Property                | Type                      | Description
-|-----------------------------------------------------------------------------|---------------------------|---------------------------
-| **[CharacterTypeID](xref:character-type-core#charactertypeid)**         | String                    | A **unique** identifer
-| **[BaseSpritesheet](xref:character-type-core#basespritesheet)**         | Sprite                    | The default character spritesheet
-| **[CharacterController](xref:character-type-core#charactercontroller)** | RuntimeAnimatorController | The Animator Controller used
+| Property                                                                 | Type                      | Description                       |
+| ------------------------------------------------------------------------ | ------------------------- | --------------------------------- |
+| **[CharacterTypeID](xref:character-type-core#character-type-id)**        | String                    | A **unique** identifer            |
+| **[BaseSpritesheet](xref:character-type-core#base-spritesheet)**         | Sprite                    | The default character spritesheet |
+| **[CharacterController](xref:character-type-core#character-controller)** | RuntimeAnimatorController | The Animator Controller used      |
 
 ---
 

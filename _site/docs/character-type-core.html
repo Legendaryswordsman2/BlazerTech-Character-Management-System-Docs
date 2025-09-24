@@ -91,7 +91,7 @@
 <p>Don’t know what a Character Type is?<br>
 <a class="xref" href="character-types.html">Read More → Character Types</a></p>
 <hr>
-<h2 id="charactertypeid">CharacterTypeID</h2>
+<h2 id="character-type-id">Character Type ID</h2>
 <table>
 <thead>
 <tr>
@@ -114,7 +114,7 @@
 </div>
 <p><a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterTypeID">API</a></p>
 <hr>
-<h2 id="basespritesheet">BaseSpritesheet</h2>
+<h2 id="base-spritesheet">Base Spritesheet</h2>
 <table>
 <thead>
 <tr>
@@ -127,7 +127,7 @@
 <tr>
 <td><strong>BaseSpritesheet</strong></td>
 <td><code>Spritesheet</code></td>
-<td>The base reference spritesheet used for all characters of this type. Every character spritesheet must match its dimensions exactly.</td>
+<td>The main spritesheet used for all characters of this type. Every character spritesheet must match its dimensions exactly.</td>
 </tr>
 </tbody>
 </table>
@@ -135,14 +135,14 @@
 <h5>Warning</h5>
 <p>Character Spritesheets of a different size will be rejected, and a warning will be logged.</p>
 </div>
-<h3 id="setup-requirements">Setup Requirements</h3>
-<ul>
-<li><strong>Sprite Mode</strong> must be set to <strong>Multiple</strong> so the sheet can be sliced into individual frames.</li>
-<li>All animations and shaders reference the <strong>Base Spritesheet</strong>. When the character is loaded a shader will display the correct character over the Base Spritesheet.</li>
-</ul>
+<p>Sprites from the <strong>Base Spritesheet</strong> will be used whenever using any character of the same <strong>Character Type</strong>. A shader will be applied that visually overrides of spritesheet with the spritesheet(s) used by the assigned character.</p>
+<h3 id="setup">Setup</h3>
+<p>The <strong>Base Sprite</strong> has a <strong>Sprite Mode</strong> which defines if the image should be used as a singular sprite or split into individual sprites.<br>
+In this case we want to set the <strong>Sprite Mode</strong> to <strong>Multiple</strong> so we can use each frame of the spritesheet individually.</p>
+<p>Checkout the next section <a href="#character-controller">#charactercontroller</a> to learn how sprites from the <strong>Base Spritesheet</strong> can animated.</p>
 <p><a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_BaseSpritesheet">API</a></p>
 <hr>
-<h2 id="charactercontroller">CharacterController</h2>
+<h2 id="character-controller">Character Controller</h2>
 <table>
 <thead>
 <tr>
@@ -155,7 +155,7 @@
 <tr>
 <td><strong>CharacterController</strong></td>
 <td><code>RuntimeAnimatorController</code></td>
-<td>An Animator Controller that animates all characters of this Character Type.</td>
+<td>An <strong>Animator Controller</strong> that animates all characters of this Character Type.</td>
 </tr>
 </tbody>
 </table>
@@ -163,10 +163,11 @@
 <h5>Note</h5>
 <p>This field is <strong>optional</strong>.</p>
 </div>
-<p>Because all characters of a type use the <strong>Base Spritesheet</strong> (see <a href="#basespritesheet">BaseSpritesheet</a>), a single Animator Controller can be reused as long as its animations reference frames from the <strong>Base Spritesheet</strong>.</p>
+<p>An Animator Controller can be created and used to switch between different animations. Animation Clips inside this controller should use sprites from the <a href="#base-spritesheet">BaseSpritesheet</a>.</p>
+<p>This Animator Controller can then be referenced in the <strong>CharacterController</strong> field inside your <strong>Character Type</strong></p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>When using a Character Loader component, this Animator Controller will be applied automatically if <strong>Set Animator Controller</strong> is enabled.<br>
+<p>When using a <strong>Character Loader component</strong>, this <strong>Animator Controller</strong> will be applied automatically if <strong>Set Animator Controller</strong> is enabled.<br>
 See <a class="xref" href="character-usage.html">Character Usage</a> for more info.</p>
 </div>
 <p><a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_CharacterController">API</a></p>

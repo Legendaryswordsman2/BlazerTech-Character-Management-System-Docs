@@ -107,23 +107,23 @@
 </thead>
 <tbody>
 <tr>
-<td><strong><a class="xref" href="character-type-core.html#charactertypeid">CharacterTypeID</a></strong></td>
+<td><strong><a class="xref" href="character-type-core.html#character-type-id">CharacterTypeID</a></strong></td>
 <td>String</td>
 <td>A <strong>unique</strong> identifer</td>
 </tr>
 <tr>
-<td><strong><a class="xref" href="character-type-core.html#basespritesheet">BaseSpritesheet</a></strong></td>
+<td><strong><a class="xref" href="character-type-core.html#base-spritesheet">BaseSpritesheet</a></strong></td>
 <td>Sprite</td>
 <td>The default character spritesheet</td>
 </tr>
 <tr>
-<td><strong><a class="xref" href="character-type-core.html#charactercontroller">CharacterController</a></strong></td>
+<td><strong><a class="xref" href="character-type-core.html#character-controller">CharacterController</a></strong></td>
 <td>RuntimeAnimatorController</td>
 <td>The Animator Controller used</td>
 </tr>
 </tbody>
 </table>
-<p><a class="xref" href="character-type-core.html">Read More → Character Type Properties</a></p>
+<p><a class="xref" href="character-type-core.html">Read More → Character Type Core</a></p>
 <hr>
 <h2 id="character-type-variants">Character Type Variants</h2>
 <table>
@@ -152,7 +152,7 @@
 </table>
 <hr>
 <h3 id="1-unified-character-type">1. Unified Character Type</h3>
-<p>Each character uses a single spritesheet containing the fully assembled character. No runtime customization is possible.</p>
+<p>characters use a single spritesheet containing the fully assembled character. No runtime customization is possible.</p>
 <ul>
 <li><strong>Use Case:</strong> Characters with fixed, pre-created appearances.</li>
 <li><strong>Example:</strong> Simplistic characters where their appearance is pre-determined and won't need to be changed.</li>
@@ -160,7 +160,7 @@
 <p><a href="unified-character-type.html">Read More → Unified Character Type</a></p>
 <hr>
 <h3 id="2-layered-character-type">2. Layered Character Type</h3>
-<p>A set of separate spritesheets, each containing one visual layer of the character.</p>
+<p>Characters consist of a set of spritesheets, each containing one visual layer of the character.</p>
 <ul>
 <li><strong>Use Case:</strong> Customizable player characters or dynamically generated NPCs.</li>
 <li><strong>Example:</strong> Body, Outfit, Hairstyle, Accessory.</li>

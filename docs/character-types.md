@@ -19,11 +19,11 @@ The following properties are shared across all character types.
 
 | Property                | Type                      | Description
 |-----------------------------------------------------------------------------|---------------------------|---------------------------
-| **[CharacterTypeID](xref:character-type-core#charactertypeid)**         | String                    | A **unique** identifer
-| **[BaseSpritesheet](xref:character-type-core#basespritesheet)**         | Sprite                    | The default character spritesheet
-| **[CharacterController](xref:character-type-core#charactercontroller)** | RuntimeAnimatorController | The Animator Controller used
+| **[CharacterTypeID](xref:character-type-core#character-type-id)**         | String                    | A **unique** identifer
+| **[BaseSpritesheet](xref:character-type-core#base-spritesheet)**         | Sprite                    | The default character spritesheet
+| **[CharacterController](xref:character-type-core#character-controller)** | RuntimeAnimatorController | The Animator Controller used
 
-[Read More → Character Type Properties](xref:character-type-core)
+[Read More → Character Type Core](xref:character-type-core)
 
 ---
 
@@ -37,7 +37,7 @@ The following properties are shared across all character types.
 ---
 
 ### 1. Unified Character Type
-Each character uses a single spritesheet containing the fully assembled character. No runtime customization is possible.  
+characters use a single spritesheet containing the fully assembled character. No runtime customization is possible.  
 - **Use Case:** Characters with fixed, pre-created appearances.  
 - **Example:** Simplistic characters where their appearance is pre-determined and won't need to be changed.
 
@@ -46,7 +46,7 @@ Each character uses a single spritesheet containing the fully assembled characte
 ---
 
 ### 2. Layered Character Type
-A set of separate spritesheets, each containing one visual layer of the character.  
+Characters consist of a set of spritesheets, each containing one visual layer of the character.  
 - **Use Case:** Customizable player characters or dynamically generated NPCs.  
 - **Example:** Body, Outfit, Hairstyle, Accessory.  
 
