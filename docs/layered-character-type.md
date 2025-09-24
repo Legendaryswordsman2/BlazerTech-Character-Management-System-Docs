@@ -21,9 +21,9 @@ The following properties must be set:
 
 | Property                | Type                      | Description
 |-----------------------------------------------------------------------------|---------------------------|---------------------------
-| **[CharacterTypeID](character-type-fields.md#charactertypeid)**         | String                    | A **unique** identifer
-| **[BaseSpritesheet](character-type-fields.md#basespritesheet)**         | Sprite                    | The default character spritesheet
-| **[CharacterController](character-type-fields.md#charactercontroller)** | RuntimeAnimatorController | The Animator Controller used
+| **[CharacterTypeID](xref:character-type-core#charactertypeid)**         | String                    | A **unique** identifer
+| **[BaseSpritesheet](xref:character-type-core#basespritesheet)**         | Sprite                    | The default character spritesheet
+| **[CharacterController](xref:character-type-core#charactercontroller)** | RuntimeAnimatorController | The Animator Controller used
 
 ---
 

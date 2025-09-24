@@ -2025,10 +2025,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/character-type-fields.md",
+      "source_relative_path": "docs/character-type-core.md",
       "output": {
         ".html": {
-          "relative_path": "docs/character-type-fields.html"
+          "relative_path": "docs/character-type-core.html"
         }
       },
       "version": ""

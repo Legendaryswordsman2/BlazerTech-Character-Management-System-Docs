@@ -19,11 +19,11 @@ The following properties are shared across all character types.
 
 | Property                | Type                      | Description
 |-----------------------------------------------------------------------------|---------------------------|---------------------------
-| **[CharacterTypeID](character-type-fields.md#charactertypeid)**         | String                    | A **unique** identifer
-| **[BaseSpritesheet](character-type-fields.md#basespritesheet)**         | Sprite                    | The default character spritesheet
-| **[CharacterController](character-type-fields.md#charactercontroller)** | RuntimeAnimatorController | The Animator Controller used
+| **[CharacterTypeID](xref:character-type-core#charactertypeid)**         | String                    | A **unique** identifer
+| **[BaseSpritesheet](xref:character-type-core#basespritesheet)**         | Sprite                    | The default character spritesheet
+| **[CharacterController](xref:character-type-core#charactercontroller)** | RuntimeAnimatorController | The Animator Controller used
 
-[🔗 Read More → Character Type Properties](xref:character-type-fields)
+[Read More → Character Type Properties](xref:character-type-core)
 
 ---
 
@@ -41,7 +41,7 @@ Each character uses a single spritesheet containing the fully assembled characte
 - **Use Case:** Characters with fixed, pre-created appearances.  
 - **Example:** Simplistic characters where their appearance is pre-determined and won't need to be changed.
 
-[🔗 Read More → Unified Character Type](unified-character-type.md)
+[Read More → Unified Character Type](unified-character-type.md)
 
 ---
 
@@ -50,4 +50,4 @@ A set of separate spritesheets, each containing one visual layer of the characte
 - **Use Case:** Customizable player characters or dynamically generated NPCs.  
 - **Example:** Body, Outfit, Hairstyle, Accessory.  
 
-[🔗 Read More → Layered Character Type](layered-character-type.md)
+[Read More → Layered Character Type](layered-character-type.md)

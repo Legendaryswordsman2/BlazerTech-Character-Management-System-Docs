@@ -11,6 +11,8 @@
     items:
       - name: Character Types
         href: character-types.md
+      - name: Character Type Core
+        href: character-type-core.md
       - name: Unified Character Type
         href: unified-character-type.md
       - name: Layered Character Type
@@ -23,8 +25,6 @@
     href: character-templates.md
   - name: Character Groups
     href: character-groups.md
-  - name: Character Type Fields
-    href: character-type-fields.md
   - name: LimeZu Modern Interiors Support
     href: limezu-modern-interiors-support.md
 

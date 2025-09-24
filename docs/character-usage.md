@@ -62,7 +62,7 @@ The **Unified Character Loader** component can be used to create and load a char
 Requirements:  
 Have a [Layered Character Type](xref:layered-character-type) setup and at least one **Layered Character** saved in a group.
 
-[🔗 Read More → Character Groups](xref:character-groups)
+[Read More → Character Groups](xref:character-groups)
 
 The **Layered Character Loader** component can be used to load **Layered Characters** from a **Character Group**.
 - Add the script to a game object.

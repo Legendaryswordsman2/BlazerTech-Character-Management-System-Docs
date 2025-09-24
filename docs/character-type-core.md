@@ -1,13 +1,14 @@
 ---
-uid: character-type-fields
+uid: core-character-type
+uid: character-type-core
 ---
 
-# Character Type Fields
+# Character Type Core
 
-The following are fields that are shared across all **Character Type** [Scriptable Objects](https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html).
+This page goes over the core functionality of a character type which both **Unified & Layered Character Types** inherit from.
 
 Don’t know what a Character Type is?  
-[🔗 Read More → Character Types](xref:character-types)
+[Read More → Character Types](xref:character-types)
 
 ---
 
@@ -19,7 +20,7 @@ Don’t know what a Character Type is?
 > [!WARNING]  
 > A **Character Type** with the same **ID** as another will fail to initialize and all characters of that type will also fail to load.
 
-[🔗 API](xref:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterTypeID)
+[API](xref:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterTypeID)
 
 ---
 
@@ -35,7 +36,7 @@ Don’t know what a Character Type is?
 - **Sprite Mode** must be set to **Multiple** so the sheet can be sliced into individual frames.  
 - All animations and shaders reference the **Base Spritesheet**. When the character is loaded a shader will display the correct character over the Base Spritesheet.
 
-[🔗 API](xref:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet)
+[API](xref:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet)
 
 ---
 
@@ -51,6 +52,6 @@ Because all characters of a type use the **Base Spritesheet** (see [BaseSpritesh
 
 > [!TIP]  
 > When using a Character Loader component, this Animator Controller will be applied automatically if **Set Animator Controller** is enabled.  
-> See [🔗 Character Usage](xref:character-usage) for more info.
+> See [Character Usage](xref:character-usage) for more info.
 
-[🔗 API](xref:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController)
+[API](xref:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController)

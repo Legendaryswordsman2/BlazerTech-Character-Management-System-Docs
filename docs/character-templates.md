@@ -15,9 +15,9 @@ Fields required by all **Character Templates**.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| **Character Type** | `UnifiedCharacterTypeSO` / `LayeredCharacterTypeSO` | Reference to the Character Type this template is based on.<br>[🔗 API](xref:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterType) |
-| **Character Name** | `String` | Name for characters created from this template (does **not** need to be unique).<br>[🔗 API](xref:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterName) |
-| **Character Display Name** | `String` | Optional display name shown for characters created from this template.<br>[🔗 API](xref:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterDisplayName) |
+| **Character Type** | `UnifiedCharacterTypeSO` / `LayeredCharacterTypeSO` | Reference to the Character Type this template is based on.<br>[API](xref:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterType) |
+| **Character Name** | `String` | Name for characters created from this template (does **not** need to be unique).<br>[API](xref:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterName) |
+| **Character Display Name** | `String` | Optional display name shown for characters created from this template.<br>[API](xref:BlazerTech.CharacterManagement.Characters.CharacterTemplateBaseSO`2.CharacterDisplayName) |
 
 ---
 
@@ -35,7 +35,7 @@ A blueprint used to create a **Unified Character** at runtime. Can be used in th
 
 | Field | Type | Description |
 |-------|------|-------------|
-| **Character Spritesheet** | `AssetReferenceT<Texture2D>` | Reference to a spritesheet the same size as the **Base Spritesheet** in the Character Type. When referenced, the spritesheet is marked as **Addressable**, allowing it to be loaded/unloaded as needed.<br>[🔗 API](xref:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet) |
+| **Character Spritesheet** | `AssetReferenceT<Texture2D>` | Reference to a spritesheet the same size as the **Base Spritesheet** in the Character Type. When referenced, the spritesheet is marked as **Addressable**, allowing it to be loaded/unloaded as needed.<br>[API](xref:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet) |
 
 ---
 

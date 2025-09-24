@@ -7782,9 +7782,9 @@ references:
 - uid: character-templates
   name: Character Templates
   href: docs/character-templates.html
-- uid: character-type-fields
-  name: Character Type Fields
-  href: docs/character-type-fields.html
+- uid: character-type-core
+  name: Character Type Core
+  href: docs/character-type-core.html
 - uid: character-types
   name: Character Types
   href: docs/character-types.html
