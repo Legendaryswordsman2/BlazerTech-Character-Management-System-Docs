@@ -4,7 +4,7 @@ uid: character-templates
 
 # Character Templates
 
-A **Character Template** is a blueprint for creating characters from a defined **Character Type**.  
+A **Character Template** is a blueprint for creating characters from a defined [Character Type](xref:character-types).  
 They provide an easy way to use characters anywhere in your project.
 
 ---

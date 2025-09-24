@@ -87,32 +87,32 @@
         <article data-uid="">
 <h1 id="character-layers">Character Layers</h1>
 
-<p>A Character Layer is a <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Object</a> that contains all available character spritesheets for that specific layer.</p>
-<h2 id="whats-a-character-piece-definition">What's a Character Piece Definition?</h2>
-<p>A Character Piece Definition is a wrapper for a spritesheet which allows for easy loading/unloading of the sprite when needed.</p>
+<p>A Character Layer is a <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Object</a> that contains all available character spritesheets for a specific layer of a character.</p>
+<h2 id="character-layer-options">Character Layer Options</h2>
+<p>A <a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html">Character Layer Option</a> is a wrapper for a character spritesheet which allows for easy loading/unloading of the spritesheet when needed.</p>
+<p>A list of Layer Options is kept in every Character Layer. The list represents all valid character spritesheets for a specific layer of a character.</p>
+<p><img src="../images/character-types/character-layers/character-layer-options-list.png" alt="Character Layer Options List"></p>
 <hr>
-<h2 id="properties">Properties</h2>
+<h2 id="fields">Fields</h2>
 <h3 id="attached-character-type">Attached Character Type</h3>
 <p>The <strong>Layered Character Type</strong> the layer is meant to be used for.</p>
 <h3 id="layer-name">Layer Name</h3>
-<p>The name of the layer. Used in the <a class="xref" href="character-creator/character-creator-overview.html">Character Creator</a> when displaying character layers.</p>
-<h3 id="character-piece-asset-label">Character Piece Asset Label</h3>
-<p>The <strong>Addressables label</strong> used to load sprites into <strong>Character Piece Definitions</strong>. <strong>BT-CMS</strong> uses Unity's <strong>Addressables package</strong> to dynamically load/unload sprites when needed. Select the label you'd like to use and make sure all character spritesheets meant to be used for this layer are marked as Addressable and have the same label.</p>
+<p>The name of the layer. Used in the <a class="xref" href="character-creator/character-creator-overview.html">Character Creator</a> when displaying character layer names.<br>
+Does <strong>NOT</strong> need to be unique.</p>
+<h3 id="layer-asset-label">Layer Asset Label</h3>
+<p>The <strong>Addressables label</strong> used to collect spritesheets and load them into <strong>Layer Options</strong>. The <strong>Character Management System</strong> uses Unitys <strong>Addressables package</strong> to dynamically load/unload sprites when needed. Select the label you'd like to use and make sure all character spritesheets meant to be used for this layer are marked as Addressable and have the same label.</p>
 <h3 id="include-none-option">Include None Option</h3>
-<p>Decides if a blank option should be added to the list of available Character Pieces. This will essentially allow a character to be created without using that layer.</p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>The <strong>Character Pieces</strong> list must be refreshed whenever <strong>Include None Option</strong> is changed!</p>
-</div>
+<p>if toggled a blank option will be added to the list of <strong>Layer Options</strong>. This will essentially allow a character to be created without using that layer since if the blank option is chosen, an empty sprite will be used.</p>
+<p><img src="../images/character-types/character-layers/character-layer.png" alt="Character Layer"></p>
 <hr>
 <h2 id="buttons">Buttons</h2>
-<h3 id="get-character-pieces">Get Character Pieces</h3>
-<p>Finds all sprites matching the <strong>Character Piece Asset Label</strong> and are the same size as the <a class="xref" href="character-type-core.html#base-spritesheet">Base Spritesheet</a> in the <strong>Layered Character Type</strong>, creates a <strong>CharacterPieceDefinition</strong> for each one and adds it to the <strong>Character Pieces</strong> list.</p>
-<h3 id="clear-character-pieces">Clear Character Pieces</h3>
-<p>Clears the Character Pieces list</p>
-<div class="CAUTION">
-<h5>Caution</h5>
-<p>This cannot be undone!</p>
+<h3 id="collect-layer-options">Collect Layer Options</h3>
+<p>Finds all sprites matching the <strong>Layer Asset Label</strong> and are the same size as the <strong>Base Spritesheet</strong>. If so it gets added it to the <a href="#character-layer-options">Layer Options</a> list.</p>
+<h3 id="clear-options-list">Clear Options List</h3>
+<p>Clears the Layer Options list.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Can be undo using <strong>control/command + Z</strong></p>
 </div>
 
 </article>
