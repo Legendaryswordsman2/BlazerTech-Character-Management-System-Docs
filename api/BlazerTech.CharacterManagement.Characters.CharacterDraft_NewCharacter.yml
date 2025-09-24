@@ -126,8 +126,10 @@ items:
   namespace: BlazerTech.CharacterManagement.Characters
   example: []
   syntax:
-    content: public override void SaveCharacter()
-    content.vb: Public Overrides Sub SaveCharacter()
+    content: public override LayeredCharacter SaveCharacter()
+    return:
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+    content.vb: Public Overrides Function SaveCharacter() As LayeredCharacter
   overridden: BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter
   overload: BlazerTech.CharacterManagement.Characters.CharacterDraft_NewCharacter.SaveCharacter*
 references:

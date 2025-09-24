@@ -8,21 +8,22 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterDraft
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterType
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableWithPrimaryCharacter
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.CharacterSaved
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DisableMenu
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.Boolean)
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(System.String,BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup,System.Boolean)
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
-  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnabledAndSetup
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.Instance
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.MenuContents
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.NewCharacterTemplate
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnBeforeMenuDisabled
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSavedInMenuInstance
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuDisabled
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuEnabledAndSetup
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuInstanceDisabled
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuLoadingProgressUpdated
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SaveCharacter
@@ -258,23 +259,23 @@ items:
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
     content.vb: Public Property ActiveCharacterType As LayeredCharacterTypeSO
   overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterType*
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.CharacterSaved
-  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.CharacterSaved
-  id: CharacterSaved
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
+  id: OnCharacterSaved
   parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
   langs:
   - csharp
   - vb
-  name: CharacterSaved
-  nameWithType: CharacterCreationMenuManager.CharacterSaved
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.CharacterSaved
+  name: OnCharacterSaved
+  nameWithType: CharacterCreationMenuManager.OnCharacterSaved
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
   type: Field
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterSaved
+    id: OnCharacterSaved
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
     startLine: 52
   assemblies:
@@ -288,19 +289,58 @@ items:
 
       [BoxGroup("Events")]
 
-      public UnityEvent CharacterSaved
+      public UnityEvent<LayeredCharacter> OnCharacterSaved
     return:
-      type: UnityEngine.Events.UnityEvent
+      type: UnityEngine.Events.UnityEvent{BlazerTech.CharacterManagement.Characters.LayeredCharacter}
     content.vb: >-
       <Space>
 
       <BoxGroup("Events")>
 
-      Public CharacterSaved As UnityEvent
+      Public OnCharacterSaved As UnityEvent(Of LayeredCharacter)
   attributes:
   - type: UnityEngine.SpaceAttribute
     ctor: UnityEngine.SpaceAttribute.#ctor
     arguments: []
+  - type: NaughtyAttributes.BoxGroupAttribute
+    ctor: NaughtyAttributes.BoxGroupAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Events
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuDisabled
+  commentId: F:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuDisabled
+  id: OnMenuDisabled
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+  langs:
+  - csharp
+  - vb
+  name: OnMenuDisabled
+  nameWithType: CharacterCreationMenuManager.OnMenuDisabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuDisabled
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: OnMenuDisabled
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
+    startLine: 53
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: >-
+      [BoxGroup("Events")]
+
+      public UnityEvent OnMenuDisabled
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: >-
+      <BoxGroup("Events")>
+
+      Public OnMenuDisabled As UnityEvent
+  attributes:
   - type: NaughtyAttributes.BoxGroupAttribute
     ctor: NaughtyAttributes.BoxGroupAttribute.#ctor(System.String)
     arguments:
@@ -324,7 +364,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ActiveCharacterDraft
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -353,7 +393,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EnabledAndSetup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 61
+    startLine: 62
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -366,33 +406,6 @@ items:
       type: System.Boolean
     content.vb: Public Property EnabledAndSetup As Boolean
   overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnabledAndSetup*
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
-  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
-  id: OnCharacterSaved
-  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
-  langs:
-  - csharp
-  - vb
-  name: OnCharacterSaved
-  nameWithType: CharacterCreationMenuManager.OnCharacterSaved
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSaved
-  type: Event
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: OnCharacterSaved
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 62
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.CharacterCreator
-  syntax:
-    content: public static event EventHandler<LayeredCharacter> OnCharacterSaved
-    return:
-      type: System.EventHandler{BlazerTech.CharacterManagement.Characters.LayeredCharacter}
-    content.vb: Public Shared Event OnCharacterSaved As EventHandler(Of LayeredCharacter)
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuEnabledAndSetup
   commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuEnabledAndSetup
   id: OnMenuEnabledAndSetup
@@ -411,7 +424,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnMenuEnabledAndSetup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 63
+    startLine: 65
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -438,7 +451,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnBeforeMenuDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 64
+    startLine: 66
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -447,33 +460,6 @@ items:
     return:
       type: System.EventHandler
     content.vb: Public Event OnBeforeMenuDisabled As EventHandler
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuDisabled
-  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuDisabled
-  id: OnMenuDisabled
-  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
-  langs:
-  - csharp
-  - vb
-  name: OnMenuDisabled
-  nameWithType: CharacterCreationMenuManager.OnMenuDisabled
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuDisabled
-  type: Event
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: OnMenuDisabled
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 65
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.CharacterCreator
-  syntax:
-    content: public event EventHandler OnMenuDisabled
-    return:
-      type: System.EventHandler
-    content.vb: Public Event OnMenuDisabled As EventHandler
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuLoadingProgressUpdated
   commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuLoadingProgressUpdated
   id: OnMenuLoadingProgressUpdated
@@ -492,7 +478,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnMenuLoadingProgressUpdated
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 66
+    startLine: 67
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -501,6 +487,60 @@ items:
     return:
       type: System.EventHandler{System.Single}
     content.vb: Public Event OnMenuLoadingProgressUpdated As EventHandler(Of Single)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSavedInMenuInstance
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSavedInMenuInstance
+  id: OnCharacterSavedInMenuInstance
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+  langs:
+  - csharp
+  - vb
+  name: OnCharacterSavedInMenuInstance
+  nameWithType: CharacterCreationMenuManager.OnCharacterSavedInMenuInstance
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnCharacterSavedInMenuInstance
+  type: Event
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: OnCharacterSavedInMenuInstance
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
+    startLine: 70
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public static event EventHandler<LayeredCharacter> OnCharacterSavedInMenuInstance
+    return:
+      type: System.EventHandler{BlazerTech.CharacterManagement.Characters.LayeredCharacter}
+    content.vb: Public Shared Event OnCharacterSavedInMenuInstance As EventHandler(Of LayeredCharacter)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuInstanceDisabled
+  commentId: E:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuInstanceDisabled
+  id: OnMenuInstanceDisabled
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+  langs:
+  - csharp
+  - vb
+  name: OnMenuInstanceDisabled
+  nameWithType: CharacterCreationMenuManager.OnMenuInstanceDisabled
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuInstanceDisabled
+  type: Event
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: OnMenuInstanceDisabled
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
+    startLine: 71
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public static event EventHandler<CharacterCreationMenuManager> OnMenuInstanceDisabled
+    return:
+      type: System.EventHandler{BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager}
+    content.vb: Public Shared Event OnMenuInstanceDisabled As EventHandler(Of CharacterCreationMenuManager)
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.Boolean)
   commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.Boolean)
   id: EnableMenu_EditCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.Boolean)
@@ -519,7 +559,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EnableMenu_EditCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 117
+    startLine: 124
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -562,7 +602,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EnableMenu_NewCharacterInFlexibleGroup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 146
+    startLine: 153
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -593,33 +633,33 @@ items:
   nameWithType.vb: CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(String, FlexibleCharacterGroup, Boolean)
   fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewCharacterInFlexibleGroup(String, BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup, Boolean)
   name.vb: EnableMenu_NewCharacterInFlexibleGroup(String, FlexibleCharacterGroup, Boolean)
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
-  id: EnableMenu_PrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  id: EnableMenu_PrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
   parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
   langs:
   - csharp
   - vb
-  name: EnableMenu_PrimaryCharacter(LayeredCharacterTypeSO, bool)
-  nameWithType: CharacterCreationMenuManager.EnableMenu_PrimaryCharacter(LayeredCharacterTypeSO, bool)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, bool)
+  name: EnableMenu_PrimaryCharacterSlot(LayeredCharacterTypeSO, bool)
+  nameWithType: CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot(LayeredCharacterTypeSO, bool)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, bool)
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: EnableMenu_PrimaryCharacter
+    id: EnableMenu_PrimaryCharacterSlot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 174
+    startLine: 181
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
-  summary: Enable the Character Creation Menu for a <xref href="BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup" data-throw-if-not-resolved="false"></xref> in a Character Type. If a character exists, use it; otherwise, create a new one.
+  summary: Enable the Character Creation Menu for the <xref href="BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup" data-throw-if-not-resolved="false"></xref> in a Character Type located in the <xref href="BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager" data-throw-if-not-resolved="false"></xref>. If a character exists, use it; otherwise, create a new one.
   remarks: If a character already exists it will be copied and editable inside the menu. When the character is saved, all changes will be applied to the original character.
   example: []
   syntax:
-    content: public void EnableMenu_PrimaryCharacter(LayeredCharacterTypeSO characterType = null, bool enableMenuContents = true)
+    content: public void EnableMenu_PrimaryCharacterSlot(LayeredCharacterTypeSO characterType = null, bool enableMenuContents = true)
     parameters:
     - id: characterType
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
@@ -627,45 +667,45 @@ items:
     - id: enableMenuContents
       type: System.Boolean
       description: Optional bool. When not toggled the Character Creation Menu will not automatically open but will still be active and enabled.
-    content.vb: Public Sub EnableMenu_PrimaryCharacter(characterType As LayeredCharacterTypeSO = Nothing, enableMenuContents As Boolean = True)
-  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacter*
+    content.vb: Public Sub EnableMenu_PrimaryCharacterSlot(characterType As LayeredCharacterTypeSO = Nothing, enableMenuContents As Boolean = True)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown when <code class="paramref">characterType</code> is invalid.
-  nameWithType.vb: CharacterCreationMenuManager.EnableMenu_PrimaryCharacter(LayeredCharacterTypeSO, Boolean)
-  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, Boolean)
-  name.vb: EnableMenu_PrimaryCharacter(LayeredCharacterTypeSO, Boolean)
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
-  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
-  id: EnableMenu_NewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  nameWithType.vb: CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot(LayeredCharacterTypeSO, Boolean)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, Boolean)
+  name.vb: EnableMenu_PrimaryCharacterSlot(LayeredCharacterTypeSO, Boolean)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
+  id: EnableMenu_NewPrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.Boolean)
   parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
   langs:
   - csharp
   - vb
-  name: EnableMenu_NewSingleGroup(LayeredCharacterTypeSO, bool)
-  nameWithType: CharacterCreationMenuManager.EnableMenu_NewSingleGroup(LayeredCharacterTypeSO, bool)
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, bool)
+  name: EnableMenu_NewPrimaryCharacterSlot(LayeredCharacterTypeSO, bool)
+  nameWithType: CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot(LayeredCharacterTypeSO, bool)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, bool)
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: EnableMenu_NewSingleGroup
+    id: EnableMenu_NewPrimaryCharacterSlot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 221
+    startLine: 228
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
-  summary: Enable the Character Creation Menu for a <xref href="BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup" data-throw-if-not-resolved="false"></xref> in a Character Type. Creates a new character.
+  summary: Enable the Character Creation Menu for the <xref href="BlazerTech.CharacterManagement.Characters.SingleSlotCharacterGroup" data-throw-if-not-resolved="false"></xref> in a Character Type located in the <xref href="BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager" data-throw-if-not-resolved="false"></xref>. Creates a new character, Overrides the character if one already exists.
   remarks: >-
     If a character does not exist in the group, the new character will be put in the group when saved.
 
     If a character already exists it will overridden when the new character is saved.
   example: []
   syntax:
-    content: public void EnableMenu_NewSingleGroup(LayeredCharacterTypeSO characterType = null, bool enableMenuContents = true)
+    content: public void EnableMenu_NewPrimaryCharacterSlot(LayeredCharacterTypeSO characterType = null, bool enableMenuContents = true)
     parameters:
     - id: characterType
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
@@ -673,8 +713,8 @@ items:
     - id: enableMenuContents
       type: System.Boolean
       description: Optional bool. When not toggled the Character Creation Menu will not automatically open but will still be active and enabled.
-    content.vb: Public Sub EnableMenu_NewSingleGroup(characterType As LayeredCharacterTypeSO = Nothing, enableMenuContents As Boolean = True)
-  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup*
+    content.vb: Public Sub EnableMenu_NewPrimaryCharacterSlot(characterType As LayeredCharacterTypeSO = Nothing, enableMenuContents As Boolean = True)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot*
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
@@ -682,9 +722,9 @@ items:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown when <code class="paramref">characterType</code> is invalid.
-  nameWithType.vb: CharacterCreationMenuManager.EnableMenu_NewSingleGroup(LayeredCharacterTypeSO, Boolean)
-  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, Boolean)
-  name.vb: EnableMenu_NewSingleGroup(LayeredCharacterTypeSO, Boolean)
+  nameWithType.vb: CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot(LayeredCharacterTypeSO, Boolean)
+  fullName.vb: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, Boolean)
+  name.vb: EnableMenu_NewPrimaryCharacterSlot(LayeredCharacterTypeSO, Boolean)
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter
   commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter
   id: ResetCharacter
@@ -703,7 +743,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ResetCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 306
+    startLine: 313
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -731,7 +771,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: DisableMenu
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 326
+    startLine: 333
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -759,7 +799,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SaveCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 351
+    startLine: 359
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -976,13 +1016,62 @@ references:
   name: ActiveCharacterDraft
   nameWithType: CharacterCreationMenuManager.ActiveCharacterDraft
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterDraft
-- uid: UnityEngine.Events.UnityEvent
-  commentId: T:UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events.UnityEvent{BlazerTech.CharacterManagement.Characters.LayeredCharacter}
+  commentId: T:UnityEngine.Events.UnityEvent{BlazerTech.CharacterManagement.Characters.LayeredCharacter}
   parent: UnityEngine.Events
+  definition: UnityEngine.Events.UnityEvent`1
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
+  name: UnityEvent<LayeredCharacter>
+  nameWithType: UnityEvent<LayeredCharacter>
+  fullName: UnityEngine.Events.UnityEvent<BlazerTech.CharacterManagement.Characters.LayeredCharacter>
+  nameWithType.vb: UnityEvent(Of LayeredCharacter)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  name.vb: UnityEvent(Of LayeredCharacter)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+    name: LayeredCharacter
+    href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+    name: LayeredCharacter
+    href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
+  - name: )
+- uid: UnityEngine.Events.UnityEvent`1
+  commentId: T:UnityEngine.Events.UnityEvent`1
   isExternal: true
-  name: UnityEvent
-  nameWithType: UnityEvent
-  fullName: UnityEngine.Events.UnityEvent
+  name: UnityEvent<T0>
+  nameWithType: UnityEvent<T0>
+  fullName: UnityEngine.Events.UnityEvent<T0>
+  nameWithType.vb: UnityEvent(Of T0)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of T0)
+  name.vb: UnityEvent(Of T0)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: )
 - uid: UnityEngine.Events
   commentId: N:UnityEngine.Events
   isExternal: true
@@ -1005,6 +1094,13 @@ references:
   - uid: UnityEngine.Events
     name: Events
     isExternal: true
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterDraft*
   commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterDraft
   href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_ActiveCharacterDraft
@@ -1024,67 +1120,6 @@ references:
   name: EnabledAndSetup
   nameWithType: CharacterCreationMenuManager.EnabledAndSetup
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnabledAndSetup
-- uid: System.EventHandler{BlazerTech.CharacterManagement.Characters.LayeredCharacter}
-  commentId: T:System.EventHandler{BlazerTech.CharacterManagement.Characters.LayeredCharacter}
-  parent: System
-  definition: System.EventHandler`1
-  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
-  name: EventHandler<LayeredCharacter>
-  nameWithType: EventHandler<LayeredCharacter>
-  fullName: System.EventHandler<BlazerTech.CharacterManagement.Characters.LayeredCharacter>
-  nameWithType.vb: EventHandler(Of LayeredCharacter)
-  fullName.vb: System.EventHandler(Of BlazerTech.CharacterManagement.Characters.LayeredCharacter)
-  name.vb: EventHandler(Of LayeredCharacter)
-  spec.csharp:
-  - uid: System.EventHandler`1
-    name: EventHandler
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
-  - name: <
-  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
-    name: LayeredCharacter
-    href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
-  - name: '>'
-  spec.vb:
-  - uid: System.EventHandler`1
-    name: EventHandler
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
-    name: LayeredCharacter
-    href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
-  - name: )
-- uid: System.EventHandler`1
-  commentId: T:System.EventHandler`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
-  name: EventHandler<TEventArgs>
-  nameWithType: EventHandler<TEventArgs>
-  fullName: System.EventHandler<TEventArgs>
-  nameWithType.vb: EventHandler(Of TEventArgs)
-  fullName.vb: System.EventHandler(Of TEventArgs)
-  name.vb: EventHandler(Of TEventArgs)
-  spec.csharp:
-  - uid: System.EventHandler`1
-    name: EventHandler
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
-  - name: <
-  - name: TEventArgs
-  - name: '>'
-  spec.vb:
-  - uid: System.EventHandler`1
-    name: EventHandler
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TEventArgs
-  - name: )
 - uid: System.EventHandler
   commentId: T:System.EventHandler
   parent: System
@@ -1127,6 +1162,100 @@ references:
     name: Single
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: System.EventHandler{BlazerTech.CharacterManagement.Characters.LayeredCharacter}
+  commentId: T:System.EventHandler{BlazerTech.CharacterManagement.Characters.LayeredCharacter}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<LayeredCharacter>
+  nameWithType: EventHandler<LayeredCharacter>
+  fullName: System.EventHandler<BlazerTech.CharacterManagement.Characters.LayeredCharacter>
+  nameWithType.vb: EventHandler(Of LayeredCharacter)
+  fullName.vb: System.EventHandler(Of BlazerTech.CharacterManagement.Characters.LayeredCharacter)
+  name.vb: EventHandler(Of LayeredCharacter)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+    name: LayeredCharacter
+    href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+    name: LayeredCharacter
+    href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html
+  - name: )
+- uid: System.EventHandler{BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager}
+  commentId: T:System.EventHandler{BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<CharacterCreationMenuManager>
+  nameWithType: EventHandler<CharacterCreationMenuManager>
+  fullName: System.EventHandler<BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager>
+  nameWithType.vb: EventHandler(Of CharacterCreationMenuManager)
+  fullName.vb: System.EventHandler(Of BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager)
+  name.vb: EventHandler(Of CharacterCreationMenuManager)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+    name: CharacterCreationMenuManager
+    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+    name: CharacterCreationMenuManager
+    href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html
   - name: )
 - uid: System.ArgumentNullException
   commentId: T:System.ArgumentNullException
@@ -1179,18 +1308,24 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacter*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacter
-  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_PrimaryCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
-  name: EnableMenu_PrimaryCharacter
-  nameWithType: CharacterCreationMenuManager.EnableMenu_PrimaryCharacter
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacter
-- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup*
-  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup
-  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewSingleGroup_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
-  name: EnableMenu_NewSingleGroup
-  nameWithType: CharacterCreationMenuManager.EnableMenu_NewSingleGroup
-  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewSingleGroup
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html
+  name: LayeredCharacterGroupManager
+  nameWithType: LayeredCharacterGroupManager
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_PrimaryCharacterSlot_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
+  name: EnableMenu_PrimaryCharacterSlot
+  nameWithType: CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_PrimaryCharacterSlot
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewPrimaryCharacterSlot_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
+  name: EnableMenu_NewPrimaryCharacterSlot
+  nameWithType: CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_NewPrimaryCharacterSlot
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter*
   commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter
   href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_ResetCharacter

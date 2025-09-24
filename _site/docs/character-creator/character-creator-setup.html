@@ -87,14 +87,91 @@
         <article data-uid="character-creator-setup">
 <h1 id="character-creator-setup">Character Creator Setup</h1>
 
+<p>This page will guide you through the process of implementing your own <strong>Character Creation Menu</strong> into your game.</p>
+<h2 id="the-character-creation-menu-manager">The Character Creation Menu Manager</h2>
+<p>The <code>CharacterCreationMenuManager</code> is the beating heart of the menu.</p>
+<p>It lives outside the contents of the menu and should be enabled at all times.<br>
+It requires two things.</p>
+<ol>
+<li><strong>Default Character Type</strong> - The character type used when enabling the menu. Can be overridden.</li>
+<li><strong>Menu Contents</strong> - Parent game object of the actual Character Creation Menu contents.</li>
+</ol>
+<h3 id="how-to-enable-the-menu">How to Enable the Menu</h3>
+<p>The <code>Character Creation Menu Manager</code> provides 4 methods to open the menu.<br>
+Most methods use the Character Grouping System.<br>
+Learn more about the <a class="xref" href="../character-groups.html">Character Grouping System here</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Descripion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_PrimaryCharacterSlot_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_">EnableMenu_PrimaryCharacterSlot</a></td>
+<td>Opens the menu using the Primary Character Slot of the Character Type Used.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_EditCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacter_System_Boolean_">EnableMenu_EditCharacter</a></td>
+<td>Open the menu to edit a layered character that already exists.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewPrimaryCharacterSlot_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_">EnableMenu_NewPrimaryCharacterSlot</a></td>
+<td>Opens the menu with a new character that overrides the Primary Character slot.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewCharacterInFlexibleGroup_System_String_BlazerTech_CharacterManagement_Characters_FlexibleCharacterGroup_System_Boolean_"><span style="white-space:nowrap">EnableMenu_NewCharacterInFlexibleGroup</span></a></td>
+<td>Opens the menu with a new character &amp; puts it inside the provided Flexible Group when saved.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="character-creation-menu-events">Character Creation Menu Events</h3>
+<p>Two Unity Events are exposted in the <code>Character Creation Menu Manager</code> component.</p>
+<ol>
+<li><strong>On Character Saved</strong>
+<ul>
+<li>Called when the character in the <strong>Character Creation Menu</strong> is saved.</li>
+<li>Provides the charater that was saved as an argument.</li>
+<li>For example you can hook up to this event, when it's invoked call <code>CharacterCreationMenuManager.DisableMenu</code> to disable and close the menu.</li>
+</ul>
+</li>
+<li><strong>On Menu Disabled</strong>
+<ul>
+<li>Called after the <strong>Character Creation Menu</strong> is disabled and closed. You can hook up to this event and when invoked open any other menu you'd like using your own menu system.</li>
+</ul>
+</li>
+</ol>
+<hr>
 <h2 id="premade-character-creation-menus">Premade Character Creation Menus</h2>
 <p>The easiest solution is to use a <strong>premade character creation menu</strong>. These prefabs contain everything needed for a functional Character Creation Menu.
 At bare minimum they contain the following:</p>
-<ul>
-<li><strong>Layer Selectors</strong> - Used to change layers of the character.</li>
-<li><strong>Character preview</strong> - Used to preview the character while editing.</li>
-<li><strong>Save &amp; Back Buttons</strong>.</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Content</th>
+<th>Descripion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Layer Selectors</strong></td>
+<td>Used to change layers of the character.</td>
+</tr>
+<tr>
+<td><strong>Character preview</strong></td>
+<td>Used to preview the character while editing.</td>
+</tr>
+<tr>
+<td><strong>Loading Screen</strong></td>
+<td>Displayed over the Character Creation Menu while it's loading.</td>
+</tr>
+<tr>
+<td><strong>Save &amp; Back Buttons</strong></td>
+<td>Used to save character changes or close the menu without saving.</td>
+</tr>
+</tbody>
+</table>
 <div class="TIP">
 <h5>Tip</h5>
 <p>Premade Character Creation Menu prefabs location: <strong>Prefabs &gt; Character Creator &gt; Premade Menus</strong></p>
@@ -104,12 +181,16 @@ At bare minimum they contain the following:</p>
 <li><strong>Simplistic</strong>:
 <ul>
 <li><strong>Dropdown Selectors [Initialize Existing]</strong>. - Includes 6 dropdown selectors.</li>
-<li><strong>Character Preview</strong> - Includes Rotation Controls.</li>
+<li><strong>Character Preview</strong> - Includes rotation controls.</li>
+<li><strong>Loading Screen</strong> - Includes progress bar and text.</li>
 <li><strong>Save &amp; Back Buttons</strong>.</li>
-<li><img src="../../images/premade-character-creation-menus/premade-character-creation-menu-1.png" alt="Premade Character Creation Menu 1"></li>
+<li><img src="../../images/premade-character-creation-menus/premade-character-creation-menu-1.png" alt="Premade Character Creation Menu #1" width="500">
+</li>
 </ul>
 </li>
 </ol>
+<hr>
+<hr>
 <h2 id="creating-your-own-character-creation-menu">Creating Your Own Character Creation Menu</h2>
 
 </article>

@@ -178,8 +178,10 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public abstract void SaveCharacter()
-    content.vb: Public MustOverride Sub SaveCharacter()
+    content: public abstract LayeredCharacter SaveCharacter()
+    return:
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacter
+    content.vb: Public MustOverride Function SaveCharacter() As LayeredCharacter
   overload: BlazerTech.CharacterManagement.Characters.CharacterDraft.SaveCharacter*
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterDraft.Dispose
