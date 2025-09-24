@@ -29,13 +29,15 @@ A blueprint used to create a **Unified Character** at runtime. Can be used in th
 
 > [!TIP]  
 > To create a **Unified Character Template**:  
-> `Right-click` in the Project window → **Create > BlazerTech Character Management System > Unified Character Type**
+> `Right-click` in the Project window → **Create > BlazerTech > Character Management System > Character Templates > Unified Character Template**
+
+![Unified Character Template](~/images/character-templates//unified-character-template.png)
 
 ### Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| **Character Spritesheet** | `AssetReferenceT<Texture2D>` | Reference to a spritesheet the same size as the **Base Spritesheet** in the Character Type. When referenced, the spritesheet is marked as **Addressable**, allowing it to be loaded/unloaded as needed.<br>[API](xref:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet) |
+| **Character Spritesheet** | `AssetReferenceT<Texture2D>` | Reference to a spritesheet the same size as the **Base Spritesheet** in the Character Type. When referenced, the spritesheet is marked as **Addressable**, allowing it to be loaded/unloaded during runtime.<br>[API](xref:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.CharacterSpritesheet) |
 
 ---
 
@@ -49,11 +51,13 @@ A blueprint used to create a **Layered Character** at runtime. Can be used in th
 > To create a **Layered Character Template**:  
 > `Right-click` in the Project window → **Create > BlazerTech Character Management System > Layered Character Type**
 
+![Layered Character Template](~/images/character-templates//layered-character-template.png)
+
 Once the **Character Type** reference is set, a list of all layers from the referenced type will appear.  
 Each layer includes:  
-- **Dropdown** – Select which piece to use for the layer.  
+- **Dropdown** – Select which option to use for the layer.  
 - **Search bar** – Narrow results if the list is large.  
 
 ### Buttons
-- **Resync List** – Rebuilds the layers list and resets all values.  
-- **Validate Character Template** – Logs whether the template is valid (`true/false`).  
+- **Recreate List** – Rebuilds the layers list and resets all values.  
+<!-- - **Validate Character Template** – Logs whether the template is valid (`true/false`). -->

@@ -125,8 +125,9 @@ They provide an easy way to use characters anywhere in your project.</p>
 <div class="TIP">
 <h5>Tip</h5>
 <p>To create a <strong>Unified Character Template</strong>:<br>
-<code>Right-click</code> in the Project window → <strong>Create &gt; BlazerTech Character Management System &gt; Unified Character Type</strong></p>
+<code>Right-click</code> in the Project window → <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates &gt; Unified Character Template</strong></p>
 </div>
+<p><img src="../images/character-templates/unified-character-template.png" alt="Unified Character Template"></p>
 <h3 id="fields">Fields</h3>
 <table>
 <thead>
@@ -140,7 +141,7 @@ They provide an easy way to use characters anywhere in your project.</p>
 <tr>
 <td><strong>Character Spritesheet</strong></td>
 <td><code>AssetReferenceT&lt;Texture2D&gt;</code></td>
-<td>Reference to a spritesheet the same size as the <strong>Base Spritesheet</strong> in the Character Type. When referenced, the spritesheet is marked as <strong>Addressable</strong>, allowing it to be loaded/unloaded as needed.<br><a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.html#BlazerTech_CharacterManagement_Characters_UnifiedCharacterTemplateSO_CharacterSpritesheet">API</a></td>
+<td>Reference to a spritesheet the same size as the <strong>Base Spritesheet</strong> in the Character Type. When referenced, the spritesheet is marked as <strong>Addressable</strong>, allowing it to be loaded/unloaded during runtime.<br><a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO.html#BlazerTech_CharacterManagement_Characters_UnifiedCharacterTemplateSO_CharacterSpritesheet">API</a></td>
 </tr>
 </tbody>
 </table>
@@ -153,17 +154,18 @@ They provide an easy way to use characters anywhere in your project.</p>
 <p>To create a <strong>Layered Character Template</strong>:<br>
 <code>Right-click</code> in the Project window → <strong>Create &gt; BlazerTech Character Management System &gt; Layered Character Type</strong></p>
 </div>
+<p><img src="../images/character-templates/layered-character-template.png" alt="Layered Character Template"></p>
 <p>Once the <strong>Character Type</strong> reference is set, a list of all layers from the referenced type will appear.<br>
 Each layer includes:</p>
 <ul>
-<li><strong>Dropdown</strong> – Select which piece to use for the layer.</li>
+<li><strong>Dropdown</strong> – Select which option to use for the layer.</li>
 <li><strong>Search bar</strong> – Narrow results if the list is large.</li>
 </ul>
 <h3 id="buttons">Buttons</h3>
 <ul>
-<li><strong>Resync List</strong> – Rebuilds the layers list and resets all values.</li>
-<li><strong>Validate Character Template</strong> – Logs whether the template is valid (<code>true/false</code>).</li>
+<li><strong>Recreate List</strong> – Rebuilds the layers list and resets all values.</li>
 </ul>
+<!-- - **Validate Character Template** – Logs whether the template is valid (`true/false`). -->
 
 </article>
 
