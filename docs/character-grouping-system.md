@@ -62,7 +62,7 @@ To create a Layered Character Group Template **right click** the project window 
 
 ### Fields
 
-- **Default Group Name** -The name of the group when it's created. Can be overriden.
+- **Default Group Name** - The name of the group when it's created. Can be overriden.
 - **Character Type** - The Character Type the group will be for when created.
 - **Group Type** - The type of group that will be created. Flexible or Fixed.
 - **Character In Group**  
