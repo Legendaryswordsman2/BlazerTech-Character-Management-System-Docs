@@ -88,10 +88,31 @@
 <h1 id="character-layers">Character Layers</h1>
 
 <p>A Character Layer is a <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html">Scriptable Object</a> that contains all available character spritesheets for a specific layer of a character.</p>
+<p>To create a layer <strong>right click</strong> the <strong>project window</strong> and navigate to <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type &gt; Character Layer</strong></p>
+<p>After the <strong>Character Layer</strong> has been created make sure to add it to the <strong>layers list</strong> inside your <strong>Layered Character Type</strong>.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Only the <strong>Layered Character Type</strong> must be placed in a <strong>Resources</strong> folder. Everything else including <strong>Character Layers</strong> should be placed outside the <strong>Resources</strong> folder!</p>
+</div>
 <h2 id="character-layer-options">Character Layer Options</h2>
 <p>A <a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.CharacterLayerOption.html">Character Layer Option</a> is a wrapper for a character spritesheet which allows for easy loading/unloading of the spritesheet when needed.</p>
-<p>A list of Layer Options is kept in every Character Layer. The list represents all valid character spritesheets for a specific layer of a character.</p>
+<p>A list of Layer Options is kept in every Character Layer. The list represents all valid character spritesheets for a specific layer of the character.</p>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>All spritesheets used as layer options must be the exact same size as the <a class="xref" href="character-type-core.html#base-spritesheet">Base Spritesheet</a> set in the <strong>Layered Character Type</strong> or they will be invalid!</p>
+</div>
 <p><img src="../images/character-types/character-layers/character-layer-options-list.png" alt="Character Layer Options List"></p>
+<p><strong>Layer Options</strong> are not added to the list manually. Instead go to the spritesheet you want to be included as an option for that layer and mark it as an <strong>Addressable</strong> in the <strong>Inspector</strong>. Then give it a label. Make sure the label the sprite has is the same label assigned in the <a href="#layer-asset-label">Layer Asset label</a> field of the <strong>Character Layer</strong> asset you created.</p>
+<p><img src="../images/character-types/character-layers/layer-option-addressables-marking.png" alt="Layer Option Addressables Marking"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You can mark an entire folder as <strong>addressable</strong> and give it a tag which will automatically be applied to everything in the folder.</p>
+</div>
+<p>Once all your spritesheets are marked as addressable and have the correct tag, go back to your character layer asset and click the <a href="#collect-layer-options">Collect Layer Options</a> button to populate the <strong>Layer Options</strong> List.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The <strong>Layered Character Type</strong> also contains a <strong>Collect Layer Options</strong> button which will collect layer options for all layers in the <strong>Layers list</strong>.</p>
+</div>
 <hr>
 <h2 id="fields">Fields</h2>
 <h3 id="attached-character-type">Attached Character Type</h3>
