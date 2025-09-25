@@ -6,7 +6,7 @@ uid: ccm-loading-screens
 
 The **Character Creation Menu** takes time to open since it needs to load all layer options. A loading screen can be added to hide the Character Creation Menu and give the player something to look at until the menu is ready.
 
-![Loading Screen](/images/ccm-loading-screen/loading-screen.png)
+<img src="~/images/ccm-loading-screen/loading-screen.png" alt="Loading Screen Example" width="500" />
 
 ## How It Works
 

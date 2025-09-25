@@ -1,6 +1,10 @@
 ---
 uid: character-creator-setup
 ---
+[EnableMenu_PrimaryCharacterSlot]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_PrimaryCharacterSlot_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
+[EnableMenu_EditCharacter]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_EditCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacter_System_Boolean_
+[EnableMenu_NewPrimaryCharacterSlot]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewPrimaryCharacterSlot_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
+[EnableMenu_NewCharacterInFlexibleGroup]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewCharacterInFlexibleGroup_System_String_BlazerTech_CharacterManagement_Characters_FlexibleCharacterGroup_System_Boolean_
 
 # Character Creator Setup
 This page will guide you through the process of implementing your own **Character Creation Menu** into your game.
@@ -64,11 +68,68 @@ At bare minimum they contain the following:
 
 ---
 
-
----
 ## Creating Your Own Character Creation Menu
 
-[EnableMenu_PrimaryCharacterSlot]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_PrimaryCharacterSlot_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
-[EnableMenu_EditCharacter]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_EditCharacter_BlazerTech_CharacterManagement_Characters_LayeredCharacter_System_Boolean_
-[EnableMenu_NewPrimaryCharacterSlot]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewPrimaryCharacterSlot_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
-[EnableMenu_NewCharacterInFlexibleGroup]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_NewCharacterInFlexibleGroup_System_String_BlazerTech_CharacterManagement_Characters_FlexibleCharacterGroup_System_Boolean_
+You'll need two game objects.
+- #1 holds the `Character Creation Menu Manager` component and will manage the menu. **SHOULD** be enabled at runtime.
+- #2 Holds the actual contents of the menu and is referenced in the `Menu Contents` field in the `Character Creation Menu Manager`. Doesn't matter if it's enabled or disabled.
+
+![Character Creation Menu Structure](~/images/character-creator-setup/character-creation-menu-structure.png)
+
+### Character Creation Menu Contents
+
+Use this section as a checklist for everything that can be added to the **Character Creation Menu**.  
+Starting with the essentials and then bonus features.
+
+All parts of the menu are contained as prefabs. These prefabs can be placed anywhere in the character creation menu contents parent.  
+Most do not require any manual references and can be added without any extra setup.
+
+**Essentials**
+1. **Layer Selectors**
+   - Lets the player change selected options for each layer of the character.
+   - Prefabs Location: **Prefabs > Character Creator > Layer Selectors**. Choose any folder within there.
+   - Within your chosen Layer Selector folder use a prefab within the `/Pre-Setup` subfolder which contains a set of already setup **Layer Selectors**.
+   - Learn more about Layer Selectors [here](xref:ccm-layer-selector-setup).
+2. **Character Preview**
+   - A character preview lets the player see a live version of the character they're creating.
+   - Prefabs Location: **Prefabs > Character Creator > Character Preview**.
+   - Base folder contains the core character preview prefab which can be added to the menu as is.
+   - Additional functionality can be added through addon prefabs.
+   - Learn more about character previews and addon prefabs [here](xref:ccm-character-preview).
+3. **Menu Controls**
+   - The two core controls you need are **Back** and **Save Character** buttons
+   - These can easily be setup without prefabs. Simply add a `button` and `CCMRelay` component to a game object.
+   - Set the **On Click Event** of the button to run **CCMRelay.DisableMenu()** or **CCMRelay.SaveCharacter()**.
+   - Prefabs also exist under **Prefabs > Character Creator > Menu Controls**.
+   - Additional controls can also be setup. Learn more about Menu Controls [here](xref:ccm-menu-controls).
+4. **Loading Screen**
+   - A loading screen hides the menu while it's being setup.
+   - Prefabs Location: **Prefabs > Character Creator > Loading Screen**
+   - In the base folder contains the Loading Screen Core which only contains a black screen.
+   - Additional addon prefabs are located in the `/Loading Screen Components` subfolder.
+   - Addon prefabs can be added as children of the Loading Screen Core and require a reference to the **Loading Screen Handler** located in the **Loading Screen Core**.
+   - Pre-setup feature complete loading screen prefabs are located in the `/Complete Loading Screens` subfolder.
+   - Complete loading screens include additional features such as a loading bar/text.
+   - Learn more about setting up loading screens [here](xref:ccm-loading-screens).
+
+**Bonus Features**
+1. **Character Randomization**
+   - A simple **Randomize all layers button** can be setup using a `button` and the `CCM Relay component` the same way other Menu Controls are setup.
+   - Controlled Randomization can be setup instead. This allows specific layers to be toggled off so only specific layers are randomized.
+   - Some **Layer Selectors** have variants that contain a randomize button to randomize that specific layer.
+   - Prefabs for both options are included at **Prefabs > Character Creation > Randomization**.
+   - Read more about character randomization setup [here](xref:ccm-character-randomization).
+2. **Character History**
+   - The `CCM History Tacker` component can be added to any game object in the Character Creation Menu contents.
+   - The **History Tracker** will track all changes made to the character.
+   - History Prefabs are located under **Prefabs > Character Creator > History**.
+   - In the `/Undo-Redo` subfolder are prefabs which include undo/redo buttons which when pressed can undo or redo changes made to the character.
+   - In the `/History Panels` subfolder are prefabs which include lists that show all changes to the character. Clicking an entry in the list will revert the character.
+   - Two History Panel prefabs exist.
+   - The first history panel is a vertical list and is text based. Each entry contains text describing what changed.
+   - The second history panel is a horizontal list and is sprite based. Every entry contains a preview of the character.
+   - Read more about the **Character History System** [here](xref:ccm-history-tracking-system).
+3. **Character Display Name Field**
+   - A text input field can be added to let the player set a display name for their character.
+   - The display name can later be optionally displayed near the character.
+   - Prefabs Location: **Prefabs > Character Creator > Character Display Name Field**.

@@ -7767,6 +7767,9 @@ references:
 - uid: ccm-loading-screens
   name: Loading Screens
   href: docs/character-creator/character-creator-loading-screens.html
+- uid: ccm-menu-controls
+  name: Character Creator Menu Controls
+  href: docs/character-creator/character-creator-menu-controls.html
 - uid: ccm-tab-layer-selector
   name: Tab Layer Selector
   href: docs/character-creator/layer-selectors/tab-layer-selector.html

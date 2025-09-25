@@ -1885,6 +1885,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/character-creator/character-creator-menu-controls.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-creator/character-creator-menu-controls.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/character-creator/character-creator-overview.md",
       "output": {
         ".html": {
@@ -2292,6 +2302,16 @@
       "output": {
         "resource": {
           "relative_path": "images/ccm-loading-screen/loading-screen.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-creator-setup/character-creation-menu-structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creator-setup/character-creation-menu-structure.png"
         }
       },
       "version": ""
