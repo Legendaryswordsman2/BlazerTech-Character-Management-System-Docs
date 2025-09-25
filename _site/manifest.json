@@ -2398,6 +2398,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/misc/limezu-modular-characters-example.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/misc/limezu-modular-characters-example.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/premade-character-creation-menus/premade-character-creation-menu-1.png",
       "output": {
         "resource": {

@@ -8,6 +8,8 @@ This page introduces the **core principles** of the Character Management System:
 - [**Character Types**](#character-types) – Define how characters are structured.  
 - [**Character Templates**](#character-templates) – Blueprints for creating characters later.  
 - [**Character Usage**](#character-usage) – Scripts to load and manage characters.  
+- [**Built-in Modular Characters**](#built-in-characters) - Modular characters pre-setup and ready for use.
+- [**Character Grouping System**](#character-grouping-system) - Groups used to store and saved characters.
 - [**Character Creator**](#character-creator) – Modular UI framework for building customizable characters in-game.  
 
 ---
@@ -51,6 +53,23 @@ If a **Unified Character** is used, the shader takes the single spritesheet of t
 If a **Layered Character** is used, the shader combines all layers into the final rendered character.  
 
 [Read More → Character Usage](xref:character-usage)  
+
+---
+
+## Built-in Characters
+Named **BlazerTech Layered Characters**, they are included with the **BlazerTech Character Management System**.  
+However they can also be bought separately at a discounted price.
+
+They are Modular characters made of 4 different layers.
+Layers include:
+1. Body
+2. Outfit
+3. Hairstyle
+4. Accessory
+
+A Layered Character Type for these characters is already included and fully setup. They are ready to be used in any project.
+
+Additionally a Unified Character Type is setup with a set of pre-made characters made by combining various layer options.
 
 ---
 

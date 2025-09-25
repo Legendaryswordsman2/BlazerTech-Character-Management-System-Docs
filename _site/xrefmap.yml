@@ -7803,6 +7803,9 @@ references:
 - uid: layered-character-type
   name: Layered Character Type
   href: docs/layered-character-type.html
+- uid: limezu-modern-interiors-support
+  name: LimeZu Modern Interiors Support
+  href: docs/limezu-modern-interiors-support.html
 - uid: unified-character-type
   name: Unified Character Type
   href: docs/unified-character-type.html

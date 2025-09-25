@@ -58,7 +58,7 @@ To create a Layered Character Group Template **right click** the project window 
 > [!TIP]
 > If a **Layered Character Group Template** is placed inside a folder titled `Resources` the group will be automatically created at runtime.
 
-![Layered Character Group Template Example](/images/character-templates/layered-character-group-template.png)
+![Layered Character Group Template Example](~/images/character-templates/layered-character-group-template.png)
 
 ### Fields
 
