@@ -23,8 +23,8 @@
         href: character-usage.md
   - name: Character Templates
     href: character-templates.md
-  - name: Character Groups
-    href: character-groups.md
+  - name: Character Grouping System
+    href: character-grouping-system.md
   - name: LimeZu Modern Interiors Support
     href: limezu-modern-interiors-support.md
 
@@ -55,6 +55,8 @@
         href: character-creator/layer-selectors/list-layer-selector.md
       - name: Tab Layer Selector
         href: character-creator/layer-selectors/tab-layer-selector.md
+      - name: Character Creator Setup Rewritten
+        href: character-creator/character_creator_setup_rewritten.md
   - name: History
     items:
       - name: History Tracking System

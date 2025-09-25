@@ -7779,9 +7779,12 @@ references:
 - uid: character-creator-setup
   name: Character Creator Setup
   href: docs/character-creator/character-creator-setup.html
-- uid: character-groups
-  name: Character Groups
-  href: docs/character-groups.html
+- uid: character-creator-setup-rewrite
+  name: Character Creator Setup
+  href: docs/character-creator/character_creator_setup_rewritten.html
+- uid: character-grouping-system
+  name: Character Grouping System
+  href: docs/character-grouping-system.html
 - uid: character-templates
   name: Character Templates
   href: docs/character-templates.html

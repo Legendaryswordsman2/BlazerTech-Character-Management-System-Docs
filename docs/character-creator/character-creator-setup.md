@@ -21,11 +21,11 @@ It requires two things.
 ### How to Enable the Menu
 The `Character Creation Menu Manager` provides 4 methods to open the menu.  
 Most methods use the Character Grouping System.  
-Learn more about the [Character Grouping System here](xref:character-groups).  
+Learn more about the [Character Grouping System here](xref:character-grouping-system).  
 
 | Method                                                                                                                   | Descripion                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
-| [EnableMenu_PrimaryCharacterSlot]                                                                                        | Opens the menu using the Primary Character Slot of the Character Type Used.                  |
+| [EnableMenu_PrimaryCharacterSlot]                                                                                        | Opens the menu using the Primary Character Slot in the Character Type Used.                  |
 | [EnableMenu_EditCharacter]                                                                                               | Open the menu to edit a layered character that already exists.                               |
 | [EnableMenu_NewPrimaryCharacterSlot]                                                                                     | Opens the menu with a new character that overrides the Primary Character slot.               |
 | [<span style="white-space:nowrap">EnableMenu_NewCharacterInFlexibleGroup</span>][EnableMenu_NewCharacterInFlexibleGroup] | Opens the menu with a new character & puts it inside the provided Flexible Group when saved. |

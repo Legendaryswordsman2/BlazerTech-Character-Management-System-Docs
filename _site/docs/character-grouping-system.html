@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Character Groups | BlazerTech Character Management System </title>
+      <title>Character Grouping System | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Character Groups | BlazerTech Character Management System ">
+      <meta name="title" content="Character Grouping System | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../images/favicon.png">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-groups.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-grouping-system.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,61 +84,39 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="character-groups">
-<h1 id="character-groups">Character Groups</h1>
+        <article data-uid="character-grouping-system">
+<h1 id="character-grouping-system">Character Grouping System</h1>
 
-<h2 id="character-group-definitions">Character Group Definitions</h2>
-<p>Character Groups make it easy to categorize and use characters in a variety of situations. They are optional in most cases but can be very handy.</p>
-<p>Every Layered Character Type contains three group types.</p>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Description</th>
-<th>Use Case</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Single</strong></td>
-<td>Contains one character. Only <strong>one</strong> Single Group can exist per Character Type.</td>
-<td>simple situations where only one character is used such as a player character.</td>
-</tr>
-<tr>
-<td><strong>Flexible</strong></td>
-<td>A list of any amount of characters. Characters can be added, removed or edited at any time.</td>
-<td>Situations where a dynamic and editable list is needed. Such as a collection of playable characters the player can create and choose from.</td>
-</tr>
-<tr>
-<td><strong>Fixed</strong></td>
-<td>A list of a pre-determined amount of characters. The number is set when the list is created and all characters are created immedietely. Characters within the list can be edited at anytime but cannot be removed and new characters cannot be added.</td>
-<td>Situations where an immutable list is needewd. Such as a set list of playable characters the player can choose from.</td>
-</tr>
-</tbody>
-</table>
+<p>Character groups are a convenient way to store/sort characters. They are for <a class="xref" href="layered-character-type.html">Layered Characters</a> only.
+Characters in a group are automatically saved to disk and loaded again next session.</p>
+<h2 id="the-primary-character-slot">The Primary Character Slot</h2>
+<p>Every Character Type contains a <strong>Primary Character Slot</strong> which can hold a singular character. This is useful for simple setups where only one character is used.</p>
+<p>The main use for the <strong>Primary Character Slot</strong> is for use with the <a class="xref" href="character-creator/character-creator-overview.html">Character Creation Menu</a>.<br>
+The menu can be opened using the character contained within the <strong>Primary Character Slot</strong>.</p>
+<h2 id="group-types">Group Types</h2>
+<p><strong>There are two types of groups:</strong></p>
+<h3 id="flexible-group-type">Flexible Group Type</h3>
+<p>A dynamic list. Characters can be added, removed or edited at any time.</p>
+<p>Flexibe Groups are great when you want the player to have full control of the list.
+For example a list of playable characters with the ability for the player to create new characters.</p>
+<p><a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.html">API</a></p>
+<h3 id="fixed-group-type">Fixed Group Type</h3>
+<p>A list of a pre-determined amount of characters. The number is set when the list is created and all characters are created immedietely. Characters within the list can be edited at anytime but cannot be removed and new characters cannot be added.</p>
+<p>Best for situations where an immutable list is needed. Such as a set of pre-created characters the player can edit the designs of but not change the count. Or a set of playable characters the player can choose from.</p>
+<p><a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.FixedCharacterGroup.html">API</a></p>
 <hr>
-<h2 id="character-group-registry">Character Group Registry</h2>
-<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html">CharacterGroupRegistry</a> class contains all three groups types.
-It contains one Single Group and a list of Flexible and Fixed Groups.</p>
-<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html">LayeredCharacterGroupManager</a> class contains a dictionary of <code>CharacterTypeGroupsRegistry</code>. One entry for each Layered Character Type used.</p>
-<hr>
-<h2 id="single-group">Single Group</h2>
-<p>A group which contains only one character. This group is always present in every Character Group Registry.</p>
-<p>This group mainly exists to make creating simple scenarioes easily. For example if you have a Character Creation Menu setup you can call the <code>EnableMenuSingleGroup</code> to automically enable the menu and save the created character to the Single Group of the Character Type used.</p>
-<p>Then later that character can be used by using the <strong>Layered Character Loader</strong>, giving it the same character type and telling it to load the Single Group.</p>
-<hr>
-<h2 id="flexible-group">Flexible Group</h2>
-<p>A dynamic list where characters can be added to, removed from, or edited at anytime.</p>
-<hr>
-<h2 id="fixed-group">Fixed Group</h2>
-<p>An immutable list of characters. The size is defined when creating the list and all characters are created immedietely upon group creation. Characters within the group can be modified or even swapped out but the size of the list cannot change.</p>
-<hr>
-<h2 id="adding-a-layered-character-to-a-group">Adding a Layered Character to a Group</h2>
+<h2 id="character-group-registries">Character Group Registries</h2>
+<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html">CharacterGroupRegistry</a> is a wrapper class. An instance of this class exists for each <strong>Layered Character Type</strong>.
+This wrapper class holds the <a href="#the-primary-character-slot">Primary Character Slot</a> as well as all flexible and fixed groups created for the same <strong>Layered Character Type</strong>.</p>
+<h2 id="character-group-manager">Character Group Manager</h2>
+<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html">LayeredCharacterGroupManager</a> is a static class which handles all groups.</p>
+<p>The Layered Character Group Manager contains a dictionary of type <code>CharacterGroupRegistry</code>. One entry for each <strong>Layered Character Type</strong> used.</p>
+<p>The <code>LayeredCharacterGroupManager.GetGroupRegistryForType(LayeredCharacterTypeSO type)</code> method can be used to retrieve the registry for a specific <strong>Character Type</strong>.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-groups.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/character-grouping-system.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

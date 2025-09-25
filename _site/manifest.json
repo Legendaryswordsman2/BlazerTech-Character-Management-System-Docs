@@ -1915,6 +1915,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/character-creator/character_creator_setup_rewritten.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-creator/character_creator_setup_rewritten.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/character-creator/history/character-creator-history-panels.md",
       "output": {
         ".html": {
@@ -2005,10 +2015,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/character-groups.md",
+      "source_relative_path": "docs/character-grouping-system.md",
       "output": {
         ".html": {
-          "relative_path": "docs/character-groups.html"
+          "relative_path": "docs/character-grouping-system.html"
         }
       },
       "version": ""
