@@ -112,6 +112,36 @@ This wrapper class holds the <a href="#the-primary-character-slot">Primary Chara
 <p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html">LayeredCharacterGroupManager</a> is a static class which handles all groups.</p>
 <p>The Layered Character Group Manager contains a dictionary of type <code>CharacterGroupRegistry</code>. One entry for each <strong>Layered Character Type</strong> used.</p>
 <p>The <code>LayeredCharacterGroupManager.GetGroupRegistryForType(LayeredCharacterTypeSO type)</code> method can be used to retrieve the registry for a specific <strong>Character Type</strong>.</p>
+<hr>
+<h2 id="character-group-templates">Character Group Templates</h2>
+<p>A <strong>Layered Character Group Template</strong> is a scriptable object. It is a blueprint for creating a flexible or fixed group during runtime.</p>
+<p>To create a Layered Character Group Template <strong>right click</strong> the project window and navigate to <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates &gt; Layered Character Group Template</strong></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If a <strong>Layered Character Group Template</strong> is placed inside a folder titled <code>Resources</code> the group will be automatically created at runtime.</p>
+</div>
+<p><img src="/images/character-templates/layered-character-group-template.png" alt="Layered Character Group Template Example"></p>
+<h3 id="fields">Fields</h3>
+<ul>
+<li><strong>Default Group Name</strong> -The name of the group when it's created. Can be overriden.</li>
+<li><strong>Character Type</strong> - The Character Type the group will be for when created.</li>
+<li><strong>Group Type</strong> - The type of group that will be created. Flexible or Fixed.</li>
+<li><strong>Character In Group</strong><br>
+A list of all characters that will be created and put in the group when the group is created.<br>
+Each entry has two options:</li>
+</ul>
+<ol>
+<li><strong>New Character</strong>
+<ul>
+<li>Creates a new character with the supplied name.</li>
+</ul>
+</li>
+<li><strong>Character Template</strong>
+<ul>
+<li>Creates a new character using the supplied Layered Character Template.</li>
+</ul>
+</li>
+</ol>
 
 </article>
 

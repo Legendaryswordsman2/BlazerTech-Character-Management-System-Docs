@@ -54,6 +54,33 @@ If a **Layered Character** is used, the shader combines all layers into the fina
 
 ---
 
+## Character Grouping System
+
+Charcter groups are used to sort characters. They're great for organizing characters into meaningful collections, whether that's for a dynamic roster or a fixed group size.
+
+[Read More → Character Grouping System](xref:character-grouping-system)  
+
+Two types of groups exist.  
+
+### Flexible Group Type
+A dynamic list that characters can be added to, removed from, or edited at anytime.
+
+Example Uses:
+- A roster of playable characters the player can create, edit, and delete.  
+- A collection of background NPCs that will later be randomly selected from.  
+
+[Read More → Flexible Group Type](xref:character-grouping-system#flexible-group-type)  
+### Fixed Group Type
+An immutable list of characters. When the list is created all characters are created immedietely. Characters can then be edited but not removed and new characters cannot be added.
+
+Example Uses:
+- A predined set of characters the player can choose to play as.  
+- A set of main characters the player can customize.  
+
+[Read More → Fixed Group Type](xref:character-grouping-system#fixed-group-type)  
+
+---
+
 ## Character Creator
 The **Character Creator** is a prefab based **Character Creation Menu Framework**.  
 Prefabs can be combined and customized to create whatever design you want.  

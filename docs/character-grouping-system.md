@@ -1,7 +1,6 @@
 ---
 uid: character-grouping-system
 ---
-[EnableMenu_PrimaryCharacterSlot]: xref:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_EnableMenu_PrimaryCharacterSlot_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_Boolean_
 
 # Character Grouping System
 
@@ -47,3 +46,29 @@ The [LayeredCharacterGroupManager](xref:BlazerTech.CharacterManagement.Character
 The Layered Character Group Manager contains a dictionary of type `CharacterGroupRegistry`. One entry for each **Layered Character Type** used.
 
 The `LayeredCharacterGroupManager.GetGroupRegistryForType(LayeredCharacterTypeSO type)` method can be used to retrieve the registry for a specific **Character Type**.
+
+---
+
+## Character Group Templates
+
+A **Layered Character Group Template** is a scriptable object. It is a blueprint for creating a flexible or fixed group during runtime.
+
+To create a Layered Character Group Template **right click** the project window and navigate to **Create > BlazerTech > Character Management System > Character Templates > Layered Character Group Template**
+
+> [!TIP]
+> If a **Layered Character Group Template** is placed inside a folder titled `Resources` the group will be automatically created at runtime.
+
+![Layered Character Group Template Example](/images/character-templates/layered-character-group-template.png)
+
+### Fields
+
+- **Default Group Name** -The name of the group when it's created. Can be overriden.
+- **Character Type** - The Character Type the group will be for when created.
+- **Group Type** - The type of group that will be created. Flexible or Fixed.
+- **Character In Group**  
+A list of all characters that will be created and put in the group when the group is created.  
+Each entry has two options:  
+1. **New Character**
+   - Creates a new character with the supplied name.
+2. **Character Template**
+   - Creates a new character using the supplied Layered Character Template.
