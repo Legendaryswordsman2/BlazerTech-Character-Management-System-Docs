@@ -4,7 +4,7 @@ uid: basic-concepts
 
 # Basic Concepts
 
-This page introduces the **core principles** of the Character Management System:  
+This page introduces the **core principles** of the **Character Management System**:  
 - [**Character Types**](#character-types) – Define how characters are structured.  
 - [**Character Templates**](#character-templates) – Blueprints for creating characters later.  
 - [**Character Usage**](#character-usage) – Scripts to load and manage characters.  
@@ -15,7 +15,7 @@ This page introduces the **core principles** of the Character Management System:
 ---
 
 ## Character Types
-A **Character Type** defines how a character works. There are two kinds:
+A **Character Type** is a [Scriptable Objects](https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html) that defines how a character works. There are two kinds:
 
 | Type                       | Description                                                                            | Best For                                                    |
 | -------------------------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------- |

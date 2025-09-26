@@ -7785,6 +7785,9 @@ references:
 - uid: character-grouping-system
   name: Character Grouping System
   href: docs/character-grouping-system.html
+- uid: character-layers
+  name: Character Layers
+  href: docs/character-layers.html
 - uid: character-templates
   name: Character Templates
   href: docs/character-templates.html
@@ -7806,6 +7809,9 @@ references:
 - uid: limezu-modern-interiors-support
   name: LimeZu Modern Interiors Support
   href: docs/limezu-modern-interiors-support.html
+- uid: quick-start
+  name: Quick Start Guide
+  href: docs/getting-started/quick-start.html
 - uid: unified-character-type
   name: Unified Character Type
   href: docs/unified-character-type.html

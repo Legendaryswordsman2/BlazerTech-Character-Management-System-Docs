@@ -37,7 +37,7 @@ Sprites from the **Base Spritesheet** will be used whenever using any character 
 The **Base Sprite** has a **Sprite Mode** which defines if the image should be used as a singular sprite or split into individual sprites.  
 In this case we want to set the **Sprite Mode** to **Multiple** so we can use each frame of the spritesheet individually.
 
-Checkout the next section [#charactercontroller](#character-controller) to learn how sprites from the **Base Spritesheet** can animated.
+Checkout the next section [(Character Controller)](#character-controller) to learn how sprites from the **Base Spritesheet** can animated.
 
 [API](xref:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet)
 
