@@ -87,7 +87,7 @@
         <article data-uid="quick-start">
 <h1 id="quick-start-guide">Quick Start Guide</h1>
 
-<p><img src="/images/blazertech-character-management-system-cover-iamge.png" alt="Logo"></p>
+<p><img src="../../images/blazertech-character-management-system-cover-iamge.png" alt="Logo"></p>
 <p>This guide should get you on your feet and teach you the basics of how to use the <strong>BlazerTech Character Management System</strong>.</p>
 <p>It's recommended to read through the <a class="xref" href="basic-concepts.html">Basic Concepts</a> before reading the <strong>Quick Start Guide</strong>.</p>
 <h2 id="creating-a-character-type">Creating a Character Type</h2>
@@ -130,8 +130,39 @@ To create a layer once again right click the <strong>Project window</strong> and
 <p>Read <a class="xref" href="../character-layers.html">Character Layers</a> to learn how to properly setup each layer and add Layer Options.</p>
 <h2 id="creating-a-character-template">Creating a Character Template</h2>
 <p>Now that we have our character type created, we need an actual character.<br>
-There are many ways to create a character from a Character Type but for this guide we'll be using the simplest one, a <strong>character template</strong>.</p>
-<p>You can think of a character template as a blueprint that lets use create a character from it later during runtime.</p>
+There are many ways to create a character from a <strong>Character Type</strong> but for this guide we'll be using the simplest one, a <strong>Character Template</strong>.</p>
+<p>You can think of a <strong>Character Template</strong> as a blueprint that lets you create a character from it later during runtime.</p>
+<p><strong>Right click</strong> the <strong>Project window</strong> and navigate to <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates</strong> and select either <strong>Layered Character Template</strong> or <strong>Unified Character Template</strong>.</p>
+<h3 id="unified-character-template-setup">Unified Character Template Setup</h3>
+<p>A <strong>Unified Character Template</strong> requires 3 things</p>
+<ol>
+<li>A reference to the <strong>Unified Character Type</strong> it's meant to be used for.</li>
+<li>A name for the character when it gets created.</li>
+<li>A reference to the spritesheet of the character.
+<ul>
+<li>This spritesheet should be the exact same size as the Base Spritesheet in the Character Type and contain the same animations.</li>
+<li><strong>Sprite Mode</strong> should be set to <strong>Single</strong> since we won't be using it directly. it'll be passed to the <strong>Character Shader</strong>.</li>
+<li>Set the <strong>Filter Mode</strong> to <strong>Point (No Filter)</strong></li>
+<li>Optionally set <strong>Compression</strong> to <strong>None</strong> (Generally not needed for pixel art)</li>
+</ul>
+</li>
+</ol>
+<p>That's it! Now go to <a href="#character-usage">Character Usage</a> to learn how to create a character from your template.</p>
+<ul>
+<li><a class="xref" href="../character-templates.html#unified-character-template">Read Also → Unified Character Template</a></li>
+</ul>
+<h3 id="layered-character-template-setup">Layered Character Template Setup</h3>
+<p>A <strong>Layered Character Template</strong> requires a reference to the <strong>Layered Character Type</strong> it's meant to be used for. As well as a name for the character when it gets created.</p>
+<p>Once the <strong>Character Type</strong> has been set, a list of layers will appear. These are the same layers you setup in the <strong>Layered Character Type</strong>.</p>
+<p>Each entry in the list contains a dropdown allowing you to choose which layer option you want to use. And a search bar to narrow down the list if needed.</p>
+<p><img src="../../images/character-templates/layered-character-template-layers-list.png" alt="Layered Character Template Layers List"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If the layers list is not correct for whatever reason, you can click the <strong>Recreate List</strong> button at the bottom to remake the list. This will <strong>reset</strong> all layer options you chose.</p>
+</div>
+<ul>
+<li><a class="xref" href="../character-templates.html#layered-character-template">Read Also → Layered Character Template</a></li>
+</ul>
 <hr>
 <h2 id="character-usage">Character Usage</h2>
 

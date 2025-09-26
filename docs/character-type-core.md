@@ -31,7 +31,7 @@ Don’t know what a Character Type is?
 > [!WARNING]  
 > Character Spritesheets of a different size will be rejected, and a warning will be logged.
 
-Sprites from the **Base Spritesheet** will be used whenever using any character of the same **Character Type**. A shader will be applied that visually overrides of spritesheet with the spritesheet(s) used by the assigned character.
+Sprites from the **Base Spritesheet** will be used whenever using any character of the same **Character Type**. A shader will be applied that visually overrides the spritesheet with the spritesheet(s) used by the assigned character.
 
 ### Setup
 The **Base Sprite** has a **Sprite Mode** which defines if the image should be used as a singular sprite or split into individual sprites.  

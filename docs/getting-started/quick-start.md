@@ -4,7 +4,7 @@ uid: quick-start
 
 # Quick Start Guide
 
-![Logo](/images/blazertech-character-management-system-cover-iamge.png)
+![Logo](~/images/blazertech-character-management-system-cover-iamge.png)
 
 This guide should get you on your feet and teach you the basics of how to use the **BlazerTech Character Management System**.
 
@@ -68,9 +68,39 @@ Read [Character Layers](xref:character-layers) to learn how to properly setup ea
 ## Creating a Character Template  
 
 Now that we have our character type created, we need an actual character.  
-There are many ways to create a character from a Character Type but for this guide we'll be using the simplest one, a **character template**.  
+There are many ways to create a character from a **Character Type** but for this guide we'll be using the simplest one, a **Character Template**.  
 
-You can think of a character template as a blueprint that lets use create a character from it later during runtime.
+You can think of a **Character Template** as a blueprint that lets you create a character from it later during runtime.
+
+**Right click** the **Project window** and navigate to **Create > BlazerTech > Character Management System > Character Templates** and select either **Layered Character Template** or **Unified Character Template**.
+
+### Unified Character Template Setup
+A **Unified Character Template** requires 3 things
+1. A reference to the **Unified Character Type** it's meant to be used for.
+2. A name for the character when it gets created.
+3. A reference to the spritesheet of the character.
+   - This spritesheet should be the exact same size as the Base Spritesheet in the Character Type and contain the same animations.
+   - **Sprite Mode** should be set to **Single** since we won't be using it directly. it'll be passed to the **Character Shader**.
+   - Set the **Filter Mode** to **Point (No Filter)**
+   - Optionally set **Compression** to **None** (Generally not needed for pixel art)
+
+That's it! Now go to [Character Usage](#character-usage) to learn how to create a character from your template.
+
+- [Read Also → Unified Character Template](xref:character-templates#unified-character-template)  
+
+### Layered Character Template Setup
+A **Layered Character Template** requires a reference to the **Layered Character Type** it's meant to be used for. As well as a name for the character when it gets created.
+
+Once the **Character Type** has been set, a list of layers will appear. These are the same layers you setup in the **Layered Character Type**.  
+
+Each entry in the list contains a dropdown allowing you to choose which layer option you want to use. And a search bar to narrow down the list if needed.
+
+![Layered Character Template Layers List](~/images/character-templates/layered-character-template-layers-list.png)
+
+> [!TIP]
+> If the layers list is not correct for whatever reason, you can click the **Recreate List** button at the bottom to remake the list. This will **reset** all layer options you chose.
+
+- [Read Also → Layered Character Template](xref:character-templates#layered-character-template)  
 
 ---
 

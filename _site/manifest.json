@@ -2348,6 +2348,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-templates/layered-character-template-layers-list.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-templates/layered-character-template-layers-list.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-templates/layered-character-template.png",
       "output": {
         "resource": {
