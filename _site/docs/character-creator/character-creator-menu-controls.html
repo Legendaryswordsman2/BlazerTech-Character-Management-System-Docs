@@ -87,7 +87,42 @@
         <article data-uid="ccm-menu-controls">
 <h1 id="character-creator-menu-controls">Character Creator Menu Controls</h1>
 
-<p>This page will guide you through setting up back/save buttons as well as how to use the <code>CCM Relay</code> component.</p>
+<p>Menu Controls are buttons that enhance the functionality of the <strong>Character Creation Menu</strong>.<br>
+They include the following:</p>
+<ul>
+<li><strong>Back/Close menu button</strong>.</li>
+<li><strong>Save Character/Confirm changes button</strong>.</li>
+<li><strong>Reset character button</strong>.</li>
+<li><strong>Randomize character button</strong>.</li>
+</ul>
+<h2 id="the-character-creation-menu-relay-component">The Character Creation Menu Relay Component</h2>
+<p>The <a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html">CCMRelay</a> component is used to relay methods to the <code>Character Creation Menu Manager</code>. The setup works like this:</p>
+<ol>
+<li>Add the <code>CCM Relay</code> component to a game object.</li>
+<li>Add a <code>button</code> component and set the <code>On Click</code> event to call a method on the <code>CCM Relay</code> component.</li>
+</ol>
+<p><img src="../../images/character-creator-setup/ccm-relay-usage-example.png" alt="CCM Relay Usage Example"></p>
+<h3 id="ccm-relay-methods">CCM Relay Methods</h3>
+<p>The following are all public methods on the <code>CCM Relay</code> component:</p>
+<ul>
+<li><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html#BlazerTech_CharacterManagement_CharacterCreator_CCMRelay_DisableMenu">DisableMenu()</a> - Disable and close the <strong>Character Creation Menu</strong> if open.</li>
+<li><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html#BlazerTech_CharacterManagement_CharacterCreator_CCMRelay_SaveCharacter">SaveCharacter()</a> - Save the character assigned in the <strong>Character Creation Menu</strong> and add it to a group if applicable.</li>
+<li><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html#BlazerTech_CharacterManagement_CharacterCreator_CCMRelay_RandomizeEntireCharacter">RandomizeEntireCharacter()</a> - Randomize all layers of the character assigned in the <strong>Character Creation Menu</strong>.</li>
+<li><a class="xref" href="../../api/BlazerTech.CharacterManagement.CharacterCreator.CCMRelay.html#BlazerTech_CharacterManagement_CharacterCreator_CCMRelay_ResetCharacter">ResetCharacter()</a> - Reset the character in the <strong>Character Creation Menu</strong> to the state it was in when the menu was first opened.</li>
+</ul>
+<hr>
+<h2 id="menu-control-prefabs">Menu Control Prefabs</h2>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Prefabs Location: <strong>Prefabs &gt; Character Creator &gt; Menu Controls</strong></p>
+</div>
+<p>The following prefabs are pre-setup with the above mentioned controls.</p>
+<ul>
+<li><strong>Menu Controls (Core, Horizontal Group)</strong> - Only contains a back and save character button.</li>
+<li><strong>Menu Controls (Full, Horizontal Group)</strong> - Contains back, save character, randomize and reset buttons. All contained in a horizontal layout group.</li>
+<li><strong>(Menu Controls [Full + Undo_Redo])</strong> - Contains back, save character, randomize and undo/redo buttons for use with the <strong>History Tracker</strong> component.</li>
+<li><strong>Menu Controls [Full]</strong> - Contains back, save character, randomize and reset buttons in a grid shape.</li>
+</ul>
 
 </article>
 

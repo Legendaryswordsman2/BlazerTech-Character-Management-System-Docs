@@ -2318,6 +2318,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-creator-setup/ccm-relay-usage-example.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-creator-setup/ccm-relay-usage-example.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-creator-setup/character-creation-menu-structure.png",
       "output": {
         "resource": {

@@ -11,13 +11,15 @@ With the [History Tracker component](xref:ccm-history-tracking-system#history-tr
 Setup is extremely simple:  
 1. Add the `button` and [CCMTimelineButtonHandler](xref:BlazerTech.CharacterManagement.CharacterCreator.CCMTimelineButtonHandler) component to any game object.
 2. Assign the `Button` reference to the `CCMTimelineButtonHandler` component.
-3. Assign the `History Tracker` reference.
-4. Set the mode to either Undo or Redo.
-5. Set the buttons **On Click** event to call `CCMTimelineButtonHandler.UndoOrRedo`.
+3. Set the mode to either Undo or Redo.
+4. Set the buttons **On Click** event to call `CCMTimelineButtonHandler.UndoOrRedo`.
+
+> [!NOTE]
+> A `CCM History Tracker` component **must** be present somewhere in the menu contents for the Undo/Redo buttons to be functional.
 
 If the undo or redo action is invalid the button will be disabled until valid again.  
 
-A prefab already exists where almost everything is already setup. You'll still need to assign the **History Tracker** on both button game objects though.
+A prefab already exists where everything is already setup.
 
 ![History Undo/Redo Buttons](~/images/ccm-history/history-undo-redo-buttons.png)
 
