@@ -165,6 +165,54 @@ There are many ways to create a character from a <strong>Character Type</strong>
 </ul>
 <hr>
 <h2 id="character-usage">Character Usage</h2>
+<p>The easiest way to use a <strong>Unified</strong> or <strong>Layered Character</strong> is with a <strong>Character Loader</strong> component.</p>
+<p>If you're using a <strong>Unified Character Type</strong> add the <strong>Unified Character Template Loader</strong> component.<br>
+If you're using a <strong>Layered Character Type</strong> add the <strong>Layered Character Template Loader</strong> component.</p>
+<h3 id="character-loader-fields">Character Loader Fields</h3>
+<p>The following fields are required for all <strong>Character Loaders</strong>.</p>
+<h4 id="references">References</h4>
+<ul>
+<li><strong>Renderer</strong>
+<ul>
+<li>Most commonly a <code>Sprite Renderer</code> component. The <strong>Character Shader</strong> will be applied to this renderer.</li>
+</ul>
+</li>
+<li><strong>Set Animator Controller (Bool)</strong>
+<ul>
+<li>Toggles if the <strong>Character Controller</strong> from the <strong>Character Type</strong> should be used or not.</li>
+</ul>
+</li>
+<li><strong>Animator</strong>
+<ul>
+<li>The <code>Animator</code> component to apply the <strong>Animator Controller</strong> set in the <strong>Character Type</strong>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="loading-settings">Loading Settings</h4>
+<ul>
+<li><strong>Loading Mode</strong>
+<ul>
+<li><strong>Asynchronous</strong> - Loads the character in the background without freezing the game. The character may not be visible right away while it loads.</li>
+<li><strong>Synchronous</strong> - Loads the character synchronously  which freezes the game while loading.</li>
+</ul>
+</li>
+<li><strong>Load Character On Start (Bool)</strong>
+<ul>
+<li>if toggled, the character will be loaded automatically when the <code>Start</code> method is called.</li>
+<li>If not toggled the character will have to be loaded by calling the <code>GetAndShowCharacter()</code> method.</li>
+</ul>
+</li>
+</ul>
+<h3 id="character-template-reference">Character Template Reference</h3>
+<p>At the bottom of the component is a field that says either:</p>
+<ul>
+<li><strong>Unified Character Template</strong></li>
+<li><strong>Layered Character Template</strong></li>
+</ul>
+<p>Depending on the <strong>Character Loader</strong> component you're using. Regardless, reference a <strong>Character Template</strong> in that field.<br>
+This is the template that will be used when creating a character during runtime.<br>
+Now play the game and if <code>Load Character On Start</code> is true then you'll see your character in-gama.</p>
+<p>Congrats! You now have your first working character!</p>
 
 </article>
 

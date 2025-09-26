@@ -105,3 +105,37 @@ Each entry in the list contains a dropdown allowing you to choose which layer op
 ---
 
 ## Character Usage
+The easiest way to use a **Unified** or **Layered Character** is with a **Character Loader** component.
+
+If you're using a **Unified Character Type** add the **Unified Character Template Loader** component.  
+If you're using a **Layered Character Type** add the **Layered Character Template Loader** component.
+
+### Character Loader Fields
+The following fields are required for all **Character Loaders**.
+
+#### References
+- **Renderer**
+  - Most commonly a `Sprite Renderer` component. The **Character Shader** will be applied to this renderer.
+- **Set Animator Controller (Bool)**
+  - Toggles if the **Character Controller** from the **Character Type** should be used or not.
+- **Animator**
+  - The `Animator` component to apply the **Animator Controller** set in the **Character Type**.
+
+#### Loading Settings
+- **Loading Mode**
+  - **Asynchronous** - Loads the character in the background without freezing the game. The character may not be visible right away while it loads.
+  - **Synchronous** - Loads the character synchronously  which freezes the game while loading.
+- **Load Character On Start (Bool)**
+  - if toggled, the character will be loaded automatically when the `Start` method is called.
+  - If not toggled the character will have to be loaded by calling the `GetAndShowCharacter()` method.
+
+### Character Template Reference
+At the bottom of the component is a field that says either:  
+- **Unified Character Template**
+- **Layered Character Template**
+
+Depending on the **Character Loader** component you're using. Regardless, reference a **Character Template** in that field.  
+This is the template that will be used when creating a character during runtime.  
+Now play the game and if `Load Character On Start` is true then you'll see your character in-gama.  
+
+Congrats! You now have your first working character!
