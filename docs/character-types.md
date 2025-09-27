@@ -17,11 +17,11 @@ All Character Types inherit from [CharacterTypeBaseSO](xref:BlazerTech.Character
 ### Core Character Type Properties
 The following properties are shared across all character types.
 
-| Property                | Type                      | Description
-|-----------------------------------------------------------------------------|---------------------------|---------------------------
-| **[CharacterTypeID](xref:character-type-core#character-type-id)**         | String                    | A **unique** identifer
-| **[BaseSpritesheet](xref:character-type-core#base-spritesheet)**         | Sprite                    | The default character spritesheet
-| **[CharacterController](xref:character-type-core#character-controller)** | RuntimeAnimatorController | The Animator Controller used
+| Property                                                                 | Type                      | Description                       |
+| ------------------------------------------------------------------------ | ------------------------- | --------------------------------- |
+| **[CharacterTypeID](xref:character-type-core#character-type-id)**        | String                    | A **unique** identifer            |
+| **[BaseSpritesheet](xref:character-type-core#base-spritesheet)**         | Sprite                    | The default character spritesheet |
+| **[CharacterController](xref:character-type-core#character-controller)** | RuntimeAnimatorController | The Animator Controller used      |
 
 [Read More → Character Type Core](xref:character-type-core)
 
@@ -29,10 +29,10 @@ The following properties are shared across all character types.
 
 ## Character Type Variants
 
-| Variant   | Modularity | Runtime Customization | Best For |
-|-----------|--------------------|---------------|----------|
-| **Unified** | Single spritesheet | None | Pre-created, fixed characters |
-| **Layered** | Layered spritesheets | High | Modular, editable characters |
+| Variant     | Modularity           | Best For                      |
+| ----------- | -------------------- | ----------------------------- |
+| **Unified** | Single spritesheet   | Pre-created, fixed characters |
+| **Layered** | Layered spritesheets | Modular, editable characters  |
 
 ---
 

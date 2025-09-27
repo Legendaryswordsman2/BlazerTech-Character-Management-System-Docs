@@ -11,9 +11,6 @@ Ex: **Body > Outfit > Hairstyle > Accessory** - Each layer is added one by one i
 ## Creating a Layered Character Type
 to create a new layered character type right click the **Project** window and navigate to **Create > BlazerTech > Character Management System > Layered Character Type**.
 
-> [!IMPORTANT]
-> The **Layered Character Type Scriptable Object** MUST be placed inside a folder named **Resources**! This is need for runtime initialization.
-
 ---
 
 ### Setting up a Layered Character Type

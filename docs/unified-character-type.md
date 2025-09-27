@@ -8,9 +8,6 @@ A **Unified Character** is made of one single premade spritesheet which contains
 ## Creating a Unified Character Type
 to create a new **Unified character type** right click the **Project** window and navigate to **Create > BlazerTech > Character Management System > Unified Character Type**.
 
-> [!IMPORTANT]
-> The **Unified Character Type Scriptable Object** does **NOT** need to be placed inside a Resources folder unlike **Layered Character Types**.
-
 ---
 
 ### Setting up a Unified Character Type

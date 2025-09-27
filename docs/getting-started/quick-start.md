@@ -12,10 +12,9 @@ It's recommended to read through the [Basic Concepts](xref:basic-concepts) befor
 
 ## Creating a Character Type
 
-If you only plan to use the built-in characters you can skip straight to [Character Usage](#character-usage)
+If you only plan to use the built-in characters you can skip straight to [Creating a Character Template](#creating-a-character-template)
 
-<!-- This guide will assume you want to use Layered Characters (Characters built of multiple parts layered on top of each other). -->
-This guide will show you how to create both Unified and Layered Characters.
+This guide will show you how to create both **Unified** and **Layered Characters**.
 
 **Create a Character Type Asset**
 **Right click** the **Project window** and navigate to **Create > BlazerTech > Character Management System** and select either **Layered Character Type** or **Unified Character Type**.

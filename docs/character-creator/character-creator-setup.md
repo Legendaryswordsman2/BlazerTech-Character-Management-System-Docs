@@ -59,12 +59,21 @@ At bare minimum they contain the following:
 > Premade Character Creation Menu prefabs location: **Prefabs > Character Creator > Premade Menus**  
 
 ### Premade Menus:  
-1. **Simplistic**:
+1. **Character Creation Menu 1**:
+   - **Carousel Selectors [Initialize Existing]** - Includes 4 carousel selectors.
+   - **Character Preview** - Includes rotation & animation change controls.
+   - **Undo/Redo Buttons**.
+   - **Randomize Entire Character button**.
+   - **Save and Back buttons**.
+   - **Loading Screen** - Includes progress bar and text.
+   - <img src="~/images/premade-character-creation-menus/premade-character-creation-menu-1.png" alt="Premade Character Creation Menu #1" width="500" />
+2. **Character Creation Menu 2**:
    - **Dropdown Selectors [Initialize Existing]**. - Includes 6 dropdown selectors.
    - **Character Preview** - Includes rotation controls.
    - **Loading Screen** - Includes progress bar and text.
-   - **Save & Back Buttons**.
-   - <img src="~/images/premade-character-creation-menus/premade-character-creation-menu-1.png" alt="Premade Character Creation Menu #1" width="500" />
+   - **Save & Back buttons**.
+   - <img src="~/images/premade-character-creation-menus/premade-character-creation-menu-2.png" alt="Premade Character Creation Menu #2" width="500" />
+
 
 ---
 

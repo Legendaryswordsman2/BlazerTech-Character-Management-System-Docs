@@ -55,8 +55,6 @@
         href: character-creator/layer-selectors/list-layer-selector.md
       - name: Tab Layer Selector
         href: character-creator/layer-selectors/tab-layer-selector.md
-      - name: Character Creator Setup Rewritten
-        href: character-creator/character_creator_setup_rewritten.md
   - name: History
     items:
       - name: History Tracking System
