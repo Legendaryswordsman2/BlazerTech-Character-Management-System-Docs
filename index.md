@@ -28,7 +28,7 @@ Check out the [Getting Started Guide](<xref:basic-concepts>) to begin!
 <!-- ![BlazerTech Character Management System Cover Image](~/images/blazertech-character-management-system-cover-iamge.png) -->
 ---
 
-## Version 0.0.2 (Alpha)
+## Version 0.1.0
 
 ---
         
