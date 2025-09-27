@@ -23,14 +23,8 @@ Providing an easy solution to create, use, animate and save/load characters in y
 ---
 
 ## Get Started
-Check out the [Getting Started Guide](<xref:basic-concepts>) to begin!
+Check out the [Getting Started Guide](<xref:basic-concepts>) to begin
 
-<!-- ![BlazerTech Character Management System Cover Image](~/images/blazertech-character-management-system-cover-iamge.png) -->
 ---
 
 ## Version 0.1.0
-
----
-        
-> [!WARNING]
-> THIS WEBSITE IS UNDER CONSTRUCTION AND NOT YET FINISHED!
