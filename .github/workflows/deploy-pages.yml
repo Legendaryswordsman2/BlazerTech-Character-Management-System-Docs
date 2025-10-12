@@ -3,6 +3,8 @@ name: Deploy Docs (multi-version + header switcher)
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'Versions/**'
   workflow_dispatch:
 
 permissions:
@@ -18,7 +20,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      BASE_PATH: ""
+      BASE_PATH: /BlazerTech-Character-Management-System-Docs
     steps:
       - name: Checkout
         uses: actions/checkout@v4
