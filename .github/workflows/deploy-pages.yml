@@ -251,7 +251,7 @@ jobs:
               continue
             fi
             if grep -qi '</body>' "$file"; then
-              perl -0777 -pe 's#</body>#<script src="'"${BASE_PATH}"'/assets/version-switcher/version-switcher.js" defer></script></body>#i' -i "$file"
+              perl -0777 -pe 's#</body>#<script src="assets/version-switcher/version-switcher.js" defer></script></body>#i' -i "$file"
             else
               printf '\n<script src="%s/assets/version-switcher/version-switcher.js" defer></script>\n' "${BASE_PATH}" >> "$file"
             fi
