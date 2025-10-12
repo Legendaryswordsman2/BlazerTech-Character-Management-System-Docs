@@ -18,7 +18,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      BASE_PATH: https://blazertech-cms.com/blazertech-cms.com/blazertech-cms
+      BASE_PATH: /blazertech-cms.com/blazertech-cms/
     steps:
       - name: Checkout
         uses: actions/checkout@v4
