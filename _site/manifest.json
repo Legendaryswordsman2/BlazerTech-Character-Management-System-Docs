@@ -1006,6 +1006,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO.yml",
       "output": {
         ".html": {
@@ -1174,30 +1188,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.CharacterAnimator.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Components.CharacterAnimator.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Components.CharacterAnimator",
+      "Title": "BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.CharacterLoaderBase.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Components.CharacterLoaderBase.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Components.CharacterLoaderBase",
+      "Title": "BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase",
       "Summary": null
     },
     {
@@ -1230,58 +1244,86 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.CharacterRendererBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.Components.CharacterRendererBase.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Components.LayeredCharacterLoader",
+      "Title": "BlazerTech.CharacterManagement.Components.CharacterRendererBase",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateLoader.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateLoader.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateLoader",
+      "Title": "BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.PlayerMovementController.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Components.PlayerMovementController.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Components.PlayerMovementController",
+      "Title": "BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.UnifiedCharacterLoader.yml",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Components.UnifiedCharacterLoader.html"
+          "relative_path": "api/BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Components.UnifiedCharacterLoader",
+      "Title": "BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.TopDownMovementController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Components.TopDownMovementController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Components.TopDownMovementController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer",
       "Summary": null
     },
     {
@@ -1338,6 +1380,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Core.CMSSaveSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Core.EightDirectional.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Core.EightDirectional.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Core.EightDirectional",
       "Summary": null
     },
     {
@@ -1692,6 +1748,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Samples.InteractableBed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Samples.InteractableBed.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Samples.InteractableBed",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Samples.Menu.yml",
       "output": {
         ".html": {
@@ -1758,34 +1828,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Samples",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Testing.CharacterTesting.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Testing.CharacterTesting.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Testing.CharacterTesting",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Testing.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Testing.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Testing",
       "Summary": null
     },
     {

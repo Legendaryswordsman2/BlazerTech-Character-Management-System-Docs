@@ -46,6 +46,9 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PerformValidationCheck
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValidCharacterSpriteSheet(UnityEngine.Sprite)
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
   attributes:
   - type: UnityEngine.CreateAssetMenuAttribute
     ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
@@ -199,6 +202,63 @@ references:
   - uid: UnityEngine.Sprite
     name: Sprite
     isExternal: true
+  - name: )
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_IsAddressable_EditMode
+  name: IsAddressable_EditMode()
+  nameWithType: CharacterTypeBaseSO.IsAddressable_EditMode()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
+    name: IsAddressable_EditMode
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_IsAddressable_EditMode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
+    name: IsAddressable_EditMode
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_IsAddressable_EditMode
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_HasCorrectAddressableLabel_EditMode
+  name: HasCorrectAddressableLabel_EditMode()
+  nameWithType: CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+    name: HasCorrectAddressableLabel_EditMode
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_HasCorrectAddressableLabel_EditMode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+    name: HasCorrectAddressableLabel_EditMode
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_HasCorrectAddressableLabel_EditMode
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_AddAddressableLabel_EditMode
+  name: AddAddressableLabel_EditMode()
+  nameWithType: CharacterTypeBaseSO.AddAddressableLabel_EditMode()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
+    name: AddAddressableLabel_EditMode
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_AddAddressableLabel_EditMode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
+    name: AddAddressableLabel_EditMode
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_AddAddressableLabel_EditMode
+  - name: (
   - name: )
 - uid: System
   commentId: N:System

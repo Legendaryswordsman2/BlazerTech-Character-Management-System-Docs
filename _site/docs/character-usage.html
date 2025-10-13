@@ -87,11 +87,11 @@
         <article data-uid="character-usage">
 <h1 id="character-usage">Character Usage</h1>
 
-<p>The following scripts can be used to load and use characters</p>
+<p>The following scripts can be used to load and render characters</p>
 <ul>
-<li><strong><a href="#layered-character-loader">Layered Character Loader</a></strong> - Load pre-existing Layered Characters.</li>
-<li><strong><a href="#layered-character-template-loader">Layered Character Template Loader</a></strong> - Create/load a layered character from a template.</li>
-<li><strong><a href="#unified-character-loader">Unified Character Loader</a></strong> - Load a Unified Character from a template.</li>
+<li><strong><a href="#layered-character-group-renderer">Layered Character Group Renderer</a></strong> - Load and render a pre-existing Layered Character from a group.</li>
+<li><strong><a href="#layered-character-template-renderer">Layered Character Template Renderer</a></strong> - Create/load and render a layered character from a template.</li>
+<li><strong><a href="#unified-character-template-renderer">Unified Character Template Renderer</a></strong> - Create/Load and render a Unified Character from a template.</li>
 </ul>
 <hr>
 <h2 id="the-character-shader">The Character Shader</h2>
@@ -100,11 +100,11 @@
 If a <strong>Layered Character</strong> is used, the shader combines all layers into the final rendered character.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If a <strong>Character Loader</strong> is used the shader will be applied automatically.</p>
+<p>If a <strong>Character Renderer</strong> component is used the shader will be applied automatically.</p>
 </div>
 <hr>
-<h2 id="character-loaders">Character Loaders</h2>
-<p>Character loading scripts can be used to load any character you've created regardless of the type. All <strong>Character Loaders</strong> have the following fields:</p>
+<h2 id="character-renderers">Character Renderers</h2>
+<p>Character Renderer components can be used to load and display any character you've created regardless of the type. All <strong>Character Renderers</strong> have the following fields:</p>
 <h3 id="references">References</h3>
 <table>
 <thead>
@@ -155,10 +155,10 @@ If a <strong>Layered Character</strong> is used, the shader combines all layers 
 </tbody>
 </table>
 <hr>
-<h2 id="unified-character-loader">Unified Character Loader</h2>
+<h2 id="unified-character-template-renderer">Unified Character Template Renderer</h2>
 <p>Requirements:<br>
 Have a <a class="xref" href="unified-character-type.html">Unified Character Type</a> and at least one <a class="xref" href="character-templates.html#unified-character-template">Unified Character Template</a> Setup.</p>
-<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Components.UnifiedCharacterLoader.html">Unified Character Loader</a> component can be used to create and load a character from a <strong>Unified Character Template</strong>.</p>
+<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer.html">Unified Character Renderer</a> component can be used to create and load a character from a <strong>Unified Character Template</strong>.</p>
 <ul>
 <li>Add the script to a game object.</li>
 <li>Set <strong>Renderer</strong> and optionally <strong>Animator</strong> references.</li>
@@ -167,12 +167,12 @@ Have a <a class="xref" href="unified-character-type.html">Unified Character Type
 <li>Play your game and if <strong>Load Character On Start</strong> is toggled, your character will be displayed.</li>
 </ul>
 <hr>
-<h2 id="layered-character-loaders">Layered Character Loaders</h2>
-<h3 id="layered-character-loader">Layered Character Loader</h3>
+<h2 id="layered-character-renderers">Layered Character Renderers</h2>
+<h3 id="layered-character-group-renderer">Layered Character Group Renderer</h3>
 <p>Requirements:<br>
 Have a <a class="xref" href="layered-character-type.html">Layered Character Type</a> setup and at least one <strong>Layered Character</strong> saved in a group.</p>
 <p><a class="xref" href="character-grouping-system.html">Read More → Character Groups</a></p>
-<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Components.LayeredCharacterLoader.html">Layered Character Loader</a> component can be used to load <strong>Layered Characters</strong> from a <strong>Character Group</strong>.</p>
+<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer.html">Layered Character Group Renderer</a> component can be used to load <strong>Layered Characters</strong> from a <strong>Character Group</strong>.</p>
 <ul>
 <li>Add the script to a game object.</li>
 <li>Set <strong>Renderer</strong> and optionally <strong>Animator</strong> references.</li>
@@ -227,10 +227,10 @@ Have a <a class="xref" href="layered-character-type.html">Layered Character Type
 </tbody>
 </table>
 <hr>
-<h3 id="layered-character-template-loader">Layered Character Template Loader</h3>
+<h3 id="layered-character-template-renderer">Layered Character Template Renderer</h3>
 <p>Requirements:<br>
 Have a <a class="xref" href="layered-character-type.html">Layered Character Type</a> and at least one <a class="xref" href="character-templates.html#layered-character-template">Layered Character Template</a> Setup.</p>
-<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateLoader.html">Layered Character Template Loader</a> component can be used to create and load a character from a  <strong>Layered Character Template</strong>.</p>
+<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer.html">Layered Character Template Renderer</a> component can be used to create and load a character from a  <strong>Layered Character Template</strong>.</p>
 <ul>
 <li>Add the script to a game object.</li>
 <li>Set <strong>Renderer</strong> and optionally <strong>Animator</strong> references.</li>

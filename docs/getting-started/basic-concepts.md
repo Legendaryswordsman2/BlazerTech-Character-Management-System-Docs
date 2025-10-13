@@ -43,13 +43,13 @@ A **Character Template** is a [Scriptable Object](https://docs.unity3d.com/6000.
 ## Character Usage
 
 ### Character Loader Components
-Once a **Unified or Layered Character** has been created, it can be loaded using one the following scripts:
+Once a **Unified or Layered Character** has been created, it can be Used through one the following scripts:
 
-| Loader                                                                                      | Purpose                                          |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| [Layered Character Loader](xref:character-usage#layered-character-loader)                   | Load pre-existing Layered Characters.            |
-| [Layered Character Template Loader](xref:character-usage#layered-character-template-loader) | Create/load a Layered Character from a template. |
-| [Unified Character Loader](xref:character-usage#unified-character-loader)                   | Create/load a Unified Character from a template. |
+| Loader                                                                                          | Purpose                                                      |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| [Layered Character Group Renderer](xref:character-usage#layered-character-group-renderer)       | Load and render pre-existing Layered Character from a group. |
+| [Layered Character Template Renderer](xref:character-usage#layered-character-template-renderer) | Create/load and render a Layered Character from a template.  |
+| [Unified Character Template Renderer](xref:character-usage#unified-character-template-renderer) | Create/load and render a Unified Character from a template.  |
 
 ### Character Shader
 Shaders are how the final Unified or Layered Character are rendered. Sprites from the **Base Spritesheet** defined in the **Character Type** are used in a renderer component such as a **Sprite Renderer**.

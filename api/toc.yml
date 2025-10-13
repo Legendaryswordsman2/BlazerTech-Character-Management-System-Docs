@@ -218,6 +218,9 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
     name: LayeredCharacterSnapshot
     type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor
+    name: LayeredCharacterTemplateEditor
+    type: Class
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
     name: LayeredCharacterTemplateSO
     type: Class
@@ -255,11 +258,11 @@ items:
   name: BlazerTech.CharacterManagement.Components
   type: Namespace
   items:
-  - uid: BlazerTech.CharacterManagement.Components.CharacterAnimator
-    name: CharacterAnimator
+  - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler
+    name: CharacterAnimatorHandler
     type: Class
-  - uid: BlazerTech.CharacterManagement.Components.CharacterLoaderBase
-    name: CharacterLoaderBase
+  - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
+    name: CharacterAnimatorHandlerBase
     type: Class
   - uid: BlazerTech.CharacterManagement.Components.CharacterLoaderLoadingMode
     name: CharacterLoaderLoadingMode
@@ -267,17 +270,23 @@ items:
   - uid: BlazerTech.CharacterManagement.Components.CharacterMultiGroupLoadMethod
     name: CharacterMultiGroupLoadMethod
     type: Enum
-  - uid: BlazerTech.CharacterManagement.Components.LayeredCharacterLoader
-    name: LayeredCharacterLoader
+  - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+    name: CharacterRendererBase
     type: Class
-  - uid: BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateLoader
-    name: LayeredCharacterTemplateLoader
+  - uid: BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer
+    name: LayeredCharacterGroupRenderer
     type: Class
-  - uid: BlazerTech.CharacterManagement.Components.PlayerMovementController
-    name: PlayerMovementController
+  - uid: BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer
+    name: LayeredCharacterTemplateRenderer
     type: Class
-  - uid: BlazerTech.CharacterManagement.Components.UnifiedCharacterLoader
-    name: UnifiedCharacterLoader
+  - uid: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler
+    name: PhysicsCharacterAnimatorHandler
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Components.TopDownMovementController
+    name: TopDownMovementController
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer
+    name: UnifiedCharacterTemplateRenderer
     type: Class
 - uid: BlazerTech.CharacterManagement.Core
   name: BlazerTech.CharacterManagement.Core
@@ -292,6 +301,9 @@ items:
   - uid: BlazerTech.CharacterManagement.Core.CMSSaveSystem
     name: CMSSaveSystem
     type: Class
+  - uid: BlazerTech.CharacterManagement.Core.EightDirectional
+    name: EightDirectional
+    type: Enum
   - uid: BlazerTech.CharacterManagement.Core.EssentialsLoader
     name: EssentialsLoader
     type: Class
@@ -371,6 +383,9 @@ items:
   - uid: BlazerTech.CharacterManagement.Samples.AssetReferenceScene
     name: AssetReferenceScene
     type: Class
+  - uid: BlazerTech.CharacterManagement.Samples.InteractableBed
+    name: InteractableBed
+    type: Class
   - uid: BlazerTech.CharacterManagement.Samples.Menu
     name: Menu
     type: Class
@@ -382,13 +397,6 @@ items:
     type: Class
   - uid: BlazerTech.CharacterManagement.Samples.ToggleMenuOnInput
     name: ToggleMenuOnInput
-    type: Class
-- uid: BlazerTech.CharacterManagement.Testing
-  name: BlazerTech.CharacterManagement.Testing
-  type: Namespace
-  items:
-  - uid: BlazerTech.CharacterManagement.Testing.CharacterTesting
-    name: CharacterTesting
     type: Class
 - uid: BlazerTech.CharacterManagement.Utilities
   name: BlazerTech.CharacterManagement.Utilities

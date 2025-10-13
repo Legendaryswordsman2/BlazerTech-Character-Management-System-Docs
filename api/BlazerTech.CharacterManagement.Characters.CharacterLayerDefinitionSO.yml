@@ -39,11 +39,11 @@ items:
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
     content: >-
-      [CreateAssetMenu(menuName = "BlazerTech/Character Management System/Layered Character Type/Layered Character Type", fileName = "New Character Layer")]
+      [CreateAssetMenu(menuName = "BlazerTech/Character Management System/Layered Character Type/Layer Definition", fileName = "New Character Layer")]
 
       public class CharacterLayerDefinitionSO : ScriptableObject, IValidatable
     content.vb: >-
-      <CreateAssetMenu(menuName:="BlazerTech/Character Management System/Layered Character Type/Layered Character Type", fileName:="New Character Layer")>
+      <CreateAssetMenu(menuName:="BlazerTech/Character Management System/Layered Character Type/Layer Definition", fileName:="New Character Layer")>
 
       Public Class CharacterLayerDefinitionSO Inherits ScriptableObject Implements IValidatable
   inheritance:
@@ -59,7 +59,7 @@ items:
     namedArguments:
     - name: menuName
       type: System.String
-      value: BlazerTech/Character Management System/Layered Character Type/Layered Character Type
+      value: BlazerTech/Character Management System/Layered Character Type/Layer Definition
     - name: fileName
       type: System.String
       value: New Character Layer

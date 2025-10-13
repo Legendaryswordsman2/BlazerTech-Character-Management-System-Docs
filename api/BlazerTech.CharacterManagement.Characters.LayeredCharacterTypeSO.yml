@@ -9,7 +9,6 @@ items:
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorSettings
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterMaterial
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.Initialize(UnityEngine.Material)
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsInResourcesFolder_EditMode
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsInitialized
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.Layers
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.PerformValidationCheck
@@ -28,7 +27,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LayeredCharacterTypeSO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 10
+    startLine: 16
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -36,13 +35,13 @@ items:
     content: >-
       [HelpURL("https://legendaryswordsman2.github.io/BT-Character-Management-System-Docs/api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html")]
 
-      [CreateAssetMenu(menuName = "BlazerTech/Character Management System/Layered Character Type/Character Layer", fileName = "New Layered Character Type")]
+      [CreateAssetMenu(menuName = "BlazerTech/Character Management System/Layered Character Type/Layered Character Type", fileName = "New Layered Character Type")]
 
       public class LayeredCharacterTypeSO : CharacterTypeBaseSO, IValidatable
     content.vb: >-
       <HelpURL("https://legendaryswordsman2.github.io/BT-Character-Management-System-Docs/api/BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html")>
 
-      <CreateAssetMenu(menuName:="BlazerTech/Character Management System/Layered Character Type/Character Layer", fileName:="New Layered Character Type")>
+      <CreateAssetMenu(menuName:="BlazerTech/Character Management System/Layered Character Type/Layered Character Type", fileName:="New Layered Character Type")>
 
       Public Class LayeredCharacterTypeSO Inherits CharacterTypeBaseSO Implements IValidatable
   inheritance:
@@ -58,6 +57,9 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValidCharacterSpriteSheet(UnityEngine.Sprite)
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
   attributes:
   - type: UnityEngine.HelpURLAttribute
     ctor: UnityEngine.HelpURLAttribute.#ctor(System.String)
@@ -70,7 +72,7 @@ items:
     namedArguments:
     - name: menuName
       type: System.String
-      value: BlazerTech/Character Management System/Layered Character Type/Character Layer
+      value: BlazerTech/Character Management System/Layered Character Type/Layered Character Type
     - name: fileName
       type: System.String
       value: New Layered Character Type
@@ -92,7 +94,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterCreatorSettings
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 14
+    startLine: 20
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -121,7 +123,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Layers
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 16
+    startLine: 22
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -150,7 +152,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterMaterial
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 19
+    startLine: 25
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -179,7 +181,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Initialize
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 24
+    startLine: 30
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -210,7 +212,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: PerformValidationCheck
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 40
+    startLine: 55
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -244,7 +246,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: AcquireAllLayerOptionsAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 61
+    startLine: 76
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -278,7 +280,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ReleaseAllLayerOptions
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 86
+    startLine: 101
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -304,7 +306,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsInitialized
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 96
+    startLine: 111
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -314,34 +316,6 @@ items:
       type: System.Boolean
     content.vb: Public Function IsInitialized() As Boolean
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsInitialized*
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsInResourcesFolder_EditMode
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsInResourcesFolder_EditMode
-  id: IsInResourcesFolder_EditMode
-  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
-  langs:
-  - csharp
-  - vb
-  name: IsInResourcesFolder_EditMode()
-  nameWithType: LayeredCharacterTypeSO.IsInResourcesFolder_EditMode()
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsInResourcesFolder_EditMode()
-  type: Method
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: IsInResourcesFolder_EditMode
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/LayeredCharacterTypeSO.cs
-    startLine: 135
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  syntax:
-    content: public bool IsInResourcesFolder_EditMode()
-    return:
-      type: System.Boolean
-    content.vb: Public Function IsInResourcesFolder_EditMode() As Boolean
-  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsInResourcesFolder_EditMode*
 references:
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
@@ -465,6 +439,63 @@ references:
   - uid: UnityEngine.Sprite
     name: Sprite
     isExternal: true
+  - name: )
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_IsAddressable_EditMode
+  name: IsAddressable_EditMode()
+  nameWithType: CharacterTypeBaseSO.IsAddressable_EditMode()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
+    name: IsAddressable_EditMode
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_IsAddressable_EditMode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
+    name: IsAddressable_EditMode
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_IsAddressable_EditMode
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_HasCorrectAddressableLabel_EditMode
+  name: HasCorrectAddressableLabel_EditMode()
+  nameWithType: CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+    name: HasCorrectAddressableLabel_EditMode
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_HasCorrectAddressableLabel_EditMode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+    name: HasCorrectAddressableLabel_EditMode
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_HasCorrectAddressableLabel_EditMode
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_AddAddressableLabel_EditMode
+  name: AddAddressableLabel_EditMode()
+  nameWithType: CharacterTypeBaseSO.AddAddressableLabel_EditMode()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
+    name: AddAddressableLabel_EditMode
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_AddAddressableLabel_EditMode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
+    name: AddAddressableLabel_EditMode
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_AddAddressableLabel_EditMode
+  - name: (
   - name: )
 - uid: System
   commentId: N:System
@@ -849,9 +880,3 @@ references:
   name: IsInitialized
   nameWithType: LayeredCharacterTypeSO.IsInitialized
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsInitialized
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsInResourcesFolder_EditMode*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsInResourcesFolder_EditMode
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_IsInResourcesFolder_EditMode
-  name: IsInResourcesFolder_EditMode
-  nameWithType: LayeredCharacterTypeSO.IsInResourcesFolder_EditMode
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.IsInResourcesFolder_EditMode

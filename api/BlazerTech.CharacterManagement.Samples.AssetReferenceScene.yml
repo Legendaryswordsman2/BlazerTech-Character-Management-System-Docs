@@ -5,7 +5,11 @@ items:
   id: AssetReferenceScene
   parent: BlazerTech.CharacterManagement.Samples
   children:
+  - BlazerTech.CharacterManagement.Samples.AssetReferenceScene.#ctor(UnityEditor.SceneAsset)
   - BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SceneName
+  - BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SetEditorAsset(UnityEngine.Object)
+  - BlazerTech.CharacterManagement.Samples.AssetReferenceScene.ValidateAsset(System.String)
+  - BlazerTech.CharacterManagement.Samples.AssetReferenceScene.ValidateAsset(UnityEngine.Object)
   langs:
   - csharp
   - vb
@@ -15,11 +19,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/AssetReferenceScene.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: AssetReferenceScene
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/AssetReferenceScene.cs
     startLine: 9
   assemblies:
   - Assembly-CSharp
@@ -55,11 +59,11 @@ items:
   type: Property
   source:
     remote:
-      path: Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/AssetReferenceScene.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SceneName
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/AssetReferenceScene.cs
     startLine: 15
   assemblies:
   - Assembly-CSharp
@@ -71,6 +75,140 @@ items:
       type: System.String
     content.vb: Public ReadOnly Property SceneName As String
   overload: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SceneName*
+- uid: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.#ctor(UnityEditor.SceneAsset)
+  commentId: M:BlazerTech.CharacterManagement.Samples.AssetReferenceScene.#ctor(UnityEditor.SceneAsset)
+  id: '#ctor(UnityEditor.SceneAsset)'
+  parent: BlazerTech.CharacterManagement.Samples.AssetReferenceScene
+  langs:
+  - csharp
+  - vb
+  name: AssetReferenceScene(SceneAsset)
+  nameWithType: AssetReferenceScene.AssetReferenceScene(SceneAsset)
+  fullName: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.AssetReferenceScene(UnityEditor.SceneAsset)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: .ctor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Samples
+  syntax:
+    content: public AssetReferenceScene(SceneAsset scene)
+    parameters:
+    - id: scene
+      type: UnityEditor.SceneAsset
+    content.vb: Public Sub New(scene As SceneAsset)
+  overload: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.#ctor*
+  nameWithType.vb: AssetReferenceScene.New(SceneAsset)
+  fullName.vb: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.New(UnityEditor.SceneAsset)
+  name.vb: New(SceneAsset)
+- uid: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.ValidateAsset(System.String)
+  commentId: M:BlazerTech.CharacterManagement.Samples.AssetReferenceScene.ValidateAsset(System.String)
+  id: ValidateAsset(System.String)
+  parent: BlazerTech.CharacterManagement.Samples.AssetReferenceScene
+  langs:
+  - csharp
+  - vb
+  name: ValidateAsset(string)
+  nameWithType: AssetReferenceScene.ValidateAsset(string)
+  fullName: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.ValidateAsset(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: ValidateAsset
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Samples
+  example: []
+  syntax:
+    content: public override bool ValidateAsset(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function ValidateAsset(path As String) As Boolean
+  overridden: UnityEngine.AddressableAssets.AssetReference.ValidateAsset(System.String)
+  overload: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.ValidateAsset*
+  nameWithType.vb: AssetReferenceScene.ValidateAsset(String)
+  fullName.vb: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.ValidateAsset(String)
+  name.vb: ValidateAsset(String)
+- uid: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.ValidateAsset(UnityEngine.Object)
+  commentId: M:BlazerTech.CharacterManagement.Samples.AssetReferenceScene.ValidateAsset(UnityEngine.Object)
+  id: ValidateAsset(UnityEngine.Object)
+  parent: BlazerTech.CharacterManagement.Samples.AssetReferenceScene
+  langs:
+  - csharp
+  - vb
+  name: ValidateAsset(Object)
+  nameWithType: AssetReferenceScene.ValidateAsset(Object)
+  fullName: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.ValidateAsset(UnityEngine.Object)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: ValidateAsset
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Samples
+  example: []
+  syntax:
+    content: public override bool ValidateAsset(Object obj)
+    parameters:
+    - id: obj
+      type: UnityEngine.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function ValidateAsset(obj As [Object]) As Boolean
+  overridden: UnityEngine.AddressableAssets.AssetReference.ValidateAsset(UnityEngine.Object)
+  overload: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.ValidateAsset*
+- uid: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SetEditorAsset(UnityEngine.Object)
+  commentId: M:BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SetEditorAsset(UnityEngine.Object)
+  id: SetEditorAsset(UnityEngine.Object)
+  parent: BlazerTech.CharacterManagement.Samples.AssetReferenceScene
+  langs:
+  - csharp
+  - vb
+  name: SetEditorAsset(Object)
+  nameWithType: AssetReferenceScene.SetEditorAsset(Object)
+  fullName: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SetEditorAsset(UnityEngine.Object)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: SetEditorAsset
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/AssetReferenceScene.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Samples
+  example: []
+  syntax:
+    content: public override bool SetEditorAsset(Object value)
+    parameters:
+    - id: value
+      type: UnityEngine.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function SetEditorAsset(value As [Object]) As Boolean
+  overridden: UnityEngine.AddressableAssets.AssetReference.SetEditorAsset(UnityEngine.Object)
+  overload: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SetEditorAsset*
 references:
 - uid: BlazerTech.CharacterManagement.Samples
   commentId: N:BlazerTech.CharacterManagement.Samples
@@ -173,3 +311,142 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.#ctor*
+  commentId: Overload:BlazerTech.CharacterManagement.Samples.AssetReferenceScene.#ctor
+  href: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.html#BlazerTech_CharacterManagement_Samples_AssetReferenceScene__ctor_UnityEditor_SceneAsset_
+  name: AssetReferenceScene
+  nameWithType: AssetReferenceScene.AssetReferenceScene
+  fullName: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.AssetReferenceScene
+  nameWithType.vb: AssetReferenceScene.New
+  fullName.vb: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.New
+  name.vb: New
+- uid: UnityEditor.SceneAsset
+  commentId: T:UnityEditor.SceneAsset
+  parent: UnityEditor
+  isExternal: true
+  name: SceneAsset
+  nameWithType: SceneAsset
+  fullName: UnityEditor.SceneAsset
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: UnityEngine.AddressableAssets.AssetReference.ValidateAsset(System.String)
+  commentId: M:UnityEngine.AddressableAssets.AssetReference.ValidateAsset(System.String)
+  parent: UnityEngine.AddressableAssets.AssetReference
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ValidateAsset(string)
+  nameWithType: AssetReference.ValidateAsset(string)
+  fullName: UnityEngine.AddressableAssets.AssetReference.ValidateAsset(string)
+  nameWithType.vb: AssetReference.ValidateAsset(String)
+  fullName.vb: UnityEngine.AddressableAssets.AssetReference.ValidateAsset(String)
+  name.vb: ValidateAsset(String)
+  spec.csharp:
+  - uid: UnityEngine.AddressableAssets.AssetReference.ValidateAsset(System.String)
+    name: ValidateAsset
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.AddressableAssets.AssetReference.ValidateAsset(System.String)
+    name: ValidateAsset
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.ValidateAsset*
+  commentId: Overload:BlazerTech.CharacterManagement.Samples.AssetReferenceScene.ValidateAsset
+  href: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.html#BlazerTech_CharacterManagement_Samples_AssetReferenceScene_ValidateAsset_System_String_
+  name: ValidateAsset
+  nameWithType: AssetReferenceScene.ValidateAsset
+  fullName: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.ValidateAsset
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.AddressableAssets.AssetReference.ValidateAsset(UnityEngine.Object)
+  commentId: M:UnityEngine.AddressableAssets.AssetReference.ValidateAsset(UnityEngine.Object)
+  parent: UnityEngine.AddressableAssets.AssetReference
+  isExternal: true
+  name: ValidateAsset(Object)
+  nameWithType: AssetReference.ValidateAsset(Object)
+  fullName: UnityEngine.AddressableAssets.AssetReference.ValidateAsset(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.AddressableAssets.AssetReference.ValidateAsset(UnityEngine.Object)
+    name: ValidateAsset
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.AddressableAssets.AssetReference.ValidateAsset(UnityEngine.Object)
+    name: ValidateAsset
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.AddressableAssets.AssetReference.SetEditorAsset(UnityEngine.Object)
+  commentId: M:UnityEngine.AddressableAssets.AssetReference.SetEditorAsset(UnityEngine.Object)
+  parent: UnityEngine.AddressableAssets.AssetReference
+  isExternal: true
+  name: SetEditorAsset(Object)
+  nameWithType: AssetReference.SetEditorAsset(Object)
+  fullName: UnityEngine.AddressableAssets.AssetReference.SetEditorAsset(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.AddressableAssets.AssetReference.SetEditorAsset(UnityEngine.Object)
+    name: SetEditorAsset
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.AddressableAssets.AssetReference.SetEditorAsset(UnityEngine.Object)
+    name: SetEditorAsset
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SetEditorAsset*
+  commentId: Overload:BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SetEditorAsset
+  href: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.html#BlazerTech_CharacterManagement_Samples_AssetReferenceScene_SetEditorAsset_UnityEngine_Object_
+  name: SetEditorAsset
+  nameWithType: AssetReferenceScene.SetEditorAsset
+  fullName: BlazerTech.CharacterManagement.Samples.AssetReferenceScene.SetEditorAsset

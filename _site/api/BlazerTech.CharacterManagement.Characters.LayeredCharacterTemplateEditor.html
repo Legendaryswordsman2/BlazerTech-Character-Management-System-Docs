@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class CharacterTesting | BlazerTech Character Management System </title>
+      <title>Class LayeredCharacterTemplateEditor | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class CharacterTesting | BlazerTech Character Management System ">
+      <meta name="title" content="Class LayeredCharacterTemplateEditor | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../images/logos/favicon.png">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_Testing_CharacterTesting.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.Testing.CharacterTesting%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/new/main/apiSpec/new?filename=BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateEditor.md&amp;value=---%0Auid%3A%20BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,16 +84,16 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BlazerTech.CharacterManagement.Testing.CharacterTesting">
+        <article data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor">
 
 
 
-  <h1 id="BlazerTech_CharacterManagement_Testing_CharacterTesting" data-uid="BlazerTech.CharacterManagement.Testing.CharacterTesting" class="text-break">
-Class CharacterTesting  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/Testing/CharacterTesting.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateEditor" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor" class="text-break">
+Class LayeredCharacterTemplateEditor  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="BlazerTech.html">BlazerTech</a>.<a class="xref" href="BlazerTech.CharacterManagement.html">CharacterManagement</a>.<a class="xref" href="BlazerTech.CharacterManagement.Testing.html">Testing</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BlazerTech.html">BlazerTech</a>.<a class="xref" href="BlazerTech.CharacterManagement.html">CharacterManagement</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.html">Characters</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
   </div>
 
@@ -101,7 +101,8 @@ Class CharacterTesting  <a class="header-action link-secondary" title="View sour
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CharacterTesting : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">[CustomEditor(typeof(LayeredCharacterTemplateSO))]
+public class LayeredCharacterTemplateEditor : Editor</code></pre>
   </div>
 
 
@@ -112,12 +113,42 @@ Class CharacterTesting  <a class="header-action link-secondary" title="View sour
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><span class="xref">Object</span></div>
-      <div><span class="xref">Component</span></div>
-      <div><span class="xref">Behaviour</span></div>
-      <div><span class="xref">MonoBehaviour</span></div>
-      <div><span class="xref">CharacterTesting</span></div>
+      <div><span class="xref">ScriptableObject</span></div>
+      <div><span class="xref">Editor</span></div>
+      <div><span class="xref">LayeredCharacterTemplateEditor</span></div>
     </dd>
   </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateEditor_OnInspectorGUI_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor.OnInspectorGUI*"></a>
+
+  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterTemplateEditor_OnInspectorGUI" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor.OnInspectorGUI">
+  OnInspectorGUI()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Implement this function to make a custom inspector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnInspectorGUI()</code></pre>
+  </div>
+
+
+
+
 
 
 
@@ -131,7 +162,7 @@ Class CharacterTesting  <a class="header-action link-secondary" title="View sour
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/Testing/CharacterTesting.cs/#L7" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs/#L84" class="edit-link">Edit this page</a>
         </div>
 
 

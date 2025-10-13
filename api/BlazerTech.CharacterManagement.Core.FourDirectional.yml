@@ -23,7 +23,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: FourDirectional
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
-    startLine: 4
+    startLine: 5
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -48,7 +48,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Down
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
-    startLine: 4
+    startLine: 5
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -74,7 +74,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Up
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
-    startLine: 4
+    startLine: 5
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -100,7 +100,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Left
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
-    startLine: 4
+    startLine: 5
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -126,7 +126,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Right
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
-    startLine: 4
+    startLine: 5
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core

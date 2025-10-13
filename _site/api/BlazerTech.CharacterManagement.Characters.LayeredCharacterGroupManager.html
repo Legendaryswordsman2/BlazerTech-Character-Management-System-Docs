@@ -251,30 +251,32 @@ Class LayeredCharacterGroupManager  <a class="header-action link-secondary" titl
 </h2>
 
 
-  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_GetGroupsForType_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupsForType*"></a>
+  <a id="BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_GetGroupRegistryForType_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupRegistryForType*"></a>
 
-  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_GetGroupsForType_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupsForType(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)">
-  GetGroupsForType(LayeredCharacterTypeSO)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_GetGroupRegistryForType_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupRegistryForType(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)">
+  GetGroupRegistryForType(LayeredCharacterTypeSO)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CharacterGroupRegistry GetGroupsForType(LayeredCharacterTypeSO type)</code></pre>
+    <pre><code class="lang-csharp hljs">public static CharacterGroupRegistry GetGroupRegistryForType(LayeredCharacterTypeSO type)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>type</code> <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a> used to retrieve the <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html">CharacterGroupRegistry</a></p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html">CharacterGroupRegistry</a></dt>
-    <dd></dd>
+    <dd><p>Returns the <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html">CharacterGroupRegistry</a> for the <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a> supplied. Creates a new <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry.html">CharacterGroupRegistry</a> if one does not already exist.</p>
+</dd>
   </dl>
 
 
@@ -291,7 +293,7 @@ Class LayeredCharacterGroupManager  <a class="header-action link-secondary" titl
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_Initialize" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.Initialize">
   Initialize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -317,7 +319,7 @@ Class LayeredCharacterGroupManager  <a class="header-action link-secondary" titl
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_LoadCharacterGroups" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.LoadCharacterGroups">
   LoadCharacterGroups()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Load previously saved character groups.</p>
@@ -344,7 +346,7 @@ Class LayeredCharacterGroupManager  <a class="header-action link-secondary" titl
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_SaveCharacterGroupsImmediate" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.SaveCharacterGroupsImmediate">
   SaveCharacterGroupsImmediate()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Saves all character groups to json files. Separated by Character Type.</p>
@@ -371,7 +373,7 @@ Class LayeredCharacterGroupManager  <a class="header-action link-secondary" titl
 
   <h3 id="BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_ScheduleSaveCharacterGroups" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.ScheduleSaveCharacterGroups">
   ScheduleSaveCharacterGroups()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>calls <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_SaveCharacterGroupsImmediate">SaveCharacterGroupsImmediate()</a> on the next frame.</p>

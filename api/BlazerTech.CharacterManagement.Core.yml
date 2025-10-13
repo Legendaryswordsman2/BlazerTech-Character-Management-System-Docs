@@ -7,6 +7,7 @@ items:
   - BlazerTech.CharacterManagement.Core.CMSInitializationHandler
   - BlazerTech.CharacterManagement.Core.CMSReferenceHandler
   - BlazerTech.CharacterManagement.Core.CMSSaveSystem
+  - BlazerTech.CharacterManagement.Core.EightDirectional
   - BlazerTech.CharacterManagement.Core.EssentialsLoader
   - BlazerTech.CharacterManagement.Core.ExtensionMethods
   - BlazerTech.CharacterManagement.Core.FourDirectional
@@ -59,6 +60,12 @@ references:
   name: SessionGUIDHandler
   nameWithType: SessionGUIDHandler
   fullName: BlazerTech.CharacterManagement.Core.SessionGUIDHandler
+- uid: BlazerTech.CharacterManagement.Core.RotateGO
+  commentId: T:BlazerTech.CharacterManagement.Core.RotateGO
+  href: BlazerTech.CharacterManagement.Core.RotateGO.html
+  name: RotateGO
+  nameWithType: RotateGO
+  fullName: BlazerTech.CharacterManagement.Core.RotateGO
 - uid: BlazerTech.CharacterManagement.Core.CMSSaveSystem
   commentId: T:BlazerTech.CharacterManagement.Core.CMSSaveSystem
   href: BlazerTech.CharacterManagement.Core.CMSSaveSystem.html
@@ -140,12 +147,6 @@ references:
   name: ExtensionMethods
   nameWithType: ExtensionMethods
   fullName: BlazerTech.CharacterManagement.Core.ExtensionMethods
-- uid: BlazerTech.CharacterManagement.Core.RotateGO
-  commentId: T:BlazerTech.CharacterManagement.Core.RotateGO
-  href: BlazerTech.CharacterManagement.Core.RotateGO.html
-  name: RotateGO
-  nameWithType: RotateGO
-  fullName: BlazerTech.CharacterManagement.Core.RotateGO
 - uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
   commentId: T:BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
   href: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.html
@@ -159,6 +160,13 @@ references:
   name: IValidatable
   nameWithType: IValidatable
   fullName: BlazerTech.CharacterManagement.Core.IValidatable
+- uid: BlazerTech.CharacterManagement.Core.EightDirectional
+  commentId: T:BlazerTech.CharacterManagement.Core.EightDirectional
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.EightDirectional.html
+  name: EightDirectional
+  nameWithType: EightDirectional
+  fullName: BlazerTech.CharacterManagement.Core.EightDirectional
 - uid: BlazerTech.CharacterManagement.Core.FourDirectional
   commentId: T:BlazerTech.CharacterManagement.Core.FourDirectional
   parent: BlazerTech.CharacterManagement.Core

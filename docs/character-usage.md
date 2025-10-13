@@ -4,11 +4,11 @@ uid: character-usage
 
 # Character Usage
 
-The following scripts can be used to load and use characters
+The following scripts can be used to load and render characters
 
-- **[Layered Character Loader](#layered-character-loader)** - Load pre-existing Layered Characters.
-- **[Layered Character Template Loader](#layered-character-template-loader)** - Create/load a layered character from a template.
-- **[Unified Character Loader](#unified-character-loader)** - Load a Unified Character from a template.
+- **[Layered Character Group Renderer](#layered-character-group-renderer)** - Load and render a pre-existing Layered Character from a group.
+- **[Layered Character Template Renderer](#layered-character-template-renderer)** - Create/load and render a layered character from a template.
+- **[Unified Character Template Renderer](#unified-character-template-renderer)** - Create/Load and render a Unified Character from a template.
 
 ---
 
@@ -20,13 +20,13 @@ If a **Unified Character** is used, the shader takes the single spritesheet of t
 If a **Layered Character** is used, the shader combines all layers into the final rendered character.  
 
 > [!NOTE]
-> If a **Character Loader** is used the shader will be applied automatically.
+> If a **Character Renderer** component is used the shader will be applied automatically.
 
 ---
 
-## Character Loaders
+## Character Renderers
 
-Character loading scripts can be used to load any character you've created regardless of the type. All **Character Loaders** have the following fields:
+Character Renderer components can be used to load and display any character you've created regardless of the type. All **Character Renderers** have the following fields:
 
 ### References
 | Field                       | Type       | Description                                                                                                                  |
@@ -43,11 +43,11 @@ Character loading scripts can be used to load any character you've created regar
 
 ---
 
-## Unified Character Loader
+## Unified Character Template Renderer
 Requirements:  
 Have a [Unified Character Type](xref:unified-character-type) and at least one [Unified Character Template](xref:character-templates#unified-character-template) Setup.
 
-The [Unified Character Loader](xref:BlazerTech.CharacterManagement.Components.UnifiedCharacterLoader) component can be used to create and load a character from a **Unified Character Template**.  
+The [Unified Character Renderer](xref:BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer) component can be used to create and load a character from a **Unified Character Template**.  
 - Add the script to a game object.
 - Set **Renderer** and optionally **Animator** references.
 - Set Loading Settings.
@@ -56,15 +56,15 @@ The [Unified Character Loader](xref:BlazerTech.CharacterManagement.Components.Un
 
 ---
 
-## Layered Character Loaders
+## Layered Character Renderers
 
-### Layered Character Loader
+### Layered Character Group Renderer
 Requirements:  
 Have a [Layered Character Type](xref:layered-character-type) setup and at least one **Layered Character** saved in a group.
 
 [Read More → Character Groups](xref:character-grouping-system)
 
-The [Layered Character Loader](xref:BlazerTech.CharacterManagement.Components.LayeredCharacterLoader) component can be used to load **Layered Characters** from a **Character Group**.
+The [Layered Character Group Renderer](xref:BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer) component can be used to load **Layered Characters** from a **Character Group**.
 - Add the script to a game object.
 - Set **Renderer** and optionally **Animator** references.
 - Set Loading Settings.
@@ -89,11 +89,11 @@ If **Flexible Group** or **Fixed Group** is selected, the following parameters a
 
 ---
 
-### Layered Character Template Loader
+### Layered Character Template Renderer
 Requirements:  
 Have a [Layered Character Type](xref:layered-character-type) and at least one [Layered Character Template](xref:character-templates#layered-character-template) Setup.
 
-The [Layered Character Template Loader](xref:BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateLoader) component can be used to create and load a character from a  **Layered Character Template**.  
+The [Layered Character Template Renderer](xref:BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer) component can be used to create and load a character from a  **Layered Character Template**.  
 - Add the script to a game object.
 - Set **Renderer** and optionally **Animator** references.
 - Set Loading Settings.

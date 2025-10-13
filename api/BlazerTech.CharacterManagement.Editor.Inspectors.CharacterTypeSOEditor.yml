@@ -20,17 +20,17 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterTypeSOEditor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterTypeSOEditor.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - Assembly-CSharp-Editor
   namespace: BlazerTech.CharacterManagement.Editor.Inspectors
   syntax:
     content: >-
-      [CustomEditor(typeof(LayeredCharacterTypeSO), true)]
+      [CustomEditor(typeof(CharacterTypeBaseSO), true)]
 
       public class CharacterTypeSOEditor : NaughtyInspector
     content.vb: >-
-      <CustomEditor(GetType(LayeredCharacterTypeSO), True)>
+      <CustomEditor(GetType(CharacterTypeBaseSO), True)>
 
       Public Class CharacterTypeSOEditor Inherits NaughtyInspector
   inheritance:
@@ -52,7 +52,7 @@ items:
     ctor: UnityEditor.CustomEditor.#ctor(System.Type,System.Boolean)
     arguments:
     - type: System.Type
-      value: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
+      value: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
     - type: System.Boolean
       value: true
 - uid: BlazerTech.CharacterManagement.Editor.Inspectors.CharacterTypeSOEditor.OnInspectorGUI
@@ -73,7 +73,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnInspectorGUI
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterTypeSOEditor.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - Assembly-CSharp-Editor
   namespace: BlazerTech.CharacterManagement.Editor.Inspectors

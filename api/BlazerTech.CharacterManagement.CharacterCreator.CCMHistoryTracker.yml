@@ -460,7 +460,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterCreationMenuBeforeDisabled
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
-    startLine: 68
+    startLine: 70
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -489,7 +489,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ScheduleSnapshot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
-    startLine: 80
+    startLine: 82
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -519,7 +519,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CreateNewSnapshot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
-    startLine: 92
+    startLine: 94
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -555,7 +555,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Undo
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
-    startLine: 151
+    startLine: 153
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -583,7 +583,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Redo
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
-    startLine: 158
+    startLine: 160
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -611,7 +611,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ApplySnapshot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/History/CCMHistoryTracker.cs
-    startLine: 178
+    startLine: 180
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator

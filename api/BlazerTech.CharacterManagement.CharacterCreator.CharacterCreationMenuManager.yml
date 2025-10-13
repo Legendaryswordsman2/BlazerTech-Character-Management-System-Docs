@@ -7,6 +7,7 @@ items:
   children:
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterDraft
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveCharacterType
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveHistoryTracker
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.AutoEnableWithPrimaryCharacter
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DefaultCharacterType
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.DisableMenu
@@ -27,6 +28,7 @@ items:
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.OnMenuLoadingProgressUpdated
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ResetCharacter
   - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SaveCharacter
+  - BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SetActiveHistoryTracker(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker)
   langs:
   - csharp
   - vb
@@ -541,6 +543,35 @@ items:
     return:
       type: System.EventHandler{BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager}
     content.vb: Public Shared Event OnMenuInstanceDisabled As EventHandler(Of CharacterCreationMenuManager)
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveHistoryTracker
+  commentId: P:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveHistoryTracker
+  id: ActiveHistoryTracker
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+  langs:
+  - csharp
+  - vb
+  name: ActiveHistoryTracker
+  nameWithType: CharacterCreationMenuManager.ActiveHistoryTracker
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveHistoryTracker
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: ActiveHistoryTracker
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
+    startLine: 79
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public CCMHistoryTracker ActiveHistoryTracker { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
+    content.vb: Public Property ActiveHistoryTracker As CCMHistoryTracker
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveHistoryTracker*
 - uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.Boolean)
   commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.EnableMenu_EditCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.Boolean)
   id: EnableMenu_EditCharacter(BlazerTech.CharacterManagement.Characters.LayeredCharacter,System.Boolean)
@@ -559,7 +590,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EnableMenu_EditCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 124
+    startLine: 126
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -602,7 +633,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EnableMenu_NewCharacterInFlexibleGroup
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 153
+    startLine: 155
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -651,7 +682,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EnableMenu_PrimaryCharacterSlot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 181
+    startLine: 183
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -694,7 +725,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: EnableMenu_NewPrimaryCharacterSlot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 228
+    startLine: 230
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -743,7 +774,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ResetCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 313
+    startLine: 315
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -771,7 +802,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: DisableMenu
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 333
+    startLine: 335
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -799,7 +830,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SaveCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
-    startLine: 359
+    startLine: 361
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.CharacterCreator
@@ -809,6 +840,35 @@ items:
     content: public void SaveCharacter()
     content.vb: Public Sub SaveCharacter()
   overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SaveCharacter*
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SetActiveHistoryTracker(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker)
+  commentId: M:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SetActiveHistoryTracker(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker)
+  id: SetActiveHistoryTracker(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker)
+  parent: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager
+  langs:
+  - csharp
+  - vb
+  name: SetActiveHistoryTracker(CCMHistoryTracker)
+  nameWithType: CharacterCreationMenuManager.SetActiveHistoryTracker(CCMHistoryTracker)
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SetActiveHistoryTracker(BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: SetActiveHistoryTracker
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Character Creator/CharacterCreationMenuManager.cs
+    startLine: 373
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.CharacterCreator
+  syntax:
+    content: public void SetActiveHistoryTracker(CCMHistoryTracker historyTracker)
+    parameters:
+    - id: historyTracker
+      type: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
+    content.vb: Public Sub SetActiveHistoryTracker(historyTracker As CCMHistoryTracker)
+  overload: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SetActiveHistoryTracker*
 references:
 - uid: BlazerTech.CharacterManagement.CharacterCreator
   commentId: N:BlazerTech.CharacterManagement.CharacterCreator
@@ -1257,6 +1317,19 @@ references:
     name: CharacterCreationMenuManager
     href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html
   - name: )
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveHistoryTracker*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveHistoryTracker
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_ActiveHistoryTracker
+  name: ActiveHistoryTracker
+  nameWithType: CharacterCreationMenuManager.ActiveHistoryTracker
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.ActiveHistoryTracker
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
+  commentId: T:BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
+  parent: BlazerTech.CharacterManagement.CharacterCreator
+  href: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker.html
+  name: CCMHistoryTracker
+  nameWithType: CCMHistoryTracker
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CCMHistoryTracker
 - uid: System.ArgumentNullException
   commentId: T:System.ArgumentNullException
   isExternal: true
@@ -1344,3 +1417,9 @@ references:
   name: SaveCharacter
   nameWithType: CharacterCreationMenuManager.SaveCharacter
   fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SaveCharacter
+- uid: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SetActiveHistoryTracker*
+  commentId: Overload:BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SetActiveHistoryTracker
+  href: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.html#BlazerTech_CharacterManagement_CharacterCreator_CharacterCreationMenuManager_SetActiveHistoryTracker_BlazerTech_CharacterManagement_CharacterCreator_CCMHistoryTracker_
+  name: SetActiveHistoryTracker
+  nameWithType: CharacterCreationMenuManager.SetActiveHistoryTracker
+  fullName: BlazerTech.CharacterManagement.CharacterCreator.CharacterCreationMenuManager.SetActiveHistoryTracker

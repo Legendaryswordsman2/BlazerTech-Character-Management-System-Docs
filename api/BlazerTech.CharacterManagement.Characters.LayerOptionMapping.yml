@@ -6,6 +6,7 @@ items:
   parent: BlazerTech.CharacterManagement.Characters
   children:
   - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO)
+  - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.EditorSearchTerm
   - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.LayerOptionID
   - BlazerTech.CharacterManagement.Characters.LayerOptionMapping.characterLayer
   langs:
@@ -97,6 +98,43 @@ items:
     return:
       type: System.String
     content.vb: Public LayerOptionID As String
+- uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.EditorSearchTerm
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.EditorSearchTerm
+  id: EditorSearchTerm
+  parent: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+  langs:
+  - csharp
+  - vb
+  name: EditorSearchTerm
+  nameWithType: LayerOptionMapping.EditorSearchTerm
+  fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.EditorSearchTerm
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: EditorSearchTerm
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Templates/LayeredCharacterTemplateSO.cs
+    startLine: 71
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: >-
+      [Space]
+
+      public string EditorSearchTerm
+    return:
+      type: System.String
+    content.vb: >-
+      <Space>
+
+      Public EditorSearchTerm As String
+  attributes:
+  - type: UnityEngine.SpaceAttribute
+    ctor: UnityEngine.SpaceAttribute.#ctor
+    arguments: []
 - uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO)
   commentId: M:BlazerTech.CharacterManagement.Characters.LayerOptionMapping.#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO)
   id: '#ctor(BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO)'

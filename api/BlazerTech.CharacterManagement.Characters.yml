@@ -35,6 +35,7 @@ items:
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.CharacterCreatorConfig
@@ -467,6 +468,12 @@ references:
   name: LayerOptionMapping
   nameWithType: LayerOptionMapping
   fullName: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor.html
+  name: LayeredCharacterTemplateEditor
+  nameWithType: LayeredCharacterTemplateEditor
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateEditor
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayer
   commentId: T:BlazerTech.CharacterManagement.Characters.CharacterLayer
   parent: BlazerTech.CharacterManagement.Characters

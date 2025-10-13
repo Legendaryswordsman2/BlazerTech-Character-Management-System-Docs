@@ -15,11 +15,11 @@ items:
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/MenuBackRelay.cs
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/MenuBackRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: MenuBackRelay
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/MenuBackRelay.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/MenuBackRelay.cs
     startLine: 4
   assemblies:
   - Assembly-CSharp
@@ -46,11 +46,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/MenuBackRelay.cs
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/MenuBackRelay.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Back
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Tests/Sample Assets/Sample Scripts/MenuBackRelay.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/MenuBackRelay.cs
     startLine: 6
   assemblies:
   - Assembly-CSharp

@@ -1,0 +1,327 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Samples.InteractableBed
+  commentId: T:BlazerTech.CharacterManagement.Samples.InteractableBed
+  id: InteractableBed
+  parent: BlazerTech.CharacterManagement.Samples
+  children:
+  - BlazerTech.CharacterManagement.Samples.InteractableBed.Deselect(UnityEngine.GameObject)
+  - BlazerTech.CharacterManagement.Samples.InteractableBed.Interact(UnityEngine.GameObject)
+  - BlazerTech.CharacterManagement.Samples.InteractableBed.Select(UnityEngine.GameObject)
+  langs:
+  - csharp
+  - vb
+  name: InteractableBed
+  nameWithType: InteractableBed
+  fullName: BlazerTech.CharacterManagement.Samples.InteractableBed
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: InteractableBed
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Samples
+  syntax:
+    content: 'public class InteractableBed : MonoBehaviour, IInteractable'
+    content.vb: Public Class InteractableBed Inherits MonoBehaviour Implements IInteractable
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  implements:
+  - IInteractable
+- uid: BlazerTech.CharacterManagement.Samples.InteractableBed.Select(UnityEngine.GameObject)
+  commentId: M:BlazerTech.CharacterManagement.Samples.InteractableBed.Select(UnityEngine.GameObject)
+  id: Select(UnityEngine.GameObject)
+  parent: BlazerTech.CharacterManagement.Samples.InteractableBed
+  langs:
+  - csharp
+  - vb
+  name: Select(GameObject)
+  nameWithType: InteractableBed.Select(GameObject)
+  fullName: BlazerTech.CharacterManagement.Samples.InteractableBed.Select(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Select
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Samples
+  example: []
+  syntax:
+    content: public void Select(GameObject gameObject)
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+    content.vb: Public Sub [Select](gameObject As GameObject)
+  overload: BlazerTech.CharacterManagement.Samples.InteractableBed.Select*
+  implements:
+  - IInteractable.Select(UnityEngine.GameObject)
+- uid: BlazerTech.CharacterManagement.Samples.InteractableBed.Deselect(UnityEngine.GameObject)
+  commentId: M:BlazerTech.CharacterManagement.Samples.InteractableBed.Deselect(UnityEngine.GameObject)
+  id: Deselect(UnityEngine.GameObject)
+  parent: BlazerTech.CharacterManagement.Samples.InteractableBed
+  langs:
+  - csharp
+  - vb
+  name: Deselect(GameObject)
+  nameWithType: InteractableBed.Deselect(GameObject)
+  fullName: BlazerTech.CharacterManagement.Samples.InteractableBed.Deselect(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Deselect
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Samples
+  example: []
+  syntax:
+    content: public void Deselect(GameObject gameObject)
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+    content.vb: Public Sub Deselect(gameObject As GameObject)
+  overload: BlazerTech.CharacterManagement.Samples.InteractableBed.Deselect*
+  implements:
+  - IInteractable.Deselect(UnityEngine.GameObject)
+- uid: BlazerTech.CharacterManagement.Samples.InteractableBed.Interact(UnityEngine.GameObject)
+  commentId: M:BlazerTech.CharacterManagement.Samples.InteractableBed.Interact(UnityEngine.GameObject)
+  id: Interact(UnityEngine.GameObject)
+  parent: BlazerTech.CharacterManagement.Samples.InteractableBed
+  langs:
+  - csharp
+  - vb
+  name: Interact(GameObject)
+  nameWithType: InteractableBed.Interact(GameObject)
+  fullName: BlazerTech.CharacterManagement.Samples.InteractableBed.Interact(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Interact
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Samples/Sample Assets/Sample Scripts/Interaction System/InteractableBed.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Samples
+  example: []
+  syntax:
+    content: public void Interact(GameObject objectInteracting)
+    parameters:
+    - id: objectInteracting
+      type: UnityEngine.GameObject
+    content.vb: Public Sub Interact(objectInteracting As GameObject)
+  overload: BlazerTech.CharacterManagement.Samples.InteractableBed.Interact*
+  implements:
+  - IInteractable.Interact(UnityEngine.GameObject)
+references:
+- uid: BlazerTech.CharacterManagement.Samples
+  commentId: N:BlazerTech.CharacterManagement.Samples
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Samples
+  nameWithType: BlazerTech.CharacterManagement.Samples
+  fullName: BlazerTech.CharacterManagement.Samples
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Samples
+    name: Samples
+    href: BlazerTech.CharacterManagement.Samples.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Samples
+    name: Samples
+    href: BlazerTech.CharacterManagement.Samples.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: IInteractable
+  commentId: T:IInteractable
+  href: IInteractable.html
+  name: IInteractable
+  nameWithType: IInteractable
+  fullName: IInteractable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.Samples.InteractableBed.Select*
+  commentId: Overload:BlazerTech.CharacterManagement.Samples.InteractableBed.Select
+  href: BlazerTech.CharacterManagement.Samples.InteractableBed.html#BlazerTech_CharacterManagement_Samples_InteractableBed_Select_UnityEngine_GameObject_
+  name: Select
+  nameWithType: InteractableBed.Select
+  fullName: BlazerTech.CharacterManagement.Samples.InteractableBed.Select
+- uid: IInteractable.Select(UnityEngine.GameObject)
+  commentId: M:IInteractable.Select(UnityEngine.GameObject)
+  parent: IInteractable
+  isExternal: true
+  href: IInteractable.html#IInteractable_Select_UnityEngine_GameObject_
+  name: Select(GameObject)
+  nameWithType: IInteractable.Select(GameObject)
+  fullName: IInteractable.Select(UnityEngine.GameObject)
+  spec.csharp:
+  - uid: IInteractable.Select(UnityEngine.GameObject)
+    name: Select
+    href: IInteractable.html#IInteractable_Select_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: IInteractable.Select(UnityEngine.GameObject)
+    name: Select
+    href: IInteractable.html#IInteractable_Select_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: BlazerTech.CharacterManagement.Samples.InteractableBed.Deselect*
+  commentId: Overload:BlazerTech.CharacterManagement.Samples.InteractableBed.Deselect
+  href: BlazerTech.CharacterManagement.Samples.InteractableBed.html#BlazerTech_CharacterManagement_Samples_InteractableBed_Deselect_UnityEngine_GameObject_
+  name: Deselect
+  nameWithType: InteractableBed.Deselect
+  fullName: BlazerTech.CharacterManagement.Samples.InteractableBed.Deselect
+- uid: IInteractable.Deselect(UnityEngine.GameObject)
+  commentId: M:IInteractable.Deselect(UnityEngine.GameObject)
+  parent: IInteractable
+  isExternal: true
+  href: IInteractable.html#IInteractable_Deselect_UnityEngine_GameObject_
+  name: Deselect(GameObject)
+  nameWithType: IInteractable.Deselect(GameObject)
+  fullName: IInteractable.Deselect(UnityEngine.GameObject)
+  spec.csharp:
+  - uid: IInteractable.Deselect(UnityEngine.GameObject)
+    name: Deselect
+    href: IInteractable.html#IInteractable_Deselect_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: IInteractable.Deselect(UnityEngine.GameObject)
+    name: Deselect
+    href: IInteractable.html#IInteractable_Deselect_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: BlazerTech.CharacterManagement.Samples.InteractableBed.Interact*
+  commentId: Overload:BlazerTech.CharacterManagement.Samples.InteractableBed.Interact
+  href: BlazerTech.CharacterManagement.Samples.InteractableBed.html#BlazerTech_CharacterManagement_Samples_InteractableBed_Interact_UnityEngine_GameObject_
+  name: Interact
+  nameWithType: InteractableBed.Interact
+  fullName: BlazerTech.CharacterManagement.Samples.InteractableBed.Interact
+- uid: IInteractable.Interact(UnityEngine.GameObject)
+  commentId: M:IInteractable.Interact(UnityEngine.GameObject)
+  parent: IInteractable
+  isExternal: true
+  href: IInteractable.html#IInteractable_Interact_UnityEngine_GameObject_
+  name: Interact(GameObject)
+  nameWithType: IInteractable.Interact(GameObject)
+  fullName: IInteractable.Interact(UnityEngine.GameObject)
+  spec.csharp:
+  - uid: IInteractable.Interact(UnityEngine.GameObject)
+    name: Interact
+    href: IInteractable.html#IInteractable_Interact_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: IInteractable.Interact(UnityEngine.GameObject)
+    name: Interact
+    href: IInteractable.html#IInteractable_Interact_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )

@@ -1,0 +1,282 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Core.EightDirectional
+  commentId: T:BlazerTech.CharacterManagement.Core.EightDirectional
+  id: EightDirectional
+  parent: BlazerTech.CharacterManagement.Core
+  children:
+  - BlazerTech.CharacterManagement.Core.EightDirectional.Down
+  - BlazerTech.CharacterManagement.Core.EightDirectional.DownLeft
+  - BlazerTech.CharacterManagement.Core.EightDirectional.DownRight
+  - BlazerTech.CharacterManagement.Core.EightDirectional.Left
+  - BlazerTech.CharacterManagement.Core.EightDirectional.Right
+  - BlazerTech.CharacterManagement.Core.EightDirectional.Up
+  - BlazerTech.CharacterManagement.Core.EightDirectional.UpLeft
+  - BlazerTech.CharacterManagement.Core.EightDirectional.UpRight
+  langs:
+  - csharp
+  - vb
+  name: EightDirectional
+  nameWithType: EightDirectional
+  fullName: BlazerTech.CharacterManagement.Core.EightDirectional
+  type: Enum
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: EightDirectional
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public enum EightDirectional
+    content.vb: Public Enum EightDirectional
+- uid: BlazerTech.CharacterManagement.Core.EightDirectional.Down
+  commentId: F:BlazerTech.CharacterManagement.Core.EightDirectional.Down
+  id: Down
+  parent: BlazerTech.CharacterManagement.Core.EightDirectional
+  langs:
+  - csharp
+  - vb
+  name: Down
+  nameWithType: EightDirectional.Down
+  fullName: BlazerTech.CharacterManagement.Core.EightDirectional.Down
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Down
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: Down = 0
+    return:
+      type: BlazerTech.CharacterManagement.Core.EightDirectional
+- uid: BlazerTech.CharacterManagement.Core.EightDirectional.Up
+  commentId: F:BlazerTech.CharacterManagement.Core.EightDirectional.Up
+  id: Up
+  parent: BlazerTech.CharacterManagement.Core.EightDirectional
+  langs:
+  - csharp
+  - vb
+  name: Up
+  nameWithType: EightDirectional.Up
+  fullName: BlazerTech.CharacterManagement.Core.EightDirectional.Up
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Up
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: Up = 1
+    return:
+      type: BlazerTech.CharacterManagement.Core.EightDirectional
+- uid: BlazerTech.CharacterManagement.Core.EightDirectional.Left
+  commentId: F:BlazerTech.CharacterManagement.Core.EightDirectional.Left
+  id: Left
+  parent: BlazerTech.CharacterManagement.Core.EightDirectional
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: EightDirectional.Left
+  fullName: BlazerTech.CharacterManagement.Core.EightDirectional.Left
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Left
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: Left = 2
+    return:
+      type: BlazerTech.CharacterManagement.Core.EightDirectional
+- uid: BlazerTech.CharacterManagement.Core.EightDirectional.Right
+  commentId: F:BlazerTech.CharacterManagement.Core.EightDirectional.Right
+  id: Right
+  parent: BlazerTech.CharacterManagement.Core.EightDirectional
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: EightDirectional.Right
+  fullName: BlazerTech.CharacterManagement.Core.EightDirectional.Right
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Right
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: Right = 3
+    return:
+      type: BlazerTech.CharacterManagement.Core.EightDirectional
+- uid: BlazerTech.CharacterManagement.Core.EightDirectional.UpRight
+  commentId: F:BlazerTech.CharacterManagement.Core.EightDirectional.UpRight
+  id: UpRight
+  parent: BlazerTech.CharacterManagement.Core.EightDirectional
+  langs:
+  - csharp
+  - vb
+  name: UpRight
+  nameWithType: EightDirectional.UpRight
+  fullName: BlazerTech.CharacterManagement.Core.EightDirectional.UpRight
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: UpRight
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: UpRight = 4
+    return:
+      type: BlazerTech.CharacterManagement.Core.EightDirectional
+- uid: BlazerTech.CharacterManagement.Core.EightDirectional.UpLeft
+  commentId: F:BlazerTech.CharacterManagement.Core.EightDirectional.UpLeft
+  id: UpLeft
+  parent: BlazerTech.CharacterManagement.Core.EightDirectional
+  langs:
+  - csharp
+  - vb
+  name: UpLeft
+  nameWithType: EightDirectional.UpLeft
+  fullName: BlazerTech.CharacterManagement.Core.EightDirectional.UpLeft
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: UpLeft
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: UpLeft = 5
+    return:
+      type: BlazerTech.CharacterManagement.Core.EightDirectional
+- uid: BlazerTech.CharacterManagement.Core.EightDirectional.DownRight
+  commentId: F:BlazerTech.CharacterManagement.Core.EightDirectional.DownRight
+  id: DownRight
+  parent: BlazerTech.CharacterManagement.Core.EightDirectional
+  langs:
+  - csharp
+  - vb
+  name: DownRight
+  nameWithType: EightDirectional.DownRight
+  fullName: BlazerTech.CharacterManagement.Core.EightDirectional.DownRight
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: DownRight
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: DownRight = 6
+    return:
+      type: BlazerTech.CharacterManagement.Core.EightDirectional
+- uid: BlazerTech.CharacterManagement.Core.EightDirectional.DownLeft
+  commentId: F:BlazerTech.CharacterManagement.Core.EightDirectional.DownLeft
+  id: DownLeft
+  parent: BlazerTech.CharacterManagement.Core.EightDirectional
+  langs:
+  - csharp
+  - vb
+  name: DownLeft
+  nameWithType: EightDirectional.DownLeft
+  fullName: BlazerTech.CharacterManagement.Core.EightDirectional.DownLeft
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: DownLeft
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: DownLeft = 7
+    return:
+      type: BlazerTech.CharacterManagement.Core.EightDirectional
+references:
+- uid: BlazerTech.CharacterManagement.Core
+  commentId: N:BlazerTech.CharacterManagement.Core
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Core
+  nameWithType: BlazerTech.CharacterManagement.Core
+  fullName: BlazerTech.CharacterManagement.Core
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+- uid: BlazerTech.CharacterManagement.Core.EightDirectional
+  commentId: T:BlazerTech.CharacterManagement.Core.EightDirectional
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.EightDirectional.html
+  name: EightDirectional
+  nameWithType: EightDirectional
+  fullName: BlazerTech.CharacterManagement.Core.EightDirectional

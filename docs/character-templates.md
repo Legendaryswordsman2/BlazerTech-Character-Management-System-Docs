@@ -24,8 +24,8 @@ Fields required by all **Character Templates**.
 ## Unified Character Template
 
 ### Setup
-
-A blueprint used to create a **Unified Character** at runtime. Can be used in the [Unified Character Loader](xref:character-usage#unified-character-loader) component.
+a
+A blueprint used to create a **Unified Character** at runtime. Can be used in the [Unified Character Renderer](xref:character-usage#unified-character-template-renderer) component.
 
 > [!TIP]  
 > To create a **Unified Character Template**:  
@@ -45,7 +45,7 @@ A blueprint used to create a **Unified Character** at runtime. Can be used in th
 
 ### Setup
 
-A blueprint used to create a **Layered Character** at runtime. Can be used in the [Layered Character Template Loader](xref:character-usage#layered-character-template-loader) component.
+A blueprint used to create a **Layered Character** at runtime. Can be used in the [Layered Character Template Renderer](xref:character-usage#layered-character-template-renderer) component.
 
 > [!TIP]  
 > To create a **Layered Character Template**:  

@@ -141,10 +141,10 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
   syntax:
-    content: public const string CharacterLayerDefinitionSO_Path = "BlazerTech/Character Management System/Layered Character Type/Layered Character Type"
+    content: public const string CharacterLayerDefinitionSO_Path = "BlazerTech/Character Management System/Layered Character Type/Layer Definition"
     return:
       type: System.String
-    content.vb: Public Const CharacterLayerDefinitionSO_Path As String = "BlazerTech/Character Management System/Layered Character Type/Layered Character Type"
+    content.vb: Public Const CharacterLayerDefinitionSO_Path As String = "BlazerTech/Character Management System/Layered Character Type/Layer Definition"
 - uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterTypeSO_Path
   commentId: F:BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterTypeSO_Path
   id: LayeredCharacterTypeSO_Path
@@ -168,10 +168,10 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
   syntax:
-    content: public const string LayeredCharacterTypeSO_Path = "BlazerTech/Character Management System/Layered Character Type/Character Layer"
+    content: public const string LayeredCharacterTypeSO_Path = "BlazerTech/Character Management System/Layered Character Type/Layered Character Type"
     return:
       type: System.String
-    content.vb: Public Const LayeredCharacterTypeSO_Path As String = "BlazerTech/Character Management System/Layered Character Type/Character Layer"
+    content.vb: Public Const LayeredCharacterTypeSO_Path As String = "BlazerTech/Character Management System/Layered Character Type/Layered Character Type"
 - uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterGroupTemplateSO_Path
   commentId: F:BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths.LayeredCharacterGroupTemplateSO_Path
   id: LayeredCharacterGroupTemplateSO_Path

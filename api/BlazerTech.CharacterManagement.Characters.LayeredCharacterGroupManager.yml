@@ -6,7 +6,7 @@ items:
   parent: BlazerTech.CharacterManagement.Characters
   children:
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.CharacterTypeGroupsAutoSaveTriggers
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupsForType(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupRegistryForType(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.Initialize
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.LoadCharacterGroups
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.SaveCharacterGroupsImmediate
@@ -145,37 +145,40 @@ items:
     return:
       type: System.Collections.Generic.Dictionary{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry}
     content.vb: Public Shared ReadOnly groupsByType As Dictionary(Of LayeredCharacterTypeSO, CharacterGroupRegistry)
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupsForType(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupsForType(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  id: GetGroupsForType(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupRegistryForType(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupRegistryForType(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  id: GetGroupRegistryForType(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
   langs:
   - csharp
   - vb
-  name: GetGroupsForType(LayeredCharacterTypeSO)
-  nameWithType: LayeredCharacterGroupManager.GetGroupsForType(LayeredCharacterTypeSO)
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupsForType(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
+  name: GetGroupRegistryForType(LayeredCharacterTypeSO)
+  nameWithType: LayeredCharacterGroupManager.GetGroupRegistryForType(LayeredCharacterTypeSO)
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupRegistryForType(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: GetGroupsForType
+    id: GetGroupRegistryForType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 31
+    startLine: 33
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
+  example: []
   syntax:
-    content: public static CharacterGroupRegistry GetGroupsForType(LayeredCharacterTypeSO type)
+    content: public static CharacterGroupRegistry GetGroupRegistryForType(LayeredCharacterTypeSO type)
     parameters:
     - id: type
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
+      description: The <xref href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO" data-throw-if-not-resolved="false"></xref> used to retrieve the <xref href="BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry" data-throw-if-not-resolved="false"></xref>
     return:
       type: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry
-    content.vb: Public Shared Function GetGroupsForType(type As LayeredCharacterTypeSO) As CharacterGroupRegistry
-  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupsForType*
+      description: Returns the <xref href="BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry" data-throw-if-not-resolved="false"></xref> for the <xref href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO" data-throw-if-not-resolved="false"></xref> supplied. Creates a new <xref href="BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry" data-throw-if-not-resolved="false"></xref> if one does not already exist.
+    content.vb: Public Shared Function GetGroupRegistryForType(type As LayeredCharacterTypeSO) As CharacterGroupRegistry
+  overload: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupRegistryForType*
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.Initialize
   commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.Initialize
   id: Initialize
@@ -194,7 +197,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Initialize
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 49
+    startLine: 51
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -220,7 +223,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ScheduleSaveCharacterGroups
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 75
+    startLine: 77
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -251,7 +254,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SaveCharacterGroupsImmediate
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 94
+    startLine: 96
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -279,7 +282,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadCharacterGroups
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 125
+    startLine: 127
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -470,12 +473,6 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupsForType*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupsForType
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_GetGroupsForType_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
-  name: GetGroupsForType
-  nameWithType: LayeredCharacterGroupManager.GetGroupsForType
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupsForType
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
   parent: BlazerTech.CharacterManagement.Characters
@@ -490,6 +487,12 @@ references:
   name: CharacterGroupRegistry
   nameWithType: CharacterGroupRegistry
   fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupRegistryForType*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupRegistryForType
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_GetGroupRegistryForType_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
+  name: GetGroupRegistryForType
+  nameWithType: LayeredCharacterGroupManager.GetGroupRegistryForType
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupRegistryForType
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.Initialize*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.Initialize
   href: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterGroupManager_Initialize

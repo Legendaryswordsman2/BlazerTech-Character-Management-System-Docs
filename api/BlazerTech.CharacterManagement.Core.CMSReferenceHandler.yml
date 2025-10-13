@@ -6,14 +6,18 @@ items:
   parent: BlazerTech.CharacterManagement.Core
   children:
   - BlazerTech.CharacterManagement.Core.CMSReferenceHandler.CharacterPiecesShaders
-  - BlazerTech.CharacterManagement.Core.CMSReferenceHandler.CharacterTypes
+  - BlazerTech.CharacterManagement.Core.CMSReferenceHandler.CharacterTypeAddressableLabel
   - BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypeFromIdentifier(System.String)
+  - BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypes
   - BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypesAsync
   - BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetLayeredCharacterGroupTemplates
   - BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetLayeredCharacterTypes
   - BlazerTech.CharacterManagement.Core.CMSReferenceHandler.Instance
-  - BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetCharacterTypes(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO[])
+  - BlazerTech.CharacterManagement.Core.CMSReferenceHandler.LayeredCharacterTypes
+  - BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetLayeredCharacterTypes(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO[])
+  - BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetUnifiedCharacterTypes(BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO[])
   - BlazerTech.CharacterManagement.Core.CMSReferenceHandler.UnifiedCharacterMaterial
+  - BlazerTech.CharacterManagement.Core.CMSReferenceHandler.UnifiedCharacterTypes
   langs:
   - csharp
   - vb
@@ -60,6 +64,33 @@ items:
   - type: UnityEngine.DisallowMultipleComponent
     ctor: UnityEngine.DisallowMultipleComponent.#ctor
     arguments: []
+- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.CharacterTypeAddressableLabel
+  commentId: F:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.CharacterTypeAddressableLabel
+  id: CharacterTypeAddressableLabel
+  parent: BlazerTech.CharacterManagement.Core.CMSReferenceHandler
+  langs:
+  - csharp
+  - vb
+  name: CharacterTypeAddressableLabel
+  nameWithType: CMSReferenceHandler.CharacterTypeAddressableLabel
+  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.CharacterTypeAddressableLabel
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterTypeAddressableLabel
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public const string CharacterTypeAddressableLabel = "Character Types"
+    return:
+      type: System.String
+    content.vb: Public Const CharacterTypeAddressableLabel As String = "Character Types"
 - uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.Instance
   commentId: P:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.Instance
   id: Instance
@@ -78,7 +109,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Instance
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -107,7 +138,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: UnifiedCharacterMaterial
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
-    startLine: 20
+    startLine: 22
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -136,7 +167,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterPiecesShaders
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -147,35 +178,64 @@ items:
       type: BlazerTech.CharacterManagement.Core.SerializableDictionary{System.Int32,UnityEngine.Shader}
     content.vb: Public Property CharacterPiecesShaders As SerializableDictionary(Of Integer, Shader)
   overload: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.CharacterPiecesShaders*
-- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.CharacterTypes
-  commentId: P:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.CharacterTypes
-  id: CharacterTypes
+- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.LayeredCharacterTypes
+  commentId: P:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.LayeredCharacterTypes
+  id: LayeredCharacterTypes
   parent: BlazerTech.CharacterManagement.Core.CMSReferenceHandler
   langs:
   - csharp
   - vb
-  name: CharacterTypes
-  nameWithType: CMSReferenceHandler.CharacterTypes
-  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.CharacterTypes
+  name: LayeredCharacterTypes
+  nameWithType: CMSReferenceHandler.LayeredCharacterTypes
+  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.LayeredCharacterTypes
   type: Property
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterTypes
+    id: LayeredCharacterTypes
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
-    startLine: 22
+    startLine: 24
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
   syntax:
-    content: public LayeredCharacterTypeSO[] CharacterTypes { get; }
+    content: public LayeredCharacterTypeSO[] LayeredCharacterTypes { get; }
     parameters: []
     return:
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO[]
-    content.vb: Public Property CharacterTypes As LayeredCharacterTypeSO()
-  overload: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.CharacterTypes*
+    content.vb: Public Property LayeredCharacterTypes As LayeredCharacterTypeSO()
+  overload: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.LayeredCharacterTypes*
+- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.UnifiedCharacterTypes
+  commentId: P:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.UnifiedCharacterTypes
+  id: UnifiedCharacterTypes
+  parent: BlazerTech.CharacterManagement.Core.CMSReferenceHandler
+  langs:
+  - csharp
+  - vb
+  name: UnifiedCharacterTypes
+  nameWithType: CMSReferenceHandler.UnifiedCharacterTypes
+  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.UnifiedCharacterTypes
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: UnifiedCharacterTypes
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public UnifiedCharacterTypeSO[] UnifiedCharacterTypes { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO[]
+    content.vb: Public Property UnifiedCharacterTypes As UnifiedCharacterTypeSO()
+  overload: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.UnifiedCharacterTypes*
 - uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetLayeredCharacterTypes
   commentId: M:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetLayeredCharacterTypes
   id: GetLayeredCharacterTypes
@@ -194,7 +254,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetLayeredCharacterTypes
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
-    startLine: 38
+    startLine: 41
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -204,6 +264,34 @@ items:
       type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO}
     content.vb: Public Function GetLayeredCharacterTypes() As List(Of LayeredCharacterTypeSO)
   overload: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetLayeredCharacterTypes*
+- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypes
+  commentId: M:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypes
+  id: GetCharacterTypes
+  parent: BlazerTech.CharacterManagement.Core.CMSReferenceHandler
+  langs:
+  - csharp
+  - vb
+  name: GetCharacterTypes()
+  nameWithType: CMSReferenceHandler.GetCharacterTypes()
+  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypes()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: GetCharacterTypes
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public List<CharacterTypeBaseSO> GetCharacterTypes()
+    return:
+      type: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO}
+    content.vb: Public Function GetCharacterTypes() As List(Of CharacterTypeBaseSO)
+  overload: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypes*
 - uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetLayeredCharacterGroupTemplates
   commentId: M:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetLayeredCharacterGroupTemplates
   id: GetLayeredCharacterGroupTemplates
@@ -222,7 +310,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetLayeredCharacterGroupTemplates
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
-    startLine: 43
+    startLine: 65
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -250,7 +338,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetCharacterTypesAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
-    startLine: 48
+    startLine: 70
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -260,38 +348,70 @@ items:
       type: System.Threading.Tasks.Task{System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO}}
     content.vb: Public Function GetCharacterTypesAsync() As Task(Of List(Of LayeredCharacterTypeSO))
   overload: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypesAsync*
-- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetCharacterTypes(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO[])
-  commentId: M:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetCharacterTypes(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO[])
-  id: SetCharacterTypes(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO[])
+- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetUnifiedCharacterTypes(BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO[])
+  commentId: M:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetUnifiedCharacterTypes(BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO[])
+  id: SetUnifiedCharacterTypes(BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO[])
   parent: BlazerTech.CharacterManagement.Core.CMSReferenceHandler
   langs:
   - csharp
   - vb
-  name: SetCharacterTypes(LayeredCharacterTypeSO[])
-  nameWithType: CMSReferenceHandler.SetCharacterTypes(LayeredCharacterTypeSO[])
-  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetCharacterTypes(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO[])
+  name: SetUnifiedCharacterTypes(UnifiedCharacterTypeSO[])
+  nameWithType: CMSReferenceHandler.SetUnifiedCharacterTypes(UnifiedCharacterTypeSO[])
+  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetUnifiedCharacterTypes(BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO[])
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: SetCharacterTypes
+    id: SetUnifiedCharacterTypes
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
-    startLine: 66
+    startLine: 88
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
   syntax:
-    content: public void SetCharacterTypes(LayeredCharacterTypeSO[] characterTypes)
+    content: public void SetUnifiedCharacterTypes(UnifiedCharacterTypeSO[] unifiedCharacterTypes)
     parameters:
-    - id: characterTypes
+    - id: unifiedCharacterTypes
+      type: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO[]
+    content.vb: Public Sub SetUnifiedCharacterTypes(unifiedCharacterTypes As UnifiedCharacterTypeSO())
+  overload: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetUnifiedCharacterTypes*
+  nameWithType.vb: CMSReferenceHandler.SetUnifiedCharacterTypes(UnifiedCharacterTypeSO())
+  fullName.vb: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetUnifiedCharacterTypes(BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO())
+  name.vb: SetUnifiedCharacterTypes(UnifiedCharacterTypeSO())
+- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetLayeredCharacterTypes(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO[])
+  commentId: M:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetLayeredCharacterTypes(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO[])
+  id: SetLayeredCharacterTypes(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO[])
+  parent: BlazerTech.CharacterManagement.Core.CMSReferenceHandler
+  langs:
+  - csharp
+  - vb
+  name: SetLayeredCharacterTypes(LayeredCharacterTypeSO[])
+  nameWithType: CMSReferenceHandler.SetLayeredCharacterTypes(LayeredCharacterTypeSO[])
+  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetLayeredCharacterTypes(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO[])
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: SetLayeredCharacterTypes
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
+    startLine: 98
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public void SetLayeredCharacterTypes(LayeredCharacterTypeSO[] layeredCharacterTypes)
+    parameters:
+    - id: layeredCharacterTypes
       type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO[]
-    content.vb: Public Sub SetCharacterTypes(characterTypes As LayeredCharacterTypeSO())
-  overload: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetCharacterTypes*
-  nameWithType.vb: CMSReferenceHandler.SetCharacterTypes(LayeredCharacterTypeSO())
-  fullName.vb: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetCharacterTypes(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO())
-  name.vb: SetCharacterTypes(LayeredCharacterTypeSO())
+    content.vb: Public Sub SetLayeredCharacterTypes(layeredCharacterTypes As LayeredCharacterTypeSO())
+  overload: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetLayeredCharacterTypes*
+  nameWithType.vb: CMSReferenceHandler.SetLayeredCharacterTypes(LayeredCharacterTypeSO())
+  fullName.vb: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetLayeredCharacterTypes(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO())
+  name.vb: SetLayeredCharacterTypes(LayeredCharacterTypeSO())
 - uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypeFromIdentifier(System.String)
   commentId: M:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypeFromIdentifier(System.String)
   id: GetCharacterTypeFromIdentifier(System.String)
@@ -310,7 +430,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetCharacterTypeFromIdentifier
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSReferenceHandler.cs
-    startLine: 77
+    startLine: 109
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -409,6 +529,17 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.Instance*
   commentId: Overload:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.Instance
   href: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.html#BlazerTech_CharacterManagement_Core_CMSReferenceHandler_Instance
@@ -515,12 +646,12 @@ references:
   - name: " "
   - name: TValue
   - name: )
-- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.CharacterTypes*
-  commentId: Overload:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.CharacterTypes
-  href: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.html#BlazerTech_CharacterManagement_Core_CMSReferenceHandler_CharacterTypes
-  name: CharacterTypes
-  nameWithType: CMSReferenceHandler.CharacterTypes
-  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.CharacterTypes
+- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.LayeredCharacterTypes*
+  commentId: Overload:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.LayeredCharacterTypes
+  href: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.html#BlazerTech_CharacterManagement_Core_CMSReferenceHandler_LayeredCharacterTypes
+  name: LayeredCharacterTypes
+  nameWithType: CMSReferenceHandler.LayeredCharacterTypes
+  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.LayeredCharacterTypes
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO[]
   isExternal: true
   href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html
@@ -540,6 +671,33 @@ references:
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
     name: LayeredCharacterTypeSO
     href: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.UnifiedCharacterTypes*
+  commentId: Overload:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.UnifiedCharacterTypes
+  href: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.html#BlazerTech_CharacterManagement_Core_CMSReferenceHandler_UnifiedCharacterTypes
+  name: UnifiedCharacterTypes
+  nameWithType: CMSReferenceHandler.UnifiedCharacterTypes
+  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.UnifiedCharacterTypes
+- uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO[]
+  isExternal: true
+  href: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO.html
+  name: UnifiedCharacterTypeSO[]
+  nameWithType: UnifiedCharacterTypeSO[]
+  fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO[]
+  nameWithType.vb: UnifiedCharacterTypeSO()
+  fullName.vb: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO()
+  name.vb: UnifiedCharacterTypeSO()
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
+    name: UnifiedCharacterTypeSO
+    href: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
+    name: UnifiedCharacterTypeSO
+    href: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO.html
   - name: (
   - name: )
 - uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetLayeredCharacterTypes*
@@ -646,6 +804,45 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypes*
+  commentId: Overload:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypes
+  href: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.html#BlazerTech_CharacterManagement_Core_CMSReferenceHandler_GetCharacterTypes
+  name: GetCharacterTypes
+  nameWithType: CMSReferenceHandler.GetCharacterTypes
+  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypes
+- uid: System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO}
+  commentId: T:System.Collections.Generic.List{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<CharacterTypeBaseSO>
+  nameWithType: List<CharacterTypeBaseSO>
+  fullName: System.Collections.Generic.List<BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO>
+  nameWithType.vb: List(Of CharacterTypeBaseSO)
+  fullName.vb: System.Collections.Generic.List(Of BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO)
+  name.vb: List(Of CharacterTypeBaseSO)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+    name: CharacterTypeBaseSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+    name: CharacterTypeBaseSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
+  - name: )
 - uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetLayeredCharacterGroupTemplates*
   commentId: Overload:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetLayeredCharacterGroupTemplates
   href: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.html#BlazerTech_CharacterManagement_Core_CMSReferenceHandler_GetLayeredCharacterGroupTemplates
@@ -803,29 +1000,24 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetCharacterTypes*
-  commentId: Overload:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetCharacterTypes
-  href: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.html#BlazerTech_CharacterManagement_Core_CMSReferenceHandler_SetCharacterTypes_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO___
-  name: SetCharacterTypes
-  nameWithType: CMSReferenceHandler.SetCharacterTypes
-  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetCharacterTypes
+- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetUnifiedCharacterTypes*
+  commentId: Overload:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetUnifiedCharacterTypes
+  href: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.html#BlazerTech_CharacterManagement_Core_CMSReferenceHandler_SetUnifiedCharacterTypes_BlazerTech_CharacterManagement_Characters_UnifiedCharacterTypeSO___
+  name: SetUnifiedCharacterTypes
+  nameWithType: CMSReferenceHandler.SetUnifiedCharacterTypes
+  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetUnifiedCharacterTypes
+- uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetLayeredCharacterTypes*
+  commentId: Overload:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetLayeredCharacterTypes
+  href: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.html#BlazerTech_CharacterManagement_Core_CMSReferenceHandler_SetLayeredCharacterTypes_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO___
+  name: SetLayeredCharacterTypes
+  nameWithType: CMSReferenceHandler.SetLayeredCharacterTypes
+  fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.SetLayeredCharacterTypes
 - uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypeFromIdentifier*
   commentId: Overload:BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypeFromIdentifier
   href: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.html#BlazerTech_CharacterManagement_Core_CMSReferenceHandler_GetCharacterTypeFromIdentifier_System_String_
   name: GetCharacterTypeFromIdentifier
   nameWithType: CMSReferenceHandler.GetCharacterTypeFromIdentifier
   fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler.GetCharacterTypeFromIdentifier
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
   parent: BlazerTech.CharacterManagement.Characters

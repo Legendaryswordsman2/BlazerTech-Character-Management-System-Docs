@@ -5,9 +5,12 @@ items:
   id: CharacterTypeBaseSO
   parent: BlazerTech.CharacterManagement.Characters
   children:
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.BaseSpritesheet
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterTypeID
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+  - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValid
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValidCharacterSpriteSheet(UnityEngine.Sprite)
   - BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.PerformValidationCheck
@@ -25,7 +28,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterTypeBaseSO
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 10
+    startLine: 12
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -61,7 +64,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterTypeID
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 16
+    startLine: 18
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -92,7 +95,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: BaseSpritesheet
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 24
+    startLine: 26
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -128,7 +131,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterController
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 31
+    startLine: 33
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -162,7 +165,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsValid
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 35
+    startLine: 37
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -198,7 +201,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: PerformValidationCheck
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 39
+    startLine: 41
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -231,7 +234,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsValidCharacterSpriteSheet
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
-    startLine: 64
+    startLine: 66
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -248,6 +251,90 @@ items:
       description: ''
     content.vb: Public Overridable Function IsValidCharacterSpriteSheet(sprite As Sprite) As Boolean
   overload: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsValidCharacterSpriteSheet*
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
+  id: IsAddressable_EditMode
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  langs:
+  - csharp
+  - vb
+  name: IsAddressable_EditMode()
+  nameWithType: CharacterTypeBaseSO.IsAddressable_EditMode()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: IsAddressable_EditMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public bool IsAddressable_EditMode()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsAddressable_EditMode() As Boolean
+  overload: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode*
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+  id: HasCorrectAddressableLabel_EditMode
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  langs:
+  - csharp
+  - vb
+  name: HasCorrectAddressableLabel_EditMode()
+  nameWithType: CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: HasCorrectAddressableLabel_EditMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+    startLine: 90
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public bool HasCorrectAddressableLabel_EditMode()
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasCorrectAddressableLabel_EditMode() As Boolean
+  overload: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode*
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
+  id: AddAddressableLabel_EditMode
+  parent: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  langs:
+  - csharp
+  - vb
+  name: AddAddressableLabel_EditMode()
+  nameWithType: CharacterTypeBaseSO.AddAddressableLabel_EditMode()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: AddAddressableLabel_EditMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/Character Types/CharacterTypeBaseSO.cs
+    startLine: 109
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public bool AddAddressableLabel_EditMode()
+    return:
+      type: System.Boolean
+    content.vb: Public Function AddAddressableLabel_EditMode() As Boolean
+  overload: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode*
 references:
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters
@@ -473,3 +560,21 @@ references:
   name: Sprite
   nameWithType: Sprite
   fullName: UnityEngine.Sprite
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_IsAddressable_EditMode
+  name: IsAddressable_EditMode
+  nameWithType: CharacterTypeBaseSO.IsAddressable_EditMode
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.IsAddressable_EditMode
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_HasCorrectAddressableLabel_EditMode
+  name: HasCorrectAddressableLabel_EditMode
+  nameWithType: CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.HasCorrectAddressableLabel_EditMode
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html#BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_AddAddressableLabel_EditMode
+  name: AddAddressableLabel_EditMode
+  nameWithType: CharacterTypeBaseSO.AddAddressableLabel_EditMode
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.AddAddressableLabel_EditMode
