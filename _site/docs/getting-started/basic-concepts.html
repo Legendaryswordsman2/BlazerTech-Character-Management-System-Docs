@@ -89,7 +89,7 @@
 
 <p>This page introduces the <strong>core principles</strong> of the <strong>Character Management System</strong>:</p>
 <ul>
-<li><a href="#character-types"><strong>Character Types</strong></a> – Define how characters are structured.</li>
+<li><a href="#character-types"><strong>Character Types</strong></a> – Defines the core of every character.</li>
 <li><a href="#character-templates"><strong>Character Templates</strong></a> – Blueprints for creating characters later.</li>
 <li><a href="#character-usage"><strong>Character Usage</strong></a> – Scripts to load and manage characters.</li>
 <li><a href="#built-in-characters"><strong>Built-in Modular Characters</strong></a> - Modular characters pre-setup and ready for use.</li>
@@ -120,6 +120,9 @@
 </tr>
 </tbody>
 </table>
+<p>Every <strong>Character Type</strong> contains a <strong>Base Spritesheet</strong>. This spritesheet contains all animations every character of that type will need to contain.<br>
+New characters can then be easily added by simply adding a new spritesheet or multiple spritesheets if using layered characters.</p>
+<p>Optionally an <strong>Animator Controller</strong> can be setup with all animations using sprites from the <strong>Base Spritesheet</strong>. With this setup only a single <strong>Animator Controller</strong> is required. No need to create a new <strong>Animator Controller</strong> or <strong>Override Controller</strong> for each new character.</p>
 <ul>
 <li><a class="xref" href="../character-types.html">Read More → Character Types</a></li>
 <li><a class="xref" href="../unified-character-type.html">Read More → Unified Character Type</a></li>
@@ -162,18 +165,18 @@ If a <strong>Layered Character</strong> is used, the shader combines all layers 
 <p><a class="xref" href="../character-usage.html">Read More → Character Usage</a></p>
 <hr>
 <h2 id="built-in-characters">Built-in Characters</h2>
-<p>Named <strong>BlazerTech Layered Characters</strong>, they are included with the <strong>BlazerTech Character Management System</strong>.<br>
-However they can also be bought separately at a discounted price.</p>
-<p>They are Modular characters made of 4 different layers.
-Layers include:</p>
+<p>Modular characters are included within the <strong>BlazerTech Character Management System</strong>.
+They can be freely used inside any project. These characters will also be purchasable separately upon the full release of the Character Management System</p>
+<p>The <strong>BlazerTech Modular Characters</strong> consist of 4 layers:</p>
 <ol>
-<li>Body</li>
-<li>Outfit</li>
-<li>Hairstyle</li>
-<li>Accessory</li>
+<li><strong>Body</strong></li>
+<li><strong>Outfit</strong></li>
+<li><strong>Hairstyle</strong></li>
+<li><strong>Accessory</strong></li>
 </ol>
-<p>A Layered Character Type for these characters is already included and fully setup. They are ready to be used in any project.</p>
-<p>Additionally a Unified Character Type is setup with a set of pre-made characters made by combining various layer options.</p>
+<p>A <strong>Layered Character Type</strong> for these characters are already included and fully setup. New characters can be created by using a <a class="xref" href="../character-templates.html#layered-character-template">Layered Character Tempate</a>, amongst other ways not listed here.</p>
+<p>Additionally a <a class="xref" href="../unified-character-type.html">Unified Character Type</a> is setup with a set of pre-made characters made by combining various layer options.</p>
+<p><a class="xref" href="../built-in-characters.html">Read More → Built-In Characters</a></p>
 <hr>
 <h2 id="character-grouping-system">Character Grouping System</h2>
 <p>Charcter groups are used to sort characters. They're great for organizing characters into meaningful collections, whether that's for a dynamic roster or a fixed group size.</p>

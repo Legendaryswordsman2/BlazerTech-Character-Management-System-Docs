@@ -36,4 +36,4 @@ Check out the [Getting Started Guide](<xref:basic-concepts>) to begin
 
 ---
 
-## Version 0.1.0
+## Version 0.2.0

@@ -5,9 +5,9 @@ uid: basic-concepts
 # Basic Concepts
 
 This page introduces the **core principles** of the **Character Management System**:  
-- [**Character Types**](#character-types) – Define how characters are structured.  
+- [**Character Types**](#character-types) – Defines the core of every character.  
 - [**Character Templates**](#character-templates) – Blueprints for creating characters later.  
-- [**Character Usage**](#character-usage) – Scripts to load and manage characters.  
+- [**Character Usage**](#character-usage) – Scripts to load and render characters.  
 - [**Built-in Modular Characters**](#built-in-characters) - Modular characters pre-setup and ready for use.
 - [**Character Grouping System**](#character-grouping-system) - Groups used to store and saved characters.
 - [**Character Creator**](#character-creator) – Modular UI framework for building customizable characters in-game.  
@@ -21,6 +21,11 @@ A **Character Type** is a [Scriptable Objects](https://docs.unity3d.com/6000.0/D
 | -------------------------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
 | **Unified Character Type** | A single spritesheet containing a fully assembled character. No runtime customization. | Characters with fixed, pre-set appearances.                 |
 | **Layered Character Type** | Multiple spritesheets, each containing one visual layer (body, outfit, hair, etc.).    | Customizable player characters, dynamic or randomized NPCs. |
+
+Every **Character Type** contains a **Base Spritesheet**. This spritesheet contains all animations every character of that type will need to contain.  
+New characters can then be easily added by simply adding a new spritesheet or multiple spritesheets if using layered characters.
+
+Optionally an **Animator Controller** can be setup with all animations using sprites from the **Base Spritesheet**. With this setup only a single **Animator Controller** is required. No need to create a new **Animator Controller** or **Override Controller** for each new character.
 
 - [Read More → Character Types](xref:character-types)  
 - [Read More → Unified Character Type](xref:unified-character-type)  
@@ -57,19 +62,20 @@ If a **Layered Character** is used, the shader combines all layers into the fina
 ---
 
 ## Built-in Characters
-Named **BlazerTech Layered Characters**, they are included with the **BlazerTech Character Management System**.  
-However they can also be bought separately at a discounted price.
+Modular characters are included within the **BlazerTech Character Management System**.
+They can be freely used inside any project. These characters will also be purchasable separately upon the full release of the Character Management System
 
-They are Modular characters made of 4 different layers.
-Layers include:
-1. Body
-2. Outfit
-3. Hairstyle
-4. Accessory
+The **BlazerTech Modular Characters** consist of 4 layers:
+1. **Body**
+2. **Outfit**
+3. **Hairstyle**
+4. **Accessory**
 
-A Layered Character Type for these characters is already included and fully setup. They are ready to be used in any project.
+A **Layered Character Type** for these characters are already included and fully setup. New characters can be created by using a [Layered Character Tempate](xref:character-templates#layered-character-template), amongst other ways not listed here.
 
-Additionally a Unified Character Type is setup with a set of pre-made characters made by combining various layer options.
+Additionally a [Unified Character Type](xref:unified-character-type) is setup with a set of pre-made characters made by combining various layer options.
+
+[Read More → Built-In Characters](xref:built-in-characters)  
 
 ---
 

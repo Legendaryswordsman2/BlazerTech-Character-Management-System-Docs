@@ -21,18 +21,18 @@
         href: character-layers.md
       - name: Character Usage
         href: character-usage.md
+  - name: Built In Characters
+    href: built-in-characters.md
   - name: Character Templates
     href: character-templates.md
   - name: Character Grouping System
     href: character-grouping-system.md
   - name: Character Animation Setup
     href: character-animation-setup.md
-  - name: Built In Characters
-    href: built-in-characters.md
   - name: LimeZu Modern Interiors Support
     href: limezu-modern-interiors-support.md
 
-  - name: Character Creator
+  - name: Character Creator (Alpha)
   - name: Character Creator Overview
     href: character-creator/character-creator-overview.md
   - name: Character Creator Setup

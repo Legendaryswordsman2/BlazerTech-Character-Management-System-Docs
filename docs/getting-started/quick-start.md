@@ -10,6 +10,14 @@ This guide should get you on your feet and teach you the basics of how to use th
 
 It's recommended to read through the [Basic Concepts](xref:basic-concepts) before reading the **Quick Start Guide**.
 
+## Video Guides
+Prefer video guides? I've got you covered!
+- [Layered Character Type Setup Guide](https://www.youtube.com/watch?v=JMOD0XNIkFA) - Covers setting up a Layered Character Type, Layered Character Template and rendering the character you create.
+- [Unified Character Type Setup Guide](https://www.youtube.com/watch?v=GT25zq6KCCE) - Covers setting up a Unified Character Type, Unified Character Template and rendering the character you create.
+
+> [!NOTE]
+> These videos will become dated fast as I continue to improve the **Character Managemnt System**. Finalized versions of these videos will be created close to the full release.
+
 ## Creating a Character Type
 
 If you only plan to use the built-in characters you can skip straight to [Creating a Character Template](#creating-a-character-template)
