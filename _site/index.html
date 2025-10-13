@@ -7,7 +7,7 @@
       <meta name="title" content=" | BlazerTech Character Management System ">
       
       
-      <link rel="icon" href="images/favicon.png">
+      <link rel="icon" href="images/logos/favicon.png">
       <link rel="stylesheet" href="public/docfx.min.css">
       <link rel="stylesheet" href="public/main.css">
       <meta name="docfx:navrel" content="toc.html">
@@ -44,7 +44,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="index.html">
-            <img id="logo" class="svg" src="images/logo.png" alt="BlazerTech Character Management System">
+            <img id="logo" class="svg" src="images/logos/logo.png" alt="BlazerTech Character Management System">
             BlazerTech Character Management System
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,12 +73,20 @@
         <article data-uid="landing">
 
 
-<p><img src="images/blazertech-character-management-system-logo.png" alt="BlazerTech Character Management System Cover Image"></p>
+<p><img src="images/logos/blazertech-character-management-system-logo.png" alt="BlazerTech Character Management System Cover Image"></p>
 <p><strong>Easily create, manage, and customize sprite based characters!</strong></p>
 <p>A comprehensive framework designed to handle both modular &amp; premade characters.<br>
 Providing an easy solution to create, use, animate and save/load characters in your Unity projects.</p>
-<p><strong>Top Features!</strong><br>
-✅ <strong>Runtime Customization</strong> - Modify characters anytime, even at runtime.<br>
+<h2 id="how-it-works">How It Works</h2>
+<p>Every character is defined by it's character type which contains all animations and frames the character has and optionally an Animator Controller which can be setup however needed for your own project or use a preset to work with the included character movement and animation handler scripts.</p>
+<p>This approach means after the initial Character Type has been setup, creating new characters of that same type is as easy as adding the new spritesheet(s). If used, only a single Animator Controller is needed for all characters of the same Character Type. This removes the tedium of creating dozens of new Animator Controllers or Override Controllers for each new character.</p>
+<p>There are two types of Character Types.</p>
+<ul>
+<li><strong>Layered Character Types</strong>: Contain up to 10 layers, each layer is a spritesheet. When a layered character is rendered all layers will be overlayed on top of each other in order to create the final character.</li>
+<li><strong>Unified Character Types</strong>: Each character contains only one spritesheet containing the same animations required by the Layered Character Type.</li>
+</ul>
+<h2 id="top-features">Top Features</h2>
+<p>✅ <strong>Runtime Customization</strong> - Modify characters anytime, even at runtime.<br>
 ✅ <strong>Works with Any Sprite Based Characters</strong> - Seamlessly implement any pixel art characters.<br>
 ✅ <strong>Ease of Use</strong> - Characters can be setup and used within minutes.<br>
 ✅ <strong>Includes BlazerTech Modular Characters</strong> - Customizable characters with 4 layers (Body, Outfit, Hairstyle, Accessory).<br>

@@ -7734,6 +7734,9 @@ references:
 - uid: basic-concepts
   name: Basic Concepts
   href: docs/getting-started/basic-concepts.html
+- uid: built-in-characters
+  name: Built In Characters
+  href: docs/built-in-characters.html
 - uid: ccm-carousel-layer-selector
   name: Carousel Layer Selector
   href: docs/character-creator/layer-selectors/carousel-layer-selector.html
@@ -7773,6 +7776,9 @@ references:
 - uid: ccm-tab-layer-selector
   name: Tab Layer Selector
   href: docs/character-creator/layer-selectors/tab-layer-selector.html
+- uid: character-animation-setup
+  name: Character Animation Setup
+  href: docs/character-animation-setup.html
 - uid: character-creator-overview
   name: Character Creator
   href: docs/character-creator/character-creator-overview.html

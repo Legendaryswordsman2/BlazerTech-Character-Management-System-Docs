@@ -3,15 +3,24 @@ _layout: landing
 uid: landing
 ---
 
-![BlazerTech Character Management System Cover Image](~/images/blazertech-character-management-system-logo.png)
+![BlazerTech Character Management System Cover Image](~/images/logos/blazertech-character-management-system-logo.png)
 
 **Easily create, manage, and customize sprite based characters!**
 
 A comprehensive framework designed to handle both modular & premade characters.  
 Providing an easy solution to create, use, animate and save/load characters in your Unity projects.
 
+## How It Works
 
-**Top Features!**  
+Every character is defined by it's character type which contains all animations and frames the character has and optionally an Animator Controller which can be setup however needed for your own project or use a preset to work with the included character movement and animation handler scripts.
+
+This approach means after the initial Character Type has been setup, creating new characters of that same type is as easy as adding the new spritesheet(s). If used, only a single Animator Controller is needed for all characters of the same Character Type. This removes the tedium of creating dozens of new Animator Controllers or Override Controllers for each new character.
+
+There are two types of Character Types.
+- **Layered Character Types**: Contain up to 10 layers, each layer is a spritesheet. When a layered character is rendered all layers will be overlayed on top of each other in order to create the final character.
+- **Unified Character Types**: Each character contains only one spritesheet containing the same animations required by the Layered Character Type.
+
+## Top Features
 ✅ **Runtime Customization** - Modify characters anytime, even at runtime.  
 ✅ **Works with Any Sprite Based Characters** - Seamlessly implement any pixel art characters.  
 ✅ **Ease of Use** - Characters can be setup and used within minutes.  

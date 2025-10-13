@@ -4,7 +4,7 @@ uid: quick-start
 
 # Quick Start Guide
 
-![Logo](~/images/blazertech-character-management-system-cover-iamge.png)
+![Logo](~/images/logos/blazertech-character-management-system-cover-iamge.png)
 
 This guide should get you on your feet and teach you the basics of how to use the **BlazerTech Character Management System**.
 

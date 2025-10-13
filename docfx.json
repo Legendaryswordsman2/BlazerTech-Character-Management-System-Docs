@@ -43,10 +43,10 @@
       "_appTitle": "BlazerTech Character Management System",
       "_ogDescription": "A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use, animate and save/load characters in your Unity projects.",
       "_ogTitle": "BlazerTech Character Management System",
-      "_ogImage": "images/blazertech-character-management-system-cover-iamge.png",
-      "_appFaviconPath": "images/favicon.png",
+      "_ogImage": "images/logos/blazertech-character-management-system-cover-iamge.png",
+      "_appFaviconPath": "images/logos/favicon.png",
       "ogUrl": "https://legendaryswordsman2.github.io/BlazerTech-Character-Management-System-Docs/",
-      "_appLogoPath": "images/logo.png",
+      "_appLogoPath": "images/logos/logo.png",
       "_enableSearch": true,
       "pdf": false
     }

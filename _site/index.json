@@ -654,6 +654,16 @@
     "title": "| BlazerTech Character Management System",
     "summary": ""
   },
+  "docs/built-in-characters.html": {
+    "href": "docs/built-in-characters.html",
+    "title": "Built In Characters | BlazerTech Character Management System",
+    "summary": "Built In Characters Sample modular characters are included within the BlazerTech Character Management System. These characters were made to match the style of the Modern Series created by LimeZu. These characters are modular and consist of 4 layers: Body (7 Options) Outfit (28 Options) Hairstyle (28 Options) Accessory (29 Options) A Layered Character Type and Unified Character Type are pre-setup in the /BlazerTech Modular Characters subfolder. The Unified Character Type contains a few premade characters created by combining random options of each of the 4 layers. Tip Upon the full release of the BlazerTech Character Management System these characters will also be available for purchase separately at a discounted price."
+  },
+  "docs/character-animation-setup.html": {
+    "href": "docs/character-animation-setup.html",
+    "title": "Character Animation Setup | BlazerTech Character Management System",
+    "summary": "Character Animation Setup"
+  },
   "docs/character-creator/character-creator-character-preview.html": {
     "href": "docs/character-creator/character-creator-character-preview.html",
     "title": "Character Preview | BlazerTech Character Management System",
@@ -792,6 +802,6 @@
   "index.html": {
     "href": "index.html",
     "title": "| BlazerTech Character Management System",
-    "summary": "Easily create, manage, and customize sprite based characters! A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use, animate and save/load characters in your Unity projects. Top Features! ✅ Runtime Customization - Modify characters anytime, even at runtime. ✅ Works with Any Sprite Based Characters - Seamlessly implement any pixel art characters. ✅ Ease of Use - Characters can be setup and used within minutes. ✅ Includes BlazerTech Modular Characters - Customizable characters with 4 layers (Body, Outfit, Hairstyle, Accessory). ✅ Prefab Based Character Creator UI Framework! - A customizable in-game Character Creation Menu System. ✅ Character Randomization - Layered characters can be randomly generated. Perfect for background NPCs. ✅ Modern Interiors - Full support for the modular layered characters contained within LimeZu's Modern Interiors Asset Pack. Get Started Check out the Getting Started Guide to begin Version 0.1.0"
+    "summary": "Easily create, manage, and customize sprite based characters! A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use, animate and save/load characters in your Unity projects. How It Works Every character is defined by it's character type which contains all animations and frames the character has and optionally an Animator Controller which can be setup however needed for your own project or use a preset to work with the included character movement and animation handler scripts. This approach means after the initial Character Type has been setup, creating new characters of that same type is as easy as adding the new spritesheet(s). If used, only a single Animator Controller is needed for all characters of the same Character Type. This removes the tedium of creating dozens of new Animator Controllers or Override Controllers for each new character. There are two types of Character Types. Layered Character Types: Contain up to 10 layers, each layer is a spritesheet. When a layered character is rendered all layers will be overlayed on top of each other in order to create the final character. Unified Character Types: Each character contains only one spritesheet containing the same animations required by the Layered Character Type. Top Features ✅ Runtime Customization - Modify characters anytime, even at runtime. ✅ Works with Any Sprite Based Characters - Seamlessly implement any pixel art characters. ✅ Ease of Use - Characters can be setup and used within minutes. ✅ Includes BlazerTech Modular Characters - Customizable characters with 4 layers (Body, Outfit, Hairstyle, Accessory). ✅ Prefab Based Character Creator UI Framework! - A customizable in-game Character Creation Menu System. ✅ Character Randomization - Layered characters can be randomly generated. Perfect for background NPCs. ✅ Modern Interiors - Full support for the modular layered characters contained within LimeZu's Modern Interiors Asset Pack. Get Started Check out the Getting Started Guide to begin Version 0.1.0"
   }
 }

@@ -1855,6 +1855,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/built-in-characters.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/built-in-characters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/character-animation-setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/character-animation-setup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/character-creator/character-creator-character-preview.md",
       "output": {
         ".html": {
@@ -2138,26 +2158,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/blazertech-character-management-system-cover-iamge.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/blazertech-character-management-system-cover-iamge.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/blazertech-character-management-system-logo.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/blazertech-character-management-system-logo.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "images/ccm-character-preview/character-preview-animation-buttons.png",
       "output": {
         "resource": {
@@ -2398,20 +2398,50 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/favicon.png",
+      "source_relative_path": "images/logos/blazertech-character-management-system-cover-iamge.png",
       "output": {
         "resource": {
-          "relative_path": "images/favicon.png"
+          "relative_path": "images/logos/blazertech-character-management-system-cover-iamge.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/logo.png",
+      "source_relative_path": "images/logos/blazertech-character-management-system-logo.png",
       "output": {
         "resource": {
-          "relative_path": "images/logo.png"
+          "relative_path": "images/logos/blazertech-character-management-system-logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logos/blazertech-modular-characters-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logos/blazertech-modular-characters-logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logos/favicon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logos/favicon.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logos/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logos/logo.png"
         }
       },
       "version": ""
