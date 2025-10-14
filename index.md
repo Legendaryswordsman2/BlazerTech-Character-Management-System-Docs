@@ -5,35 +5,63 @@ uid: landing
 
 ![BlazerTech Character Management System Cover Image](~/images/logos/blazertech-character-management-system-logo.png)
 
-**Easily create, manage, and customize sprite based characters!**
+# **BlazerTech Character Management System**
+> **Easily create, manage, and customize sprite based characters!**
 
-A comprehensive framework designed to handle both modular & premade characters.  
-Providing an easy solution to create, use, animate and save/load characters in your Unity projects.
+A comprehensive framework designed to handle both **modular** & **premade** characters.
+Providing an easy solution to create, use and save characters in your Unity projects.
+
+- [Installation Guide](xref:installation)  
+- [Basic Concepts](xref:basic-concepts)  
+- [Get Started](xref:quick-start)  
+
+---
+
+## Top Features
+
+| Feature                                    | Description                                                                  |
+| ------------------------------------------ | ---------------------------------------------------------------------------- |
+| 👀 **Runtime Customization**                | Modify characters anytime, even at runtime.                                  |
+| 👀 **Supports all sprite based characters** | Seamlessly implement any pixel art characters.                               |
+| 👀 **Easy of Use**                          | Quick initial setup, even quicker integration.                               |
+| 👀 **Included Modular Characters**          | Comes with 4 layers: **Body**, **Outfit**, **Hairstyle**, and **Accessory**. |
+| 👀 **Character Creator UI Framework**       | Prefab-based, customizable in-game character creation menu system.           |
+| 👀 **Random Character Generation**          | Create randomized NPCs or background characters with one component.          |
+| 👀 **Modern Interiors Support**             | Full support for **LimeZu's Modern Interiors Characters**                    |
+
+---
 
 ## How It Works
 
-Every character is defined by it's character type which contains all animations and frames the character has and optionally an Animator Controller which can be setup however needed for your own project or use a preset to work with the included character movement and animation handler scripts.
+Every character is built from a **Character Type**, which defines:
+- Animations and required spritesheet size.  
+- An optional Animator Controller
+- Character layers if using the layered character type.
 
-This approach means after the initial Character Type has been setup, creating new characters of that same type is as easy as adding the new spritesheet(s). If used, only a single Animator Controller is needed for all characters of the same Character Type. This removes the tedium of creating dozens of new Animator Controllers or Override Controllers for each new character.
+Once the Character Type is set up:
+1. New characters can be made by creating a character template and assigning the new spritesheet or dynamically creating new characters at runtime.
+2. If used, one Animator Controller can be used for all characters of the same character type. 
 
-There are two types of Character Types.
-- **Layered Character Types**: Contain up to 10 layers, each layer is a spritesheet. When a layered character is rendered all layers will be overlayed on top of each other in order to create the final character.
-- **Unified Character Types**: Each character contains only one spritesheet containing the same animations required by the Layered Character Type.
+### Character Type Variants
 
-## Top Features
-✅ **Runtime Customization** - Modify characters anytime, even at runtime.  
-✅ **Works with Any Sprite Based Characters** - Seamlessly implement any pixel art characters.  
-✅ **Ease of Use** - Characters can be setup and used within minutes.  
-✅ **Includes BlazerTech Modular Characters** - Customizable characters with 4 layers (Body, Outfit, Hairstyle, Accessory).  
-✅ **Prefab Based Character Creator UI Framework!** - A customizable in-game Character Creation Menu System.  
-✅ **Character Randomization** - Layered characters can be randomly generated. Perfect for background NPCs.  
-✅ **Modern Interiors** - Full support for the modular layered characters contained within LimeZu's Modern Interiors Asset Pack.  
+| Type                       | Description                                                                      |
+| -------------------------- | -------------------------------------------------------------------------------- |
+| [Layered Character Type](xref:layered-character-type) | Multiple spritesheets (e.g., Body, Hair, Outfit, Accessory) combined at runtime. |
+| [Unified Character Type](xref:unified-character-type) | A single preassembled spritesheet for the whole character.                       |
 
 ---
 
 ## Get Started
-Check out the [Getting Started Guide](<xref:basic-concepts>) to begin
+
+Start with the [**Basic Concepts**](xref:basic-concepts) to learn about character types, templates, groups and how they all work together.
+
+### Quick Links
+- [Built-in Characters](xref:built-in-characters)
+- [Character Types](xref:character-types)
+- [Character Templates](xref:character-templates)
+- [Character Usage](xref:character-usage)
+- [Character Creator](xref:character-creator-overview)
 
 ---
 
-## Version 0.2.0
+_Last updated: October 2025 — Version 0.2.0_

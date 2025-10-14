@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Quick Start Guide | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Quick Start Guide | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../images/logos/favicon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/Temp.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="temp">
+<h1 id="quick-start-guide">Quick Start Guide</h1>
+
+<p><img src="../images/logos/blazertech-character-management-system-cover-iamge.png" alt="BlazerTech Character Management System Logo"></p>
+<p>Welcome to the <strong>BlazerTech Character Management System</strong>!<br>
+This guide will help you create your first characters and display them in your scene — whether you're using <strong>Unified</strong> or <strong>Layered</strong> characters.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>It’s recommended to read through the <a class="xref" href="getting-started/basic-concepts.html">Basic Concepts</a> page first to understand how character types, templates, and usage all fit together.</p>
+</div>
+<hr>
+<h2 id="-video-guides">🎥 Video Guides</h2>
+<p>Prefer video tutorials? Here are some setup guides to get you started:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=JMOD0XNIkFA"><strong>Layered Character Type Setup Guide</strong></a> — Create a Layered Character Type, build a template, and render your character.</li>
+<li><a href="https://www.youtube.com/watch?v=GT25zq6KCCE"><strong>Unified Character Type Setup Guide</strong></a> — Set up a Unified Character Type, make a template, and render it in-game.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>These videos will be periodically updated as the <strong>Character Management System</strong> evolves.<br>
+Finalized versions will be published closer to the full release.</p>
+</div>
+<hr>
+<h2 id="-step-1--create-a-character-type">🧱 Step 1 — Create a Character Type</h2>
+<p>If you only plan to use the included characters, you can skip ahead to <a href="#-step-2--create-a-character-template">Creating a Character Template</a>.</p>
+<p>To create a new Character Type:</p>
+<p><strong>Right-click</strong> in the <strong>Project window</strong> →<br>
+<code>Create &gt; BlazerTech &gt; Character Management System</code> →<br>
+Select <strong>Layered Character Type</strong> or <strong>Unified Character Type</strong>.</p>
+<p>You can name this asset anything you like.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Not sure which one to use? See <a class="xref" href="character-types.html#character-type-variants">Character Type Variants</a> for a comparison of Unified vs. Layered characters.</p>
+</div>
+<hr>
+<h3 id="-character-type-core-fields">⚙️ Character Type Core Fields</h3>
+<p>Each Character Type — whether Unified or Layered — includes three key fields:</p>
+<h4 id="character-type-id"><strong>Character Type ID</strong></h4>
+<p>A <strong>unique identifier</strong> for this Character Type.<br>
+This must be unique across all types to avoid conflicts.</p>
+<h4 id="base-spritesheet"><strong>Base Spritesheet</strong></h4>
+<p>The master spritesheet that defines the character’s frame size and layout.<br>
+All other spritesheets for this type must match its exact dimensions.</p>
+<ul>
+<li>Set <strong>Sprite Mode</strong> to <strong>Multiple</strong> (to slice frames individually).</li>
+<li>Use the bare character (no outfit, hair, or accessories) as your base.</li>
+</ul>
+<p>📘 <a class="xref" href="character-type-core.html#base-spritesheet">Read More → Base Spritesheet</a></p>
+<h4 id="character-controller-optional"><strong>Character Controller</strong> (Optional)</h4>
+<p>Optionally assign an <strong>Animator Controller</strong> for characters of this type.<br>
+Animations should use sprites from the <strong>Base Spritesheet</strong> so they display correctly when rendered through the Character Shader.</p>
+<p>📘 <a class="xref" href="character-usage.html#the-character-shader">Read More → Character Shader</a><br>
+📘 <a class="xref" href="character-type-core.html#character-controller">Read More → Character Controller</a></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Unified Character Types are complete at this stage. No further setup is required.</p>
+</div>
+<hr>
+<h3 id="-layered-character-setup">🧩 Layered Character Setup</h3>
+<p>Layered Characters are composed of multiple sprite layers (for example: <strong>Body</strong>, <strong>Outfit</strong>, <strong>Hair</strong>, <strong>Accessory</strong>).<br>
+Each layer must be defined as its own <strong>Character Layer Asset</strong>.</p>
+<p>To create a new layer:</p>
+<p><strong>Right-click</strong> the <strong>Project window</strong> →<br>
+<code>Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type &gt; Character Layer</code></p>
+<p>Each <strong>Character Layer</strong> represents a single visual layer and contains a list of possible sprite options (called <strong>Layer Options</strong>).</p>
+<p>📘 <a class="xref" href="character-layers.html">Read More → Character Layers</a></p>
+<hr>
+<h2 id="-step-2--create-a-character-template">🧬 Step 2 — Create a Character Template</h2>
+<p>Once your Character Type is ready, the next step is to create a <strong>Character Template</strong> — a reusable blueprint that defines how the character will look when instantiated.</p>
+<p><strong>Right-click</strong> the <strong>Project window</strong> →<br>
+<code>Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates</code> →<br>
+Select <strong>Layered Character Template</strong> or <strong>Unified Character Template</strong>.</p>
+<hr>
+<h3 id="-unified-character-template">🧍 Unified Character Template</h3>
+<p>A <strong>Unified Character Template</strong> requires:</p>
+<ol>
+<li>A reference to its <strong>Unified Character Type</strong>.</li>
+<li>A <strong>Character Name</strong>.</li>
+<li>A reference to the character’s <strong>Spritesheet</strong>.</li>
+</ol>
+<h4 id="spritesheet-requirements">Spritesheet Requirements:</h4>
+<ul>
+<li>Must match the <strong>Base Spritesheet’s</strong> size and frame layout.</li>
+<li><strong>Sprite Mode:</strong> <code>Single</code></li>
+<li><strong>Filter Mode:</strong> <code>Point (No Filter)</code></li>
+<li><em>(Optional)</em> <strong>Compression:</strong> <code>None</code> (recommended for pixel art)</li>
+</ul>
+<p>Once set up, move to <a href="#-step-3--character-usage">Character Usage</a> to see it in action.</p>
+<p>📘 <a class="xref" href="character-templates.html#unified-character-template">Read Also → Unified Character Template</a></p>
+<hr>
+<h3 id="-layered-character-template">🧕 Layered Character Template</h3>
+<p>A <strong>Layered Character Template</strong> also references a <strong>Layered Character Type</strong> and defines a name for the character.</p>
+<p>When assigned, the <strong>Layers List</strong> automatically appears — matching the layers from the Character Type.<br>
+Each entry allows you to select a <strong>Layer Option</strong> (sprite variant) from a dropdown list.</p>
+<p><img src="../images/character-templates/layered-character-template-layers-list.png" alt="Layered Character Template Layers List"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If your layers list ever appears incorrect, click <strong>Recreate List</strong> at the bottom to refresh it.<br>
+<em>(Note: this will reset any selected options.)</em></p>
+</div>
+<p>📘 <a class="xref" href="character-templates.html#layered-character-template">Read Also → Layered Character Template</a></p>
+<hr>
+<h2 id="-step-3--character-usage">🎮 Step 3 — Character Usage</h2>
+<p>The simplest way to display a character in your scene is by using a <strong>Character Renderer</strong> component.</p>
+<table>
+<thead>
+<tr>
+<th>Character Type</th>
+<th>Use This Component</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Unified</strong></td>
+<td><code>Unified Character Template Renderer</code></td>
+</tr>
+<tr>
+<td><strong>Layered</strong></td>
+<td><code>Layered Character Template Renderer</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="-character-renderer-fields">🔩 Character Renderer Fields</h3>
+<h4 id="references"><strong>References</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Renderer</strong></td>
+<td>Typically a <code>Sprite Renderer</code>. The <strong>Character Shader</strong> will apply to this.</td>
+</tr>
+<tr>
+<td><strong>Set Animator Controller</strong></td>
+<td>Toggles whether to use the <strong>Character Controller</strong> from the Character Type.</td>
+</tr>
+<tr>
+<td><strong>Animator</strong></td>
+<td>The <code>Animator</code> component to assign the controller to.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="loading-settings"><strong>Loading Settings</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Loading Mode</strong></td>
+<td><code>Asynchronous</code> — loads in the background without freezing gameplay.<br><code>Synchronous</code> — loads immediately but may cause a short pause.</td>
+</tr>
+<tr>
+<td><strong>Load Character On Start</strong></td>
+<td>Automatically loads the character in <code>Start()</code>. If disabled, call <code>GetAndShowCharacter()</code> manually.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="template-reference"><strong>Template Reference</strong></h4>
+<p>At the bottom of the component, assign your <strong>Character Template</strong> (Unified or Layered).<br>
+This defines which character is created at runtime.</p>
+<hr>
+<h2 id="-final-step--test-it">🧾 Final Step — Test It!</h2>
+<p>Press <strong>Play</strong> in the Unity Editor.<br>
+If <strong>Load Character On Start</strong> is enabled, your character should appear in the scene automatically.</p>
+<p>🎉 <strong>Congratulations!</strong><br>
+You’ve successfully created and displayed your first BlazerTech character.</p>
+<hr>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Once you’re comfortable with templates, try experimenting with the <strong>Character Creator Menu</strong> for full runtime customization and randomization features.</p>
+<p>📘 <a href="xref:character-creator">Learn More → Character Creator</a></p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/Temp.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

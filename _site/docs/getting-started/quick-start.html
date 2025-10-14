@@ -88,8 +88,13 @@
 <h1 id="quick-start-guide">Quick Start Guide</h1>
 
 <p><img src="../../images/logos/blazertech-character-management-system-cover-iamge.png" alt="Logo"></p>
-<p>This guide should get you on your feet and teach you the basics of how to use the <strong>BlazerTech Character Management System</strong>.</p>
+<p>Welcome to the <strong>BlazerTech Character Management System</strong>!<br>
+This guide will get you on your feet and teach you the basics of setting up the core for all your characters along with creating and rendering your first character.</p>
+<p>This guide will cover the setup process for both <strong>Unified</strong> and <strong>Layered Characters</strong>.</p>
+<div class="TIP">
+<h5>Tip</h5>
 <p>It's recommended to read through the <a class="xref" href="basic-concepts.html">Basic Concepts</a> before reading the <strong>Quick Start Guide</strong>.</p>
+</div>
 <h2 id="video-guides">Video Guides</h2>
 <p>Prefer video guides? I've got you covered!</p>
 <ul>
@@ -98,130 +103,159 @@
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>These videos will become dated fast as I continue to improve the <strong>Character Managemnt System</strong>. Finalized versions of these videos will be created close to the full release.</p>
+<p>These videos will become dated fast as I continue to improve the <strong>Character Managemnt System</strong>.<br>
+Finalized versions of these videos will be created close to the full release.</p>
 </div>
-<h2 id="creating-a-character-type">Creating a Character Type</h2>
-<p>If you only plan to use the built-in characters you can skip straight to <a href="#creating-a-character-template">Creating a Character Template</a></p>
-<p>This guide will show you how to create both <strong>Unified</strong> and <strong>Layered Characters</strong>.</p>
-<p><strong>Create a Character Type Asset</strong>
-<strong>Right click</strong> the <strong>Project window</strong> and navigate to <strong>Create &gt; BlazerTech &gt; Character Management System</strong> and select either <strong>Layered Character Type</strong> or <strong>Unified Character Type</strong>.</p>
+<h2 id="1create-a-character-type">1️⃣Create a Character Type</h2>
+<p>If you only plan to use the built-in characters you can skip straight to <a href="#creating-a-character-template">Creating a Character Template</a>.</p>
+<p>Create a Character Type asset:</p>
+<p><strong>Right click</strong> the <strong>Project window</strong> and navigate to<br>
+<code>Create &gt; BlazerTech &gt; Character Management System</code><br>
+and select either <strong>Layered Character Type</strong> or <strong>Unified Character Type</strong>.</p>
+<p>You can name this asset whatever you'd like.</p>
 <div class="TIP">
 <h5>Tip</h5>
 <p>Unsure which <strong>Character Type</strong> to create? Read more about the difference between them <a class="xref" href="../character-types.html#character-type-variants">here</a></p>
 </div>
-<p>You can name the asset whatever you'd like.</p>
 <h3 id="character-type-core-fields">Character Type Core Fields</h3>
-<p>Three fields are required regardless of the Character Type you chose.</p>
-<p><strong>Character Type ID</strong>:<br>
-A <strong>unique</strong> identifier for this Character Type. Can be whatever you want as long as it's not the same as another Character Type.</p>
-<p><strong>Base Spritesheet</strong>:<br>
-The core spritesheet that contains all frames that characters of this type will include.<br>
-All future characters will need to have a spritesheet that is the exact same size as the <strong>Base Spritesheet</strong>.</p>
-<p>The Base Spritesheet should be the character in it's most barebones state without any extra clothing, hair, accessories, etc.
-Set the <strong>Sprite Mode</strong> of the spritesheet to <strong>Multiple</strong>. This will let you slice the spritesheet into multiple sprites so each frame can be used individually.</p>
+<p>The following fields are required regardless of the Character Type you choose.</p>
+<h4 id="character-type-id"><strong>Character Type ID</strong></h4>
+<p>A <strong>unique</strong> identifier for this Character Type.
+Must <strong>not</strong> be the same any other Character Types.</p>
+<h4 id="base-spritesheet"><strong>Base Spritesheet</strong></h4>
+<p>The core spritesheet that defines all animations &amp; individual frames that characters of this type will include.<br>
+All characters will need to have a spritesheet that is the exact same size as the <strong>Base Spritesheet</strong>.</p>
+<p>The Base Spritesheet will represent all characters of the same type. It's Recommended to make this spritesheet include your most barebones character.</p>
+<p>Set <strong>Sprite Mode</strong> of the spritesheet to <strong>Multiple</strong> (to slice frames individually).</p>
 <ul>
 <li><a class="xref" href="../character-type-core.html#base-spritesheet">Read More → Base Spritesheet</a></li>
 </ul>
-<p><strong>Character Controller</strong>: (Optional)<br>
-If you choose to, you can create an Animator Controller and assign it to the Character Controller field. Animation clips in the Animator Controller should use sprites from the <strong>Base Spritesheet</strong> otherwise the character won't be displayed correctly when the character shader is applied.</p>
-<p>Later in this guide when you learn how to use your character you can have the Character Controller automatically applied when the character is used.</p>
+<h4 id="character-controller-optional"><strong>Character Controller</strong> (Optional)</h4>
+<p>You can optionally assign an <strong>Animator Controller</strong> for characters of this type.<br>
+Animations should only use sprites from the <strong>Base Spritesheet</strong> otherwise they won't be renderered correctly with the <a class="xref" href="../character-usage.html#the-character-shader">Character Shader</a>.</p>
+<p>If you’re using your own movement or animator handling scripts, you can configure the <strong>Animator Controller</strong> however best fits your system.
+However the <strong>Character Management System</strong> also includes built-in movement and animator handler scripts Which require the <strong>Animator Controller</strong> be setup with specific parameters</p>
+<ul>
+<li><a class="xref" href="../character-animation-setup.html">Read More → Character Animation Setup</a></li>
+</ul>
+<p>Later in this guide when you learn how to render your character, you’ll see how the <strong>Character Controller</strong> can be automatically applied when the character is used.</p>
 <ul>
 <li><a class="xref" href="../character-usage.html#the-character-shader">Read More → Character Shader</a></li>
 <li><a class="xref" href="../character-type-core.html#character-controller">Read More → Character Controller</a></li>
 </ul>
+<div class="IMPORTANT">
+<h5>Important</h5>
 <p><strong>No further setup is required for Unified Character Types.</strong></p>
-<h3 id="layered-character-specific-setup">Layered Character Specific Setup</h3>
-<p>Since Layered Characters are built of multiple layers, we need to define what those layers are.</p>
-<p><strong>Create Layer Assets</strong>
-Each layer is represented as a separate scriptable object.
-To create a layer once again right click the <strong>Project window</strong> and navigate to <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type &gt; Character Layer</strong>.</p>
-<p>A layer asset contains all spritesheets that can be used for that specific layer. These are called Layer Options.</p>
-<p>Read <a class="xref" href="../character-layers.html">Character Layers</a> to learn how to properly setup each layer and add Layer Options.</p>
-<h2 id="creating-a-character-template">Creating a Character Template</h2>
-<p>Now that we have our character type created, we need an actual character.<br>
-There are many ways to create a character from a <strong>Character Type</strong> but for this guide we'll be using the simplest one, a <strong>Character Template</strong>.</p>
+</div>
+<h3 id="layered-character-type-setup">Layered Character Type Setup</h3>
+<p>Layered Characters are composed of multiple layers (eg: Body, Outfit, Hairstyle, Accessory), we need to define what those layers are.<br>
+Each layer must be defined as it's own Character Layer Definition Asset.</p>
+<p>To create a new layer:</p>
+<p><strong>Right click</strong> the <strong>Project window</strong> and navigate to<br>
+<code>Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type &gt; Character Layer</code>.</p>
+<p>Each <strong>Character Layer Definition</strong> represents a single visual layer and contains a list of possible spritesheets (Called <strong>Layer Options</strong>)</p>
+<ul>
+<li>Read <a class="xref" href="../character-layers.html">Character Layers</a> to learn how to properly setup each layer and add Layer Options.</li>
+</ul>
+<h2 id="2create-a-character-template">2️⃣Create a Character Template</h2>
+<p>Once your Character Type is setup, it's time to create a character.<br>
+There are many ways to create a character but for this guide we'll be using the simplest one, a <strong>Character Template</strong>.</p>
 <p>You can think of a <strong>Character Template</strong> as a blueprint that lets you create a character from it later during runtime.</p>
-<p><strong>Right click</strong> the <strong>Project window</strong> and navigate to <strong>Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates</strong> and select either <strong>Layered Character Template</strong> or <strong>Unified Character Template</strong>.</p>
+<p><strong>Right click</strong> the <strong>Project window</strong> and navigate to<br>
+<code>Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates</code><br>
+and select either <strong>Layered Character Template</strong> or <strong>Unified Character Template</strong>.</p>
+<hr>
 <h3 id="unified-character-template-setup">Unified Character Template Setup</h3>
-<p>A <strong>Unified Character Template</strong> requires 3 things</p>
+<p>A <strong>Unified Character Template</strong> requires:</p>
 <ol>
-<li>A reference to the <strong>Unified Character Type</strong> it's meant to be used for.</li>
-<li>A name for the character when it gets created.</li>
-<li>A reference to the spritesheet of the character.
-<ul>
-<li>This spritesheet should be the exact same size as the Base Spritesheet in the Character Type and contain the same animations.</li>
-<li><strong>Sprite Mode</strong> should be set to <strong>Single</strong> since we won't be using it directly. it'll be passed to the <strong>Character Shader</strong>.</li>
-<li>Set the <strong>Filter Mode</strong> to <strong>Point (No Filter)</strong></li>
-<li>Optionally set <strong>Compression</strong> to <strong>None</strong> (Generally not needed for pixel art)</li>
-</ul>
-</li>
+<li>A reference to it's <strong>Unified Character Type</strong>.</li>
+<li>A <strong>name</strong> for the character when it gets created.</li>
+<li>A reference to the <strong>spritesheet</strong> of the character.</li>
 </ol>
-<p>That's it! Now go to <a href="#character-usage">Character Usage</a> to learn how to create a character from your template.</p>
+<h4 id="spritesheet-requirements">Spritesheet Requirements:</h4>
 <ul>
-<li><a class="xref" href="../character-templates.html#unified-character-template">Read Also → Unified Character Template</a></li>
+<li>Must be the exact same size as the <strong>Base Spritesheet</strong> assigned in the <strong>Character Type</strong> and contain the same animations.</li>
+<li><strong>Sprite Mode:</strong> <code>Single</code> — We won't be using the spritesheet directly. it'll be passed to the <strong>Character Shader</strong>.</li>
+<li><strong>Filter Mode:</strong> <code>Point (No Filter)</code>.</li>
+<li>(Optionally) <strong>Compression:</strong> <code>None</code> (Generally not needed for pixel art).</li>
 </ul>
+<p>That's it! Now go to <a href="#3character-usage">Character Usage</a> to see it in action.</p>
+<ul>
+<li><a class="xref" href="../character-templates.html#unified-character-template">Read Also → Unified Character Templates</a></li>
+</ul>
+<hr>
 <h3 id="layered-character-template-setup">Layered Character Template Setup</h3>
-<p>A <strong>Layered Character Template</strong> requires a reference to the <strong>Layered Character Type</strong> it's meant to be used for. As well as a name for the character when it gets created.</p>
-<p>Once the <strong>Character Type</strong> has been set, a list of layers will appear. These are the same layers you setup in the <strong>Layered Character Type</strong>.</p>
-<p>Each entry in the list contains a dropdown allowing you to choose which layer option you want to use. And a search bar to narrow down the list if needed.</p>
+<p>A <strong>Layered Character Template</strong> requires a reference to the <strong>Layered Character Type</strong>. As well as a name for the character when it gets created.</p>
+<p>Once the <strong>Character Type</strong> has been assigned, a list of <strong>layers</strong> will appear. These are the same layers you setup in the <strong>Layered Character Type</strong>.</p>
+<p>Each entry lets you select a Layer Option through a dropdown.<br>
+Additionally the search bar can be used to narrow down the list.</p>
 <p><img src="../../images/character-templates/layered-character-template-layers-list.png" alt="Layered Character Template Layers List"></p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>If the layers list is not correct for whatever reason, you can click the <strong>Recreate List</strong> button at the bottom to remake the list. This will <strong>reset</strong> all layer options you chose.</p>
+<p>If the layers list ever appears incorrect or invalid, click <strong>Recreate List</strong> at the bottom to refresh the list.<br>
+(Note: This will <strong>reset</strong> any selected options)</p>
 </div>
 <ul>
-<li><a class="xref" href="../character-templates.html#layered-character-template">Read Also → Layered Character Template</a></li>
+<li><a class="xref" href="../character-templates.html#layered-character-template">Read Also → Layered Character Templates</a></li>
 </ul>
 <hr>
-<h2 id="character-usage">Character Usage</h2>
-<p>The easiest way to use a <strong>Unified</strong> or <strong>Layered Character</strong> is with a <strong>Character Loader</strong> component.</p>
-<p>If you're using a <strong>Unified Character Type</strong> add the <strong>Unified Character Template Loader</strong> component.<br>
-If you're using a <strong>Layered Character Type</strong> add the <strong>Layered Character Template Loader</strong> component.</p>
-<h3 id="character-loader-fields">Character Loader Fields</h3>
-<p>The following fields are required for all <strong>Character Loaders</strong>.</p>
-<h4 id="references">References</h4>
-<ul>
-<li><strong>Renderer</strong>
-<ul>
-<li>Most commonly a <code>Sprite Renderer</code> component. The <strong>Character Shader</strong> will be applied to this renderer.</li>
-</ul>
-</li>
-<li><strong>Set Animator Controller (Bool)</strong>
-<ul>
-<li>Toggles if the <strong>Character Controller</strong> from the <strong>Character Type</strong> should be used or not.</li>
-</ul>
-</li>
-<li><strong>Animator</strong>
-<ul>
-<li>The <code>Animator</code> component to apply the <strong>Animator Controller</strong> set in the <strong>Character Type</strong>.</li>
-</ul>
-</li>
-</ul>
-<h4 id="loading-settings">Loading Settings</h4>
-<ul>
-<li><strong>Loading Mode</strong>
-<ul>
-<li><strong>Asynchronous</strong> - Loads the character in the background without freezing the game. The character may not be visible right away while it loads.</li>
-<li><strong>Synchronous</strong> - Loads the character synchronously  which freezes the game while loading.</li>
-</ul>
-</li>
-<li><strong>Load Character On Start (Bool)</strong>
-<ul>
-<li>if toggled, the character will be loaded automatically when the <code>Start</code> method is called.</li>
-<li>If not toggled the character will have to be loaded by calling the <code>GetAndShowCharacter()</code> method.</li>
-</ul>
-</li>
-</ul>
-<h3 id="character-template-reference">Character Template Reference</h3>
-<p>At the bottom of the component is a field that says either:</p>
-<ul>
-<li><strong>Unified Character Template</strong></li>
-<li><strong>Layered Character Template</strong></li>
-</ul>
-<p>Depending on the <strong>Character Loader</strong> component you're using. Regardless, reference a <strong>Character Template</strong> in that field.<br>
-This is the template that will be used when creating a character during runtime.<br>
-Now play the game and if <code>Load Character On Start</code> is true then you'll see your character in-gama.</p>
-<p>Congrats! You now have your first working character!</p>
+<h2 id="3character-usage">3️⃣Character Usage</h2>
+<p>The easiest way to use a character is with a <strong>Character Renderer</strong> component.</p>
+<p>If you're using a <strong>Unified Character Type</strong> add the <strong>Unified Character Template Renderer</strong> component.<br>
+If you're using a <strong>Layered Character Type</strong> add the <strong>Layered Character Template Renderer</strong> component.</p>
+<h3 id="character-renderer-fields">Character Renderer Fields</h3>
+<p>The following fields are required for all <strong>Character Renderers</strong>.</p>
+<h4 id="references"><strong>References</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Renderer</strong></td>
+<td>Typically a <code>Sprite Renderer</code>. The <strong>Character Shader</strong> will be applied to this.</td>
+</tr>
+<tr>
+<td><strong>Set Animator Controller</strong></td>
+<td>Toggles whether to use the <strong>Character Controller</strong> from the Character Type.</td>
+</tr>
+<tr>
+<td><strong>Animator</strong></td>
+<td>The <code>Animator</code> component to assign the controller to.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="loading-settings"><strong>Loading Settings</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Loading Mode</strong></td>
+<td><code>Asynchronous</code>: loads in the background without freezing gameplay.<br><code>Synchronous</code>: loads immediately but may briefly freeze the game.</td>
+</tr>
+<tr>
+<td><strong>Load Character On Start</strong></td>
+<td>Automatically loads the character in <code>Start()</code>. If disabled, <code>GetAndShowCharacter()</code> must be called manually.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="template-reference"><strong>Template Reference</strong></h4>
+<p>At the bottom of the component, assign your <strong>Character Template</strong> (Unified or Layered).<br>
+This defines which character is created at runtime.</p>
+<h2 id="4test-your-character">4️⃣Test Your Character</h2>
+<p>Now enter <strong>Play Mode</strong>.<br>
+If <code>Load Character On Start</code> is enabled then you'll see your character in-gama.</p>
+<p><strong>Congrats!</strong><br>
+You now have your first working character! Creating more is as easy as creating and setting up a new <strong>Character Template</strong>.</p>
+<p><strong>Happy game making!</strong></p>
 
 </article>
 

@@ -8185,8 +8185,11 @@ references:
 - uid: character-usage
   name: Character Usage
   href: docs/character-usage.html
+- uid: installation
+  name: Installation and Requirements
+  href: docs/getting-started/installation-and-requirements.html
 - uid: landing
-  name: landing
+  name: BlazerTech Character Management System
   href: index.html
 - uid: layered-character-type
   name: Layered Character Type
@@ -8197,6 +8200,9 @@ references:
 - uid: quick-start
   name: Quick Start Guide
   href: docs/getting-started/quick-start.html
+- uid: temp
+  name: Quick Start Guide
+  href: docs/Temp.html
 - uid: unified-character-type
   name: Unified Character Type
   href: docs/unified-character-type.html

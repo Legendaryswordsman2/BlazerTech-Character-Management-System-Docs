@@ -1,3 +1,7 @@
+---
+uid: installation
+---
+
 # Installation and Requirements
 
 This guide covers the **requirements** and **installation steps** for the **BlazerTech Character Management System** (BT-CMS).

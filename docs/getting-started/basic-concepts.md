@@ -4,7 +4,7 @@ uid: basic-concepts
 
 # Basic Concepts
 
-This page introduces the **core principles** of the **Character Management System**:  
+This page introduces the **main features** of the **Character Management System**:  
 - [**Character Types**](#character-types) – Defines the core of every character.  
 - [**Character Templates**](#character-templates) – Blueprints for creating characters later.  
 - [**Character Usage**](#character-usage) – Scripts to load and render characters.  
@@ -42,10 +42,10 @@ A **Character Template** is a [Scriptable Object](https://docs.unity3d.com/6000.
 
 ## Character Usage
 
-### Character Loader Components
-Once a **Unified or Layered Character** has been created, it can be Used through one the following scripts:
+### Character Renderer Components
+Once a **Unified or Layered Character** has been created, it can be used through one the following scripts:
 
-| Loader                                                                                          | Purpose                                                      |
+| Renderer Component                                                                                  | Purpose                                                      |
 | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | [Layered Character Group Renderer](xref:character-usage#layered-character-group-renderer)       | Load and render pre-existing Layered Character from a group. |
 | [Layered Character Template Renderer](xref:character-usage#layered-character-template-renderer) | Create/load and render a Layered Character from a template.  |

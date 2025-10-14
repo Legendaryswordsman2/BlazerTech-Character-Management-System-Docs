@@ -68,7 +68,5 @@
         href: character-creator/history/character-creator-history-panels.md
       - name: History Undo/Redo
         href: character-creator/history/character-creator-history-undo-redo.md
-
-  - name: Advanced
-  - name: Creating Characters
-    href: advanced/creating-characters.md
+  - name: Temp
+    href: Temp.md

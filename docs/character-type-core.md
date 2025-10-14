@@ -56,7 +56,7 @@ An Animator Controller can be created and used to switch between different anima
 This Animator Controller can then be referenced in the **CharacterController** field inside your **Character Type**
 
 > [!TIP]  
-> When using a **Character Loader component**, this **Animator Controller** will be applied automatically if **Set Animator Controller** is enabled.  
+> When using a **Character Renderer component**, this **Animator Controller** will be applied automatically if **Set Animator Controller** is enabled.  
 > See [Character Usage](xref:character-usage) for more info.
 
 [API](xref:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.CharacterController)
