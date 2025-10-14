@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Quick Start Guide | BlazerTech Character Management System </title>
+      <title>Character Animation Setup | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Quick Start Guide | BlazerTech Character Management System ">
+      <meta name="title" content="Character Animation Setup | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../images/logos/favicon.png">
@@ -85,186 +85,174 @@
         </div>
 
         <article data-uid="temp">
-<h1 id="quick-start-guide">Quick Start Guide</h1>
+<h1 id="character-animation-setup">Character Animation Setup</h1>
 
-<p><img src="../images/logos/blazertech-character-management-system-cover-iamge.png" alt="BlazerTech Character Management System Logo"></p>
-<p>Welcome to the <strong>BlazerTech Character Management System</strong>!<br>
-This guide will help you create your first characters and display them in your scene — whether you're using <strong>Unified</strong> or <strong>Layered</strong> characters.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>It’s recommended to read through the <a class="xref" href="getting-started/basic-concepts.html">Basic Concepts</a> page first to understand how character types, templates, and usage all fit together.</p>
-</div>
+<p>This guide explains how to create and configure an <strong>Animator Controller</strong> to be used by your <strong>Character Types</strong> in the BlazerTech Character Management System (BT-CMS).</p>
 <hr>
-<h2 id="-video-guides">🎥 Video Guides</h2>
-<p>Prefer video tutorials? Here are some setup guides to get you started:</p>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=JMOD0XNIkFA"><strong>Layered Character Type Setup Guide</strong></a> — Create a Layered Character Type, build a template, and render your character.</li>
-<li><a href="https://www.youtube.com/watch?v=GT25zq6KCCE"><strong>Unified Character Type Setup Guide</strong></a> — Set up a Unified Character Type, make a template, and render it in-game.</li>
-</ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>These videos will be periodically updated as the <strong>Character Management System</strong> evolves.<br>
-Finalized versions will be published closer to the full release.</p>
-</div>
-<hr>
-<h2 id="-step-1--create-a-character-type">🧱 Step 1 — Create a Character Type</h2>
-<p>If you only plan to use the included characters, you can skip ahead to <a href="#-step-2--create-a-character-template">Creating a Character Template</a>.</p>
-<p>To create a new Character Type:</p>
-<p><strong>Right-click</strong> in the <strong>Project window</strong> →<br>
-<code>Create &gt; BlazerTech &gt; Character Management System</code> →<br>
-Select <strong>Layered Character Type</strong> or <strong>Unified Character Type</strong>.</p>
-<p>You can name this asset anything you like.</p>
-<div class="TIP">
-<h5>Tip</h5>
-<p>Not sure which one to use? See <a class="xref" href="character-types.html#character-type-variants">Character Type Variants</a> for a comparison of Unified vs. Layered characters.</p>
-</div>
-<hr>
-<h3 id="-character-type-core-fields">⚙️ Character Type Core Fields</h3>
-<p>Each Character Type — whether Unified or Layered — includes three key fields:</p>
-<h4 id="character-type-id"><strong>Character Type ID</strong></h4>
-<p>A <strong>unique identifier</strong> for this Character Type.<br>
-This must be unique across all types to avoid conflicts.</p>
-<h4 id="base-spritesheet"><strong>Base Spritesheet</strong></h4>
-<p>The master spritesheet that defines the character’s frame size and layout.<br>
-All other spritesheets for this type must match its exact dimensions.</p>
-<ul>
-<li>Set <strong>Sprite Mode</strong> to <strong>Multiple</strong> (to slice frames individually).</li>
-<li>Use the bare character (no outfit, hair, or accessories) as your base.</li>
-</ul>
-<p>📘 <a class="xref" href="character-type-core.html#base-spritesheet">Read More → Base Spritesheet</a></p>
-<h4 id="character-controller-optional"><strong>Character Controller</strong> (Optional)</h4>
-<p>Optionally assign an <strong>Animator Controller</strong> for characters of this type.<br>
-Animations should use sprites from the <strong>Base Spritesheet</strong> so they display correctly when rendered through the Character Shader.</p>
-<p>📘 <a class="xref" href="character-usage.html#the-character-shader">Read More → Character Shader</a><br>
-📘 <a class="xref" href="character-type-core.html#character-controller">Read More → Character Controller</a></p>
-<div class="IMPORTANT">
-<h5>Important</h5>
-<p>Unified Character Types are complete at this stage. No further setup is required.</p>
-</div>
-<hr>
-<h3 id="-layered-character-setup">🧩 Layered Character Setup</h3>
-<p>Layered Characters are composed of multiple sprite layers (for example: <strong>Body</strong>, <strong>Outfit</strong>, <strong>Hair</strong>, <strong>Accessory</strong>).<br>
-Each layer must be defined as its own <strong>Character Layer Asset</strong>.</p>
-<p>To create a new layer:</p>
-<p><strong>Right-click</strong> the <strong>Project window</strong> →<br>
-<code>Create &gt; BlazerTech &gt; Character Management System &gt; Layered Character Type &gt; Character Layer</code></p>
-<p>Each <strong>Character Layer</strong> represents a single visual layer and contains a list of possible sprite options (called <strong>Layer Options</strong>).</p>
-<p>📘 <a class="xref" href="character-layers.html">Read More → Character Layers</a></p>
-<hr>
-<h2 id="-step-2--create-a-character-template">🧬 Step 2 — Create a Character Template</h2>
-<p>Once your Character Type is ready, the next step is to create a <strong>Character Template</strong> — a reusable blueprint that defines how the character will look when instantiated.</p>
-<p><strong>Right-click</strong> the <strong>Project window</strong> →<br>
-<code>Create &gt; BlazerTech &gt; Character Management System &gt; Character Templates</code> →<br>
-Select <strong>Layered Character Template</strong> or <strong>Unified Character Template</strong>.</p>
-<hr>
-<h3 id="-unified-character-template">🧍 Unified Character Template</h3>
-<p>A <strong>Unified Character Template</strong> requires:</p>
-<ol>
-<li>A reference to its <strong>Unified Character Type</strong>.</li>
-<li>A <strong>Character Name</strong>.</li>
-<li>A reference to the character’s <strong>Spritesheet</strong>.</li>
-</ol>
-<h4 id="spritesheet-requirements">Spritesheet Requirements:</h4>
-<ul>
-<li>Must match the <strong>Base Spritesheet’s</strong> size and frame layout.</li>
-<li><strong>Sprite Mode:</strong> <code>Single</code></li>
-<li><strong>Filter Mode:</strong> <code>Point (No Filter)</code></li>
-<li><em>(Optional)</em> <strong>Compression:</strong> <code>None</code> (recommended for pixel art)</li>
-</ul>
-<p>Once set up, move to <a href="#-step-3--character-usage">Character Usage</a> to see it in action.</p>
-<p>📘 <a class="xref" href="character-templates.html#unified-character-template">Read Also → Unified Character Template</a></p>
-<hr>
-<h3 id="-layered-character-template">🧕 Layered Character Template</h3>
-<p>A <strong>Layered Character Template</strong> also references a <strong>Layered Character Type</strong> and defines a name for the character.</p>
-<p>When assigned, the <strong>Layers List</strong> automatically appears — matching the layers from the Character Type.<br>
-Each entry allows you to select a <strong>Layer Option</strong> (sprite variant) from a dropdown list.</p>
-<p><img src="../images/character-templates/layered-character-template-layers-list.png" alt="Layered Character Template Layers List"></p>
-<div class="TIP">
-<h5>Tip</h5>
-<p>If your layers list ever appears incorrect, click <strong>Recreate List</strong> at the bottom to refresh it.<br>
-<em>(Note: this will reset any selected options.)</em></p>
-</div>
-<p>📘 <a class="xref" href="character-templates.html#layered-character-template">Read Also → Layered Character Template</a></p>
-<hr>
-<h2 id="-step-3--character-usage">🎮 Step 3 — Character Usage</h2>
-<p>The simplest way to display a character in your scene is by using a <strong>Character Renderer</strong> component.</p>
+<h2 id="overview">Overview</h2>
+<p>Every <strong>Character Type</strong> can include an <strong>Animator Controller</strong> asset.<br>
+This controller defines how your character’s sprites animate during gameplay — such as idle, walking, or interacting.</p>
 <table>
 <thead>
 <tr>
 <th>Character Type</th>
-<th>Use This Component</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Unified</strong></td>
-<td><code>Unified Character Template Renderer</code></td>
-</tr>
-<tr>
-<td><strong>Layered</strong></td>
-<td><code>Layered Character Template Renderer</code></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h3 id="-character-renderer-fields">🔩 Character Renderer Fields</h3>
-<h4 id="references"><strong>References</strong></h4>
-<table>
-<thead>
-<tr>
-<th>Field</th>
+<th>Animator Support</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Renderer</strong></td>
-<td>Typically a <code>Sprite Renderer</code>. The <strong>Character Shader</strong> will apply to this.</td>
+<td><strong>Unified Character Type</strong></td>
+<td>✅ Supported</td>
+<td>Animations use a single pre-made spritesheet.</td>
 </tr>
 <tr>
-<td><strong>Set Animator Controller</strong></td>
-<td>Toggles whether to use the <strong>Character Controller</strong> from the Character Type.</td>
-</tr>
-<tr>
-<td><strong>Animator</strong></td>
-<td>The <code>Animator</code> component to assign the controller to.</td>
+<td><strong>Layered Character Type</strong></td>
+<td>✅ Supported</td>
+<td>Each animation frame is composited from multiple layers (body, outfit, hair, etc.).</td>
 </tr>
 </tbody>
 </table>
-<h4 id="loading-settings"><strong>Loading Settings</strong></h4>
+<div class="NOTE">
+<h5>Note</h5>
+<p>While animations are optional, they are highly recommended to make your characters feel dynamic.</p>
+</div>
+<hr>
+<h2 id="1-create-an-animator-controller">1. Create an Animator Controller</h2>
+<ol>
+<li>In the <strong>Project window</strong>, right-click and select<br>
+<strong>Create → Animator Controller</strong>.</li>
+<li>Give it a clear name, such as<br>
+<code>Player_AnimatorController</code> or <code>NPC_AnimatorController</code>.</li>
+<li>Double-click to open it in the <strong>Animator window</strong>.</li>
+</ol>
+<p>You should now see an empty <strong>State Machine</strong> with an <strong>Entry</strong> node.</p>
+<hr>
+<h2 id="2-add-animation-states">2. Add Animation States</h2>
+<p>Each state represents one animation (for example, Idle, Walk, Run).</p>
+<ol>
+<li>Right-click the Animator graph and select <strong>Create State → Empty</strong>.</li>
+<li>Name the state <code>Idle</code>.</li>
+<li>Assign an animation clip to the state’s <strong>Motion</strong> field.</li>
+<li>Repeat for additional animations like <code>Walk</code>, <code>Run</code>, or <code>Interact</code>.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>For pixel-based characters, ensure all clips use the same sprite dimensions as your <strong>Base Spritesheet</strong> defined in the Character Type.</p>
+</div>
+<hr>
+<h2 id="3-define-parameters">3. Define Parameters</h2>
+<p>Parameters allow your scripts (or the built-in movement handlers) to control animations.</p>
 <table>
 <thead>
 <tr>
-<th>Field</th>
+<th>Parameter</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Loading Mode</strong></td>
-<td><code>Asynchronous</code> — loads in the background without freezing gameplay.<br><code>Synchronous</code> — loads immediately but may cause a short pause.</td>
+<td><strong>Horizontal</strong></td>
+<td>Float</td>
+<td>The current movement direction on the X axis.</td>
 </tr>
 <tr>
-<td><strong>Load Character On Start</strong></td>
-<td>Automatically loads the character in <code>Start()</code>. If disabled, call <code>GetAndShowCharacter()</code> manually.</td>
+<td><strong>Vertical</strong></td>
+<td>Float</td>
+<td>The current movement direction on the Y axis.</td>
+</tr>
+<tr>
+<td><strong>Speed</strong></td>
+<td>Float</td>
+<td>How fast the character is moving. Usually between 0 and 1.</td>
+</tr>
+<tr>
+<td><strong>IsMoving</strong> <em>(optional)</em></td>
+<td>Bool</td>
+<td>True when the character is moving.</td>
 </tr>
 </tbody>
 </table>
-<h4 id="template-reference"><strong>Template Reference</strong></h4>
-<p>At the bottom of the component, assign your <strong>Character Template</strong> (Unified or Layered).<br>
-This defines which character is created at runtime.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>These parameter names must match <strong>exactly</strong> when using the built-in <strong>Animator Handler</strong> or <strong>Top-Down Movement Controller</strong> scripts.</p>
+</div>
 <hr>
-<h2 id="-final-step--test-it">🧾 Final Step — Test It!</h2>
-<p>Press <strong>Play</strong> in the Unity Editor.<br>
-If <strong>Load Character On Start</strong> is enabled, your character should appear in the scene automatically.</p>
-<p>🎉 <strong>Congratulations!</strong><br>
-You’ve successfully created and displayed your first BlazerTech character.</p>
+<h2 id="4-create-blend-trees-optional">4. Create Blend Trees (Optional)</h2>
+<p>For smoother directional animation:</p>
+<ol>
+<li>Right-click → <strong>Create State → From New Blend Tree</strong>.</li>
+<li>In the <strong>Blend Tree</strong>, set <strong>Blend Type</strong> to <code>2D Freeform Directional</code>.</li>
+<li>Add motions for each direction (Up, Down, Left, Right).</li>
+<li>Use <code>Horizontal</code> and <code>Vertical</code> as the <strong>Blend Parameters</strong>.</li>
+</ol>
+<hr>
+<h2 id="5-assign-to-a-character-type">5. Assign to a Character Type</h2>
+<p>Once your Animator Controller is complete:</p>
+<ol>
+<li>Select your <strong>Character Type asset</strong> (<code>LayeredCharacterTypeSO</code> or <code>UnifiedCharacterTypeSO</code>).</li>
+<li>In the <strong>Inspector</strong>, find the <strong>Character Controller</strong> field.</li>
+<li>Drag your new <strong>Animator Controller</strong> into this field.</li>
+</ol>
+<p>Your setup should look similar to this:</p>
+<p><img src="../images/screenshots/animator-controller-field.png" alt="Animator Controller Field in Inspector"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The Character Controller is stored directly in the Character Type.<br>
+Any characters created from this type will automatically use it when rendered.</p>
+</div>
+<hr>
+<h2 id="6-test-your-animation">6. Test Your Animation</h2>
+<p>To test your setup:</p>
+<ol>
+<li>Place a <strong>Character Loader</strong> (such as <code>LayeredCharacterTemplateLoader</code>) in a scene.</li>
+<li>Assign a Character Template that uses your configured <strong>Character Type</strong>.</li>
+<li>Press <strong>Play</strong> and move your character (if using the built-in controller).</li>
+</ol>
+<p>You should now see your animations play according to the character’s movement direction and speed.</p>
+<hr>
+<h2 id="7-example-animator-setup">7. Example Animator Setup</h2>
+<p>Here’s an example configuration for a top-down 4-direction character:</p>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Transition</th>
+<th>Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Idle → Walk</td>
+<td>Speed &gt; 0.1</td>
+<td></td>
+</tr>
+<tr>
+<td>Walk → Idle</td>
+<td>Speed &lt; 0.1</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Each directional sprite can be controlled via a <strong>2D Blend Tree</strong> driven by <code>Horizontal</code> and <code>Vertical</code>.</p>
+<hr>
+<h2 id="8-related-topics">8. Related Topics</h2>
+<ul>
+<li><a class="xref" href="character-types.html">Character Types</a></li>
+<li><a class="xref" href="character-usage.html">Character Usage</a></li>
+<li><a href="xref:character-creator">Character Creator</a></li>
+</ul>
 <hr>
 <div class="TIP">
 <h5>Tip</h5>
-<p>Once you’re comfortable with templates, try experimenting with the <strong>Character Creator Menu</strong> for full runtime customization and randomization features.</p>
-<p>📘 <a href="xref:character-creator">Learn More → Character Creator</a></p>
+<p>If you’re using custom movement logic, you can still drive your Animator Controller manually:</p>
+<pre><code class="lang-csharp">animator.SetFloat(&quot;Horizontal&quot;, direction.x);
+animator.SetFloat(&quot;Vertical&quot;, direction.y);
+animator.SetFloat(&quot;Speed&quot;, speed);
+</code></pre>
 </div>
+<hr>
 
 </article>
 

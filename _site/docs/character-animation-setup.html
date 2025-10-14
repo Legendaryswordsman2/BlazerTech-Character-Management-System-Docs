@@ -87,6 +87,23 @@
         <article data-uid="character-animation-setup">
 <h1 id="character-animation-setup">Character Animation Setup</h1>
 
+<p>This page goes over how to create and properly configure an <strong>Animator Controller</strong> to be used by your <strong>Character Types</strong>.</p>
+<h2 id="overview">Overview</h2>
+<p>Every Character Type can include an <strong>Animator Controller</strong>.
+This controller provides uesable animations from the sprites contained within the Base Spritesheet set in the <strong>Character Type</strong></p>
+<p>The setup for the <strong>Animator Controller</strong> is the same regardless of if you're using a <strong>Unified</strong> or <strong>Layered Character Type</strong>.</p>
+<p>The most important requirement is that all animations <strong>MUST</strong> only use sprites from the <strong>Base Spritesheet</strong> otherwise they won't be renderered correctly when used with the <a class="xref" href="character-usage.html#the-character-shader">Character Shader</a></p>
+<p>If you already have your own movement and animator handling scripts, you can setup the Animator Controller however you need for you project. That means you can create your own Parameters, animations, blend trees, etc.</p>
+<h2 id="integration-with-included-movement-and-animator-handling-scripts">Integration With Included Movement And Animator Handling Scripts</h2>
+<p>The included scripts contain support for the following movement animations:</p>
+<ul>
+<li>Idle</li>
+<li>Walk</li>
+<li>Sprint</li>
+<li>Crouch-Idle</li>
+<li>Crouch-Moving</li>
+</ul>
+<p>Additional animations can be triggered through the PlayAnimation(AnimationName) method on all <strong>Character Animation Handler components</strong>.</p>
 
 </article>
 
