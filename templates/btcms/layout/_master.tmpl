@@ -38,7 +38,7 @@
       <meta name="loc:copy" content="{{__global.copy}}">
       <meta name="loc:downloadPdf" content="{{__global.downloadPdf}}">
 
-      {{! ---------- BT-CMS: Social Meta (dynamic) ---------- }}
+      {{! ---------- Dynamic Open Graph ---------- }}
 
 {{! Site-wide fallbacks }}
 {{#_global}}
@@ -48,17 +48,17 @@
 
 {{! ---------- Title ---------- }}
 {{#og_title}}
-  <meta property="og:title" content="{{og_title}}" />
-  <meta name="twitter:title" content="{{og_title}}" />
+  <meta property="og:title" content="{{og_title}} | BlazerTech Character Management System" />
+  <meta name="twitter:title" content="{{og_title}} | BlazerTech Character Management System" />
 {{/og_title}}
 {{^og_title}}
   {{#title}}
-    <meta property="og:title" content="{{title}}" />
-    <meta name="twitter:title" content="{{title}}" />
+    <meta property="og:title" content="{{title}} | BlazerTech Character Management System" />
+    <meta name="twitter:title" content="{{title}} | BlazerTech Character Management System" />
   {{/title}}
   {{^title}}
-    <meta property="og:title" content="{{_appTitle}}" />
-    <meta name="twitter:title" content="{{_appTitle}}" />
+    <meta property="og:title" content="{{_appTitle}} | BlazerTech Character Management System" />
+    <meta name="twitter:title" content="{{_appTitle}} | BlazerTech Character Management System" />
   {{/title}}
 {{/og_title}}
 
@@ -78,8 +78,8 @@
       <meta name="twitter:description" content="{{summary}}" />
     {{/summary}}
     {{^summary}}
-      <meta property="og:description" content="Easily create, manage, and customize 2D characters in Unity." />
-      <meta name="twitter:description" content="Easily create, manage, and customize 2D characters in Unity." />
+      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects." />
+      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects." />
     {{/summary}}
   {{/description}}
 {{/og_description}}
@@ -100,9 +100,7 @@
   {{/image}}
 {{/og_image}}
 
-{{! ---------- Twitter Card ---------- }}
-<meta name="twitter:card" content="summary_large_image" />
-{{! ---------- END BT-CMS Social Meta ---------- }}
+{{! ---------- END Dynamic Open Graph ---------- }}
 
 
       <script type="module" src="./{{_rel}}public/docfx.min.js"></script>
