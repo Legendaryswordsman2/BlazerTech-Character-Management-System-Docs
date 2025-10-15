@@ -30,12 +30,21 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <!-- 🟦 Open Graph metadata for social sharing -->
-      <meta property="og:title" content="BlazerTech Character Management System">
-      <meta property="og:description" content="Easily create, manage, and customize 2D characters for Unity with runtime customization, templates, and a modular Character Creator Menu.">
-      <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
-      <meta property="og:url" content="https://blazertech-cms.com/">
-      <meta property="og:type" content="website">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/api/BlazerTech.CharacterManagement.Core.SerializableDictionary-2.html">
+
+    <meta property="og:title" content="BlazerTech Character Management System">
+    <meta name="twitter:title" content="BlazerTech Character Management System">
+
+      <meta property="og:description" content="Easily create, manage, and customize 2D characters in Unity.">
+      <meta name="twitter:description" content="Easily create, manage, and customize 2D characters in Unity.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
 
       <script type="module" src="./../public/docfx.min.js"></script>
 
@@ -94,21 +103,65 @@
         <article data-uid="BlazerTech.CharacterManagement.Core.SerializableDictionary`2">
 
 
-  <!-- 🟦 Open Graph metadata for social sharing -->
-  <meta property="og:title" content="BlazerTech Character Management System">
-  <meta property="og:description" content="Easily create, manage, and customize 2D characters for Unity with runtime customization, templates, and a modular Character Creator Menu.">
-  <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
-  <meta property="og:url" content="https://blazertech-cms.com/">
-  <meta property="og:type" content="website">
 
-  <!-- 🐦 Twitter Card metadata -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="BlazerTech Character Management System">
-  <meta name="twitter:description" content="A complete framework for creating and customizing 2D characters in Unity.">
-  <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+  <h1 id="BlazerTech_CharacterManagement_Core_SerializableDictionary_2" data-uid="BlazerTech.CharacterManagement.Core.SerializableDictionary`2" class="text-break">
+Class SerializableDictionary&lt;TKey, TValue&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/SerializableDictionary.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
 
-  <!-- 🎨 Theme color -->
-  <meta name="theme-color" content="#1a1a1a">
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BlazerTech.html">BlazerTech</a>.<a class="xref" href="BlazerTech.CharacterManagement.html">CharacterManagement</a>.<a class="xref" href="BlazerTech.CharacterManagement.Core.html">Core</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class SerializableDictionary&lt;TKey, TValue&gt; : Dictionary&lt;TKey, TValue&gt;, IDictionary&lt;TKey, TValue&gt;, ICollection&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IReadOnlyDictionary&lt;TKey, TValue&gt;, IReadOnlyCollection&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IDictionary, ICollection, IEnumerable, IDeserializationCallback, ISerializable, ISerializationCallbackReceiver</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TKey</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;TKey, TValue&gt;</div>
+      <div><span class="xref">SerializableDictionary&lt;TKey, TValue&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;TKey, TValue&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;TKey, TValue&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.idictionary">IDictionary</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.ideserializationcallback">IDeserializationCallback</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+      <div><span class="xref">ISerializationCallbackReceiver</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
 
 
   <h2 class="section" id="methods">Methods

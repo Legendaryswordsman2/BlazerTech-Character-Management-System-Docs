@@ -30,12 +30,21 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <!-- 🟦 Open Graph metadata for social sharing -->
-      <meta property="og:title" content="BlazerTech Character Management System">
-      <meta property="og:description" content="Easily create, manage, and customize 2D characters for Unity with runtime customization, templates, and a modular Character Creator Menu.">
-      <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
-      <meta property="og:url" content="https://blazertech-cms.com/">
-      <meta property="og:type" content="website">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html">
+
+    <meta property="og:title" content="BlazerTech Character Management System">
+    <meta name="twitter:title" content="BlazerTech Character Management System">
+
+    <meta property="og:description" content="Represents a character made of multiple modular layers, such as body, outfit, hairstyle, etc. Each layer can be placed on top of each other in order to create the final character.">
+    <meta name="twitter:description" content="Represents a character made of multiple modular layers, such as body, outfit, hairstyle, etc. Each layer can be placed on top of each other in order to create the final character.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
 
       <script type="module" src="./../public/docfx.min.js"></script>
 
@@ -94,21 +103,103 @@
         <article data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter">
 
 
-  <!-- 🟦 Open Graph metadata for social sharing -->
-  <meta property="og:title" content="BlazerTech Character Management System">
-  <meta property="og:description" content="Easily create, manage, and customize 2D characters for Unity with runtime customization, templates, and a modular Character Creator Menu.">
-  <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
-  <meta property="og:url" content="https://blazertech-cms.com/">
-  <meta property="og:type" content="website">
 
-  <!-- 🐦 Twitter Card metadata -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="BlazerTech Character Management System">
-  <meta name="twitter:description" content="A complete framework for creating and customizing 2D characters in Unity.">
-  <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+  <h1 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter" data-uid="BlazerTech.CharacterManagement.Characters.LayeredCharacter" class="text-break">
+Class LayeredCharacter  <a class="header-action link-secondary" title="View source" href="https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System/blob/main/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h1>
 
-  <!-- 🎨 Theme color -->
-  <meta name="theme-color" content="#1a1a1a">
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BlazerTech.html">BlazerTech</a>.<a class="xref" href="BlazerTech.CharacterManagement.html">CharacterManagement</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.html">Characters</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a character made of multiple modular layers,
+such as body, outfit, hairstyle, etc.
+Each layer can be placed on top of each other in order to create the final character.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LayeredCharacter : CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;, IValidatable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html">CharacterBase</a>&lt;<a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a>, <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html">LayeredCharacter</a>.<a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler.html">LoadedLayeredCharacterHandler</a>&gt;</div>
+      <div><span class="xref">LayeredCharacter</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="BlazerTech.CharacterManagement.Core.IValidatable.html">IValidatable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterType">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.CharacterType</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadedCharacterHandler">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.LoadedCharacterHandler</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterGUID">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.CharacterGUID</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterName">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.CharacterName</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_CharacterDisplayName">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.CharacterDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_IsValid">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.IsValid</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_PerformValidationCheck">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.PerformValidationCheck()</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_SetCharacterInvalid">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.SetCharacterInvalid()</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterHandler_System_Object_">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.AcquireCharacterHandler(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_AcquireCharacterHandlerAsync_System_Object_">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.AcquireCharacterHandlerAsync(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_ReleaseCharacterHandler_System_Object_">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.ReleaseCharacterHandler(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterHandler">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.LoadCharacterHandler()</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_LoadCharacterHandlerAsync">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.LoadCharacterHandlerAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterBase-2.html#BlazerTech_CharacterManagement_Characters_CharacterBase_2_UnloadCharacterHandler">CharacterBase&lt;LayeredCharacterTypeSO, LayeredCharacter.LoadedLayeredCharacterHandler&gt;.UnloadCharacterHandler()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="BlazerTech_CharacterManagement_Characters_LayeredCharacter_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>A <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacter.html">LayeredCharacter</a> is tied to a <a class="xref" href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO.html">LayeredCharacterTypeSO</a>,
+which defines the base spritesheet and animator controller used.
+It also defines the layers the character must include. Each equipped layer is represented
+by a <a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayer.html">CharacterLayer</a>, which references one option in a
+<a class="xref" href="BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html">CharacterLayerDefinitionSO</a> asset.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors

@@ -38,12 +38,72 @@
       <meta name="loc:copy" content="{{__global.copy}}">
       <meta name="loc:downloadPdf" content="{{__global.downloadPdf}}">
 
-      <!-- 🟦 Open Graph metadata for social sharing -->
-      <meta property="og:title" content="BlazerTech Character Management System" />
-      <meta property="og:description" content="Easily create, manage, and customize 2D characters for Unity with runtime customization, templates, and a modular Character Creator Menu." />
-      <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png" />
-      <meta property="og:url" content="https://blazertech-cms.com/" />
-      <meta property="og:type" content="website" />
+      {{! ---------- BT-CMS: Social Meta (dynamic) ---------- }}
+
+{{! Site-wide fallbacks }}
+{{#_global}}
+{{/_global}}
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{_pageOrigin}}/{{_path}}" />
+
+{{! ---------- Title ---------- }}
+{{#og_title}}
+  <meta property="og:title" content="{{og_title}}" />
+  <meta name="twitter:title" content="{{og_title}}" />
+{{/og_title}}
+{{^og_title}}
+  {{#title}}
+    <meta property="og:title" content="{{title}}" />
+    <meta name="twitter:title" content="{{title}}" />
+  {{/title}}
+  {{^title}}
+    <meta property="og:title" content="{{_appTitle}}" />
+    <meta name="twitter:title" content="{{_appTitle}}" />
+  {{/title}}
+{{/og_title}}
+
+{{! ---------- Description ---------- }}
+{{#og_description}}
+  <meta property="og:description" content="{{og_description}}" />
+  <meta name="twitter:description" content="{{og_description}}" />
+{{/og_description}}
+{{^og_description}}
+  {{#description}}
+    <meta property="og:description" content="{{description}}" />
+    <meta name="twitter:description" content="{{description}}" />
+  {{/description}}
+  {{^description}}
+    {{#summary}}
+      <meta property="og:description" content="{{summary}}" />
+      <meta name="twitter:description" content="{{summary}}" />
+    {{/summary}}
+    {{^summary}}
+      <meta property="og:description" content="Easily create, manage, and customize 2D characters in Unity." />
+      <meta name="twitter:description" content="Easily create, manage, and customize 2D characters in Unity." />
+    {{/summary}}
+  {{/description}}
+{{/og_description}}
+
+{{! ---------- Image ---------- }}
+{{#og_image}}
+  <meta property="og:image" content="{{og_image}}" />
+  <meta name="twitter:image" content="{{og_image}}" />
+{{/og_image}}
+{{^og_image}}
+  {{#image}}
+    <meta property="og:image" content="{{image}}" />
+    <meta name="twitter:image" content="{{image}}" />
+  {{/image}}
+  {{^image}}
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png" />
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png" />
+  {{/image}}
+{{/og_image}}
+
+{{! ---------- Twitter Card ---------- }}
+<meta name="twitter:card" content="summary_large_image" />
+{{! ---------- END BT-CMS Social Meta ---------- }}
+
 
       <script type="module" src="./{{_rel}}public/docfx.min.js"></script>
 
