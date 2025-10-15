@@ -1,4 +1,4 @@
-  - name: Getting Started
+  - name: 📌Getting Started
   - name: Basic Concepts
     href: getting-started/basic-concepts.md
   - name: Installation And Requirements
@@ -6,33 +6,33 @@
   - name: Quick Start
     href: getting-started/quick-start.md
 
-  - name: Guides
+  - name: 🔸Essential Docs
   - name: Character Types
-    items:
-      - name: Character Types
-        href: character-types.md
-      - name: Character Type Core
-        href: character-type-core.md
-      - name: Unified Character Type
-        href: unified-character-type.md
-      - name: Layered Character Type
-        href: layered-character-type.md
-      - name: Character Layers
-        href: character-layers.md
-      - name: Character Usage
-        href: character-usage.md
-  - name: Built In Characters
-    href: built-in-characters.md
+    href: character-types.md
+  - name: Unified Character Type
+    href: unified-character-type.md
+  - name: Layered Character Type
+    href: layered-character-type.md
   - name: Character Templates
     href: character-templates.md
   - name: Character Animation Setup
     href: character-animation-setup.md
+
+  - name: 📚Docs
+  - name: Built In Characters
+    href: built-in-characters.md
+  - name: Character Usage
+    href: character-usage.md
+  - name: Character Layers
+    href: character-layers.md
+  - name: Character Type Core
+    href: character-type-core.md
   - name: Character Grouping System
     href: character-grouping-system.md
   - name: LimeZu Modern Interiors Support
     href: limezu-modern-interiors-support.md
 
-  - name: Character Creator (Alpha)
+  - name: 🧑Character Creation Menu System (Alpha)
   - name: Character Creator Overview
     href: character-creator/character-creator-overview.md
   - name: Character Creator Setup

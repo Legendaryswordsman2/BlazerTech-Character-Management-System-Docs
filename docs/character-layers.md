@@ -3,14 +3,13 @@ uid: character-layers
 ---
 
 # Character Layers
-A Character Layer is a [Scriptable Object](https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html) that contains all available character spritesheets for a specific layer of a character.
+A Character Layer is an asset that contains all available character spritesheets for a specific layer of a character.  
+Character Layers are meant to be used along with a [Layered Character Type](xref:layered-character-type) asset.
 
-To create a layer **right click** the **project window** and navigate to **Create > BlazerTech > Character Management System > Layered Character Type > Character Layer**
+To create a layer **right click** the **project window** and navigate to  
+`Create > BlazerTech > Character Management System > Layered Character Type > Character Layer`.
 
 After the **Character Layer** has been created make sure to add it to the **layers list** inside your **Layered Character Type**.
-
-> [!IMPORTANT]
-> Only the **Layered Character Type** must be placed in a **Resources** folder. Everything else including **Character Layers** should be placed outside the **Resources** folder!
 
 ## Character Layer Options
 A [Character Layer Option](xref:BlazerTech.CharacterManagement.Characters.CharacterLayerOption) is a wrapper for a character spritesheet which allows for easy loading/unloading of the spritesheet when needed.
@@ -22,7 +21,10 @@ A list of Layer Options is kept in every Character Layer. The list represents al
 
 ![Character Layer Options List](~/images/character-types/character-layers/character-layer-options-list.png)
 
-**Layer Options** are not added to the list manually. Instead go to the spritesheet you want to be included as an option for that layer and mark it as an **Addressable** in the **Inspector**. Then give it a label. Make sure the label the sprite has is the same label assigned in the [Layer Asset label](#layer-asset-label) field of the **Character Layer** asset you created.
+**Layer Options** are not added to the list manually. Instead go to the spritesheet you want to be included as an option for that layer:
+1. Mark it as an **Addressable** in the **Inspector**.  
+2. give it a label.  
+Make sure the label the sprite has is the same label assigned in the [Layer Asset label](#layer-asset-label) field of the **Character Layer** asset you created.
 
 ![Layer Option Addressables Marking](~/images/character-types/character-layers/layer-option-addressables-marking.png)
 
@@ -65,4 +67,4 @@ Finds all sprites matching the **Layer Asset Label** and are the same size as th
 Clears the Layer Options list.
 
 > [!TIP]
-> Can be undo using **control/command + Z**
+> Can be undon using **control/command + Z**.
