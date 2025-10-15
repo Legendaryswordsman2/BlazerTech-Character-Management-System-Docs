@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Character Animation Setup | BlazerTech Character Management System </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Character Animation Setup | BlazerTech Character Management System ">
+      
+      
+      <link rel="icon" href="../images/logos/favicon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/Temp.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="/docs/Temp.html">
+
+    <meta property="og:title" content="Character Animation Setup">
+    <meta name="twitter:title" content="Character Animation Setup">
+
+      <meta property="og:description" content="Easily create, manage, and customize 2D characters in Unity.">
+      <meta name="twitter:description" content="Easily create, manage, and customize 2D characters in Unity.">
+
+    <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+    <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logos/logo.png" alt="BlazerTech Character Management System">
+            BlazerTech Character Management System
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="temp">
+<h1 id="character-animation-setup">Character Animation Setup</h1>
+
+<p>This guide explains how to create and configure an <strong>Animator Controller</strong> to be used by your <strong>Character Types</strong> in the BlazerTech Character Management System (BT-CMS).</p>
+<hr>
+<h2 id="overview">Overview</h2>
+<p>Every <strong>Character Type</strong> can include an <strong>Animator Controller</strong> asset.<br>
+This controller defines how your character’s sprites animate during gameplay — such as idle, walking, or interacting.</p>
+<table>
+<thead>
+<tr>
+<th>Character Type</th>
+<th>Animator Support</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Unified Character Type</strong></td>
+<td>✅ Supported</td>
+<td>Animations use a single pre-made spritesheet.</td>
+</tr>
+<tr>
+<td><strong>Layered Character Type</strong></td>
+<td>✅ Supported</td>
+<td>Each animation frame is composited from multiple layers (body, outfit, hair, etc.).</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>While animations are optional, they are highly recommended to make your characters feel dynamic.</p>
+</div>
+<hr>
+<h2 id="1-create-an-animator-controller">1. Create an Animator Controller</h2>
+<ol>
+<li>In the <strong>Project window</strong>, right-click and select<br>
+<strong>Create → Animator Controller</strong>.</li>
+<li>Give it a clear name, such as<br>
+<code>Player_AnimatorController</code> or <code>NPC_AnimatorController</code>.</li>
+<li>Double-click to open it in the <strong>Animator window</strong>.</li>
+</ol>
+<p>You should now see an empty <strong>State Machine</strong> with an <strong>Entry</strong> node.</p>
+<hr>
+<h2 id="2-add-animation-states">2. Add Animation States</h2>
+<p>Each state represents one animation (for example, Idle, Walk, Run).</p>
+<ol>
+<li>Right-click the Animator graph and select <strong>Create State → Empty</strong>.</li>
+<li>Name the state <code>Idle</code>.</li>
+<li>Assign an animation clip to the state’s <strong>Motion</strong> field.</li>
+<li>Repeat for additional animations like <code>Walk</code>, <code>Run</code>, or <code>Interact</code>.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>For pixel-based characters, ensure all clips use the same sprite dimensions as your <strong>Base Spritesheet</strong> defined in the Character Type.</p>
+</div>
+<hr>
+<h2 id="3-define-parameters">3. Define Parameters</h2>
+<p>Parameters allow your scripts (or the built-in movement handlers) to control animations.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Horizontal</strong></td>
+<td>Float</td>
+<td>The current movement direction on the X axis.</td>
+</tr>
+<tr>
+<td><strong>Vertical</strong></td>
+<td>Float</td>
+<td>The current movement direction on the Y axis.</td>
+</tr>
+<tr>
+<td><strong>Speed</strong></td>
+<td>Float</td>
+<td>How fast the character is moving. Usually between 0 and 1.</td>
+</tr>
+<tr>
+<td><strong>IsMoving</strong> <em>(optional)</em></td>
+<td>Bool</td>
+<td>True when the character is moving.</td>
+</tr>
+</tbody>
+</table>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>These parameter names must match <strong>exactly</strong> when using the built-in <strong>Animator Handler</strong> or <strong>Top-Down Movement Controller</strong> scripts.</p>
+</div>
+<hr>
+<h2 id="4-create-blend-trees-optional">4. Create Blend Trees (Optional)</h2>
+<p>For smoother directional animation:</p>
+<ol>
+<li>Right-click → <strong>Create State → From New Blend Tree</strong>.</li>
+<li>In the <strong>Blend Tree</strong>, set <strong>Blend Type</strong> to <code>2D Freeform Directional</code>.</li>
+<li>Add motions for each direction (Up, Down, Left, Right).</li>
+<li>Use <code>Horizontal</code> and <code>Vertical</code> as the <strong>Blend Parameters</strong>.</li>
+</ol>
+<hr>
+<h2 id="5-assign-to-a-character-type">5. Assign to a Character Type</h2>
+<p>Once your Animator Controller is complete:</p>
+<ol>
+<li>Select your <strong>Character Type asset</strong> (<code>LayeredCharacterTypeSO</code> or <code>UnifiedCharacterTypeSO</code>).</li>
+<li>In the <strong>Inspector</strong>, find the <strong>Character Controller</strong> field.</li>
+<li>Drag your new <strong>Animator Controller</strong> into this field.</li>
+</ol>
+<p>Your setup should look similar to this:</p>
+<p><img src="../images/screenshots/animator-controller-field.png" alt="Animator Controller Field in Inspector"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The Character Controller is stored directly in the Character Type.<br>
+Any characters created from this type will automatically use it when rendered.</p>
+</div>
+<hr>
+<h2 id="6-test-your-animation">6. Test Your Animation</h2>
+<p>To test your setup:</p>
+<ol>
+<li>Place a <strong>Character Loader</strong> (such as <code>LayeredCharacterTemplateLoader</code>) in a scene.</li>
+<li>Assign a Character Template that uses your configured <strong>Character Type</strong>.</li>
+<li>Press <strong>Play</strong> and move your character (if using the built-in controller).</li>
+</ol>
+<p>You should now see your animations play according to the character’s movement direction and speed.</p>
+<hr>
+<h2 id="7-example-animator-setup">7. Example Animator Setup</h2>
+<p>Here’s an example configuration for a top-down 4-direction character:</p>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Transition</th>
+<th>Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Idle → Walk</td>
+<td>Speed &gt; 0.1</td>
+<td></td>
+</tr>
+<tr>
+<td>Walk → Idle</td>
+<td>Speed &lt; 0.1</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Each directional sprite can be controlled via a <strong>2D Blend Tree</strong> driven by <code>Horizontal</code> and <code>Vertical</code>.</p>
+<hr>
+<h2 id="8-related-topics">8. Related Topics</h2>
+<ul>
+<li><a class="xref" href="character-types.html">Character Types</a></li>
+<li><a class="xref" href="character-usage.html">Character Usage</a></li>
+<li><a href="xref:character-creator">Character Creator</a></li>
+</ul>
+<hr>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If you’re using custom movement logic, you can still drive your Animator Controller manually:</p>
+<pre><code class="lang-csharp">animator.SetFloat(&quot;Horizontal&quot;, direction.x);
+animator.SetFloat(&quot;Vertical&quot;, direction.y);
+animator.SetFloat(&quot;Speed&quot;, speed);
+</code></pre>
+</div>
+<hr>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Legendaryswordsman2/BT-Character-Management-System-Docs/blob/main/docs/Temp.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
