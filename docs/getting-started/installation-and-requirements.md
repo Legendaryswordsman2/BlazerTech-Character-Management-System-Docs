@@ -1,5 +1,6 @@
 ---
 uid: installation
+summary: Installation process and required packages for the BlazerTech Character Management System.
 ---
 
 # Installation and Requirements

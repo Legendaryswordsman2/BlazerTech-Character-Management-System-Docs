@@ -1,10 +1,6 @@
 ---
 uid: character-types
-title: Character Types
-summary: Defines how characters are structured in BT-CMS.
-description: Defines how characters are structured in BT-CMS.   # optional; falls back to summary
-og_title: Character Types (BT-CMS)     # optional override
-og_description: Deep dive into unified vs layered characters.   # optional override
+summary: Unified vs Layered Character Types and which one works best for your project.
 ---
 
 # Character Types

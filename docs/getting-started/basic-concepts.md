@@ -1,5 +1,6 @@
 ---
 uid: basic-concepts
+summary: Overview of all main features for the BlazerTech Character Management System.
 ---
 
 # Basic Concepts
@@ -15,7 +16,11 @@ This page introduces the **main features** of the **Character Management System*
 ---
 
 ## Character Types
-A **Character Type** is a [Scriptable Objects](https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html) that defines how a character works. There are two kinds:
+
+<img src="~/images/character-types/character-types.png" alt="Character Types" width="500" />  
+
+ A **Character Type** is a [Scriptable Objects](https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html) that defines how  
+ a character works. There are two kinds:  
 
 | Type                       | Description                                                                            | Best For                                                    |
 | -------------------------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -26,6 +31,7 @@ Every **Character Type** contains a **Base Spritesheet**. This spritesheet conta
 New characters can then be easily added by simply adding a new spritesheet or multiple spritesheets if using layered characters.
 
 Optionally an **Animator Controller** can be setup with all animations using sprites from the **Base Spritesheet**. With this setup only a single **Animator Controller** is required. No need to create a new **Animator Controller** or **Override Controller** for each new character.
+
 
 - [Read More → Character Types](xref:character-types)  
 - [Read More → Unified Character Type](xref:unified-character-type)  

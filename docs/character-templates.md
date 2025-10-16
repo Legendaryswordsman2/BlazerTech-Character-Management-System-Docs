@@ -1,5 +1,6 @@
 ---
 uid: character-templates
+summary: Blueprints for creating characters during runtime.
 ---
 
 # Character Templates

@@ -1,5 +1,6 @@
 ---
 uid: character-animation-setup
+summary: Character Animator Controller setup process
 ---
 
 # Character Animation Setup

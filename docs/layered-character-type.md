@@ -1,5 +1,6 @@
 ---
 uid: layered-character-type
+summary: Deep dive into Layered Characters and how to setup a Layered Character Type plus layers.
 ---
 
 # Layered Character Type

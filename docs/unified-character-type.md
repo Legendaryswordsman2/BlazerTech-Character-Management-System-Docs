@@ -1,5 +1,6 @@
 ---
 uid: unified-character-type
+summary: Deep dive into Unified Characters and how to setup them up.
 ---
 
 # Unified Character Type

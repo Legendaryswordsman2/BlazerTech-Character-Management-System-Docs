@@ -1,5 +1,6 @@
 ---
 uid: quick-start
+summary: Quick start guide to get you started using the BlazerTech Character Management System.
 ---
 
 # Quick Start Guide
