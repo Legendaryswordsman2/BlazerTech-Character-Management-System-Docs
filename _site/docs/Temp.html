@@ -37,8 +37,8 @@
     <meta property="og:title" content="Character Animation Setup | BlazerTech Character Management System">
     <meta name="twitter:title" content="Character Animation Setup | BlazerTech Character Management System">
 
-      <meta property="og:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
-      <meta name="twitter:description" content="A comprehensive framework designed to handle both modular & premade characters. Providing an easy solution to create, use and save characters in your Unity projects.">
+      <meta property="og:description" content="Step-by-step guide to setting up Animator Controllers for Character Types">
+      <meta name="twitter:description" content="Step-by-step guide to setting up Animator Controllers for Character Types">
 
     <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
     <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
@@ -103,172 +103,263 @@
         <article data-uid="temp">
 <h1 id="character-animation-setup">Character Animation Setup</h1>
 
-<p>This guide explains how to create and configure an <strong>Animator Controller</strong> to be used by your <strong>Character Types</strong> in the BlazerTech Character Management System (BT-CMS).</p>
+<p>This guide explains how to <strong>create and configure an Animator Controller</strong> for use with a <a class="xref" href="character-types.html">Character Type</a>.</p>
 <hr>
 <h2 id="overview">Overview</h2>
-<p>Every <strong>Character Type</strong> can include an <strong>Animator Controller</strong> asset.<br>
-This controller defines how your character’s sprites animate during gameplay — such as idle, walking, or interacting.</p>
+<p>Each <strong>Character Type</strong> can include an <strong>Animator Controller</strong>.<br>
+This controller defines how animations are played using sprites from the <strong>Base Spritesheet</strong> specified in the Character Type.</p>
+<p>The setup process is the same for both <strong>Unified</strong> and <strong>Layered Character Types</strong>.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>All animations <strong>must only use sprites from the Base Spritesheet</strong>.<br>
+If sprites from other sheets are used, they <strong>will not render correctly</strong> when used with the <a class="xref" href="character-usage.html#the-character-shader">Character Shader</a>.</p>
+</div>
+<p>If you already have your own movement or animator handling scripts, you may configure your Animator Controller however you wish—adding your own parameters, animation states, or blend trees.</p>
+<hr>
+<h2 id="integration-with-built-in-scripts">Integration with Built-In Scripts</h2>
+<p>The <strong>BlazerTech Character Management System</strong> includes pre-built movement and animator handling scripts.<br>
+These scripts automatically support the following animation states:</p>
+<ul>
+<li><strong>Idle</strong></li>
+<li><strong>Walk</strong></li>
+<li><strong>Sprint</strong></li>
+<li><strong>Crouch Idle</strong></li>
+<li><strong>Crouch Moving</strong></li>
+</ul>
+<p>Additional animations can be played at runtime using:</p>
+<pre><code class="lang-csharp">PlayAnimation(&quot;AnimationName&quot;);
+</code></pre>
+<p>on any <strong>Character Animator Handler</strong> component.</p>
+<hr>
+<h2 id="1-create-an-animator-controller">1️⃣ Create an Animator Controller</h2>
+<ol>
+<li>In the <strong>Project Window</strong>, right-click and select:<br>
+<code>Create → Animation → Animator Controller</code></li>
+<li>Name the asset (e.g., after the Character Type it’s used for).</li>
+<li>Double-click it to open the <strong>Animator Window</strong>.</li>
+</ol>
+<p>You should now see an empty Animator Controller.</p>
+<hr>
+<h2 id="2-add-parameters">2️⃣ Add Parameters</h2>
+<p>The built-in <strong>Character Animator Handler</strong> components do <strong>not</strong> play animations directly.<br>
+Instead, they modify <strong>parameters</strong> within the Animator Controller, which control transitions between animation states.</p>
+<p>Open the <strong>Parameters</strong> tab in the top-left of the Animator Window.</p>
+<p><img src="../images/character-animation/character-animator-create-parameter.png" alt="Create Animator Parameter"></p>
+<h3 id="required-parameters">Required Parameters</h3>
 <table>
 <thead>
 <tr>
-<th>Character Type</th>
-<th>Animator Support</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Unified Character Type</strong></td>
-<td>✅ Supported</td>
-<td>Animations use a single pre-made spritesheet.</td>
-</tr>
-<tr>
-<td><strong>Layered Character Type</strong></td>
-<td>✅ Supported</td>
-<td>Each animation frame is composited from multiple layers (body, outfit, hair, etc.).</td>
-</tr>
-</tbody>
-</table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>While animations are optional, they are highly recommended to make your characters feel dynamic.</p>
-</div>
-<hr>
-<h2 id="1-create-an-animator-controller">1. Create an Animator Controller</h2>
-<ol>
-<li>In the <strong>Project window</strong>, right-click and select<br>
-<strong>Create → Animator Controller</strong>.</li>
-<li>Give it a clear name, such as<br>
-<code>Player_AnimatorController</code> or <code>NPC_AnimatorController</code>.</li>
-<li>Double-click to open it in the <strong>Animator window</strong>.</li>
-</ol>
-<p>You should now see an empty <strong>State Machine</strong> with an <strong>Entry</strong> node.</p>
-<hr>
-<h2 id="2-add-animation-states">2. Add Animation States</h2>
-<p>Each state represents one animation (for example, Idle, Walk, Run).</p>
-<ol>
-<li>Right-click the Animator graph and select <strong>Create State → Empty</strong>.</li>
-<li>Name the state <code>Idle</code>.</li>
-<li>Assign an animation clip to the state’s <strong>Motion</strong> field.</li>
-<li>Repeat for additional animations like <code>Walk</code>, <code>Run</code>, or <code>Interact</code>.</li>
-</ol>
-<div class="TIP">
-<h5>Tip</h5>
-<p>For pixel-based characters, ensure all clips use the same sprite dimensions as your <strong>Base Spritesheet</strong> defined in the Character Type.</p>
-</div>
-<hr>
-<h2 id="3-define-parameters">3. Define Parameters</h2>
-<p>Parameters allow your scripts (or the built-in movement handlers) to control animations.</p>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
+<th>Parameter Name</th>
 <th>Type</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Horizontal</strong></td>
+<td><strong>Horizontal Movement</strong></td>
 <td>Float</td>
-<td>The current movement direction on the X axis.</td>
+<td>Ranges from -1 to 1. Represents left/right movement on the X-axis.</td>
 </tr>
 <tr>
-<td><strong>Vertical</strong></td>
+<td><strong>Vertical Movement</strong></td>
 <td>Float</td>
-<td>The current movement direction on the Y axis.</td>
+<td>Ranges from -1 to 1. Represents up/down movement on the Y-axis.</td>
 </tr>
 <tr>
-<td><strong>Speed</strong></td>
-<td>Float</td>
-<td>How fast the character is moving. Usually between 0 and 1.</td>
-</tr>
-<tr>
-<td><strong>IsMoving</strong> <em>(optional)</em></td>
+<td><strong>Is Moving</strong></td>
 <td>Bool</td>
-<td>True when the character is moving.</td>
+<td>True when the character is moving; false otherwise.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="optional-parameters">Optional Parameters</h3>
+<p>These are used only if toggled in the included handler components.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Is Sprinting</strong></td>
+<td>Bool</td>
+<td>True when the character is sprinting.</td>
+</tr>
+<tr>
+<td><strong>Is Crouching</strong></td>
+<td>Bool</td>
+<td>True when the character is crouching.</td>
 </tr>
 </tbody>
 </table>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>These parameter names must match <strong>exactly</strong> when using the built-in <strong>Animator Handler</strong> or <strong>Top-Down Movement Controller</strong> scripts.</p>
+<p>Parameter names must match <strong>exactly</strong> with those used in the built-in Animator Handler scripts.</p>
 </div>
 <hr>
-<h2 id="4-create-blend-trees-optional">4. Create Blend Trees (Optional)</h2>
-<p>For smoother directional animation:</p>
+<h2 id="3-add-animation-states">3️⃣ Add Animation States</h2>
+<p>Because the built-in handlers only modify parameters, <strong>you can design your animation state layout freely</strong>.</p>
+<p>A common approach is to use <strong>Blend Trees</strong> for animations that play in four directions (Up, Down, Left, Right)—such as <em>Idle</em> and <em>Walk</em>.</p>
+<h3 id="create-animation-clips">Create Animation Clips</h3>
+<p>In the <strong>Project Window</strong>, right-click and choose:<br>
+<code>Create → Animation → Animation Clip</code></p>
+<p>You’ll typically create <strong>eight animation clips</strong>:</p>
+<p><strong>Idle:</strong></p>
+<ul>
+<li>Idle Down</li>
+<li>Idle Up</li>
+<li>Idle Left</li>
+<li>Idle Right</li>
+</ul>
+<p><strong>Walk:</strong></p>
+<ul>
+<li>Walk Down</li>
+<li>Walk Up</li>
+<li>Walk Left</li>
+<li>Walk Right</li>
+</ul>
+<p>You can leave these empty for now—we’ll add frames later.</p>
+<hr>
+<h3 id="create-blend-trees">Create Blend Trees</h3>
+<p>Repeat the following for each four-direction animation set (e.g., <em>Idle</em>, <em>Walk</em>).</p>
 <ol>
-<li>Right-click → <strong>Create State → From New Blend Tree</strong>.</li>
-<li>In the <strong>Blend Tree</strong>, set <strong>Blend Type</strong> to <code>2D Freeform Directional</code>.</li>
+<li>Right-click in the Animator window → <strong>Create State → From New Blend Tree</strong>.</li>
+<li>Name it (e.g., <code>Idle</code> or <code>Walk</code>).</li>
+<li>Double-click the blend tree to open it.</li>
+<li>Set <strong>Blend Type</strong> to <code>2D Simple Directional</code>.</li>
+<li>Assign <strong>Blend Parameters</strong> to:
+<ul>
+<li>X: <code>Horizontal Movement</code></li>
+<li>Y: <code>Vertical Movement</code></li>
+</ul>
+</li>
 <li>Add motions for each direction (Up, Down, Left, Right).</li>
-<li>Use <code>Horizontal</code> and <code>Vertical</code> as the <strong>Blend Parameters</strong>.</li>
+<li>Assign the corresponding animation clips.</li>
+<li>Set coordinates for each direction:</li>
 </ol>
-<hr>
-<h2 id="5-assign-to-a-character-type">5. Assign to a Character Type</h2>
-<p>Once your Animator Controller is complete:</p>
-<ol>
-<li>Select your <strong>Character Type asset</strong> (<code>LayeredCharacterTypeSO</code> or <code>UnifiedCharacterTypeSO</code>).</li>
-<li>In the <strong>Inspector</strong>, find the <strong>Character Controller</strong> field.</li>
-<li>Drag your new <strong>Animator Controller</strong> into this field.</li>
-</ol>
-<p>Your setup should look similar to this:</p>
-<p><img src="../images/screenshots/animator-controller-field.png" alt="Animator Controller Field in Inspector"></p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The Character Controller is stored directly in the Character Type.<br>
-Any characters created from this type will automatically use it when rendered.</p>
-</div>
-<hr>
-<h2 id="6-test-your-animation">6. Test Your Animation</h2>
-<p>To test your setup:</p>
-<ol>
-<li>Place a <strong>Character Loader</strong> (such as <code>LayeredCharacterTemplateLoader</code>) in a scene.</li>
-<li>Assign a Character Template that uses your configured <strong>Character Type</strong>.</li>
-<li>Press <strong>Play</strong> and move your character (if using the built-in controller).</li>
-</ol>
-<p>You should now see your animations play according to the character’s movement direction and speed.</p>
-<hr>
-<h2 id="7-example-animator-setup">7. Example Animator Setup</h2>
-<p>Here’s an example configuration for a top-down 4-direction character:</p>
 <table>
 <thead>
 <tr>
-<th>State</th>
-<th>Transition</th>
-<th>Condition</th>
+<th>X</th>
+<th>Y</th>
+<th>Direction</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Idle → Walk</td>
-<td>Speed &gt; 0.1</td>
-<td></td>
+<td>0</td>
+<td>-1</td>
+<td>Down</td>
 </tr>
 <tr>
-<td>Walk → Idle</td>
-<td>Speed &lt; 0.1</td>
-<td></td>
+<td>0</td>
+<td>1</td>
+<td>Up</td>
+</tr>
+<tr>
+<td>-1</td>
+<td>0</td>
+<td>Left</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>Right</td>
 </tr>
 </tbody>
 </table>
-<p>Each directional sprite can be controlled via a <strong>2D Blend Tree</strong> driven by <code>Horizontal</code> and <code>Vertical</code>.</p>
+<p><img src="../images/character-animation/character-animator-blend-tree.png" alt="Blend Tree Example"></p>
 <hr>
-<h2 id="8-related-topics">8. Related Topics</h2>
+<h2 id="4-setup-state-transitions">4️⃣ Setup State Transitions</h2>
+<p>Let’s define how the Animator transitions between states.</p>
+<ol>
+<li>Right-click the <strong>Idle</strong> blend tree → <strong>Set as Layer Default State</strong>.</li>
+<li>Right-click <strong>Idle</strong> → <strong>Make Transition</strong> → Click <strong>Walk</strong>.</li>
+<li>Select the new transition line.</li>
+<li>Add a <strong>Condition</strong>:
 <ul>
-<li><a class="xref" href="character-types.html">Character Types</a></li>
-<li><a class="xref" href="character-usage.html">Character Usage</a></li>
-<li><a href="xref:character-creator">Character Creator</a></li>
+<li>Parameter: <code>Is Moving</code></li>
+<li>Value: <code>true</code></li>
+<li>Disable <strong>Has Exit Time</strong> (for instant transitions).</li>
 </ul>
+</li>
+</ol>
+<p>Now, when the character moves, it transitions from <em>Idle</em> to <em>Walk</em>.</p>
+<p>Next, create the reverse transition (<strong>Walk → Idle</strong>) with:</p>
+<ul>
+<li>Condition: <code>Is Moving = false</code></li>
+</ul>
+<p>When movement stops, the character will return to Idle automatically.</p>
 <hr>
-<div class="TIP">
-<h5>Tip</h5>
-<p>If you’re using custom movement logic, you can still drive your Animator Controller manually:</p>
-<pre><code class="lang-csharp">animator.SetFloat(&quot;Horizontal&quot;, direction.x);
-animator.SetFloat(&quot;Vertical&quot;, direction.y);
-animator.SetFloat(&quot;Speed&quot;, speed);
+<h2 id="5-setup-animation-clips">5️⃣ Setup Animation Clips</h2>
+<p>Now it’s time to add your sprite frames to the animation clips.</p>
+<ol>
+<li>Create or select a GameObject with:
+<ul>
+<li><strong>Animator</strong></li>
+<li><strong>Sprite Renderer</strong></li>
+</ul>
+</li>
+<li>Open the <strong>Animation Window</strong>.</li>
+<li>Select an animation clip (e.g., <code>Idle Down</code>).</li>
+<li>Select all sprite frames.</li>
+<li>Drag and drop them into the <strong>Timeline</strong>.</li>
+<li>Adjust <strong>Samples</strong> — the animation’s frame rate.
+<ul>
+<li>Recommended: <strong>12 FPS</strong> (for smooth 2D animation).</li>
+</ul>
+</li>
+</ol>
+<p>Repeat this for each of your Idle and Walk clips.</p>
+<hr>
+<h2 id="6-add-additional-animations-optional">6️⃣ Add Additional Animations (Optional)</h2>
+<p>You can expand your Animator with as many custom animations as needed.</p>
+<h3 id="single-direction-animations">Single-Direction Animations</h3>
+<p>For animations that only play in one direction (e.g., <strong>Attack Down</strong>):</p>
+<ul>
+<li>Create a new state.</li>
+<li>Assign the clip directly.</li>
+</ul>
+<h3 id="multi-directional-animations">Multi-Directional Animations</h3>
+<p>For directional animations (e.g., <strong>Attack</strong> in four directions):</p>
+<ul>
+<li>Create another <strong>Blend Tree</strong> using the same parameter setup (<code>Horizontal Movement</code>, <code>Vertical Movement</code>).</li>
+</ul>
+<p>When played, the Blend Tree automatically chooses the correct direction.</p>
+<p>If an animation is <strong>not looped</strong>, add a transition back to <em>Idle</em> or the <strong>Exit</strong> node.</p>
+<p>Animations can be triggered manually via:</p>
+<pre><code class="lang-csharp">animator.Play(&quot;AnimationName&quot;);
 </code></pre>
-</div>
+<p>or</p>
+<pre><code class="lang-csharp">animatorHandler.PlayAnimation(&quot;AnimationName&quot;);
+</code></pre>
+<p>(using the included Animator Handler components).</p>
 <hr>
+<h2 id="7-assign-animator-controller-to-a-character-type">7️⃣ Assign Animator Controller to a Character Type</h2>
+<p>Once your Animator Controller is complete:</p>
+<ol>
+<li>Select the <strong>Character Type asset</strong> in the Project Window.</li>
+<li>In the <strong>Inspector</strong>, find the <strong>Character Controller</strong> field.</li>
+<li>Drag your new <strong>Animator Controller</strong> into this slot.</li>
+</ol>
+<p>It should look like this:</p>
+<p><img src="../images/character-types/character-type-character-controller-field.png" alt="Animator Controller Field"></p>
+<p>When used with a <a class="xref" href="character-usage.html#character-renderers">Character Renderer component</a>,<br>
+the assigned Animator Controller will automatically be applied at runtime.</p>
+<hr>
+<h2 id="-summary">✅ Summary</h2>
+<p>You’ve now set up:</p>
+<ul>
+<li>✅ Animator Parameters</li>
+<li>✅ Idle and Walk Blend Trees</li>
+<li>✅ Direction-based transitions</li>
+<li>✅ Sprite frame animations</li>
+<li>✅ Integration with your Character Type</li>
+</ul>
+<p>Your character is now fully ready for animation playback and runtime control through the <strong>BlazerTech Character Management System</strong>.</p>
 
 </article>
 

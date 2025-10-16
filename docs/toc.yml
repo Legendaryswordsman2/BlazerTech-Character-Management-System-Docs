@@ -15,14 +15,14 @@
     href: layered-character-type.md
   - name: Character Templates
     href: character-templates.md
+  - name: Character Usage
+    href: character-usage.md
   - name: Character Animation Setup
     href: character-animation-setup.md
 
   - name: 📚Docs
   - name: Built In Characters
     href: built-in-characters.md
-  - name: Character Usage
-    href: character-usage.md
   - name: Character Layers
     href: character-layers.md
   - name: Character Type Core

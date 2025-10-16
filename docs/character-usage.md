@@ -1,5 +1,6 @@
 ---
 uid: character-usage
+summary: Included components for rendering and animating characters.
 ---
 
 # Character Usage

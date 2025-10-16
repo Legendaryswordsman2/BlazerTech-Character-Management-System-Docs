@@ -1,139 +1,238 @@
 ---
 uid: temp
+summary: Step-by-step guide to setting up Animator Controllers for Character Types
 ---
 
 # Character Animation Setup
 
-This guide explains how to create and configure an **Animator Controller** to be used by your **Character Types** in the BlazerTech Character Management System (BT-CMS).
+This guide explains how to **create and configure an Animator Controller** for use with a [Character Type](xref:character-types).
 
 ---
 
 ## Overview
 
-Every **Character Type** can include an **Animator Controller** asset.  
-This controller defines how your character’s sprites animate during gameplay — such as idle, walking, or interacting.
+Each **Character Type** can include an **Animator Controller**.  
+This controller defines how animations are played using sprites from the **Base Spritesheet** specified in the Character Type.
 
-| Character Type | Animator Support | Description |
-|----------------|------------------|--------------|
-| **Unified Character Type** | ✅ Supported | Animations use a single pre-made spritesheet. |
-| **Layered Character Type** | ✅ Supported | Each animation frame is composited from multiple layers (body, outfit, hair, etc.). |
-
-> [!NOTE]
-> While animations are optional, they are highly recommended to make your characters feel dynamic.
-
----
-
-## 1. Create an Animator Controller
-
-1. In the **Project window**, right-click and select  
-   **Create → Animator Controller**.
-2. Give it a clear name, such as  
-   `Player_AnimatorController` or `NPC_AnimatorController`.
-3. Double-click to open it in the **Animator window**.
-
-You should now see an empty **State Machine** with an **Entry** node.
-
----
-
-## 2. Add Animation States
-
-Each state represents one animation (for example, Idle, Walk, Run).
-
-1. Right-click the Animator graph and select **Create State → Empty**.
-2. Name the state `Idle`.
-3. Assign an animation clip to the state’s **Motion** field.
-4. Repeat for additional animations like `Walk`, `Run`, or `Interact`.
-
-> [!TIP]
-> For pixel-based characters, ensure all clips use the same sprite dimensions as your **Base Spritesheet** defined in the Character Type.
-
----
-
-## 3. Define Parameters
-
-Parameters allow your scripts (or the built-in movement handlers) to control animations.
-
-| Parameter | Type | Description |
-|------------|------|-------------|
-| **Horizontal** | Float | The current movement direction on the X axis. |
-| **Vertical** | Float | The current movement direction on the Y axis. |
-| **Speed** | Float | How fast the character is moving. Usually between 0 and 1. |
-| **IsMoving** *(optional)* | Bool | True when the character is moving. |
+The setup process is the same for both **Unified** and **Layered Character Types**.
 
 > [!IMPORTANT]
-> These parameter names must match **exactly** when using the built-in **Animator Handler** or **Top-Down Movement Controller** scripts.
+> All animations **must only use sprites from the Base Spritesheet**.  
+> If sprites from other sheets are used, they **will not render correctly** when used with the [Character Shader](xref:character-usage#the-character-shader).
+
+If you already have your own movement or animator handling scripts, you may configure your Animator Controller however you wish—adding your own parameters, animation states, or blend trees.
 
 ---
 
-## 4. Create Blend Trees (Optional)
+## Integration with Built-In Scripts
 
-For smoother directional animation:
+The **BlazerTech Character Management System** includes pre-built movement and animator handling scripts.  
+These scripts automatically support the following animation states:
 
-1. Right-click → **Create State → From New Blend Tree**.
-2. In the **Blend Tree**, set **Blend Type** to `2D Freeform Directional`.
-3. Add motions for each direction (Up, Down, Left, Right).
-4. Use `Horizontal` and `Vertical` as the **Blend Parameters**.
+- **Idle**
+- **Walk**
+- **Sprint**
+- **Crouch Idle**
+- **Crouch Moving**
+
+Additional animations can be played at runtime using:
+```csharp
+PlayAnimation("AnimationName");
+```
+on any **Character Animator Handler** component.
 
 ---
 
-## 5. Assign to a Character Type
+## 1️⃣ Create an Animator Controller
+
+1. In the **Project Window**, right-click and select:  
+   `Create → Animation → Animator Controller`
+2. Name the asset (e.g., after the Character Type it’s used for).
+3. Double-click it to open the **Animator Window**.
+
+You should now see an empty Animator Controller.
+
+---
+
+## 2️⃣ Add Parameters
+
+The built-in **Character Animator Handler** components do **not** play animations directly.  
+Instead, they modify **parameters** within the Animator Controller, which control transitions between animation states.
+
+Open the **Parameters** tab in the top-left of the Animator Window.
+
+![Create Animator Parameter](~/images/character-animation/character-animator-create-parameter.png)
+
+### Required Parameters
+
+| Parameter Name           | Type  | Description |
+| ------------------------ | ----- | ----------- |
+| **Horizontal Movement**  | Float | Ranges from -1 to 1. Represents left/right movement on the X-axis. |
+| **Vertical Movement**    | Float | Ranges from -1 to 1. Represents up/down movement on the Y-axis. |
+| **Is Moving**            | Bool  | True when the character is moving; false otherwise. |
+
+### Optional Parameters
+
+These are used only if toggled in the included handler components.
+
+| Parameter Name   | Type | Description |
+| ---------------- | ---- | ----------- |
+| **Is Sprinting** | Bool | True when the character is sprinting. |
+| **Is Crouching** | Bool | True when the character is crouching. |
+
+> [!IMPORTANT]
+> Parameter names must match **exactly** with those used in the built-in Animator Handler scripts.
+
+---
+
+## 3️⃣ Add Animation States
+
+Because the built-in handlers only modify parameters, **you can design your animation state layout freely**.
+
+A common approach is to use **Blend Trees** for animations that play in four directions (Up, Down, Left, Right)—such as *Idle* and *Walk*.
+
+### Create Animation Clips
+
+In the **Project Window**, right-click and choose:  
+`Create → Animation → Animation Clip`
+
+You’ll typically create **eight animation clips**:
+
+**Idle:**
+- Idle Down  
+- Idle Up  
+- Idle Left  
+- Idle Right
+
+**Walk:**
+- Walk Down  
+- Walk Up  
+- Walk Left  
+- Walk Right
+
+You can leave these empty for now—we’ll add frames later.
+
+---
+
+### Create Blend Trees
+
+Repeat the following for each four-direction animation set (e.g., *Idle*, *Walk*).
+
+1. Right-click in the Animator window → **Create State → From New Blend Tree**.  
+2. Name it (e.g., `Idle` or `Walk`).  
+3. Double-click the blend tree to open it.  
+4. Set **Blend Type** to `2D Simple Directional`.  
+5. Assign **Blend Parameters** to:
+   - X: `Horizontal Movement`
+   - Y: `Vertical Movement`
+6. Add motions for each direction (Up, Down, Left, Right).  
+7. Assign the corresponding animation clips.  
+8. Set coordinates for each direction:
+
+| X | Y | Direction |
+| - | - | --------- |
+|  0 | -1 | Down |
+|  0 |  1 | Up |
+| -1 |  0 | Left |
+|  1 |  0 | Right |
+
+![Blend Tree Example](~/images/character-animation/character-animator-blend-tree.png)
+
+---
+
+## 4️⃣ Setup State Transitions
+
+Let’s define how the Animator transitions between states.
+
+1. Right-click the **Idle** blend tree → **Set as Layer Default State**.
+2. Right-click **Idle** → **Make Transition** → Click **Walk**.
+3. Select the new transition line.
+4. Add a **Condition**:
+   - Parameter: `Is Moving`
+   - Value: `true`
+   - Disable **Has Exit Time** (for instant transitions).
+
+Now, when the character moves, it transitions from *Idle* to *Walk*.
+
+Next, create the reverse transition (**Walk → Idle**) with:
+- Condition: `Is Moving = false`
+
+When movement stops, the character will return to Idle automatically.
+
+---
+
+## 5️⃣ Setup Animation Clips
+
+Now it’s time to add your sprite frames to the animation clips.
+
+1. Create or select a GameObject with:
+   - **Animator**
+   - **Sprite Renderer**
+2. Open the **Animation Window**.
+3. Select an animation clip (e.g., `Idle Down`).
+4. Select all sprite frames.
+5. Drag and drop them into the **Timeline**.
+6. Adjust **Samples** — the animation’s frame rate.  
+   - Recommended: **12 FPS** (for smooth 2D animation).
+
+Repeat this for each of your Idle and Walk clips.
+
+---
+
+## 6️⃣ Add Additional Animations (Optional)
+
+You can expand your Animator with as many custom animations as needed.
+
+### Single-Direction Animations
+For animations that only play in one direction (e.g., **Attack Down**):
+- Create a new state.
+- Assign the clip directly.
+
+### Multi-Directional Animations
+For directional animations (e.g., **Attack** in four directions):
+- Create another **Blend Tree** using the same parameter setup (`Horizontal Movement`, `Vertical Movement`).
+
+When played, the Blend Tree automatically chooses the correct direction.
+
+If an animation is **not looped**, add a transition back to *Idle* or the **Exit** node.
+
+Animations can be triggered manually via:
+```csharp
+animator.Play("AnimationName");
+```
+or
+```csharp
+animatorHandler.PlayAnimation("AnimationName");
+```
+(using the included Animator Handler components).
+
+---
+
+## 7️⃣ Assign Animator Controller to a Character Type
 
 Once your Animator Controller is complete:
 
-1. Select your **Character Type asset** (`LayeredCharacterTypeSO` or `UnifiedCharacterTypeSO`).
-2. In the **Inspector**, find the **Character Controller** field.
-3. Drag your new **Animator Controller** into this field.
+1. Select the **Character Type asset** in the Project Window.  
+2. In the **Inspector**, find the **Character Controller** field.  
+3. Drag your new **Animator Controller** into this slot.
 
-Your setup should look similar to this:
+It should look like this:
 
-![Animator Controller Field in Inspector](~/images/screenshots/animator-controller-field.png)
+![Animator Controller Field](~/images/character-types/character-type-character-controller-field.png)
 
-> [!NOTE]
-> The Character Controller is stored directly in the Character Type.  
-> Any characters created from this type will automatically use it when rendered.
-
----
-
-## 6. Test Your Animation
-
-To test your setup:
-
-1. Place a **Character Loader** (such as `LayeredCharacterTemplateLoader`) in a scene.
-2. Assign a Character Template that uses your configured **Character Type**.
-3. Press **Play** and move your character (if using the built-in controller).
-
-You should now see your animations play according to the character’s movement direction and speed.
+When used with a [Character Renderer component](xref:character-usage#character-renderers),  
+the assigned Animator Controller will automatically be applied at runtime.
 
 ---
 
-## 7. Example Animator Setup
+## ✅ Summary
 
-Here’s an example configuration for a top-down 4-direction character:
+You’ve now set up:
 
-| State | Transition | Condition |
-|--------|-------------|------------|
-| Idle → Walk | Speed > 0.1 |
-| Walk → Idle | Speed < 0.1 |
+- ✅ Animator Parameters  
+- ✅ Idle and Walk Blend Trees  
+- ✅ Direction-based transitions  
+- ✅ Sprite frame animations  
+- ✅ Integration with your Character Type  
 
-Each directional sprite can be controlled via a **2D Blend Tree** driven by `Horizontal` and `Vertical`.
-
----
-
-## 8. Related Topics
-
-- [Character Types](xref:character-types)
-- [Character Usage](xref:character-usage)
-- [Character Creator](xref:character-creator)
-
----
-
-> [!TIP]
-> If you’re using custom movement logic, you can still drive your Animator Controller manually:
-> ```csharp
-> animator.SetFloat("Horizontal", direction.x);
-> animator.SetFloat("Vertical", direction.y);
-> animator.SetFloat("Speed", speed);
-> ```
-
----
-
+Your character is now fully ready for animation playback and runtime control through the **BlazerTech Character Management System**.

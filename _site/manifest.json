@@ -2350,6 +2350,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-animation/character-animator-blend-tree.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-animation/character-animator-blend-tree.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-animation/character-animator-create-parameter.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-animation/character-animator-create-parameter.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-animation/character-animator-parameters.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-animation/character-animator-parameters.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-creator-setup/ccm-relay-usage-example.png",
       "output": {
         "resource": {
@@ -2440,10 +2470,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/character-types/character-type-character-controller-field.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/character-type-character-controller-field.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/character-types/character-types.png",
       "output": {
         "resource": {
           "relative_path": "images/character-types/character-types.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-types/layered-character-type-asset.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-types/layered-character-type-asset.png"
         }
       },
       "version": ""
