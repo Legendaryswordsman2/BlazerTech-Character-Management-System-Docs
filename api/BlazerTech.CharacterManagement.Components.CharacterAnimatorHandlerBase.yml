@@ -15,7 +15,7 @@ items:
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.animator
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.horizontalMovementParam
-  - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.speedParam
+  - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.isMovingParam
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.verticalMovementParam
   langs:
   - csharp
@@ -93,23 +93,23 @@ items:
     arguments:
     - type: System.String
       value: References
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.speedParam
-  commentId: F:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.speedParam
-  id: speedParam
+- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.isMovingParam
+  commentId: F:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.isMovingParam
+  id: isMovingParam
   parent: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
   langs:
   - csharp
   - vb
-  name: speedParam
-  nameWithType: CharacterAnimatorHandlerBase.speedParam
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.speedParam
+  name: isMovingParam
+  nameWithType: CharacterAnimatorHandlerBase.isMovingParam
+  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.isMovingParam
   type: Field
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: speedParam
+    id: isMovingParam
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
     startLine: 11
   assemblies:
@@ -121,7 +121,7 @@ items:
 
       [BoxGroup("Parameter Names")]
 
-      protected string speedParam
+      protected string isMovingParam
     return:
       type: System.String
     content.vb: >-
@@ -129,7 +129,7 @@ items:
 
       <BoxGroup("Parameter Names")>
 
-      Protected speedParam As String
+      Protected isMovingParam As String
   attributes:
   - type: UnityEngine.SerializeField
     ctor: UnityEngine.SerializeField.#ctor
@@ -403,11 +403,11 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
   syntax:
-    content: public void PlayAnimation(string name)
+    content: public void PlayAnimation(string animationName)
     parameters:
-    - id: name
+    - id: animationName
       type: System.String
-    content.vb: Public Sub PlayAnimation(name As String)
+    content.vb: Public Sub PlayAnimation(animationName As String)
   overload: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.PlayAnimation*
   nameWithType.vb: CharacterAnimatorHandlerBase.PlayAnimation(String)
   fullName.vb: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.PlayAnimation(String)

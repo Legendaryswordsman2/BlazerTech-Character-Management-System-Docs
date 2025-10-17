@@ -12,6 +12,7 @@ items:
   - BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer
   - BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer
   - BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler
+  - BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
   - BlazerTech.CharacterManagement.Components.TopDownMovementController
   - BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer
   langs:
@@ -24,12 +25,6 @@ items:
   assemblies:
   - Assembly-CSharp
 references:
-- uid: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler
-  commentId: T:BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler
-  href: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.html
-  name: PhysicsCharacterAnimatorHandler
-  nameWithType: PhysicsCharacterAnimatorHandler
-  fullName: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler
 - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler
   commentId: T:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler
   href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.html
@@ -56,6 +51,12 @@ references:
   name: LayeredCharacterGroupRenderer
   nameWithType: LayeredCharacterGroupRenderer
   fullName: BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer
+- uid: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler
+  commentId: T:BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler
+  href: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.html
+  name: PhysicsCharacterAnimatorHandler
+  nameWithType: PhysicsCharacterAnimatorHandler
+  fullName: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler
 - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
   commentId: T:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
   parent: BlazerTech.CharacterManagement.Components
@@ -89,6 +90,12 @@ references:
   name: UnifiedCharacterTemplateRenderer
   nameWithType: UnifiedCharacterTemplateRenderer
   fullName: BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer
+- uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
+  commentId: T:BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
+  href: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.html
+  name: RandomLayeredCharacterRenderer
+  nameWithType: RandomLayeredCharacterRenderer
+  fullName: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
 - uid: BlazerTech.CharacterManagement.Components
   commentId: N:BlazerTech.CharacterManagement.Components
   href: BlazerTech.html

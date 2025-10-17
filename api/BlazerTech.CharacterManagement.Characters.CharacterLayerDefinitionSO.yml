@@ -11,6 +11,7 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetLayerOptionFromIndex(System.Int32)
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetLayerOptionFromKey(System.String)
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetLayerOptionFromSpritesheetName(System.String)
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetRandomLayerOption
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.IncludeNoneOption
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.Initialize(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.IsInitialized
@@ -399,6 +400,34 @@ items:
   nameWithType.vb: CharacterLayerDefinitionSO.GetLayerOptionFromIndex(Integer)
   fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetLayerOptionFromIndex(Integer)
   name.vb: GetLayerOptionFromIndex(Integer)
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetRandomLayerOption
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetRandomLayerOption
+  id: GetRandomLayerOption
+  parent: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
+  langs:
+  - csharp
+  - vb
+  name: GetRandomLayerOption()
+  nameWithType: CharacterLayerDefinitionSO.GetRandomLayerOption()
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetRandomLayerOption()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterLayerDefinitionSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: GetRandomLayerOption
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterLayerDefinitionSO.cs
+    startLine: 117
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public CharacterLayerOption GetRandomLayerOption()
+    return:
+      type: BlazerTech.CharacterManagement.Characters.CharacterLayerOption
+    content.vb: Public Function GetRandomLayerOption() As CharacterLayerOption
+  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetRandomLayerOption*
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.IsInitialized
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.IsInitialized
   id: IsInitialized
@@ -417,7 +446,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: IsInitialized
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterLayerDefinitionSO.cs
-    startLine: 117
+    startLine: 119
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -445,7 +474,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: AcquireAllLayerOptionsAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterLayerDefinitionSO.cs
-    startLine: 119
+    startLine: 121
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -479,7 +508,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ReleaseAllLayerOptions
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterLayerDefinitionSO.cs
-    startLine: 146
+    startLine: 148
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -505,7 +534,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CollectLayerOptions_EditMode
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterLayerDefinitionSO.cs
-    startLine: 167
+    startLine: 169
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -909,6 +938,12 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetRandomLayerOption*
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetRandomLayerOption
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerDefinitionSO_GetRandomLayerOption
+  name: GetRandomLayerOption
+  nameWithType: CharacterLayerDefinitionSO.GetRandomLayerOption
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetRandomLayerOption
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.IsInitialized*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.IsInitialized
   href: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerDefinitionSO_IsInitialized

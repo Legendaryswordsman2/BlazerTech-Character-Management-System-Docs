@@ -53,6 +53,7 @@ items:
   derivedClasses:
   - BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer
   - BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer
+  - BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
   - BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer
   attributes:
   - type: UnityEngine.DisallowMultipleComponent
@@ -361,7 +362,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ValidationCheck
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 58
+    startLine: 56
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -389,7 +390,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetAndShowCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 69
+    startLine: 67
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -417,7 +418,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ShowCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 71
+    startLine: 69
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -443,7 +444,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ReleaseCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 73
+    startLine: 71
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -469,7 +470,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: TrySetCharacterAnimator
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 75
+    startLine: 73
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -498,7 +499,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnDestroy
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterRendererBase.cs
-    startLine: 94
+    startLine: 92
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components

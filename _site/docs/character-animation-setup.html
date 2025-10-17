@@ -108,6 +108,7 @@
 <h2 id="overview">Overview</h2>
 <p>Every Character Type can include an <strong>Animator Controller</strong>.<br>
 This controller provides uesable animations from the sprites contained within the <strong>Base Spritesheet</strong> set in the <strong>Character Type</strong></p>
+<p>All characters using the same <strong>Character Type</strong> can use a single <strong>Animator Controller</strong>. No need to create a separate Animator/Override Controller for every new character.</p>
 <p>The setup process is the same for both <strong>Unified</strong> and <strong>Layered Character Types</strong>.</p>
 <div class="IMPORTANT">
 <h5>Important</h5>
@@ -116,6 +117,7 @@ If sprites from other sheets are used, they <strong>will not render correctly</s
 </div>
 <p>If you already have your own movement and animator handling scripts, you can setup the <strong>Animator Controller</strong>
 however you need for you project. That means you can create your own parameters, animation states, blend trees, etc.</p>
+<hr>
 <h2 id="integration-with-built-in-scripts">Integration with Built-In Scripts</h2>
 <p>The <strong>BlazerTech Character Management System</strong> includes pre-built movement and animator handling scripts.
 The included scripts contain support for the following movement animations:</p>

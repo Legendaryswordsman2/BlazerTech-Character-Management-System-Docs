@@ -3777,6 +3777,19 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetLayerOptionFromSpritesheetName
   nameWithType: CharacterLayerDefinitionSO.GetLayerOptionFromSpritesheetName
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetRandomLayerOption
+  name: GetRandomLayerOption()
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerDefinitionSO_GetRandomLayerOption
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetRandomLayerOption
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetRandomLayerOption()
+  nameWithType: CharacterLayerDefinitionSO.GetRandomLayerOption()
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetRandomLayerOption*
+  name: GetRandomLayerOption
+  href: api/BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerDefinitionSO_GetRandomLayerOption_
+  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetRandomLayerOption
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetRandomLayerOption
+  nameWithType: CharacterLayerDefinitionSO.GetRandomLayerOption
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.IncludeNoneOption
   name: IncludeNoneOption
   href: api/BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerDefinitionSO_IncludeNoneOption
@@ -4946,15 +4959,15 @@ references:
   fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO)
   nameWithType: LayeredCharacter.LayeredCharacter(LayeredCharacterTemplateSO)
   nameWithType.vb: LayeredCharacter.New(LayeredCharacterTemplateSO)
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.String)
-  name: LayeredCharacter(string, LayeredCharacterTypeSO, string)
-  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_System_String_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_String_
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.String)
-  name.vb: New(String, LayeredCharacterTypeSO, String)
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(string, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, string)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(String, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, String)
-  nameWithType: LayeredCharacter.LayeredCharacter(string, LayeredCharacterTypeSO, string)
-  nameWithType.vb: LayeredCharacter.New(String, LayeredCharacterTypeSO, String)
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode)
+  name: LayeredCharacter(string, LayeredCharacterTypeSO, string, LayeredCharacterCreationMode)
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_System_String_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_String_BlazerTech_CharacterManagement_Characters_LayeredCharacterCreationMode_
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode)
+  name.vb: New(String, LayeredCharacterTypeSO, String, LayeredCharacterCreationMode)
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(string, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, string, BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(String, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, String, BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode)
+  nameWithType: LayeredCharacter.LayeredCharacter(string, LayeredCharacterTypeSO, string, LayeredCharacterCreationMode)
+  nameWithType.vb: LayeredCharacter.New(String, LayeredCharacterTypeSO, String, LayeredCharacterCreationMode)
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor*
   name: LayeredCharacter
   href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_
@@ -5220,6 +5233,24 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.UnloadCharacterHandler
   nameWithType: LayeredCharacter.UnloadCharacterHandler
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+  name: LayeredCharacterCreationMode
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.html
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+  nameWithType: LayeredCharacterCreationMode
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.DefaultLayerOptions
+  name: DefaultLayerOptions
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterCreationMode_DefaultLayerOptions
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.DefaultLayerOptions
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.DefaultLayerOptions
+  nameWithType: LayeredCharacterCreationMode.DefaultLayerOptions
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.RandomizedLayerOptions
+  name: RandomizedLayerOptions
+  href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.html#BlazerTech_CharacterManagement_Characters_LayeredCharacterCreationMode_RandomizedLayerOptions
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.RandomizedLayerOptions
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.RandomizedLayerOptions
+  nameWithType: LayeredCharacterCreationMode.RandomizedLayerOptions
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
   name: LayeredCharacterGroupManager
   href: api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.html
@@ -6292,12 +6323,12 @@ references:
   commentId: F:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.horizontalMovementParam
   fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.horizontalMovementParam
   nameWithType: CharacterAnimatorHandlerBase.horizontalMovementParam
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.speedParam
-  name: speedParam
-  href: api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_speedParam
-  commentId: F:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.speedParam
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.speedParam
-  nameWithType: CharacterAnimatorHandlerBase.speedParam
+- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.isMovingParam
+  name: isMovingParam
+  href: api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_isMovingParam
+  commentId: F:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.isMovingParam
+  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.isMovingParam
+  nameWithType: CharacterAnimatorHandlerBase.isMovingParam
 - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.verticalMovementParam
   name: verticalMovementParam
   href: api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_verticalMovementParam
@@ -6692,6 +6723,51 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.Speed
   nameWithType: PhysicsCharacterAnimatorHandler.Speed
+- uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
+  name: RandomLayeredCharacterRenderer
+  href: api/BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.html
+  commentId: T:BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
+  fullName: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
+  nameWithType: RandomLayeredCharacterRenderer
+- uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.GetAndShowCharacter
+  name: GetAndShowCharacter()
+  href: api/BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.html#BlazerTech_CharacterManagement_Components_RandomLayeredCharacterRenderer_GetAndShowCharacter
+  commentId: M:BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.GetAndShowCharacter
+  fullName: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.GetAndShowCharacter()
+  nameWithType: RandomLayeredCharacterRenderer.GetAndShowCharacter()
+- uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.GetAndShowCharacter*
+  name: GetAndShowCharacter
+  href: api/BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.html#BlazerTech_CharacterManagement_Components_RandomLayeredCharacterRenderer_GetAndShowCharacter_
+  commentId: Overload:BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.GetAndShowCharacter
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.GetAndShowCharacter
+  nameWithType: RandomLayeredCharacterRenderer.GetAndShowCharacter
+- uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.ReleaseCharacter
+  name: ReleaseCharacter()
+  href: api/BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.html#BlazerTech_CharacterManagement_Components_RandomLayeredCharacterRenderer_ReleaseCharacter
+  commentId: M:BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.ReleaseCharacter
+  fullName: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.ReleaseCharacter()
+  nameWithType: RandomLayeredCharacterRenderer.ReleaseCharacter()
+- uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.ReleaseCharacter*
+  name: ReleaseCharacter
+  href: api/BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.html#BlazerTech_CharacterManagement_Components_RandomLayeredCharacterRenderer_ReleaseCharacter_
+  commentId: Overload:BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.ReleaseCharacter
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.ReleaseCharacter
+  nameWithType: RandomLayeredCharacterRenderer.ReleaseCharacter
+- uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.ShowCharacter
+  name: ShowCharacter()
+  href: api/BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.html#BlazerTech_CharacterManagement_Components_RandomLayeredCharacterRenderer_ShowCharacter
+  commentId: M:BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.ShowCharacter
+  fullName: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.ShowCharacter()
+  nameWithType: RandomLayeredCharacterRenderer.ShowCharacter()
+- uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.ShowCharacter*
+  name: ShowCharacter
+  href: api/BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.html#BlazerTech_CharacterManagement_Components_RandomLayeredCharacterRenderer_ShowCharacter_
+  commentId: Overload:BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.ShowCharacter
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.ShowCharacter
+  nameWithType: RandomLayeredCharacterRenderer.ShowCharacter
 - uid: BlazerTech.CharacterManagement.Components.TopDownMovementController
   name: TopDownMovementController
   href: api/BlazerTech.CharacterManagement.Components.TopDownMovementController.html
@@ -8201,7 +8277,7 @@ references:
   name: Quick Start Guide
   href: docs/getting-started/quick-start.html
 - uid: temp
-  name: Character Animation Setup
+  name: Character Usage
   href: docs/Temp.html
 - uid: unified-character-type
   name: Unified Character Type

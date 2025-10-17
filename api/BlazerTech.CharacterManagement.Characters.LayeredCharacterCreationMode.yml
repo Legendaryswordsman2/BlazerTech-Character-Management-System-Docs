@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+  id: LayeredCharacterCreationMode
+  parent: BlazerTech.CharacterManagement.Characters
+  children:
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.DefaultLayerOptions
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.RandomizedLayerOptions
+  langs:
+  - csharp
+  - vb
+  name: LayeredCharacterCreationMode
+  nameWithType: LayeredCharacterCreationMode
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+  type: Enum
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LayeredCharacterCreationMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: public enum LayeredCharacterCreationMode
+    content.vb: Public Enum LayeredCharacterCreationMode
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.DefaultLayerOptions
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.DefaultLayerOptions
+  id: DefaultLayerOptions
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+  langs:
+  - csharp
+  - vb
+  name: DefaultLayerOptions
+  nameWithType: LayeredCharacterCreationMode.DefaultLayerOptions
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.DefaultLayerOptions
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: DefaultLayerOptions
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: DefaultLayerOptions = 0
+    return:
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.RandomizedLayerOptions
+  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.RandomizedLayerOptions
+  id: RandomizedLayerOptions
+  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+  langs:
+  - csharp
+  - vb
+  name: RandomizedLayerOptions
+  nameWithType: LayeredCharacterCreationMode.RandomizedLayerOptions
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.RandomizedLayerOptions
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: RandomizedLayerOptions
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Characters
+  syntax:
+    content: RandomizedLayerOptions = 1
+    return:
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+references:
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.html
+  name: LayeredCharacterCreationMode
+  nameWithType: LayeredCharacterCreationMode
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode

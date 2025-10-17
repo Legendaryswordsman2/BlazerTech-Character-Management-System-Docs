@@ -39,7 +39,7 @@ items:
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
   inheritedMembers:
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.animator
-  - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.speedParam
+  - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.isMovingParam
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.horizontalMovementParam
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.verticalMovementParam
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Animator
@@ -297,13 +297,13 @@ references:
   name: animator
   nameWithType: CharacterAnimatorHandlerBase.animator
   fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.animator
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.speedParam
-  commentId: F:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.speedParam
+- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.isMovingParam
+  commentId: F:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.isMovingParam
   parent: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
-  href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_speedParam
-  name: speedParam
-  nameWithType: CharacterAnimatorHandlerBase.speedParam
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.speedParam
+  href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_isMovingParam
+  name: isMovingParam
+  nameWithType: CharacterAnimatorHandlerBase.isMovingParam
+  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.isMovingParam
 - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.horizontalMovementParam
   commentId: F:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.horizontalMovementParam
   parent: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase

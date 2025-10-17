@@ -8,7 +8,7 @@ items:
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO)
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacterTemplateSO)
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.String)
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode)
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.ApplySnapshot(BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot)
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.Layers
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadCharacterHandler
@@ -32,7 +32,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LayeredCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 25
+    startLine: 27
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -101,7 +101,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Layers
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 28
+    startLine: 30
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -130,7 +130,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnLayerOptionsOverriden
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 30
+    startLine: 32
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -139,16 +139,16 @@ items:
     return:
       type: System.EventHandler
     content.vb: Public Event OnLayerOptionsOverriden As EventHandler
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.String)
-  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.String)
-  id: '#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.String)'
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode)
+  commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode)
+  id: '#ctor(System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,System.String,BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode)'
   parent: BlazerTech.CharacterManagement.Characters.LayeredCharacter
   langs:
   - csharp
   - vb
-  name: LayeredCharacter(string, LayeredCharacterTypeSO, string)
-  nameWithType: LayeredCharacter.LayeredCharacter(string, LayeredCharacterTypeSO, string)
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(string, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, string)
+  name: LayeredCharacter(string, LayeredCharacterTypeSO, string, LayeredCharacterCreationMode)
+  nameWithType: LayeredCharacter.LayeredCharacter(string, LayeredCharacterTypeSO, string, LayeredCharacterCreationMode)
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter(string, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, string, BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode)
   type: Constructor
   source:
     remote:
@@ -157,14 +157,14 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 39
+    startLine: 43
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
-  summary: Create new blank character.
+  summary: Create a new layered character with either default or randomized layer options.
   example: []
   syntax:
-    content: public LayeredCharacter(string characterName, LayeredCharacterTypeSO characterType, string displayName = "")
+    content: public LayeredCharacter(string characterName, LayeredCharacterTypeSO characterType, string displayName = "", LayeredCharacterCreationMode creationMode = LayeredCharacterCreationMode.DefaultLayerOptions)
     parameters:
     - id: characterName
       type: System.String
@@ -174,15 +174,19 @@ items:
       description: The <xref href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO" data-throw-if-not-resolved="false"></xref> the character will use.
     - id: displayName
       type: System.String
-    content.vb: Public Sub New(characterName As String, characterType As LayeredCharacterTypeSO, displayName As String = "")
+      description: Optional name used when displaying the character.
+    - id: creationMode
+      type: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+      description: Use default layer options or randomized layer options.
+    content.vb: Public Sub New(characterName As String, characterType As LayeredCharacterTypeSO, displayName As String = "", creationMode As LayeredCharacterCreationMode = LayeredCharacterCreationMode.DefaultLayerOptions)
   overload: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
     description: Thrown when <code class="paramref">characterType</code> is null or invalid.
-  nameWithType.vb: LayeredCharacter.New(String, LayeredCharacterTypeSO, String)
-  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(String, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, String)
-  name.vb: New(String, LayeredCharacterTypeSO, String)
+  nameWithType.vb: LayeredCharacter.New(String, LayeredCharacterTypeSO, String, LayeredCharacterCreationMode)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.LayeredCharacter.New(String, BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO, String, BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode)
+  name.vb: New(String, LayeredCharacterTypeSO, String, LayeredCharacterCreationMode)
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   commentId: M:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)
   id: '#ctor(BlazerTech.CharacterManagement.Characters.LayeredCharacter)'
@@ -201,7 +205,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 79
+    startLine: 80
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -243,7 +247,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 102
+    startLine: 103
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -284,7 +288,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: .ctor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 139
+    startLine: 140
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -320,7 +324,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: PerformValidationCheck
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 216
+    startLine: 217
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -370,7 +374,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadCharacterHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 240
+    startLine: 241
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -398,7 +402,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadCharacterHandlerAsync
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 252
+    startLine: 253
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -428,7 +432,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: UnloadCharacterHandler
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 258
+    startLine: 259
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -456,7 +460,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OverrideLayerOptions
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 296
+    startLine: 297
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -490,7 +494,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ApplySnapshot
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 323
+    startLine: 324
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -526,7 +530,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: RandomizeAllLayers
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/LayeredCharacter.cs
-    startLine: 342
+    startLine: 343
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -1355,7 +1359,7 @@ references:
   fullName: System.ArgumentException
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.LayeredCharacter.#ctor
-  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_System_String_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_String_
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacter.html#BlazerTech_CharacterManagement_Characters_LayeredCharacter__ctor_System_String_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_System_String_BlazerTech_CharacterManagement_Characters_LayeredCharacterCreationMode_
   name: LayeredCharacter
   nameWithType: LayeredCharacter.LayeredCharacter
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter
@@ -1373,6 +1377,13 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.html
+  name: LayeredCharacterCreationMode
+  nameWithType: LayeredCharacterCreationMode
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
 - uid: BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValidCharacter
   commentId: P:BlazerTech.CharacterManagement.Characters.CharacterBase`2.IsValidCharacter
   isExternal: true

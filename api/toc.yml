@@ -209,6 +209,9 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler
     name: LayeredCharacter.LoadedLayeredCharacterHandler
     type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+    name: LayeredCharacterCreationMode
+    type: Enum
   - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
     name: LayeredCharacterGroupManager
     type: Class
@@ -281,6 +284,9 @@ items:
     type: Class
   - uid: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler
     name: PhysicsCharacterAnimatorHandler
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
+    name: RandomLayeredCharacterRenderer
     type: Class
   - uid: BlazerTech.CharacterManagement.Components.TopDownMovementController
     name: TopDownMovementController

@@ -964,6 +964,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.yml",
       "output": {
         ".html": {
@@ -1296,6 +1310,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer",
       "Summary": null
     },
     {

@@ -103,15 +103,33 @@
         <article data-uid="character-usage">
 <h1 id="character-usage">Character Usage</h1>
 
-<p>The following scripts can be used to load and render characters</p>
-<ul>
-<li><strong><a href="#layered-character-group-renderer">Layered Character Group Renderer</a></strong> - Load and render a pre-existing Layered Character from a group.</li>
-<li><strong><a href="#layered-character-template-renderer">Layered Character Template Renderer</a></strong> - Create/load and render a layered character from a template.</li>
-<li><strong><a href="#unified-character-template-renderer">Unified Character Template Renderer</a></strong> - Create/Load and render a Unified Character from a template.</li>
-</ul>
+<p>The <strong>BlazerTech Character Management System</strong> includes the runtime components needed to <strong>load</strong>, <strong>render</strong>, <strong>animate</strong> and <strong>control</strong> characters.</p>
+<table>
+<thead>
+<tr>
+<th>Component Type</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Character Renderer components</strong></td>
+<td>Load and render a character.</td>
+</tr>
+<tr>
+<td><strong>Character Animator Handler components</strong></td>
+<td>Control specific <strong>paramters</strong> set in an <strong>Animator Controller</strong> used to properly animate the character.</td>
+</tr>
+<tr>
+<td><strong>Character Movement components</strong></td>
+<td>Handle player input and movement logic.</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h2 id="the-character-shader">The Character Shader</h2>
-<p>A <strong>shader</strong> is how the final character is displayed. Sprites from the <strong>Base Spritesheet</strong> in a <strong>Character Type</strong> are rendered in a component such as a <strong>Sprite Renderer</strong> or used in an <strong>Animator Controller</strong>.</p>
+<p>A shader is used to visually display a character over the <strong>Base Spritesheet</strong>.<br>
+Sprites from the <strong>Base Spritesheet</strong> assigned in a <strong>Character Type</strong> are rendered in a component such as a <strong>Sprite Renderer</strong> or used in an <strong>Animator Controller</strong>.</p>
 <p>If a <strong>Unified Character</strong> is used, the shader takes the single spritesheet of the character and shows that over the <strong>Base Spritesheet</strong>.<br>
 If a <strong>Layered Character</strong> is used, the shader combines all layers into the final rendered character.</p>
 <div class="NOTE">
@@ -119,9 +137,38 @@ If a <strong>Layered Character</strong> is used, the shader combines all layers 
 <p>If a <strong>Character Renderer</strong> component is used the shader will be applied automatically.</p>
 </div>
 <hr>
-<h2 id="character-renderers">Character Renderers</h2>
-<p>Character Renderer components can be used to load and display any character you've created regardless of the type. All <strong>Character Renderers</strong> have the following fields:</p>
-<h3 id="references">References</h3>
+<h2 id="character-renderer-components">Character Renderer Components</h2>
+<p>Character Renderer components will load and display any character regardless of the type</p>
+<h3 id="components">Components</h3>
+<table>
+<thead>
+<tr>
+<th>Renderer Component</th>
+<th>Used For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#layered-character-group-renderer">Layered Character Group Renderer</a></td>
+<td>Load a saved <strong>Layered Character</strong> from a group.</td>
+</tr>
+<tr>
+<td><a href="#layered-character-template-renderer">Layered Character Template Renderer</a></td>
+<td>Create and render a <strong>Layered Character</strong> from a template.</td>
+</tr>
+<tr>
+<td><a href="#unified-character-template-renderer">Unified Character Template Renderer</a></td>
+<td>Create and render a <strong>Unified Character</strong> from a template.</td>
+</tr>
+<tr>
+<td><a href="#random-layered-character-renderer">Random Layered Character Renderer</a></td>
+<td>Create a new <strong>Layered Character</strong> with completely random layer options.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="character-renderer-core-fields">Character Renderer Core Fields</h3>
+<p>All Character Renderer components have the following fields.</p>
+<h4 id="references">References</h4>
 <table>
 <thead>
 <tr>
@@ -134,12 +181,12 @@ If a <strong>Layered Character</strong> is used, the shader combines all layers 
 <tr>
 <td><strong>Renderer</strong></td>
 <td><code>Renderer</code></td>
-<td>Reference to a <strong>Renderer</strong> component such as a <strong>Sprite Renderer</strong>. Used to apply shader.</td>
+<td>Reference to a <strong>Renderer</strong> component such as a <strong>Sprite Renderer</strong>. Used to apply character shader.</td>
 </tr>
 <tr>
 <td><strong>Set Animator Controller</strong></td>
 <td><code>Bool</code></td>
-<td>Toggle if the <strong>Animator Controller</strong> referenced in the <strong>Character Type</strong> should be applied to animate the character.</td>
+<td>Automatically assigns the Animator Controller from the referenced Character Type.</td>
 </tr>
 <tr>
 <td><strong>Animator</strong></td>
@@ -148,7 +195,7 @@ If a <strong>Layered Character</strong> is used, the shader combines all layers 
 </tr>
 </tbody>
 </table>
-<h3 id="loading-settings">Loading Settings</h3>
+<h4 id="loading-settings">Loading Settings</h4>
 <table>
 <thead>
 <tr>
@@ -161,41 +208,57 @@ If a <strong>Layered Character</strong> is used, the shader combines all layers 
 <tr>
 <td><strong>Loading Mode</strong></td>
 <td><code>Enum</code></td>
-<td>Option to load character asynchronously or synchronously.</td>
+<td>Option to load character <strong>asynchronously</strong> or <strong>synchronously</strong>.</td>
 </tr>
 <tr>
 <td><strong>Load Character On Start</strong></td>
 <td><code>Bool</code></td>
-<td>if true the the character will be loaded when the <strong>Start</strong> method is called.</td>
+<td>If true the the character will be loaded when the <strong>Start</strong> method is called.</td>
 </tr>
 </tbody>
 </table>
 <hr>
 <h2 id="unified-character-template-renderer">Unified Character Template Renderer</h2>
-<p>Requirements:<br>
-Have a <a class="xref" href="unified-character-type.html">Unified Character Type</a> and at least one <a class="xref" href="character-templates.html#unified-character-template">Unified Character Template</a> Setup.</p>
-<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer.html">Unified Character Renderer</a> component can be used to create and load a character from a <strong>Unified Character Template</strong>.</p>
 <ul>
-<li>Add the script to a game object.</li>
-<li>Set <strong>Renderer</strong> and optionally <strong>Animator</strong> references.</li>
-<li>Set Loading Settings.</li>
-<li>Reference the <strong>Unified Character Template</strong> you want to load.</li>
-<li>Play your game and if <strong>Load Character On Start</strong> is toggled, your character will be displayed.</li>
+<li><strong>Component</strong>: <a class="xref" href="../api/BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer.html">UnifiedCharacterTemplateRenderer</a>.</li>
 </ul>
+<p>Requirements:</p>
+<ul>
+<li>A <a class="xref" href="unified-character-type.html">Unified Character Type</a>.</li>
+<li>At least one <a class="xref" href="character-templates.html#unified-character-template">Unified Character Template</a>.</li>
+</ul>
+<p>The <strong>Unified Character Template Renderer</strong> component renderers a <strong>Unified Character</strong> from a <strong>Unified Character Template</strong>.</p>
+<p><strong>Setup Steps:</strong></p>
+<ol>
+<li>Add the component to a GameObject.</li>
+<li>Assign <strong>Renderer</strong> (Usually a Sprite Renderer).</li>
+<li>optionally assign <strong>Animator</strong>.</li>
+<li>Configure Loading Settings.</li>
+<li>Assign the <strong>Unified Character Template</strong> you want to use.</li>
+<li>Play your game and if <strong>Load Character On Start</strong> is enabled, your character will be displayed.</li>
+</ol>
 <hr>
 <h2 id="layered-character-renderers">Layered Character Renderers</h2>
 <h3 id="layered-character-group-renderer">Layered Character Group Renderer</h3>
-<p>Requirements:<br>
-Have a <a class="xref" href="layered-character-type.html">Layered Character Type</a> setup and at least one <strong>Layered Character</strong> saved in a group.</p>
-<p><a class="xref" href="character-grouping-system.html">Read More → Character Groups</a></p>
-<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer.html">Layered Character Group Renderer</a> component can be used to load <strong>Layered Characters</strong> from a <strong>Character Group</strong>.</p>
 <ul>
-<li>Add the script to a game object.</li>
-<li>Set <strong>Renderer</strong> and optionally <strong>Animator</strong> references.</li>
-<li>Set Loading Settings.</li>
-<li>Reference the <strong>Character Type</strong> you want to load a character from.</li>
-<li>Set the <strong>Character Group</strong> you want to load your character from within the <strong>Character Type</strong>.</li>
+<li><strong>Component</strong>: <a class="xref" href="../api/BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer.html">LayeredCharacterGroupRenderer</a>.</li>
 </ul>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>A <a class="xref" href="layered-character-type.html">Layered Character Type</a>.</li>
+<li>At least one <strong>Layered Character</strong> saved in a group.</li>
+</ul>
+<p><a class="xref" href="character-grouping-system.html">Read More → Character Groups</a></p>
+<p>The <strong>Layered Character Group Renderer</strong> component renderers a previously saved <strong>Layered Character</strong> from a <strong>Character Group</strong>.</p>
+<p><strong>Setup Steps:</strong></p>
+<ol>
+<li>Add the component to a GameObject.</li>
+<li>Assign <strong>Renderer</strong> (Usually a Sprite Renderer).</li>
+<li>optionally assign <strong>Animator</strong>.</li>
+<li>Configure Loading Settings.</li>
+<li>Assign the <strong>Character Type</strong> you want to load a character from.</li>
+<li>Select the <strong>Character Group</strong> (Primary, Flexible or Fixed) and configure parameters.</li>
+</ol>
 <h4 id="character-groups">Character Groups</h4>
 <p>After a <strong>Character Type</strong> has been referenced, you can choose which group you want to load a <strong>Layered Character</strong> from:</p>
 <table>
@@ -238,22 +301,61 @@ Have a <a class="xref" href="layered-character-type.html">Layered Character Type
 <tr>
 <td><strong>Character Load Method</strong></td>
 <td><code>Enum</code></td>
-<td>Determines how a character is selected from the group: <br> - <strong>Character Name</strong> → Load a character by its saved name. <br> - <strong>Character Index</strong> → Load a character by its index position in the group. <br> - <strong>Randomized</strong> → Randomly load a character from the group.</td>
+<td>Determines how a character is selected from the group: <br> - <strong>Character Name</strong> &gt; Load a character by its saved name. <br> - <strong>Character Index</strong> &gt; Load a character by its index position in the group. <br> - <strong>Randomized</strong> &gt; Randomly load a character from the group.</td>
 </tr>
 </tbody>
 </table>
 <hr>
 <h3 id="layered-character-template-renderer">Layered Character Template Renderer</h3>
-<p>Requirements:<br>
-Have a <a class="xref" href="layered-character-type.html">Layered Character Type</a> and at least one <a class="xref" href="character-templates.html#layered-character-template">Layered Character Template</a> Setup.</p>
-<p>The <a class="xref" href="../api/BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer.html">Layered Character Template Renderer</a> component can be used to create and load a character from a  <strong>Layered Character Template</strong>.</p>
 <ul>
-<li>Add the script to a game object.</li>
-<li>Set <strong>Renderer</strong> and optionally <strong>Animator</strong> references.</li>
-<li>Set Loading Settings.</li>
-<li>Reference the <strong>Layered Character Template</strong> you want to load.</li>
-<li>Play your game and if <strong>Load Character On Start</strong> is toggled, your character will be displayed.</li>
+<li><strong>Component</strong>: <a class="xref" href="../api/BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer.html">LayeredCharacterTemplateRenderer</a>.</li>
 </ul>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>A <a class="xref" href="layered-character-type.html">Layered Character Type</a>.</li>
+<li>At least one <a class="xref" href="character-templates.html#layered-character-template">Layered Character Template</a>.</li>
+</ul>
+<p>The <strong>Layered Character Template Renderer</strong> component renderers a <strong>Layered Character</strong> from a <strong>Layered Character Template</strong>.</p>
+<p><strong>Setup Steps:</strong></p>
+<ol>
+<li>Add the component to a GameObject.</li>
+<li>Assign <strong>Renderer</strong> (Usually a Sprite Renderer).</li>
+<li>optionally assign <strong>Animator</strong>.</li>
+<li>Configure Loading Settings.</li>
+<li>Assign the <strong>Layered Character Template</strong> you want to use.</li>
+<li>Play your game and if <strong>Load Character On Start</strong> is enabled, your character will be displayed.</li>
+</ol>
+<hr>
+<h3 id="random-layered-character-renderer">Random Layered Character Renderer</h3>
+<ul>
+<li><strong>Component</strong>: <a class="xref" href="../api/BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.html">RandomLayeredCharacterRenderer</a>.</li>
+</ul>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>A <a class="xref" href="layered-character-type.html">Layered Character Type</a>.</li>
+</ul>
+<p>The <strong>Random Layered Character Renderer</strong> component creates and renders a <strong>completely random Layered Character</strong>. A random option is chosen from every layer.</p>
+<p><strong>Setup Steps:</strong></p>
+<ol>
+<li>Add the component to a GameObject.</li>
+<li>Assign <strong>Renderer</strong> (Usually a Sprite Renderer).</li>
+<li>optionally assign <strong>Animator</strong>.</li>
+<li>Configure Loading Settings.</li>
+<li>Assign the <strong>Layered Character Type</strong> you want to use.</li>
+<li>Play your game and if <strong>Load Character On Start</strong> is enabled, a new completely randomized character will be displayed.</li>
+</ol>
+<hr>
+<h2 id="character-animator-handlers">Character Animator Handlers</h2>
+<hr>
+<h3 id="character-animator-handler">Character Animator Handler</h3>
+<hr>
+<h3 id="physics-character-animator-handler">Physics Character Animator Handler</h3>
+<hr>
+<h2 id="character-controllers">Character Controllers</h2>
+<hr>
+<h3 id="top-down-movement-controller">Top Down Movement Controller</h3>
+<hr>
+<h3 id="coming-soon-side-scroller-movement-controller">(Coming Soon) Side-Scroller Movement Controller</h3>
 
 </article>
 

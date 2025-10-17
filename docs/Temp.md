@@ -1,238 +1,222 @@
 ---
 uid: temp
-summary: Step-by-step guide to setting up Animator Controllers for Character Types
+summary: Components for rendering, animating, and controlling characters.
 ---
 
-# Character Animation Setup
+# Character Usage
 
-This guide explains how to **create and configure an Animator Controller** for use with a [Character Type](xref:character-types).
-
----
-
-## Overview
-
-Each **Character Type** can include an **Animator Controller**.  
-This controller defines how animations are played using sprites from the **Base Spritesheet** specified in the Character Type.
-
-The setup process is the same for both **Unified** and **Layered Character Types**.
-
-> [!IMPORTANT]
-> All animations **must only use sprites from the Base Spritesheet**.  
-> If sprites from other sheets are used, they **will not render correctly** when used with the [Character Shader](xref:character-usage#the-character-shader).
-
-If you already have your own movement or animator handling scripts, you may configure your Animator Controller however you wish—adding your own parameters, animation states, or blend trees.
+The **Character Usage System** provides the runtime components needed to **load**, **render**, **animate**, and **control** characters.  
+Whether using pre-made unified sprites or fully modular layered characters, these components work together to display, animate, and move your characters in-game.
 
 ---
 
-## Integration with Built-In Scripts
+## 📦 Overview
 
-The **BlazerTech Character Management System** includes pre-built movement and animator handling scripts.  
-These scripts automatically support the following animation states:
-
-- **Idle**
-- **Walk**
-- **Sprint**
-- **Crouch Idle**
-- **Crouch Moving**
-
-Additional animations can be played at runtime using:
-```csharp
-PlayAnimation("AnimationName");
-```
-on any **Character Animator Handler** component.
+| Component Type | Purpose | Works With |
+|----------------|----------|------------|
+| **Character Renderers** | Display and load characters at runtime. | Unified / Layered |
+| **Animator Handlers** | Control and update animator parameters based on player movement or physics. | Any animated character |
+| **Character Controllers** | Handle player input and movement logic. | Any Character Renderer |
 
 ---
 
-## 1️⃣ Create an Animator Controller
+## 🧩 The Character Shader
 
-1. In the **Project Window**, right-click and select:  
-   `Create → Animation → Animator Controller`
-2. Name the asset (e.g., after the Character Type it’s used for).
-3. Double-click it to open the **Animator Window**.
+A **Character Shader** defines how the final character is rendered.
 
-You should now see an empty Animator Controller.
+- **Unified Characters:** Use a single spritesheet rendered directly onto the base texture.
+- **Layered Characters:** Combine multiple texture layers (body, outfit, hair, etc.) into one composite texture.
 
----
-
-## 2️⃣ Add Parameters
-
-The built-in **Character Animator Handler** components do **not** play animations directly.  
-Instead, they modify **parameters** within the Animator Controller, which control transitions between animation states.
-
-Open the **Parameters** tab in the top-left of the Animator Window.
-
-![Create Animator Parameter](~/images/character-animation/character-animator-create-parameter.png)
-
-### Required Parameters
-
-| Parameter Name           | Type  | Description |
-| ------------------------ | ----- | ----------- |
-| **Horizontal Movement**  | Float | Ranges from -1 to 1. Represents left/right movement on the X-axis. |
-| **Vertical Movement**    | Float | Ranges from -1 to 1. Represents up/down movement on the Y-axis. |
-| **Is Moving**            | Bool  | True when the character is moving; false otherwise. |
-
-### Optional Parameters
-
-These are used only if toggled in the included handler components.
-
-| Parameter Name   | Type | Description |
-| ---------------- | ---- | ----------- |
-| **Is Sprinting** | Bool | True when the character is sprinting. |
-| **Is Crouching** | Bool | True when the character is crouching. |
-
-> [!IMPORTANT]
-> Parameter names must match **exactly** with those used in the built-in Animator Handler scripts.
+> [!NOTE]
+> If you’re using a **Character Renderer** component, the shader is applied automatically.  
+> You can also manually assign your own compatible shader for custom rendering.
 
 ---
 
-## 3️⃣ Add Animation States
+## 🎨 Character Renderer Components
 
-Because the built-in handlers only modify parameters, **you can design your animation state layout freely**.
+All **Character Renderer** components share similar fields and behavior.
 
-A common approach is to use **Blend Trees** for animations that play in four directions (Up, Down, Left, Right)—such as *Idle* and *Walk*.
+### References
 
-### Create Animation Clips
+| Field | Type | Description |
+|-------|------|-------------|
+| **Renderer** | `Renderer` | Reference to a **Sprite Renderer** or other renderer component used to display the character. |
+| **Set Animator Controller** | `bool` | Automatically assigns the **Animator Controller** from the referenced **Character Type**. |
+| **Animator** | `Animator` | Reference to an Animator component used to animate the character. Shown only if the above option is enabled. |
 
-In the **Project Window**, right-click and choose:  
-`Create → Animation → Animation Clip`
+### Loading Settings
 
-You’ll typically create **eight animation clips**:
-
-**Idle:**
-- Idle Down  
-- Idle Up  
-- Idle Left  
-- Idle Right
-
-**Walk:**
-- Walk Down  
-- Walk Up  
-- Walk Left  
-- Walk Right
-
-You can leave these empty for now—we’ll add frames later.
+| Field | Type | Description |
+|-------|------|-------------|
+| **Loading Mode** | `Enum` | Choose between **Synchronous** or **Asynchronous** character loading. |
+| **Load Character On Start** | `bool` | If true, automatically loads the character when the component starts. |
 
 ---
 
-### Create Blend Trees
+## 🧍 Unified Character Template Renderer
 
-Repeat the following for each four-direction animation set (e.g., *Idle*, *Walk*).
+**Requirements**
+- A [Unified Character Type](xref:unified-character-type)
+- At least one [Unified Character Template](xref:character-templates#unified-character-template)
 
-1. Right-click in the Animator window → **Create State → From New Blend Tree**.  
-2. Name it (e.g., `Idle` or `Walk`).  
-3. Double-click the blend tree to open it.  
-4. Set **Blend Type** to `2D Simple Directional`.  
-5. Assign **Blend Parameters** to:
-   - X: `Horizontal Movement`
-   - Y: `Vertical Movement`
-6. Add motions for each direction (Up, Down, Left, Right).  
-7. Assign the corresponding animation clips.  
-8. Set coordinates for each direction:
+The [`UnifiedCharacterTemplateRenderer`](xref:BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer)  
+creates and renders a **Unified Character** from a template.
 
-| X | Y | Direction |
-| - | - | --------- |
-|  0 | -1 | Down |
-|  0 |  1 | Up |
-| -1 |  0 | Left |
-|  1 |  0 | Right |
-
-![Blend Tree Example](~/images/character-animation/character-animator-blend-tree.png)
+**Setup Steps**
+1. Add the component to a GameObject.  
+2. Assign a **Renderer** (usually a Sprite Renderer).  
+3. Optionally assign an **Animator**.  
+4. Configure **Loading Settings**.  
+5. Assign the **Unified Character Template**.  
+6. Play the scene — the character will appear automatically if **Load Character On Start** is enabled.
 
 ---
 
-## 4️⃣ Setup State Transitions
+## 🧍‍♀️ Layered Character Renderers
 
-Let’s define how the Animator transitions between states.
+### Layered Character Group Renderer
 
-1. Right-click the **Idle** blend tree → **Set as Layer Default State**.
-2. Right-click **Idle** → **Make Transition** → Click **Walk**.
-3. Select the new transition line.
-4. Add a **Condition**:
-   - Parameter: `Is Moving`
-   - Value: `true`
-   - Disable **Has Exit Time** (for instant transitions).
+**Requirements**
+- A [Layered Character Type](xref:layered-character-type)
+- At least one saved **Layered Character Group**
 
-Now, when the character moves, it transitions from *Idle* to *Walk*.
+The [`LayeredCharacterGroupRenderer`](xref:BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer)  
+renders **saved or existing characters** stored within a **Character Group**.
 
-Next, create the reverse transition (**Walk → Idle**) with:
-- Condition: `Is Moving = false`
+**Setup Steps**
+1. Add to a GameObject.  
+2. Assign a **Renderer** and optional **Animator**.  
+3. Configure **Loading Settings**.  
+4. Assign the **Character Type**.  
+5. Select the **Group Type** (Primary, Flexible, or Fixed) and configure parameters.
 
-When movement stops, the character will return to Idle automatically.
+#### Group Parameters
 
----
+| Parameter | Type | Description |
+|------------|------|-------------|
+| **Character Group Name** | `string` | Name of the group to load from. |
+| **Character Load Method** | `Enum` | How to select the character:<br>- **By Name**<br>- **By Index**<br>- **Randomized** |
 
-## 5️⃣ Setup Animation Clips
-
-Now it’s time to add your sprite frames to the animation clips.
-
-1. Create or select a GameObject with:
-   - **Animator**
-   - **Sprite Renderer**
-2. Open the **Animation Window**.
-3. Select an animation clip (e.g., `Idle Down`).
-4. Select all sprite frames.
-5. Drag and drop them into the **Timeline**.
-6. Adjust **Samples** — the animation’s frame rate.  
-   - Recommended: **12 FPS** (for smooth 2D animation).
-
-Repeat this for each of your Idle and Walk clips.
+> [!TIP]
+> Use **Flexible Groups** for editable rosters, and **Fixed Groups** for predefined teams or NPC slots.
 
 ---
 
-## 6️⃣ Add Additional Animations (Optional)
+### Layered Character Template Renderer
 
-You can expand your Animator with as many custom animations as needed.
+**Requirements**
+- A [Layered Character Type](xref:layered-character-type)
+- At least one [Layered Character Template](xref:character-templates#layered-character-template)
 
-### Single-Direction Animations
-For animations that only play in one direction (e.g., **Attack Down**):
-- Create a new state.
-- Assign the clip directly.
+The [`LayeredCharacterTemplateRenderer`](xref:BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer)  
+creates and displays a new **Layered Character** directly from a template.
 
-### Multi-Directional Animations
-For directional animations (e.g., **Attack** in four directions):
-- Create another **Blend Tree** using the same parameter setup (`Horizontal Movement`, `Vertical Movement`).
-
-When played, the Blend Tree automatically chooses the correct direction.
-
-If an animation is **not looped**, add a transition back to *Idle* or the **Exit** node.
-
-Animations can be triggered manually via:
-```csharp
-animator.Play("AnimationName");
-```
-or
-```csharp
-animatorHandler.PlayAnimation("AnimationName");
-```
-(using the included Animator Handler components).
+**Setup Steps**
+1. Add the component to a GameObject.  
+2. Assign a **Renderer** and optional **Animator**.  
+3. Configure **Loading Settings**.  
+4. Assign the **Layered Character Template** to load.  
+5. Run the game — the character will appear if **Load Character On Start** is enabled.
 
 ---
 
-## 7️⃣ Assign Animator Controller to a Character Type
+## 🎞️ Character Animator Handlers
 
-Once your Animator Controller is complete:
+The **Animator Handler Components** control character animation parameters during gameplay.  
+They are designed to work with **any character using an Animator Controller**, updating parameters such as movement direction, idle states, and animation speed.
 
-1. Select the **Character Type asset** in the Project Window.  
-2. In the **Inspector**, find the **Character Controller** field.  
-3. Drag your new **Animator Controller** into this slot.
+### ⚙️ Character Animator Handler
+[`CharacterAnimatorHandler`](xref:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler)
 
-It should look like this:
+A lightweight animator controller used for **manual or scripted movement** (e.g., controlled by AI, dialogue, or cutscenes).  
+It updates the Animator parameters based on movement input provided by another script.
 
-![Animator Controller Field](~/images/character-types/character-type-character-controller-field.png)
+**Common Parameters**
+| Parameter | Type | Description |
+|------------|------|-------------|
+| **Horizontal** | `float` | Left/right movement direction. |
+| **Vertical** | `float` | Up/down movement direction. |
+| **Speed** | `float` | Normalized speed used to blend between idle and movement animations. |
 
-When used with a [Character Renderer component](xref:character-usage#character-renderers),  
-the assigned Animator Controller will automatically be applied at runtime.
+> [!NOTE]
+> Use this when you’re handling movement manually or through non-physics systems.
 
 ---
 
-## ✅ Summary
+### 🌐 Physics Character Animator Handler
+[`PhysicsCharacterAnimatorHandler`](xref:BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler)
 
-You’ve now set up:
+A physics-driven variant that automatically reads velocity from a **Rigidbody2D** and updates Animator parameters accordingly.  
+Perfect for top-down or side-scrolling characters using physical movement.
 
-- ✅ Animator Parameters  
-- ✅ Idle and Walk Blend Trees  
-- ✅ Direction-based transitions  
-- ✅ Sprite frame animations  
-- ✅ Integration with your Character Type  
+**Additional Parameters**
+| Parameter | Type | Description |
+|------------|------|-------------|
+| **Velocity Threshold** | `float` | Minimum movement speed before switching from idle to moving. |
+| **Use Rigidbody Velocity** | `bool` | If true, animator parameters are updated from Rigidbody velocity. |
 
-Your character is now fully ready for animation playback and runtime control through the **BlazerTech Character Management System**.
+> [!TIP]
+> Combine with the **Top Down Movement Controller** or future **Side-Scroller Controller** for seamless integration.
+
+---
+
+## 🎮 Character Controllers
+
+Character Controllers handle movement, input, and physics.  
+They are separate from Animator Handlers, allowing flexible setups where movement logic and animation logic are decoupled.
+
+### 🧭 Top Down Movement Controller
+[`TopDownMovementController`](xref:BlazerTech.CharacterManagement.Components.TopDownMovementController)
+
+Handles movement for top-down characters using **WASD or arrow key input**.  
+Automatically updates the Rigidbody2D position and integrates with Animator Handlers for directional animation.
+
+**Features**
+- Supports walking, sprinting, and diagonal movement.  
+- Works with both **Layered** and **Unified** characters.  
+- Can be paired with `PhysicsCharacterAnimatorHandler` for auto animation updates.  
+
+**Inspector Fields**
+| Field | Type | Description |
+|--------|------|-------------|
+| **Move Speed** | `float` | Base walking speed. |
+| **Sprint Multiplier** | `float` | Speed multiplier when sprinting. |
+| **Rigidbody2D** | `Component` | The Rigidbody2D component controlling movement. |
+| **Animator Handler** | `Component` | Reference to an Animator Handler to synchronize animation. |
+
+> [!TIP]
+> Use this controller for any 2D top-down project — NPCs, player characters, or crowd systems.
+
+---
+
+### 🧱 (Coming Soon) Side-Scroller Movement Controller
+
+A 2D side-scrolling movement component with support for:
+- Horizontal running and jumping.  
+- Rigidbody2D-based motion with gravity.  
+- Optional crouch, climb, or attack parameter support.  
+- Integrated animation syncing through `PhysicsCharacterAnimatorHandler`.
+
+Stay tuned for this addition in **BT-CMS v1.1+**.
+
+---
+
+## 🧠 Summary
+
+| Task | Component | Works With |
+|------|------------|------------|
+| Render a pre-made character | **Unified Character Template Renderer** | Unified |
+| Render a customizable character | **Layered Character Template Renderer** | Layered |
+| Load a saved or grouped character | **Layered Character Group Renderer** | Layered |
+| Drive animations by script | **Character Animator Handler** | All |
+| Drive animations via physics | **Physics Character Animator Handler** | All |
+| Handle movement input | **Top Down Movement Controller** | All |
+
+---
+
+## 🔗 Next Steps
+- [Read More → Character Creator](xref:character-creator)  
+- [Read More → Character Groups](xref:character-grouping-system)  
+- [Read More → Character Templates](xref:character-templates)  
+- [Read More → Character Animator Setup](xref:character-animation-setup)

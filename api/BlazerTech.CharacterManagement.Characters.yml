@@ -32,6 +32,7 @@ items:
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LoadedLayeredCharacterHandler
+  - BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupTemplateSO
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
@@ -355,6 +356,13 @@ references:
   name: LayeredCharacterSnapshot
   nameWithType: LayeredCharacterSnapshot
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterSnapshot
+- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+  commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode.html
+  name: LayeredCharacterCreationMode
+  nameWithType: LayeredCharacterCreationMode
+  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterCreationMode
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacter
   commentId: T:BlazerTech.CharacterManagement.Characters.LayeredCharacter
   parent: BlazerTech.CharacterManagement.Characters

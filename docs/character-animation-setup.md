@@ -14,6 +14,8 @@ This page goes over how to **create and properly configure an Animator Controlle
 Every Character Type can include an **Animator Controller**.  
 This controller provides uesable animations from the sprites contained within the **Base Spritesheet** set in the **Character Type**
 
+All characters using the same **Character Type** can use a single **Animator Controller**. No need to create a separate Animator/Override Controller for every new character.
+
 The setup process is the same for both **Unified** and **Layered Character Types**.
 
 > [!IMPORTANT]
@@ -22,6 +24,8 @@ The setup process is the same for both **Unified** and **Layered Character Types
 
 If you already have your own movement and animator handling scripts, you can setup the **Animator Controller** 
 however you need for you project. That means you can create your own parameters, animation states, blend trees, etc.
+
+---
 
 ## Integration with Built-In Scripts
 The **BlazerTech Character Management System** includes pre-built movement and animator handling scripts.
