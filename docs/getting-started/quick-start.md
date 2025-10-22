@@ -26,7 +26,7 @@ Prefer video guides? I've got you covered!
 
 ## 1️⃣Create a Character Type
 
-If you only plan to use the built-in characters you can skip straight to [Creating a Character Template](#creating-a-character-template).
+If you only plan to use the built-in characters you can skip straight to [Creating a Character Template](#2create-a-character-template).
 
 Create a Character Type asset:  
 

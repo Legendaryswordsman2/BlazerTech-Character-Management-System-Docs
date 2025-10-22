@@ -261,9 +261,6 @@ items:
   name: BlazerTech.CharacterManagement.Components
   type: Namespace
   items:
-  - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler
-    name: CharacterAnimatorHandler
-    type: Class
   - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
     name: CharacterAnimatorHandlerBase
     type: Class
@@ -282,11 +279,14 @@ items:
   - uid: BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer
     name: LayeredCharacterTemplateRenderer
     type: Class
-  - uid: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler
-    name: PhysicsCharacterAnimatorHandler
-    type: Class
   - uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
     name: RandomLayeredCharacterRenderer
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler
+    name: TopDownCharacterAnimatorHandler
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler
+    name: TopDownCharacterPhysicsAnimatorHandler
     type: Class
   - uid: BlazerTech.CharacterManagement.Components.TopDownMovementController
     name: TopDownMovementController

@@ -6152,53 +6152,6 @@ references:
   commentId: N:BlazerTech.CharacterManagement.Components
   fullName: BlazerTech.CharacterManagement.Components
   nameWithType: BlazerTech.CharacterManagement.Components
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler
-  name: CharacterAnimatorHandler
-  href: api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.html
-  commentId: T:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler
-  nameWithType: CharacterAnimatorHandler
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.Awake
-  name: Awake()
-  href: api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandler_Awake
-  commentId: M:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.Awake
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.Awake()
-  nameWithType: CharacterAnimatorHandler.Awake()
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.Awake*
-  name: Awake
-  href: api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandler_Awake_
-  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.Awake
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.Awake
-  nameWithType: CharacterAnimatorHandler.Awake
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
-  name: UpdateAnimatorParameters(bool, bool, Vector2)
-  href: api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandler_UpdateAnimatorParameters_System_Boolean_System_Boolean_UnityEngine_Vector2_
-  commentId: M:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
-  name.vb: UpdateAnimatorParameters(Boolean, Boolean, Vector2)
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters(bool, bool, UnityEngine.Vector2)
-  fullName.vb: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters(Boolean, Boolean, UnityEngine.Vector2)
-  nameWithType: CharacterAnimatorHandler.UpdateAnimatorParameters(bool, bool, Vector2)
-  nameWithType.vb: CharacterAnimatorHandler.UpdateAnimatorParameters(Boolean, Boolean, Vector2)
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters*
-  name: UpdateAnimatorParameters
-  href: api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandler_UpdateAnimatorParameters_
-  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters
-  nameWithType: CharacterAnimatorHandler.UpdateAnimatorParameters
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.crouchParameterName
-  name: crouchParameterName
-  href: api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandler_crouchParameterName
-  commentId: F:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.crouchParameterName
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.crouchParameterName
-  nameWithType: CharacterAnimatorHandler.crouchParameterName
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.sprintParameterName
-  name: sprintParameterName
-  href: api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandler_sprintParameterName
-  commentId: F:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.sprintParameterName
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.sprintParameterName
-  nameWithType: CharacterAnimatorHandler.sprintParameterName
 - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
   name: CharacterAnimatorHandlerBase
   href: api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html
@@ -6279,22 +6232,6 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.PlayDefaultAnimation
   nameWithType: CharacterAnimatorHandlerBase.PlayDefaultAnimation
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(System.String)
-  name: SetTrigger(string)
-  href: api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_SetTrigger_System_String_
-  commentId: M:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(System.String)
-  name.vb: SetTrigger(String)
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(string)
-  fullName.vb: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(String)
-  nameWithType: CharacterAnimatorHandlerBase.SetTrigger(string)
-  nameWithType.vb: CharacterAnimatorHandlerBase.SetTrigger(String)
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger*
-  name: SetTrigger
-  href: api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_SetTrigger_
-  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger
-  nameWithType: CharacterAnimatorHandlerBase.SetTrigger
 - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
   name: UpdateAnimatorParameters(bool, bool, Vector2)
   href: api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_UpdateAnimatorParameters_System_Boolean_System_Boolean_UnityEngine_Vector2_
@@ -6678,51 +6615,6 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer.ShowCharacter
   nameWithType: LayeredCharacterTemplateRenderer.ShowCharacter
-- uid: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler
-  name: PhysicsCharacterAnimatorHandler
-  href: api/BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.html
-  commentId: T:BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler
-  fullName: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler
-  nameWithType: PhysicsCharacterAnimatorHandler
-- uid: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.Awake
-  name: Awake()
-  href: api/BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_PhysicsCharacterAnimatorHandler_Awake
-  commentId: M:BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.Awake
-  fullName: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.Awake()
-  nameWithType: PhysicsCharacterAnimatorHandler.Awake()
-- uid: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.Awake*
-  name: Awake
-  href: api/BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_PhysicsCharacterAnimatorHandler_Awake_
-  commentId: Overload:BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.Awake
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.Awake
-  nameWithType: PhysicsCharacterAnimatorHandler.Awake
-- uid: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.IsMoving
-  name: IsMoving
-  href: api/BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_PhysicsCharacterAnimatorHandler_IsMoving
-  commentId: P:BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.IsMoving
-  fullName: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.IsMoving
-  nameWithType: PhysicsCharacterAnimatorHandler.IsMoving
-- uid: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.IsMoving*
-  name: IsMoving
-  href: api/BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_PhysicsCharacterAnimatorHandler_IsMoving_
-  commentId: Overload:BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.IsMoving
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.IsMoving
-  nameWithType: PhysicsCharacterAnimatorHandler.IsMoving
-- uid: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.Speed
-  name: Speed
-  href: api/BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_PhysicsCharacterAnimatorHandler_Speed
-  commentId: P:BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.Speed
-  fullName: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.Speed
-  nameWithType: PhysicsCharacterAnimatorHandler.Speed
-- uid: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.Speed*
-  name: Speed
-  href: api/BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_PhysicsCharacterAnimatorHandler_Speed_
-  commentId: Overload:BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.Speed
-  isSpec: "True"
-  fullName: BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.Speed
-  nameWithType: PhysicsCharacterAnimatorHandler.Speed
 - uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
   name: RandomLayeredCharacterRenderer
   href: api/BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.html
@@ -6768,6 +6660,98 @@ references:
   isSpec: "True"
   fullName: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.ShowCharacter
   nameWithType: RandomLayeredCharacterRenderer.ShowCharacter
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler
+  name: TopDownCharacterAnimatorHandler
+  href: api/BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.html
+  commentId: T:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler
+  nameWithType: TopDownCharacterAnimatorHandler
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.Awake
+  name: Awake()
+  href: api/BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_TopDownCharacterAnimatorHandler_Awake
+  commentId: M:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.Awake
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.Awake()
+  nameWithType: TopDownCharacterAnimatorHandler.Awake()
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.Awake*
+  name: Awake
+  href: api/BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_TopDownCharacterAnimatorHandler_Awake_
+  commentId: Overload:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.Awake
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.Awake
+  nameWithType: TopDownCharacterAnimatorHandler.Awake
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
+  name: UpdateAnimatorParameters(bool, bool, Vector2)
+  href: api/BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_TopDownCharacterAnimatorHandler_UpdateAnimatorParameters_System_Boolean_System_Boolean_UnityEngine_Vector2_
+  commentId: M:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
+  name.vb: UpdateAnimatorParameters(Boolean, Boolean, Vector2)
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters(bool, bool, UnityEngine.Vector2)
+  fullName.vb: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters(Boolean, Boolean, UnityEngine.Vector2)
+  nameWithType: TopDownCharacterAnimatorHandler.UpdateAnimatorParameters(bool, bool, Vector2)
+  nameWithType.vb: TopDownCharacterAnimatorHandler.UpdateAnimatorParameters(Boolean, Boolean, Vector2)
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters*
+  name: UpdateAnimatorParameters
+  href: api/BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_TopDownCharacterAnimatorHandler_UpdateAnimatorParameters_
+  commentId: Overload:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters
+  nameWithType: TopDownCharacterAnimatorHandler.UpdateAnimatorParameters
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.crouchParamName
+  name: crouchParamName
+  href: api/BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_TopDownCharacterAnimatorHandler_crouchParamName
+  commentId: F:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.crouchParamName
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.crouchParamName
+  nameWithType: TopDownCharacterAnimatorHandler.crouchParamName
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.sprintParamName
+  name: sprintParamName
+  href: api/BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_TopDownCharacterAnimatorHandler_sprintParamName
+  commentId: F:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.sprintParamName
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.sprintParamName
+  nameWithType: TopDownCharacterAnimatorHandler.sprintParamName
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler
+  name: TopDownCharacterPhysicsAnimatorHandler
+  href: api/BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.html
+  commentId: T:BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler
+  nameWithType: TopDownCharacterPhysicsAnimatorHandler
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.Awake
+  name: Awake()
+  href: api/BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.html#BlazerTech_CharacterManagement_Components_TopDownCharacterPhysicsAnimatorHandler_Awake
+  commentId: M:BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.Awake
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.Awake()
+  nameWithType: TopDownCharacterPhysicsAnimatorHandler.Awake()
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.Awake*
+  name: Awake
+  href: api/BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.html#BlazerTech_CharacterManagement_Components_TopDownCharacterPhysicsAnimatorHandler_Awake_
+  commentId: Overload:BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.Awake
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.Awake
+  nameWithType: TopDownCharacterPhysicsAnimatorHandler.Awake
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.IsMoving
+  name: IsMoving
+  href: api/BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.html#BlazerTech_CharacterManagement_Components_TopDownCharacterPhysicsAnimatorHandler_IsMoving
+  commentId: P:BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.IsMoving
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.IsMoving
+  nameWithType: TopDownCharacterPhysicsAnimatorHandler.IsMoving
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.IsMoving*
+  name: IsMoving
+  href: api/BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.html#BlazerTech_CharacterManagement_Components_TopDownCharacterPhysicsAnimatorHandler_IsMoving_
+  commentId: Overload:BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.IsMoving
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.IsMoving
+  nameWithType: TopDownCharacterPhysicsAnimatorHandler.IsMoving
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.Speed
+  name: Speed
+  href: api/BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.html#BlazerTech_CharacterManagement_Components_TopDownCharacterPhysicsAnimatorHandler_Speed
+  commentId: P:BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.Speed
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.Speed
+  nameWithType: TopDownCharacterPhysicsAnimatorHandler.Speed
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.Speed*
+  name: Speed
+  href: api/BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.html#BlazerTech_CharacterManagement_Components_TopDownCharacterPhysicsAnimatorHandler_Speed_
+  commentId: Overload:BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.Speed
+  isSpec: "True"
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.Speed
+  nameWithType: TopDownCharacterPhysicsAnimatorHandler.Speed
 - uid: BlazerTech.CharacterManagement.Components.TopDownMovementController
   name: TopDownMovementController
   href: api/BlazerTech.CharacterManagement.Components.TopDownMovementController.html

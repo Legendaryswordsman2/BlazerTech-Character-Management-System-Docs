@@ -1202,20 +1202,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.yml",
       "output": {
         ".html": {
@@ -1300,20 +1286,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.yml",
       "output": {
         ".html": {
@@ -1324,6 +1296,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler",
       "Summary": null
     },
     {
@@ -2402,6 +2402,26 @@
       "output": {
         "resource": {
           "relative_path": "images/character-animation/character-animator-parameters.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-animation/top-down-character-animator-handler-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-animation/top-down-character-animator-handler-component.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/character-animation/top-down-character-physics-animator-handler-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/character-animation/top-down-character-physics-animator-handler-component.png"
         }
       },
       "version": ""

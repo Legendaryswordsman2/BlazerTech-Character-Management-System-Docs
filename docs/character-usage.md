@@ -161,22 +161,146 @@ The **Random Layered Character Renderer** component creates and renders a **comp
 
 ## Character Animator Handlers
 
+**Animator Handler components** control parameters set within an Animator Controller.
+
+All **Animator Handler components** require a reference to an **Animator component**.
+
+> [!TIP]
+> An **Animator Controller** can be assigned to any **Character Type** and be automatically used a character of that type is used.
+
 ---
 
-### Character Animator Handler
+### Top-Down Character Animator Handler
+
+- **Component**: [TopDownCharacterAnimatorHandler](xref:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler).  
+
+The **Top-Down Character Animator Handler** synces **parameters** in an **Animator Controller** to values within the [Top Down Movement Controller](#top-down-movement-controller).
+
+#### Inspector Fields
+
+**References:**
+
+| Parameter               | Type                        | Description                                                                 |
+| ----------------------- | --------------------------- | --------------------------------------------------------------------------- |
+| **Animator**            | `Animator`                  | The **Animator component** used to set parameters.                          |
+| **Movement Controller** | `TopDownMovementController` | The **Top Down Movement Controller** component used to listen for movement. |
+
+**Parameter Names:**
+
+| Parameter                     | Type     | Description                                                                                                                                                                                                            |
+| ----------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Is Moving Param**           | `Bool`   | The **Animator parameter name** used to indicate whether the character is moving.<br>Set to `true` when movement is detected.                                                                                          |
+| **Horizontal Movement Param** | `String` | The **Animator parameter name** for horizontal input.<br>`-1` when moving left and `1` when moving right.                                                                                                              |
+| **Vertical Movement Param**   | `String` | The **Animator parameter name** for vertical input.<br>`-1` when moving down and `1` when moving up.                                                                                                                   |
+| **Sprint Param**              | `Bool`   | The **Animator parameter name** used to indicate when the character is **sprinting**.<br>`True` when sprinting, otherwise `false`.<br>Only available when `Sprint` is enabled in the **Top Down Movement Controller**. |
+| **Crouch Param**              | `Bool`   | The **Animator parameter name** used to indicate when the character is **crouching**.<br>`True` when crouched, otherwise `false`.<br>Only available when `Crouch` is enabled in the **Top Down Movement Controller**.  |
+
+**How it works:**
+- Reads movement and state data from the referenced **Top Down Movement Controller**.
+- Updates Animator Controller paramters in-real time to reflect the character's state.
+- Animator Controller uses those parameters to play specific animations.
+
+**Available Methods:**
+- `ChangeDirection(FourDirectional/EightDirectional)`: Immediately update the direction the character is facing.
+- `PlayAnimation(string)`: Play a specific animation or blend tree by state name.
+- `PlayDefaultAnimation()`: Play the default animation state defined in the **Animator Controller**.
+
+![Top-Down Character Animator Handler Component](~/images/character-animation/top-down-character-animator-handler-component.png)
 
 ---
 
-### Physics Character Animator Handler
+### Top-Down Character Physics Animator Handler
+
+- **Component**: [TopDownCharacterPhysicsAnimatorHandler](xref:BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler). 
+
+The **Top-Down Character Physics Animator Handler** is physics-driven.  
+Every fixed update the position of the game object the component is attached to is compared to it's possition last frame.  
+This is used to determine the direction the character is moving and speed the character is traveling at.
+
+#### Inspector Fields
+
+**References:**
+
+| Parameter    | Type       | Description                                        |
+| ------------ | ---------- | -------------------------------------------------- |
+| **Animator** | `Animator` | The **Animator component** used to set parameters. |
+
+**Parameter Names:**
+
+| Parameter                     | Type     | Description                                                                                                                   |
+| ----------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **Is Moving Param**           | `Bool`   | The **Animator parameter name** used to indicate whether the character is moving.<br>Set to `true` when movement is detected. |
+| **Horizontal Movement Param** | `String` | The **Animator parameter name** for horizontal input.<br>`-1` when moving left and `1` when moving right.                     |
+| **Vertical Movement Param**   | `String` | The **Animator parameter name** for vertical input.<br>`-1` when moving down and `1` when moving up.                          |
+
+**Sprint Animation:**
+
+| Field                     | Type     | Description                                                                            |
+| ------------------------- | -------- | -------------------------------------------------------------------------------------- |
+| **Enable Sprint**         | `Bool`   | If true, enables sprinting animations when speed is greater than **Sprint Min Speed**. |
+| **Sprint Min Speed**      | `Float`  | Minimum speed required to trigger sprint animation.                                    |
+| **Sprint Parameter Name** | `String` | The **Animator parameter name** for the sprint state (default: "Is Sprinting").        |
+
+**Crouch Animation:**
+
+| Field                     | Type     | Description                                                                         |
+| ------------------------- | -------- | ----------------------------------------------------------------------------------- |
+| **Enable Crouch**         | `Bool`   | If true, enables crouching animations when speed is less than **Crouch Max Speed**. |
+| **Crouch Max Speed**      | `Float`  | Maximum speed for crouch animations to be used.                                     |
+| **Crouch Parameter Name** | `String` | The **Animator parameter name** for the crouch state (default: "Is Crouching").     |
+
+**How it works:**
+- Calculates movement each `FixedUpdate()` by comparing current and previous positions.
+- Determines direction and speed, then updates Animator parameters.
+- Optionally toggles sprint/crouch states when enabled.
+- Animator Controller uses those parameters to play specific animations.
+
+**Available Methods:**
+- `ChangeDirection(FourDirectional/EightDirectional)`: Immediately update the direction the character is facing.
+- `PlayAnimation(string)`: Play a specific animation or blend tree by state name.
+- `PlayDefaultAnimation()`: Play the default animation state defined in the **Animator Controller**.
+
+![Top-Down Character Physics Animator Handler Component](~/images/character-animation/top-down-character-physics-animator-handler-component.png)
+
+> [!IMPORTANT]
+> Due to the nature of how the **Top-Down Character Physics Animator Handler** works, crouch animations can only be played when the character is moving.
 
 ---
 
 ## Character Controllers
 
+**Character Controllers** are included components which let the player control the movement of a game object.
+
+When used with a **Character Animator Hander** you can both control and aniamte any character with ease.
+
 ---
 
 ### Top Down Movement Controller
 
----
+- **Component**: [TopDownMovementController](xref:BlazerTech.CharacterManagement.Components.TopDownMovementController). 
 
-### (Coming Soon) Side-Scroller Movement Controller
+The **Top-Down Movement Controller** handles player movement for top-down 2d games where there are 4 directions the player can move (Left, right, up, down).  
+
+#### Inspector Fields
+
+| Field             | Type           | Description                                                                          |
+| ----------------- | -------------- | ------------------------------------------------------------------------------------ |
+| **Rigid Body 2D** | `RigidyBody2D` | The `Rigidybody2D` component used to move the player.                                |
+| **Move Speed**    | `Float`        | Base walk speed (Default: 6.5).                                                      |
+| **Can Move**      | `Bool`         | Toggles whether the character can move. Can be toggled through the editor or script. |
+| **Enable Sprint** | `bool`         | Allows sprinting with **Left Shift**.                                                |
+| **Sprint Speed**  | `float`        | Movement speed while sprinting.                                                      |
+| **Enable Crouch** | `bool`         | Allows crouching with **C** or **Left Ctrl**.                                        |
+| **Crouch Speed**  | `float`        | Movement speed while crouching.                                                      |
+
+**Runtime Properties**
+
+| Property        | Type      | Description                                   |
+| --------------- | --------- | --------------------------------------------- |
+| **IsMoving**    | `bool`    | True if the character is currently moving.    |
+| **IsSprinting** | `bool`    | True if the character is currently sprinting. |
+| **IsCrouching** | `bool`    | True if the character is currently crouching. |
+| **Movement**    | `Vector2` | Current movement direction.                   |
+
+> [!TIP]
+> Designed to be used along a **Character Animator Handler** component. When both used they provide both character movement and animation functionality.

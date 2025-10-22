@@ -11,7 +11,6 @@ items:
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.ChangeDirection(BlazerTech.CharacterManagement.Core.FourDirectional)
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.PlayAnimation(System.String)
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.PlayDefaultAnimation
-  - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(System.String)
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.animator
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.horizontalMovementParam
@@ -45,8 +44,8 @@ items:
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
   derivedClasses:
-  - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler
-  - BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler
+  - BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler
+  - BlazerTech.CharacterManagement.Components.TopDownCharacterPhysicsAnimatorHandler
 - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.animator
   commentId: F:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.animator
   id: animator
@@ -438,38 +437,6 @@ items:
     content: public void PlayDefaultAnimation()
     content.vb: Public Sub PlayDefaultAnimation()
   overload: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.PlayDefaultAnimation*
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(System.String)
-  commentId: M:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(System.String)
-  id: SetTrigger(System.String)
-  parent: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
-  langs:
-  - csharp
-  - vb
-  name: SetTrigger(string)
-  nameWithType: CharacterAnimatorHandlerBase.SetTrigger(string)
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(string)
-  type: Method
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: SetTrigger
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandlerBase.cs
-    startLine: 134
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Components
-  syntax:
-    content: public void SetTrigger(string name)
-    parameters:
-    - id: name
-      type: System.String
-    content.vb: Public Sub SetTrigger(name As String)
-  overload: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger*
-  nameWithType.vb: CharacterAnimatorHandlerBase.SetTrigger(String)
-  fullName.vb: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(String)
-  name.vb: SetTrigger(String)
 references:
 - uid: BlazerTech.CharacterManagement.Components
   commentId: N:BlazerTech.CharacterManagement.Components
@@ -669,9 +636,3 @@ references:
   name: PlayDefaultAnimation
   nameWithType: CharacterAnimatorHandlerBase.PlayDefaultAnimation
   fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.PlayDefaultAnimation
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger*
-  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger
-  href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_SetTrigger_System_String_
-  name: SetTrigger
-  nameWithType: CharacterAnimatorHandlerBase.SetTrigger
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger

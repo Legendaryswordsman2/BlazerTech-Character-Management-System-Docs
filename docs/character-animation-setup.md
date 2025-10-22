@@ -219,5 +219,5 @@ It should look like this.
 
 ![Animator Controller Field in Inspector](~/images/character-types/character-type-character-controller-field.png)
 
-When used with a [Character Renderer component](xref:character-usage#character-renderers),  
+When used with a [Character Renderer component](xref:character-usage#character-renderer-components),  
 the assigned Animator Controller will automatically be applied at runtime.

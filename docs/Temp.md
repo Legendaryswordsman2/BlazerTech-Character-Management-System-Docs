@@ -5,8 +5,8 @@ summary: Components for rendering, animating, and controlling characters.
 
 # Character Usage
 
-The **Character Usage System** provides the runtime components needed to **load**, **render**, **animate**, and **control** characters.  
-Whether using pre-made unified sprites or fully modular layered characters, these components work together to display, animate, and move your characters in-game.
+The **Character Usage System** provides the core runtime components that let you **load**, **render**, **animate**, and **control** characters.  
+From displaying pre-made characters to handling player movement and animation blending — these systems form the foundation of runtime character behavior.
 
 ---
 
@@ -14,62 +14,60 @@ Whether using pre-made unified sprites or fully modular layered characters, thes
 
 | Component Type | Purpose | Works With |
 |----------------|----------|------------|
-| **Character Renderers** | Display and load characters at runtime. | Unified / Layered |
-| **Animator Handlers** | Control and update animator parameters based on player movement or physics. | Any animated character |
-| **Character Controllers** | Handle player input and movement logic. | Any Character Renderer |
+| **Character Renderers** | Load and display characters at runtime. | Unified & Layered |
+| **Animator Handlers** | Update Animator parameters based on player or physics movement. | Any animated character |
+| **Character Controllers** | Handle user input and movement logic. | All character types |
 
 ---
 
 ## 🧩 The Character Shader
 
-A **Character Shader** defines how the final character is rendered.
+A **Character Shader** determines how the final sprite(s) are combined and displayed.  
 
-- **Unified Characters:** Use a single spritesheet rendered directly onto the base texture.
-- **Layered Characters:** Combine multiple texture layers (body, outfit, hair, etc.) into one composite texture.
+- **Unified Characters:** A single spritesheet overrides the base spritesheet defined in the **Character Type**.  
+- **Layered Characters:** Multiple textures (Body, Outfit, Hair, etc.) are merged into one composite using the shader.  
 
 > [!NOTE]
-> If you’re using a **Character Renderer** component, the shader is applied automatically.  
-> You can also manually assign your own compatible shader for custom rendering.
+> When using a **Character Renderer**, the shader is automatically applied at runtime. You can override it manually if needed.
 
 ---
 
 ## 🎨 Character Renderer Components
 
-All **Character Renderer** components share similar fields and behavior.
+Each **Character Renderer** handles loading and displaying characters of a specific type or source.
 
-### References
+### Shared Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| **Renderer** | `Renderer` | Reference to a **Sprite Renderer** or other renderer component used to display the character. |
-| **Set Animator Controller** | `bool` | Automatically assigns the **Animator Controller** from the referenced **Character Type**. |
-| **Animator** | `Animator` | Reference to an Animator component used to animate the character. Shown only if the above option is enabled. |
+| **Renderer** | `Renderer` | The component (usually a **Sprite Renderer**) used to display the character. |
+| **Set Animator Controller** | `bool` | If enabled, automatically applies the **Animator Controller** from the **Character Type**. |
+| **Animator** | `Animator` | Reference to the Animator component. Only visible if **Set Animator Controller** is enabled. |
 
 ### Loading Settings
 
 | Field | Type | Description |
 |-------|------|-------------|
-| **Loading Mode** | `Enum` | Choose between **Synchronous** or **Asynchronous** character loading. |
-| **Load Character On Start** | `bool` | If true, automatically loads the character when the component starts. |
+| **Loading Mode** | `Enum` | Load characters synchronously or asynchronously. |
+| **Load Character On Start** | `bool` | If true, loads the character automatically when the component starts. |
 
 ---
 
 ## 🧍 Unified Character Template Renderer
 
-**Requirements**
-- A [Unified Character Type](xref:unified-character-type)
-- At least one [Unified Character Template](xref:character-templates#unified-character-template)
+**Requirements:**
+- [Unified Character Type](xref:unified-character-type)
+- [Unified Character Template](xref:character-templates#unified-character-template)
 
 The [`UnifiedCharacterTemplateRenderer`](xref:BlazerTech.CharacterManagement.Components.UnifiedCharacterTemplateRenderer)  
-creates and renders a **Unified Character** from a template.
+instantiates and renders a **Unified Character** directly from a template.
 
 **Setup Steps**
 1. Add the component to a GameObject.  
-2. Assign a **Renderer** (usually a Sprite Renderer).  
-3. Optionally assign an **Animator**.  
-4. Configure **Loading Settings**.  
-5. Assign the **Unified Character Template**.  
-6. Play the scene — the character will appear automatically if **Load Character On Start** is enabled.
+2. Assign a **Renderer** and optionally an **Animator**.  
+3. Configure **Loading Settings**.  
+4. Reference a **Unified Character Template**.  
+5. Run the game — the character will load if **Load Character On Start** is enabled.
 
 ---
 
@@ -77,128 +75,167 @@ creates and renders a **Unified Character** from a template.
 
 ### Layered Character Group Renderer
 
-**Requirements**
-- A [Layered Character Type](xref:layered-character-type)
-- At least one saved **Layered Character Group**
+**Requirements:**
+- [Layered Character Type](xref:layered-character-type)
+- One or more saved **Layered Character Groups**
 
 The [`LayeredCharacterGroupRenderer`](xref:BlazerTech.CharacterManagement.Components.LayeredCharacterGroupRenderer)  
-renders **saved or existing characters** stored within a **Character Group**.
-
-**Setup Steps**
-1. Add to a GameObject.  
-2. Assign a **Renderer** and optional **Animator**.  
-3. Configure **Loading Settings**.  
-4. Assign the **Character Type**.  
-5. Select the **Group Type** (Primary, Flexible, or Fixed) and configure parameters.
-
-#### Group Parameters
+renders **saved or existing Layered Characters** stored in a **Character Group**.
 
 | Parameter | Type | Description |
 |------------|------|-------------|
-| **Character Group Name** | `string` | Name of the group to load from. |
-| **Character Load Method** | `Enum` | How to select the character:<br>- **By Name**<br>- **By Index**<br>- **Randomized** |
+| **Character Group Type** | `Enum` | Select between **Primary**, **Flexible**, or **Fixed** groups. |
+| **Character Group Name** | `string` | The group name to load from. Required for Flexible/Fixed groups. |
+| **Character Load Method** | `Enum` | Select how to choose which character to load:<br>- **By Name**<br>- **By Index**<br>- **Randomized** |
 
 > [!TIP]
-> Use **Flexible Groups** for editable rosters, and **Fixed Groups** for predefined teams or NPC slots.
+> Use **Flexible Groups** for editable rosters or randomized NPCs, and **Fixed Groups** for predefined slots.
 
 ---
 
 ### Layered Character Template Renderer
 
-**Requirements**
-- A [Layered Character Type](xref:layered-character-type)
-- At least one [Layered Character Template](xref:character-templates#layered-character-template)
+**Requirements:**
+- [Layered Character Type](xref:layered-character-type)
+- [Layered Character Template](xref:character-templates#layered-character-template)
 
 The [`LayeredCharacterTemplateRenderer`](xref:BlazerTech.CharacterManagement.Components.LayeredCharacterTemplateRenderer)  
-creates and displays a new **Layered Character** directly from a template.
+creates and displays a new **Layered Character** from a template.
 
 **Setup Steps**
-1. Add the component to a GameObject.  
+1. Add to a GameObject.  
 2. Assign a **Renderer** and optional **Animator**.  
 3. Configure **Loading Settings**.  
-4. Assign the **Layered Character Template** to load.  
-5. Run the game — the character will appear if **Load Character On Start** is enabled.
+4. Reference the **Layered Character Template**.  
+5. Run the game to see your generated character.
 
 ---
 
 ## 🎞️ Character Animator Handlers
 
-The **Animator Handler Components** control character animation parameters during gameplay.  
-They are designed to work with **any character using an Animator Controller**, updating parameters such as movement direction, idle states, and animation speed.
+Animator Handlers automatically update Animator parameters each frame based on character or physics movement.  
+They work with any character using a compatible **Animator Controller** and support crouch, sprint, and directional animations.
 
-### ⚙️ Character Animator Handler
-[`CharacterAnimatorHandler`](xref:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler)
+---
 
-A lightweight animator controller used for **manual or scripted movement** (e.g., controlled by AI, dialogue, or cutscenes).  
-It updates the Animator parameters based on movement input provided by another script.
+### 🧠 Character Animator Handler Base
 
-**Common Parameters**
-| Parameter | Type | Description |
-|------------|------|-------------|
-| **Horizontal** | `float` | Left/right movement direction. |
-| **Vertical** | `float` | Up/down movement direction. |
-| **Speed** | `float` | Normalized speed used to blend between idle and movement animations. |
+[`CharacterAnimatorHandlerBase`](xref:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase)  
+provides the shared functionality used by all animator handlers.
+
+| Field | Description |
+|-------|--------------|
+| **Animator** | The Animator component used for animation control. |
+| **Is Moving Param** | The Animator bool parameter name (default: `"Is Moving"`). |
+| **Horizontal Movement Param** | The Animator float parameter name for X movement (default: `"Horizontal Movement"`). |
+| **Vertical Movement Param** | The Animator float parameter name for Y movement (default: `"Vertical Movement"`). |
+
+**Key Methods**
+- `UpdateAnimatorParameters()` — Sets movement and direction values each frame.  
+- `ChangeDirection(FourDirectional/EightDirectional)` — Immediately updates facing direction values.  
+- `PlayAnimation(string)` — Plays a specific animation state by name.  
+- `PlayDefaultAnimation()` — Plays the default animation state defined in the Animator Controller.  
 
 > [!NOTE]
-> Use this when you’re handling movement manually or through non-physics systems.
+> This base class isn’t meant to be used directly — use one of its specialized variants below.
 
 ---
 
 ### 🌐 Physics Character Animator Handler
-[`PhysicsCharacterAnimatorHandler`](xref:BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler)
 
-A physics-driven variant that automatically reads velocity from a **Rigidbody2D** and updates Animator parameters accordingly.  
-Perfect for top-down or side-scrolling characters using physical movement.
+[`PhysicsCharacterAnimatorHandler`](xref:BlazerTech.CharacterManagement.Components.PhysicsCharacterAnimatorHandler)  
+is a **physics-driven** animator handler that updates animations based on the GameObject’s Rigidbody2D movement.
 
-**Additional Parameters**
-| Parameter | Type | Description |
-|------------|------|-------------|
-| **Velocity Threshold** | `float` | Minimum movement speed before switching from idle to moving. |
-| **Use Rigidbody Velocity** | `bool` | If true, animator parameters are updated from Rigidbody velocity. |
+| Field | Type | Description |
+|--------|------|-------------|
+| **Enable Sprint** | `bool` | If true, enables sprinting animations when speed ≥ *Sprint Min Speed*. |
+| **Sprint Min Speed** | `float` | Minimum speed required to trigger sprint animation. |
+| **Sprint Parameter Name** | `string` | Animator bool name for sprint state (default: `"Is Sprinting"`). |
+| **Enable Crouch** | `bool` | Enables crouching animations when speed ≤ *Crouch Max Speed*. |
+| **Crouch Max Speed** | `float` | Maximum speed before switching out of crouch animation. |
+| **Crouch Parameter Name** | `string` | Animator bool name for crouch state (default: `"Is Crouching"`). |
+
+**How It Works**
+- Calculates movement each `FixedUpdate()` by comparing current and previous positions.  
+- Determines direction and speed, then updates Animator parameters.  
+- Optionally toggles sprint/crouch states when enabled.  
 
 > [!TIP]
-> Combine with the **Top Down Movement Controller** or future **Side-Scroller Controller** for seamless integration.
+> Ideal for physics-based player or NPC movement — simply attach it alongside a Rigidbody2D.
+
+---
+
+### 🧭 Top-Down Character Animator Handler
+
+[`TopDownCharacterAnimatorHandler`](xref:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler)  
+is designed for **top-down player characters**, syncing directly with a [`TopDownMovementController`](#🕹️-top-down-movement-controller).
+
+| Field | Type | Description |
+|--------|------|-------------|
+| **Top Down Movement Controller** | `TopDownMovementController` | Reference to the movement controller script. |
+| **Sprint Parameter Name** | `string` | Animator bool name for sprint state. |
+| **Crouch Parameter Name** | `string` | Animator bool name for crouch state. |
+
+**How It Works**
+- Reads movement and state data from the linked controller (`IsMoving`, `IsSprinting`, `IsCrouching`).  
+- Updates Animator floats and bools in real-time to reflect the character’s state.  
+- Fully integrated with crouch and sprint systems.
+
+> [!IMPORTANT]
+> This component requires a `TopDownMovementController` on the same GameObject or a linked reference.
 
 ---
 
 ## 🎮 Character Controllers
 
-Character Controllers handle movement, input, and physics.  
-They are separate from Animator Handlers, allowing flexible setups where movement logic and animation logic are decoupled.
-
-### 🧭 Top Down Movement Controller
-[`TopDownMovementController`](xref:BlazerTech.CharacterManagement.Components.TopDownMovementController)
-
-Handles movement for top-down characters using **WASD or arrow key input**.  
-Automatically updates the Rigidbody2D position and integrates with Animator Handlers for directional animation.
-
-**Features**
-- Supports walking, sprinting, and diagonal movement.  
-- Works with both **Layered** and **Unified** characters.  
-- Can be paired with `PhysicsCharacterAnimatorHandler` for auto animation updates.  
-
-**Inspector Fields**
-| Field | Type | Description |
-|--------|------|-------------|
-| **Move Speed** | `float` | Base walking speed. |
-| **Sprint Multiplier** | `float` | Speed multiplier when sprinting. |
-| **Rigidbody2D** | `Component` | The Rigidbody2D component controlling movement. |
-| **Animator Handler** | `Component` | Reference to an Animator Handler to synchronize animation. |
-
-> [!TIP]
-> Use this controller for any 2D top-down project — NPCs, player characters, or crowd systems.
+Character Controllers handle **player input**, **movement**, and **physics** while exposing properties used by Animator Handlers.  
+They can be used standalone or alongside a **Character Renderer**.
 
 ---
 
-### 🧱 (Coming Soon) Side-Scroller Movement Controller
+### 🕹️ Top-Down Movement Controller
 
-A 2D side-scrolling movement component with support for:
-- Horizontal running and jumping.  
-- Rigidbody2D-based motion with gravity.  
-- Optional crouch, climb, or attack parameter support.  
-- Integrated animation syncing through `PhysicsCharacterAnimatorHandler`.
+[`TopDownMovementController`](xref:BlazerTech.CharacterManagement.Components.TopDownMovementController)  
+manages player movement for top-down 2D games using **Rigidbody2D** motion and **keyboard input**.
 
-Stay tuned for this addition in **BT-CMS v1.1+**.
+**Features**
+- Supports movement, sprinting, and crouching.  
+- Adjustable movement speeds per state.  
+- Exposes directional data to Animator Handlers.  
+
+**Inspector Fields**
+
+| Field | Type | Description |
+|--------|------|-------------|
+| **Move Speed** | `float` | Base walking speed. |
+| **Enable Sprint** | `bool` | Allows sprinting with **Left Shift**. |
+| **Sprint Speed** | `float` | Movement speed while sprinting. |
+| **Enable Crouch** | `bool` | Allows crouching with **C** or **Left Ctrl**. |
+| **Crouch Speed** | `float` | Movement speed while crouching. |
+| **Can Move** | `bool` | Toggles whether the character can move. |
+
+**Runtime Properties**
+
+| Property | Type | Description |
+|-----------|------|-------------|
+| **IsMoving** | `bool` | True if character is currently moving. |
+| **IsSprinting** | `bool` | True if sprint input is active. |
+| **IsCrouching** | `bool` | True if crouch input is active. |
+| **Movement** | `Vector2` | Current movement direction. |
+
+> [!TIP]
+> Combine this with a `TopDownCharacterAnimatorHandler` for complete animated top-down control.
+
+---
+
+### 🧱 (Coming Soon) 2D Side-Scroller Controller
+
+Planned for future versions of BT-CMS, this controller will provide:
+- Horizontal running, jumping, and crouching.  
+- Full integration with **PhysicsCharacterAnimatorHandler**.  
+- Optional ladder climbing, falling, and grounded animations.
+
+Stay tuned for **v1.1+** updates.
 
 ---
 
@@ -208,15 +245,16 @@ Stay tuned for this addition in **BT-CMS v1.1+**.
 |------|------------|------------|
 | Render a pre-made character | **Unified Character Template Renderer** | Unified |
 | Render a customizable character | **Layered Character Template Renderer** | Layered |
-| Load a saved or grouped character | **Layered Character Group Renderer** | Layered |
-| Drive animations by script | **Character Animator Handler** | All |
-| Drive animations via physics | **Physics Character Animator Handler** | All |
-| Handle movement input | **Top Down Movement Controller** | All |
+| Load saved characters | **Layered Character Group Renderer** | Layered |
+| Handle animator logic (manual) | **Character Animator Handler Base** | All |
+| Handle animator logic (physics) | **Physics Character Animator Handler** | All |
+| Handle animator logic (top-down)** | **Top-Down Character Animator Handler** | Layered / Unified |
+| Handle movement & input | **Top-Down Movement Controller** | All |
 
 ---
 
 ## 🔗 Next Steps
+- [Read More → Character Animator Setup](xref:character-animation-setup)  
 - [Read More → Character Creator](xref:character-creator)  
 - [Read More → Character Groups](xref:character-grouping-system)  
-- [Read More → Character Templates](xref:character-templates)  
-- [Read More → Character Animator Setup](xref:character-animation-setup)
+- [Read More → Character Templates](xref:character-templates)

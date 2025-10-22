@@ -1,35 +1,35 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler
-  commentId: T:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler
-  id: CharacterAnimatorHandler
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler
+  commentId: T:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler
+  id: TopDownCharacterAnimatorHandler
   parent: BlazerTech.CharacterManagement.Components
   children:
-  - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.Awake
-  - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
-  - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.crouchParameterName
-  - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.sprintParameterName
+  - BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.Awake
+  - BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
+  - BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.crouchParamName
+  - BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.sprintParamName
   langs:
   - csharp
   - vb
-  name: CharacterAnimatorHandler
-  nameWithType: CharacterAnimatorHandler
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler
+  name: TopDownCharacterAnimatorHandler
+  nameWithType: TopDownCharacterAnimatorHandler
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler
   type: Class
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterAnimatorHandler
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandler.cs
+    id: TopDownCharacterAnimatorHandler
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
     startLine: 5
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
   syntax:
-    content: 'public class CharacterAnimatorHandler : CharacterAnimatorHandlerBase'
-    content.vb: Public Class CharacterAnimatorHandler Inherits CharacterAnimatorHandlerBase
+    content: 'public class TopDownCharacterAnimatorHandler : CharacterAnimatorHandlerBase'
+    content.vb: Public Class TopDownCharacterAnimatorHandler Inherits CharacterAnimatorHandlerBase
   inheritance:
   - System.Object
   - UnityEngine.Object
@@ -47,25 +47,24 @@ items:
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.ChangeDirection(BlazerTech.CharacterManagement.Core.EightDirectional)
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.PlayAnimation(System.String)
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.PlayDefaultAnimation
-  - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(System.String)
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.sprintParameterName
-  commentId: F:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.sprintParameterName
-  id: sprintParameterName
-  parent: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.sprintParamName
+  commentId: F:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.sprintParamName
+  id: sprintParamName
+  parent: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler
   langs:
   - csharp
   - vb
-  name: sprintParameterName
-  nameWithType: CharacterAnimatorHandler.sprintParameterName
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.sprintParameterName
+  name: sprintParamName
+  nameWithType: TopDownCharacterAnimatorHandler.sprintParamName
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.sprintParamName
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: sprintParameterName
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandler.cs
+    id: sprintParamName
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
     startLine: 10
   assemblies:
   - Assembly-CSharp
@@ -76,9 +75,11 @@ items:
 
       [SerializeField]
 
-      [BoxGroup("Animation Names")]
+      [BoxGroup("Parameter Names")]
 
-      protected string sprintParameterName
+      [EnableIf("ShowSprintParameter")]
+
+      protected string sprintParamName
     return:
       type: System.String
     content.vb: >-
@@ -86,9 +87,11 @@ items:
 
       <SerializeField>
 
-      <BoxGroup("Animation Names")>
+      <BoxGroup("Parameter Names")>
 
-      Protected sprintParameterName As String
+      <EnableIf("ShowSprintParameter")>
+
+      Protected sprintParamName As String
   attributes:
   - type: UnityEngine.SpaceAttribute
     ctor: UnityEngine.SpaceAttribute.#ctor
@@ -100,25 +103,30 @@ items:
     ctor: NaughtyAttributes.BoxGroupAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: Animation Names
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.crouchParameterName
-  commentId: F:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.crouchParameterName
-  id: crouchParameterName
-  parent: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler
+      value: Parameter Names
+  - type: NaughtyAttributes.EnableIfAttribute
+    ctor: NaughtyAttributes.EnableIfAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ShowSprintParameter
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.crouchParamName
+  commentId: F:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.crouchParamName
+  id: crouchParamName
+  parent: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler
   langs:
   - csharp
   - vb
-  name: crouchParameterName
-  nameWithType: CharacterAnimatorHandler.crouchParameterName
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.crouchParameterName
+  name: crouchParamName
+  nameWithType: TopDownCharacterAnimatorHandler.crouchParamName
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.crouchParamName
   type: Field
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: crouchParameterName
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandler.cs
+    id: crouchParamName
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
     startLine: 11
   assemblies:
   - Assembly-CSharp
@@ -127,17 +135,21 @@ items:
     content: >-
       [SerializeField]
 
-      [BoxGroup("Animation Names")]
+      [BoxGroup("Parameter Names")]
 
-      protected string crouchParameterName
+      [EnableIf("ShowCrouchParameter")]
+
+      protected string crouchParamName
     return:
       type: System.String
     content.vb: >-
       <SerializeField>
 
-      <BoxGroup("Animation Names")>
+      <BoxGroup("Parameter Names")>
 
-      Protected crouchParameterName As String
+      <EnableIf("ShowCrouchParameter")>
+
+      Protected crouchParamName As String
   attributes:
   - type: UnityEngine.SerializeField
     ctor: UnityEngine.SerializeField.#ctor
@@ -146,25 +158,30 @@ items:
     ctor: NaughtyAttributes.BoxGroupAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: Animation Names
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.Awake
-  commentId: M:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.Awake
+      value: Parameter Names
+  - type: NaughtyAttributes.EnableIfAttribute
+    ctor: NaughtyAttributes.EnableIfAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ShowCrouchParameter
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.Awake
+  commentId: M:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.Awake
   id: Awake
-  parent: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler
+  parent: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler
   langs:
   - csharp
   - vb
   name: Awake()
-  nameWithType: CharacterAnimatorHandler.Awake()
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.Awake()
+  nameWithType: TopDownCharacterAnimatorHandler.Awake()
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.Awake()
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Awake
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
     startLine: 13
   assemblies:
   - Assembly-CSharp
@@ -174,25 +191,25 @@ items:
     content: protected override void Awake()
     content.vb: Protected Overrides Sub Awake()
   overridden: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.Awake
-  overload: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.Awake*
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
-  commentId: M:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
+  overload: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.Awake*
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
+  commentId: M:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
   id: UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
-  parent: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler
+  parent: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler
   langs:
   - csharp
   - vb
   name: UpdateAnimatorParameters(bool, bool, Vector2)
-  nameWithType: CharacterAnimatorHandler.UpdateAnimatorParameters(bool, bool, Vector2)
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters(bool, bool, UnityEngine.Vector2)
+  nameWithType: TopDownCharacterAnimatorHandler.UpdateAnimatorParameters(bool, bool, Vector2)
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters(bool, bool, UnityEngine.Vector2)
   type: Method
   source:
     remote:
-      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandler.cs
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: UpdateAnimatorParameters
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/CharacterAnimatorHandler.cs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Animation/TopDownCharacterAnimatorHandler.cs
     startLine: 36
   assemblies:
   - Assembly-CSharp
@@ -209,9 +226,9 @@ items:
       type: UnityEngine.Vector2
     content.vb: Protected Overrides Sub UpdateAnimatorParameters(canMove As Boolean, isMoving As Boolean, currentMovement As Vector2)
   overridden: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
-  overload: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters*
-  nameWithType.vb: CharacterAnimatorHandler.UpdateAnimatorParameters(Boolean, Boolean, Vector2)
-  fullName.vb: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters(Boolean, Boolean, UnityEngine.Vector2)
+  overload: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters*
+  nameWithType.vb: TopDownCharacterAnimatorHandler.UpdateAnimatorParameters(Boolean, Boolean, Vector2)
+  fullName.vb: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters(Boolean, Boolean, UnityEngine.Vector2)
   name.vb: UpdateAnimatorParameters(Boolean, Boolean, Vector2)
 references:
 - uid: BlazerTech.CharacterManagement.Components
@@ -425,37 +442,6 @@ references:
     href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_PlayDefaultAnimation
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(System.String)
-  commentId: M:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(System.String)
-  parent: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
-  isExternal: true
-  href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_SetTrigger_System_String_
-  name: SetTrigger(string)
-  nameWithType: CharacterAnimatorHandlerBase.SetTrigger(string)
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(string)
-  nameWithType.vb: CharacterAnimatorHandlerBase.SetTrigger(String)
-  fullName.vb: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(String)
-  name.vb: SetTrigger(String)
-  spec.csharp:
-  - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(System.String)
-    name: SetTrigger
-    href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_SetTrigger_System_String_
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.SetTrigger(System.String)
-    name: SetTrigger
-    href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_SetTrigger_System_String_
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -499,12 +485,12 @@ references:
     href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandlerBase_Awake
   - name: (
   - name: )
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.Awake*
-  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.Awake
-  href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandler_Awake
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.Awake*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.Awake
+  href: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_TopDownCharacterAnimatorHandler_Awake
   name: Awake
-  nameWithType: CharacterAnimatorHandler.Awake
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.Awake
+  nameWithType: TopDownCharacterAnimatorHandler.Awake
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.Awake
 - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
   commentId: M:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase.UpdateAnimatorParameters(System.Boolean,System.Boolean,UnityEngine.Vector2)
   parent: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
@@ -558,12 +544,12 @@ references:
     name: Vector2
     isExternal: true
   - name: )
-- uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters*
-  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters
-  href: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_CharacterAnimatorHandler_UpdateAnimatorParameters_System_Boolean_System_Boolean_UnityEngine_Vector2_
+- uid: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters
+  href: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.html#BlazerTech_CharacterManagement_Components_TopDownCharacterAnimatorHandler_UpdateAnimatorParameters_System_Boolean_System_Boolean_UnityEngine_Vector2_
   name: UpdateAnimatorParameters
-  nameWithType: CharacterAnimatorHandler.UpdateAnimatorParameters
-  fullName: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler.UpdateAnimatorParameters
+  nameWithType: TopDownCharacterAnimatorHandler.UpdateAnimatorParameters
+  fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler.UpdateAnimatorParameters
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
