@@ -14,6 +14,7 @@ Providing an easy solution to create, use and save characters in your Unity proj
 - [Installation Guide](xref:installation)  
 - [Basic Concepts](xref:basic-concepts)  
 - [Get Started](xref:quick-start)  
+- [Changelog](xref:changelog)  
 
 ---
 
@@ -64,4 +65,4 @@ Start with the [**Basic Concepts**](xref:basic-concepts) to learn about characte
 
 ---
 
-_Last updated: October 2025 — Version 0.2.0_
+_Last updated: 10-23-2025 — V0.2.0_

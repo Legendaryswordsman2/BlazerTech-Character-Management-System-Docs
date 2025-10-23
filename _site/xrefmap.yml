@@ -8218,6 +8218,9 @@ references:
 - uid: ccm-tab-layer-selector
   name: Tab Layer Selector
   href: docs/character-creator/layer-selectors/tab-layer-selector.html
+- uid: changelog
+  name: Changelog
+  href: docs/changelog.html
 - uid: character-animation-setup
   name: Character Animation Setup
   href: docs/character-animation-setup.html
@@ -8260,9 +8263,6 @@ references:
 - uid: quick-start
   name: Quick Start Guide
   href: docs/getting-started/quick-start.html
-- uid: temp
-  name: Character Usage
-  href: docs/Temp.html
 - uid: unified-character-type
   name: Unified Character Type
   href: docs/unified-character-type.html
