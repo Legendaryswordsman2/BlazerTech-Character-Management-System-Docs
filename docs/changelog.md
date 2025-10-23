@@ -17,7 +17,7 @@ This log follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) co
 - Added [Random Layered Character Renderer component](xref:character-usage#random-layered-character-renderer). Automatically creates a new layered character at runtime using the selected Character Type and random layer options.
 - Added randomized NPCs sample scene (Sample 2).
 - Added [Built-In Character documentation page](xref:built-in-characters). Explains wha's included and how to use the built-in modular characters.
-- Added [Character Animation Setup documentation page](xref:character-animation-setup). Explains the setup process for setting up animations and an animator controller for your characters.
+- Added [Character Animation Setup documentation page](xref:character-animation-setup). Explains the setup process for animations and animator controllers for your characters.
 
 ### Changed
 - Renamed `PlayerMovementController` to `TopDownMovementController`.
