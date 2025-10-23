@@ -16,9 +16,37 @@ This guide will cover the setup process for both **Unified** and **Layered Chara
 > It's recommended to read through the [Basic Concepts](xref:basic-concepts) before reading the **Quick Start Guide**.
 
 ## Video Guides
+
 Prefer video guides? I've got you covered!
-- [Layered Character Type Setup Guide](https://www.youtube.com/watch?v=JMOD0XNIkFA) - Covers setting up a Layered Character Type, Layered Character Template and rendering the character you create.
-- [Unified Character Type Setup Guide](https://www.youtube.com/watch?v=GT25zq6KCCE) - Covers setting up a Unified Character Type, Unified Character Template and rendering the character you create.
+<iframe 
+  width="720" 
+  height="405" 
+  src="https://www.youtube.com/embed/JMOD0XNIkFA" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>  
+
+**Covers:**
+- Layered Character Type Setup.
+- Layered Character Template Setup.
+- Rendering a layered character from a template.
+
+<iframe 
+  width="720" 
+  height="405" 
+  src="https://www.youtube.com/embed/GT25zq6KCCE" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+**Covers:**
+- Unified Character Type Setup.
+- Unified Character Template Setup.
+- Rendering a unified character from a template.
 
 > [!NOTE]
 > These videos will become dated fast as I continue to improve the **Character Managemnt System**.  

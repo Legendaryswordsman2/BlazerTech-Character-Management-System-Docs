@@ -7,11 +7,11 @@ summary: Included components for rendering and animating characters.
 
 The **BlazerTech Character Management System** includes the runtime components needed to **load**, **render**, **animate** and **control** characters.
 
-| Component Type                            | Purpose                                                                                                  |
-| ----------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| **Character Renderer components**         | Load and render a character.                                                                             |
-| **Character Animator Handler components** | Control specific **paramters** set in an **Animator Controller** used to properly animate the character. |
-| **Character Movement components**         | Handle player input and movement logic.                                                                  |
+| Component Type                                                       | Purpose                                                                                                  |
+| -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| [Character Renderer components](#character-renderer-components)      | Load and render a character.                                                                             |
+| [Character Animator Handler component](#character-animator-handlers) | Control specific **paramters** set in an **Animator Controller** used to properly animate a character. |
+| [Character Movement components](#character-controllers)              | Handle player input and movement logic.                                                                  |
 
 ---
 
@@ -303,4 +303,4 @@ The **Top-Down Movement Controller** handles player movement for top-down 2d gam
 | **Movement**    | `Vector2` | Current movement direction.                   |
 
 > [!TIP]
-> Designed to be used along a **Character Animator Handler** component. When both used they provide both character movement and animation functionality.
+> Designed to be used along a **Character Animator Handler** component. When used together they provide both character movement and animation functionality.
