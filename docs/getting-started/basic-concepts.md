@@ -19,7 +19,7 @@ This page introduces the **main features** of the **Character Management System*
 
 <img src="~/images/character-types/character-types.png" alt="Character Types" width="500" />  
 
- A **Character Type** is a [Scriptable Objects](https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html) that defines how  
+ A **Character Type** is a [Scriptable Object](https://docs.unity3d.com/6000.0/Documentation/Manual/class-ScriptableObject.html) that defines how  
  a character works. There are two kinds:  
 
 | Type                       | Description                                                                            | Best For                                                    |
