@@ -60,7 +60,7 @@ The **Paramters** section is located in the top left of the **Animator window**.
 
 ![Character Animator Controller Create Parameter](~/images/character-animation/character-animator-create-parameter.png)
 
-### Required Paramters
+### Required Parameters
 
 | Parameter Name          | Type  | Usage                                                              |
 | ----------------------- | ----- | ------------------------------------------------------------------ |
@@ -68,7 +68,7 @@ The **Paramters** section is located in the top left of the **Animator window**.
 | **Vertical Movement**   | Float | Ranges from -1 to 1. Represents up/down movement on the Y-axis.    |
 | **Is Moving**           | Bool  | True when the character is moving; otherwise false.                |
 
-### Optional Paramters
+### Optional Parameters
 
 Optional parameters will only be used if toggled in the movement and animator handler components.  
 
