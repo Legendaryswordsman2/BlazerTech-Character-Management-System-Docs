@@ -52,11 +52,11 @@ You should now see an empty Animator Controller.
 
 ---
 
-## 2️⃣Add Paramters
-The built-in **Character Animator Handler** components do **not** call animation directly.  
-Instead, they modify **paramters** set in the **Animator Controller**, which control transitions between animation states.
+## 2️⃣Add Parameters
+The built-in **Character Animator Handler** components do **not** call animations directly.  
+Instead, they modify **parameters** set in the **Animator Controller**, which control transitions between animation states.
 
-The **Paramters** section is located in the top left of the **Animator window**.
+The **Parameters** section is located in the top left of the **Animator window**.
 
 ![Character Animator Controller Create Parameter](~/images/character-animation/character-animator-create-parameter.png)
 
