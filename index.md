@@ -17,6 +17,9 @@ Providing an easy solution to create, use and save characters in your Unity proj
 - [Get Started](xref:quick-start)  
 - [Changelog](xref:changelog)  
 
+Join the Discord server for updates and to get help from the community.
+- [Discord Server](https://discord.gg/fPbBrVYBwf)
+
 ---
 
 ## Top Features
