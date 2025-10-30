@@ -1,5 +1,6 @@
 ---
 _layout: landing
+og:title: BlazerTech Character Management System | Easily create, manage, and customize sprite based characters in Unity
 uid: landing
 ---
 
