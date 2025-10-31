@@ -30,8 +30,9 @@ This log follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) co
 
 ---
 
-### Legend
+## Legend
 - 🆕 **Added** — New features or systems.
 - 🔄 **Changed** — Updates, improvements, or refactors.
-- 🐛 **Fixed** — Bug or issue resolution.
-- ⚙️ **Internal** — Refactoring or technical improvements not visible to the user.
+- 🐛 **Fixed** — Bugs or issue resolution.
+- ⚠ **Deprecated** — Soon-to-be removed features.
+- ❌ **Removed** — old features now removed.
