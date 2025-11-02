@@ -25,7 +25,7 @@ Fields required by all **Character Templates**.
 ## Unified Character Template
 
 ### Setup
-a
+
 A blueprint used to create a **Unified Character** at runtime. Can be used in the [Unified Character Renderer](xref:character-usage#unified-character-template-renderer) component.
 
 > [!TIP]  

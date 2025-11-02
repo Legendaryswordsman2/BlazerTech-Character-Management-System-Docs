@@ -9,7 +9,7 @@ The **BlazerTech Character Management System** includes the runtime components n
 
 | Component Type                                                       | Purpose                                                                                                  |
 | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| [Character Renderer components](#character-renderer-components)      | Load and render a character.                                                                             |
+| [Character Renderer components](#character-renderer-components)      | Load and render characters.                                                                             |
 | [Character Animator Handler component](#character-animator-handlers) | Control specific **paramters** set in an **Animator Controller** used to properly animate a character. |
 | [Character Movement components](#character-controllers)              | Handle player input and movement logic.                                                                  |
 

@@ -73,6 +73,16 @@ At bare minimum they contain the following:
    - **Loading Screen** - Includes progress bar and text.
    - **Save & Back buttons**.
    - <img src="~/images/premade-character-creation-menus/premade-character-creation-menu-2.png" alt="Premade Character Creation Menu #2" width="500" />
+3. **Character Creation Menu 3**:
+   - **Dropdown Selectors [Initialize Existing]** - Includes 6 dropdown selectors.
+   - **Character Preview** - Includes rotation & animation change controls.
+   - **Randomize Entire Character button**.
+   - **Save and Back buttons**.
+   - **Character Display Name Field**.
+   - **Character History Tracking** - Max 30 snapshots (Configurable).
+   - **Horizontal History List**.
+   - **Loading Screen** - Includes progress bar and text.
+   - <img src="~/images/premade-character-creation-menus/premade-character-creation-menu-3.png" alt="Premade Character Creation Menu #2" width="500" />
 
 
 ---

@@ -10,6 +10,28 @@ This log follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) co
 
 ---
 
+## [0.3.0] - Unreleased
+
+### Added
+- Added [third premade Character Creation Menu prefab](xref:character-creator-setup#premade-menus).
+- Added project settings page under `Edit > Project Settings > BlazerTech/Character Management System`.
+- Added **binary saving support** (Toggleable in project settings page).
+- Added **Auto Save Triggers** options in project settings page.
+- Added **debug log options** in project settings page.
+- Added **Character Display Name Renderer** component for displaying a characters name.
+- Added **ICharacter interface** for instances where any type of character can be used.
+- Added **assignable Input Actions** to the **Top Down Movement Controller** component.
+- Added **hold/toggle** options for **sprint/couch** states in the **Top Down Movement Controller** component.
+- Added `Create Character If Null` bool to **Layered Character Group Renderer** component.
+
+### Changed
+- Converted **Top Down Movement Controller** to use the **New Input System**.
+
+### Fixed
+- Fixed issue when loading a **Character Creation Menu** multiple times with **Animation Controls**.
+
+---
+
 ## [0.2.0] - 10-23-2025
 
 ### Added

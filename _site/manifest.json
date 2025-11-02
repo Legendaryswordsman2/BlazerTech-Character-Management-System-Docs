@@ -2638,6 +2638,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/premade-character-creation-menus/premade-character-creation-menu-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/premade-character-creation-menus/premade-character-creation-menu-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/setup/import-popup.png",
       "output": {
         "resource": {

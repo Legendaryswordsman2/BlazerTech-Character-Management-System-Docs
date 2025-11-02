@@ -106,8 +106,31 @@
 <p>All notable updates, improvements, and fixes to the <strong>BlazerTech Character Management System</strong> are listed below.<br>
 This log follows the <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a> convention and uses <a href="https://semver.org/">Semantic Versioning</a>.</p>
 <hr>
-<h2 id="020---10-23-2025">[0.2.0] - 10-23-2025</h2>
+<h2 id="030---unreleased">[0.3.0] - Unreleased</h2>
 <h3 id="added">Added</h3>
+<ul>
+<li>Added <a class="xref" href="character-creator/character-creator-setup.html#premade-menus">third premade Character Creation Menu prefab</a>.</li>
+<li>Added project settings page under <code>Edit &gt; Project Settings &gt; BlazerTech/Character Management System</code>.</li>
+<li>Added <strong>binary saving support</strong> (Toggleable in project settings page).</li>
+<li>Added <strong>Auto Save Triggers</strong> options in project settings page.</li>
+<li>Added <strong>debug log options</strong> in project settings page.</li>
+<li>Added <strong>Character Display Name Renderer</strong> component for displaying a characters name.</li>
+<li>Added <strong>ICharacter interface</strong> for instances where any type of character can be used.</li>
+<li>Added <strong>assignable Input Actions</strong> to the <strong>Top Down Movement Controller</strong> component.</li>
+<li>Added <strong>hold/toggle</strong> options for <strong>sprint/couch</strong> states in the <strong>Top Down Movement Controller</strong> component.</li>
+<li>Added <code>Create Character If Null</code> bool to <strong>Layered Character Group Renderer</strong> component.</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Converted <strong>Top Down Movement Controller</strong> to use the <strong>New Input System</strong>.</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixed issue when loading a <strong>Character Creation Menu</strong> multiple times with <strong>Animation Controls</strong>.</li>
+</ul>
+<hr>
+<h2 id="020---10-23-2025">[0.2.0] - 10-23-2025</h2>
+<h3 id="added-1">Added</h3>
 <ul>
 <li>Added <a class="xref" href="character-usage.html#top-down-character-physics-animator-handler">Top-Down Character Physics Animator Handler component</a>. Uses the direction and speed of the game object to set parameters within an Animator Controller.</li>
 <li>Added <a class="xref" href="character-usage.html#random-layered-character-renderer">Random Layered Character Renderer component</a>. Automatically creates a new layered character at runtime using the selected Character Type and random layer options.</li>
@@ -115,7 +138,7 @@ This log follows the <a href="https://keepachangelog.com/en/1.1.0/">Keep a Chang
 <li>Added <a class="xref" href="built-in-characters.html">Built-In Character documentation page</a>. Explains wha's included and how to use the built-in modular characters.</li>
 <li>Added <a class="xref" href="character-animation-setup.html">Character Animation Setup documentation page</a>. Explains the setup process for animations and animator controllers for your characters.</li>
 </ul>
-<h3 id="changed">Changed</h3>
+<h3 id="changed-1">Changed</h3>
 <ul>
 <li>Renamed <code>PlayerMovementController</code> to <code>TopDownMovementController</code>.</li>
 <li>Renamed all Character Loader components to <strong>Character Renderers</strong> (e.g., <code>Layered Character Template Renderer</code>).</li>
