@@ -2204,6 +2204,26 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "docs/project-settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/project-settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/temp.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/temp.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "docs/toc.yml",
       "output": {
@@ -2642,6 +2662,16 @@
       "output": {
         "resource": {
           "relative_path": "images/premade-character-creation-menus/premade-character-creation-menu-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/project-settings.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/project-settings.png"
         }
       },
       "version": ""

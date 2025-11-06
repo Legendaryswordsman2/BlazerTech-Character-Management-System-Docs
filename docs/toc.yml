@@ -23,6 +23,10 @@
     href: character-animation-setup.md
 
   - name: 📚Docs
+  - name: Project Settings
+    href: project-settings.md
+  - name: Temp
+    href: temp.md
   - name: Built In Characters
     href: built-in-characters.md
   - name: Character Layers

@@ -103,7 +103,7 @@ Starting with the essentials and then bonus features.
 All parts of the menu are contained as prefabs. These prefabs can be placed anywhere in the character creation menu contents parent.  
 Most do not require any manual references and can be added without any extra setup.
 
-**Essentials**
+#### Essentials
 1. **Layer Selectors**
    - Lets the player change selected options for each layer of the character.
    - Prefabs Location: **Prefabs > Character Creator > Layer Selectors**. Choose any folder within there.
@@ -131,7 +131,7 @@ Most do not require any manual references and can be added without any extra set
    - Complete loading screens include additional features such as a loading bar/text.
    - Learn more about setting up loading screens [here](xref:ccm-loading-screens).
 
-**Bonus Features**
+#### Bonus Features
 1. **Character Randomization**
    - A simple **Randomize all layers button** can be setup using a `button` and the `CCM Relay component` the same way other Menu Controls are setup.
    - Controlled Randomization can be setup instead. This allows specific layers to be toggled off so only specific layers are randomized.

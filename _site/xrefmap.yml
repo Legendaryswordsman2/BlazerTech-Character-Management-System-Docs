@@ -8260,9 +8260,15 @@ references:
 - uid: limezu-modern-interiors-support
   name: LimeZu Modern Interiors Support
   href: docs/limezu-modern-interiors-support.html
+- uid: project-settings
+  name: Project Settings
+  href: docs/project-settings.html
 - uid: quick-start
   name: Quick Start Guide
   href: docs/getting-started/quick-start.html
+- uid: temp
+  name: Project Settings
+  href: docs/temp.html
 - uid: unified-character-type
   name: Unified Character Type
   href: docs/unified-character-type.html

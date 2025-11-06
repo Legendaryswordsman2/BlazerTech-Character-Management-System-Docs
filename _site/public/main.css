@@ -1,11 +1,13 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
 h1 {
   color: #faffff;
-  font-weight: bold;
 }
 
 h2 {
   color: #78d7ff;
-  font-weight: bold;
 }
 
 a {
@@ -13,5 +15,5 @@ a {
 }
 
 a:hover {
-  color: #78d7ff;
+  color: #28c074;
 }
