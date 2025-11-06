@@ -18,10 +18,10 @@ This log follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) co
 - Added [binary saving support](xref:project-settings#save-format) (Toggleable in project settings page).
 - Added [Auto Save Triggers](xref:project-settings#auto-save-triggers) options in project settings page.
 - Added [debug log options](xref:project-settings#debug-options) in project settings page.
-- Added **Character Display Name Renderer** component for displaying a characters name.
+- Added [Character Display Name Renderer](xref:character-usage#character-display-name-renderer) component for displaying a characters name.
 - Added **ICharacter interface** for instances where any type of character can be used.
-- Added **assignable Input Actions** to the **Top Down Movement Controller** component.
-- Added **hold/toggle** options for **sprint/couch** states in the **Top Down Movement Controller** component.
+- Added **assignable Input Actions** to the [Top Down Movement Controller](xref:character-usage#top-down-movement-controller) component.
+- Added **hold/toggle** options for **sprint/couch** states in the [Top Down Movement Controller](xref:character-usage#top-down-movement-controller) component.
 - Added `Create Character If Null` bool to **Layered Character Group Renderer** component.
 
 ### Changed

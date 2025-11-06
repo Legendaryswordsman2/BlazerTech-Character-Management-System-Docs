@@ -338,3 +338,29 @@ Each system has customizable speed and button mode options.
 
 > [!TIP]
 > Designed to be used along a [Character Animator Handler](#character-animator-handlers) component. When used together they provide both character movement and animation functionality.
+
+---
+
+## Character Display Name Renderer
+
+The **Character Display Name Renderer** component provides an easy way to render the `Display Name` of a character on screen.
+
+### Config
+
+Setup how you'll get a reference to a character. There are two options.
+
+1. **From Character Renderer**
+   - Assign a reference to a [Character Renderer component](#character-renderer-components) and get the character from there.
+2. **From Character Group**
+   - Find a character from a group. Assign the **Character Type** you want to use and the group you want to load from.
+   - Read more about character groups [here](xref:character-grouping-system).
+
+### References
+
+| Field                   | Type         | Description                                                                 |
+| ----------------------- | ------------ | --------------------------------------------------------------------------- |
+| **Display Name Parent** | `GameObject` | Parent GameObject used to disable text when `Display Name` is blank.        |
+| **Display Name Text**   | `TMP_Text`   | Reference to a `TMP Text` component used to render the `Display Name` text. |
+
+> [!NOTE]
+> Use a canvas with a `Render Mode` set to `World Space`. This lets you display UI elements within the world. In this case it'll sit on top of our character and follow along with it.

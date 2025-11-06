@@ -700,6 +700,50 @@ Each system has customizable speed and button mode options.</p>
 <h5>Tip</h5>
 <p>Designed to be used along a <a href="#character-animator-handlers">Character Animator Handler</a> component. When used together they provide both character movement and animation functionality.</p>
 </div>
+<hr>
+<h2 id="character-display-name-renderer">Character Display Name Renderer</h2>
+<p>The <strong>Character Display Name Renderer</strong> component provides an easy way to render the <code>Display Name</code> of a character on screen.</p>
+<h3 id="config">Config</h3>
+<p>Setup how you'll get a reference to a character. There are two options.</p>
+<ol>
+<li><strong>From Character Renderer</strong>
+<ul>
+<li>Assign a reference to a <a href="#character-renderer-components">Character Renderer component</a> and get the character from there.</li>
+</ul>
+</li>
+<li><strong>From Character Group</strong>
+<ul>
+<li>Find a character from a group. Assign the <strong>Character Type</strong> you want to use and the group you want to load from.</li>
+<li>Read more about character groups <a class="xref" href="character-grouping-system.html">here</a>.</li>
+</ul>
+</li>
+</ol>
+<h3 id="references-2">References</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Display Name Parent</strong></td>
+<td><code>GameObject</code></td>
+<td>Parent GameObject used to disable text when <code>Display Name</code> is blank.</td>
+</tr>
+<tr>
+<td><strong>Display Name Text</strong></td>
+<td><code>TMP_Text</code></td>
+<td>Reference to a <code>TMP Text</code> component used to render the <code>Display Name</code> text.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Use a canvas with a <code>Render Mode</code> set to <code>World Space</code>. This lets you display UI elements within the world. In this case it'll sit on top of our character and follow along with it.</p>
+</div>
 
 </article>
 
