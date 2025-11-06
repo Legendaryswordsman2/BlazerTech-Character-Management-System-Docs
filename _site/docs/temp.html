@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Project Settings | BlazerTech Character Management System </title>
+      <title>Top Down Movement Controller | BlazerTech Character Management System </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Project Settings | BlazerTech Character Management System ">
+      <meta name="title" content="Top Down Movement Controller | BlazerTech Character Management System ">
       
       
       <link rel="icon" href="../images/logos/favicon.png">
@@ -34,11 +34,11 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="/docs/temp.html">
 
-    <meta property="og:title" content="Project Settings | BlazerTech Character Management System">
-    <meta name="twitter:title" content="Project Settings | BlazerTech Character Management System">
+    <meta property="og:title" content="Top Down Movement Controller | BlazerTech Character Management System">
+    <meta name="twitter:title" content="Top Down Movement Controller | BlazerTech Character Management System">
 
-      <meta property="og:description" content="Configure global settings for the **BlazerTech Character Management System**.">
-      <meta name="twitter:description" content="Configure global settings for the **BlazerTech Character Management System**.">
+      <meta property="og:description" content="Handles player movement for top-down 2D games with configurable input and sprint/crouch support.">
+      <meta name="twitter:description" content="Handles player movement for top-down 2D games with configurable input and sprint/crouch support.">
 
     <meta property="og:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
     <meta name="twitter:image" content="https://blazertech-cms.com/images/logos/blazertech-character-management-system-logo.png">
@@ -100,117 +100,152 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="temp">
-<h1 id="project-settings">Project Settings</h1>
+        <article data-uid="character-usage-topdown-controller">
+<h1 id="top-down-movement-controller">Top Down Movement Controller</h1>
 
-<p>All global settings for the <strong>BlazerTech Character Management System</strong> are managed through the Project Settings window:<br>
-<strong><code>Edit → Project Settings → BlazerTech → Character Management System</code></strong></p>
-<p><img src="../images/project-settings.png" alt="Project Settings"></p>
+<p><strong>Component:</strong> <a class="xref" href="../api/BlazerTech.CharacterManagement.Components.TopDownMovementController.html"><code>TopDownMovementController</code></a></p>
+<p>The <strong>Top Down Movement Controller</strong> handles player movement for <strong>top‑down 2D games</strong> with four directional controls — <strong>Up</strong>, <strong>Down</strong>, <strong>Left</strong>, and <strong>Right</strong>.<br>
+It supports movement, sprinting, crouching, and integrates seamlessly with the <strong>Unity Input System</strong>.</p>
 <hr>
-<h2 id="-overview">⚙️ Overview</h2>
-<p>The Project Settings panel provides control over <strong>how characters and groups are saved</strong>, and includes <strong>debugging options</strong> for monitoring internal CMS events.</p>
-<hr>
-<h2 id="-saving-settings">💾 Saving Settings</h2>
-<p>Configure how and when <strong>Character Groups</strong> are automatically saved to disk.</p>
-<h3 id="auto-save-triggers"><strong>Auto Save Triggers</strong></h3>
-<p>A multi-select dropdown defining the events that trigger automatic saves.</p>
+<h2 id="-input-configuration">🎮 Input Configuration</h2>
+<p>This component uses the <strong>Unity New Input System</strong>, allowing all input actions to be fully configurable.<br>
+See Unity’s <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.15/manual/Actions.html">Input Actions documentation</a> for setup details.</p>
+<h3 id="input-actions">Input Actions</h3>
 <table>
 <thead>
 <tr>
-<th>Option</th>
+<th>Input Action</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Game Exit</strong></td>
-<td>Saves all character groups when the application quits.</td>
+<td><strong>Move Action</strong></td>
+<td><code>Vector2</code></td>
+<td>Controls player movement along X and Y axes.</td>
 </tr>
 <tr>
-<td><strong>Character Creator Save</strong></td>
-<td>Saves whenever a character is saved from the Character Creation Menu.</td>
+<td><strong>Sprint Action</strong></td>
+<td><code>Button</code></td>
+<td>Enables player sprinting (if sprinting is enabled).</td>
 </tr>
 <tr>
-<td><strong>Scene Change</strong></td>
-<td>Saves when the active scene changes.</td>
+<td><strong>Crouch Action</strong></td>
+<td><code>Button</code></td>
+<td>Enables player crouching (if crouching is enabled).</td>
 </tr>
 </tbody>
 </table>
+<p>A default <strong>Input Actions asset</strong> is provided under the <code>/Input Actions</code> folder.<br>
+It includes bindings for <strong>Move</strong>, <strong>Sprint</strong>, and <strong>Crouch</strong> actions.</p>
+<h3 id="auto-enable-actions">Auto Enable Actions</h3>
+<p>If <strong>Auto Enable Actions</strong> is checked, the component automatically enables and disables the assigned input actions when the GameObject is enabled or disabled.<br>
+This is useful when not using a <strong>PlayerInput</strong> component or a project‑wide input actions asset that handles enabling automatically.</p>
+<hr>
+<h2 id="-movement-settings">🧭 Movement Settings</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Move Speed</strong></td>
+<td><code>float</code></td>
+<td>Base walking speed (default: <code>6.5</code>).</td>
+</tr>
+<tr>
+<td><strong>Can Move</strong></td>
+<td><code>bool</code></td>
+<td>Toggles whether the character can currently move. Can be changed via script or in the Inspector.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-sprinting--crouching">⚡ Sprinting &amp; Crouching</h2>
+<p>Optional sprinting and crouching systems can be toggled on via their corresponding booleans.<br>
+Each system has customizable speed and button mode options.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Speed</strong></td>
+<td><code>float</code></td>
+<td>Movement speed while sprinting or crouching.</td>
+</tr>
+<tr>
+<td><strong>Mode</strong></td>
+<td><code>enum</code> (<code>Hold</code>, <code>Toggle</code>)</td>
+<td>Determines whether the button must be held or toggled. Default: <code>Hold</code>.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-component-references">🧩 Component References</h2>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rigidbody2D</strong></td>
+<td><code>Rigidbody2D</code></td>
+<td>Required reference used for applying physics‑based movement.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-runtime-properties">🕹️ Runtime Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IsMoving</strong></td>
+<td><code>bool</code></td>
+<td>True if the player is currently moving.</td>
+</tr>
+<tr>
+<td><strong>IsSprinting</strong></td>
+<td><code>bool</code></td>
+<td>True if the player is sprinting.</td>
+</tr>
+<tr>
+<td><strong>IsCrouching</strong></td>
+<td><code>bool</code></td>
+<td>True if the player is crouching.</td>
+</tr>
+<tr>
+<td><strong>Movement</strong></td>
+<td><code>Vector2</code></td>
+<td>The current normalized movement direction.</td>
+</tr>
+</tbody>
+</table>
+<hr>
 <div class="TIP">
 <h5>Tip</h5>
-<p>Multiple triggers can be active simultaneously.</p>
+<p>Combine with a <a href="xref:BlazerTech.CharacterManagement.Components.CharacterAnimatorHandler"><code>Character Animator Handler</code></a> for synchronized animation and movement control.</p>
 </div>
-<hr>
-<h3 id="save-format"><strong>Save Format</strong></h3>
-<p>Select how character groups are serialized to disk.</p>
-<table>
-<thead>
-<tr>
-<th>Format</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>JSON</strong></td>
-<td>Human-readable format (<code>.json</code>). Easy to open and manually edit.</td>
-</tr>
-<tr>
-<td><strong>Binary</strong></td>
-<td>Compact binary format (<code>.bin</code>). Much harder to read or modify manually.</td>
-</tr>
-</tbody>
-</table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Binary saves are more secure against tampering, while JSON saves are ideal during development and debugging.</p>
-</div>
-<hr>
-<h2 id="-debug-options">🧩 Debug Options</h2>
-<p>These settings control which CMS logs appear in the Unity Console — useful for diagnosing issues or monitoring runtime behavior.</p>
-<h3 id="logs-to-show"><strong>Logs To Show</strong></h3>
-<p>A multi-select dropdown defining which types of logs are displayed.</p>
-<table>
-<thead>
-<tr>
-<th>Log Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Character Group Save Trigger Logs</strong></td>
-<td>Logs when character groups are saved.</td>
-</tr>
-<tr>
-<td><strong>New Character Created Logs</strong></td>
-<td>Logs when new characters are created.</td>
-</tr>
-<tr>
-<td><strong>Character Recreated From DTO Logs</strong></td>
-<td>Logs when a character is reconstructed from saved data (DTO).</td>
-</tr>
-<tr>
-<td><strong>Loaded Character Updated Logs</strong></td>
-<td>Logs when an already loaded character is modified.</td>
-</tr>
-<tr>
-<td><strong>Character Creation Menu Logs</strong></td>
-<td>Logs events within the Character Creation Menu (UI, randomization, saves, etc.).</td>
-</tr>
-</tbody>
-</table>
-<div class="TIP">
-<h5>Tip</h5>
-<p>Disable unneeded log types in release builds to reduce console noise.</p>
-</div>
-<hr>
-<h2 id="-related-topics">🧠 Related Topics</h2>
-<ul>
-<li><a href="xref:character-groups">Character Groups</a></li>
-<li><a href="xref:character-creator">Character Creation Menu</a></li>
-<li><a href="xref:saving-and-loading">Saving &amp; Loading System</a></li>
-</ul>
 
 </article>
 

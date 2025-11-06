@@ -565,8 +565,43 @@ This is used to determine the direction the character is moving and speed the ch
 <ul>
 <li><strong>Component</strong>: <a class="xref" href="../api/BlazerTech.CharacterManagement.Components.TopDownMovementController.html">TopDownMovementController</a>.</li>
 </ul>
-<p>The <strong>Top-Down Movement Controller</strong> handles player movement for top-down 2d games where there are 4 directions the player can move (Left, right, up, down).</p>
-<h4 id="inspector-fields-2">Inspector Fields</h4>
+<p>The <strong>Top Down Movement Controller</strong> handles player movement for top-down 2d games where there are 4 directions the player can move (Left, right, up, down).</p>
+<h4 id="input-configuration">Input Configuration</h4>
+<p>This component uses Unitys <strong>New Input System</strong>. Every input action is configurable.</p>
+<p><a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.15/manual/Actions.html">Input Actions</a> are used to easily modify what inputs are used for each action.</p>
+<h5 id="input-actions">Input Actions</h5>
+<table>
+<thead>
+<tr>
+<th>Input Action</th>
+<th>Type</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Move Action</strong></td>
+<td><code>Vector2</code></td>
+<td>The input action used to control player movement along the X and Y axes.</td>
+</tr>
+<tr>
+<td><strong>Sprint Action</strong></td>
+<td><code>Button</code></td>
+<td>The input action used to let the player sprint. (If enabled)</td>
+</tr>
+<tr>
+<td><strong>Crouch Action</strong></td>
+<td><code>Button</code></td>
+<td>The input action used to let the player crouch. (If enabled)</td>
+</tr>
+</tbody>
+</table>
+<p>A default <strong>Input Action asset</strong> is included under the <code>/Input Actions</code> subfolder.<br>
+This asset contains the default input actions for moving, sprinting and crouching.</p>
+<h5 id="auto-enable-actions">Auto Enable Actions</h5>
+<p>If <strong>Auto Enable Actions</strong> is checked, the component automatically enables and disables the assigned input actions when the GameObject is enabled or disabled.<br>
+This is useful when not using a <strong>PlayerInput</strong> component or a <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.15/manual/ProjectWideActions.html">project‑wide input actions asset</a> that handles enabling automatically.</p>
+<h4 id="movement-settings">Movement Settings</h4>
 <table>
 <thead>
 <tr>
@@ -577,43 +612,59 @@ This is used to determine the direction the character is moving and speed the ch
 </thead>
 <tbody>
 <tr>
-<td><strong>Rigid Body 2D</strong></td>
-<td><code>RigidyBody2D</code></td>
-<td>The <code>Rigidybody2D</code> component used to move the player.</td>
-</tr>
-<tr>
 <td><strong>Move Speed</strong></td>
 <td><code>Float</code></td>
-<td>Base walk speed (Default: 6.5).</td>
+<td>Base walk speed (Default: <code>6.5</code>).</td>
 </tr>
 <tr>
 <td><strong>Can Move</strong></td>
 <td><code>Bool</code></td>
-<td>Toggles whether the character can move. Can be toggled through the editor or script.</td>
-</tr>
-<tr>
-<td><strong>Enable Sprint</strong></td>
-<td><code>bool</code></td>
-<td>Allows sprinting with <strong>Left Shift</strong>.</td>
-</tr>
-<tr>
-<td><strong>Sprint Speed</strong></td>
-<td><code>float</code></td>
-<td>Movement speed while sprinting.</td>
-</tr>
-<tr>
-<td><strong>Enable Crouch</strong></td>
-<td><code>bool</code></td>
-<td>Allows crouching with <strong>C</strong> or <strong>Left Ctrl</strong>.</td>
-</tr>
-<tr>
-<td><strong>Crouch Speed</strong></td>
-<td><code>float</code></td>
-<td>Movement speed while crouching.</td>
+<td>Toggles whether the character can currently move. Can be changed via script or in the inspector.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Runtime Properties</strong></p>
+<h4 id="sprinting--crouching">Sprinting &amp; Crouching</h4>
+<p>Optional sprinting and crouching systems can be toggled on via their corresponding booleans.
+Each system has customizable speed and button mode options.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Speed</strong></td>
+<td><code>Float</code></td>
+<td>Movement speed while sprint or crouching.</td>
+</tr>
+<tr>
+<td><strong>Mode</strong></td>
+<td><code>Enum</code></td>
+<td>Determines whether the button must be held or toggled. (Default: <code>Hold</code>)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="references-1">References</h4>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rigidbody2D</strong></td>
+<td><code>Rigidbody2D</code></td>
+<td>Required reference used for applying movement.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="runtime-properties">Runtime Properties</h4>
 <table>
 <thead>
 <tr>
@@ -626,28 +677,28 @@ This is used to determine the direction the character is moving and speed the ch
 <tr>
 <td><strong>IsMoving</strong></td>
 <td><code>bool</code></td>
-<td>True if the character is currently moving.</td>
+<td>True if the player is currently moving.</td>
 </tr>
 <tr>
 <td><strong>IsSprinting</strong></td>
 <td><code>bool</code></td>
-<td>True if the character is currently sprinting.</td>
+<td>True if the player is currently sprinting.</td>
 </tr>
 <tr>
 <td><strong>IsCrouching</strong></td>
 <td><code>bool</code></td>
-<td>True if the character is currently crouching.</td>
+<td>True if the player is currently crouching.</td>
 </tr>
 <tr>
 <td><strong>Movement</strong></td>
 <td><code>Vector2</code></td>
-<td>Current movement direction.</td>
+<td>Current normalized movement direction.</td>
 </tr>
 </tbody>
 </table>
 <div class="TIP">
 <h5>Tip</h5>
-<p>Designed to be used along a <strong>Character Animator Handler</strong> component. When used together they provide both character movement and animation functionality.</p>
+<p>Designed to be used along a <a href="#character-animator-handlers">Character Animator Handler</a> component. When used together they provide both character movement and animation functionality.</p>
 </div>
 
 </article>
