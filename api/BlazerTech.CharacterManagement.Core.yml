@@ -4,7 +4,10 @@ items:
   commentId: N:BlazerTech.CharacterManagement.Core
   id: BlazerTech.CharacterManagement.Core
   children:
+  - BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
   - BlazerTech.CharacterManagement.Core.CMSInitializationHandler
+  - BlazerTech.CharacterManagement.Core.CMSLogType
+  - BlazerTech.CharacterManagement.Core.CMSLogger
   - BlazerTech.CharacterManagement.Core.CMSReferenceHandler
   - BlazerTech.CharacterManagement.Core.CMSSaveSystem
   - BlazerTech.CharacterManagement.Core.EightDirectional
@@ -14,6 +17,7 @@ items:
   - BlazerTech.CharacterManagement.Core.IValidatable
   - BlazerTech.CharacterManagement.Core.OwnedResourceTracker`1
   - BlazerTech.CharacterManagement.Core.RotateGO
+  - BlazerTech.CharacterManagement.Core.SaveFormat
   - BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
   - BlazerTech.CharacterManagement.Core.SerializableDictionary`2
   - BlazerTech.CharacterManagement.Core.SerializableKeyValuePair`2
@@ -72,6 +76,27 @@ references:
   name: CMSSaveSystem
   nameWithType: CMSSaveSystem
   fullName: BlazerTech.CharacterManagement.Core.CMSSaveSystem
+- uid: BlazerTech.CharacterManagement.Core.CMSLogType
+  commentId: T:BlazerTech.CharacterManagement.Core.CMSLogType
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.CMSLogType.html
+  name: CMSLogType
+  nameWithType: CMSLogType
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogType
+- uid: BlazerTech.CharacterManagement.Core.SaveFormat
+  commentId: T:BlazerTech.CharacterManagement.Core.SaveFormat
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.SaveFormat.html
+  name: SaveFormat
+  nameWithType: SaveFormat
+  fullName: BlazerTech.CharacterManagement.Core.SaveFormat
+- uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+  commentId: T:BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.html
+  name: BlazerTechCMSSettingsSO
+  nameWithType: BlazerTechCMSSettingsSO
+  fullName: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
 - uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler
   commentId: T:BlazerTech.CharacterManagement.Core.CMSReferenceHandler
   parent: BlazerTech.CharacterManagement.Core
@@ -79,6 +104,12 @@ references:
   name: CMSReferenceHandler
   nameWithType: CMSReferenceHandler
   fullName: BlazerTech.CharacterManagement.Core.CMSReferenceHandler
+- uid: BlazerTech.CharacterManagement.Core.CMSLogger
+  commentId: T:BlazerTech.CharacterManagement.Core.CMSLogger
+  href: BlazerTech.CharacterManagement.Core.CMSLogger.html
+  name: CMSLogger
+  nameWithType: CMSLogger
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogger
 - uid: BlazerTech.CharacterManagement.Core.SerializableDictionary`2
   commentId: T:BlazerTech.CharacterManagement.Core.SerializableDictionary`2
   href: BlazerTech.CharacterManagement.Core.SerializableDictionary-2.html

@@ -5,7 +5,7 @@ items:
   id: CharacterLayerDefinitionSO
   parent: BlazerTech.CharacterManagement.Characters
   children:
-  - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync(System.Action{System.Single})
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync(System.Object,System.Action{System.Single})
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AttachedCharacterType
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.CollectLayerOptions_EditMode
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetLayerOptionFromIndex(System.Int32)
@@ -13,13 +13,12 @@ items:
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetLayerOptionFromSpritesheetName(System.String)
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetRandomLayerOption
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.IncludeNoneOption
-  - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.Initialize(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.IsInitialized
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.IsValid
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.LayerName
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.LayerOptions
   - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.PerformValidationCheck
-  - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.ReleaseAllLayerOptions
+  - BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.ReleaseAllLayerOptions(System.Object)
   langs:
   - csharp
   - vb
@@ -221,50 +220,6 @@ items:
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.IsValid*
   implements:
   - BlazerTech.CharacterManagement.Core.IValidatable.IsValid
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.Initialize(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.Initialize(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  id: Initialize(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  parent: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
-  langs:
-  - csharp
-  - vb
-  name: Initialize(LayeredCharacterTypeSO)
-  nameWithType: CharacterLayerDefinitionSO.Initialize(LayeredCharacterTypeSO)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.Initialize(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
-  type: Method
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Scriptable Objects/CharacterLayerDefinitionSO.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: Initialize
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterLayerDefinitionSO.cs
-    startLine: 65
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  example: []
-  syntax:
-    content: public bool Initialize(LayeredCharacterTypeSO characterType)
-    parameters:
-    - id: characterType
-      type: BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO
-      description: The <xref href="BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO" data-throw-if-not-resolved="false"></xref> used to initialize the layer.
-    return:
-      type: System.Boolean
-      description: True if the layer was able to initialize properly. Otherwise, False.
-    content.vb: Public Function Initialize(characterType As LayeredCharacterTypeSO) As Boolean
-  overload: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.Initialize*
-  exceptions:
-  - type: System.InvalidOperationException
-    commentId: T:System.InvalidOperationException
-    description: Thrown when <xref href="BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AttachedCharacterType" data-throw-if-not-resolved="false"></xref> is null.
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
-    description: Thrown when <code class="paramref">characterType</code> is null.
-  - type: System.ArgumentException
-    commentId: T:System.ArgumentException
-    description: Thrown when the <code class="paramref">characterType</code> is different from the one used in the layer.
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.PerformValidationCheck
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.PerformValidationCheck
   id: PerformValidationCheck
@@ -287,15 +242,24 @@ items:
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
-  summary: Checks/Rechecks if the object is valid and updates <xref href="BlazerTech.CharacterManagement.Core.IValidatable.IsValid" data-throw-if-not-resolved="false"></xref> accordingly.
   example: []
   syntax:
     content: public bool PerformValidationCheck()
     return:
       type: System.Boolean
-      description: true if the object is valid after the check; otherwise, false.
+      description: True if the layer was able to initialize properly. Otherwise, False.
     content.vb: Public Function PerformValidationCheck() As Boolean
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.PerformValidationCheck*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when <xref href="BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AttachedCharacterType" data-throw-if-not-resolved="false"></xref> is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">characterType</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the <code class="paramref">characterType</code> is different from the one used in the layer.
   implements:
   - BlazerTech.CharacterManagement.Core.IValidatable.PerformValidationCheck
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.GetLayerOptionFromKey(System.String)
@@ -456,16 +420,16 @@ items:
       type: System.Boolean
     content.vb: Public Function IsInitialized() As Boolean
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.IsInitialized*
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync(System.Action{System.Single})
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync(System.Action{System.Single})
-  id: AcquireAllLayerOptionsAsync(System.Action{System.Single})
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync(System.Object,System.Action{System.Single})
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync(System.Object,System.Action{System.Single})
+  id: AcquireAllLayerOptionsAsync(System.Object,System.Action{System.Single})
   parent: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
   langs:
   - csharp
   - vb
-  name: AcquireAllLayerOptionsAsync(Action<float>)
-  nameWithType: CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync(Action<float>)
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync(System.Action<float>)
+  name: AcquireAllLayerOptionsAsync(object, Action<float>)
+  nameWithType: CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync(object, Action<float>)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync(object, System.Action<float>)
   type: Method
   source:
     remote:
@@ -479,27 +443,29 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public Task AcquireAllLayerOptionsAsync(Action<float> onProgress = null)
+    content: public Task AcquireAllLayerOptionsAsync(object owner, Action<float> onProgress = null)
     parameters:
+    - id: owner
+      type: System.Object
     - id: onProgress
       type: System.Action{System.Single}
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Public Function AcquireAllLayerOptionsAsync(onProgress As Action(Of Single) = Nothing) As Task
+    content.vb: Public Function AcquireAllLayerOptionsAsync(owner As Object, onProgress As Action(Of Single) = Nothing) As Task
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync*
-  nameWithType.vb: CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync(Action(Of Single))
-  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync(System.Action(Of Single))
-  name.vb: AcquireAllLayerOptionsAsync(Action(Of Single))
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.ReleaseAllLayerOptions
-  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.ReleaseAllLayerOptions
-  id: ReleaseAllLayerOptions
+  nameWithType.vb: CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync(Object, Action(Of Single))
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync(Object, System.Action(Of Single))
+  name.vb: AcquireAllLayerOptionsAsync(Object, Action(Of Single))
+- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.ReleaseAllLayerOptions(System.Object)
+  commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.ReleaseAllLayerOptions(System.Object)
+  id: ReleaseAllLayerOptions(System.Object)
   parent: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO
   langs:
   - csharp
   - vb
-  name: ReleaseAllLayerOptions()
-  nameWithType: CharacterLayerDefinitionSO.ReleaseAllLayerOptions()
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.ReleaseAllLayerOptions()
+  name: ReleaseAllLayerOptions(object)
+  nameWithType: CharacterLayerDefinitionSO.ReleaseAllLayerOptions(object)
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.ReleaseAllLayerOptions(object)
   type: Method
   source:
     remote:
@@ -508,14 +474,20 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ReleaseAllLayerOptions
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterLayerDefinitionSO.cs
-    startLine: 148
+    startLine: 151
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: public void ReleaseAllLayerOptions()
-    content.vb: Public Sub ReleaseAllLayerOptions()
+    content: public void ReleaseAllLayerOptions(object owner)
+    parameters:
+    - id: owner
+      type: System.Object
+    content.vb: Public Sub ReleaseAllLayerOptions(owner As Object)
   overload: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.ReleaseAllLayerOptions*
+  nameWithType.vb: CharacterLayerDefinitionSO.ReleaseAllLayerOptions(Object)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.ReleaseAllLayerOptions(Object)
+  name.vb: ReleaseAllLayerOptions(Object)
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.CollectLayerOptions_EditMode
   commentId: M:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.CollectLayerOptions_EditMode
   id: CollectLayerOptions_EditMode
@@ -534,7 +506,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CollectLayerOptions_EditMode
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/CharacterLayerDefinitionSO.cs
-    startLine: 169
+    startLine: 175
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -890,12 +862,6 @@ references:
   name: ArgumentException
   nameWithType: ArgumentException
   fullName: System.ArgumentException
-- uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.Initialize*
-  commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.Initialize
-  href: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerDefinitionSO_Initialize_BlazerTech_CharacterManagement_Characters_LayeredCharacterTypeSO_
-  name: Initialize
-  nameWithType: CharacterLayerDefinitionSO.Initialize
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.Initialize
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.PerformValidationCheck*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.PerformValidationCheck
   href: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerDefinitionSO_PerformValidationCheck
@@ -952,7 +918,7 @@ references:
   fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.IsInitialized
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync
-  href: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerDefinitionSO_AcquireAllLayerOptionsAsync_System_Action_System_Single__
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerDefinitionSO_AcquireAllLayerOptionsAsync_System_Object_System_Action_System_Single__
   name: AcquireAllLayerOptionsAsync
   nameWithType: CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync
   fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.AcquireAllLayerOptionsAsync
@@ -1066,7 +1032,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.ReleaseAllLayerOptions*
   commentId: Overload:BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.ReleaseAllLayerOptions
-  href: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerDefinitionSO_ReleaseAllLayerOptions
+  href: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.html#BlazerTech_CharacterManagement_Characters_CharacterLayerDefinitionSO_ReleaseAllLayerOptions_System_Object_
   name: ReleaseAllLayerOptions
   nameWithType: CharacterLayerDefinitionSO.ReleaseAllLayerOptions
   fullName: BlazerTech.CharacterManagement.Characters.CharacterLayerDefinitionSO.ReleaseAllLayerOptions

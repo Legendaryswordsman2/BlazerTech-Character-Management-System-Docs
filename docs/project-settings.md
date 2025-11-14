@@ -8,13 +8,13 @@ summary: Settings for the **BlazerTech Character Management System**.
 All global settings for the **BlazerTech Character Management System** are managed through the Project Settings window.  
 Located under **`Edit > Project Settings > BlazerTech > Character Management System`**.
 
-![Project Settings](~/images/project-settings.png)
+![Project Settings](~/images/project-settings/project-settings.png)
 
 ---
 
 ## Saving Settings
 
-Configure how and when **Character Groups** are automatically saved to disk.
+Configure when **Character Groups** are automatically saved to disk.
 
 ### Auto Save Triggers
 
@@ -39,6 +39,21 @@ Select the format used when **Character Groups** are saved to disk.
 
 > [!NOTE]
 > Binary saves are more secure against tampering, while JSON saves are ideal during development and debugging.
+
+---
+
+## Active Character Types
+
+The **Active Character Types** list contains all **Character Type assets** that are enabled and ready to be used at runtime.
+
+![Active Character Types list](~/images/project-settings/active-character-types-list.png)
+
+When a new Character Type is created, the user is prompted to add it to the **Active Character Types list** before proceeding.
+
+![Add Character Type to list](~/images/project-settings/add-character-type-to-list.png)
+
+> [!IMPORTANT]
+> If a Character Type asset is not contained inside this list it will NOT be functional.
 
 ---
 

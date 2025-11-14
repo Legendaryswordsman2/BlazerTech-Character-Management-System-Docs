@@ -5,10 +5,9 @@ items:
   id: CharacterGroupAutoSaveTriggers
   parent: BlazerTech.CharacterManagement.Characters
   children:
-  - BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.All
   - BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.CharacterCreatorSave
   - BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.GameExit
-  - BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.None
+  - BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.Nothing
   - BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.SceneChange
   langs:
   - csharp
@@ -24,7 +23,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterGroupAutoSaveTriggers
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -41,30 +40,30 @@ items:
   - type: System.FlagsAttribute
     ctor: System.FlagsAttribute.#ctor
     arguments: []
-- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.None
-  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.None
-  id: None
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.Nothing
+  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.Nothing
+  id: Nothing
   parent: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
   langs:
   - csharp
   - vb
-  name: None
-  nameWithType: CharacterGroupAutoSaveTriggers.None
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.None
+  name: Nothing
+  nameWithType: CharacterGroupAutoSaveTriggers.Nothing
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.Nothing
   type: Field
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: None
+    id: Nothing
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
   syntax:
-    content: None = 0
+    content: Nothing = 0
     return:
       type: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
 - uid: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.GameExit
@@ -85,7 +84,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GameExit
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -111,7 +110,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterCreatorSave
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -137,7 +136,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SceneChange
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -145,33 +144,6 @@ items:
     content: SceneChange = 4
     return:
       type: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
-- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.All
-  commentId: F:BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.All
-  id: All
-  parent: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
-  langs:
-  - csharp
-  - vb
-  name: All
-  nameWithType: CharacterGroupAutoSaveTriggers.All
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.All
-  type: Field
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: All
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 19
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  syntax:
-    content: All = GameExit | CharacterCreatorSave | SceneChange
-    return:
-      type: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
-    content.vb: All = GameExit Or CharacterCreatorSave Or SceneChange
 references:
 - uid: BlazerTech.CharacterManagement.Characters
   commentId: N:BlazerTech.CharacterManagement.Characters

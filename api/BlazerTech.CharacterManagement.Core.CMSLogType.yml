@@ -1,0 +1,211 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Core.CMSLogType
+  commentId: T:BlazerTech.CharacterManagement.Core.CMSLogType
+  id: CMSLogType
+  parent: BlazerTech.CharacterManagement.Core
+  children:
+  - BlazerTech.CharacterManagement.Core.CMSLogType.CharacterCreationMenuLogs
+  - BlazerTech.CharacterManagement.Core.CMSLogType.CharacterGroupSaveTriggerLogs
+  - BlazerTech.CharacterManagement.Core.CMSLogType.CharacterRecreatedFromDTOLogs
+  - BlazerTech.CharacterManagement.Core.CMSLogType.LoadedCharacterUpdatedLogs
+  - BlazerTech.CharacterManagement.Core.CMSLogType.NewCharacterCreatedLogs
+  langs:
+  - csharp
+  - vb
+  name: CMSLogType
+  nameWithType: CMSLogType
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogType
+  type: Enum
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CMSLogType
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum CMSLogType
+    content.vb: >-
+      <Flags>
+
+      Public Enum CMSLogType
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: BlazerTech.CharacterManagement.Core.CMSLogType.CharacterGroupSaveTriggerLogs
+  commentId: F:BlazerTech.CharacterManagement.Core.CMSLogType.CharacterGroupSaveTriggerLogs
+  id: CharacterGroupSaveTriggerLogs
+  parent: BlazerTech.CharacterManagement.Core.CMSLogType
+  langs:
+  - csharp
+  - vb
+  name: CharacterGroupSaveTriggerLogs
+  nameWithType: CMSLogType.CharacterGroupSaveTriggerLogs
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogType.CharacterGroupSaveTriggerLogs
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterGroupSaveTriggerLogs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: CharacterGroupSaveTriggerLogs = 1
+    return:
+      type: BlazerTech.CharacterManagement.Core.CMSLogType
+- uid: BlazerTech.CharacterManagement.Core.CMSLogType.NewCharacterCreatedLogs
+  commentId: F:BlazerTech.CharacterManagement.Core.CMSLogType.NewCharacterCreatedLogs
+  id: NewCharacterCreatedLogs
+  parent: BlazerTech.CharacterManagement.Core.CMSLogType
+  langs:
+  - csharp
+  - vb
+  name: NewCharacterCreatedLogs
+  nameWithType: CMSLogType.NewCharacterCreatedLogs
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogType.NewCharacterCreatedLogs
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: NewCharacterCreatedLogs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: NewCharacterCreatedLogs = 2
+    return:
+      type: BlazerTech.CharacterManagement.Core.CMSLogType
+- uid: BlazerTech.CharacterManagement.Core.CMSLogType.CharacterRecreatedFromDTOLogs
+  commentId: F:BlazerTech.CharacterManagement.Core.CMSLogType.CharacterRecreatedFromDTOLogs
+  id: CharacterRecreatedFromDTOLogs
+  parent: BlazerTech.CharacterManagement.Core.CMSLogType
+  langs:
+  - csharp
+  - vb
+  name: CharacterRecreatedFromDTOLogs
+  nameWithType: CMSLogType.CharacterRecreatedFromDTOLogs
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogType.CharacterRecreatedFromDTOLogs
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterRecreatedFromDTOLogs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: CharacterRecreatedFromDTOLogs = 4
+    return:
+      type: BlazerTech.CharacterManagement.Core.CMSLogType
+- uid: BlazerTech.CharacterManagement.Core.CMSLogType.LoadedCharacterUpdatedLogs
+  commentId: F:BlazerTech.CharacterManagement.Core.CMSLogType.LoadedCharacterUpdatedLogs
+  id: LoadedCharacterUpdatedLogs
+  parent: BlazerTech.CharacterManagement.Core.CMSLogType
+  langs:
+  - csharp
+  - vb
+  name: LoadedCharacterUpdatedLogs
+  nameWithType: CMSLogType.LoadedCharacterUpdatedLogs
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogType.LoadedCharacterUpdatedLogs
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LoadedCharacterUpdatedLogs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: LoadedCharacterUpdatedLogs = 8
+    return:
+      type: BlazerTech.CharacterManagement.Core.CMSLogType
+- uid: BlazerTech.CharacterManagement.Core.CMSLogType.CharacterCreationMenuLogs
+  commentId: F:BlazerTech.CharacterManagement.Core.CMSLogType.CharacterCreationMenuLogs
+  id: CharacterCreationMenuLogs
+  parent: BlazerTech.CharacterManagement.Core.CMSLogType
+  langs:
+  - csharp
+  - vb
+  name: CharacterCreationMenuLogs
+  nameWithType: CMSLogType.CharacterCreationMenuLogs
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogType.CharacterCreationMenuLogs
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterCreationMenuLogs
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: CharacterCreationMenuLogs = 16
+    return:
+      type: BlazerTech.CharacterManagement.Core.CMSLogType
+references:
+- uid: BlazerTech.CharacterManagement.Core
+  commentId: N:BlazerTech.CharacterManagement.Core
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Core
+  nameWithType: BlazerTech.CharacterManagement.Core
+  fullName: BlazerTech.CharacterManagement.Core
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+- uid: BlazerTech.CharacterManagement.Core.CMSLogType
+  commentId: T:BlazerTech.CharacterManagement.Core.CMSLogType
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.CMSLogType.html
+  name: CMSLogType
+  nameWithType: CMSLogType
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogType

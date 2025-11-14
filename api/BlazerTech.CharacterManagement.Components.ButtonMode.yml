@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Components.ButtonMode
+  commentId: T:BlazerTech.CharacterManagement.Components.ButtonMode
+  id: ButtonMode
+  parent: BlazerTech.CharacterManagement.Components
+  children:
+  - BlazerTech.CharacterManagement.Components.ButtonMode.Hold
+  - BlazerTech.CharacterManagement.Components.ButtonMode.Toggle
+  langs:
+  - csharp
+  - vb
+  name: ButtonMode
+  nameWithType: ButtonMode
+  fullName: BlazerTech.CharacterManagement.Components.ButtonMode
+  type: Enum
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: ButtonMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public enum ButtonMode
+    content.vb: Public Enum ButtonMode
+- uid: BlazerTech.CharacterManagement.Components.ButtonMode.Hold
+  commentId: F:BlazerTech.CharacterManagement.Components.ButtonMode.Hold
+  id: Hold
+  parent: BlazerTech.CharacterManagement.Components.ButtonMode
+  langs:
+  - csharp
+  - vb
+  name: Hold
+  nameWithType: ButtonMode.Hold
+  fullName: BlazerTech.CharacterManagement.Components.ButtonMode.Hold
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Hold
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: Hold = 0
+    return:
+      type: BlazerTech.CharacterManagement.Components.ButtonMode
+- uid: BlazerTech.CharacterManagement.Components.ButtonMode.Toggle
+  commentId: F:BlazerTech.CharacterManagement.Components.ButtonMode.Toggle
+  id: Toggle
+  parent: BlazerTech.CharacterManagement.Components.ButtonMode
+  langs:
+  - csharp
+  - vb
+  name: Toggle
+  nameWithType: ButtonMode.Toggle
+  fullName: BlazerTech.CharacterManagement.Components.ButtonMode.Toggle
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Toggle
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/TopDownMovementController.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: Toggle = 1
+    return:
+      type: BlazerTech.CharacterManagement.Components.ButtonMode
+references:
+- uid: BlazerTech.CharacterManagement.Components
+  commentId: N:BlazerTech.CharacterManagement.Components
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Components
+  nameWithType: BlazerTech.CharacterManagement.Components
+  fullName: BlazerTech.CharacterManagement.Components
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+- uid: BlazerTech.CharacterManagement.Components.ButtonMode
+  commentId: T:BlazerTech.CharacterManagement.Components.ButtonMode
+  parent: BlazerTech.CharacterManagement.Components
+  href: BlazerTech.CharacterManagement.Components.ButtonMode.html
+  name: ButtonMode
+  nameWithType: ButtonMode
+  fullName: BlazerTech.CharacterManagement.Components.ButtonMode

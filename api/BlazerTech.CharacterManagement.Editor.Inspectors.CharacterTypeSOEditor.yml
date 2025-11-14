@@ -5,6 +5,7 @@ items:
   id: CharacterTypeSOEditor
   parent: BlazerTech.CharacterManagement.Editor.Inspectors
   children:
+  - BlazerTech.CharacterManagement.Editor.Inspectors.CharacterTypeSOEditor.OnEnable
   - BlazerTech.CharacterManagement.Editor.Inspectors.CharacterTypeSOEditor.OnInspectorGUI
   langs:
   - csharp
@@ -20,7 +21,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CharacterTypeSOEditor
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterTypeSOEditor.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - Assembly-CSharp-Editor
   namespace: BlazerTech.CharacterManagement.Editor.Inspectors
@@ -40,7 +41,6 @@ items:
   - UnityEditor.Editor
   - NaughtyAttributes.Editor.NaughtyInspector
   inheritedMembers:
-  - NaughtyAttributes.Editor.NaughtyInspector.OnEnable
   - NaughtyAttributes.Editor.NaughtyInspector.OnDisable
   - NaughtyAttributes.Editor.NaughtyInspector.GetSerializedProperties(System.Collections.Generic.List{UnityEditor.SerializedProperty}@)
   - NaughtyAttributes.Editor.NaughtyInspector.DrawSerializedProperties
@@ -55,6 +55,34 @@ items:
       value: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
     - type: System.Boolean
       value: true
+- uid: BlazerTech.CharacterManagement.Editor.Inspectors.CharacterTypeSOEditor.OnEnable
+  commentId: M:BlazerTech.CharacterManagement.Editor.Inspectors.CharacterTypeSOEditor.OnEnable
+  id: OnEnable
+  parent: BlazerTech.CharacterManagement.Editor.Inspectors.CharacterTypeSOEditor
+  langs:
+  - csharp
+  - vb
+  name: OnEnable()
+  nameWithType: CharacterTypeSOEditor.OnEnable()
+  fullName: BlazerTech.CharacterManagement.Editor.Inspectors.CharacterTypeSOEditor.OnEnable()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterTypeSOEditor.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: OnEnable
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterTypeSOEditor.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: BlazerTech.CharacterManagement.Editor.Inspectors
+  example: []
+  syntax:
+    content: protected override void OnEnable()
+    content.vb: Protected Overrides Sub OnEnable()
+  overridden: NaughtyAttributes.Editor.NaughtyInspector.OnEnable
+  overload: BlazerTech.CharacterManagement.Editor.Inspectors.CharacterTypeSOEditor.OnEnable*
 - uid: BlazerTech.CharacterManagement.Editor.Inspectors.CharacterTypeSOEditor.OnInspectorGUI
   commentId: M:BlazerTech.CharacterManagement.Editor.Inspectors.CharacterTypeSOEditor.OnInspectorGUI
   id: OnInspectorGUI
@@ -73,7 +101,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: OnInspectorGUI
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/Custom Inspectors/CharacterTypeSOEditor.cs
-    startLine: 10
+    startLine: 20
   assemblies:
   - Assembly-CSharp-Editor
   namespace: BlazerTech.CharacterManagement.Editor.Inspectors
@@ -161,22 +189,6 @@ references:
   name: NaughtyInspector
   nameWithType: NaughtyInspector
   fullName: NaughtyAttributes.Editor.NaughtyInspector
-- uid: NaughtyAttributes.Editor.NaughtyInspector.OnEnable
-  commentId: M:NaughtyAttributes.Editor.NaughtyInspector.OnEnable
-  parent: NaughtyAttributes.Editor.NaughtyInspector
-  name: OnEnable()
-  nameWithType: NaughtyInspector.OnEnable()
-  fullName: NaughtyAttributes.Editor.NaughtyInspector.OnEnable()
-  spec.csharp:
-  - uid: NaughtyAttributes.Editor.NaughtyInspector.OnEnable
-    name: OnEnable
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: NaughtyAttributes.Editor.NaughtyInspector.OnEnable
-    name: OnEnable
-  - name: (
-  - name: )
 - uid: NaughtyAttributes.Editor.NaughtyInspector.OnDisable
   commentId: M:NaughtyAttributes.Editor.NaughtyInspector.OnDisable
   parent: NaughtyAttributes.Editor.NaughtyInspector
@@ -375,6 +387,28 @@ references:
   - name: .
   - uid: NaughtyAttributes.Editor
     name: Editor
+- uid: NaughtyAttributes.Editor.NaughtyInspector.OnEnable
+  commentId: M:NaughtyAttributes.Editor.NaughtyInspector.OnEnable
+  parent: NaughtyAttributes.Editor.NaughtyInspector
+  name: OnEnable()
+  nameWithType: NaughtyInspector.OnEnable()
+  fullName: NaughtyAttributes.Editor.NaughtyInspector.OnEnable()
+  spec.csharp:
+  - uid: NaughtyAttributes.Editor.NaughtyInspector.OnEnable
+    name: OnEnable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: NaughtyAttributes.Editor.NaughtyInspector.OnEnable
+    name: OnEnable
+  - name: (
+  - name: )
+- uid: BlazerTech.CharacterManagement.Editor.Inspectors.CharacterTypeSOEditor.OnEnable*
+  commentId: Overload:BlazerTech.CharacterManagement.Editor.Inspectors.CharacterTypeSOEditor.OnEnable
+  href: BlazerTech.CharacterManagement.Editor.Inspectors.CharacterTypeSOEditor.html#BlazerTech_CharacterManagement_Editor_Inspectors_CharacterTypeSOEditor_OnEnable
+  name: OnEnable
+  nameWithType: CharacterTypeSOEditor.OnEnable
+  fullName: BlazerTech.CharacterManagement.Editor.Inspectors.CharacterTypeSOEditor.OnEnable
 - uid: NaughtyAttributes.Editor.NaughtyInspector.OnInspectorGUI
   commentId: M:NaughtyAttributes.Editor.NaughtyInspector.OnInspectorGUI
   parent: NaughtyAttributes.Editor.NaughtyInspector

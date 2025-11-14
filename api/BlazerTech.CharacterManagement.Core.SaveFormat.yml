@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Core.SaveFormat
+  commentId: T:BlazerTech.CharacterManagement.Core.SaveFormat
+  id: SaveFormat
+  parent: BlazerTech.CharacterManagement.Core
+  children:
+  - BlazerTech.CharacterManagement.Core.SaveFormat.Binary
+  - BlazerTech.CharacterManagement.Core.SaveFormat.JSON
+  langs:
+  - csharp
+  - vb
+  name: SaveFormat
+  nameWithType: SaveFormat
+  fullName: BlazerTech.CharacterManagement.Core.SaveFormat
+  type: Enum
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: SaveFormat
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public enum SaveFormat
+    content.vb: Public Enum SaveFormat
+- uid: BlazerTech.CharacterManagement.Core.SaveFormat.JSON
+  commentId: F:BlazerTech.CharacterManagement.Core.SaveFormat.JSON
+  id: JSON
+  parent: BlazerTech.CharacterManagement.Core.SaveFormat
+  langs:
+  - csharp
+  - vb
+  name: JSON
+  nameWithType: SaveFormat.JSON
+  fullName: BlazerTech.CharacterManagement.Core.SaveFormat.JSON
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: JSON
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: JSON = 0
+    return:
+      type: BlazerTech.CharacterManagement.Core.SaveFormat
+- uid: BlazerTech.CharacterManagement.Core.SaveFormat.Binary
+  commentId: F:BlazerTech.CharacterManagement.Core.SaveFormat.Binary
+  id: Binary
+  parent: BlazerTech.CharacterManagement.Core.SaveFormat
+  langs:
+  - csharp
+  - vb
+  name: Binary
+  nameWithType: SaveFormat.Binary
+  fullName: BlazerTech.CharacterManagement.Core.SaveFormat.Binary
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Binary
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: Binary = 1
+    return:
+      type: BlazerTech.CharacterManagement.Core.SaveFormat
+references:
+- uid: BlazerTech.CharacterManagement.Core
+  commentId: N:BlazerTech.CharacterManagement.Core
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Core
+  nameWithType: BlazerTech.CharacterManagement.Core
+  fullName: BlazerTech.CharacterManagement.Core
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+- uid: BlazerTech.CharacterManagement.Core.SaveFormat
+  commentId: T:BlazerTech.CharacterManagement.Core.SaveFormat
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.SaveFormat.html
+  name: SaveFormat
+  nameWithType: SaveFormat
+  fullName: BlazerTech.CharacterManagement.Core.SaveFormat

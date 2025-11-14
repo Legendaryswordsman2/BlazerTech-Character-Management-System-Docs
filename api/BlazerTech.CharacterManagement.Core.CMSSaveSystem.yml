@@ -23,7 +23,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: CMSSaveSystem
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
-    startLine: 7
+    startLine: 9
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -50,22 +50,28 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SaveFile
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
-    startLine: 10
+    startLine: 23
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
+  summary: Saves an object to a file in the Persistent Data Path folder.
+  example: []
   syntax:
-    content: public static void SaveFile<T>(string filePath, string fileName, T objectToWrite)
+    content: public static void SaveFile<T>(string RelativefilePath, string fileName, T objectToWrite)
     parameters:
-    - id: filePath
+    - id: RelativefilePath
       type: System.String
+      description: Filepath relative to the Persistent Data Path folder.
     - id: fileName
       type: System.String
+      description: The name the file excluding extention.
     - id: objectToWrite
       type: '{T}'
+      description: The object to write into the file.
     typeParameters:
     - id: T
-    content.vb: Public Shared Sub SaveFile(Of T)(filePath As String, fileName As String, objectToWrite As T)
+      description: ''
+    content.vb: Public Shared Sub SaveFile(Of T)(RelativefilePath As String, fileName As String, objectToWrite As T)
   overload: BlazerTech.CharacterManagement.Core.CMSSaveSystem.SaveFile*
   nameWithType.vb: CMSSaveSystem.SaveFile(Of T)(String, String, T)
   fullName.vb: BlazerTech.CharacterManagement.Core.CMSSaveSystem.SaveFile(Of T)(String, String, T)
@@ -88,7 +94,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadFile
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
-    startLine: 23
+    startLine: 58
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -124,7 +130,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadFileWholePath
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
-    startLine: 43
+    startLine: 81
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
@@ -160,20 +166,20 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadFilesInFolder
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSSaveSystem.cs
-    startLine: 58
+    startLine: 130
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
   syntax:
-    content: 'public static List<T> LoadFilesInFolder<T>(string folderPath) where T : class'
+    content: 'public static List<T> LoadFilesInFolder<T>(string RelativefolderPath) where T : class'
     parameters:
-    - id: folderPath
+    - id: RelativefolderPath
       type: System.String
     typeParameters:
     - id: T
     return:
       type: System.Collections.Generic.List{{T}}
-    content.vb: Public Shared Function LoadFilesInFolder(Of T As Class)(folderPath As String) As List(Of T)
+    content.vb: Public Shared Function LoadFilesInFolder(Of T As Class)(RelativefolderPath As String) As List(Of T)
   overload: BlazerTech.CharacterManagement.Core.CMSSaveSystem.LoadFilesInFolder*
   nameWithType.vb: CMSSaveSystem.LoadFilesInFolder(Of T)(String)
   fullName.vb: BlazerTech.CharacterManagement.Core.CMSSaveSystem.LoadFilesInFolder(Of T)(String)

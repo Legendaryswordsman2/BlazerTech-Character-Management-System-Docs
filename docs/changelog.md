@@ -10,7 +10,7 @@ This log follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) co
 
 ---
 
-## [0.3.0] - Unreleased
+## [0.3.0] - 11-13-2025
 
 ### Added
 - Added [third premade Character Creation Menu prefab](xref:character-creator-setup#premade-menus).
@@ -23,11 +23,16 @@ This log follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) co
 - Added **assignable Input Actions** to the [Top Down Movement Controller](xref:character-usage#top-down-movement-controller) component.
 - Added **hold/toggle** options for **sprint/couch** states in the [Top Down Movement Controller](xref:character-usage#top-down-movement-controller) component.
 - Added `Create Character If Null` bool to **Layered Character Group Renderer** component.
+- Added **Active Character Types** list in [Project Settings page](xref:project-settings). (Replaces Addressables requirement for Character Types)
 
 ### Changed
 - Converted [Top Down Movement Controller](xref:character-usage#top-down-movement-controller) to use the **New Input System**.
+- Replaced Character Type assets `ISValid` bool with a check if the Character Type asset is contained within the `Valid Character Types` list within the `CMS Reference Handler`.
+- Moved Character Shader out of Character Type asset and into a centralized dictionary with an entry for each validated Character Type.
+- Migrated Character Type initialization to use pre-set list inside Project Settings page instead of loading through Addressables.
 
 ### Fixed
+- Fixed major issue causing Character Types to not be functional in build versions.
 - Fixed issue when loading a **Character Creation Menu** with **Animation Controls** multiple times.
 
 ---

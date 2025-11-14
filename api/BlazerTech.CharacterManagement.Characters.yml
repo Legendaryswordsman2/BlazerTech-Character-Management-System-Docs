@@ -28,6 +28,7 @@ items:
   - BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup
   - BlazerTech.CharacterManagement.Characters.FlexibleCharacterGroup.FlexibleCharacterGroup_DTO
   - BlazerTech.CharacterManagement.Characters.GroupTemplateEntry
+  - BlazerTech.CharacterManagement.Characters.ICharacter`2
   - BlazerTech.CharacterManagement.Characters.LayerOptionMapping
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter
   - BlazerTech.CharacterManagement.Characters.LayeredCharacter.LayeredCharacter_DTO
@@ -71,6 +72,37 @@ references:
   name: LayeredCharacterGroupManager
   nameWithType: LayeredCharacterGroupManager
   fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
+- uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
+  commentId: T:BlazerTech.CharacterManagement.Characters.ICharacter`2
+  href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html
+  name: ICharacter<TCharacterType, TCharacterHandler>
+  nameWithType: ICharacter<TCharacterType, TCharacterHandler>
+  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>
+  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler)
+  name.vb: ICharacter(Of TCharacterType, TCharacterHandler)
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
+    name: ICharacter
+    href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html
+  - name: <
+  - name: TCharacterType
+  - name: ','
+  - name: " "
+  - name: TCharacterHandler
+  - name: '>'
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
+    name: ICharacter
+    href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCharacterType
+  - name: ','
+  - name: " "
+  - name: TCharacterHandler
+  - name: )
 - uid: BlazerTech.CharacterManagement.Characters.CharacterDraftType
   commentId: T:BlazerTech.CharacterManagement.Characters.CharacterDraftType
   parent: BlazerTech.CharacterManagement.Characters
@@ -520,6 +552,7 @@ references:
   fullName: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTemplateSO
 - uid: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
   commentId: T:BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO
+  parent: BlazerTech.CharacterManagement.Characters
   href: BlazerTech.CharacterManagement.Characters.UnifiedCharacterTypeSO.html
   name: UnifiedCharacterTypeSO
   nameWithType: UnifiedCharacterTypeSO

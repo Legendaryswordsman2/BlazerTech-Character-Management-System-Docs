@@ -6,6 +6,7 @@ items:
   parent: BlazerTech.CharacterManagement.Components
   children:
   - BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.GetAndShowCharacter
+  - BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.LoadedCharacter
   - BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.ReleaseCharacter
   - BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.ShowCharacter
   langs:
@@ -37,6 +38,7 @@ items:
   - UnityEngine.MonoBehaviour
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase
   inheritedMembers:
+  - BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnCharacterLoaded
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase._renderer
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.setAnimatorController
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase._animator
@@ -45,7 +47,39 @@ items:
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.isValid
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.ValidationCheck
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.TrySetCharacterAnimator(BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO)
+  - BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase})
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnDestroy
+- uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.LoadedCharacter
+  commentId: P:BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.LoadedCharacter
+  id: LoadedCharacter
+  parent: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer
+  langs:
+  - csharp
+  - vb
+  name: LoadedCharacter
+  nameWithType: RandomLayeredCharacterRenderer.LoadedCharacter
+  fullName: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.LoadedCharacter
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/RandomLayeredCharacterRenderer.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LoadedCharacter
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/RandomLayeredCharacterRenderer.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  example: []
+  syntax:
+    content: public override ICharacter<CharacterTypeBaseSO, LoadedCharacterHandlerBase> LoadedCharacter { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase}
+    content.vb: Public Overrides ReadOnly Property LoadedCharacter As ICharacter(Of CharacterTypeBaseSO, LoadedCharacterHandlerBase)
+  overridden: BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadedCharacter
+  overload: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.LoadedCharacter*
 - uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.GetAndShowCharacter
   commentId: M:BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.GetAndShowCharacter
   id: GetAndShowCharacter
@@ -64,7 +98,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetAndShowCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/RandomLayeredCharacterRenderer.cs
-    startLine: 18
+    startLine: 21
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -100,7 +134,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ReleaseCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/RandomLayeredCharacterRenderer.cs
-    startLine: 49
+    startLine: 55
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -128,7 +162,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ShowCharacter
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/Layered Character Renderers/RandomLayeredCharacterRenderer.cs
-    startLine: 54
+    startLine: 60
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Components
@@ -215,6 +249,13 @@ references:
   name: CharacterRendererBase
   nameWithType: CharacterRendererBase
   fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnCharacterLoaded
+  commentId: E:BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnCharacterLoaded
+  parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_OnCharacterLoaded
+  name: OnCharacterLoaded
+  nameWithType: CharacterRendererBase.OnCharacterLoaded
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnCharacterLoaded
 - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase._renderer
   commentId: F:BlazerTech.CharacterManagement.Components.CharacterRendererBase._renderer
   parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
@@ -301,6 +342,56 @@ references:
     name: CharacterTypeBaseSO
     href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
   - name: )
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase})
+  commentId: M:BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase})
+  parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_InvokeOnCharacterLoaded_BlazerTech_CharacterManagement_Characters_ICharacter_BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_BlazerTech_CharacterManagement_Characters_LoadedCharacterHandlerBase__
+  name: InvokeOnCharacterLoaded(ICharacter<CharacterTypeBaseSO, LoadedCharacterHandlerBase>)
+  nameWithType: CharacterRendererBase.InvokeOnCharacterLoaded(ICharacter<CharacterTypeBaseSO, LoadedCharacterHandlerBase>)
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter<BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase>)
+  nameWithType.vb: CharacterRendererBase.InvokeOnCharacterLoaded(ICharacter(Of CharacterTypeBaseSO, LoadedCharacterHandlerBase))
+  fullName.vb: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter(Of BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase))
+  name.vb: InvokeOnCharacterLoaded(ICharacter(Of CharacterTypeBaseSO, LoadedCharacterHandlerBase))
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase})
+    name: InvokeOnCharacterLoaded
+    href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_InvokeOnCharacterLoaded_BlazerTech_CharacterManagement_Characters_ICharacter_BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_BlazerTech_CharacterManagement_Characters_LoadedCharacterHandlerBase__
+  - name: (
+  - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
+    name: ICharacter
+    href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+    name: CharacterTypeBaseSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
+  - name: ','
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase
+    name: LoadedCharacterHandlerBase
+    href: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.InvokeOnCharacterLoaded(BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase})
+    name: InvokeOnCharacterLoaded
+    href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_InvokeOnCharacterLoaded_BlazerTech_CharacterManagement_Characters_ICharacter_BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_BlazerTech_CharacterManagement_Characters_LoadedCharacterHandlerBase__
+  - name: (
+  - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
+    name: ICharacter
+    href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+    name: CharacterTypeBaseSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
+  - name: ','
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase
+    name: LoadedCharacterHandlerBase
+    href: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html
+  - name: )
+  - name: )
 - uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnDestroy
   commentId: M:BlazerTech.CharacterManagement.Components.CharacterRendererBase.OnDestroy
   parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
@@ -333,6 +424,121 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadedCharacter
+  commentId: P:BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadedCharacter
+  parent: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+  href: BlazerTech.CharacterManagement.Components.CharacterRendererBase.html#BlazerTech_CharacterManagement_Components_CharacterRendererBase_LoadedCharacter
+  name: LoadedCharacter
+  nameWithType: CharacterRendererBase.LoadedCharacter
+  fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase.LoadedCharacter
+- uid: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.LoadedCharacter*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.LoadedCharacter
+  href: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.html#BlazerTech_CharacterManagement_Components_RandomLayeredCharacterRenderer_LoadedCharacter
+  name: LoadedCharacter
+  nameWithType: RandomLayeredCharacterRenderer.LoadedCharacter
+  fullName: BlazerTech.CharacterManagement.Components.RandomLayeredCharacterRenderer.LoadedCharacter
+- uid: BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase}
+  commentId: T:BlazerTech.CharacterManagement.Characters.ICharacter{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO,BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase}
+  parent: BlazerTech.CharacterManagement.Characters
+  definition: BlazerTech.CharacterManagement.Characters.ICharacter`2
+  href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html
+  name: ICharacter<CharacterTypeBaseSO, LoadedCharacterHandlerBase>
+  nameWithType: ICharacter<CharacterTypeBaseSO, LoadedCharacterHandlerBase>
+  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase>
+  nameWithType.vb: ICharacter(Of CharacterTypeBaseSO, LoadedCharacterHandlerBase)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO, BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase)
+  name.vb: ICharacter(Of CharacterTypeBaseSO, LoadedCharacterHandlerBase)
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
+    name: ICharacter
+    href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+    name: CharacterTypeBaseSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
+  - name: ','
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase
+    name: LoadedCharacterHandlerBase
+    href: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html
+  - name: '>'
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
+    name: ICharacter
+    href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+    name: CharacterTypeBaseSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
+  - name: ','
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase
+    name: LoadedCharacterHandlerBase
+    href: BlazerTech.CharacterManagement.Characters.LoadedCharacterHandlerBase.html
+  - name: )
+- uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
+  commentId: T:BlazerTech.CharacterManagement.Characters.ICharacter`2
+  href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html
+  name: ICharacter<TCharacterType, TCharacterHandler>
+  nameWithType: ICharacter<TCharacterType, TCharacterHandler>
+  fullName: BlazerTech.CharacterManagement.Characters.ICharacter<TCharacterType, TCharacterHandler>
+  nameWithType.vb: ICharacter(Of TCharacterType, TCharacterHandler)
+  fullName.vb: BlazerTech.CharacterManagement.Characters.ICharacter(Of TCharacterType, TCharacterHandler)
+  name.vb: ICharacter(Of TCharacterType, TCharacterHandler)
+  spec.csharp:
+  - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
+    name: ICharacter
+    href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html
+  - name: <
+  - name: TCharacterType
+  - name: ','
+  - name: " "
+  - name: TCharacterHandler
+  - name: '>'
+  spec.vb:
+  - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
+    name: ICharacter
+    href: BlazerTech.CharacterManagement.Characters.ICharacter-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCharacterType
+  - name: ','
+  - name: " "
+  - name: TCharacterHandler
+  - name: )
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
 - uid: System.InvalidOperationException
   commentId: T:System.InvalidOperationException
   isExternal: true

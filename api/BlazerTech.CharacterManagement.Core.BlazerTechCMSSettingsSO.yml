@@ -1,0 +1,581 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+  commentId: T:BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+  id: BlazerTechCMSSettingsSO
+  parent: BlazerTech.CharacterManagement.Core
+  children:
+  - BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.ActiveCharacterTypes
+  - BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.AddCharacterType_EditMode(BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO)
+  - BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.AutoSaveTriggers
+  - BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.CharacterTypesFieldName
+  - BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.GetOrCreate
+  - BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.LogsToShow
+  - BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.RemoveBlankCharacterTypes
+  - BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.SaveFormat
+  langs:
+  - csharp
+  - vb
+  name: BlazerTechCMSSettingsSO
+  nameWithType: BlazerTechCMSSettingsSO
+  fullName: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: BlazerTechCMSSettingsSO
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: 'public class BlazerTechCMSSettingsSO : ScriptableObject'
+    content.vb: Public Class BlazerTechCMSSettingsSO Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+- uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.AutoSaveTriggers
+  commentId: F:BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.AutoSaveTriggers
+  id: AutoSaveTriggers
+  parent: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: AutoSaveTriggers
+  nameWithType: BlazerTechCMSSettingsSO.AutoSaveTriggers
+  fullName: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.AutoSaveTriggers
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: AutoSaveTriggers
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: >-
+      [Header("General")]
+
+      [Tooltip("When to automatically save character groups to disk.")]
+
+      public CharacterGroupAutoSaveTriggers AutoSaveTriggers
+    return:
+      type: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
+    content.vb: >-
+      <Header("General")>
+
+      <Tooltip("When to automatically save character groups to disk.")>
+
+      Public AutoSaveTriggers As CharacterGroupAutoSaveTriggers
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: General
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: When to automatically save character groups to disk.
+- uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.SaveFormat
+  commentId: F:BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.SaveFormat
+  id: SaveFormat
+  parent: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: SaveFormat
+  nameWithType: BlazerTechCMSSettingsSO.SaveFormat
+  fullName: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.SaveFormat
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: SaveFormat
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: >-
+      [Tooltip("The format to save character groups in: JSON (Human-readable/editable) or Binary (Extremely hard to view/edit).")]
+
+      public SaveFormat SaveFormat
+    return:
+      type: BlazerTech.CharacterManagement.Core.SaveFormat
+    content.vb: >-
+      <Tooltip("The format to save character groups in: JSON (Human-readable/editable) or Binary (Extremely hard to view/edit).")>
+
+      Public SaveFormat As SaveFormat
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 'The format to save character groups in: JSON (Human-readable/editable) or Binary (Extremely hard to view/edit).'
+- uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.ActiveCharacterTypes
+  commentId: P:BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.ActiveCharacterTypes
+  id: ActiveCharacterTypes
+  parent: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: ActiveCharacterTypes
+  nameWithType: BlazerTechCMSSettingsSO.ActiveCharacterTypes
+  fullName: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.ActiveCharacterTypes
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: ActiveCharacterTypes
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public IReadOnlyList<CharacterTypeBaseSO> ActiveCharacterTypes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO}
+    content.vb: Public ReadOnly Property ActiveCharacterTypes As IReadOnlyList(Of CharacterTypeBaseSO)
+  overload: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.ActiveCharacterTypes*
+- uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.CharacterTypesFieldName
+  commentId: F:BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.CharacterTypesFieldName
+  id: CharacterTypesFieldName
+  parent: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: CharacterTypesFieldName
+  nameWithType: BlazerTechCMSSettingsSO.CharacterTypesFieldName
+  fullName: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.CharacterTypesFieldName
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterTypesFieldName
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public const string CharacterTypesFieldName = "activeCharacterTypes"
+    return:
+      type: System.String
+    content.vb: Public Const CharacterTypesFieldName As String = "activeCharacterTypes"
+- uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.LogsToShow
+  commentId: F:BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.LogsToShow
+  id: LogsToShow
+  parent: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: LogsToShow
+  nameWithType: BlazerTechCMSSettingsSO.LogsToShow
+  fullName: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.LogsToShow
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LogsToShow
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: >-
+      [Header("Debug")]
+
+      [Tooltip("What actions should trigger a log.")]
+
+      public CMSLogType LogsToShow
+    return:
+      type: BlazerTech.CharacterManagement.Core.CMSLogType
+    content.vb: >-
+      <Header("Debug")>
+
+      <Tooltip("What actions should trigger a log.")>
+
+      Public LogsToShow As CMSLogType
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Debug
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: What actions should trigger a log.
+- uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.GetOrCreate
+  commentId: M:BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.GetOrCreate
+  id: GetOrCreate
+  parent: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreate()
+  nameWithType: BlazerTechCMSSettingsSO.GetOrCreate()
+  fullName: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.GetOrCreate()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: GetOrCreate
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public static BlazerTechCMSSettingsSO GetOrCreate()
+    return:
+      type: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+    content.vb: Public Shared Function GetOrCreate() As BlazerTechCMSSettingsSO
+  overload: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.GetOrCreate*
+- uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.AddCharacterType_EditMode(BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO)
+  commentId: M:BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.AddCharacterType_EditMode(BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO)
+  id: AddCharacterType_EditMode(BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO)
+  parent: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: AddCharacterType_EditMode(CharacterTypeBaseSO)
+  nameWithType: BlazerTechCMSSettingsSO.AddCharacterType_EditMode(CharacterTypeBaseSO)
+  fullName: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.AddCharacterType_EditMode(BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: AddCharacterType_EditMode
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 99
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public void AddCharacterType_EditMode(CharacterTypeBaseSO characterType)
+    parameters:
+    - id: characterType
+      type: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+    content.vb: Public Sub AddCharacterType_EditMode(characterType As CharacterTypeBaseSO)
+  overload: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.AddCharacterType_EditMode*
+- uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.RemoveBlankCharacterTypes
+  commentId: M:BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.RemoveBlankCharacterTypes
+  id: RemoveBlankCharacterTypes
+  parent: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: RemoveBlankCharacterTypes()
+  nameWithType: BlazerTechCMSSettingsSO.RemoveBlankCharacterTypes()
+  fullName: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.RemoveBlankCharacterTypes()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: RemoveBlankCharacterTypes
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Scriptable Objects/BlazerTechCMSSettingsSO.cs
+    startLine: 106
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public void RemoveBlankCharacterTypes()
+    content.vb: Public Sub RemoveBlankCharacterTypes()
+  overload: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.RemoveBlankCharacterTypes*
+references:
+- uid: BlazerTech.CharacterManagement.Core
+  commentId: N:BlazerTech.CharacterManagement.Core
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Core
+  nameWithType: BlazerTech.CharacterManagement.Core
+  fullName: BlazerTech.CharacterManagement.Core
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.html
+  name: CharacterGroupAutoSaveTriggers
+  nameWithType: CharacterGroupAutoSaveTriggers
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
+- uid: BlazerTech.CharacterManagement.Characters
+  commentId: N:BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Characters
+  nameWithType: BlazerTech.CharacterManagement.Characters
+  fullName: BlazerTech.CharacterManagement.Characters
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Characters
+    name: Characters
+    href: BlazerTech.CharacterManagement.Characters.html
+- uid: BlazerTech.CharacterManagement.Core.SaveFormat
+  commentId: T:BlazerTech.CharacterManagement.Core.SaveFormat
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.SaveFormat.html
+  name: SaveFormat
+  nameWithType: SaveFormat
+  fullName: BlazerTech.CharacterManagement.Core.SaveFormat
+- uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.ActiveCharacterTypes*
+  commentId: Overload:BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.ActiveCharacterTypes
+  href: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.html#BlazerTech_CharacterManagement_Core_BlazerTechCMSSettingsSO_ActiveCharacterTypes
+  name: ActiveCharacterTypes
+  nameWithType: BlazerTechCMSSettingsSO.ActiveCharacterTypes
+  fullName: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.ActiveCharacterTypes
+- uid: System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO}
+  commentId: T:System.Collections.Generic.IReadOnlyList{BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<CharacterTypeBaseSO>
+  nameWithType: IReadOnlyList<CharacterTypeBaseSO>
+  fullName: System.Collections.Generic.IReadOnlyList<BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO>
+  nameWithType.vb: IReadOnlyList(Of CharacterTypeBaseSO)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO)
+  name.vb: IReadOnlyList(Of CharacterTypeBaseSO)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+    name: CharacterTypeBaseSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+    name: CharacterTypeBaseSO
+    href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BlazerTech.CharacterManagement.Core.CMSLogType
+  commentId: T:BlazerTech.CharacterManagement.Core.CMSLogType
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.CMSLogType.html
+  name: CMSLogType
+  nameWithType: CMSLogType
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogType
+- uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.GetOrCreate*
+  commentId: Overload:BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.GetOrCreate
+  href: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.html#BlazerTech_CharacterManagement_Core_BlazerTechCMSSettingsSO_GetOrCreate
+  name: GetOrCreate
+  nameWithType: BlazerTechCMSSettingsSO.GetOrCreate
+  fullName: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.GetOrCreate
+- uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+  commentId: T:BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.html
+  name: BlazerTechCMSSettingsSO
+  nameWithType: BlazerTechCMSSettingsSO
+  fullName: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+- uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.AddCharacterType_EditMode*
+  commentId: Overload:BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.AddCharacterType_EditMode
+  href: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.html#BlazerTech_CharacterManagement_Core_BlazerTechCMSSettingsSO_AddCharacterType_EditMode_BlazerTech_CharacterManagement_Characters_CharacterTypeBaseSO_
+  name: AddCharacterType_EditMode
+  nameWithType: BlazerTechCMSSettingsSO.AddCharacterType_EditMode
+  fullName: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.AddCharacterType_EditMode
+- uid: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+  parent: BlazerTech.CharacterManagement.Characters
+  href: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO.html
+  name: CharacterTypeBaseSO
+  nameWithType: CharacterTypeBaseSO
+  fullName: BlazerTech.CharacterManagement.Characters.CharacterTypeBaseSO
+- uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.RemoveBlankCharacterTypes*
+  commentId: Overload:BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.RemoveBlankCharacterTypes
+  href: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.html#BlazerTech_CharacterManagement_Core_BlazerTechCMSSettingsSO_RemoveBlankCharacterTypes
+  name: RemoveBlankCharacterTypes
+  nameWithType: BlazerTechCMSSettingsSO.RemoveBlankCharacterTypes
+  fullName: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO.RemoveBlankCharacterTypes

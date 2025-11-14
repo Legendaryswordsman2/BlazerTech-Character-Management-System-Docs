@@ -1,0 +1,323 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer
+  commentId: T:BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer
+  id: CharacterDisplayNameRenderer
+  parent: BlazerTech.CharacterManagement.Components
+  children:
+  - BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterGroupName
+  - BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterIndex
+  - BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterLoadMethod
+  - BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterName
+  - BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.SetName
+  langs:
+  - csharp
+  - vb
+  name: CharacterDisplayNameRenderer
+  nameWithType: CharacterDisplayNameRenderer
+  fullName: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterDisplayNameRenderer
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: 'public class CharacterDisplayNameRenderer : MonoBehaviour'
+    content.vb: Public Class CharacterDisplayNameRenderer Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterGroupName
+  commentId: P:BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterGroupName
+  id: CharacterGroupName
+  parent: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer
+  langs:
+  - csharp
+  - vb
+  name: CharacterGroupName
+  nameWithType: CharacterDisplayNameRenderer.CharacterGroupName
+  fullName: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterGroupName
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterGroupName
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public string CharacterGroupName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CharacterGroupName As String
+  overload: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterGroupName*
+- uid: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterLoadMethod
+  commentId: P:BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterLoadMethod
+  id: CharacterLoadMethod
+  parent: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer
+  langs:
+  - csharp
+  - vb
+  name: CharacterLoadMethod
+  nameWithType: CharacterDisplayNameRenderer.CharacterLoadMethod
+  fullName: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterLoadMethod
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterLoadMethod
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public CharacterMultiGroupLoadMethod CharacterLoadMethod { get; }
+    parameters: []
+    return:
+      type: BlazerTech.CharacterManagement.Components.CharacterMultiGroupLoadMethod
+    content.vb: Public Property CharacterLoadMethod As CharacterMultiGroupLoadMethod
+  overload: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterLoadMethod*
+- uid: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterName
+  commentId: P:BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterName
+  id: CharacterName
+  parent: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer
+  langs:
+  - csharp
+  - vb
+  name: CharacterName
+  nameWithType: CharacterDisplayNameRenderer.CharacterName
+  fullName: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterName
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterName
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public string CharacterName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CharacterName As String
+  overload: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterName*
+- uid: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterIndex
+  commentId: P:BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterIndex
+  id: CharacterIndex
+  parent: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer
+  langs:
+  - csharp
+  - vb
+  name: CharacterIndex
+  nameWithType: CharacterDisplayNameRenderer.CharacterIndex
+  fullName: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterIndex
+  type: Property
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CharacterIndex
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public int CharacterIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CharacterIndex As Integer
+  overload: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterIndex*
+- uid: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.SetName
+  commentId: M:BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.SetName
+  id: SetName
+  parent: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer
+  langs:
+  - csharp
+  - vb
+  name: SetName()
+  nameWithType: CharacterDisplayNameRenderer.SetName()
+  fullName: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.SetName()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: SetName
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Usage Scripts/Character Renderers/CharacterDisplayNameRenderer.cs
+    startLine: 148
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Components
+  syntax:
+    content: public void SetName()
+    content.vb: Public Sub SetName()
+  overload: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.SetName*
+references:
+- uid: BlazerTech.CharacterManagement.Components
+  commentId: N:BlazerTech.CharacterManagement.Components
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Components
+  nameWithType: BlazerTech.CharacterManagement.Components
+  fullName: BlazerTech.CharacterManagement.Components
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Components
+    name: Components
+    href: BlazerTech.CharacterManagement.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterGroupName*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterGroupName
+  href: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.html#BlazerTech_CharacterManagement_Components_CharacterDisplayNameRenderer_CharacterGroupName
+  name: CharacterGroupName
+  nameWithType: CharacterDisplayNameRenderer.CharacterGroupName
+  fullName: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterGroupName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterLoadMethod*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterLoadMethod
+  href: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.html#BlazerTech_CharacterManagement_Components_CharacterDisplayNameRenderer_CharacterLoadMethod
+  name: CharacterLoadMethod
+  nameWithType: CharacterDisplayNameRenderer.CharacterLoadMethod
+  fullName: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterLoadMethod
+- uid: BlazerTech.CharacterManagement.Components.CharacterMultiGroupLoadMethod
+  commentId: T:BlazerTech.CharacterManagement.Components.CharacterMultiGroupLoadMethod
+  parent: BlazerTech.CharacterManagement.Components
+  href: BlazerTech.CharacterManagement.Components.CharacterMultiGroupLoadMethod.html
+  name: CharacterMultiGroupLoadMethod
+  nameWithType: CharacterMultiGroupLoadMethod
+  fullName: BlazerTech.CharacterManagement.Components.CharacterMultiGroupLoadMethod
+- uid: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterName*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterName
+  href: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.html#BlazerTech_CharacterManagement_Components_CharacterDisplayNameRenderer_CharacterName
+  name: CharacterName
+  nameWithType: CharacterDisplayNameRenderer.CharacterName
+  fullName: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterName
+- uid: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterIndex*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterIndex
+  href: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.html#BlazerTech_CharacterManagement_Components_CharacterDisplayNameRenderer_CharacterIndex
+  name: CharacterIndex
+  nameWithType: CharacterDisplayNameRenderer.CharacterIndex
+  fullName: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.CharacterIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.SetName*
+  commentId: Overload:BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.SetName
+  href: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.html#BlazerTech_CharacterManagement_Components_CharacterDisplayNameRenderer_SetName
+  name: SetName
+  nameWithType: CharacterDisplayNameRenderer.SetName
+  fullName: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.SetName

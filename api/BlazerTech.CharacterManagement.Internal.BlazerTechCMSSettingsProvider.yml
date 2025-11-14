@@ -1,0 +1,418 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider
+  commentId: T:BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider
+  id: BlazerTechCMSSettingsProvider
+  parent: BlazerTech.CharacterManagement.Internal
+  children:
+  - BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.#ctor(System.String,UnityEditor.SettingsScope)
+  - BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.CreateSettingsProvider
+  - BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.MenuPath
+  - BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnActivate(System.String,UnityEngine.UIElements.VisualElement)
+  - BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnGUI(System.String)
+  langs:
+  - csharp
+  - vb
+  name: BlazerTechCMSSettingsProvider
+  nameWithType: BlazerTechCMSSettingsProvider
+  fullName: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: BlazerTechCMSSettingsProvider
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: BlazerTech.CharacterManagement.Internal
+  syntax:
+    content: 'public class BlazerTechCMSSettingsProvider : SettingsProvider'
+    content.vb: Public Class BlazerTechCMSSettingsProvider Inherits SettingsProvider
+  inheritance:
+  - System.Object
+  - UnityEditor.SettingsProvider
+- uid: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.MenuPath
+  commentId: F:BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.MenuPath
+  id: MenuPath
+  parent: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider
+  langs:
+  - csharp
+  - vb
+  name: MenuPath
+  nameWithType: BlazerTechCMSSettingsProvider.MenuPath
+  fullName: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.MenuPath
+  type: Field
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: MenuPath
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: BlazerTech.CharacterManagement.Internal
+  syntax:
+    content: public const string MenuPath = "Project/BlazerTech/Character Management System"
+    return:
+      type: System.String
+    content.vb: Public Const MenuPath As String = "Project/BlazerTech/Character Management System"
+- uid: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnActivate(System.String,UnityEngine.UIElements.VisualElement)
+  commentId: M:BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnActivate(System.String,UnityEngine.UIElements.VisualElement)
+  id: OnActivate(System.String,UnityEngine.UIElements.VisualElement)
+  parent: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider
+  langs:
+  - csharp
+  - vb
+  name: OnActivate(string, VisualElement)
+  nameWithType: BlazerTechCMSSettingsProvider.OnActivate(string, VisualElement)
+  fullName: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnActivate(string, UnityEngine.UIElements.VisualElement)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: OnActivate
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: BlazerTech.CharacterManagement.Internal
+  summary: <p>Use this function to implement a handler for when the user clicks on the Settings in the Settings window. You can fetch a settings Asset or set up UIElements UI from this function.</p>
+  example: []
+  syntax:
+    content: public override void OnActivate(string searchContext, VisualElement rootElement)
+    parameters:
+    - id: searchContext
+      type: System.String
+      description: Search context in the search box on the Settings window.
+    - id: rootElement
+      type: UnityEngine.UIElements.VisualElement
+      description: Root of the UIElements tree. If you add to this root, the SettingsProvider uses UIElements instead of calling SettingsProvider.OnGUI to build the UI. If you do not add to this VisualElement, then you must use the IMGUI to build the UI.
+    content.vb: Public Overrides Sub OnActivate(searchContext As String, rootElement As VisualElement)
+  overridden: UnityEditor.SettingsProvider.OnActivate(System.String,UnityEngine.UIElements.VisualElement)
+  overload: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnActivate*
+  nameWithType.vb: BlazerTechCMSSettingsProvider.OnActivate(String, VisualElement)
+  fullName.vb: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnActivate(String, UnityEngine.UIElements.VisualElement)
+  name.vb: OnActivate(String, VisualElement)
+- uid: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnGUI(System.String)
+  commentId: M:BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnGUI(System.String)
+  id: OnGUI(System.String)
+  parent: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider
+  langs:
+  - csharp
+  - vb
+  name: OnGUI(string)
+  nameWithType: BlazerTechCMSSettingsProvider.OnGUI(string)
+  fullName: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnGUI(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: OnGUI
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: BlazerTech.CharacterManagement.Internal
+  summary: <p>Use this function to draw the UI based on IMGUI. This assumes you haven't added any children to the rootElement passed to the OnActivate function.</p>
+  example: []
+  syntax:
+    content: public override void OnGUI(string searchContext)
+    parameters:
+    - id: searchContext
+      type: System.String
+      description: Search context for the Settings window. Used to show or hide relevant properties.
+    content.vb: Public Overrides Sub OnGUI(searchContext As String)
+  overridden: UnityEditor.SettingsProvider.OnGUI(System.String)
+  overload: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnGUI*
+  nameWithType.vb: BlazerTechCMSSettingsProvider.OnGUI(String)
+  fullName.vb: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnGUI(String)
+  name.vb: OnGUI(String)
+- uid: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.#ctor(System.String,UnityEditor.SettingsScope)
+  commentId: M:BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.#ctor(System.String,UnityEditor.SettingsScope)
+  id: '#ctor(System.String,UnityEditor.SettingsScope)'
+  parent: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider
+  langs:
+  - csharp
+  - vb
+  name: BlazerTechCMSSettingsProvider(string, SettingsScope)
+  nameWithType: BlazerTechCMSSettingsProvider.BlazerTechCMSSettingsProvider(string, SettingsScope)
+  fullName: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.BlazerTechCMSSettingsProvider(string, UnityEditor.SettingsScope)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: .ctor
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
+    startLine: 91
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: BlazerTech.CharacterManagement.Internal
+  syntax:
+    content: public BlazerTechCMSSettingsProvider(string path, SettingsScope scope)
+    parameters:
+    - id: path
+      type: System.String
+    - id: scope
+      type: UnityEditor.SettingsScope
+    content.vb: Public Sub New(path As String, scope As SettingsScope)
+  overload: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.#ctor*
+  nameWithType.vb: BlazerTechCMSSettingsProvider.New(String, SettingsScope)
+  fullName.vb: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.New(String, UnityEditor.SettingsScope)
+  name.vb: New(String, SettingsScope)
+- uid: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.CreateSettingsProvider
+  commentId: M:BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.CreateSettingsProvider
+  id: CreateSettingsProvider
+  parent: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateSettingsProvider()
+  nameWithType: BlazerTechCMSSettingsProvider.CreateSettingsProvider()
+  fullName: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.CreateSettingsProvider()
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CreateSettingsProvider
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Editor/BlazerTechCMSSettingsProvider.cs
+    startLine: 95
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: BlazerTech.CharacterManagement.Internal
+  syntax:
+    content: >-
+      [SettingsProvider]
+
+      public static SettingsProvider CreateSettingsProvider()
+    return:
+      type: UnityEditor.SettingsProvider
+    content.vb: >-
+      <SettingsProvider>
+
+      Public Shared Function CreateSettingsProvider() As SettingsProvider
+  overload: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.CreateSettingsProvider*
+  attributes:
+  - type: UnityEditor.SettingsProviderAttribute
+    ctor: UnityEditor.SettingsProviderAttribute.#ctor
+    arguments: []
+references:
+- uid: BlazerTech.CharacterManagement.Internal
+  commentId: N:BlazerTech.CharacterManagement.Internal
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Internal
+  nameWithType: BlazerTech.CharacterManagement.Internal
+  fullName: BlazerTech.CharacterManagement.Internal
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Internal
+    name: Internal
+    href: BlazerTech.CharacterManagement.Internal.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Internal
+    name: Internal
+    href: BlazerTech.CharacterManagement.Internal.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEditor.SettingsProvider
+  commentId: T:UnityEditor.SettingsProvider
+  parent: UnityEditor
+  isExternal: true
+  name: SettingsProvider
+  nameWithType: SettingsProvider
+  fullName: UnityEditor.SettingsProvider
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEditor.SettingsProvider.OnActivate(System.String,UnityEngine.UIElements.VisualElement)
+  commentId: M:UnityEditor.SettingsProvider.OnActivate(System.String,UnityEngine.UIElements.VisualElement)
+  parent: UnityEditor.SettingsProvider
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: OnActivate(string, VisualElement)
+  nameWithType: SettingsProvider.OnActivate(string, VisualElement)
+  fullName: UnityEditor.SettingsProvider.OnActivate(string, UnityEngine.UIElements.VisualElement)
+  nameWithType.vb: SettingsProvider.OnActivate(String, VisualElement)
+  fullName.vb: UnityEditor.SettingsProvider.OnActivate(String, UnityEngine.UIElements.VisualElement)
+  name.vb: OnActivate(String, VisualElement)
+  spec.csharp:
+  - uid: UnityEditor.SettingsProvider.OnActivate(System.String,UnityEngine.UIElements.VisualElement)
+    name: OnActivate
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.SettingsProvider.OnActivate(System.String,UnityEngine.UIElements.VisualElement)
+    name: OnActivate
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+- uid: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnActivate*
+  commentId: Overload:BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnActivate
+  href: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.html#BlazerTech_CharacterManagement_Internal_BlazerTechCMSSettingsProvider_OnActivate_System_String_UnityEngine_UIElements_VisualElement_
+  name: OnActivate
+  nameWithType: BlazerTechCMSSettingsProvider.OnActivate
+  fullName: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnActivate
+- uid: UnityEngine.UIElements.VisualElement
+  commentId: T:UnityEngine.UIElements.VisualElement
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: UnityEngine.UIElements.VisualElement
+- uid: UnityEngine.UIElements
+  commentId: N:UnityEngine.UIElements
+  isExternal: true
+  name: UnityEngine.UIElements
+  nameWithType: UnityEngine.UIElements
+  fullName: UnityEngine.UIElements
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+- uid: UnityEditor.SettingsProvider.OnGUI(System.String)
+  commentId: M:UnityEditor.SettingsProvider.OnGUI(System.String)
+  parent: UnityEditor.SettingsProvider
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: OnGUI(string)
+  nameWithType: SettingsProvider.OnGUI(string)
+  fullName: UnityEditor.SettingsProvider.OnGUI(string)
+  nameWithType.vb: SettingsProvider.OnGUI(String)
+  fullName.vb: UnityEditor.SettingsProvider.OnGUI(String)
+  name.vb: OnGUI(String)
+  spec.csharp:
+  - uid: UnityEditor.SettingsProvider.OnGUI(System.String)
+    name: OnGUI
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.SettingsProvider.OnGUI(System.String)
+    name: OnGUI
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnGUI*
+  commentId: Overload:BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnGUI
+  href: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.html#BlazerTech_CharacterManagement_Internal_BlazerTechCMSSettingsProvider_OnGUI_System_String_
+  name: OnGUI
+  nameWithType: BlazerTechCMSSettingsProvider.OnGUI
+  fullName: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.OnGUI
+- uid: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.#ctor*
+  commentId: Overload:BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.#ctor
+  href: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.html#BlazerTech_CharacterManagement_Internal_BlazerTechCMSSettingsProvider__ctor_System_String_UnityEditor_SettingsScope_
+  name: BlazerTechCMSSettingsProvider
+  nameWithType: BlazerTechCMSSettingsProvider.BlazerTechCMSSettingsProvider
+  fullName: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.BlazerTechCMSSettingsProvider
+  nameWithType.vb: BlazerTechCMSSettingsProvider.New
+  fullName.vb: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.New
+  name.vb: New
+- uid: UnityEditor.SettingsScope
+  commentId: T:UnityEditor.SettingsScope
+  parent: UnityEditor
+  isExternal: true
+  name: SettingsScope
+  nameWithType: SettingsScope
+  fullName: UnityEditor.SettingsScope
+- uid: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.CreateSettingsProvider*
+  commentId: Overload:BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.CreateSettingsProvider
+  href: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.html#BlazerTech_CharacterManagement_Internal_BlazerTechCMSSettingsProvider_CreateSettingsProvider
+  name: CreateSettingsProvider
+  nameWithType: BlazerTechCMSSettingsProvider.CreateSettingsProvider
+  fullName: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider.CreateSettingsProvider

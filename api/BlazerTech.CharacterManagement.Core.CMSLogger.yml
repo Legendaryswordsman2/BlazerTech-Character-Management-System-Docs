@@ -1,0 +1,228 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlazerTech.CharacterManagement.Core.CMSLogger
+  commentId: T:BlazerTech.CharacterManagement.Core.CMSLogger
+  id: CMSLogger
+  parent: BlazerTech.CharacterManagement.Core
+  children:
+  - BlazerTech.CharacterManagement.Core.CMSLogger.Log(System.Object,BlazerTech.CharacterManagement.Core.CMSLogType,UnityEngine.Object)
+  - BlazerTech.CharacterManagement.Core.CMSLogger.LogError(System.Object,BlazerTech.CharacterManagement.Core.CMSLogType,UnityEngine.Object)
+  - BlazerTech.CharacterManagement.Core.CMSLogger.LogWarning(System.Object,BlazerTech.CharacterManagement.Core.CMSLogType,UnityEngine.Object)
+  langs:
+  - csharp
+  - vb
+  name: CMSLogger
+  nameWithType: CMSLogger
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogger
+  type: Class
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/CMSLogger.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: CMSLogger
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSLogger.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public static class CMSLogger
+    content.vb: Public Module CMSLogger
+  inheritance:
+  - System.Object
+- uid: BlazerTech.CharacterManagement.Core.CMSLogger.Log(System.Object,BlazerTech.CharacterManagement.Core.CMSLogType,UnityEngine.Object)
+  commentId: M:BlazerTech.CharacterManagement.Core.CMSLogger.Log(System.Object,BlazerTech.CharacterManagement.Core.CMSLogType,UnityEngine.Object)
+  id: Log(System.Object,BlazerTech.CharacterManagement.Core.CMSLogType,UnityEngine.Object)
+  parent: BlazerTech.CharacterManagement.Core.CMSLogger
+  langs:
+  - csharp
+  - vb
+  name: Log(object, CMSLogType, Object)
+  nameWithType: CMSLogger.Log(object, CMSLogType, Object)
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogger.Log(object, BlazerTech.CharacterManagement.Core.CMSLogType, UnityEngine.Object)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/CMSLogger.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: Log
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSLogger.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public static void Log(object message, CMSLogType logType, Object context = null)
+    parameters:
+    - id: message
+      type: System.Object
+    - id: logType
+      type: BlazerTech.CharacterManagement.Core.CMSLogType
+    - id: context
+      type: UnityEngine.Object
+    content.vb: Public Shared Sub Log(message As Object, logType As CMSLogType, context As [Object] = Nothing)
+  overload: BlazerTech.CharacterManagement.Core.CMSLogger.Log*
+  nameWithType.vb: CMSLogger.Log(Object, CMSLogType, Object)
+  fullName.vb: BlazerTech.CharacterManagement.Core.CMSLogger.Log(Object, BlazerTech.CharacterManagement.Core.CMSLogType, UnityEngine.Object)
+  name.vb: Log(Object, CMSLogType, Object)
+- uid: BlazerTech.CharacterManagement.Core.CMSLogger.LogWarning(System.Object,BlazerTech.CharacterManagement.Core.CMSLogType,UnityEngine.Object)
+  commentId: M:BlazerTech.CharacterManagement.Core.CMSLogger.LogWarning(System.Object,BlazerTech.CharacterManagement.Core.CMSLogType,UnityEngine.Object)
+  id: LogWarning(System.Object,BlazerTech.CharacterManagement.Core.CMSLogType,UnityEngine.Object)
+  parent: BlazerTech.CharacterManagement.Core.CMSLogger
+  langs:
+  - csharp
+  - vb
+  name: LogWarning(object, CMSLogType, Object)
+  nameWithType: CMSLogger.LogWarning(object, CMSLogType, Object)
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogger.LogWarning(object, BlazerTech.CharacterManagement.Core.CMSLogType, UnityEngine.Object)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/CMSLogger.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LogWarning
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSLogger.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public static void LogWarning(object message, CMSLogType logType, Object context = null)
+    parameters:
+    - id: message
+      type: System.Object
+    - id: logType
+      type: BlazerTech.CharacterManagement.Core.CMSLogType
+    - id: context
+      type: UnityEngine.Object
+    content.vb: Public Shared Sub LogWarning(message As Object, logType As CMSLogType, context As [Object] = Nothing)
+  overload: BlazerTech.CharacterManagement.Core.CMSLogger.LogWarning*
+  nameWithType.vb: CMSLogger.LogWarning(Object, CMSLogType, Object)
+  fullName.vb: BlazerTech.CharacterManagement.Core.CMSLogger.LogWarning(Object, BlazerTech.CharacterManagement.Core.CMSLogType, UnityEngine.Object)
+  name.vb: LogWarning(Object, CMSLogType, Object)
+- uid: BlazerTech.CharacterManagement.Core.CMSLogger.LogError(System.Object,BlazerTech.CharacterManagement.Core.CMSLogType,UnityEngine.Object)
+  commentId: M:BlazerTech.CharacterManagement.Core.CMSLogger.LogError(System.Object,BlazerTech.CharacterManagement.Core.CMSLogType,UnityEngine.Object)
+  id: LogError(System.Object,BlazerTech.CharacterManagement.Core.CMSLogType,UnityEngine.Object)
+  parent: BlazerTech.CharacterManagement.Core.CMSLogger
+  langs:
+  - csharp
+  - vb
+  name: LogError(object, CMSLogType, Object)
+  nameWithType: CMSLogger.LogError(object, CMSLogType, Object)
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogger.LogError(object, BlazerTech.CharacterManagement.Core.CMSLogType, UnityEngine.Object)
+  type: Method
+  source:
+    remote:
+      path: Assets/BT-CMS/Scripts/Core/CMSLogger.cs
+      branch: main
+      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
+    id: LogError
+    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/CMSLogger.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: BlazerTech.CharacterManagement.Core
+  syntax:
+    content: public static void LogError(object message, CMSLogType logType, Object context = null)
+    parameters:
+    - id: message
+      type: System.Object
+    - id: logType
+      type: BlazerTech.CharacterManagement.Core.CMSLogType
+    - id: context
+      type: UnityEngine.Object
+    content.vb: Public Shared Sub LogError(message As Object, logType As CMSLogType, context As [Object] = Nothing)
+  overload: BlazerTech.CharacterManagement.Core.CMSLogger.LogError*
+  nameWithType.vb: CMSLogger.LogError(Object, CMSLogType, Object)
+  fullName.vb: BlazerTech.CharacterManagement.Core.CMSLogger.LogError(Object, BlazerTech.CharacterManagement.Core.CMSLogType, UnityEngine.Object)
+  name.vb: LogError(Object, CMSLogType, Object)
+references:
+- uid: BlazerTech.CharacterManagement.Core
+  commentId: N:BlazerTech.CharacterManagement.Core
+  href: BlazerTech.html
+  name: BlazerTech.CharacterManagement.Core
+  nameWithType: BlazerTech.CharacterManagement.Core
+  fullName: BlazerTech.CharacterManagement.Core
+  spec.csharp:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+  spec.vb:
+  - uid: BlazerTech
+    name: BlazerTech
+    href: BlazerTech.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement
+    name: CharacterManagement
+    href: BlazerTech.CharacterManagement.html
+  - name: .
+  - uid: BlazerTech.CharacterManagement.Core
+    name: Core
+    href: BlazerTech.CharacterManagement.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BlazerTech.CharacterManagement.Core.CMSLogger.Log*
+  commentId: Overload:BlazerTech.CharacterManagement.Core.CMSLogger.Log
+  href: BlazerTech.CharacterManagement.Core.CMSLogger.html#BlazerTech_CharacterManagement_Core_CMSLogger_Log_System_Object_BlazerTech_CharacterManagement_Core_CMSLogType_UnityEngine_Object_
+  name: Log
+  nameWithType: CMSLogger.Log
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogger.Log
+- uid: BlazerTech.CharacterManagement.Core.CMSLogType
+  commentId: T:BlazerTech.CharacterManagement.Core.CMSLogType
+  parent: BlazerTech.CharacterManagement.Core
+  href: BlazerTech.CharacterManagement.Core.CMSLogType.html
+  name: CMSLogType
+  nameWithType: CMSLogType
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogType
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BlazerTech.CharacterManagement.Core.CMSLogger.LogWarning*
+  commentId: Overload:BlazerTech.CharacterManagement.Core.CMSLogger.LogWarning
+  href: BlazerTech.CharacterManagement.Core.CMSLogger.html#BlazerTech_CharacterManagement_Core_CMSLogger_LogWarning_System_Object_BlazerTech_CharacterManagement_Core_CMSLogType_UnityEngine_Object_
+  name: LogWarning
+  nameWithType: CMSLogger.LogWarning
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogger.LogWarning
+- uid: BlazerTech.CharacterManagement.Core.CMSLogger.LogError*
+  commentId: Overload:BlazerTech.CharacterManagement.Core.CMSLogger.LogError
+  href: BlazerTech.CharacterManagement.Core.CMSLogger.html#BlazerTech_CharacterManagement_Core_CMSLogger_LogError_System_Object_BlazerTech_CharacterManagement_Core_CMSLogType_UnityEngine_Object_
+  name: LogError
+  nameWithType: CMSLogger.LogError
+  fullName: BlazerTech.CharacterManagement.Core.CMSLogger.LogError

@@ -4,7 +4,9 @@ items:
   commentId: N:BlazerTech.CharacterManagement.Components
   id: BlazerTech.CharacterManagement.Components
   children:
+  - BlazerTech.CharacterManagement.Components.ButtonMode
   - BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
+  - BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer
   - BlazerTech.CharacterManagement.Components.CharacterLoaderLoadingMode
   - BlazerTech.CharacterManagement.Components.CharacterMultiGroupLoadMethod
   - BlazerTech.CharacterManagement.Components.CharacterRendererBase
@@ -65,6 +67,13 @@ references:
   name: CharacterRendererBase
   nameWithType: CharacterRendererBase
   fullName: BlazerTech.CharacterManagement.Components.CharacterRendererBase
+- uid: BlazerTech.CharacterManagement.Components.ButtonMode
+  commentId: T:BlazerTech.CharacterManagement.Components.ButtonMode
+  parent: BlazerTech.CharacterManagement.Components
+  href: BlazerTech.CharacterManagement.Components.ButtonMode.html
+  name: ButtonMode
+  nameWithType: ButtonMode
+  fullName: BlazerTech.CharacterManagement.Components.ButtonMode
 - uid: BlazerTech.CharacterManagement.Components.TopDownMovementController
   commentId: T:BlazerTech.CharacterManagement.Components.TopDownMovementController
   parent: BlazerTech.CharacterManagement.Components
@@ -96,6 +105,12 @@ references:
   name: TopDownCharacterAnimatorHandler
   nameWithType: TopDownCharacterAnimatorHandler
   fullName: BlazerTech.CharacterManagement.Components.TopDownCharacterAnimatorHandler
+- uid: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer
+  commentId: T:BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer
+  href: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer.html
+  name: CharacterDisplayNameRenderer
+  nameWithType: CharacterDisplayNameRenderer
+  fullName: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer
 - uid: BlazerTech.CharacterManagement.Components
   commentId: N:BlazerTech.CharacterManagement.Components
   href: BlazerTech.html

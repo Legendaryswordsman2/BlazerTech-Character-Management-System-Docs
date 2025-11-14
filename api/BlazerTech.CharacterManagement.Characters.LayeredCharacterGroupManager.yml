@@ -5,7 +5,6 @@ items:
   id: LayeredCharacterGroupManager
   parent: BlazerTech.CharacterManagement.Characters
   children:
-  - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.CharacterTypeGroupsAutoSaveTriggers
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.GetGroupRegistryForType(BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO)
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.Initialize
   - BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.LoadCharacterGroups
@@ -28,7 +27,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LayeredCharacterGroupManager
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 21
+    startLine: 20
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -55,7 +54,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SavedCharactersDirectory
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 23
+    startLine: 22
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -82,7 +81,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SavedCharactersFilename
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 24
+    startLine: 23
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -91,33 +90,6 @@ items:
     return:
       type: System.String
     content.vb: Public Const SavedCharactersFilename As String = "Saved Characters"
-- uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.CharacterTypeGroupsAutoSaveTriggers
-  commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.CharacterTypeGroupsAutoSaveTriggers
-  id: CharacterTypeGroupsAutoSaveTriggers
-  parent: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager
-  langs:
-  - csharp
-  - vb
-  name: CharacterTypeGroupsAutoSaveTriggers
-  nameWithType: LayeredCharacterGroupManager.CharacterTypeGroupsAutoSaveTriggers
-  fullName: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.CharacterTypeGroupsAutoSaveTriggers
-  type: Field
-  source:
-    remote:
-      path: Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-      branch: main
-      repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: CharacterTypeGroupsAutoSaveTriggers
-    path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 27
-  assemblies:
-  - Assembly-CSharp
-  namespace: BlazerTech.CharacterManagement.Characters
-  syntax:
-    content: public static CharacterGroupAutoSaveTriggers CharacterTypeGroupsAutoSaveTriggers
-    return:
-      type: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
-    content.vb: Public Shared CharacterTypeGroupsAutoSaveTriggers As CharacterGroupAutoSaveTriggers
 - uid: BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.groupsByType
   commentId: F:BlazerTech.CharacterManagement.Characters.LayeredCharacterGroupManager.groupsByType
   id: groupsByType
@@ -136,7 +108,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: groupsByType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 29
+    startLine: 28
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -163,7 +135,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: GetGroupRegistryForType
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 33
+    startLine: 32
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -197,7 +169,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: Initialize
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 51
+    startLine: 50
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -223,7 +195,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: ScheduleSaveCharacterGroups
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 77
+    startLine: 80
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -254,7 +226,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: SaveCharacterGroupsImmediate
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 96
+    startLine: 99
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -282,7 +254,7 @@ items:
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
     id: LoadCharacterGroups
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/Characters/Layered Characters/Character Groups/LayeredCharacterGroupManager.cs
-    startLine: 127
+    startLine: 130
   assemblies:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Characters
@@ -352,13 +324,6 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
-  commentId: T:BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
-  parent: BlazerTech.CharacterManagement.Characters
-  href: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers.html
-  name: CharacterGroupAutoSaveTriggers
-  nameWithType: CharacterGroupAutoSaveTriggers
-  fullName: BlazerTech.CharacterManagement.Characters.CharacterGroupAutoSaveTriggers
 - uid: System.Collections.Generic.Dictionary{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry}
   commentId: T:System.Collections.Generic.Dictionary{BlazerTech.CharacterManagement.Characters.LayeredCharacterTypeSO,BlazerTech.CharacterManagement.Characters.CharacterGroupRegistry}
   parent: System.Collections.Generic

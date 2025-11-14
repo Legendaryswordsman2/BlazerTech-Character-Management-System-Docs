@@ -5,7 +5,7 @@ items:
   id: EssentialsLoader
   parent: BlazerTech.CharacterManagement.Core
   children:
-  - BlazerTech.CharacterManagement.Core.EssentialsLoader.Execute
+  - BlazerTech.CharacterManagement.Core.EssentialsLoader.Bootstrap
   langs:
   - csharp
   - vb
@@ -25,31 +25,27 @@ items:
   - Assembly-CSharp
   namespace: BlazerTech.CharacterManagement.Core
   syntax:
-    content: 'public abstract class EssentialsLoader : MonoBehaviour'
-    content.vb: Public MustInherit Class EssentialsLoader Inherits MonoBehaviour
+    content: public static class EssentialsLoader
+    content.vb: Public Module EssentialsLoader
   inheritance:
   - System.Object
-  - UnityEngine.Object
-  - UnityEngine.Component
-  - UnityEngine.Behaviour
-  - UnityEngine.MonoBehaviour
-- uid: BlazerTech.CharacterManagement.Core.EssentialsLoader.Execute
-  commentId: M:BlazerTech.CharacterManagement.Core.EssentialsLoader.Execute
-  id: Execute
+- uid: BlazerTech.CharacterManagement.Core.EssentialsLoader.Bootstrap
+  commentId: M:BlazerTech.CharacterManagement.Core.EssentialsLoader.Bootstrap
+  id: Bootstrap
   parent: BlazerTech.CharacterManagement.Core.EssentialsLoader
   langs:
   - csharp
   - vb
-  name: Execute()
-  nameWithType: EssentialsLoader.Execute()
-  fullName: BlazerTech.CharacterManagement.Core.EssentialsLoader.Execute()
+  name: Bootstrap()
+  nameWithType: EssentialsLoader.Bootstrap()
+  fullName: BlazerTech.CharacterManagement.Core.EssentialsLoader.Bootstrap()
   type: Method
   source:
     remote:
       path: Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
       branch: main
       repo: https://github.com/Legendaryswordsman2/BlazerTech-Character-Management-System.git
-    id: Execute
+    id: Bootstrap
     path: ../../../Unity/Unity Projects/BlazerTech Character Management System/Assets/BT-CMS/Scripts/Core/EssentialsLoader.cs
     startLine: 12
   assemblies:
@@ -57,20 +53,20 @@ items:
   namespace: BlazerTech.CharacterManagement.Core
   syntax:
     content: >-
-      [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+      [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]
 
-      public static void Execute()
+      public static void Bootstrap()
     content.vb: >-
-      <RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)>
+      <RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)>
 
-      Public Shared Sub Execute()
-  overload: BlazerTech.CharacterManagement.Core.EssentialsLoader.Execute*
+      Public Shared Sub Bootstrap()
+  overload: BlazerTech.CharacterManagement.Core.EssentialsLoader.Bootstrap*
   attributes:
   - type: UnityEngine.RuntimeInitializeOnLoadMethodAttribute
     ctor: UnityEngine.RuntimeInitializeOnLoadMethodAttribute.#ctor(UnityEngine.RuntimeInitializeLoadType)
     arguments:
     - type: UnityEngine.RuntimeInitializeLoadType
-      value: 1
+      value: 2
 references:
 - uid: BlazerTech.CharacterManagement.Core
   commentId: N:BlazerTech.CharacterManagement.Core
@@ -113,34 +109,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: UnityEngine.Object
-  commentId: T:UnityEngine.Object
-  parent: UnityEngine
-  isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: UnityEngine.Object
-- uid: UnityEngine.Component
-  commentId: T:UnityEngine.Component
-  parent: UnityEngine
-  isExternal: true
-  name: Component
-  nameWithType: Component
-  fullName: UnityEngine.Component
-- uid: UnityEngine.Behaviour
-  commentId: T:UnityEngine.Behaviour
-  parent: UnityEngine
-  isExternal: true
-  name: Behaviour
-  nameWithType: Behaviour
-  fullName: UnityEngine.Behaviour
-- uid: UnityEngine.MonoBehaviour
-  commentId: T:UnityEngine.MonoBehaviour
-  parent: UnityEngine
-  isExternal: true
-  name: MonoBehaviour
-  nameWithType: MonoBehaviour
-  fullName: UnityEngine.MonoBehaviour
 - uid: System
   commentId: N:System
   isExternal: true
@@ -148,15 +116,9 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: UnityEngine
-  commentId: N:UnityEngine
-  isExternal: true
-  name: UnityEngine
-  nameWithType: UnityEngine
-  fullName: UnityEngine
-- uid: BlazerTech.CharacterManagement.Core.EssentialsLoader.Execute*
-  commentId: Overload:BlazerTech.CharacterManagement.Core.EssentialsLoader.Execute
-  href: BlazerTech.CharacterManagement.Core.EssentialsLoader.html#BlazerTech_CharacterManagement_Core_EssentialsLoader_Execute
-  name: Execute
-  nameWithType: EssentialsLoader.Execute
-  fullName: BlazerTech.CharacterManagement.Core.EssentialsLoader.Execute
+- uid: BlazerTech.CharacterManagement.Core.EssentialsLoader.Bootstrap*
+  commentId: Overload:BlazerTech.CharacterManagement.Core.EssentialsLoader.Bootstrap
+  href: BlazerTech.CharacterManagement.Core.EssentialsLoader.html#BlazerTech_CharacterManagement_Core_EssentialsLoader_Bootstrap
+  name: Bootstrap
+  nameWithType: EssentialsLoader.Bootstrap
+  fullName: BlazerTech.CharacterManagement.Core.EssentialsLoader.Bootstrap

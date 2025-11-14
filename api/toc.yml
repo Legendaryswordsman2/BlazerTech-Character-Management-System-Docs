@@ -1,5 +1,12 @@
 ### YamlMime:TableOfContent
 items:
+- uid: BlazerTech
+  name: BlazerTech
+  type: Namespace
+  items:
+  - uid: BlazerTech.GameManager
+    name: GameManager
+    type: Class
 - uid: BlazerTech.CharacterManagement.CharacterCreator
   name: BlazerTech.CharacterManagement.CharacterCreator
   type: Namespace
@@ -197,6 +204,9 @@ items:
   - uid: BlazerTech.CharacterManagement.Characters.GroupTemplateEntry
     name: GroupTemplateEntry
     type: Class
+  - uid: BlazerTech.CharacterManagement.Characters.ICharacter`2
+    name: ICharacter<TCharacterType, TCharacterHandler>
+    type: Interface
   - uid: BlazerTech.CharacterManagement.Characters.LayerOptionMapping
     name: LayerOptionMapping
     type: Class
@@ -261,8 +271,14 @@ items:
   name: BlazerTech.CharacterManagement.Components
   type: Namespace
   items:
+  - uid: BlazerTech.CharacterManagement.Components.ButtonMode
+    name: ButtonMode
+    type: Enum
   - uid: BlazerTech.CharacterManagement.Components.CharacterAnimatorHandlerBase
     name: CharacterAnimatorHandlerBase
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Components.CharacterDisplayNameRenderer
+    name: CharacterDisplayNameRenderer
     type: Class
   - uid: BlazerTech.CharacterManagement.Components.CharacterLoaderLoadingMode
     name: CharacterLoaderLoadingMode
@@ -298,8 +314,17 @@ items:
   name: BlazerTech.CharacterManagement.Core
   type: Namespace
   items:
+  - uid: BlazerTech.CharacterManagement.Core.BlazerTechCMSSettingsSO
+    name: BlazerTechCMSSettingsSO
+    type: Class
   - uid: BlazerTech.CharacterManagement.Core.CMSInitializationHandler
     name: CMSInitializationHandler
+    type: Class
+  - uid: BlazerTech.CharacterManagement.Core.CMSLogType
+    name: CMSLogType
+    type: Enum
+  - uid: BlazerTech.CharacterManagement.Core.CMSLogger
+    name: CMSLogger
     type: Class
   - uid: BlazerTech.CharacterManagement.Core.CMSReferenceHandler
     name: CMSReferenceHandler
@@ -328,6 +353,9 @@ items:
   - uid: BlazerTech.CharacterManagement.Core.RotateGO
     name: RotateGO
     type: Class
+  - uid: BlazerTech.CharacterManagement.Core.SaveFormat
+    name: SaveFormat
+    type: Enum
   - uid: BlazerTech.CharacterManagement.Core.ScriptableObjectMenuPaths
     name: ScriptableObjectMenuPaths
     type: Class
@@ -359,6 +387,13 @@ items:
     type: Class
   - uid: BlazerTech.CharacterManagement.Editor.Windows.CharacterTypeGroupCollectionsViewer
     name: CharacterTypeGroupCollectionsViewer
+    type: Class
+- uid: BlazerTech.CharacterManagement.Internal
+  name: BlazerTech.CharacterManagement.Internal
+  type: Namespace
+  items:
+  - uid: BlazerTech.CharacterManagement.Internal.BlazerTechCMSSettingsProvider
+    name: BlazerTechCMSSettingsProvider
     type: Class
 - uid: BlazerTech.CharacterManagement.Internal.Testing
   name: BlazerTech.CharacterManagement.Internal.Testing
